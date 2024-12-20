@@ -1,0 +1,65 @@
+.root {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  justify-self: flex-start;
+  min-width: 0;
+  min-height: 0;
+  padding: 8px;
+}
+.freeBox {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  top: auto;
+  left: auto;
+  min-width: 0;
+  min-height: 0;
+  padding: 8px;
+}
+.img__memjX {
+  object-fit: cover;
+  max-width: 100%;
+  transition-property: all;
+  transition-duration: 0.1s;
+  align-self: center;
+  position: absolute;
+  left: auto;
+  top: auto;
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 0.1s;
+}
+.img__memjX > picture > img {
+  object-fit: cover;
+}
+.img__qQtMn {
+  object-fit: cover;
+  max-width: 100%;
+  transition-property: all;
+  transition-duration: 0.2s;
+  position: absolute;
+  left: auto;
+  top: auto;
+  opacity: 0;
+  transition-timing-function: ease-in-out;
+  box-shadow: none;
+  -webkit-transition-property: all;
+  -webkit-transition-timing-function: ease-in-out;
+  -webkit-transition-duration: 0.2s;
+}
+.img__qQtMn > picture > img {
+  object-fit: cover;
+}
+.root:hover .img__qQtMn {
+  opacity: 1;
+}
