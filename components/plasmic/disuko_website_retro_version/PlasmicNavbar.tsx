@@ -77,7 +77,6 @@ import XSvgIcon from "./icons/PlasmicIcon__XSvg"; // plasmic-import: EpD6VZmHLNk
 import HomeSvgIcon from "./icons/PlasmicIcon__HomeSvg"; // plasmic-import: 6Ekm8Isg67LL/icon
 import BriefcaseSvgIcon from "./icons/PlasmicIcon__BriefcaseSvg"; // plasmic-import: VT0pvr2nVCFM/icon
 import PigMoneySvgIcon from "./icons/PlasmicIcon__PigMoneySvg"; // plasmic-import: Mw15Gxb9gfwR/icon
-import BrandYoutubeSvgIcon from "./icons/PlasmicIcon__BrandYoutubeSvg"; // plasmic-import: lDUI8t8B7I6-/icon
 import HeadphonesSvgIcon from "./icons/PlasmicIcon__HeadphonesSvg"; // plasmic-import: NucfzTbZic8q/icon
 import ShirtSvgIcon from "./icons/PlasmicIcon__ShirtSvg"; // plasmic-import: KnlYTKjO7sZL/icon
 import LinkSvgIcon from "./icons/PlasmicIcon__LinkSvg"; // plasmic-import: 6dLhR5cJXVSX/icon
@@ -101,7 +100,6 @@ export type PlasmicNavbar__OverridesType = {
   home?: Flex__<typeof Reveal>;
   portfolio?: Flex__<typeof Reveal>;
   commissions?: Flex__<typeof Reveal>;
-  youTube?: Flex__<typeof Reveal>;
   music?: Flex__<typeof Reveal>;
   merch?: Flex__<typeof Reveal>;
   links?: Flex__<typeof Reveal>;
@@ -319,35 +317,6 @@ function PlasmicNavbar__RenderFunc(props: {
             </WindowButton>
           </Reveal>
           <Reveal
-            data-plasmic-name={"youTube"}
-            data-plasmic-override={overrides.youTube}
-            className={classNames("__wab_instance", sty.youTube)}
-            direction={"down"}
-            effect={"bounce"}
-            triggerOnce={true}
-          >
-            <WindowButton
-              className={classNames("__wab_instance", sty.windowButton__m2Rn)}
-              hoverText={"home"}
-              link={`/disuko-tv`}
-            >
-              <BrandYoutubeSvgIcon
-                className={classNames(projectcss.all, sty.svg__qdtxn)}
-                role={"img"}
-              />
-
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__oqoyv
-                )}
-              >
-                {"Home"}
-              </div>
-            </WindowButton>
-          </Reveal>
-          <Reveal
             data-plasmic-name={"music"}
             data-plasmic-override={overrides.music}
             className={classNames("__wab_instance", sty.music)}
@@ -477,7 +446,6 @@ const PlasmicDescendants = {
     "home",
     "portfolio",
     "commissions",
-    "youTube",
     "music",
     "merch",
     "links"
@@ -489,7 +457,6 @@ const PlasmicDescendants = {
     "home",
     "portfolio",
     "commissions",
-    "youTube",
     "music",
     "merch",
     "links"
@@ -497,7 +464,6 @@ const PlasmicDescendants = {
   home: ["home"],
   portfolio: ["portfolio"],
   commissions: ["commissions"],
-  youTube: ["youTube"],
   music: ["music"],
   merch: ["merch"],
   links: ["links"]
@@ -513,7 +479,6 @@ type NodeDefaultElementType = {
   home: typeof Reveal;
   portfolio: typeof Reveal;
   commissions: typeof Reveal;
-  youTube: typeof Reveal;
   music: typeof Reveal;
   merch: typeof Reveal;
   links: typeof Reveal;
@@ -585,7 +550,6 @@ export const PlasmicNavbar = Object.assign(
     home: makeNodeComponent("home"),
     portfolio: makeNodeComponent("portfolio"),
     commissions: makeNodeComponent("commissions"),
-    youTube: makeNodeComponent("youTube"),
     music: makeNodeComponent("music"),
     merch: makeNodeComponent("merch"),
     links: makeNodeComponent("links"),

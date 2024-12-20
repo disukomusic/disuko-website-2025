@@ -304,8 +304,27 @@ function PlasmicPortfolio__RenderFunc(props: {
                   <React.Fragment>
                     <React.Fragment>
                       {
-                        "Hi! I\u2019m Angelo, and I\u2019m an enthusiast for everything having to do with digital technology. I\u2019m currently studying Immersive Media, Music Technology, and Film & Digital Media Production at Chatham University. I also release music, YouTube videos, and make art under the online alias \u201cDisuko.\u201d In my work, my main goal is sharing the truest form of myself\u2014whether that\u2019s through electronic music, cinematography, or 3D artwork. At the core of my work is using digital technology to share that inexplicable emotion that comes about when listening to your favorite song, watching your favorite movie, or being \u201cin the zone\u201d doing something you love. Much of my work uses bright pastel colors, cute aesthetics, and fun concepts to share positivity with the world. If you would like to reach out, consider my email or by checking out one of the many "
+                        "Hi! I\u2019m Angelo, and I\u2019m an enthusiast for everything having to do with digital technology. I\u2019m currently studying Immersive Media, Music Technology, and Film & Digital Media Production at Chatham University. I also release music, YouTube videos, and make art under the online alias \u201cDisuko.\u201d In my work, my main goal is sharing the truest form of myself\u2014whether that\u2019s through electronic music, cinematography, or 3D artwork. At the core of my work is using digital technology to share that inexplicable emotion that comes about when listening to your favorite song, watching your favorite movie, or being \u201cin the zone\u201d doing something you love. Much of my work uses bright pastel colors, cute aesthetics, and fun concepts to share positivity with the world. If you would like to reach out, consider my "
                       }
+                    </React.Fragment>
+                    {
+                      <PlasmicLink__
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.a,
+                          projectcss.__wab_text,
+                          projectcss.plasmic_default__inline,
+                          sty.link__kYnJw
+                        )}
+                        component={Link}
+                        href={"mailto:disukomusic@gmail.com"}
+                        platform={"nextjs"}
+                      >
+                        {"email "}
+                      </PlasmicLink__>
+                    }
+                    <React.Fragment>
+                      {"or by checking out one of the many "}
                     </React.Fragment>
                     {
                       <PlasmicLink__
@@ -391,32 +410,6 @@ function PlasmicPortfolio__RenderFunc(props: {
                 className={classNames(projectcss.all, sty.freeBox__eyr0C)}
               >
                 <Window
-                  className={classNames("__wab_instance", sty.window__dxjgc)}
-                  linkDestination={`/music`}
-                  windowImage={
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img__tntif)}
-                      displayHeight={"auto"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"auto"}
-                      loading={"lazy"}
-                      src={{
-                        src: "/plasmic/disuko_website_retro_version/images/angeloDJingJpg.jpg",
-                        fullWidth: 1920,
-                        fullHeight: 1080,
-                        aspectRatio: undefined
-                      }}
-                    />
-                  }
-                  windowText={``}
-                  windowTitle={"Music Technology"}
-                />
-
-                <Window
                   className={classNames("__wab_instance", sty.window__pdHhx)}
                   linkDestination={`/3d-Design`}
                   windowImage={
@@ -466,6 +459,32 @@ function PlasmicPortfolio__RenderFunc(props: {
                   }
                   windowText={``}
                   windowTitle={"2D Design"}
+                />
+
+                <Window
+                  className={classNames("__wab_instance", sty.window__dxjgc)}
+                  linkDestination={`/music`}
+                  windowImage={
+                    <PlasmicImg__
+                      alt={""}
+                      className={classNames(sty.img__tntif)}
+                      displayHeight={"auto"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"100%"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"auto"}
+                      loading={"lazy"}
+                      src={{
+                        src: "/plasmic/disuko_website_retro_version/images/angeloDJingJpg.jpg",
+                        fullWidth: 1920,
+                        fullHeight: 1080,
+                        aspectRatio: undefined
+                      }}
+                    />
+                  }
+                  windowText={``}
+                  windowTitle={"Music Technology"}
                 />
               </Stack__>
               <Stack__
