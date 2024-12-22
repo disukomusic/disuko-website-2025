@@ -140,7 +140,7 @@ function PlasmicComissions__RenderFunc(props: {
   return (
     <React.Fragment>
       <Head>
-        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:card" content="summary" />
         <title key="title">{PlasmicComissions.pageMetadata.title}</title>
         <meta
           key="og:title"
@@ -167,16 +167,7 @@ function PlasmicComissions__RenderFunc(props: {
           name="twitter:description"
           content={PlasmicComissions.pageMetadata.description}
         />
-        <meta
-          key="og:image"
-          property="og:image"
-          content={PlasmicComissions.pageMetadata.ogImageSrc}
-        />
-        <meta
-          key="twitter:image"
-          name="twitter:image"
-          content={PlasmicComissions.pageMetadata.ogImageSrc}
-        />
+
         <link rel="canonical" href={PlasmicComissions.pageMetadata.canonical} />
       </Head>
 
@@ -1028,8 +1019,7 @@ export const PlasmicComissions = Object.assign(
       title: "🌸disuko - Commissions",
       description:
         "Commissions by disuko, featuring design, 3D modelling, and music production. ",
-      ogImageSrc:
-        "https://site-assets.plasmic.app/ac1724619cc43d0f4f12fa343b092c8a.png",
+      ogImageSrc: "",
       canonical: "https://disuko.gay/commissions"
     }
   }

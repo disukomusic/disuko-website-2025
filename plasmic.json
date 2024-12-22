@@ -1719,44 +1719,9 @@
       ],
       "images": [
         {
-          "id": "C2G3YuCTuLFt",
-          "name": "Background.png",
-          "filePath": "../public/plasmic/disuko_website_retro_version/images/backgroundPng.png"
-        },
-        {
-          "id": "46sHPKngI5rL",
-          "name": "pxArt.png",
-          "filePath": "../public/plasmic/disuko_website_retro_version/images/pxArtPng.png"
-        },
-        {
           "id": "D9WX5RCsIXt0",
           "name": "image",
           "filePath": "../public/plasmic/disuko_website_retro_version/images/image.svg"
-        },
-        {
-          "id": "12cgGE562ITm",
-          "name": "disuko text (1).png",
-          "filePath": "../public/plasmic/disuko_website_retro_version/images/disukoText1Png.png"
-        },
-        {
-          "id": "0Hj5ixTwqPI8",
-          "name": "313214049_814578939586887_7228925067285650003_n.jpg",
-          "filePath": "../public/plasmic/disuko_website_retro_version/images/_3132140498145789395868877228925067285650003NJpg.jpg"
-        },
-        {
-          "id": "3BR-rDpbTnps",
-          "name": "home.png",
-          "filePath": "../public/plasmic/disuko_website_retro_version/images/homePng.png"
-        },
-        {
-          "id": "cCCOwl6GbI3v",
-          "name": "home.png 2",
-          "filePath": "../public/plasmic/disuko_website_retro_version/images/homePng2.png"
-        },
-        {
-          "id": "Z20LpHfNoGG5",
-          "name": "shirt.png",
-          "filePath": "../public/plasmic/disuko_website_retro_version/images/shirtPng.png"
         },
         {
           "id": "hpF4ORvd2Vdk",
@@ -1764,34 +1729,14 @@
           "filePath": "../public/plasmic/disuko_website_retro_version/images/raspberryFieldsJpg.jpg"
         },
         {
-          "id": "wCsyTIQBiz2u",
-          "name": "VideoScreenshot--YouTube-WORTHTHEHYPEMachinewisePrymaReview-1’19”.jpg",
-          "filePath": "../public/plasmic/disuko_website_retro_version/images/videoScreenshotYouTubeWorththehypeMachinewisePrymaReview119Jpg.jpg"
-        },
-        {
           "id": "PmymY5V0vADd",
           "name": "image_2022-11-25_001647652.png",
           "filePath": "../public/plasmic/disuko_website_retro_version/images/image20221125001647652Png.png"
         },
         {
-          "id": "qe2IXE8V-pGj",
-          "name": "avatars-My1b7tt58rV9rrB5-1p287g-t240x240.jpg",
-          "filePath": "../public/plasmic/disuko_website_retro_version/images/avatarsMy1B7Tt58RV9RrB51P287GT240X240Jpg.jpg"
-        },
-        {
           "id": "kCDgtlKTOdBc",
           "name": "Mixer.png",
           "filePath": "../public/plasmic/disuko_website_retro_version/images/mixerPng.png"
-        },
-        {
-          "id": "nAz6yG_M28bv",
-          "name": "music-svgrepo-com.svg",
-          "filePath": "../public/plasmic/disuko_website_retro_version/images/musicSvgrepoComSvg.svg"
-        },
-        {
-          "id": "L8rnl9i3xasB",
-          "name": "music.png",
-          "filePath": "../public/plasmic/disuko_website_retro_version/images/musicPng.png"
         },
         {
           "id": "5By-j_jfF6u3",
@@ -1804,11 +1749,6 @@
           "filePath": "../public/plasmic/disuko_website_retro_version/images/webpreviewJpg.jpg"
         },
         {
-          "id": "wVJQ2KRmosn9",
-          "name": "Untitled-1.jpg",
-          "filePath": "../public/plasmic/disuko_website_retro_version/images/untitled1Jpg.jpg"
-        },
-        {
           "id": "Hgqfqwufo2eH",
           "name": "Logo 2023.png",
           "filePath": "../public/plasmic/disuko_website_retro_version/images/logo2023Png.png"
@@ -1819,19 +1759,9 @@
           "filePath": "../public/plasmic/disuko_website_retro_version/images/logo2023EyesClosedTransparentPng.png"
         },
         {
-          "id": "kZtw5HeFGuyc",
-          "name": "Halloween Rave.jpg",
-          "filePath": "../public/plasmic/disuko_website_retro_version/images/halloweenRaveJpg.jpg"
-        },
-        {
           "id": "6HVICuuu3dpK",
           "name": "celestial ballad.jpg",
           "filePath": "../public/plasmic/disuko_website_retro_version/images/celestialBalladJpg.jpg"
-        },
-        {
-          "id": "dfGKWNI4BJx8",
-          "name": "flutter.jpg",
-          "filePath": "../public/plasmic/disuko_website_retro_version/images/flutterJpg.jpg"
         },
         {
           "id": "AypE04-lV_J5",
@@ -1839,24 +1769,9 @@
           "filePath": "../public/plasmic/disuko_website_retro_version/images/fallenAngelJpg.jpg"
         },
         {
-          "id": "JbFNztd2Dc0U",
-          "name": "raspberry fields.jpg 2",
-          "filePath": "../public/plasmic/disuko_website_retro_version/images/raspberryFieldsJpg2.jpg"
-        },
-        {
-          "id": "XSpfIVfbRKfO",
-          "name": "purple tracer remix.png",
-          "filePath": "../public/plasmic/disuko_website_retro_version/images/purpleTracerRemixPng.png"
-        },
-        {
           "id": "rj4l0F6hOFpz",
           "name": "ice cream parlor.jpg",
           "filePath": "../public/plasmic/disuko_website_retro_version/images/iceCreamParlorJpg.jpg"
-        },
-        {
-          "id": "mhBmKm7C-hBm",
-          "name": "nuclear christmas.jpg",
-          "filePath": "../public/plasmic/disuko_website_retro_version/images/nuclearChristmasJpg.jpg"
         },
         {
           "id": "ENr5Y4ykfXKo",
@@ -1874,34 +1789,9 @@
           "filePath": "../public/plasmic/disuko_website_retro_version/images/image20230213211301198Png.png"
         },
         {
-          "id": "qj5zvIBrm6rG",
-          "name": "Sugar Rush Three teaser.png",
-          "filePath": "../public/plasmic/disuko_website_retro_version/images/sugarRushThreeTeaserPng.png"
-        },
-        {
-          "id": "N_PjtmqTp_zm",
-          "name": "Headshot ting.png",
-          "filePath": "../public/plasmic/disuko_website_retro_version/images/headshotTingPng.png"
-        },
-        {
           "id": "u18gZYOt8dUR",
           "name": "angeloDJing.jpg",
           "filePath": "../public/plasmic/disuko_website_retro_version/images/angeloDJingJpg.jpg"
-        },
-        {
-          "id": "P_TD-gmGngun",
-          "name": "cat jazz.jpg",
-          "filePath": "../public/plasmic/disuko_website_retro_version/images/catJazzJpg.jpg"
-        },
-        {
-          "id": "q4DwoPzeE8bd",
-          "name": "GBCBulb0001.png",
-          "filePath": "../public/plasmic/disuko_website_retro_version/images/gbcBulb0001Png.png"
-        },
-        {
-          "id": "mhfGgVH77WGr",
-          "name": "hexworld0001.jpg",
-          "filePath": "../public/plasmic/disuko_website_retro_version/images/hexworld0001Jpg.jpg"
         },
         {
           "id": "IV2DWaQ51DxN",
@@ -1944,11 +1834,6 @@
           "filePath": "../public/plasmic/disuko_website_retro_version/images/image9.png"
         },
         {
-          "id": "Nr8RXFycT1NR",
-          "name": "fiiverr.jpg",
-          "filePath": "../public/plasmic/disuko_website_retro_version/images/fiiverrJpg.jpg"
-        },
-        {
           "id": "M7zDqyUFaMwd",
           "name": "image 10",
           "filePath": "../public/plasmic/disuko_website_retro_version/images/image10.png"
@@ -1984,34 +1869,14 @@
           "filePath": "../public/plasmic/disuko_website_retro_version/images/ggjIconPng.png"
         },
         {
-          "id": "cvPtqjO2kdfh",
-          "name": "DDSLogo.png",
-          "filePath": "../public/plasmic/disuko_website_retro_version/images/ddsLogoPng.png"
-        },
-        {
           "id": "PlVVHLWHWv4V",
           "name": "image 15",
           "filePath": "../public/plasmic/disuko_website_retro_version/images/image15.png"
         },
         {
-          "id": "dqeqDPIOUoT6",
-          "name": "RPS Logo.png",
-          "filePath": "../public/plasmic/disuko_website_retro_version/images/rpsLogoPng.png"
-        },
-        {
-          "id": "qrtP3VfQfBnN",
-          "name": "old logo.png",
-          "filePath": "../public/plasmic/disuko_website_retro_version/images/oldLogoPng.png"
-        },
-        {
           "id": "naJ34TNuLmrP",
           "name": "Disuko Flipping logo.png",
           "filePath": "../public/plasmic/disuko_website_retro_version/images/disukoFlippingLogoPng.png"
-        },
-        {
-          "id": "yspGJHRdz4MQ",
-          "name": "pyscway0001.png",
-          "filePath": "../public/plasmic/disuko_website_retro_version/images/pyscway0001Png.png"
         },
         {
           "id": "GasPrRgtyJvH",
@@ -2029,29 +1894,14 @@
           "filePath": "../public/plasmic/disuko_website_retro_version/images/image20230303170212160Png.png"
         },
         {
-          "id": "oVU0eSDsRAoI",
-          "name": "LogoFace 2023.png",
-          "filePath": "../public/plasmic/disuko_website_retro_version/images/logoFace2023Png.png"
-        },
-        {
           "id": "AeGA--obOEXh",
           "name": "image 18",
           "filePath": "../public/plasmic/disuko_website_retro_version/images/image18.png"
         },
         {
-          "id": "kttlQikmx5jA",
-          "name": "logo face small.jpg",
-          "filePath": "../public/plasmic/disuko_website_retro_version/images/logoFaceSmallJpg.jpg"
-        },
-        {
           "id": "uOcEP_jUd0Mt",
           "name": "dotGay__RGB.png",
           "filePath": "../public/plasmic/disuko_website_retro_version/images/dotGayRgbPng.png"
-        },
-        {
-          "id": "3s4iO6eedFRK",
-          "name": "Retro Games logo.png",
-          "filePath": "../public/plasmic/disuko_website_retro_version/images/retroGamesLogoPng.png"
         },
         {
           "id": "j8EuyH2Mbjbo",
@@ -2079,49 +1929,9 @@
           "filePath": "../public/plasmic/disuko_website_retro_version/images/backgroundTilesPng2.png"
         },
         {
-          "id": "IV2iCcoJL-5n",
-          "name": "Home.png 3",
-          "filePath": "../public/plasmic/disuko_website_retro_version/images/homePng3.png"
-        },
-        {
-          "id": "dNGiNoNxceny",
-          "name": "Music.png 2",
-          "filePath": "../public/plasmic/disuko_website_retro_version/images/musicPng2.png"
-        },
-        {
-          "id": "C2LmgRhXmwj5",
-          "name": "Links.png",
-          "filePath": "../public/plasmic/disuko_website_retro_version/images/linksPng.png"
-        },
-        {
-          "id": "K-L9fr7T535c",
-          "name": "Portfoflio.png",
-          "filePath": "../public/plasmic/disuko_website_retro_version/images/portfoflioPng.png"
-        },
-        {
-          "id": "jn6WXZACk2aX",
-          "name": "Shirt.png 2",
-          "filePath": "../public/plasmic/disuko_website_retro_version/images/shirtPng2.png"
-        },
-        {
-          "id": "1v0p1Z8i6yJ5",
-          "name": "Disuko DMG.jpg",
-          "filePath": "../public/plasmic/disuko_website_retro_version/images/disukoDmgJpg.jpg"
-        },
-        {
-          "id": "Yy73yZOaazVn",
-          "name": "Disuko GBP.jpg",
-          "filePath": "../public/plasmic/disuko_website_retro_version/images/disukoGbpJpg.jpg"
-        },
-        {
           "id": "ASm4EtAqaW9i",
           "name": "Disuko GBA.jpg",
           "filePath": "../public/plasmic/disuko_website_retro_version/images/disukoGbaJpg.jpg"
-        },
-        {
-          "id": "SIHolcrWS4Q0",
-          "name": "Home.png 4",
-          "filePath": "../public/plasmic/disuko_website_retro_version/images/homePng4.png"
         },
         {
           "id": "YFT3sLGXgBWB",
@@ -2162,11 +1972,6 @@
           "id": "ci2ZZng-CMCh",
           "name": "Logo 128x128.png",
           "filePath": "../public/plasmic/disuko_website_retro_version/images/logo128X128Png.png"
-        },
-        {
-          "id": "MnkAr4eplnOa",
-          "name": "VideoScreenshot--YouTube-MyTOP5AudioGearfor2023-0’55”.jpg",
-          "filePath": "../public/plasmic/disuko_website_retro_version/images/videoScreenshotYouTubeMyTop5AudioGearfor2023055Jpg.jpg"
         },
         {
           "id": "hSy9DkG6e4bX",
@@ -2249,11 +2054,6 @@
           "filePath": "../public/plasmic/disuko_website_retro_version/images/image20.png"
         },
         {
-          "id": "PoVMnd2d_B6w",
-          "name": "Prysma transparent.png",
-          "filePath": "../public/plasmic/disuko_website_retro_version/images/prysmaTransparentPng.png"
-        },
-        {
           "id": "cvWyPpPdOavW",
           "name": "image_2023-06-08_175143753.png",
           "filePath": "../public/plasmic/disuko_website_retro_version/images/image20230608175143753Png.png"
@@ -2269,11 +2069,6 @@
           "filePath": "../public/plasmic/disuko_website_retro_version/images/image21.png"
         },
         {
-          "id": "bryvqWQOcQYx",
-          "name": "Relic Album Art.png",
-          "filePath": "../public/plasmic/disuko_website_retro_version/images/relicAlbumArtPng.png"
-        },
-        {
           "id": "yqRL4nTN9uFy",
           "name": "image_2023-07-08_123829140.png",
           "filePath": "../public/plasmic/disuko_website_retro_version/images/image20230708123829140Png.png"
@@ -2282,11 +2077,6 @@
           "id": "mMOj6H5jPhkl",
           "name": "SNES GBA.jpg",
           "filePath": "../public/plasmic/disuko_website_retro_version/images/snesGbaJpg.jpg"
-        },
-        {
-          "id": "HGvphAIbg4ZV",
-          "name": "Toast Render.png",
-          "filePath": "../public/plasmic/disuko_website_retro_version/images/toastRenderPng.png"
         },
         {
           "id": "aVyk7dbcTRDL",
@@ -2299,49 +2089,9 @@
           "filePath": "../public/plasmic/disuko_website_retro_version/images/image20230725220644456Png.png"
         },
         {
-          "id": "3skjiVpySZEl",
-          "name": "Sendoff Remix Album Art Edited.png",
-          "filePath": "../public/plasmic/disuko_website_retro_version/images/sendoffRemixAlbumArtEditedPng.png"
-        },
-        {
-          "id": "zd1SNawWDg6R",
-          "name": "giphy.gif",
-          "filePath": "../public/plasmic/disuko_website_retro_version/images/giphyGif.gif"
-        },
-        {
-          "id": "roqUiLJAYQkr",
-          "name": "Teacup Frog Transparent Adjusted.png",
-          "filePath": "../public/plasmic/disuko_website_retro_version/images/teacupFrogTransparentAdjustedPng.png"
-        },
-        {
-          "id": "sNWiIcRcXXkM",
-          "name": "windows 7 my computer icon overgrown .png",
-          "filePath": "../public/plasmic/disuko_website_retro_version/images/windows7MyComputerIconOvergrownPng.png"
-        },
-        {
-          "id": "jXn8tqbsI0y2",
-          "name": "Panda_With_Knife.png",
-          "filePath": "../public/plasmic/disuko_website_retro_version/images/pandaWithKnifePng.png"
-        },
-        {
-          "id": "mHy2u9N952Xg",
-          "name": "Disuko_Pumpkin_2.png",
-          "filePath": "../public/plasmic/disuko_website_retro_version/images/disukoPumpkin2Png.png"
-        },
-        {
           "id": "O5ibFxzisWPU",
           "name": "image 22",
           "filePath": "../public/plasmic/disuko_website_retro_version/images/image22.png"
-        },
-        {
-          "id": "eHtyeL66FkAI",
-          "name": "Disuko Mountains.png",
-          "filePath": "../public/plasmic/disuko_website_retro_version/images/disukoMountainsPng.png"
-        },
-        {
-          "id": "4oKwIBQxCcMq",
-          "name": "logo solid background.png",
-          "filePath": "../public/plasmic/disuko_website_retro_version/images/logoSolidBackgroundPng.png"
         },
         {
           "id": "UR_tfeORKBjA",
@@ -2354,11 +2104,6 @@
           "filePath": "../public/plasmic/disuko_website_retro_version/images/shikuForestOnlytForestPng.png"
         },
         {
-          "id": "lUIV2rsYYtDP",
-          "name": "shiku transparent.png",
-          "filePath": "../public/plasmic/disuko_website_retro_version/images/shikuTransparentPng.png"
-        },
-        {
           "id": "LaqVqp2AiOaB",
           "name": "Red Panda Studios Brand Guide September 2023.png",
           "filePath": "../public/plasmic/disuko_website_retro_version/images/redPandaStudiosBrandGuideSeptember2023Png.png"
@@ -2367,11 +2112,6 @@
           "id": "MR81e9do6CRY",
           "name": "Bamboo Engine Logo.png",
           "filePath": "../public/plasmic/disuko_website_retro_version/images/bambooEngineLogoPng.png"
-        },
-        {
-          "id": "x8VRj81Jw16u",
-          "name": "Made With Bamboo Engine Logo Transparent.png",
-          "filePath": "../public/plasmic/disuko_website_retro_version/images/madeWithBambooEngineLogoTransparentPng.png"
         },
         {
           "id": "Clv7evf5nM00",
@@ -2469,16 +2209,6 @@
           "filePath": "../public/plasmic/disuko_website_retro_version/images/image40.jpg"
         },
         {
-          "id": "lNtdYWE1vr55",
-          "name": "wow so retro.gif",
-          "filePath": "../public/plasmic/disuko_website_retro_version/images/wowSoRetroGif.gif"
-        },
-        {
-          "id": "QicfGjIq07VE",
-          "name": "spacehey-BG.jpg",
-          "filePath": "../public/plasmic/disuko_website_retro_version/images/spaceheyBgJpg.jpg"
-        },
-        {
           "id": "uD91oXsAb3J-",
           "name": "Disuko95-Panda-Only.png",
           "filePath": "../public/plasmic/disuko_website_retro_version/images/disuko95PandaOnlyPng.png"
@@ -2499,19 +2229,9 @@
           "filePath": "../public/plasmic/disuko_website_retro_version/images/image43.gif"
         },
         {
-          "id": "o2F5ElMG2EM2",
-          "name": "Logo_of_YouTube_(2005-2006).svg.png",
-          "filePath": "../public/plasmic/disuko_website_retro_version/images/logoOfYouTube20052006SvgPng.png"
-        },
-        {
           "id": "lk1-hsF0X6Md",
           "name": "61ad0808dbd51fdb95966e65dc6c4c69906c81f2-1600x900.png",
           "filePath": "../public/plasmic/disuko_website_retro_version/images/_61Ad0808Dbd51Fdb95966E65Dc6C4C69906C81F21600X900Png.png"
-        },
-        {
-          "id": "FcS9sadP_UCl",
-          "name": "5f00ff5ae68abe264c4a109b_Screen Shot 2020-07-05 at 12.09.44 AM.png",
-          "filePath": "../public/plasmic/disuko_website_retro_version/images/_5F00Ff5Ae68Abe264C4A109BScreenShot20200705At120944AmPng.png"
         },
         {
           "id": "9m6oDbkcX-E3",
@@ -2549,11 +2269,6 @@
           "filePath": "../public/plasmic/disuko_website_retro_version/images/a118128692710Jpg.jpg"
         },
         {
-          "id": "ZA_ZalyPW12Z",
-          "name": "line44.gif",
-          "filePath": "../public/plasmic/disuko_website_retro_version/images/line44Gif.gif"
-        },
-        {
           "id": "GRgSIdRGu-Pu",
           "name": "junor.png",
           "filePath": "../public/plasmic/disuko_website_retro_version/images/junorPng.png"
@@ -2574,11 +2289,6 @@
           "filePath": "../public/plasmic/disuko_website_retro_version/images/_2DDesignCoverJpg.jpg"
         },
         {
-          "id": "ZlAGYK9s9Jda",
-          "name": "Toast Final.png",
-          "filePath": "../public/plasmic/disuko_website_retro_version/images/toastFinalPng.png"
-        },
-        {
           "id": "Jrv4c__hrc_t",
           "name": "Teacup Frog Transparent AdjustedWebSize.png",
           "filePath": "../public/plasmic/disuko_website_retro_version/images/teacupFrogTransparentAdjustedWebSizePng.png"
@@ -2587,11 +2297,6 @@
           "id": "AOrAzbEh4LyI",
           "name": "Toast FinalWebSize.png",
           "filePath": "../public/plasmic/disuko_website_retro_version/images/toastFinalWebSizePng.png"
-        },
-        {
-          "id": "ZKl1Hvt3hQan",
-          "name": "Panda KnifeWebSize.jpg",
-          "filePath": "../public/plasmic/disuko_website_retro_version/images/pandaKnifeWebSizeJpg.jpg"
         },
         {
           "id": "d_MyuwLiskjb",
@@ -2614,11 +2319,6 @@
           "filePath": "../public/plasmic/disuko_website_retro_version/images/strawberrymilkWebp.webp"
         },
         {
-          "id": "K4LDAVdMjJia",
-          "name": "gameboypokemon.webp",
-          "filePath": "../public/plasmic/disuko_website_retro_version/images/gameboypokemonWebp.webp"
-        },
-        {
           "id": "7l4J53ziEAFI",
           "name": "Console Shell WIP.jpg",
           "filePath": "../public/plasmic/disuko_website_retro_version/images/consoleShellWipJpg.jpg"
@@ -2627,11 +2327,6 @@
           "id": "gBZHYu4Sbuoe",
           "name": "Console Shell Prints.jpg",
           "filePath": "../public/plasmic/disuko_website_retro_version/images/consoleShellPrintsJpg.jpg"
-        },
-        {
-          "id": "nrAx19Hw2LQe",
-          "name": "Console Coming Soon.jpg",
-          "filePath": "../public/plasmic/disuko_website_retro_version/images/consoleComingSoonJpg.jpg"
         },
         {
           "id": "-FRvn2lTUjZT",
@@ -2679,11 +2374,6 @@
           "filePath": "../public/plasmic/disuko_website_retro_version/images/redPandaStudiosGeocitiesBannerBackgroundGif.gif"
         },
         {
-          "id": "wm2nt5GMRTIY",
-          "name": "Pink TV.png",
-          "filePath": "../public/plasmic/disuko_website_retro_version/images/pinkTvPng.png"
-        },
-        {
           "id": "MC_h2Q8TSFun",
           "name": "image 44",
           "filePath": "../public/plasmic/disuko_website_retro_version/images/image44.png"
@@ -2697,11 +2387,6 @@
           "id": "9Z2aivcxcp5b",
           "name": "NotableFeatures.png",
           "filePath": "../public/plasmic/disuko_website_retro_version/images/notableFeaturesPng.png"
-        },
-        {
-          "id": "aYIZqOupKeSf",
-          "name": "Todo.png",
-          "filePath": "../public/plasmic/disuko_website_retro_version/images/todoPng.png"
         },
         {
           "id": "Sj3-RCRs9PQM",
@@ -2747,31 +2432,6 @@
           "id": "1SP7PnNaB37_",
           "name": "Screenshot 2024-02-28 234811.png",
           "filePath": "../public/plasmic/disuko_website_retro_version/images/screenshot20240228234811Png.png"
-        },
-        {
-          "id": "UdfY-_S9GsCt",
-          "name": "rave14.jpg",
-          "filePath": "../public/plasmic/disuko_website_retro_version/images/rave14Jpg.jpg"
-        },
-        {
-          "id": "-V-uvi13gZo9",
-          "name": "rave4.jpg",
-          "filePath": "../public/plasmic/disuko_website_retro_version/images/rave4Jpg.jpg"
-        },
-        {
-          "id": "cgAWX-gudJmO",
-          "name": "rave8.jpg",
-          "filePath": "../public/plasmic/disuko_website_retro_version/images/rave8Jpg.jpg"
-        },
-        {
-          "id": "dKp6iMqvFn79",
-          "name": "rave9.jpg",
-          "filePath": "../public/plasmic/disuko_website_retro_version/images/rave9Jpg.jpg"
-        },
-        {
-          "id": "UmyCKMRwj_RX",
-          "name": "rave12.jpg",
-          "filePath": "../public/plasmic/disuko_website_retro_version/images/rave12Jpg.jpg"
         },
         {
           "id": "JRp-C8gMGR4y",
@@ -2862,21 +2522,6 @@
           "id": "DJvZVSNQlHmo",
           "name": "image 51",
           "filePath": "../public/plasmic/disuko_website_retro_version/images/image51.jpg"
-        },
-        {
-          "id": "1LcBTi17H3dq",
-          "name": "toastspintransparent.gif",
-          "filePath": "../public/plasmic/disuko_website_retro_version/images/toastspintransparentGif.gif"
-        },
-        {
-          "id": "tUIHGq-JtXEB",
-          "name": "angelo_headshots_4.png",
-          "filePath": "../public/plasmic/disuko_website_retro_version/images/angeloHeadshots4Png.png"
-        },
-        {
-          "id": "VHW9Bi8jJRMz",
-          "name": "angelo_headshots_3.png",
-          "filePath": "../public/plasmic/disuko_website_retro_version/images/angeloHeadshots3Png.png"
         },
         {
           "id": "ypg2FCIu4uid",

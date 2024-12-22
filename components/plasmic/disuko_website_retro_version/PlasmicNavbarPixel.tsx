@@ -89,10 +89,10 @@ export type PlasmicNavbarPixel__OverridesType = {
   root?: Flex__<typeof NavigationBar>;
   link?: Flex__<"a"> & Partial<LinkProps>;
   home?: Flex__<"a"> & Partial<LinkProps>;
-  music?: Flex__<"a"> & Partial<LinkProps>;
-  links?: Flex__<"a"> & Partial<LinkProps>;
   portfolio?: Flex__<"a"> & Partial<LinkProps>;
+  music?: Flex__<"a"> & Partial<LinkProps>;
   merch?: Flex__<"a"> & Partial<LinkProps>;
+  links?: Flex__<"a"> & Partial<LinkProps>;
 };
 
 export interface DefaultNavbarPixelProps {
@@ -259,118 +259,8 @@ function PlasmicNavbarPixel__RenderFunc(props: {
             </PlasmicLink__>
           </Reveal>
           <Reveal
-            className={classNames("__wab_instance", sty.reveal__wsz3F)}
-            delay={200}
-            direction={"down"}
-            effect={"bounce"}
-            triggerOnce={true}
-          >
-            <PlasmicLink__
-              data-plasmic-name={"music"}
-              data-plasmic-override={overrides.music}
-              className={classNames(projectcss.all, projectcss.a, sty.music)}
-              component={Link}
-              href={`/music`}
-              platform={"nextjs"}
-              title={"music"}
-            >
-              <PlasmicImg__
-                alt={""}
-                className={classNames(sty.img__ypuC)}
-                displayHeight={"auto"}
-                displayMaxHeight={"none"}
-                displayMaxWidth={
-                  hasVariant(globalVariants, "screen", "mobileOnly")
-                    ? "5%"
-                    : "30%"
-                }
-                displayMinHeight={"0"}
-                displayMinWidth={"0"}
-                displayWidth={"auto"}
-                loading={"lazy"}
-                src={{
-                  src: "/plasmic/disuko_website_retro_version/images/musicPng3.png",
-                  fullWidth: 160,
-                  fullHeight: 150,
-                  aspectRatio: undefined
-                }}
-              />
-
-              {(
-                hasVariant(globalVariants, "screen", "mobileOnly")
-                  ? true
-                  : false
-              ) ? (
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__nk5Da
-                  )}
-                >
-                  {"Music"}
-                </div>
-              ) : null}
-            </PlasmicLink__>
-          </Reveal>
-          <Reveal
-            className={classNames("__wab_instance", sty.reveal__yZ3DQ)}
-            delay={300}
-            direction={"down"}
-            effect={"bounce"}
-            triggerOnce={true}
-          >
-            <PlasmicLink__
-              data-plasmic-name={"links"}
-              data-plasmic-override={overrides.links}
-              className={classNames(projectcss.all, projectcss.a, sty.links)}
-              component={Link}
-              href={`/links`}
-              platform={"nextjs"}
-              title={"links"}
-            >
-              <PlasmicImg__
-                alt={""}
-                className={classNames(sty.img__saGkj)}
-                displayHeight={"auto"}
-                displayMaxHeight={"none"}
-                displayMaxWidth={
-                  hasVariant(globalVariants, "screen", "mobileOnly")
-                    ? "5%"
-                    : "30%"
-                }
-                displayMinHeight={"0"}
-                displayMinWidth={"0"}
-                displayWidth={"auto"}
-                loading={"lazy"}
-                src={{
-                  src: "/plasmic/disuko_website_retro_version/images/linksPng2.png",
-                  fullWidth: 160,
-                  fullHeight: 160,
-                  aspectRatio: undefined
-                }}
-              />
-
-              {(
-                hasVariant(globalVariants, "screen", "mobileOnly")
-                  ? true
-                  : false
-              ) ? (
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__ef5AP
-                  )}
-                >
-                  {"Links"}
-                </div>
-              ) : null}
-            </PlasmicLink__>
-          </Reveal>
-          <Reveal
             className={classNames("__wab_instance", sty.reveal__omh04)}
-            delay={400}
+            delay={200}
             direction={"down"}
             effect={"bounce"}
             triggerOnce={true}
@@ -427,8 +317,63 @@ function PlasmicNavbarPixel__RenderFunc(props: {
             </PlasmicLink__>
           </Reveal>
           <Reveal
+            className={classNames("__wab_instance", sty.reveal__wsz3F)}
+            delay={300}
+            direction={"down"}
+            effect={"bounce"}
+            triggerOnce={true}
+          >
+            <PlasmicLink__
+              data-plasmic-name={"music"}
+              data-plasmic-override={overrides.music}
+              className={classNames(projectcss.all, projectcss.a, sty.music)}
+              component={Link}
+              href={`/music`}
+              platform={"nextjs"}
+              title={"music"}
+            >
+              <PlasmicImg__
+                alt={""}
+                className={classNames(sty.img__ypuC)}
+                displayHeight={"auto"}
+                displayMaxHeight={"none"}
+                displayMaxWidth={
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? "5%"
+                    : "30%"
+                }
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={"auto"}
+                loading={"lazy"}
+                src={{
+                  src: "/plasmic/disuko_website_retro_version/images/musicPng3.png",
+                  fullWidth: 160,
+                  fullHeight: 150,
+                  aspectRatio: undefined
+                }}
+              />
+
+              {(
+                hasVariant(globalVariants, "screen", "mobileOnly")
+                  ? true
+                  : false
+              ) ? (
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__nk5Da
+                  )}
+                >
+                  {"Music"}
+                </div>
+              ) : null}
+            </PlasmicLink__>
+          </Reveal>
+          <Reveal
             className={classNames("__wab_instance", sty.reveal___141ER)}
-            delay={500}
+            delay={400}
             direction={"down"}
             effect={"bounce"}
             triggerOnce={true}
@@ -481,6 +426,61 @@ function PlasmicNavbarPixel__RenderFunc(props: {
               ) : null}
             </PlasmicLink__>
           </Reveal>
+          <Reveal
+            className={classNames("__wab_instance", sty.reveal__yZ3DQ)}
+            delay={500}
+            direction={"down"}
+            effect={"bounce"}
+            triggerOnce={true}
+          >
+            <PlasmicLink__
+              data-plasmic-name={"links"}
+              data-plasmic-override={overrides.links}
+              className={classNames(projectcss.all, projectcss.a, sty.links)}
+              component={Link}
+              href={`/links`}
+              platform={"nextjs"}
+              title={"links"}
+            >
+              <PlasmicImg__
+                alt={""}
+                className={classNames(sty.img__saGkj)}
+                displayHeight={"auto"}
+                displayMaxHeight={"none"}
+                displayMaxWidth={
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? "5%"
+                    : "30%"
+                }
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={"auto"}
+                loading={"lazy"}
+                src={{
+                  src: "/plasmic/disuko_website_retro_version/images/linksPng2.png",
+                  fullWidth: 160,
+                  fullHeight: 160,
+                  aspectRatio: undefined
+                }}
+              />
+
+              {(
+                hasVariant(globalVariants, "screen", "mobileOnly")
+                  ? true
+                  : false
+              ) ? (
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__ef5AP
+                  )}
+                >
+                  {"Links"}
+                </div>
+              ) : null}
+            </PlasmicLink__>
+          </Reveal>
         </React.Fragment>
       }
       openButton={
@@ -495,13 +495,13 @@ function PlasmicNavbarPixel__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "link", "home", "music", "links", "portfolio", "merch"],
+  root: ["root", "link", "home", "portfolio", "music", "merch", "links"],
   link: ["link"],
   home: ["home"],
-  music: ["music"],
-  links: ["links"],
   portfolio: ["portfolio"],
-  merch: ["merch"]
+  music: ["music"],
+  merch: ["merch"],
+  links: ["links"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -510,10 +510,10 @@ type NodeDefaultElementType = {
   root: typeof NavigationBar;
   link: "a";
   home: "a";
-  music: "a";
-  links: "a";
   portfolio: "a";
+  music: "a";
   merch: "a";
+  links: "a";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -578,10 +578,10 @@ export const PlasmicNavbarPixel = Object.assign(
     // Helper components rendering sub-elements
     link: makeNodeComponent("link"),
     home: makeNodeComponent("home"),
-    music: makeNodeComponent("music"),
-    links: makeNodeComponent("links"),
     portfolio: makeNodeComponent("portfolio"),
+    music: makeNodeComponent("music"),
     merch: makeNodeComponent("merch"),
+    links: makeNodeComponent("links"),
 
     // Metadata about props expected for PlasmicNavbarPixel
     internalVariantProps: PlasmicNavbarPixel__VariantProps,
