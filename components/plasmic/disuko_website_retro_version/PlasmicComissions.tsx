@@ -290,7 +290,7 @@ function PlasmicComissions__RenderFunc(props: {
                     displayWidth={
                       hasVariant(globalVariants, "screen", "mobileOnly")
                         ? "325px"
-                        : "auto"
+                        : "354px"
                     }
                     loading={"lazy"}
                     src={{
@@ -329,7 +329,7 @@ function PlasmicComissions__RenderFunc(props: {
                     displayWidth={
                       hasVariant(globalVariants, "screen", "mobileOnly")
                         ? "325px"
-                        : "auto"
+                        : "354px"
                     }
                     loading={"lazy"}
                     src={{
@@ -368,7 +368,7 @@ function PlasmicComissions__RenderFunc(props: {
                     displayWidth={
                       hasVariant(globalVariants, "screen", "mobileOnly")
                         ? "325px"
-                        : "auto"
+                        : "354px"
                     }
                     loading={"lazy"}
                     src={{
@@ -421,7 +421,11 @@ function PlasmicComissions__RenderFunc(props: {
                     displayMaxWidth={"100%"}
                     displayMinHeight={"0"}
                     displayMinWidth={"0"}
-                    displayWidth={"325px"}
+                    displayWidth={
+                      hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? "325px"
+                        : "354px"
+                    }
                     loading={"lazy"}
                     src={{
                       src: "/plasmic/disuko_website_retro_version/images/toastFinalWebSizePng.png",
@@ -459,7 +463,7 @@ function PlasmicComissions__RenderFunc(props: {
                     displayWidth={
                       hasVariant(globalVariants, "screen", "mobileOnly")
                         ? "325px"
-                        : "100%"
+                        : "354px"
                     }
                     loading={"lazy"}
                     src={{
@@ -498,7 +502,7 @@ function PlasmicComissions__RenderFunc(props: {
                     displayWidth={
                       hasVariant(globalVariants, "screen", "mobileOnly")
                         ? "325px"
-                        : "100%"
+                        : "354px"
                     }
                     loading={"lazy"}
                     src={{
@@ -537,7 +541,7 @@ function PlasmicComissions__RenderFunc(props: {
                     displayWidth={
                       hasVariant(globalVariants, "screen", "mobileOnly")
                         ? "325px"
-                        : "auto"
+                        : "354px"
                     }
                     loading={"lazy"}
                     src={{
@@ -595,7 +599,7 @@ function PlasmicComissions__RenderFunc(props: {
                     displayWidth={
                       hasVariant(globalVariants, "screen", "mobileOnly")
                         ? "325px"
-                        : "auto"
+                        : "354px"
                     }
                     loading={"lazy"}
                     src={{
@@ -636,7 +640,7 @@ function PlasmicComissions__RenderFunc(props: {
                     displayWidth={
                       hasVariant(globalVariants, "screen", "mobileOnly")
                         ? "325px"
-                        : "auto"
+                        : "354px"
                     }
                     loading={"lazy"}
                     src={{
@@ -677,7 +681,7 @@ function PlasmicComissions__RenderFunc(props: {
                     displayWidth={
                       hasVariant(globalVariants, "screen", "mobileOnly")
                         ? "325px"
-                        : "auto"
+                        : "354px"
                     }
                     loading={"lazy"}
                     src={{

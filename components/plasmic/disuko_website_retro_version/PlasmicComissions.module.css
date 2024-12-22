@@ -220,6 +220,7 @@
   margin-right: 10px;
   margin-left: 10px;
   backdrop-filter: brightness(75%);
+  width: 354px;
   -webkit-backdrop-filter: brightness(75%);
 }
 .img__qfXr > picture > img {
@@ -252,6 +253,7 @@
     4px 4px 0px 0px var(--token-FYHois2LGA8g);
   margin-right: 10px;
   margin-left: 10px;
+  width: 354px;
 }
 .img__tltl1 > picture > img {
   object-fit: cover;
@@ -283,6 +285,7 @@
     4px 4px 0px 0px var(--token-FYHois2LGA8g);
   margin-right: 10px;
   margin-left: 10px;
+  width: 354px;
 }
 .img__bc6M8 > picture > img {
   object-fit: cover;
@@ -358,8 +361,8 @@
   margin-right: 10px;
   margin-left: 10px;
   height: 231px;
-  width: 325px;
   backdrop-filter: brightness(75%);
+  width: 354px;
   -webkit-backdrop-filter: brightness(75%);
 }
 .img__jGHr > picture > img {
@@ -367,6 +370,7 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .img__jGHr {
+    width: 325px;
     margin-top: calc(10px + 0px) !important;
   }
 }
@@ -391,9 +395,8 @@
     4px 4px 0px 0px var(--token-FYHois2LGA8g);
   margin-right: 10px;
   margin-left: 10px;
-  width: 100%;
+  width: 354px;
   backdrop-filter: brightness(75%);
-  min-width: 0;
   -webkit-backdrop-filter: brightness(75%);
 }
 .img___8SmNd > picture > img {
@@ -427,8 +430,7 @@
   margin-right: 10px;
   margin-left: 10px;
   height: 325px;
-  width: 100%;
-  min-width: 0;
+  width: 354px;
 }
 .img___1Aowu > picture > img {
   object-fit: cover;
@@ -460,6 +462,7 @@
     4px 4px 0px 0px var(--token-FYHois2LGA8g);
   margin-right: 10px;
   margin-left: 10px;
+  width: 354px;
 }
 .img__t9DiA > picture > img {
   object-fit: cover;
@@ -534,6 +537,7 @@
     4px 4px 0px 0px var(--token-FYHois2LGA8g);
   margin-right: 10px;
   margin-left: 10px;
+  width: 354px;
 }
 .img__qgQUs > picture > img {
   object-fit: cover;
@@ -565,6 +569,7 @@
     4px 4px 0px 0px var(--token-FYHois2LGA8g);
   margin-right: 10px;
   margin-left: 10px;
+  width: 354px;
 }
 .img__crTu > picture > img {
   object-fit: cover;
@@ -596,6 +601,7 @@
     4px 4px 0px 0px var(--token-FYHois2LGA8g);
   margin-right: 10px;
   margin-left: 10px;
+  width: 354px;
 }
 .img___1AbcC > picture > img {
   object-fit: cover;
@@ -867,6 +873,11 @@
 }
 .img__tn5Pv > picture > img {
   object-fit: cover;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .img__tn5Pv {
+    margin-top: calc(5px + 0px) !important;
+  }
 }
 .column__p1BVq {
   display: flex;
