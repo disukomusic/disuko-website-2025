@@ -289,7 +289,7 @@ function PlasmicComissions__RenderFunc(props: {
                     displayMinWidth={"0"}
                     displayWidth={
                       hasVariant(globalVariants, "screen", "mobileOnly")
-                        ? "325px"
+                        ? "100%"
                         : "354px"
                     }
                     loading={"lazy"}
@@ -328,7 +328,7 @@ function PlasmicComissions__RenderFunc(props: {
                     displayMinWidth={"0"}
                     displayWidth={
                       hasVariant(globalVariants, "screen", "mobileOnly")
-                        ? "325px"
+                        ? "100%"
                         : "354px"
                     }
                     loading={"lazy"}
@@ -367,7 +367,7 @@ function PlasmicComissions__RenderFunc(props: {
                     displayMinWidth={"0"}
                     displayWidth={
                       hasVariant(globalVariants, "screen", "mobileOnly")
-                        ? "325px"
+                        ? "100%"
                         : "354px"
                     }
                     loading={"lazy"}
@@ -379,7 +379,7 @@ function PlasmicComissions__RenderFunc(props: {
                     }}
                   />
                 }
-                windowText={"Logo + Simple Brand Kit: $80"}
+                windowText={"Logo + Simple Brand Kit: $60"}
                 windowTitle={"2D Design"}
               >
                 <div
@@ -423,7 +423,7 @@ function PlasmicComissions__RenderFunc(props: {
                     displayMinWidth={"0"}
                     displayWidth={
                       hasVariant(globalVariants, "screen", "mobileOnly")
-                        ? "325px"
+                        ? "100%"
                         : "354px"
                     }
                     loading={"lazy"}
@@ -462,7 +462,7 @@ function PlasmicComissions__RenderFunc(props: {
                     displayMinWidth={"0"}
                     displayWidth={
                       hasVariant(globalVariants, "screen", "mobileOnly")
-                        ? "325px"
+                        ? "100%"
                         : "354px"
                     }
                     loading={"lazy"}
@@ -501,7 +501,7 @@ function PlasmicComissions__RenderFunc(props: {
                     displayMinWidth={"0"}
                     displayWidth={
                       hasVariant(globalVariants, "screen", "mobileOnly")
-                        ? "325px"
+                        ? "100%"
                         : "354px"
                     }
                     loading={"lazy"}
@@ -540,7 +540,7 @@ function PlasmicComissions__RenderFunc(props: {
                     displayMinWidth={"0"}
                     displayWidth={
                       hasVariant(globalVariants, "screen", "mobileOnly")
-                        ? "325px"
+                        ? "100%"
                         : "354px"
                     }
                     loading={"lazy"}
@@ -598,7 +598,7 @@ function PlasmicComissions__RenderFunc(props: {
                     displayMinWidth={"0"}
                     displayWidth={
                       hasVariant(globalVariants, "screen", "mobileOnly")
-                        ? "325px"
+                        ? "100%"
                         : "354px"
                     }
                     loading={"lazy"}
@@ -639,7 +639,7 @@ function PlasmicComissions__RenderFunc(props: {
                     displayMinWidth={"0"}
                     displayWidth={
                       hasVariant(globalVariants, "screen", "mobileOnly")
-                        ? "325px"
+                        ? "100%"
                         : "354px"
                     }
                     loading={"lazy"}
@@ -680,7 +680,7 @@ function PlasmicComissions__RenderFunc(props: {
                     displayMinWidth={"0"}
                     displayWidth={
                       hasVariant(globalVariants, "screen", "mobileOnly")
-                        ? "325px"
+                        ? "100%"
                         : "354px"
                     }
                     loading={"lazy"}
