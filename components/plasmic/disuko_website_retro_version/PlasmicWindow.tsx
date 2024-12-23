@@ -59,6 +59,7 @@ import {
   useGlobalActions
 } from "@plasmicapp/react-web/lib/host";
 
+import { ThemeValue, useTheme } from "./PlasmicGlobalVariant__Theme"; // plasmic-import: 3K9IqsAFaaID/globalVariant
 import { useScreenVariants as useScreenVariantsdmuurUfQuA6N } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: DmuurUFQuA6N/globalVariant
 
 import "@plasmicapp/react-web/lib/plasmic.css";
@@ -72,16 +73,10 @@ import NounPixelHeart10989631SvgIcon from "./icons/PlasmicIcon__NounPixelHeart10
 
 createPlasmicElementProxy;
 
-export type PlasmicWindow__VariantMembers = {
-  windowsStyle: "windowsStyle";
-};
-export type PlasmicWindow__VariantsArgs = {
-  windowsStyle?: SingleBooleanChoiceArg<"windowsStyle">;
-};
+export type PlasmicWindow__VariantMembers = {};
+export type PlasmicWindow__VariantsArgs = {};
 type VariantPropType = keyof PlasmicWindow__VariantsArgs;
-export const PlasmicWindow__VariantProps = new Array<VariantPropType>(
-  "windowsStyle"
-);
+export const PlasmicWindow__VariantProps = new Array<VariantPropType>();
 
 export type PlasmicWindow__ArgsType = {
   windowTitle?: string;
@@ -102,7 +97,7 @@ export const PlasmicWindow__ArgProps = new Array<ArgPropType>(
 );
 
 export type PlasmicWindow__OverridesType = {
-  music?: Flex__<"a"> & Partial<LinkProps>;
+  window?: Flex__<"a"> & Partial<LinkProps>;
   xButton?: Flex__<"a"> & Partial<LinkProps>;
   svg?: Flex__<"svg">;
 };
@@ -114,7 +109,6 @@ export interface DefaultWindowProps {
   showImage?: boolean;
   windowImage?: React.ReactNode;
   children?: React.ReactNode;
-  windowsStyle?: SingleBooleanChoiceArg<"windowsStyle">;
   className?: string;
 }
 
@@ -162,32 +156,15 @@ function PlasmicWindow__RenderFunc(props: {
 
   const currentUser = useCurrentUser?.() || {};
 
-  const stateSpecs: Parameters<typeof useDollarState>[0] = React.useMemo(
-    () => [
-      {
-        path: "windowsStyle",
-        type: "private",
-        variableType: "variant",
-        initFunc: ({ $props, $state, $queries, $ctx }) => $props.windowsStyle
-      }
-    ],
-    [$props, $ctx, $refs]
-  );
-  const $state = useDollarState(stateSpecs, {
-    $props,
-    $ctx,
-    $queries: {},
-    $refs
-  });
-
   const globalVariants = ensureGlobalVariants({
+    theme: useTheme(),
     screen: useScreenVariantsdmuurUfQuA6N()
   });
 
   return (
     <PlasmicLink__
-      data-plasmic-name={"music"}
-      data-plasmic-override={overrides.music}
+      data-plasmic-name={"window"}
+      data-plasmic-override={overrides.window}
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
       className={classNames(
@@ -199,12 +176,17 @@ function PlasmicWindow__RenderFunc(props: {
         projectcss.plasmic_tokens,
         plasmic_antd_5_hostless_css.plasmic_tokens,
         plasmic_plasmic_rich_components_css.plasmic_tokens,
-        sty.music,
+        sty.window,
         {
-          [sty.musicwindowsStyle]: hasVariant(
-            $state,
-            "windowsStyle",
-            "windowsStyle"
+          [projectcss.global_theme_classic]: hasVariant(
+            globalVariants,
+            "theme",
+            "classic"
+          ),
+          [sty.windowglobal_theme_classic]: hasVariant(
+            globalVariants,
+            "theme",
+            "classic"
           )
         }
       )}
@@ -226,10 +208,10 @@ function PlasmicWindow__RenderFunc(props: {
     >
       <div
         className={classNames(projectcss.all, sty.freeBox__jCwp4, {
-          [sty.freeBoxwindowsStyle__jCwp4860Cd]: hasVariant(
-            $state,
-            "windowsStyle",
-            "windowsStyle"
+          [sty.freeBoxglobal_theme_classic__jCwp4ENktM]: hasVariant(
+            globalVariants,
+            "theme",
+            "classic"
           )
         })}
       >
@@ -239,10 +221,10 @@ function PlasmicWindow__RenderFunc(props: {
             projectcss.__wab_text,
             sty.text__rogWw,
             {
-              [sty.textwindowsStyle__rogWw860Cd]: hasVariant(
-                $state,
-                "windowsStyle",
-                "windowsStyle"
+              [sty.textglobal_theme_classic__rogWweNktM]: hasVariant(
+                globalVariants,
+                "theme",
+                "classic"
               )
             }
           )}
@@ -267,10 +249,10 @@ function PlasmicWindow__RenderFunc(props: {
           data-plasmic-name={"xButton"}
           data-plasmic-override={overrides.xButton}
           className={classNames(projectcss.all, projectcss.a, sty.xButton, {
-            [sty.xButtonwindowsStyle]: hasVariant(
-              $state,
-              "windowsStyle",
-              "windowsStyle"
+            [sty.xButtonglobal_theme_classic]: hasVariant(
+              globalVariants,
+              "theme",
+              "classic"
             )
           })}
           component={Link}
@@ -315,10 +297,10 @@ function PlasmicWindow__RenderFunc(props: {
             data-plasmic-name={"svg"}
             data-plasmic-override={overrides.svg}
             className={classNames(projectcss.all, sty.svg, {
-              [sty.svgwindowsStyle]: hasVariant(
-                $state,
-                "windowsStyle",
-                "windowsStyle"
+              [sty.svgglobal_theme_classic]: hasVariant(
+                globalVariants,
+                "theme",
+                "classic"
               )
             })}
             role={"img"}
@@ -329,10 +311,10 @@ function PlasmicWindow__RenderFunc(props: {
         as={"div"}
         hasGap={true}
         className={classNames(projectcss.all, sty.freeBox__p2PhV, {
-          [sty.freeBoxwindowsStyle__p2PhV860Cd]: hasVariant(
-            $state,
-            "windowsStyle",
-            "windowsStyle"
+          [sty.freeBoxglobal_theme_classic__p2PhVeNktM]: hasVariant(
+            globalVariants,
+            "theme",
+            "classic"
           )
         })}
       >
@@ -384,10 +366,10 @@ function PlasmicWindow__RenderFunc(props: {
             projectcss.__wab_text,
             sty.text__xZr7L,
             {
-              [sty.textwindowsStyle__xZr7L860Cd]: hasVariant(
-                $state,
-                "windowsStyle",
-                "windowsStyle"
+              [sty.textglobal_theme_classic__xZr7LeNktM]: hasVariant(
+                globalVariants,
+                "theme",
+                "classic"
               )
             }
           )}
@@ -420,7 +402,7 @@ function PlasmicWindow__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  music: ["music", "xButton", "svg"],
+  window: ["window", "xButton", "svg"],
   xButton: ["xButton", "svg"],
   svg: ["svg"]
 } as const;
@@ -428,7 +410,7 @@ type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
-  music: "a";
+  window: "a";
   xButton: "a";
   svg: "svg";
 };
@@ -480,7 +462,7 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       forNode: nodeName
     });
   };
-  if (nodeName === "music") {
+  if (nodeName === "window") {
     func.displayName = "PlasmicWindow";
   } else {
     func.displayName = `PlasmicWindow.${nodeName}`;
@@ -490,7 +472,7 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
 
 export const PlasmicWindow = Object.assign(
   // Top-level PlasmicWindow renders the root element
-  makeNodeComponent("music"),
+  makeNodeComponent("window"),
   {
     // Helper components rendering sub-elements
     xButton: makeNodeComponent("xButton"),

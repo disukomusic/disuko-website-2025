@@ -31,6 +31,106 @@
       }
     },
     {
+      "name": "Classic Active Title",
+      "type": "color",
+      "value": "#FFFFFF",
+      "category": "color",
+      "meta": {
+        "projectId": "x4VgG6kzZCVuaqknYN7tgc",
+        "id": "Bn-ks1hpMV9J"
+      }
+    },
+    {
+      "name": "Classic Active Titlebar",
+      "type": "color",
+      "value": "#00007B",
+      "category": "color",
+      "meta": {
+        "projectId": "x4VgG6kzZCVuaqknYN7tgc",
+        "id": "atFp5Nsxdb73"
+      }
+    },
+    {
+      "name": "Classic Box Shadow BG",
+      "type": "color",
+      "value": "#AAAAAA",
+      "category": "color",
+      "meta": {
+        "projectId": "x4VgG6kzZCVuaqknYN7tgc",
+        "id": "u2rbquIz9Y0U"
+      }
+    },
+    {
+      "name": "Classic Highlight",
+      "type": "color",
+      "value": "#FFFFFF",
+      "category": "color",
+      "meta": {
+        "projectId": "x4VgG6kzZCVuaqknYN7tgc",
+        "id": "24x9Uc_JThUA"
+      }
+    },
+    {
+      "name": "Classic Inactive Title",
+      "type": "color",
+      "value": "#BCBCBC",
+      "category": "color",
+      "meta": {
+        "projectId": "x4VgG6kzZCVuaqknYN7tgc",
+        "id": "ct2uWllcH5tV"
+      }
+    },
+    {
+      "name": "Classic Inactive Titlebar",
+      "type": "color",
+      "value": "#7B7B7B",
+      "category": "color",
+      "meta": {
+        "projectId": "x4VgG6kzZCVuaqknYN7tgc",
+        "id": "ZwQ71qulH0e5"
+      }
+    },
+    {
+      "name": "Classic Shadow",
+      "type": "color",
+      "value": "#7D7D7D",
+      "category": "color",
+      "meta": {
+        "projectId": "x4VgG6kzZCVuaqknYN7tgc",
+        "id": "K_FDgNby8UmH"
+      }
+    },
+    {
+      "name": "Classic Teal",
+      "type": "color",
+      "value": "#007B7B",
+      "category": "color",
+      "meta": {
+        "projectId": "x4VgG6kzZCVuaqknYN7tgc",
+        "id": "2cxCto4hpENi"
+      }
+    },
+    {
+      "name": "ClassicBG",
+      "type": "color",
+      "value": "#BDBDBD",
+      "category": "color",
+      "meta": {
+        "projectId": "x4VgG6kzZCVuaqknYN7tgc",
+        "id": "4IQYJ82NsyMZ"
+      }
+    },
+    {
+      "name": "ClassicText",
+      "type": "color",
+      "value": "#000000",
+      "category": "color",
+      "meta": {
+        "projectId": "x4VgG6kzZCVuaqknYN7tgc",
+        "id": "lpL2YkgMM450"
+      }
+    },
+    {
       "name": "Dark Background",
       "type": "color",
       "value": "#32283782",

@@ -62,10 +62,10 @@ import * as plasmicAuth from "@plasmicapp/react-web/lib/auth";
 import { usePlasmicDataSourceContext } from "@plasmicapp/data-sources-context";
 
 import Navbar from "../../Navbar"; // plasmic-import: 5THU1wffFibB/component
-import Window from "../../Window"; // plasmic-import: BWjgdOwFY_OO/component
 import YouTube from "@plasmicpkgs/react-youtube";
 import WindowButton from "../../WindowButton"; // plasmic-import: KZYdo-R8GYAn/component
 
+import { ThemeValue, useTheme } from "./PlasmicGlobalVariant__Theme"; // plasmic-import: 3K9IqsAFaaID/globalVariant
 import { useScreenVariants as useScreenVariantsdmuurUfQuA6N } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: DmuurUFQuA6N/globalVariant
 
 import "@plasmicapp/react-web/lib/plasmic.css";
@@ -89,7 +89,6 @@ export const PlasmicPortfolioFilm__ArgProps = new Array<ArgPropType>();
 export type PlasmicPortfolioFilm__OverridesType = {
   root?: Flex__<"div">;
   navbar?: Flex__<typeof Navbar>;
-  window?: Flex__<typeof Window>;
   windowButton?: Flex__<typeof WindowButton>;
 };
 
@@ -136,6 +135,7 @@ function PlasmicPortfolioFilm__RenderFunc(props: {
   const currentUser = useCurrentUser?.() || {};
 
   const globalVariants = ensureGlobalVariants({
+    theme: useTheme(),
     screen: useScreenVariantsdmuurUfQuA6N()
   });
 
@@ -191,7 +191,14 @@ function PlasmicPortfolioFilm__RenderFunc(props: {
             projectcss.plasmic_tokens,
             plasmic_antd_5_hostless_css.plasmic_tokens,
             plasmic_plasmic_rich_components_css.plasmic_tokens,
-            sty.root
+            sty.root,
+            {
+              [sty.rootglobal_theme_classic]: hasVariant(
+                globalVariants,
+                "theme",
+                "classic"
+              )
+            }
           )}
         >
           <Navbar
@@ -200,38 +207,15 @@ function PlasmicPortfolioFilm__RenderFunc(props: {
             className={classNames("__wab_instance", sty.navbar)}
           />
 
-          <Window
-            data-plasmic-name={"window"}
-            data-plasmic-override={overrides.window}
-            className={classNames("__wab_instance", sty.window)}
-            windowText={"Film and YouTube Page Under Construction!"}
-            windowTitle={"Notice:"}
-          />
-
           <div
-            className={classNames(
-              projectcss.all,
-              projectcss.__wab_text,
-              sty.text__soVfK
-            )}
+            className={classNames(projectcss.all, sty.freeBox__pOeY, {
+              [sty.freeBoxglobal_theme_classic__pOeYeNktM]: hasVariant(
+                globalVariants,
+                "theme",
+                "classic"
+              )
+            })}
           >
-            {"Latest Video:"}
-          </div>
-          <YouTube
-            className={classNames("__wab_instance", sty.youTube__pbOqu)}
-            videoId={"IbgGUF6DuZw"}
-          />
-
-          <div
-            className={classNames(
-              projectcss.all,
-              projectcss.__wab_text,
-              sty.text__cQvt2
-            )}
-          >
-            {"Featured Videos:"}
-          </div>
-          <div className={classNames(projectcss.all, sty.freeBox__pOeY)}>
             <div
               className={classNames(
                 projectcss.all,
@@ -349,9 +333,8 @@ function PlasmicPortfolioFilm__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "navbar", "window", "windowButton"],
+  root: ["root", "navbar", "windowButton"],
   navbar: ["navbar"],
-  window: ["window"],
   windowButton: ["windowButton"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -360,7 +343,6 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   navbar: typeof Navbar;
-  window: typeof Window;
   windowButton: typeof WindowButton;
 };
 
@@ -450,7 +432,6 @@ export const PlasmicPortfolioFilm = Object.assign(
   {
     // Helper components rendering sub-elements
     navbar: makeNodeComponent("navbar"),
-    window: makeNodeComponent("window"),
     windowButton: makeNodeComponent("windowButton"),
 
     // Metadata about props expected for PlasmicPortfolioFilm

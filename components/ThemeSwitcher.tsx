@@ -2,9 +2,9 @@
 // This file is owned by you, feel free to edit as you see fit.
 import * as React from "react";
 import {
-  PlasmicDisukoPandaInteractive,
-  DefaultDisukoPandaInteractiveProps
-} from "./plasmic/disuko_website_retro_version/PlasmicDisukoPandaInteractive";
+  PlasmicThemeSwitcher,
+  DefaultThemeSwitcherProps
+} from "./plasmic/disuko_website_retro_version/PlasmicThemeSwitcher";
 import { HTMLElementRefOf } from "@plasmicapp/react-web";
 
 // Your component props start with props for variants and slots you defined
@@ -14,36 +14,35 @@ import { HTMLElementRefOf } from "@plasmicapp/react-web";
 // If you don't want to expose certain variants or slots as a prop, you can use
 // Omit to hide them:
 //
-// interface DisukoPandaInteractiveProps extends Omit<DefaultDisukoPandaInteractiveProps, "hideProps1"|"hideProp2"> {
+// interface ThemeSwitcherProps extends Omit<DefaultThemeSwitcherProps, "hideProps1"|"hideProp2"> {
 //   // etc.
 // }
 //
-// You can also stop extending from DefaultDisukoPandaInteractiveProps altogether and have
+// You can also stop extending from DefaultThemeSwitcherProps altogether and have
 // total control over the props for your component.
-export interface DisukoPandaInteractiveProps
-  extends DefaultDisukoPandaInteractiveProps {}
+export interface ThemeSwitcherProps extends DefaultThemeSwitcherProps {}
 
-function DisukoPandaInteractive_(
-  props: DisukoPandaInteractiveProps,
+function ThemeSwitcher_(
+  props: ThemeSwitcherProps,
   ref: HTMLElementRefOf<"div">
 ) {
-  // Use PlasmicDisukoPandaInteractive to render this component as it was
+  // Use PlasmicThemeSwitcher to render this component as it was
   // designed in Plasmic, by activating the appropriate variants,
   // attaching the appropriate event handlers, etc.  You
   // can also install whatever React hooks you need here to manage state or
   // fetch data.
   //
-  // Props you can pass into PlasmicDisukoPandaInteractive are:
+  // Props you can pass into PlasmicThemeSwitcher are:
   // 1. Variants you want to activate,
   // 2. Contents for slots you want to fill,
   // 3. Overrides for any named node in the component to attach behavior and data,
   // 4. Props to set on the root node.
   //
-  // By default, we are just piping all DisukoPandaInteractiveProps here, but feel free
+  // By default, we are just piping all ThemeSwitcherProps here, but feel free
   // to do whatever works for you.
 
-  return <PlasmicDisukoPandaInteractive root={{ ref }} {...props} />;
+  return <PlasmicThemeSwitcher root={{ ref }} {...props} />;
 }
 
-const DisukoPandaInteractive = React.forwardRef(DisukoPandaInteractive_);
-export default DisukoPandaInteractive;
+const ThemeSwitcher = React.forwardRef(ThemeSwitcher_);
+export default ThemeSwitcher;

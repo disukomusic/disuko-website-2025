@@ -59,6 +59,7 @@ import {
   useGlobalActions
 } from "@plasmicapp/react-web/lib/host";
 
+import { ThemeValue, useTheme } from "./PlasmicGlobalVariant__Theme"; // plasmic-import: 3K9IqsAFaaID/globalVariant
 import { useScreenVariants as useScreenVariantsdmuurUfQuA6N } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: DmuurUFQuA6N/globalVariant
 
 import "@plasmicapp/react-web/lib/plasmic.css";
@@ -151,6 +152,7 @@ function PlasmicWindowButton__RenderFunc(props: {
   const currentUser = useCurrentUser?.() || {};
 
   const globalVariants = ensureGlobalVariants({
+    theme: useTheme(),
     screen: useScreenVariantsdmuurUfQuA6N()
   });
 
@@ -169,7 +171,19 @@ function PlasmicWindowButton__RenderFunc(props: {
         projectcss.plasmic_tokens,
         plasmic_antd_5_hostless_css.plasmic_tokens,
         plasmic_plasmic_rich_components_css.plasmic_tokens,
-        sty.button
+        sty.button,
+        {
+          [projectcss.global_theme_classic]: hasVariant(
+            globalVariants,
+            "theme",
+            "classic"
+          ),
+          [sty.buttonglobal_theme_classic]: hasVariant(
+            globalVariants,
+            "theme",
+            "classic"
+          )
+        }
       )}
       component={Link}
       href={args.link}
@@ -188,7 +202,15 @@ function PlasmicWindowButton__RenderFunc(props: {
         }
       })()}
     >
-      <div className={classNames(projectcss.all, sty.freeBox__pw2SB)}>
+      <div
+        className={classNames(projectcss.all, sty.freeBox__pw2SB, {
+          [sty.freeBoxglobal_theme_classic__pw2SBeNktM]: hasVariant(
+            globalVariants,
+            "theme",
+            "classic"
+          )
+        })}
+      >
         <div className={classNames(projectcss.all, sty.freeBox__imu2C)}>
           {renderPlasmicSlot({
             defaultContents: (

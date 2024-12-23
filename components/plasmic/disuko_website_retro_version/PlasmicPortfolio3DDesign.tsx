@@ -63,10 +63,9 @@ import { usePlasmicDataSourceContext } from "@plasmicapp/data-sources-context";
 
 import Navbar from "../../Navbar"; // plasmic-import: 5THU1wffFibB/component
 import WindowButton from "../../WindowButton"; // plasmic-import: KZYdo-R8GYAn/component
-import Multiwindow from "../../Multiwindow"; // plasmic-import: agRDam8zA0LH/component
+import Window from "../../Window"; // plasmic-import: BWjgdOwFY_OO/component
 import { SliderWrapper } from "@plasmicpkgs/react-slick";
 import { sliderHelpers as SliderWrapper_Helpers } from "@plasmicpkgs/react-slick";
-import Window from "../../Window"; // plasmic-import: BWjgdOwFY_OO/component
 
 import { useScreenVariants as useScreenVariantsdmuurUfQuA6N } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: DmuurUFQuA6N/globalVariant
 
@@ -93,8 +92,6 @@ export type PlasmicPortfolio3DDesign__OverridesType = {
   _3DDesign?: Flex__<"div">;
   navbar?: Flex__<typeof Navbar>;
   windowButton?: Flex__<typeof WindowButton>;
-  multiwindow?: Flex__<typeof Multiwindow>;
-  sliderCarousel?: Flex__<typeof SliderWrapper>;
   imageWindow?: Flex__<"div">;
   imageWindow2?: Flex__<"div">;
   imageWindow3?: Flex__<"div">;
@@ -146,15 +143,6 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
 
   const stateSpecs: Parameters<typeof useDollarState>[0] = React.useMemo(
     () => [
-      {
-        path: "sliderCarousel.currentSlide",
-        type: "private",
-        variableType: "number",
-        initFunc: ({ $props, $state, $queries, $ctx }) => 0,
-
-        refName: "sliderCarousel",
-        onMutate: generateOnMutateForSpec("currentSlide", SliderWrapper_Helpers)
-      },
       {
         path: "cad.currentSlide",
         type: "private",
@@ -249,186 +237,6 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
           </div>
         </WindowButton>
         <div className={classNames(projectcss.all, sty.freeBox__rhhmw)}>
-          <Multiwindow
-            data-plasmic-name={"multiwindow"}
-            data-plasmic-override={overrides.multiwindow}
-            className={classNames("__wab_instance", sty.multiwindow)}
-            show1Image={false}
-            show2Image={true}
-            window2Text={``}
-            window2Title={"Blender Renders"}
-            windowImage2={
-              <React.Fragment>
-                <PlasmicImg__
-                  alt={""}
-                  className={classNames(sty.img__nZTm)}
-                  displayHeight={"auto"}
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={"100%"}
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={"auto"}
-                  loading={"lazy"}
-                  src={{
-                    src: "/plasmic/disuko_website_retro_version/images/frogWebp.webp",
-                    fullWidth: 256,
-                    fullHeight: 189,
-                    aspectRatio: undefined
-                  }}
-                />
-
-                {(() => {
-                  const child$Props = {
-                    arrows: false,
-                    autoplay: true,
-                    autoplaySpeed: 10,
-                    beforeChange: async (...eventArgs: any) => {
-                      generateStateOnChangePropForCodeComponents(
-                        $state,
-                        "currentSlide",
-                        ["sliderCarousel", "currentSlide"],
-                        SliderWrapper_Helpers
-                      ).apply(null, eventArgs);
-                    },
-                    centerMode: true,
-                    centerPadding: "0",
-                    className: classNames("__wab_instance", sty.sliderCarousel),
-                    cssEase: "ease",
-                    dots: false,
-                    initialSlide: generateStateValueProp($state, [
-                      "sliderCarousel",
-                      "currentSlide"
-                    ]),
-                    ref: ref => {
-                      $refs["sliderCarousel"] = ref;
-                    },
-                    sliderScopeClassName: sty["sliderCarousel__slider"],
-                    speed: 2500,
-                    variableWidth: false,
-                    vertical: false
-                  };
-                  initializeCodeComponentStates(
-                    $state,
-                    [
-                      {
-                        name: "currentSlide",
-                        plasmicStateName: "sliderCarousel.currentSlide"
-                      }
-                    ],
-                    [],
-                    SliderWrapper_Helpers ?? {},
-                    child$Props
-                  );
-
-                  return (
-                    <SliderWrapper
-                      data-plasmic-name={"sliderCarousel"}
-                      data-plasmic-override={overrides.sliderCarousel}
-                      {...child$Props}
-                    >
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__srp9D
-                        )}
-                      >
-                        <PlasmicImg__
-                          alt={""}
-                          className={classNames(sty.img__ig7F)}
-                          displayHeight={"auto"}
-                          displayMaxHeight={"none"}
-                          displayMaxWidth={"100%"}
-                          displayMinHeight={"0"}
-                          displayMinWidth={"0"}
-                          displayWidth={"auto"}
-                          src={{
-                            src: "/plasmic/disuko_website_retro_version/images/teacupFrogTransparentAdjustedWebSizePng.png",
-                            fullWidth: 768,
-                            fullHeight: 768,
-                            aspectRatio: undefined
-                          }}
-                        />
-                      </div>
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__gh6X0
-                        )}
-                      >
-                        <PlasmicImg__
-                          alt={""}
-                          className={classNames(sty.img__qdppE)}
-                          displayHeight={"auto"}
-                          displayMaxHeight={"none"}
-                          displayMaxWidth={"100%"}
-                          displayMinHeight={"0"}
-                          displayMinWidth={"0"}
-                          displayWidth={"auto"}
-                          src={{
-                            src: "/plasmic/disuko_website_retro_version/images/strawberryMilkFullTransparentWebsizeWebSizePng.png",
-                            fullWidth: 768,
-                            fullHeight: 768,
-                            aspectRatio: undefined
-                          }}
-                        />
-                      </div>
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__siEmf
-                        )}
-                      >
-                        <PlasmicImg__
-                          alt={""}
-                          className={classNames(sty.img___5ZOs6)}
-                          displayHeight={"auto"}
-                          displayMaxHeight={"none"}
-                          displayMaxWidth={"100%"}
-                          displayMinHeight={"0"}
-                          displayMinWidth={"0"}
-                          displayWidth={"auto"}
-                          src={{
-                            src: "/plasmic/disuko_website_retro_version/images/toastFinalWebSizePng.png",
-                            fullWidth: 768,
-                            fullHeight: 768,
-                            aspectRatio: undefined
-                          }}
-                        />
-                      </div>
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__hq170
-                        )}
-                      >
-                        <PlasmicImg__
-                          alt={""}
-                          className={classNames(sty.img__wyykm)}
-                          displayHeight={"auto"}
-                          displayMaxHeight={"none"}
-                          displayMaxWidth={"100%"}
-                          displayMinHeight={"0"}
-                          displayMinWidth={"0"}
-                          displayWidth={"auto"}
-                          src={{
-                            src: "/plasmic/disuko_website_retro_version/images/windows7MyComputerIconOvergrownWebSizePng.png",
-                            fullWidth: 768,
-                            fullHeight: 768,
-                            aspectRatio: undefined
-                          }}
-                        />
-                      </div>
-                    </SliderWrapper>
-                  );
-                })()}
-              </React.Fragment>
-            }
-            windowText={
-              "I create Non Photorealistic Designs using Blender's Shader Nodes & Grease Pencil!"
-            }
-            windowTitle={"3D Design"}
-          />
-
           <PlasmicImg__
             alt={""}
             className={classNames(sty.img___2UtR)}
@@ -973,8 +781,6 @@ const PlasmicDescendants = {
     "_3DDesign",
     "navbar",
     "windowButton",
-    "multiwindow",
-    "sliderCarousel",
     "imageWindow",
     "imageWindow2",
     "imageWindow3",
@@ -983,8 +789,6 @@ const PlasmicDescendants = {
   ],
   navbar: ["navbar"],
   windowButton: ["windowButton"],
-  multiwindow: ["multiwindow", "sliderCarousel"],
-  sliderCarousel: ["sliderCarousel"],
   imageWindow: ["imageWindow"],
   imageWindow2: ["imageWindow2"],
   imageWindow3: ["imageWindow3"],
@@ -998,8 +802,6 @@ type NodeDefaultElementType = {
   _3DDesign: "div";
   navbar: typeof Navbar;
   windowButton: typeof WindowButton;
-  multiwindow: typeof Multiwindow;
-  sliderCarousel: typeof SliderWrapper;
   imageWindow: "div";
   imageWindow2: "div";
   imageWindow3: "div";
@@ -1094,8 +896,6 @@ export const PlasmicPortfolio3DDesign = Object.assign(
     // Helper components rendering sub-elements
     navbar: makeNodeComponent("navbar"),
     windowButton: makeNodeComponent("windowButton"),
-    multiwindow: makeNodeComponent("multiwindow"),
-    sliderCarousel: makeNodeComponent("sliderCarousel"),
     imageWindow: makeNodeComponent("imageWindow"),
     imageWindow2: makeNodeComponent("imageWindow2"),
     imageWindow3: makeNodeComponent("imageWindow3"),

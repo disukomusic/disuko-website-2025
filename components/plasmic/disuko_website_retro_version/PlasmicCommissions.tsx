@@ -65,6 +65,7 @@ import Navbar from "../../Navbar"; // plasmic-import: 5THU1wffFibB/component
 import WindowButton from "../../WindowButton"; // plasmic-import: KZYdo-R8GYAn/component
 import Window from "../../Window"; // plasmic-import: BWjgdOwFY_OO/component
 
+import { ThemeValue, useTheme } from "./PlasmicGlobalVariant__Theme"; // plasmic-import: 3K9IqsAFaaID/globalVariant
 import { useScreenVariants as useScreenVariantsdmuurUfQuA6N } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: DmuurUFQuA6N/globalVariant
 
 import "@plasmicapp/react-web/lib/plasmic.css";
@@ -134,6 +135,7 @@ function PlasmicCommissions__RenderFunc(props: {
   const currentUser = useCurrentUser?.() || {};
 
   const globalVariants = ensureGlobalVariants({
+    theme: useTheme(),
     screen: useScreenVariantsdmuurUfQuA6N()
   });
 
@@ -193,7 +195,19 @@ function PlasmicCommissions__RenderFunc(props: {
           projectcss.plasmic_tokens,
           plasmic_antd_5_hostless_css.plasmic_tokens,
           plasmic_plasmic_rich_components_css.plasmic_tokens,
-          sty.root
+          sty.root,
+          {
+            [projectcss.global_theme_classic]: hasVariant(
+              globalVariants,
+              "theme",
+              "classic"
+            ),
+            [sty.rootglobal_theme_classic]: hasVariant(
+              globalVariants,
+              "theme",
+              "classic"
+            )
+          }
         )}
       >
         <Navbar
@@ -235,7 +249,14 @@ function PlasmicCommissions__RenderFunc(props: {
               className={classNames(
                 projectcss.all,
                 projectcss.__wab_text,
-                sty.text__nmYig
+                sty.text__nmYig,
+                {
+                  [sty.textglobal_theme_classic__nmYiGeNktM]: hasVariant(
+                    globalVariants,
+                    "theme",
+                    "classic"
+                  )
+                }
               )}
             >
               {"Request Form + Info"}
@@ -245,7 +266,14 @@ function PlasmicCommissions__RenderFunc(props: {
             className={classNames(
               projectcss.all,
               projectcss.__wab_text,
-              sty.text__za4GN
+              sty.text__za4GN,
+              {
+                [sty.textglobal_theme_classic__za4GNeNktM]: hasVariant(
+                  globalVariants,
+                  "theme",
+                  "classic"
+                )
+              }
             )}
           >
             {"Pricing Estimates + Basic Details"}
@@ -264,7 +292,14 @@ function PlasmicCommissions__RenderFunc(props: {
                 className={classNames(
                   projectcss.all,
                   projectcss.__wab_text,
-                  sty.text__yhfEx
+                  sty.text__yhfEx,
+                  {
+                    [sty.textglobal_theme_classic__yhfEXeNktM]: hasVariant(
+                      globalVariants,
+                      "theme",
+                      "classic"
+                    )
+                  }
                 )}
               >
                 {"2D Design"}
@@ -275,7 +310,13 @@ function PlasmicCommissions__RenderFunc(props: {
                 windowImage={
                   <PlasmicImg__
                     alt={""}
-                    className={classNames(sty.img__qfXr)}
+                    className={classNames(sty.img__qfXr, {
+                      [sty.imgglobal_theme_classic__qfXrENktM]: hasVariant(
+                        globalVariants,
+                        "theme",
+                        "classic"
+                      )
+                    })}
                     displayHeight={"auto"}
                     displayMaxHeight={"none"}
                     displayMaxWidth={"100%"}
@@ -302,7 +343,14 @@ function PlasmicCommissions__RenderFunc(props: {
                   className={classNames(
                     projectcss.all,
                     projectcss.__wab_text,
-                    sty.text__bHG
+                    sty.text__bHG,
+                    {
+                      [sty.textglobal_theme_classic__bHGeNktM]: hasVariant(
+                        globalVariants,
+                        "theme",
+                        "classic"
+                      )
+                    }
                   )}
                 >
                   {"Social Media Icon, Sticker Design, Game Logo, etc."}
@@ -314,7 +362,13 @@ function PlasmicCommissions__RenderFunc(props: {
                 windowImage={
                   <PlasmicImg__
                     alt={""}
-                    className={classNames(sty.img__tltl1)}
+                    className={classNames(sty.img__tltl1, {
+                      [sty.imgglobal_theme_classic__tltl1ENktM]: hasVariant(
+                        globalVariants,
+                        "theme",
+                        "classic"
+                      )
+                    })}
                     displayHeight={"auto"}
                     displayMaxHeight={"none"}
                     displayMaxWidth={"100%"}
@@ -341,7 +395,14 @@ function PlasmicCommissions__RenderFunc(props: {
                   className={classNames(
                     projectcss.all,
                     projectcss.__wab_text,
-                    sty.text__aAapR
+                    sty.text__aAapR,
+                    {
+                      [sty.textglobal_theme_classic__aAapReNktM]: hasVariant(
+                        globalVariants,
+                        "theme",
+                        "classic"
+                      )
+                    }
                   )}
                 >
                   {"Music Event Poster, Poster Design for Printing"}
@@ -353,7 +414,13 @@ function PlasmicCommissions__RenderFunc(props: {
                 windowImage={
                   <PlasmicImg__
                     alt={""}
-                    className={classNames(sty.img__bc6M8)}
+                    className={classNames(sty.img__bc6M8, {
+                      [sty.imgglobal_theme_classic__bc6M8ENktM]: hasVariant(
+                        globalVariants,
+                        "theme",
+                        "classic"
+                      )
+                    })}
                     displayHeight={"auto"}
                     displayMaxHeight={"none"}
                     displayMaxWidth={"100%"}
@@ -380,7 +447,14 @@ function PlasmicCommissions__RenderFunc(props: {
                   className={classNames(
                     projectcss.all,
                     projectcss.__wab_text,
-                    sty.text__exCeu
+                    sty.text__exCeu,
+                    {
+                      [sty.textglobal_theme_classic__exCeueNktM]: hasVariant(
+                        globalVariants,
+                        "theme",
+                        "classic"
+                      )
+                    }
                   )}
                 >
                   {
@@ -398,7 +472,14 @@ function PlasmicCommissions__RenderFunc(props: {
                 className={classNames(
                   projectcss.all,
                   projectcss.__wab_text,
-                  sty.text__kZp8C
+                  sty.text__kZp8C,
+                  {
+                    [sty.textglobal_theme_classic__kZp8CeNktM]: hasVariant(
+                      globalVariants,
+                      "theme",
+                      "classic"
+                    )
+                  }
                 )}
               >
                 {"3D Design"}
@@ -409,7 +490,13 @@ function PlasmicCommissions__RenderFunc(props: {
                 windowImage={
                   <PlasmicImg__
                     alt={""}
-                    className={classNames(sty.img__jGHr)}
+                    className={classNames(sty.img__jGHr, {
+                      [sty.imgglobal_theme_classic__jGHreNktM]: hasVariant(
+                        globalVariants,
+                        "theme",
+                        "classic"
+                      )
+                    })}
                     displayHeight={"231px"}
                     displayMaxHeight={"none"}
                     displayMaxWidth={"100%"}
@@ -436,7 +523,14 @@ function PlasmicCommissions__RenderFunc(props: {
                   className={classNames(
                     projectcss.all,
                     projectcss.__wab_text,
-                    sty.text__ct6M0
+                    sty.text__ct6M0,
+                    {
+                      [sty.textglobal_theme_classic__ct6M0ENktM]: hasVariant(
+                        globalVariants,
+                        "theme",
+                        "classic"
+                      )
+                    }
                   )}
                 >
                   {"Simple Character, Object"}
@@ -448,7 +542,13 @@ function PlasmicCommissions__RenderFunc(props: {
                 windowImage={
                   <PlasmicImg__
                     alt={""}
-                    className={classNames(sty.img___8SmNd)}
+                    className={classNames(sty.img___8SmNd, {
+                      [sty.imgglobal_theme_classic___8SmNdeNktM]: hasVariant(
+                        globalVariants,
+                        "theme",
+                        "classic"
+                      )
+                    })}
                     displayHeight={"auto"}
                     displayMaxHeight={"none"}
                     displayMaxWidth={"100%"}
@@ -475,7 +575,14 @@ function PlasmicCommissions__RenderFunc(props: {
                   className={classNames(
                     projectcss.all,
                     projectcss.__wab_text,
-                    sty.text__kfdg
+                    sty.text__kfdg,
+                    {
+                      [sty.textglobal_theme_classic__kfdgENktM]: hasVariant(
+                        globalVariants,
+                        "theme",
+                        "classic"
+                      )
+                    }
                   )}
                 >
                   {"Simple Character, Simple Environment, 1-2 Props"}
@@ -487,7 +594,13 @@ function PlasmicCommissions__RenderFunc(props: {
                 windowImage={
                   <PlasmicImg__
                     alt={""}
-                    className={classNames(sty.img___1Aowu)}
+                    className={classNames(sty.img___1Aowu, {
+                      [sty.imgglobal_theme_classic___1AowueNktM]: hasVariant(
+                        globalVariants,
+                        "theme",
+                        "classic"
+                      )
+                    })}
                     displayHeight={"325px"}
                     displayMaxHeight={"none"}
                     displayMaxWidth={"100%"}
@@ -514,7 +627,14 @@ function PlasmicCommissions__RenderFunc(props: {
                   className={classNames(
                     projectcss.all,
                     projectcss.__wab_text,
-                    sty.text__eytyP
+                    sty.text__eytyP,
+                    {
+                      [sty.textglobal_theme_classic__eytyPeNktM]: hasVariant(
+                        globalVariants,
+                        "theme",
+                        "classic"
+                      )
+                    }
                   )}
                 >
                   {"Full Background, Many Props, Simple Character"}
@@ -526,7 +646,13 @@ function PlasmicCommissions__RenderFunc(props: {
                 windowImage={
                   <PlasmicImg__
                     alt={""}
-                    className={classNames(sty.img__t9DiA)}
+                    className={classNames(sty.img__t9DiA, {
+                      [sty.imgglobal_theme_classic__t9DiAeNktM]: hasVariant(
+                        globalVariants,
+                        "theme",
+                        "classic"
+                      )
+                    })}
                     displayHeight={"auto"}
                     displayMaxHeight={"none"}
                     displayMaxWidth={"100%"}
@@ -555,7 +681,14 @@ function PlasmicCommissions__RenderFunc(props: {
                   className={classNames(
                     projectcss.all,
                     projectcss.__wab_text,
-                    sty.text__bdJBs
+                    sty.text__bdJBs,
+                    {
+                      [sty.textglobal_theme_classic__bdJBseNktM]: hasVariant(
+                        globalVariants,
+                        "theme",
+                        "classic"
+                      )
+                    }
                   )}
                 >
                   {
@@ -567,13 +700,26 @@ function PlasmicCommissions__RenderFunc(props: {
             <Stack__
               as={"div"}
               hasGap={true}
-              className={classNames(projectcss.all, sty.column__aScra)}
+              className={classNames(projectcss.all, sty.column__aScra, {
+                [sty.columnglobal_theme_classic__aScraeNktM]: hasVariant(
+                  globalVariants,
+                  "theme",
+                  "classic"
+                )
+              })}
             >
               <div
                 className={classNames(
                   projectcss.all,
                   projectcss.__wab_text,
-                  sty.text__hu5Qu
+                  sty.text__hu5Qu,
+                  {
+                    [sty.textglobal_theme_classic__hu5QueNktM]: hasVariant(
+                      globalVariants,
+                      "theme",
+                      "classic"
+                    )
+                  }
                 )}
               >
                 {"Audio"}
@@ -584,7 +730,13 @@ function PlasmicCommissions__RenderFunc(props: {
                 windowImage={
                   <PlasmicImg__
                     alt={""}
-                    className={classNames(sty.img__qgQUs)}
+                    className={classNames(sty.img__qgQUs, {
+                      [sty.imgglobal_theme_classic__qgQUseNktM]: hasVariant(
+                        globalVariants,
+                        "theme",
+                        "classic"
+                      )
+                    })}
                     displayHeight={"auto"}
                     displayMaxHeight={"none"}
                     displayMaxWidth={"100%"}
@@ -611,7 +763,14 @@ function PlasmicCommissions__RenderFunc(props: {
                   className={classNames(
                     projectcss.all,
                     projectcss.__wab_text,
-                    sty.text__qv2TC
+                    sty.text__qv2TC,
+                    {
+                      [sty.textglobal_theme_classic__qv2TCeNktM]: hasVariant(
+                        globalVariants,
+                        "theme",
+                        "classic"
+                      )
+                    }
                   )}
                 >
                   {
@@ -625,7 +784,13 @@ function PlasmicCommissions__RenderFunc(props: {
                 windowImage={
                   <PlasmicImg__
                     alt={""}
-                    className={classNames(sty.img__crTu)}
+                    className={classNames(sty.img__crTu, {
+                      [sty.imgglobal_theme_classic__crTueNktM]: hasVariant(
+                        globalVariants,
+                        "theme",
+                        "classic"
+                      )
+                    })}
                     displayHeight={"auto"}
                     displayMaxHeight={"none"}
                     displayMaxWidth={"100%"}
@@ -652,7 +817,14 @@ function PlasmicCommissions__RenderFunc(props: {
                   className={classNames(
                     projectcss.all,
                     projectcss.__wab_text,
-                    sty.text__il6Bk
+                    sty.text__il6Bk,
+                    {
+                      [sty.textglobal_theme_classic__il6BkeNktM]: hasVariant(
+                        globalVariants,
+                        "theme",
+                        "classic"
+                      )
+                    }
                   )}
                 >
                   {
@@ -666,7 +838,13 @@ function PlasmicCommissions__RenderFunc(props: {
                 windowImage={
                   <PlasmicImg__
                     alt={""}
-                    className={classNames(sty.img___1AbcC)}
+                    className={classNames(sty.img___1AbcC, {
+                      [sty.imgglobal_theme_classic___1AbcCeNktM]: hasVariant(
+                        globalVariants,
+                        "theme",
+                        "classic"
+                      )
+                    })}
                     displayHeight={"auto"}
                     displayMaxHeight={"none"}
                     displayMaxWidth={"100%"}
@@ -693,7 +871,14 @@ function PlasmicCommissions__RenderFunc(props: {
                   className={classNames(
                     projectcss.all,
                     projectcss.__wab_text,
-                    sty.text__bk1Ht
+                    sty.text__bk1Ht,
+                    {
+                      [sty.textglobal_theme_classic__bk1HteNktM]: hasVariant(
+                        globalVariants,
+                        "theme",
+                        "classic"
+                      )
+                    }
                   )}
                 >
                   {
@@ -707,7 +892,14 @@ function PlasmicCommissions__RenderFunc(props: {
             className={classNames(
               projectcss.all,
               projectcss.__wab_text,
-              sty.text__kr28D
+              sty.text__kr28D,
+              {
+                [sty.textglobal_theme_classic__kr28DeNktM]: hasVariant(
+                  globalVariants,
+                  "theme",
+                  "classic"
+                )
+              }
             )}
           >
             {"Current Commissions Progress"}
@@ -722,7 +914,14 @@ function PlasmicCommissions__RenderFunc(props: {
                 className={classNames(
                   projectcss.all,
                   projectcss.__wab_text,
-                  sty.text___43Ac
+                  sty.text___43Ac,
+                  {
+                    [sty.textglobal_theme_classic___43AceNktM]: hasVariant(
+                      globalVariants,
+                      "theme",
+                      "classic"
+                    )
+                  }
                 )}
               >
                 {"Queue"}
@@ -730,7 +929,13 @@ function PlasmicCommissions__RenderFunc(props: {
               <Stack__
                 as={"div"}
                 hasGap={true}
-                className={classNames(projectcss.all, sty.freeBox___6SyU)}
+                className={classNames(projectcss.all, sty.freeBox___6SyU, {
+                  [sty.freeBoxglobal_theme_classic___6SyUeNktM]: hasVariant(
+                    globalVariants,
+                    "theme",
+                    "classic"
+                  )
+                })}
               >
                 <Window
                   className={classNames("__wab_instance", sty.window__s5L5J)}
@@ -768,7 +973,14 @@ function PlasmicCommissions__RenderFunc(props: {
                 className={classNames(
                   projectcss.all,
                   projectcss.__wab_text,
-                  sty.text___4DZZn
+                  sty.text___4DZZn,
+                  {
+                    [sty.textglobal_theme_classic___4DZZneNktM]: hasVariant(
+                      globalVariants,
+                      "theme",
+                      "classic"
+                    )
+                  }
                 )}
               >
                 {"WIP"}
@@ -776,7 +988,13 @@ function PlasmicCommissions__RenderFunc(props: {
               <Stack__
                 as={"div"}
                 hasGap={true}
-                className={classNames(projectcss.all, sty.freeBox___6EVmN)}
+                className={classNames(projectcss.all, sty.freeBox___6EVmN, {
+                  [sty.freeBoxglobal_theme_classic___6EVmNeNktM]: hasVariant(
+                    globalVariants,
+                    "theme",
+                    "classic"
+                  )
+                })}
               >
                 <Window
                   className={classNames("__wab_instance", sty.window___64NmC)}
@@ -785,7 +1003,13 @@ function PlasmicCommissions__RenderFunc(props: {
                   windowImage={
                     <PlasmicImg__
                       alt={""}
-                      className={classNames(sty.img__tn5Pv)}
+                      className={classNames(sty.img__tn5Pv, {
+                        [sty.imgglobal_theme_classic__tn5PVeNktM]: hasVariant(
+                          globalVariants,
+                          "theme",
+                          "classic"
+                        )
+                      })}
                       displayHeight={"auto"}
                       displayMaxHeight={"none"}
                       displayMaxWidth={"100%"}
@@ -815,7 +1039,14 @@ function PlasmicCommissions__RenderFunc(props: {
                 className={classNames(
                   projectcss.all,
                   projectcss.__wab_text,
-                  sty.text__rEoIg
+                  sty.text__rEoIg,
+                  {
+                    [sty.textglobal_theme_classic__rEoIgeNktM]: hasVariant(
+                      globalVariants,
+                      "theme",
+                      "classic"
+                    )
+                  }
                 )}
               >
                 {"Complete"}
@@ -823,7 +1054,13 @@ function PlasmicCommissions__RenderFunc(props: {
               <Stack__
                 as={"div"}
                 hasGap={true}
-                className={classNames(projectcss.all, sty.freeBox__oxqpO)}
+                className={classNames(projectcss.all, sty.freeBox__oxqpO, {
+                  [sty.freeBoxglobal_theme_classic__oxqpOeNktM]: hasVariant(
+                    globalVariants,
+                    "theme",
+                    "classic"
+                  )
+                })}
               >
                 <Window
                   className={classNames("__wab_instance", sty.window__orzP)}
@@ -831,7 +1068,13 @@ function PlasmicCommissions__RenderFunc(props: {
                   windowImage={
                     <PlasmicImg__
                       alt={""}
-                      className={classNames(sty.img__z18Xo)}
+                      className={classNames(sty.img__z18Xo, {
+                        [sty.imgglobal_theme_classic__z18XoeNktM]: hasVariant(
+                          globalVariants,
+                          "theme",
+                          "classic"
+                        )
+                      })}
                       displayHeight={"auto"}
                       displayMaxHeight={"none"}
                       displayMaxWidth={"100%"}
@@ -857,7 +1100,13 @@ function PlasmicCommissions__RenderFunc(props: {
                   windowImage={
                     <PlasmicImg__
                       alt={""}
-                      className={classNames(sty.img__gtnmw)}
+                      className={classNames(sty.img__gtnmw, {
+                        [sty.imgglobal_theme_classic__gtnmweNktM]: hasVariant(
+                          globalVariants,
+                          "theme",
+                          "classic"
+                        )
+                      })}
                       displayHeight={"auto"}
                       displayMaxHeight={"none"}
                       displayMaxWidth={"100%"}
@@ -878,12 +1127,24 @@ function PlasmicCommissions__RenderFunc(props: {
                 />
 
                 <Window
-                  className={classNames("__wab_instance", sty.window___5AZoh)}
+                  className={classNames("__wab_instance", sty.window___5AZoh, {
+                    [sty.windowglobal_theme_classic___5AZoHeNktM]: hasVariant(
+                      globalVariants,
+                      "theme",
+                      "classic"
+                    )
+                  })}
                   showImage={true}
                   windowImage={
                     <PlasmicImg__
                       alt={""}
-                      className={classNames(sty.img__ilXxZ)}
+                      className={classNames(sty.img__ilXxZ, {
+                        [sty.imgglobal_theme_classic__ilXxZeNktM]: hasVariant(
+                          globalVariants,
+                          "theme",
+                          "classic"
+                        )
+                      })}
                       displayHeight={"auto"}
                       displayMaxHeight={"none"}
                       displayMaxWidth={"100%"}

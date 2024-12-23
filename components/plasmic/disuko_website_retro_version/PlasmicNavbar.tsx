@@ -64,6 +64,7 @@ import { Reveal } from "@plasmicpkgs/react-awesome-reveal";
 import WindowButton from "../../WindowButton"; // plasmic-import: KZYdo-R8GYAn/component
 
 import { useScreenVariants as useScreenVariantsdmuurUfQuA6N } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: DmuurUFQuA6N/globalVariant
+import { ThemeValue, useTheme } from "./PlasmicGlobalVariant__Theme"; // plasmic-import: 3K9IqsAFaaID/globalVariant
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
@@ -150,7 +151,8 @@ function PlasmicNavbar__RenderFunc(props: {
   const currentUser = useCurrentUser?.() || {};
 
   const globalVariants = ensureGlobalVariants({
-    screen: useScreenVariantsdmuurUfQuA6N()
+    screen: useScreenVariantsdmuurUfQuA6N(),
+    theme: useTheme()
   });
 
   return (
@@ -196,7 +198,19 @@ function PlasmicNavbar__RenderFunc(props: {
         projectcss.plasmic_tokens,
         plasmic_antd_5_hostless_css.plasmic_tokens,
         plasmic_plasmic_rich_components_css.plasmic_tokens,
-        sty.root
+        sty.root,
+        {
+          [projectcss.global_theme_classic]: hasVariant(
+            globalVariants,
+            "theme",
+            "classic"
+          ),
+          [sty.rootglobal_theme_classic]: hasVariant(
+            globalVariants,
+            "theme",
+            "classic"
+          )
+        }
       )}
       closeButton={
         <XSvgIcon
@@ -205,7 +219,12 @@ function PlasmicNavbar__RenderFunc(props: {
         />
       }
       forceOpenMenu={
-        hasVariant(globalVariants, "screen", "mobileOnly") ? false : false
+        hasVariant(globalVariants, "theme", "classic") &&
+        hasVariant(globalVariants, "screen", "mobileOnly")
+          ? false
+          : hasVariant(globalVariants, "screen", "mobileOnly")
+          ? false
+          : false
       }
       itemsGap={10}
       menuItems={
@@ -214,7 +233,13 @@ function PlasmicNavbar__RenderFunc(props: {
           data-plasmic-name={"freeBox"}
           data-plasmic-override={overrides.freeBox}
           hasGap={true}
-          className={classNames(projectcss.all, sty.freeBox)}
+          className={classNames(projectcss.all, sty.freeBox, {
+            [sty.freeBoxglobal_theme_classic]: hasVariant(
+              globalVariants,
+              "theme",
+              "classic"
+            )
+          })}
         >
           <Reveal
             data-plasmic-name={"home"}
@@ -229,7 +254,13 @@ function PlasmicNavbar__RenderFunc(props: {
               hoverText={"home"}
             >
               <HomeSvgIcon
-                className={classNames(projectcss.all, sty.svg__xnHt0)}
+                className={classNames(projectcss.all, sty.svg__xnHt0, {
+                  [sty.svgglobal_theme_classic__xnHt0ENktM]: hasVariant(
+                    globalVariants,
+                    "theme",
+                    "classic"
+                  )
+                })}
                 role={"img"}
               />
 
@@ -237,7 +268,14 @@ function PlasmicNavbar__RenderFunc(props: {
                 className={classNames(
                   projectcss.all,
                   projectcss.__wab_text,
-                  sty.text__nN29R
+                  sty.text__nN29R,
+                  {
+                    [sty.textglobal_theme_classic__nN29ReNktM]: hasVariant(
+                      globalVariants,
+                      "theme",
+                      "classic"
+                    )
+                  }
                 )}
               >
                 {"Home"}
@@ -259,7 +297,13 @@ function PlasmicNavbar__RenderFunc(props: {
               link={`/portfolio`}
             >
               <BriefcaseSvgIcon
-                className={classNames(projectcss.all, sty.svg__pplbH)}
+                className={classNames(projectcss.all, sty.svg__pplbH, {
+                  [sty.svgglobal_theme_classic__pplbHeNktM]: hasVariant(
+                    globalVariants,
+                    "theme",
+                    "classic"
+                  )
+                })}
                 role={"img"}
               />
 
@@ -272,7 +316,14 @@ function PlasmicNavbar__RenderFunc(props: {
                   className={classNames(
                     projectcss.all,
                     projectcss.__wab_text,
-                    sty.text__eDvga
+                    sty.text__eDvga,
+                    {
+                      [sty.textglobal_theme_classic__eDvgaeNktM]: hasVariant(
+                        globalVariants,
+                        "theme",
+                        "classic"
+                      )
+                    }
                   )}
                 >
                   {"Portfolio"}
@@ -295,7 +346,13 @@ function PlasmicNavbar__RenderFunc(props: {
               link={`/commissions`}
             >
               <PigMoneySvgIcon
-                className={classNames(projectcss.all, sty.svg__ztfub)}
+                className={classNames(projectcss.all, sty.svg__ztfub, {
+                  [sty.svgglobal_theme_classic__ztfuBeNktM]: hasVariant(
+                    globalVariants,
+                    "theme",
+                    "classic"
+                  )
+                })}
                 role={"img"}
               />
 
@@ -308,7 +365,14 @@ function PlasmicNavbar__RenderFunc(props: {
                   className={classNames(
                     projectcss.all,
                     projectcss.__wab_text,
-                    sty.text__y17KY
+                    sty.text__y17KY,
+                    {
+                      [sty.textglobal_theme_classic__y17KYeNktM]: hasVariant(
+                        globalVariants,
+                        "theme",
+                        "classic"
+                      )
+                    }
                   )}
                 >
                   {"Commissions"}
@@ -331,7 +395,13 @@ function PlasmicNavbar__RenderFunc(props: {
               link={`/music`}
             >
               <HeadphonesSvgIcon
-                className={classNames(projectcss.all, sty.svg__xxDv3)}
+                className={classNames(projectcss.all, sty.svg__xxDv3, {
+                  [sty.svgglobal_theme_classic__xxDv3ENktM]: hasVariant(
+                    globalVariants,
+                    "theme",
+                    "classic"
+                  )
+                })}
                 role={"img"}
               />
 
@@ -344,7 +414,14 @@ function PlasmicNavbar__RenderFunc(props: {
                   className={classNames(
                     projectcss.all,
                     projectcss.__wab_text,
-                    sty.text__zWkR
+                    sty.text__zWkR,
+                    {
+                      [sty.textglobal_theme_classic__zWkReNktM]: hasVariant(
+                        globalVariants,
+                        "theme",
+                        "classic"
+                      )
+                    }
                   )}
                 >
                   {"Music"}
@@ -367,7 +444,13 @@ function PlasmicNavbar__RenderFunc(props: {
               link={`/merch`}
             >
               <ShirtSvgIcon
-                className={classNames(projectcss.all, sty.svg__qOyw6)}
+                className={classNames(projectcss.all, sty.svg__qOyw6, {
+                  [sty.svgglobal_theme_classic__qOyw6ENktM]: hasVariant(
+                    globalVariants,
+                    "theme",
+                    "classic"
+                  )
+                })}
                 role={"img"}
               />
 
@@ -380,7 +463,14 @@ function PlasmicNavbar__RenderFunc(props: {
                   className={classNames(
                     projectcss.all,
                     projectcss.__wab_text,
-                    sty.text__druR
+                    sty.text__druR,
+                    {
+                      [sty.textglobal_theme_classic__druReNktM]: hasVariant(
+                        globalVariants,
+                        "theme",
+                        "classic"
+                      )
+                    }
                   )}
                 >
                   {"Merch"}
@@ -391,7 +481,13 @@ function PlasmicNavbar__RenderFunc(props: {
           <Reveal
             data-plasmic-name={"links"}
             data-plasmic-override={overrides.links}
-            className={classNames("__wab_instance", sty.links)}
+            className={classNames("__wab_instance", sty.links, {
+              [sty.linksglobal_theme_classic]: hasVariant(
+                globalVariants,
+                "theme",
+                "classic"
+              )
+            })}
             delay={75}
             direction={"down"}
             effect={"bounce"}
@@ -403,7 +499,13 @@ function PlasmicNavbar__RenderFunc(props: {
               link={`/links`}
             >
               <LinkSvgIcon
-                className={classNames(projectcss.all, sty.svg___0Ym7)}
+                className={classNames(projectcss.all, sty.svg___0Ym7, {
+                  [sty.svgglobal_theme_classic___0Ym7ENktM]: hasVariant(
+                    globalVariants,
+                    "theme",
+                    "classic"
+                  )
+                })}
                 role={"img"}
               />
 
@@ -416,7 +518,14 @@ function PlasmicNavbar__RenderFunc(props: {
                   className={classNames(
                     projectcss.all,
                     projectcss.__wab_text,
-                    sty.text___01EBc
+                    sty.text___01EBc,
+                    {
+                      [sty.textglobal_theme_classic___01EBceNktM]: hasVariant(
+                        globalVariants,
+                        "theme",
+                        "classic"
+                      )
+                    }
                   )}
                 >
                   {"Links"}

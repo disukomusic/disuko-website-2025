@@ -63,6 +63,26 @@
   --plasmic-token-unnamed-style-token-8: var(--token-y6wbv5-45HAa);
   --token-mb8B3-mUpcKN: #bc92ae;
   --plasmic-token-darker-pink-pixel: var(--token-mb8B3-mUpcKN);
+  --token-4IQYJ82NsyMZ: #bdbdbd;
+  --plasmic-token-classic-bg: var(--token-4IQYJ82NsyMZ);
+  --token-ZwQ71qulH0e5: #7b7b7b;
+  --plasmic-token-classic-inactive-titlebar: var(--token-ZwQ71qulH0e5);
+  --token-lpL2YkgMM450: #000000;
+  --plasmic-token-classic-text: var(--token-lpL2YkgMM450);
+  --token-ct2uWllcH5tV: #bcbcbc;
+  --plasmic-token-classic-inactive-title: var(--token-ct2uWllcH5tV);
+  --token-24x9Uc_JThUA: #ffffff;
+  --plasmic-token-classic-highlight: var(--token-24x9Uc_JThUA);
+  --token-K_FDgNby8UmH: #7d7d7d;
+  --plasmic-token-classic-shadow: var(--token-K_FDgNby8UmH);
+  --token-atFp5Nsxdb73: #00007b;
+  --plasmic-token-classic-active-titlebar: var(--token-atFp5Nsxdb73);
+  --token-Bn-ks1hpMV9J: #ffffff;
+  --plasmic-token-classic-active-title: var(--token-Bn-ks1hpMV9J);
+  --token-u2rbquIz9Y0U: #aaaaaa;
+  --plasmic-token-classic-box-shadow-bg: var(--token-u2rbquIz9Y0U);
+  --token-2cxCto4hpENi: #007b7b;
+  --plasmic-token-classic-teal: var(--token-2cxCto4hpENi);
 }
 
 @media (min-width: 0px) and (max-width: 768px) {
@@ -72,6 +92,13 @@
     --token-GXH3dzbZuw1x: #404040;
     --plasmic-token-retro-text: var(--token-GXH3dzbZuw1x);
   }
+}
+
+.plasmic_tokens:where(.global_theme_classic) {
+  --token-K_FDgNby8UmH: #353535;
+  --plasmic-token-classic-shadow: var(--token-K_FDgNby8UmH);
+  --token-u2rbquIz9Y0U: #979797;
+  --plasmic-token-classic-box-shadow-bg: var(--token-u2rbquIz9Y0U);
 }
 
 .plasmic_tokens {
@@ -84,7 +111,8 @@
   );
 }
 
-.plasmic_default_styles {
+.plasmic_default_styles,
+.plasmic_default_styles:where(.global_theme_classic) {
   --mixin-R1LBc3Wx4ATX_font-family: "VT323";
   --mixin-R1LBc3Wx4ATX_font-size: 16px;
   --mixin-R1LBc3Wx4ATX_font-weight: 400;
@@ -214,7 +242,8 @@
   --mixin-KntxFAA3JhjA_white-space: pre-wrap;
 }
 
-.plasmic_mixins {
+.plasmic_mixins,
+.plasmic_mixins:where(.global_theme_classic) {
   --mixin-caqA6EIE0DJz_box-shadow: -4px -4px 0px 0px var(--token-GXH3dzbZuw1x),
     4px 4px 0px 0px var(--token-FYHois2LGA8g);
   --plasmic-mixin-window_box-shadow: var(--mixin-caqA6EIE0DJz_box-shadow);

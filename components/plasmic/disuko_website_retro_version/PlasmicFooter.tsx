@@ -59,7 +59,10 @@ import {
   useGlobalActions
 } from "@plasmicapp/react-web/lib/host";
 
+import ThemeSwitcher from "../../ThemeSwitcher"; // plasmic-import: Dz8LagQJGg4_/component
+
 import { useScreenVariants as useScreenVariantsdmuurUfQuA6N } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: DmuurUFQuA6N/globalVariant
+import { ThemeValue, useTheme } from "./PlasmicGlobalVariant__Theme"; // plasmic-import: 3K9IqsAFaaID/globalVariant
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
@@ -84,6 +87,7 @@ export type PlasmicFooter__OverridesType = {
   columns?: Flex__<"div">;
   disuko?: Flex__<"a"> & Partial<LinkProps>;
   dotgay?: Flex__<"a"> & Partial<LinkProps>;
+  themeSwitcher?: Flex__<typeof ThemeSwitcher>;
 };
 
 export interface DefaultFooterProps {
@@ -131,7 +135,8 @@ function PlasmicFooter__RenderFunc(props: {
   const currentUser = useCurrentUser?.() || {};
 
   const globalVariants = ensureGlobalVariants({
-    screen: useScreenVariantsdmuurUfQuA6N()
+    screen: useScreenVariantsdmuurUfQuA6N(),
+    theme: useTheme()
   });
 
   return (
@@ -148,7 +153,19 @@ function PlasmicFooter__RenderFunc(props: {
         projectcss.plasmic_tokens,
         plasmic_antd_5_hostless_css.plasmic_tokens,
         plasmic_plasmic_rich_components_css.plasmic_tokens,
-        sty.root
+        sty.root,
+        {
+          [projectcss.global_theme_classic]: hasVariant(
+            globalVariants,
+            "theme",
+            "classic"
+          ),
+          [sty.rootglobal_theme_classic]: hasVariant(
+            globalVariants,
+            "theme",
+            "classic"
+          )
+        }
       )}
     >
       <Stack__
@@ -156,7 +173,13 @@ function PlasmicFooter__RenderFunc(props: {
         data-plasmic-name={"columns"}
         data-plasmic-override={overrides.columns}
         hasGap={true}
-        className={classNames(projectcss.all, sty.columns)}
+        className={classNames(projectcss.all, sty.columns, {
+          [sty.columnsglobal_theme_classic]: hasVariant(
+            globalVariants,
+            "theme",
+            "classic"
+          )
+        })}
       >
         <div className={classNames(projectcss.all, sty.column__fE1Co)}>
           <Stack__
@@ -238,23 +261,42 @@ function PlasmicFooter__RenderFunc(props: {
               className={classNames(
                 projectcss.all,
                 projectcss.__wab_text,
-                sty.text___76Zlv
+                sty.text___76Zlv,
+                {
+                  [sty.textglobal_theme_classic___76ZlVeNktM]: hasVariant(
+                    globalVariants,
+                    "theme",
+                    "classic"
+                  )
+                }
               )}
             >
               {"\u00a9 Red Panda Studios 2024"}
             </div>
           </Stack__>
-        </div>
-        <div className={classNames(projectcss.all, sty.column__e7FGn)}>
           <div
             className={classNames(
               projectcss.all,
               projectcss.__wab_text,
-              sty.text__kdu93
+              sty.text__kdu93,
+              {
+                [sty.textglobal_theme_classic__kdu93ENktM]: hasVariant(
+                  globalVariants,
+                  "theme",
+                  "classic"
+                )
+              }
             )}
           >
             {"icons from tabler"}
           </div>
+        </div>
+        <div className={classNames(projectcss.all, sty.column__e7FGn)}>
+          <ThemeSwitcher
+            data-plasmic-name={"themeSwitcher"}
+            data-plasmic-override={overrides.themeSwitcher}
+            className={classNames("__wab_instance", sty.themeSwitcher)}
+          />
         </div>
       </Stack__>
     </div>
@@ -262,10 +304,11 @@ function PlasmicFooter__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "columns", "disuko", "dotgay"],
-  columns: ["columns", "disuko", "dotgay"],
+  root: ["root", "columns", "disuko", "dotgay", "themeSwitcher"],
+  columns: ["columns", "disuko", "dotgay", "themeSwitcher"],
   disuko: ["disuko"],
-  dotgay: ["dotgay"]
+  dotgay: ["dotgay"],
+  themeSwitcher: ["themeSwitcher"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -275,6 +318,7 @@ type NodeDefaultElementType = {
   columns: "div";
   disuko: "a";
   dotgay: "a";
+  themeSwitcher: typeof ThemeSwitcher;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -340,6 +384,7 @@ export const PlasmicFooter = Object.assign(
     columns: makeNodeComponent("columns"),
     disuko: makeNodeComponent("disuko"),
     dotgay: makeNodeComponent("dotgay"),
+    themeSwitcher: makeNodeComponent("themeSwitcher"),
 
     // Metadata about props expected for PlasmicFooter
     internalVariantProps: PlasmicFooter__VariantProps,

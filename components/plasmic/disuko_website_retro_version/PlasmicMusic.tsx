@@ -70,6 +70,7 @@ import YouTube from "@plasmicpkgs/react-youtube";
 import Footer from "../../Footer"; // plasmic-import: shKoGjSwLEEB/component
 import Snowflakes from "../../Snowflakes"; // plasmic-import: dS2R33xrvHt2/component
 
+import { ThemeValue, useTheme } from "./PlasmicGlobalVariant__Theme"; // plasmic-import: 3K9IqsAFaaID/globalVariant
 import { useScreenVariants as useScreenVariantsdmuurUfQuA6N } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: DmuurUFQuA6N/globalVariant
 
 import "@plasmicapp/react-web/lib/plasmic.css";
@@ -158,6 +159,7 @@ function PlasmicMusic__RenderFunc(props: {
   const currentUser = useCurrentUser?.() || {};
 
   const globalVariants = ensureGlobalVariants({
+    theme: useTheme(),
     screen: useScreenVariantsdmuurUfQuA6N()
   });
 
@@ -224,7 +226,14 @@ function PlasmicMusic__RenderFunc(props: {
             projectcss.plasmic_tokens,
             plasmic_antd_5_hostless_css.plasmic_tokens,
             plasmic_plasmic_rich_components_css.plasmic_tokens,
-            sty.root
+            sty.root,
+            {
+              [sty.rootglobal_theme_classic]: hasVariant(
+                globalVariants,
+                "theme",
+                "classic"
+              )
+            }
           )}
         >
           <Navbar
@@ -238,17 +247,35 @@ function PlasmicMusic__RenderFunc(props: {
             data-plasmic-name={"main"}
             data-plasmic-override={overrides.main}
             hasGap={true}
-            className={classNames(projectcss.all, sty.main)}
+            className={classNames(projectcss.all, sty.main, {
+              [sty.mainglobal_theme_classic]: hasVariant(
+                globalVariants,
+                "theme",
+                "classic"
+              )
+            })}
           >
             <Reveal
               cascade={true}
-              className={classNames("__wab_instance", sty.reveal___62Ojm)}
+              className={classNames("__wab_instance", sty.reveal___62Ojm, {
+                [sty.revealglobal_theme_classic___62OjmeNktM]: hasVariant(
+                  globalVariants,
+                  "theme",
+                  "classic"
+                )
+              })}
               direction={"up"}
               effect={"slide"}
               triggerOnce={true}
             >
               <Window
-                className={classNames("__wab_instance", sty.window__q0I21)}
+                className={classNames("__wab_instance", sty.window__q0I21, {
+                  [sty.windowglobal_theme_classic__q0I21ENktM]: hasVariant(
+                    globalVariants,
+                    "theme",
+                    "classic"
+                  )
+                })}
                 showImage={false}
                 windowImage={
                   <PlasmicImg__
@@ -272,7 +299,7 @@ function PlasmicMusic__RenderFunc(props: {
                 windowText={
                   "taking inspiration from chiptune, rhythm game soundtracks, and \u201ckawaii\u201d culture, i make music filled with high energy edm drops and expressive composition!disuko was started in 2019, and I aim to share and express my sense of self with the world through music."
                 }
-                windowTitle={"Music Prodiction"}
+                windowTitle={"Music Production"}
               >
                 <WindowButton
                   data-plasmic-name={"spotify"}
@@ -286,7 +313,14 @@ function PlasmicMusic__RenderFunc(props: {
                     className={classNames(
                       projectcss.all,
                       projectcss.__wab_text,
-                      sty.text__eijAa
+                      sty.text__eijAa,
+                      {
+                        [sty.textglobal_theme_classic__eijAaeNktM]: hasVariant(
+                          globalVariants,
+                          "theme",
+                          "classic"
+                        )
+                      }
                     )}
                   >
                     {"Spotify"}
@@ -302,7 +336,14 @@ function PlasmicMusic__RenderFunc(props: {
                     className={classNames(
                       projectcss.all,
                       projectcss.__wab_text,
-                      sty.text__ilV75
+                      sty.text__ilV75,
+                      {
+                        [sty.textglobal_theme_classic__ilV75ENktM]: hasVariant(
+                          globalVariants,
+                          "theme",
+                          "classic"
+                        )
+                      }
                     )}
                   >
                     {"Apple Music"}
@@ -318,7 +359,14 @@ function PlasmicMusic__RenderFunc(props: {
                     className={classNames(
                       projectcss.all,
                       projectcss.__wab_text,
-                      sty.text__vj4I0
+                      sty.text__vj4I0,
+                      {
+                        [sty.textglobal_theme_classic__vj4I0ENktM]: hasVariant(
+                          globalVariants,
+                          "theme",
+                          "classic"
+                        )
+                      }
                     )}
                   >
                     {"Bandcamp"}
@@ -337,7 +385,14 @@ function PlasmicMusic__RenderFunc(props: {
                     className={classNames(
                       projectcss.all,
                       projectcss.__wab_text,
-                      sty.text___0MC2
+                      sty.text___0MC2,
+                      {
+                        [sty.textglobal_theme_classic___0MC2ENktM]: hasVariant(
+                          globalVariants,
+                          "theme",
+                          "classic"
+                        )
+                      }
                     )}
                   >
                     {"YouTube Music"}
@@ -734,14 +789,27 @@ function PlasmicMusic__RenderFunc(props: {
           />
 
           <WindowButton
-            className={classNames("__wab_instance", sty.windowButton__fk8Nu)}
+            className={classNames("__wab_instance", sty.windowButton__fk8Nu, {
+              [sty.windowButtonglobal_theme_classic__fk8NUeNktM]: hasVariant(
+                globalVariants,
+                "theme",
+                "classic"
+              )
+            })}
             link={`/portfolio`}
           >
             <div
               className={classNames(
                 projectcss.all,
                 projectcss.__wab_text,
-                sty.text__hwk8B
+                sty.text__hwk8B,
+                {
+                  [sty.textglobal_theme_classic__hwk8BeNktM]: hasVariant(
+                    globalVariants,
+                    "theme",
+                    "classic"
+                  )
+                }
               )}
             >
               {"<- Back To Portfolio"}

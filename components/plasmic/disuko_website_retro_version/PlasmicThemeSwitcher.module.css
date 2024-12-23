@@ -1,0 +1,50 @@
+.root {
+  display: inline-flex;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  position: relative;
+  justify-self: flex-start;
+  flex-direction: column;
+  padding: 0px;
+}
+.dropdown:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+  position: relative;
+  left: auto;
+  top: auto;
+}
+.menuItem__k7Oje:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.text__aqEdt {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+}
+.menuItem__ypOze:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.text__e0Qhb {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+}
+.button:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.text__ce8Jt {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+}

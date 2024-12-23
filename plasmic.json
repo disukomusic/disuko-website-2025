@@ -1350,19 +1350,6 @@
           "componentType": "component"
         },
         {
-          "id": "8nzOmvWEtL6e",
-          "name": "DisukoPandaInteractive",
-          "type": "managed",
-          "projectId": "x4VgG6kzZCVuaqknYN7tgc",
-          "renderModuleFilePath": "plasmic/disuko_website_retro_version/PlasmicDisukoPandaInteractive.tsx",
-          "importSpec": {
-            "modulePath": "DisukoPandaInteractive.tsx"
-          },
-          "cssFilePath": "plasmic/disuko_website_retro_version/PlasmicDisukoPandaInteractive.module.css",
-          "scheme": "blackbox",
-          "componentType": "component"
-        },
-        {
           "id": "agRDam8zA0LH",
           "name": "Multiwindow",
           "type": "managed",
@@ -1513,6 +1500,19 @@
           "scheme": "blackbox",
           "componentType": "page",
           "path": "/commissions"
+        },
+        {
+          "id": "Dz8LagQJGg4_",
+          "name": "ThemeSwitcher",
+          "type": "managed",
+          "projectId": "x4VgG6kzZCVuaqknYN7tgc",
+          "renderModuleFilePath": "plasmic/disuko_website_retro_version/PlasmicThemeSwitcher.tsx",
+          "importSpec": {
+            "modulePath": "ThemeSwitcher.tsx"
+          },
+          "cssFilePath": "plasmic/disuko_website_retro_version/PlasmicThemeSwitcher.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [
@@ -2737,6 +2737,16 @@
           "id": "s3Ut0WrAH2VN",
           "name": "image 74",
           "filePath": "../public/plasmic/disuko_website_retro_version/images/image74.png"
+        },
+        {
+          "id": "kW4FUMreeupm",
+          "name": "background blue.jpg",
+          "filePath": "../public/plasmic/disuko_website_retro_version/images/backgroundBlueJpg.jpg"
+        },
+        {
+          "id": "KOVwATt0SIsO",
+          "name": "headshot but bad.png",
+          "filePath": "../public/plasmic/disuko_website_retro_version/images/headshotButBadPng.png"
         }
       ],
       "indirect": false,
@@ -2766,6 +2776,12 @@
         "name": "Screen",
         "projectId": "x4VgG6kzZCVuaqknYN7tgc",
         "contextFilePath": "plasmic/disuko_website_retro_version/PlasmicGlobalVariant__Screen.tsx"
+      },
+      {
+        "id": "3K9IqsAFaaID",
+        "name": "Theme",
+        "projectId": "x4VgG6kzZCVuaqknYN7tgc",
+        "contextFilePath": "plasmic/disuko_website_retro_version/PlasmicGlobalVariant__Theme.tsx"
       }
     ]
   },

@@ -66,6 +66,7 @@ import WindowButton from "../../WindowButton"; // plasmic-import: KZYdo-R8GYAn/c
 import Window from "../../Window"; // plasmic-import: BWjgdOwFY_OO/component
 import Footer from "../../Footer"; // plasmic-import: shKoGjSwLEEB/component
 
+import { ThemeValue, useTheme } from "./PlasmicGlobalVariant__Theme"; // plasmic-import: 3K9IqsAFaaID/globalVariant
 import { useScreenVariants as useScreenVariantsdmuurUfQuA6N } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: DmuurUFQuA6N/globalVariant
 
 import "@plasmicapp/react-web/lib/plasmic.css";
@@ -138,6 +139,7 @@ function PlasmicPortfolio__RenderFunc(props: {
   const currentUser = useCurrentUser?.() || {};
 
   const globalVariants = ensureGlobalVariants({
+    theme: useTheme(),
     screen: useScreenVariantsdmuurUfQuA6N()
   });
 
@@ -204,7 +206,19 @@ function PlasmicPortfolio__RenderFunc(props: {
             projectcss.plasmic_tokens,
             plasmic_antd_5_hostless_css.plasmic_tokens,
             plasmic_plasmic_rich_components_css.plasmic_tokens,
-            sty.root
+            sty.root,
+            {
+              [projectcss.global_theme_classic]: hasVariant(
+                globalVariants,
+                "theme",
+                "classic"
+              ),
+              [sty.rootglobal_theme_classic]: hasVariant(
+                globalVariants,
+                "theme",
+                "classic"
+              )
+            }
           )}
         >
           <Navbar
@@ -218,7 +232,13 @@ function PlasmicPortfolio__RenderFunc(props: {
             data-plasmic-name={"main"}
             data-plasmic-override={overrides.main}
             hasGap={true}
-            className={classNames(projectcss.all, sty.main)}
+            className={classNames(projectcss.all, sty.main, {
+              [sty.mainglobal_theme_classic]: hasVariant(
+                globalVariants,
+                "theme",
+                "classic"
+              )
+            })}
           >
             <Stack__
               as={"div"}
@@ -230,7 +250,14 @@ function PlasmicPortfolio__RenderFunc(props: {
                   className={classNames(
                     projectcss.all,
                     projectcss.__wab_text,
-                    sty.text__lXnnN
+                    sty.text__lXnnN,
+                    {
+                      [sty.textglobal_theme_classic__lXnnNeNktM]: hasVariant(
+                        globalVariants,
+                        "theme",
+                        "classic"
+                      )
+                    }
                   )}
                 >
                   <React.Fragment>
@@ -246,7 +273,14 @@ function PlasmicPortfolio__RenderFunc(props: {
                   className={classNames(
                     projectcss.all,
                     projectcss.__wab_text,
-                    sty.text__jdxSm
+                    sty.text__jdxSm,
+                    {
+                      [sty.textglobal_theme_classic__jdxSmeNktM]: hasVariant(
+                        globalVariants,
+                        "theme",
+                        "classic"
+                      )
+                    }
                   )}
                 >
                   {
@@ -263,7 +297,13 @@ function PlasmicPortfolio__RenderFunc(props: {
                   data-plasmic-name={"headshot"}
                   data-plasmic-override={overrides.headshot}
                   alt={""}
-                  className={classNames(sty.headshot)}
+                  className={classNames(sty.headshot, {
+                    [sty.headshotglobal_theme_classic]: hasVariant(
+                      globalVariants,
+                      "theme",
+                      "classic"
+                    )
+                  })}
                   displayHeight={
                     hasVariant(globalVariants, "screen", "mobileOnly")
                       ? "194px"
@@ -305,7 +345,14 @@ function PlasmicPortfolio__RenderFunc(props: {
                       className={classNames(
                         projectcss.all,
                         projectcss.__wab_text,
-                        sty.text__dcKO
+                        sty.text__dcKO,
+                        {
+                          [sty.textglobal_theme_classic__dcKOeNktM]: hasVariant(
+                            globalVariants,
+                            "theme",
+                            "classic"
+                          )
+                        }
                       )}
                     >
                       {"Download Resume"}
@@ -322,7 +369,11 @@ function PlasmicPortfolio__RenderFunc(props: {
                       className={classNames(
                         projectcss.all,
                         projectcss.__wab_text,
-                        sty.text__goaQ6
+                        sty.text__goaQ6,
+                        {
+                          [sty.textglobal_theme_classic__goaQ6ENktM]:
+                            hasVariant(globalVariants, "theme", "classic")
+                        }
                       )}
                     >
                       {"Contact"}
