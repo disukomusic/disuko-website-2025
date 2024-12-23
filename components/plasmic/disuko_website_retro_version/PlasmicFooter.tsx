@@ -59,8 +59,6 @@ import {
   useGlobalActions
 } from "@plasmicapp/react-web/lib/host";
 
-import ThemeSwitcher from "../../ThemeSwitcher"; // plasmic-import: Dz8LagQJGg4_/component
-
 import { useScreenVariants as useScreenVariantsdmuurUfQuA6N } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: DmuurUFQuA6N/globalVariant
 import { ThemeValue, useTheme } from "./PlasmicGlobalVariant__Theme"; // plasmic-import: 3K9IqsAFaaID/globalVariant
 
@@ -87,7 +85,6 @@ export type PlasmicFooter__OverridesType = {
   columns?: Flex__<"div">;
   disuko?: Flex__<"a"> & Partial<LinkProps>;
   dotgay?: Flex__<"a"> & Partial<LinkProps>;
-  themeSwitcher?: Flex__<typeof ThemeSwitcher>;
 };
 
 export interface DefaultFooterProps {
@@ -291,24 +288,17 @@ function PlasmicFooter__RenderFunc(props: {
             {"icons from tabler"}
           </div>
         </div>
-        <div className={classNames(projectcss.all, sty.column__e7FGn)}>
-          <ThemeSwitcher
-            data-plasmic-name={"themeSwitcher"}
-            data-plasmic-override={overrides.themeSwitcher}
-            className={classNames("__wab_instance", sty.themeSwitcher)}
-          />
-        </div>
+        <div className={classNames(projectcss.all, sty.column__e7FGn)} />
       </Stack__>
     </div>
   ) as React.ReactElement | null;
 }
 
 const PlasmicDescendants = {
-  root: ["root", "columns", "disuko", "dotgay", "themeSwitcher"],
-  columns: ["columns", "disuko", "dotgay", "themeSwitcher"],
+  root: ["root", "columns", "disuko", "dotgay"],
+  columns: ["columns", "disuko", "dotgay"],
   disuko: ["disuko"],
-  dotgay: ["dotgay"],
-  themeSwitcher: ["themeSwitcher"]
+  dotgay: ["dotgay"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -318,7 +308,6 @@ type NodeDefaultElementType = {
   columns: "div";
   disuko: "a";
   dotgay: "a";
-  themeSwitcher: typeof ThemeSwitcher;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -384,7 +373,6 @@ export const PlasmicFooter = Object.assign(
     columns: makeNodeComponent("columns"),
     disuko: makeNodeComponent("disuko"),
     dotgay: makeNodeComponent("dotgay"),
-    themeSwitcher: makeNodeComponent("themeSwitcher"),
 
     // Metadata about props expected for PlasmicFooter
     internalVariantProps: PlasmicFooter__VariantProps,

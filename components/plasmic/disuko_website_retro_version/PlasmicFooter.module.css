@@ -298,10 +298,3 @@
   min-width: 0;
   padding: 8px;
 }
-.themeSwitcher:global(.__wab_instance) {
-  position: relative;
-  height: 31px;
-  width: 88px;
-  align-self: center;
-  flex-shrink: 0;
-}
