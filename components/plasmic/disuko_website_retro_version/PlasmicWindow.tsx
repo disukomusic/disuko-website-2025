@@ -97,7 +97,7 @@ export const PlasmicWindow__ArgProps = new Array<ArgPropType>(
 );
 
 export type PlasmicWindow__OverridesType = {
-  window?: Flex__<"a"> & Partial<LinkProps>;
+  music?: Flex__<"a"> & Partial<LinkProps>;
   xButton?: Flex__<"a"> & Partial<LinkProps>;
   svg?: Flex__<"svg">;
 };
@@ -163,8 +163,8 @@ function PlasmicWindow__RenderFunc(props: {
 
   return (
     <PlasmicLink__
-      data-plasmic-name={"window"}
-      data-plasmic-override={overrides.window}
+      data-plasmic-name={"music"}
+      data-plasmic-override={overrides.music}
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
       className={classNames(
@@ -176,14 +176,14 @@ function PlasmicWindow__RenderFunc(props: {
         projectcss.plasmic_tokens,
         plasmic_antd_5_hostless_css.plasmic_tokens,
         plasmic_plasmic_rich_components_css.plasmic_tokens,
-        sty.window,
+        sty.music,
         {
           [projectcss.global_theme_classic]: hasVariant(
             globalVariants,
             "theme",
             "classic"
           ),
-          [sty.windowglobal_theme_classic]: hasVariant(
+          [sty.musicglobal_theme_classic]: hasVariant(
             globalVariants,
             "theme",
             "classic"
@@ -238,7 +238,7 @@ function PlasmicWindow__RenderFunc(props: {
                   e instanceof TypeError ||
                   e?.plasmicType === "PlasmicUndefinedDataError"
                 ) {
-                  return "Music Production";
+                  return "Window Title";
                 }
                 throw e;
               }
@@ -402,7 +402,7 @@ function PlasmicWindow__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  window: ["window", "xButton", "svg"],
+  music: ["music", "xButton", "svg"],
   xButton: ["xButton", "svg"],
   svg: ["svg"]
 } as const;
@@ -410,7 +410,7 @@ type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
-  window: "a";
+  music: "a";
   xButton: "a";
   svg: "svg";
 };
@@ -462,7 +462,7 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       forNode: nodeName
     });
   };
-  if (nodeName === "window") {
+  if (nodeName === "music") {
     func.displayName = "PlasmicWindow";
   } else {
     func.displayName = `PlasmicWindow.${nodeName}`;
@@ -472,7 +472,7 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
 
 export const PlasmicWindow = Object.assign(
   // Top-level PlasmicWindow renders the root element
-  makeNodeComponent("window"),
+  makeNodeComponent("music"),
   {
     // Helper components rendering sub-elements
     xButton: makeNodeComponent("xButton"),
