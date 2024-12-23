@@ -17,12 +17,6 @@
 .button:hover {
   padding: 0px;
 }
-.h5 {
-  font-family: "ABeeZee", sans-serif;
-  color: var(--token-8jSXug3OFJx9);
-  text-align: center;
-  display: none;
-}
 .freeBox__pw2SB {
   display: flex;
   flex-direction: column;

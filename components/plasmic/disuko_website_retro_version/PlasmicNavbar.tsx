@@ -205,7 +205,7 @@ function PlasmicNavbar__RenderFunc(props: {
         />
       }
       forceOpenMenu={
-        hasVariant(globalVariants, "screen", "mobileOnly") ? true : false
+        hasVariant(globalVariants, "screen", "mobileOnly") ? false : false
       }
       itemsGap={10}
       menuItems={

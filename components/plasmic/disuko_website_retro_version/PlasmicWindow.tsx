@@ -72,17 +72,23 @@ import NounPixelHeart10989631SvgIcon from "./icons/PlasmicIcon__NounPixelHeart10
 
 createPlasmicElementProxy;
 
-export type PlasmicWindow__VariantMembers = {};
-export type PlasmicWindow__VariantsArgs = {};
+export type PlasmicWindow__VariantMembers = {
+  windowsStyle: "windowsStyle";
+};
+export type PlasmicWindow__VariantsArgs = {
+  windowsStyle?: SingleBooleanChoiceArg<"windowsStyle">;
+};
 type VariantPropType = keyof PlasmicWindow__VariantsArgs;
-export const PlasmicWindow__VariantProps = new Array<VariantPropType>();
+export const PlasmicWindow__VariantProps = new Array<VariantPropType>(
+  "windowsStyle"
+);
 
 export type PlasmicWindow__ArgsType = {
   windowTitle?: string;
   windowText?: string;
   linkDestination?: string;
-  windowImage?: React.ReactNode;
   showImage?: boolean;
+  windowImage?: React.ReactNode;
   children?: React.ReactNode;
 };
 type ArgPropType = keyof PlasmicWindow__ArgsType;
@@ -90,8 +96,8 @@ export const PlasmicWindow__ArgProps = new Array<ArgPropType>(
   "windowTitle",
   "windowText",
   "linkDestination",
-  "windowImage",
   "showImage",
+  "windowImage",
   "children"
 );
 
@@ -105,9 +111,10 @@ export interface DefaultWindowProps {
   windowTitle?: string;
   windowText?: string;
   linkDestination?: string;
-  windowImage?: React.ReactNode;
   showImage?: boolean;
+  windowImage?: React.ReactNode;
   children?: React.ReactNode;
+  windowsStyle?: SingleBooleanChoiceArg<"windowsStyle">;
   className?: string;
 }
 
@@ -155,6 +162,24 @@ function PlasmicWindow__RenderFunc(props: {
 
   const currentUser = useCurrentUser?.() || {};
 
+  const stateSpecs: Parameters<typeof useDollarState>[0] = React.useMemo(
+    () => [
+      {
+        path: "windowsStyle",
+        type: "private",
+        variableType: "variant",
+        initFunc: ({ $props, $state, $queries, $ctx }) => $props.windowsStyle
+      }
+    ],
+    [$props, $ctx, $refs]
+  );
+  const $state = useDollarState(stateSpecs, {
+    $props,
+    $ctx,
+    $queries: {},
+    $refs
+  });
+
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantsdmuurUfQuA6N()
   });
@@ -174,7 +199,14 @@ function PlasmicWindow__RenderFunc(props: {
         projectcss.plasmic_tokens,
         plasmic_antd_5_hostless_css.plasmic_tokens,
         plasmic_plasmic_rich_components_css.plasmic_tokens,
-        sty.music
+        sty.music,
+        {
+          [sty.musicwindowsStyle]: hasVariant(
+            $state,
+            "windowsStyle",
+            "windowsStyle"
+          )
+        }
       )}
       component={Link}
       href={(() => {
@@ -192,12 +224,27 @@ function PlasmicWindow__RenderFunc(props: {
       })()}
       platform={"nextjs"}
     >
-      <div className={classNames(projectcss.all, sty.freeBox__jCwp4)}>
+      <div
+        className={classNames(projectcss.all, sty.freeBox__jCwp4, {
+          [sty.freeBoxwindowsStyle__jCwp4860Cd]: hasVariant(
+            $state,
+            "windowsStyle",
+            "windowsStyle"
+          )
+        })}
+      >
         <div
           className={classNames(
             projectcss.all,
             projectcss.__wab_text,
-            sty.text__rogWw
+            sty.text__rogWw,
+            {
+              [sty.textwindowsStyle__rogWw860Cd]: hasVariant(
+                $state,
+                "windowsStyle",
+                "windowsStyle"
+              )
+            }
           )}
         >
           <React.Fragment>
@@ -219,7 +266,13 @@ function PlasmicWindow__RenderFunc(props: {
         <PlasmicLink__
           data-plasmic-name={"xButton"}
           data-plasmic-override={overrides.xButton}
-          className={classNames(projectcss.all, projectcss.a, sty.xButton)}
+          className={classNames(projectcss.all, projectcss.a, sty.xButton, {
+            [sty.xButtonwindowsStyle]: hasVariant(
+              $state,
+              "windowsStyle",
+              "windowsStyle"
+            )
+          })}
           component={Link}
           href={(() => {
             try {
@@ -261,7 +314,13 @@ function PlasmicWindow__RenderFunc(props: {
           <NounPixelHeart10989631SvgIcon
             data-plasmic-name={"svg"}
             data-plasmic-override={overrides.svg}
-            className={classNames(projectcss.all, sty.svg)}
+            className={classNames(projectcss.all, sty.svg, {
+              [sty.svgwindowsStyle]: hasVariant(
+                $state,
+                "windowsStyle",
+                "windowsStyle"
+              )
+            })}
             role={"img"}
           />
         </PlasmicLink__>
@@ -269,7 +328,13 @@ function PlasmicWindow__RenderFunc(props: {
       <Stack__
         as={"div"}
         hasGap={true}
-        className={classNames(projectcss.all, sty.freeBox__p2PhV)}
+        className={classNames(projectcss.all, sty.freeBox__p2PhV, {
+          [sty.freeBoxwindowsStyle__p2PhV860Cd]: hasVariant(
+            $state,
+            "windowsStyle",
+            "windowsStyle"
+          )
+        })}
       >
         {(() => {
           try {
@@ -317,7 +382,14 @@ function PlasmicWindow__RenderFunc(props: {
           className={classNames(
             projectcss.all,
             projectcss.__wab_text,
-            sty.text__xZr7L
+            sty.text__xZr7L,
+            {
+              [sty.textwindowsStyle__xZr7L860Cd]: hasVariant(
+                $state,
+                "windowsStyle",
+                "windowsStyle"
+              )
+            }
           )}
         >
           <React.Fragment>

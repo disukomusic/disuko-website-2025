@@ -95,7 +95,6 @@ export const PlasmicWindowButton__ArgProps = new Array<ArgPropType>(
 
 export type PlasmicWindowButton__OverridesType = {
   button?: Flex__<"a"> & Partial<LinkProps>;
-  h5?: Flex__<"h5">;
 };
 
 export interface DefaultWindowButtonProps {
@@ -189,18 +188,6 @@ function PlasmicWindowButton__RenderFunc(props: {
         }
       })()}
     >
-      <h5
-        data-plasmic-name={"h5"}
-        data-plasmic-override={overrides.h5}
-        className={classNames(
-          projectcss.all,
-          projectcss.h5,
-          projectcss.__wab_text,
-          sty.h5
-        )}
-      >
-        {"home"}
-      </h5>
       <div className={classNames(projectcss.all, sty.freeBox__pw2SB)}>
         <div className={classNames(projectcss.all, sty.freeBox__imu2C)}>
           {renderPlasmicSlot({
@@ -220,15 +207,13 @@ function PlasmicWindowButton__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  button: ["button", "h5"],
-  h5: ["h5"]
+  button: ["button"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
   button: "a";
-  h5: "h5";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -291,7 +276,6 @@ export const PlasmicWindowButton = Object.assign(
   makeNodeComponent("button"),
   {
     // Helper components rendering sub-elements
-    h5: makeNodeComponent("h5"),
 
     // Metadata about props expected for PlasmicWindowButton
     internalVariantProps: PlasmicWindowButton__VariantProps,

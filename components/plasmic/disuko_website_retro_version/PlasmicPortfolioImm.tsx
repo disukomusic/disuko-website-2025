@@ -210,7 +210,7 @@ function PlasmicPortfolioImm__RenderFunc(props: {
               data-plasmic-override={overrides.window}
               className={classNames("__wab_instance", sty.window)}
               windowText={
-                "I am currently Studying Immersive Media at Chatham University. I've made games, VR spaces, and more!"
+                "I am currently Studying Immersive Media at Chatham University. I've made games, VR spaces, audiovisual installations, and more!"
               }
               windowTitle={"Immersive Media"}
             />

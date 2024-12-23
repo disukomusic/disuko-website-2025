@@ -91,7 +91,7 @@ export type PlasmicPortfolio__OverridesType = {
   navbar?: Flex__<typeof Navbar>;
   main?: Flex__<"div">;
   headshot?: Flex__<typeof PlasmicImg__>;
-  windowButton?: Flex__<typeof WindowButton>;
+  columns?: Flex__<"div">;
   footer?: Flex__<typeof Footer>;
 };
 
@@ -249,49 +249,9 @@ function PlasmicPortfolio__RenderFunc(props: {
                     sty.text__jdxSm
                   )}
                 >
-                  <React.Fragment>
-                    <React.Fragment>
-                      {
-                        "Hi! I\u2019m Angelo, and I\u2019m an enthusiast for everything having to do with digital technology. I\u2019m currently studying Immersive Media, Music Technology, and Film & Digital Media Production at Chatham University. I also release music, YouTube videos, and make art under the online alias \u201cDisuko.\u201d In my work, my main goal is sharing the truest form of myself\u2014whether that\u2019s through electronic music, cinematography, or 3D artwork. At the core of my work is using digital technology to share that inexplicable emotion that comes about when listening to your favorite song, watching your favorite movie, or being \u201cin the zone\u201d doing something you love. Much of my work uses bright pastel colors, cute aesthetics, and fun concepts to share positivity with the world. If you would like to reach out, consider my "
-                      }
-                    </React.Fragment>
-                    {
-                      <PlasmicLink__
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.a,
-                          projectcss.__wab_text,
-                          projectcss.plasmic_default__inline,
-                          sty.link__kYnJw
-                        )}
-                        component={Link}
-                        href={"mailto:disukomusic@gmail.com"}
-                        platform={"nextjs"}
-                      >
-                        {"email "}
-                      </PlasmicLink__>
-                    }
-                    <React.Fragment>
-                      {"or by checking out one of the many "}
-                    </React.Fragment>
-                    {
-                      <PlasmicLink__
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.a,
-                          projectcss.__wab_text,
-                          projectcss.plasmic_default__inline,
-                          sty.link__eDwLp
-                        )}
-                        component={Link}
-                        href={"disuko.gay/links"}
-                        platform={"nextjs"}
-                      >
-                        {"social media platforms"}
-                      </PlasmicLink__>
-                    }
-                    <React.Fragment>{" I\u2019m active on!"}</React.Fragment>
-                  </React.Fragment>
+                  {
+                    "Hi! I\u2019m Angelo, and I\u2019m an enthusiast for everything having to do with digital technology. I\u2019m currently studying Immersive Media, Music Technology, and Film & Digital Media Production at Chatham University. I also make online as \u201cDisuko.\u201d my main goal is sharing the truest form of myself with any medium available! At the core of my work is using technology to share my emotions, viewpoints, and interests. "
+                  }
                 </div>
               </div>
               <Stack__
@@ -327,69 +287,63 @@ function PlasmicPortfolio__RenderFunc(props: {
                   }}
                 />
 
-                <WindowButton
-                  data-plasmic-name={"windowButton"}
-                  data-plasmic-override={overrides.windowButton}
-                  className={classNames("__wab_instance", sty.windowButton)}
-                  link={
-                    "https://xgdsk-my.sharepoint.com/:b:/g/personal/disuko_redpandastudios_net/EVfnAtlcQNhOjn5XvQwxDrIBYEU-PhuCxCqTVDGOPvVW0Q?e=btqs4d"
-                  }
+                <Stack__
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox__a9Bbt)}
                 >
-                  <div
+                  <WindowButton
                     className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__dcKO
+                      "__wab_instance",
+                      sty.windowButton__oX6B
                     )}
+                    link={
+                      "https://xgdsk-my.sharepoint.com/:b:/g/personal/disuko_redpandastudios_net/EVfnAtlcQNhOjn5XvQwxDrIBYEU-PhuCxCqTVDGOPvVW0Q?e=btqs4d"
+                    }
                   >
-                    {"Download Resume"}
-                  </div>
-                </WindowButton>
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__dcKO
+                      )}
+                    >
+                      {"Download Resume"}
+                    </div>
+                  </WindowButton>
+                  <WindowButton
+                    className={classNames(
+                      "__wab_instance",
+                      sty.windowButton___6RFoD
+                    )}
+                    link={"mailto:disukomusic@gmail.com"}
+                  >
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__goaQ6
+                      )}
+                    >
+                      {"Contact"}
+                    </div>
+                  </WindowButton>
+                </Stack__>
               </Stack__>
             </Stack__>
-            <Stack__
-              as={"div"}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.freeBox___5X5M3)}
+            <div
+              data-plasmic-name={"columns"}
+              data-plasmic-override={overrides.columns}
+              className={classNames(projectcss.all, sty.columns)}
             >
-              <Stack__
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.freeBox__eyr0C)}
-              >
+              <div className={classNames(projectcss.all, sty.column__smuXl)}>
                 <Window
-                  className={classNames("__wab_instance", sty.window__pdHhx)}
-                  linkDestination={`/3d-Design`}
-                  windowImage={
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img__ukXf)}
-                      displayHeight={"auto"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"auto"}
-                      loading={"lazy"}
-                      src={{
-                        src: "/plasmic/disuko_website_retro_version/images/teacupFrogWorkflowJpg.jpg",
-                        fullWidth: 1920,
-                        fullHeight: 1080,
-                        aspectRatio: undefined
-                      }}
-                    />
-                  }
-                  windowText={``}
-                  windowTitle={"3D Design"}
-                />
-
-                <Window
-                  className={classNames("__wab_instance", sty.window___1FKO)}
+                  className={classNames("__wab_instance", sty.window__tlLqO)}
                   linkDestination={`/2d-design`}
                   windowImage={
                     <PlasmicImg__
                       alt={""}
-                      className={classNames(sty.img__tjX9X)}
+                      className={classNames(sty.img__kMwug)}
                       displayHeight={"auto"}
                       displayMaxHeight={"none"}
                       displayMaxWidth={"100%"}
@@ -405,17 +359,18 @@ function PlasmicPortfolio__RenderFunc(props: {
                       }}
                     />
                   }
-                  windowText={``}
+                  windowText={"Adobe Photoshop / Illustrator"}
                   windowTitle={"2D Design"}
                 />
-
+              </div>
+              <div className={classNames(projectcss.all, sty.column___7MAnf)}>
                 <Window
-                  className={classNames("__wab_instance", sty.window__dxjgc)}
-                  linkDestination={`/music`}
+                  className={classNames("__wab_instance", sty.window__iSq4J)}
+                  linkDestination={`/3d-Design`}
                   windowImage={
                     <PlasmicImg__
                       alt={""}
-                      className={classNames(sty.img__tntif)}
+                      className={classNames(sty.img__v0XiG)}
                       displayHeight={"auto"}
                       displayMaxHeight={"none"}
                       displayMaxWidth={"100%"}
@@ -424,55 +379,25 @@ function PlasmicPortfolio__RenderFunc(props: {
                       displayWidth={"auto"}
                       loading={"lazy"}
                       src={{
-                        src: "/plasmic/disuko_website_retro_version/images/angeloDJingJpg.jpg",
+                        src: "/plasmic/disuko_website_retro_version/images/teacupFrogWorkflowJpg.jpg",
                         fullWidth: 1920,
                         fullHeight: 1080,
                         aspectRatio: undefined
                       }}
                     />
                   }
-                  windowText={``}
-                  windowTitle={"Music Technology"}
+                  windowText={"Blender / Maya, Fusion 360"}
+                  windowTitle={"3D Design"}
                 />
-              </Stack__>
-              <Stack__
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.freeBox__z8ZTc)}
-              >
+              </div>
+              <div className={classNames(projectcss.all, sty.column__dxCjj)}>
                 <Window
-                  className={classNames("__wab_instance", sty.window__wfEx)}
-                  linkDestination={`/IMM`}
+                  className={classNames("__wab_instance", sty.window__oqDxY)}
+                  linkDestination={`/film`}
                   windowImage={
                     <PlasmicImg__
                       alt={""}
-                      className={classNames(sty.img__wfOwc)}
-                      displayHeight={"auto"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"auto"}
-                      loading={"lazy"}
-                      src={{
-                        src: "/plasmic/disuko_website_retro_version/images/immJpg.jpg",
-                        fullWidth: 1920,
-                        fullHeight: 1080,
-                        aspectRatio: undefined
-                      }}
-                    />
-                  }
-                  windowText={``}
-                  windowTitle={"Immersive Media"}
-                />
-
-                <Window
-                  className={classNames("__wab_instance", sty.window__iRfJx)}
-                  linkDestination={`/disuko-tv`}
-                  windowImage={
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img__hucW9)}
+                      className={classNames(sty.img__azDap)}
                       displayHeight={"auto"}
                       displayMaxHeight={"none"}
                       displayMaxWidth={"100%"}
@@ -488,11 +413,67 @@ function PlasmicPortfolio__RenderFunc(props: {
                       }}
                     />
                   }
-                  windowText={``}
+                  windowText={"Adobe Premiere / After Effects"}
                   windowTitle={"Film"}
                 />
-              </Stack__>
-            </Stack__>
+              </div>
+              <div className={classNames(projectcss.all, sty.column___6IxKg)}>
+                <Window
+                  className={classNames("__wab_instance", sty.window__p6Lhm)}
+                  linkDestination={`/IMM`}
+                  windowImage={
+                    <PlasmicImg__
+                      alt={""}
+                      className={classNames(sty.img__qwXj9)}
+                      displayHeight={"auto"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"100%"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"auto"}
+                      loading={"lazy"}
+                      src={{
+                        src: "/plasmic/disuko_website_retro_version/images/img1113Jpg.jpg",
+                        fullWidth: 2048,
+                        fullHeight: 1365,
+                        aspectRatio: undefined
+                      }}
+                    />
+                  }
+                  windowText={"Unity Engine, Godot Engine, TouchDesigner"}
+                  windowTitle={"Immersive Media"}
+                />
+              </div>
+              <div className={classNames(projectcss.all, sty.column__s6E3J)}>
+                <Window
+                  className={classNames("__wab_instance", sty.window__cifFm)}
+                  linkDestination={`/music`}
+                  windowImage={
+                    <PlasmicImg__
+                      alt={""}
+                      className={classNames(sty.img__u2Kt)}
+                      displayHeight={"auto"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"100%"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"auto"}
+                      loading={"lazy"}
+                      src={{
+                        src: "/plasmic/disuko_website_retro_version/images/angeloDJingJpg.jpg",
+                        fullWidth: 1920,
+                        fullHeight: 1080,
+                        aspectRatio: undefined
+                      }}
+                    />
+                  }
+                  windowText={
+                    "FL Studio, Ableton Live, BitWig Studio, Adobe Audition"
+                  }
+                  windowTitle={"Music"}
+                />
+              </div>
+            </div>
           </Stack__>
           <Footer
             data-plasmic-name={"footer"}
@@ -506,11 +487,11 @@ function PlasmicPortfolio__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "navbar", "main", "headshot", "windowButton", "footer"],
+  root: ["root", "navbar", "main", "headshot", "columns", "footer"],
   navbar: ["navbar"],
-  main: ["main", "headshot", "windowButton"],
+  main: ["main", "headshot", "columns"],
   headshot: ["headshot"],
-  windowButton: ["windowButton"],
+  columns: ["columns"],
   footer: ["footer"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -521,7 +502,7 @@ type NodeDefaultElementType = {
   navbar: typeof Navbar;
   main: "div";
   headshot: typeof PlasmicImg__;
-  windowButton: typeof WindowButton;
+  columns: "div";
   footer: typeof Footer;
 };
 
@@ -613,7 +594,7 @@ export const PlasmicPortfolio = Object.assign(
     navbar: makeNodeComponent("navbar"),
     main: makeNodeComponent("main"),
     headshot: makeNodeComponent("headshot"),
-    windowButton: makeNodeComponent("windowButton"),
+    columns: makeNodeComponent("columns"),
     footer: makeNodeComponent("footer"),
 
     // Metadata about props expected for PlasmicPortfolio

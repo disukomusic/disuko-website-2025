@@ -63,9 +63,8 @@ import { usePlasmicDataSourceContext } from "@plasmicapp/data-sources-context";
 
 import WindowButton from "../../WindowButton"; // plasmic-import: KZYdo-R8GYAn/component
 import { AntdPopover } from "@plasmicpkgs/antd5/skinny/registerPopover";
-import Navbar from "../../Navbar"; // plasmic-import: 5THU1wffFibB/component
+import Window from "../../Window"; // plasmic-import: BWjgdOwFY_OO/component
 import Tilt from "@plasmicpkgs/react-parallax-tilt";
-import Footer from "../../Footer"; // plasmic-import: shKoGjSwLEEB/component
 import { Embed } from "@plasmicpkgs/plasmic-basic-components";
 
 import { useScreenVariants as useScreenVariantsdmuurUfQuA6N } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: DmuurUFQuA6N/globalVariant
@@ -106,9 +105,10 @@ export type PlasmicLinks__OverridesType = {
   root?: Flex__<"div">;
   windowButton?: Flex__<typeof WindowButton>;
   popover?: Flex__<typeof AntdPopover>;
-  navbar?: Flex__<typeof Navbar>;
   main?: Flex__<"div">;
   img?: Flex__<typeof PlasmicImg__>;
+  freeBox?: Flex__<"div">;
+  window?: Flex__<typeof Window>;
   spotify?: Flex__<typeof Tilt>;
   itunes?: Flex__<typeof Tilt>;
   bandcamp?: Flex__<typeof Tilt>;
@@ -121,7 +121,6 @@ export type PlasmicLinks__OverridesType = {
   disukoFlipsYoutuibe?: Flex__<typeof Tilt>;
   vero?: Flex__<typeof Tilt>;
   twitter?: Flex__<typeof Tilt>;
-  footer?: Flex__<typeof Footer>;
   embedHtml?: Flex__<typeof Embed>;
 };
 
@@ -295,12 +294,6 @@ function PlasmicLinks__RenderFunc(props: {
               />
             </AntdPopover>
           </WindowButton>
-          <Navbar
-            data-plasmic-name={"navbar"}
-            data-plasmic-override={overrides.navbar}
-            className={classNames("__wab_instance", sty.navbar)}
-          />
-
           <Stack__
             as={"div"}
             data-plasmic-name={"main"}
@@ -348,52 +341,78 @@ function PlasmicLinks__RenderFunc(props: {
                 "Hi everyone! My name is Disuko. I'm a producer, DJ, and content creator!"
               }
             </div>
-            <PlasmicLink__
-              className={classNames(
-                projectcss.all,
-                projectcss.a,
-                sty.link___8MnUh
-              )}
-              component={Link}
-              href={`/retro`}
-              platform={"nextjs"}
-              tabIndex={10}
+            <Stack__
+              as={"div"}
+              data-plasmic-name={"freeBox"}
+              data-plasmic-override={overrides.freeBox}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.freeBox)}
             >
-              <div
+              <PlasmicLink__
                 className={classNames(
                   projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__tgzdD
+                  projectcss.a,
+                  sty.link___8MnUh
                 )}
+                component={Link}
+                href={`/retro`}
+                platform={"nextjs"}
+                tabIndex={10}
               >
-                {"GAMEBOY COMISSION STATUS:"}
-              </div>
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__gpnFu
-                )}
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__tgzdD
+                  )}
+                >
+                  {"GAMEBOY COMISSION STATUS:"}
+                </div>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__gpnFu
+                  )}
+                >
+                  <React.Fragment>
+                    <span
+                      className={"plasmic_default__all plasmic_default__span"}
+                      style={{ color: "#66FF41" }}
+                    >
+                      {"Open!"}
+                    </span>
+                  </React.Fragment>
+                </div>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__vTdM
+                  )}
+                >
+                  {"https://disuko.gay/retro"}
+                </div>
+              </PlasmicLink__>
+              <Window
+                data-plasmic-name={"window"}
+                data-plasmic-override={overrides.window}
+                className={classNames("__wab_instance", sty.window)}
+                linkDestination={`/commissions`}
+                windowText={"Art Commission Status;"}
+                windowTitle={"Commission Status"}
               >
-                <React.Fragment>
-                  <span
-                    className={"plasmic_default__all plasmic_default__span"}
-                    style={{ color: "#66FF41" }}
-                  >
-                    {"Open!"}
-                  </span>
-                </React.Fragment>
-              </div>
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__vTdM
-                )}
-              >
-                {"https://disuko.gay/retro"}
-              </div>
-            </PlasmicLink__>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__qzvfg
+                  )}
+                >
+                  {"Open!"}
+                </div>
+              </Window>
+            </Stack__>
             <Tilt
               className={classNames("__wab_instance", sty.tilt__s8KYd)}
               glareEnable={false}
@@ -1193,12 +1212,6 @@ function PlasmicLinks__RenderFunc(props: {
               </PlasmicLink__>
             </Tilt>
           </Stack__>
-          <Footer
-            data-plasmic-name={"footer"}
-            data-plasmic-override={overrides.footer}
-            className={classNames("__wab_instance", sty.footer)}
-          />
-
           <Embed
             data-plasmic-name={"embedHtml"}
             data-plasmic-override={overrides.embedHtml}
@@ -1218,9 +1231,10 @@ const PlasmicDescendants = {
     "root",
     "windowButton",
     "popover",
-    "navbar",
     "main",
     "img",
+    "freeBox",
+    "window",
     "spotify",
     "itunes",
     "bandcamp",
@@ -1233,15 +1247,15 @@ const PlasmicDescendants = {
     "disukoFlipsYoutuibe",
     "vero",
     "twitter",
-    "footer",
     "embedHtml"
   ],
   windowButton: ["windowButton", "popover"],
   popover: ["popover"],
-  navbar: ["navbar"],
   main: [
     "main",
     "img",
+    "freeBox",
+    "window",
     "spotify",
     "itunes",
     "bandcamp",
@@ -1256,6 +1270,8 @@ const PlasmicDescendants = {
     "twitter"
   ],
   img: ["img"],
+  freeBox: ["freeBox", "window"],
+  window: ["window"],
   spotify: ["spotify"],
   itunes: ["itunes"],
   bandcamp: ["bandcamp"],
@@ -1268,7 +1284,6 @@ const PlasmicDescendants = {
   disukoFlipsYoutuibe: ["disukoFlipsYoutuibe"],
   vero: ["vero"],
   twitter: ["twitter"],
-  footer: ["footer"],
   embedHtml: ["embedHtml"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -1278,9 +1293,10 @@ type NodeDefaultElementType = {
   root: "div";
   windowButton: typeof WindowButton;
   popover: typeof AntdPopover;
-  navbar: typeof Navbar;
   main: "div";
   img: typeof PlasmicImg__;
+  freeBox: "div";
+  window: typeof Window;
   spotify: typeof Tilt;
   itunes: typeof Tilt;
   bandcamp: typeof Tilt;
@@ -1293,7 +1309,6 @@ type NodeDefaultElementType = {
   disukoFlipsYoutuibe: typeof Tilt;
   vero: typeof Tilt;
   twitter: typeof Tilt;
-  footer: typeof Footer;
   embedHtml: typeof Embed;
 };
 
@@ -1384,9 +1399,10 @@ export const PlasmicLinks = Object.assign(
     // Helper components rendering sub-elements
     windowButton: makeNodeComponent("windowButton"),
     popover: makeNodeComponent("popover"),
-    navbar: makeNodeComponent("navbar"),
     main: makeNodeComponent("main"),
     img: makeNodeComponent("img"),
+    freeBox: makeNodeComponent("freeBox"),
+    window: makeNodeComponent("window"),
     spotify: makeNodeComponent("spotify"),
     itunes: makeNodeComponent("itunes"),
     bandcamp: makeNodeComponent("bandcamp"),
@@ -1399,7 +1415,6 @@ export const PlasmicLinks = Object.assign(
     disukoFlipsYoutuibe: makeNodeComponent("disukoFlipsYoutuibe"),
     vero: makeNodeComponent("vero"),
     twitter: makeNodeComponent("twitter"),
-    footer: makeNodeComponent("footer"),
     embedHtml: makeNodeComponent("embedHtml"),
 
     // Metadata about props expected for PlasmicLinks
