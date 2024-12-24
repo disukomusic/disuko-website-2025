@@ -64,6 +64,8 @@ import { usePlasmicDataSourceContext } from "@plasmicapp/data-sources-context";
 import Navbar from "../../Navbar"; // plasmic-import: 5THU1wffFibB/component
 import WindowButton from "../../WindowButton"; // plasmic-import: KZYdo-R8GYAn/component
 import Multiwindow from "../../Multiwindow"; // plasmic-import: agRDam8zA0LH/component
+import { SliderWrapper } from "@plasmicpkgs/react-slick";
+import { sliderHelpers as SliderWrapper_Helpers } from "@plasmicpkgs/react-slick";
 import Window from "../../Window"; // plasmic-import: BWjgdOwFY_OO/component
 
 import { useScreenVariants as useScreenVariantsdmuurUfQuA6N } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: DmuurUFQuA6N/globalVariant
@@ -92,6 +94,7 @@ export type PlasmicPortfolio2DDesign__OverridesType = {
   navbar?: Flex__<typeof Navbar>;
   windowButton?: Flex__<typeof WindowButton>;
   multiwindow?: Flex__<typeof Multiwindow>;
+  sliderCarousel?: Flex__<typeof SliderWrapper>;
   columns?: Flex__<"div">;
   imageWindow?: Flex__<"div">;
 };
@@ -137,6 +140,27 @@ function PlasmicPortfolio2DDesign__RenderFunc(props: {
   const $refs = refsRef.current;
 
   const currentUser = useCurrentUser?.() || {};
+
+  const stateSpecs: Parameters<typeof useDollarState>[0] = React.useMemo(
+    () => [
+      {
+        path: "sliderCarousel.currentSlide",
+        type: "private",
+        variableType: "number",
+        initFunc: ({ $props, $state, $queries, $ctx }) => 0,
+
+        refName: "sliderCarousel",
+        onMutate: generateOnMutateForSpec("currentSlide", SliderWrapper_Helpers)
+      }
+    ],
+    [$props, $ctx, $refs]
+  );
+  const $state = useDollarState(stateSpecs, {
+    $props,
+    $ctx,
+    $queries: {},
+    $refs
+  });
 
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantsdmuurUfQuA6N()
@@ -266,21 +290,387 @@ function PlasmicPortfolio2DDesign__RenderFunc(props: {
               {"Logos, Stickers, etc."}
             </div>
           </div>
-          <div className={classNames(projectcss.all, sty.freeBox__bcv64)}>
-            <div className={classNames(projectcss.all, sty.freeBox__xl6Ay)}>
+          {(() => {
+            const child$Props = {
+              arrowColor: hasVariant(globalVariants, "screen", "mobileOnly")
+                ? "#404040"
+                : true
+                ? "#52224C"
+                : undefined,
+              beforeChange: async (...eventArgs: any) => {
+                generateStateOnChangePropForCodeComponents(
+                  $state,
+                  "currentSlide",
+                  ["sliderCarousel", "currentSlide"],
+                  SliderWrapper_Helpers
+                ).apply(null, eventArgs);
+              },
+              centerMode: hasVariant(globalVariants, "screen", "mobileOnly")
+                ? false
+                : undefined,
+              className: classNames("__wab_instance", sty.sliderCarousel),
+              initialSlide: generateStateValueProp($state, [
+                "sliderCarousel",
+                "currentSlide"
+              ]),
+              ref: ref => {
+                $refs["sliderCarousel"] = ref;
+              },
+              sliderScopeClassName: sty["sliderCarousel__slider"],
+              slidesPerRow: hasVariant(globalVariants, "screen", "mobileOnly")
+                ? 1
+                : 2
+            };
+            initializeCodeComponentStates(
+              $state,
+              [
+                {
+                  name: "currentSlide",
+                  plasmicStateName: "sliderCarousel.currentSlide"
+                }
+              ],
+              [],
+              SliderWrapper_Helpers ?? {},
+              child$Props
+            );
+
+            return (
+              <SliderWrapper
+                data-plasmic-name={"sliderCarousel"}
+                data-plasmic-override={overrides.sliderCarousel}
+                {...child$Props}
+              >
+                <div className={classNames(projectcss.all, sty.freeBox__xl6Ay)}>
+                  <Window
+                    className={classNames("__wab_instance", sty.window__sqAdD)}
+                    linkDestination={""}
+                    windowImage={
+                      <PlasmicImg__
+                        alt={""}
+                        className={classNames(sty.img__yT9Dh)}
+                        displayHeight={"500px"}
+                        displayMaxHeight={"none"}
+                        displayMaxWidth={"100%"}
+                        displayMinHeight={"0"}
+                        displayMinWidth={"0"}
+                        displayWidth={
+                          hasVariant(globalVariants, "screen", "mobileOnly")
+                            ? "250px"
+                            : "500px"
+                        }
+                        loading={"eager"}
+                        src={{
+                          src: "/plasmic/disuko_website_retro_version/images/ddsLogoPng2.png",
+                          fullWidth: 1271,
+                          fullHeight: 622,
+                          aspectRatio: undefined
+                        }}
+                      />
+                    }
+                    windowText={"Pandamonium: Disuko Dating Simulator"}
+                    windowTitle={"Logo Design"}
+                  />
+                </div>
+                <div className={classNames(projectcss.all, sty.freeBox__dOkd)}>
+                  <Window
+                    className={classNames("__wab_instance", sty.window__s2J04)}
+                    linkDestination={`/merch`}
+                    windowImage={
+                      <PlasmicImg__
+                        alt={""}
+                        className={classNames(sty.img__mghKd)}
+                        displayHeight={"500px"}
+                        displayMaxHeight={"none"}
+                        displayMaxWidth={"100%"}
+                        displayMinHeight={"0"}
+                        displayMinWidth={"0"}
+                        displayWidth={
+                          hasVariant(globalVariants, "screen", "mobileOnly")
+                            ? "250px"
+                            : "500px"
+                        }
+                        loading={"eager"}
+                        src={{
+                          src: "/plasmic/disuko_website_retro_version/images/image24.png",
+                          fullWidth: 3000,
+                          fullHeight: 3000,
+                          aspectRatio: undefined
+                        }}
+                      />
+                    }
+                    windowText={"Shark Bait"}
+                    windowTitle={"Merchandise Design"}
+                  />
+                </div>
+                <div className={classNames(projectcss.all, sty.freeBox__xxAoH)}>
+                  <Window
+                    className={classNames("__wab_instance", sty.window__vl1CL)}
+                    windowImage={
+                      <PlasmicImg__
+                        alt={""}
+                        className={classNames(sty.img__vS4Sp)}
+                        displayHeight={"500px"}
+                        displayMaxHeight={"none"}
+                        displayMaxWidth={"100%"}
+                        displayMinHeight={"0"}
+                        displayMinWidth={"0"}
+                        displayWidth={
+                          hasVariant(globalVariants, "screen", "mobileOnly")
+                            ? "250px"
+                            : "500px"
+                        }
+                        loading={"eager"}
+                        src={{
+                          src: "/plasmic/disuko_website_retro_version/images/image32.png",
+                          fullWidth: 4096,
+                          fullHeight: 4096,
+                          aspectRatio: undefined
+                        }}
+                      />
+                    }
+                    windowText={"Vaporwave Balisong"}
+                    windowTitle={"Sticker Design"}
+                  />
+                </div>
+                <div className={classNames(projectcss.all, sty.freeBox__hUrU)}>
+                  <Window
+                    className={classNames("__wab_instance", sty.window__tx6YE)}
+                    windowImage={
+                      <PlasmicImg__
+                        alt={""}
+                        className={classNames(sty.img__s3FvE)}
+                        displayHeight={"500px"}
+                        displayMaxHeight={"none"}
+                        displayMaxWidth={"100%"}
+                        displayMinHeight={"0"}
+                        displayMinWidth={"0"}
+                        displayWidth={
+                          hasVariant(globalVariants, "screen", "mobileOnly")
+                            ? "250px"
+                            : "500px"
+                        }
+                        loading={"eager"}
+                        src={{
+                          src: "/plasmic/disuko_website_retro_version/images/image25.png",
+                          fullWidth: 3000,
+                          fullHeight: 3000,
+                          aspectRatio: undefined
+                        }}
+                      />
+                    }
+                    windowText={"Sammy and the Sunset Band"}
+                    windowTitle={"Logo Design"}
+                  />
+                </div>
+                <div className={classNames(projectcss.all, sty.freeBox__vtjQo)}>
+                  <Window
+                    className={classNames("__wab_instance", sty.window___8SiBa)}
+                    windowImage={
+                      <PlasmicImg__
+                        alt={""}
+                        className={classNames(sty.img__qs1YK)}
+                        displayHeight={"500px"}
+                        displayMaxHeight={"none"}
+                        displayMaxWidth={"100%"}
+                        displayMinHeight={"0"}
+                        displayMinWidth={"0"}
+                        displayWidth={
+                          hasVariant(globalVariants, "screen", "mobileOnly")
+                            ? "250px"
+                            : "500px"
+                        }
+                        loading={"eager"}
+                        src={{
+                          src: "/plasmic/disuko_website_retro_version/images/aeroDisukoStickerV4Png.png",
+                          fullWidth: 2238,
+                          fullHeight: 2135,
+                          aspectRatio: undefined
+                        }}
+                      />
+                    }
+                    windowText={"Disuko Aero 7"}
+                    windowTitle={"Sticker Design"}
+                  />
+                </div>
+                <div className={classNames(projectcss.all, sty.freeBox__z2AUx)}>
+                  <Window
+                    className={classNames("__wab_instance", sty.window__csHLt)}
+                    windowImage={
+                      <PlasmicImg__
+                        alt={""}
+                        className={classNames(sty.img__smlxf)}
+                        displayHeight={"500px"}
+                        displayMaxHeight={"none"}
+                        displayMaxWidth={"100%"}
+                        displayMinHeight={"0"}
+                        displayMinWidth={"0"}
+                        displayWidth={
+                          hasVariant(globalVariants, "screen", "mobileOnly")
+                            ? "250px"
+                            : "500px"
+                        }
+                        loading={"eager"}
+                        src={{
+                          src: "/plasmic/disuko_website_retro_version/images/ggjIconPng.png",
+                          fullWidth: 1024,
+                          fullHeight: 1024,
+                          aspectRatio: undefined
+                        }}
+                      />
+                    }
+                    windowText={"Global Game Jam 2023"}
+                    windowTitle={"Logo Design"}
+                  />
+                </div>
+                <div className={classNames(projectcss.all, sty.freeBox__u6LuJ)}>
+                  <Window
+                    className={classNames("__wab_instance", sty.window__vevHz)}
+                    linkDestination={"https://youtube.com/bitehandle"}
+                    windowImage={
+                      <PlasmicImg__
+                        alt={""}
+                        className={classNames(sty.img__lZy2Q)}
+                        displayHeight={"500px"}
+                        displayMaxHeight={"none"}
+                        displayMaxWidth={"100%"}
+                        displayMinHeight={"0"}
+                        displayMinWidth={"0"}
+                        displayWidth={
+                          hasVariant(globalVariants, "screen", "mobileOnly")
+                            ? "250px"
+                            : "500px"
+                        }
+                        loading={"eager"}
+                        src={{
+                          src: "/plasmic/disuko_website_retro_version/images/image14.png",
+                          fullWidth: 2000,
+                          fullHeight: 2000,
+                          aspectRatio: undefined
+                        }}
+                      />
+                    }
+                    windowText={"Bite Handle Rave"}
+                    windowTitle={"Logo Design"}
+                  />
+                </div>
+                <div className={classNames(projectcss.all, sty.freeBox__uq7Lp)}>
+                  <Window
+                    className={classNames("__wab_instance", sty.window__sbbYi)}
+                    windowImage={
+                      <PlasmicImg__
+                        alt={""}
+                        className={classNames(sty.img__vE5Zk)}
+                        displayHeight={"500px"}
+                        displayMaxHeight={"none"}
+                        displayMaxWidth={"100%"}
+                        displayMinHeight={"0"}
+                        displayMinWidth={"0"}
+                        displayWidth={
+                          hasVariant(globalVariants, "screen", "mobileOnly")
+                            ? "250px"
+                            : "500px"
+                        }
+                        loading={"eager"}
+                        src={{
+                          src: "/plasmic/disuko_website_retro_version/images/frutigerAeroDisukoPng.png",
+                          fullWidth: 3000,
+                          fullHeight: 3000,
+                          aspectRatio: undefined
+                        }}
+                      />
+                    }
+                    windowText={"Frutiger Aero Style Disuko"}
+                    windowTitle={"Sticker Design"}
+                  />
+                </div>
+                <div className={classNames(projectcss.all, sty.freeBox__qglNu)}>
+                  <Window
+                    className={classNames("__wab_instance", sty.window__mLfyK)}
+                    linkDestination={"https://redpandastudios.net"}
+                    windowImage={
+                      <PlasmicImg__
+                        alt={""}
+                        className={classNames(sty.img__lI657)}
+                        displayHeight={"500px"}
+                        displayMaxHeight={"none"}
+                        displayMaxWidth={"100%"}
+                        displayMinHeight={"0"}
+                        displayMinWidth={"0"}
+                        displayWidth={
+                          hasVariant(globalVariants, "screen", "mobileOnly")
+                            ? "250px"
+                            : "500px"
+                        }
+                        loading={"eager"}
+                        src={{
+                          src: "/plasmic/disuko_website_retro_version/images/bambooEngineLogoPng.png",
+                          fullWidth: 2939,
+                          fullHeight: 1540,
+                          aspectRatio: undefined
+                        }}
+                      />
+                    }
+                    windowText={"Bamboo Engine"}
+                    windowTitle={"Logo Design"}
+                  />
+                </div>
+                <div className={classNames(projectcss.all, sty.freeBox__w8Lg1)}>
+                  <Window
+                    className={classNames("__wab_instance", sty.window__lVwHz)}
+                    linkDestination={"https://redpandastudios.net"}
+                    windowImage={
+                      <PlasmicImg__
+                        alt={""}
+                        className={classNames(sty.img__spqb1)}
+                        displayHeight={"500px"}
+                        displayMaxHeight={"none"}
+                        displayMaxWidth={"100%"}
+                        displayMinHeight={"0"}
+                        displayMinWidth={"0"}
+                        displayWidth={
+                          hasVariant(globalVariants, "screen", "mobileOnly")
+                            ? "250px"
+                            : "500px"
+                        }
+                        loading={"eager"}
+                        src={{
+                          src: "/plasmic/disuko_website_retro_version/images/shiku2023TransparentPng.png",
+                          fullWidth: 3000,
+                          fullHeight: 3000,
+                          aspectRatio: undefined
+                        }}
+                      />
+                    }
+                    windowText={"Red Panda Studios"}
+                    windowTitle={"Logo Design"}
+                  />
+                </div>
+              </SliderWrapper>
+            );
+          })()}
+          <div className={classNames(projectcss.all, sty.freeBox__dq5T)}>
+            <div className={classNames(projectcss.all, sty.freeBox___53A4J)}>
               <Window
-                className={classNames("__wab_instance", sty.window__sqAdD)}
+                className={classNames("__wab_instance", sty.window__wNc5Z)}
                 linkDestination={""}
                 windowImage={
                   <PlasmicImg__
                     alt={""}
-                    className={classNames(sty.img__yT9Dh)}
-                    displayHeight={"500px"}
+                    className={classNames(sty.img__wk8JY)}
+                    displayHeight={
+                      hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? "auto"
+                        : "500px"
+                    }
                     displayMaxHeight={"none"}
                     displayMaxWidth={"100%"}
                     displayMinHeight={"0"}
                     displayMinWidth={"0"}
-                    displayWidth={"500px"}
+                    displayWidth={
+                      hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? "100%"
+                        : "500px"
+                    }
                     loading={"eager"}
                     src={{
                       src: "/plasmic/disuko_website_retro_version/images/ddsLogoPng2.png",
@@ -294,20 +684,28 @@ function PlasmicPortfolio2DDesign__RenderFunc(props: {
                 windowTitle={"Logo Design"}
               />
             </div>
-            <div className={classNames(projectcss.all, sty.freeBox__dOkd)}>
+            <div className={classNames(projectcss.all, sty.freeBox___0Gsj4)}>
               <Window
-                className={classNames("__wab_instance", sty.window__s2J04)}
+                className={classNames("__wab_instance", sty.window__wYvgt)}
                 linkDestination={`/merch`}
                 windowImage={
                   <PlasmicImg__
                     alt={""}
-                    className={classNames(sty.img__mghKd)}
-                    displayHeight={"500px"}
+                    className={classNames(sty.img__bhEoo)}
+                    displayHeight={
+                      hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? "auto"
+                        : "500px"
+                    }
                     displayMaxHeight={"none"}
                     displayMaxWidth={"100%"}
                     displayMinHeight={"0"}
                     displayMinWidth={"0"}
-                    displayWidth={"500px"}
+                    displayWidth={
+                      hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? "100%"
+                        : "500px"
+                    }
                     loading={"eager"}
                     src={{
                       src: "/plasmic/disuko_website_retro_version/images/image24.png",
@@ -321,19 +719,27 @@ function PlasmicPortfolio2DDesign__RenderFunc(props: {
                 windowTitle={"Merchandise Design"}
               />
             </div>
-            <div className={classNames(projectcss.all, sty.freeBox__xxAoH)}>
+            <div className={classNames(projectcss.all, sty.freeBox___2IIeK)}>
               <Window
-                className={classNames("__wab_instance", sty.window__vl1CL)}
+                className={classNames("__wab_instance", sty.window__egmPg)}
                 windowImage={
                   <PlasmicImg__
                     alt={""}
-                    className={classNames(sty.img__vS4Sp)}
-                    displayHeight={"500px"}
+                    className={classNames(sty.img__xBr9H)}
+                    displayHeight={
+                      hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? "auto"
+                        : "500px"
+                    }
                     displayMaxHeight={"none"}
                     displayMaxWidth={"100%"}
                     displayMinHeight={"0"}
                     displayMinWidth={"0"}
-                    displayWidth={"500px"}
+                    displayWidth={
+                      hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? "100%"
+                        : "500px"
+                    }
                     loading={"eager"}
                     src={{
                       src: "/plasmic/disuko_website_retro_version/images/image32.png",
@@ -347,19 +753,27 @@ function PlasmicPortfolio2DDesign__RenderFunc(props: {
                 windowTitle={"Sticker Design"}
               />
             </div>
-            <div className={classNames(projectcss.all, sty.freeBox__hUrU)}>
+            <div className={classNames(projectcss.all, sty.freeBox__uQqfC)}>
               <Window
-                className={classNames("__wab_instance", sty.window__tx6YE)}
+                className={classNames("__wab_instance", sty.window___8G7TD)}
                 windowImage={
                   <PlasmicImg__
                     alt={""}
-                    className={classNames(sty.img__s3FvE)}
-                    displayHeight={"500px"}
+                    className={classNames(sty.img__jcCUv)}
+                    displayHeight={
+                      hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? "auto"
+                        : "500px"
+                    }
                     displayMaxHeight={"none"}
                     displayMaxWidth={"100%"}
                     displayMinHeight={"0"}
                     displayMinWidth={"0"}
-                    displayWidth={"500px"}
+                    displayWidth={
+                      hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? "100%"
+                        : "500px"
+                    }
                     loading={"eager"}
                     src={{
                       src: "/plasmic/disuko_website_retro_version/images/image25.png",
@@ -373,19 +787,27 @@ function PlasmicPortfolio2DDesign__RenderFunc(props: {
                 windowTitle={"Logo Design"}
               />
             </div>
-            <div className={classNames(projectcss.all, sty.freeBox__vtjQo)}>
+            <div className={classNames(projectcss.all, sty.freeBox__a6Ghy)}>
               <Window
-                className={classNames("__wab_instance", sty.window___8SiBa)}
+                className={classNames("__wab_instance", sty.window__in6NO)}
                 windowImage={
                   <PlasmicImg__
                     alt={""}
-                    className={classNames(sty.img__qs1YK)}
-                    displayHeight={"500px"}
+                    className={classNames(sty.img__toout)}
+                    displayHeight={
+                      hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? "auto"
+                        : "500px"
+                    }
                     displayMaxHeight={"none"}
                     displayMaxWidth={"100%"}
                     displayMinHeight={"0"}
                     displayMinWidth={"0"}
-                    displayWidth={"500px"}
+                    displayWidth={
+                      hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? "100%"
+                        : "500px"
+                    }
                     loading={"eager"}
                     src={{
                       src: "/plasmic/disuko_website_retro_version/images/aeroDisukoStickerV4Png.png",
@@ -399,19 +821,27 @@ function PlasmicPortfolio2DDesign__RenderFunc(props: {
                 windowTitle={"Sticker Design"}
               />
             </div>
-            <div className={classNames(projectcss.all, sty.freeBox__z2AUx)}>
+            <div className={classNames(projectcss.all, sty.freeBox__nd4Mb)}>
               <Window
-                className={classNames("__wab_instance", sty.window__csHLt)}
+                className={classNames("__wab_instance", sty.window__w0Jnt)}
                 windowImage={
                   <PlasmicImg__
                     alt={""}
-                    className={classNames(sty.img__smlxf)}
-                    displayHeight={"500px"}
+                    className={classNames(sty.img__iaywn)}
+                    displayHeight={
+                      hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? "auto"
+                        : "500px"
+                    }
                     displayMaxHeight={"none"}
                     displayMaxWidth={"100%"}
                     displayMinHeight={"0"}
                     displayMinWidth={"0"}
-                    displayWidth={"500px"}
+                    displayWidth={
+                      hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? "100%"
+                        : "500px"
+                    }
                     loading={"eager"}
                     src={{
                       src: "/plasmic/disuko_website_retro_version/images/ggjIconPng.png",
@@ -425,20 +855,28 @@ function PlasmicPortfolio2DDesign__RenderFunc(props: {
                 windowTitle={"Logo Design"}
               />
             </div>
-            <div className={classNames(projectcss.all, sty.freeBox__u6LuJ)}>
+            <div className={classNames(projectcss.all, sty.freeBox__aYpur)}>
               <Window
-                className={classNames("__wab_instance", sty.window__vevHz)}
+                className={classNames("__wab_instance", sty.window__fmgJr)}
                 linkDestination={"https://youtube.com/bitehandle"}
                 windowImage={
                   <PlasmicImg__
                     alt={""}
-                    className={classNames(sty.img__lZy2Q)}
-                    displayHeight={"500px"}
+                    className={classNames(sty.img__xZwg)}
+                    displayHeight={
+                      hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? "auto"
+                        : "500px"
+                    }
                     displayMaxHeight={"none"}
                     displayMaxWidth={"100%"}
                     displayMinHeight={"0"}
                     displayMinWidth={"0"}
-                    displayWidth={"500px"}
+                    displayWidth={
+                      hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? "100%"
+                        : "500px"
+                    }
                     loading={"eager"}
                     src={{
                       src: "/plasmic/disuko_website_retro_version/images/image14.png",
@@ -452,19 +890,27 @@ function PlasmicPortfolio2DDesign__RenderFunc(props: {
                 windowTitle={"Logo Design"}
               />
             </div>
-            <div className={classNames(projectcss.all, sty.freeBox__uq7Lp)}>
+            <div className={classNames(projectcss.all, sty.freeBox__up3Zm)}>
               <Window
-                className={classNames("__wab_instance", sty.window__sbbYi)}
+                className={classNames("__wab_instance", sty.window__nh45R)}
                 windowImage={
                   <PlasmicImg__
                     alt={""}
-                    className={classNames(sty.img__vE5Zk)}
-                    displayHeight={"500px"}
+                    className={classNames(sty.img__pcHcG)}
+                    displayHeight={
+                      hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? "auto"
+                        : "500px"
+                    }
                     displayMaxHeight={"none"}
                     displayMaxWidth={"100%"}
                     displayMinHeight={"0"}
                     displayMinWidth={"0"}
-                    displayWidth={"500px"}
+                    displayWidth={
+                      hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? "100%"
+                        : "500px"
+                    }
                     loading={"eager"}
                     src={{
                       src: "/plasmic/disuko_website_retro_version/images/frutigerAeroDisukoPng.png",
@@ -478,20 +924,28 @@ function PlasmicPortfolio2DDesign__RenderFunc(props: {
                 windowTitle={"Sticker Design"}
               />
             </div>
-            <div className={classNames(projectcss.all, sty.freeBox__qglNu)}>
+            <div className={classNames(projectcss.all, sty.freeBox__lX9G9)}>
               <Window
-                className={classNames("__wab_instance", sty.window__mLfyK)}
+                className={classNames("__wab_instance", sty.window___1N2E4)}
                 linkDestination={"https://redpandastudios.net"}
                 windowImage={
                   <PlasmicImg__
                     alt={""}
-                    className={classNames(sty.img__lI657)}
-                    displayHeight={"500px"}
+                    className={classNames(sty.img__bli3)}
+                    displayHeight={
+                      hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? "auto"
+                        : "500px"
+                    }
                     displayMaxHeight={"none"}
                     displayMaxWidth={"100%"}
                     displayMinHeight={"0"}
                     displayMinWidth={"0"}
-                    displayWidth={"500px"}
+                    displayWidth={
+                      hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? "100%"
+                        : "500px"
+                    }
                     loading={"eager"}
                     src={{
                       src: "/plasmic/disuko_website_retro_version/images/bambooEngineLogoPng.png",
@@ -505,20 +959,28 @@ function PlasmicPortfolio2DDesign__RenderFunc(props: {
                 windowTitle={"Logo Design"}
               />
             </div>
-            <div className={classNames(projectcss.all, sty.freeBox__w8Lg1)}>
+            <div className={classNames(projectcss.all, sty.freeBox__whuXr)}>
               <Window
-                className={classNames("__wab_instance", sty.window__lVwHz)}
+                className={classNames("__wab_instance", sty.window__e8Rs3)}
                 linkDestination={"https://redpandastudios.net"}
                 windowImage={
                   <PlasmicImg__
                     alt={""}
-                    className={classNames(sty.img__spqb1)}
-                    displayHeight={"500px"}
+                    className={classNames(sty.img___89PyM)}
+                    displayHeight={
+                      hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? "auto"
+                        : "500px"
+                    }
                     displayMaxHeight={"none"}
                     displayMaxWidth={"100%"}
                     displayMinHeight={"0"}
                     displayMinWidth={"0"}
-                    displayWidth={"500px"}
+                    displayWidth={
+                      hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? "100%"
+                        : "500px"
+                    }
                     loading={"eager"}
                     src={{
                       src: "/plasmic/disuko_website_retro_version/images/shiku2023TransparentPng.png",
@@ -948,12 +1410,14 @@ const PlasmicDescendants = {
     "navbar",
     "windowButton",
     "multiwindow",
+    "sliderCarousel",
     "columns",
     "imageWindow"
   ],
   navbar: ["navbar"],
   windowButton: ["windowButton"],
   multiwindow: ["multiwindow"],
+  sliderCarousel: ["sliderCarousel"],
   columns: ["columns"],
   imageWindow: ["imageWindow"]
 } as const;
@@ -965,6 +1429,7 @@ type NodeDefaultElementType = {
   navbar: typeof Navbar;
   windowButton: typeof WindowButton;
   multiwindow: typeof Multiwindow;
+  sliderCarousel: typeof SliderWrapper;
   columns: "div";
   imageWindow: "div";
 };
@@ -1057,6 +1522,7 @@ export const PlasmicPortfolio2DDesign = Object.assign(
     navbar: makeNodeComponent("navbar"),
     windowButton: makeNodeComponent("windowButton"),
     multiwindow: makeNodeComponent("multiwindow"),
+    sliderCarousel: makeNodeComponent("sliderCarousel"),
     columns: makeNodeComponent("columns"),
     imageWindow: makeNodeComponent("imageWindow"),
 
