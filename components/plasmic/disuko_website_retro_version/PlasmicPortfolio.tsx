@@ -284,7 +284,7 @@ function PlasmicPortfolio__RenderFunc(props: {
                   )}
                 >
                   {
-                    "Hi! I\u2019m Angelo, and I\u2019m an enthusiast for everything having to do with digital technology. I\u2019m currently studying Immersive Media, Music Technology, and Film & Digital Media Production at Chatham University. I also make online as \u201cDisuko.\u201d my main goal is sharing the truest form of myself with any medium available! At the core of my work is using technology to share my emotions, viewpoints, and interests. "
+                    "Hi! I\u2019m Angelo, and I\u2019m an enthusiast for everything having to do with digital technology. I\u2019m currently studying Immersive Media, Music Technology, and Film & Digital Media Production at Chatham University. I also make content online as \u201cDisuko.\u201d my main goal is sharing the truest form of myself with any medium available! At the core of my work is using technology to share my emotions, viewpoints, and interests. "
                   }
                 </div>
               </div>

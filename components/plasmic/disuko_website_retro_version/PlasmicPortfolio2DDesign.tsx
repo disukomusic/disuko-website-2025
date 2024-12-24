@@ -95,6 +95,7 @@ export type PlasmicPortfolio2DDesign__OverridesType = {
   windowButton?: Flex__<typeof WindowButton>;
   multiwindow?: Flex__<typeof Multiwindow>;
   sliderCarousel?: Flex__<typeof SliderWrapper>;
+  sliderCarousel2?: Flex__<typeof SliderWrapper>;
   columns?: Flex__<"div">;
   imageWindow?: Flex__<"div">;
 };
@@ -150,6 +151,15 @@ function PlasmicPortfolio2DDesign__RenderFunc(props: {
         initFunc: ({ $props, $state, $queries, $ctx }) => 0,
 
         refName: "sliderCarousel",
+        onMutate: generateOnMutateForSpec("currentSlide", SliderWrapper_Helpers)
+      },
+      {
+        path: "sliderCarousel2.currentSlide",
+        type: "private",
+        variableType: "number",
+        initFunc: ({ $props, $state, $queries, $ctx }) => 0,
+
+        refName: "sliderCarousel2",
         onMutate: generateOnMutateForSpec("currentSlide", SliderWrapper_Helpers)
       }
     ],
@@ -303,6 +313,7 @@ function PlasmicPortfolio2DDesign__RenderFunc(props: {
                 ).apply(null, eventArgs);
               },
               centerMode: true,
+              children: null,
               className: classNames("__wab_instance", sty.sliderCarousel),
               dots: false,
               initialSlide: generateStateValueProp($state, [
@@ -332,6 +343,48 @@ function PlasmicPortfolio2DDesign__RenderFunc(props: {
               <SliderWrapper
                 data-plasmic-name={"sliderCarousel"}
                 data-plasmic-override={overrides.sliderCarousel}
+                {...child$Props}
+              />
+            );
+          })()}
+          {(() => {
+            const child$Props = {
+              beforeChange: async (...eventArgs: any) => {
+                generateStateOnChangePropForCodeComponents(
+                  $state,
+                  "currentSlide",
+                  ["sliderCarousel2", "currentSlide"],
+                  SliderWrapper_Helpers
+                ).apply(null, eventArgs);
+              },
+              className: classNames("__wab_instance", sty.sliderCarousel2),
+              initialSlide: generateStateValueProp($state, [
+                "sliderCarousel2",
+                "currentSlide"
+              ]),
+              ref: ref => {
+                $refs["sliderCarousel2"] = ref;
+              },
+              sliderScopeClassName: sty["sliderCarousel2__slider"],
+              slidesPerRow: 2
+            };
+            initializeCodeComponentStates(
+              $state,
+              [
+                {
+                  name: "currentSlide",
+                  plasmicStateName: "sliderCarousel2.currentSlide"
+                }
+              ],
+              [],
+              SliderWrapper_Helpers ?? {},
+              child$Props
+            );
+
+            return (
+              <SliderWrapper
+                data-plasmic-name={"sliderCarousel2"}
+                data-plasmic-override={overrides.sliderCarousel2}
                 {...child$Props}
               >
                 <div className={classNames(projectcss.all, sty.freeBox__xl6Ay)}>
@@ -1018,6 +1071,7 @@ const PlasmicDescendants = {
     "windowButton",
     "multiwindow",
     "sliderCarousel",
+    "sliderCarousel2",
     "columns",
     "imageWindow"
   ],
@@ -1025,6 +1079,7 @@ const PlasmicDescendants = {
   windowButton: ["windowButton"],
   multiwindow: ["multiwindow"],
   sliderCarousel: ["sliderCarousel"],
+  sliderCarousel2: ["sliderCarousel2"],
   columns: ["columns"],
   imageWindow: ["imageWindow"]
 } as const;
@@ -1037,6 +1092,7 @@ type NodeDefaultElementType = {
   windowButton: typeof WindowButton;
   multiwindow: typeof Multiwindow;
   sliderCarousel: typeof SliderWrapper;
+  sliderCarousel2: typeof SliderWrapper;
   columns: "div";
   imageWindow: "div";
 };
@@ -1130,6 +1186,7 @@ export const PlasmicPortfolio2DDesign = Object.assign(
     windowButton: makeNodeComponent("windowButton"),
     multiwindow: makeNodeComponent("multiwindow"),
     sliderCarousel: makeNodeComponent("sliderCarousel"),
+    sliderCarousel2: makeNodeComponent("sliderCarousel2"),
     columns: makeNodeComponent("columns"),
     imageWindow: makeNodeComponent("imageWindow"),
 
