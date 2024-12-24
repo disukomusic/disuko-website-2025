@@ -309,6 +309,7 @@ function PlasmicPortfolio2DDesign__RenderFunc(props: {
                 ? false
                 : undefined,
               className: classNames("__wab_instance", sty.sliderCarousel),
+              infinite: false,
               initialSlide: generateStateValueProp($state, [
                 "sliderCarousel",
                 "currentSlide"
