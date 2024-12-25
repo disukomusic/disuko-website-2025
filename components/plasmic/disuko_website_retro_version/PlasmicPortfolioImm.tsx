@@ -67,6 +67,7 @@ import Window from "../../Window"; // plasmic-import: BWjgdOwFY_OO/component
 import YouTube from "@plasmicpkgs/react-youtube";
 import Tilt from "@plasmicpkgs/react-parallax-tilt";
 
+import { ThemeValue, useTheme } from "./PlasmicGlobalVariant__Theme"; // plasmic-import: 3K9IqsAFaaID/globalVariant
 import { useScreenVariants as useScreenVariantsdmuurUfQuA6N } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: DmuurUFQuA6N/globalVariant
 
 import "@plasmicapp/react-web/lib/plasmic.css";
@@ -137,6 +138,7 @@ function PlasmicPortfolioImm__RenderFunc(props: {
   const currentUser = useCurrentUser?.() || {};
 
   const globalVariants = ensureGlobalVariants({
+    theme: useTheme(),
     screen: useScreenVariantsdmuurUfQuA6N()
   });
 
@@ -177,7 +179,14 @@ function PlasmicPortfolioImm__RenderFunc(props: {
             projectcss.plasmic_tokens,
             plasmic_antd_5_hostless_css.plasmic_tokens,
             plasmic_plasmic_rich_components_css.plasmic_tokens,
-            sty._3DDesign
+            sty._3DDesign,
+            {
+              [sty._3DDesignglobal_theme_classic]: hasVariant(
+                globalVariants,
+                "theme",
+                "classic"
+              )
+            }
           )}
         >
           <Navbar
@@ -225,7 +234,14 @@ function PlasmicPortfolioImm__RenderFunc(props: {
                   className={classNames(
                     projectcss.all,
                     projectcss.__wab_text,
-                    sty.text__pougD
+                    sty.text__pougD,
+                    {
+                      [sty.textglobal_theme_classic__pougDeNktM]: hasVariant(
+                        globalVariants,
+                        "theme",
+                        "classic"
+                      )
+                    }
                   )}
                 >
                   {"New Maqam City - Audio Visual Installation"}
@@ -233,7 +249,11 @@ function PlasmicPortfolioImm__RenderFunc(props: {
                 <PlasmicImg__
                   alt={""}
                   className={classNames(sty.img__wGEkT)}
-                  displayHeight={"384px"}
+                  displayHeight={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "auto"
+                      : "384px"
+                  }
                   displayMaxHeight={"none"}
                   displayMaxWidth={"100%"}
                   displayMinHeight={"0"}
@@ -251,7 +271,11 @@ function PlasmicPortfolioImm__RenderFunc(props: {
                 <PlasmicImg__
                   alt={""}
                   className={classNames(sty.img__eVjEu)}
-                  displayHeight={"384px"}
+                  displayHeight={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "auto"
+                      : "384px"
+                  }
                   displayMaxHeight={"none"}
                   displayMaxWidth={"none"}
                   displayMinHeight={"0"}
@@ -293,7 +317,14 @@ function PlasmicPortfolioImm__RenderFunc(props: {
                   className={classNames(
                     projectcss.all,
                     projectcss.__wab_text,
-                    sty.text__vTl
+                    sty.text__vTl,
+                    {
+                      [sty.textglobal_theme_classic__vTleNktM]: hasVariant(
+                        globalVariants,
+                        "theme",
+                        "classic"
+                      )
+                    }
                   )}
                 >
                   {"Space Force V2 - Game Installation"}
@@ -301,7 +332,11 @@ function PlasmicPortfolioImm__RenderFunc(props: {
                 <PlasmicImg__
                   alt={""}
                   className={classNames(sty.img___4Bndd)}
-                  displayHeight={"384px"}
+                  displayHeight={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "auto"
+                      : "384px"
+                  }
                   displayMaxHeight={"none"}
                   displayMaxWidth={"100%"}
                   displayMinHeight={"0"}
@@ -319,12 +354,20 @@ function PlasmicPortfolioImm__RenderFunc(props: {
                 <PlasmicImg__
                   alt={""}
                   className={classNames(sty.img___04Khb)}
-                  displayHeight={"384px"}
+                  displayHeight={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "auto"
+                      : "384px"
+                  }
                   displayMaxHeight={"none"}
                   displayMaxWidth={"100%"}
                   displayMinHeight={"0"}
                   displayMinWidth={"0"}
-                  displayWidth={"100%"}
+                  displayWidth={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "100%"
+                      : "100%"
+                  }
                   loading={"lazy"}
                   src={{
                     src: "/plasmic/disuko_website_retro_version/images/img1113Jpg.jpg",
@@ -361,7 +404,14 @@ function PlasmicPortfolioImm__RenderFunc(props: {
                   className={classNames(
                     projectcss.all,
                     projectcss.__wab_text,
-                    sty.text___3LwqQ
+                    sty.text___3LwqQ,
+                    {
+                      [sty.textglobal_theme_classic___3LwqQeNktM]: hasVariant(
+                        globalVariants,
+                        "theme",
+                        "classic"
+                      )
+                    }
                   )}
                 >
                   {"Bucaneer Waterplace - VR Experience"}
@@ -398,7 +448,14 @@ function PlasmicPortfolioImm__RenderFunc(props: {
                   className={classNames(
                     projectcss.all,
                     projectcss.__wab_text,
-                    sty.text__nAytI
+                    sty.text__nAytI,
+                    {
+                      [sty.textglobal_theme_classic__nAytIeNktM]: hasVariant(
+                        globalVariants,
+                        "theme",
+                        "classic"
+                      )
+                    }
                   )}
                 >
                   {"Frutiger Aero Experience - VR Experience"}
@@ -437,7 +494,14 @@ function PlasmicPortfolioImm__RenderFunc(props: {
                   className={classNames(
                     projectcss.all,
                     projectcss.__wab_text,
-                    sty.text___4LD3V
+                    sty.text___4LD3V,
+                    {
+                      [sty.textglobal_theme_classic___4LD3VeNktM]: hasVariant(
+                        globalVariants,
+                        "theme",
+                        "classic"
+                      )
+                    }
                   )}
                 >
                   {"Cherry Tree Island - VR Experience"}
@@ -445,7 +509,11 @@ function PlasmicPortfolioImm__RenderFunc(props: {
                 <PlasmicImg__
                   alt={""}
                   className={classNames(sty.img__yoLxI)}
-                  displayHeight={"384px"}
+                  displayHeight={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "auto"
+                      : "384px"
+                  }
                   displayMaxHeight={"none"}
                   displayMaxWidth={"100%"}
                   displayMinHeight={"0"}
@@ -463,7 +531,11 @@ function PlasmicPortfolioImm__RenderFunc(props: {
                 <PlasmicImg__
                   alt={""}
                   className={classNames(sty.img__znQg3)}
-                  displayHeight={"384px"}
+                  displayHeight={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "auto"
+                      : "384px"
+                  }
                   displayMaxHeight={"none"}
                   displayMaxWidth={"100%"}
                   displayMinHeight={"0"}
@@ -487,7 +559,14 @@ function PlasmicPortfolioImm__RenderFunc(props: {
                   className={classNames(
                     projectcss.all,
                     projectcss.__wab_text,
-                    sty.text__mDrnr
+                    sty.text__mDrnr,
+                    {
+                      [sty.textglobal_theme_classic__mDrnReNktM]: hasVariant(
+                        globalVariants,
+                        "theme",
+                        "classic"
+                      )
+                    }
                   )}
                 >
                   {"Pirate Navigation System - VR Experience"}
@@ -495,7 +574,11 @@ function PlasmicPortfolioImm__RenderFunc(props: {
                 <PlasmicImg__
                   alt={""}
                   className={classNames(sty.img__v19Aj)}
-                  displayHeight={"384px"}
+                  displayHeight={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "auto"
+                      : "384px"
+                  }
                   displayMaxHeight={"none"}
                   displayMaxWidth={"100%"}
                   displayMinHeight={"0"}
@@ -513,7 +596,11 @@ function PlasmicPortfolioImm__RenderFunc(props: {
                 <PlasmicImg__
                   alt={""}
                   className={classNames(sty.img__oFf)}
-                  displayHeight={"384px"}
+                  displayHeight={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "auto"
+                      : "384px"
+                  }
                   displayMaxHeight={"none"}
                   displayMaxWidth={"100%"}
                   displayMinHeight={"0"}

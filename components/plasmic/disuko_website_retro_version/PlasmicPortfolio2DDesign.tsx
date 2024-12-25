@@ -68,6 +68,7 @@ import { SliderWrapper } from "@plasmicpkgs/react-slick";
 import { sliderHelpers as SliderWrapper_Helpers } from "@plasmicpkgs/react-slick";
 import Window from "../../Window"; // plasmic-import: BWjgdOwFY_OO/component
 
+import { ThemeValue, useTheme } from "./PlasmicGlobalVariant__Theme"; // plasmic-import: 3K9IqsAFaaID/globalVariant
 import { useScreenVariants as useScreenVariantsdmuurUfQuA6N } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: DmuurUFQuA6N/globalVariant
 
 import "@plasmicapp/react-web/lib/plasmic.css";
@@ -163,6 +164,7 @@ function PlasmicPortfolio2DDesign__RenderFunc(props: {
   });
 
   const globalVariants = ensureGlobalVariants({
+    theme: useTheme(),
     screen: useScreenVariantsdmuurUfQuA6N()
   });
 
@@ -203,7 +205,19 @@ function PlasmicPortfolio2DDesign__RenderFunc(props: {
             projectcss.plasmic_tokens,
             plasmic_antd_5_hostless_css.plasmic_tokens,
             plasmic_plasmic_rich_components_css.plasmic_tokens,
-            sty._3DDesign
+            sty._3DDesign,
+            {
+              [projectcss.global_theme_classic]: hasVariant(
+                globalVariants,
+                "theme",
+                "classic"
+              ),
+              [sty._3DDesignglobal_theme_classic]: hasVariant(
+                globalVariants,
+                "theme",
+                "classic"
+              )
+            }
           )}
         >
           <Navbar
@@ -267,10 +281,18 @@ function PlasmicPortfolio2DDesign__RenderFunc(props: {
               className={classNames(sty.img__rs9Ft)}
               displayHeight={"155px"}
               displayMaxHeight={"none"}
-              displayMaxWidth={"100%"}
+              displayMaxWidth={
+                hasVariant(globalVariants, "screen", "mobileOnly")
+                  ? "auto"
+                  : "100%"
+              }
               displayMinHeight={"0"}
               displayMinWidth={"0"}
-              displayWidth={"auto"}
+              displayWidth={
+                hasVariant(globalVariants, "screen", "mobileOnly")
+                  ? "100%"
+                  : "auto"
+              }
               loading={"lazy"}
               src={{
                 src: "/plasmic/disuko_website_retro_version/images/_2DdesignPng.png",
@@ -1185,7 +1207,15 @@ function PlasmicPortfolio2DDesign__RenderFunc(props: {
                 data-plasmic-override={overrides.columns}
                 className={classNames(projectcss.all, sty.columns)}
               >
-                <div className={classNames(projectcss.all, sty.column__lpHd4)}>
+                <div
+                  className={classNames(projectcss.all, sty.column__lpHd4, {
+                    [sty.columnglobal_theme_classic__lpHd4ENktM]: hasVariant(
+                      globalVariants,
+                      "theme",
+                      "classic"
+                    )
+                  })}
+                >
                   <PlasmicImg__
                     alt={""}
                     className={classNames(sty.img__hyMjK)}
@@ -1205,10 +1235,24 @@ function PlasmicPortfolio2DDesign__RenderFunc(props: {
                   />
                 </div>
                 <div
-                  className={classNames(projectcss.all, sty.column__cMqtO)}
+                  className={classNames(projectcss.all, sty.column__cMqtO, {
+                    [sty.columnglobal_theme_classic__cMqtOeNktM]: hasVariant(
+                      globalVariants,
+                      "theme",
+                      "classic"
+                    )
+                  })}
                 />
 
-                <div className={classNames(projectcss.all, sty.column__mjCkh)}>
+                <div
+                  className={classNames(projectcss.all, sty.column__mjCkh, {
+                    [sty.columnglobal_theme_classic__mjCkHeNktM]: hasVariant(
+                      globalVariants,
+                      "theme",
+                      "classic"
+                    )
+                  })}
+                >
                   <PlasmicImg__
                     alt={""}
                     className={classNames(sty.img__qEfGz)}
@@ -1377,11 +1421,23 @@ function PlasmicPortfolio2DDesign__RenderFunc(props: {
               <div
                 data-plasmic-name={"imageWindow"}
                 data-plasmic-override={overrides.imageWindow}
-                className={classNames(projectcss.all, sty.imageWindow)}
+                className={classNames(projectcss.all, sty.imageWindow, {
+                  [sty.imageWindowglobal_theme_classic]: hasVariant(
+                    globalVariants,
+                    "theme",
+                    "classic"
+                  )
+                })}
               >
                 <PlasmicImg__
                   alt={""}
-                  className={classNames(sty.img__yq2Ah)}
+                  className={classNames(sty.img__yq2Ah, {
+                    [sty.imgglobal_theme_classic__yq2AheNktM]: hasVariant(
+                      globalVariants,
+                      "theme",
+                      "classic"
+                    )
+                  })}
                   displayHeight={"auto"}
                   displayMaxHeight={"none"}
                   displayMaxWidth={"100%"}

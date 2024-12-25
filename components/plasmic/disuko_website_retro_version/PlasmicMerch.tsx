@@ -67,6 +67,7 @@ import Window from "../../Window"; // plasmic-import: BWjgdOwFY_OO/component
 import { Embed } from "@plasmicpkgs/plasmic-basic-components";
 import Footer from "../../Footer"; // plasmic-import: shKoGjSwLEEB/component
 
+import { ThemeValue, useTheme } from "./PlasmicGlobalVariant__Theme"; // plasmic-import: 3K9IqsAFaaID/globalVariant
 import { useScreenVariants as useScreenVariantsdmuurUfQuA6N } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: DmuurUFQuA6N/globalVariant
 
 import "@plasmicapp/react-web/lib/plasmic.css";
@@ -78,16 +79,10 @@ import sty from "./PlasmicMerch.module.css"; // plasmic-import: P9uis2GOUgFy/css
 
 createPlasmicElementProxy;
 
-export type PlasmicMerch__VariantMembers = {
-  darkMode: "darkMode";
-};
-export type PlasmicMerch__VariantsArgs = {
-  darkMode?: SingleBooleanChoiceArg<"darkMode">;
-};
+export type PlasmicMerch__VariantMembers = {};
+export type PlasmicMerch__VariantsArgs = {};
 type VariantPropType = keyof PlasmicMerch__VariantsArgs;
-export const PlasmicMerch__VariantProps = new Array<VariantPropType>(
-  "darkMode"
-);
+export const PlasmicMerch__VariantProps = new Array<VariantPropType>();
 
 export type PlasmicMerch__ArgsType = {};
 type ArgPropType = keyof PlasmicMerch__ArgsType;
@@ -145,25 +140,8 @@ function PlasmicMerch__RenderFunc(props: {
 
   const currentUser = useCurrentUser?.() || {};
 
-  const stateSpecs: Parameters<typeof useDollarState>[0] = React.useMemo(
-    () => [
-      {
-        path: "darkMode",
-        type: "private",
-        variableType: "variant",
-        initFunc: ({ $props, $state, $queries, $ctx }) => $props.darkMode
-      }
-    ],
-    [$props, $ctx, $refs]
-  );
-  const $state = useDollarState(stateSpecs, {
-    $props,
-    $ctx,
-    $queries: {},
-    $refs
-  });
-
   const globalVariants = ensureGlobalVariants({
+    theme: useTheme(),
     screen: useScreenVariantsdmuurUfQuA6N()
   });
 
@@ -232,16 +210,18 @@ function PlasmicMerch__RenderFunc(props: {
             plasmic_plasmic_rich_components_css.plasmic_tokens,
             sty.mainPage,
             {
-              [sty.mainPagedarkMode]: hasVariant($state, "darkMode", "darkMode")
+              [sty.mainPageglobal_theme_classic]: hasVariant(
+                globalVariants,
+                "theme",
+                "classic"
+              )
             }
           )}
         >
           <Navbar
             data-plasmic-name={"navbar"}
             data-plasmic-override={overrides.navbar}
-            className={classNames("__wab_instance", sty.navbar, {
-              [sty.navbardarkMode]: hasVariant($state, "darkMode", "darkMode")
-            })}
+            className={classNames("__wab_instance", sty.navbar)}
           />
 
           <Stack__
@@ -255,7 +235,13 @@ function PlasmicMerch__RenderFunc(props: {
               data-plasmic-name={"reveal"}
               data-plasmic-override={overrides.reveal}
               cascade={true}
-              className={classNames("__wab_instance", sty.reveal)}
+              className={classNames("__wab_instance", sty.reveal, {
+                [sty.revealglobal_theme_classic]: hasVariant(
+                  globalVariants,
+                  "theme",
+                  "classic"
+                )
+              })}
               direction={"up"}
               effect={"slide"}
               triggerOnce={true}

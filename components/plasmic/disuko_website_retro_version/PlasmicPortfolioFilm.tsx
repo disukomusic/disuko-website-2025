@@ -220,7 +220,14 @@ function PlasmicPortfolioFilm__RenderFunc(props: {
               className={classNames(
                 projectcss.all,
                 projectcss.__wab_text,
-                sty.text__bG8Vr
+                sty.text__bG8Vr,
+                {
+                  [sty.textglobal_theme_classic__bG8VreNktM]: hasVariant(
+                    globalVariants,
+                    "theme",
+                    "classic"
+                  )
+                }
               )}
             >
               {"Film + Video Production"}
@@ -274,7 +281,14 @@ function PlasmicPortfolioFilm__RenderFunc(props: {
               className={classNames(
                 projectcss.all,
                 projectcss.__wab_text,
-                sty.text__rwLhz
+                sty.text__rwLhz,
+                {
+                  [sty.textglobal_theme_classic__rwLhzeNktM]: hasVariant(
+                    globalVariants,
+                    "theme",
+                    "classic"
+                  )
+                }
               )}
             >
               {"Visual Effects / Animation"}
@@ -320,7 +334,14 @@ function PlasmicPortfolioFilm__RenderFunc(props: {
               className={classNames(
                 projectcss.all,
                 projectcss.__wab_text,
-                sty.text__nylMx
+                sty.text__nylMx,
+                {
+                  [sty.textglobal_theme_classic__nylMxeNktM]: hasVariant(
+                    globalVariants,
+                    "theme",
+                    "classic"
+                  )
+                }
               )}
             >
               {"<- Back To Portfolio"}

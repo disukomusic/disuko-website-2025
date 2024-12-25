@@ -28,6 +28,12 @@
     grid-column: 4;
   }
 }
+._3DDesignglobal_theme_classic {
+  background: var(--token-2cxCto4hpENi);
+}
+._3DDesignglobal_theme_classic > * {
+  grid-column: 4;
+}
 .navbar:global(.__wab_instance):global(.__wab_instance) {
   max-width: 100%;
   position: relative;
@@ -104,6 +110,20 @@
 }
 .img__rs9Ft > picture > img {
   object-fit: cover;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .img__rs9Ft {
+    width: 100%;
+    max-width: auto;
+    object-fit: contain;
+    margin-top: 59px;
+    min-width: 0;
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .img__rs9Ft > picture > img {
+    object-fit: contain;
+  }
 }
 .text__uh7K {
   position: relative;
@@ -1339,6 +1359,11 @@
   padding: 8px;
   margin: 10px;
 }
+.columnglobal_theme_classic__lpHd4ENktM {
+  background: var(--token-u2rbquIz9Y0U);
+  box-shadow: -4px -4px 0px 0px var(--token-K_FDgNby8UmH),
+    4px 4px 0px 0px var(--token-24x9Uc_JThUA);
+}
 .img__hyMjK {
   object-fit: cover;
   max-width: 100%;
@@ -1369,6 +1394,10 @@
     padding-bottom: 127px;
   }
 }
+.columnglobal_theme_classic__cMqtOeNktM {
+  box-shadow: -4px -4px 0px 0px var(--token-K_FDgNby8UmH),
+    4px 4px 0px 0px var(--token-24x9Uc_JThUA);
+}
 .column__mjCkh {
   object-fit: cover;
   max-width: 100%;
@@ -1385,6 +1414,11 @@
   min-width: 0;
   padding: 8px;
   margin: 10px;
+}
+.columnglobal_theme_classic__mjCkHeNktM {
+  background: var(--token-u2rbquIz9Y0U);
+  box-shadow: -4px -4px 0px 0px var(--token-K_FDgNby8UmH),
+    4px 4px 0px 0px var(--token-24x9Uc_JThUA);
 }
 .img__qEfGz {
   object-fit: cover;
@@ -1561,6 +1595,12 @@
   min-width: 0;
   padding: 10px;
 }
+.imageWindowglobal_theme_classic {
+  background: var(--token-4IQYJ82NsyMZ);
+  box-shadow: 4px 4px 0px 0px var(--token-K_FDgNby8UmH),
+    -4px -4px 0px 0px var(--token-24x9Uc_JThUA);
+  margin-top: calc(0px + 10px) !important;
+}
 .img__yq2Ah {
   object-fit: cover;
   max-width: 100%;
@@ -1573,4 +1613,8 @@
 }
 .img__yq2Ah > picture > img {
   object-fit: cover;
+}
+.imgglobal_theme_classic__yq2AheNktM {
+  box-shadow: -4px -4px 0px 0px var(--token-K_FDgNby8UmH),
+    4px 4px 0px 0px var(--token-24x9Uc_JThUA);
 }

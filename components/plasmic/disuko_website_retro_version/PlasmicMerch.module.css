@@ -16,10 +16,8 @@
   min-height: 0;
   -webkit-backdrop-filter: blur(15px);
 }
-.mainPagedarkMode {
-  background: url("/plasmic/disuko_website_retro_version/images/backgroundBlurPng.png") top 50% left 50% / cover repeat fixed;
-  backdrop-filter: blur(15px);
-  -webkit-backdrop-filter: blur(15px);
+.mainPageglobal_theme_classic {
+  background: var(--token-2cxCto4hpENi);
 }
 .navbar:global(.__wab_instance):global(.__wab_instance) {
   position: sticky;

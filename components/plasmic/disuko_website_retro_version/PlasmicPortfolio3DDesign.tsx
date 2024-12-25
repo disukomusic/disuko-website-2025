@@ -67,6 +67,7 @@ import Window from "../../Window"; // plasmic-import: BWjgdOwFY_OO/component
 import { SliderWrapper } from "@plasmicpkgs/react-slick";
 import { sliderHelpers as SliderWrapper_Helpers } from "@plasmicpkgs/react-slick";
 
+import { ThemeValue, useTheme } from "./PlasmicGlobalVariant__Theme"; // plasmic-import: 3K9IqsAFaaID/globalVariant
 import { useScreenVariants as useScreenVariantsdmuurUfQuA6N } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: DmuurUFQuA6N/globalVariant
 
 import "@plasmicapp/react-web/lib/plasmic.css";
@@ -172,6 +173,7 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
   });
 
   const globalVariants = ensureGlobalVariants({
+    theme: useTheme(),
     screen: useScreenVariantsdmuurUfQuA6N()
   });
 
@@ -211,7 +213,19 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
           projectcss.plasmic_tokens,
           plasmic_antd_5_hostless_css.plasmic_tokens,
           plasmic_plasmic_rich_components_css.plasmic_tokens,
-          sty._3DDesign
+          sty._3DDesign,
+          {
+            [projectcss.global_theme_classic]: hasVariant(
+              globalVariants,
+              "theme",
+              "classic"
+            ),
+            [sty._3DDesignglobal_theme_classic]: hasVariant(
+              globalVariants,
+              "theme",
+              "classic"
+            )
+          }
         )}
       >
         <Navbar
@@ -240,7 +254,11 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
           <PlasmicImg__
             alt={""}
             className={classNames(sty.img___2UtR)}
-            displayHeight={"155px"}
+            displayHeight={
+              hasVariant(globalVariants, "screen", "mobileOnly")
+                ? "100%"
+                : "155px"
+            }
             displayMaxHeight={"none"}
             displayMaxWidth={"100%"}
             displayMinHeight={"0"}
@@ -260,7 +278,14 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
             className={classNames(
               projectcss.all,
               projectcss.__wab_text,
-              sty.text__l9NJu
+              sty.text__l9NJu,
+              {
+                [sty.textglobal_theme_classic__l9NJueNktM]: hasVariant(
+                  globalVariants,
+                  "theme",
+                  "classic"
+                )
+              }
             )}
           >
             {"Easel Renders"}
@@ -269,7 +294,14 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
             className={classNames(
               projectcss.all,
               projectcss.__wab_text,
-              sty.text__bgqRg
+              sty.text__bgqRg,
+              {
+                [sty.textglobal_theme_classic__bgqRGeNktM]: hasVariant(
+                  globalVariants,
+                  "theme",
+                  "classic"
+                )
+              }
             )}
           >
             {
@@ -366,7 +398,14 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
             className={classNames(
               projectcss.all,
               projectcss.__wab_text,
-              sty.text__wzKkh
+              sty.text__wzKkh,
+              {
+                [sty.textglobal_theme_classic__wzKkheNktM]: hasVariant(
+                  globalVariants,
+                  "theme",
+                  "classic"
+                )
+              }
             )}
           >
             {"Characters"}
@@ -379,11 +418,23 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
             <div
               data-plasmic-name={"imageWindow"}
               data-plasmic-override={overrides.imageWindow}
-              className={classNames(projectcss.all, sty.imageWindow)}
+              className={classNames(projectcss.all, sty.imageWindow, {
+                [sty.imageWindowglobal_theme_classic]: hasVariant(
+                  globalVariants,
+                  "theme",
+                  "classic"
+                )
+              })}
             >
               <PlasmicImg__
                 alt={""}
-                className={classNames(sty.img___3OVyV)}
+                className={classNames(sty.img___3OVyV, {
+                  [sty.imgglobal_theme_classic___3OVyVeNktM]: hasVariant(
+                    globalVariants,
+                    "theme",
+                    "classic"
+                  )
+                })}
                 displayHeight={"338px"}
                 displayMaxHeight={"none"}
                 displayMaxWidth={"none"}
@@ -402,17 +453,33 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
             <div
               data-plasmic-name={"imageWindow2"}
               data-plasmic-override={overrides.imageWindow2}
-              className={classNames(projectcss.all, sty.imageWindow2)}
+              className={classNames(projectcss.all, sty.imageWindow2, {
+                [sty.imageWindow2global_theme_classic]: hasVariant(
+                  globalVariants,
+                  "theme",
+                  "classic"
+                )
+              })}
             >
               <PlasmicImg__
                 alt={""}
-                className={classNames(sty.img__uRg3H)}
+                className={classNames(sty.img__uRg3H, {
+                  [sty.imgglobal_theme_classic__uRg3HeNktM]: hasVariant(
+                    globalVariants,
+                    "theme",
+                    "classic"
+                  )
+                })}
                 displayHeight={"338px"}
                 displayMaxHeight={"none"}
                 displayMaxWidth={"none"}
                 displayMinHeight={"0"}
                 displayMinWidth={"0"}
-                displayWidth={"auto"}
+                displayWidth={
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? "100%"
+                    : "auto"
+                }
                 loading={"lazy"}
                 src={{
                   src: "/plasmic/disuko_website_retro_version/images/licavoliSherbPoseTransparentPng.png",
@@ -425,11 +492,23 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
             <div
               data-plasmic-name={"imageWindow3"}
               data-plasmic-override={overrides.imageWindow3}
-              className={classNames(projectcss.all, sty.imageWindow3)}
+              className={classNames(projectcss.all, sty.imageWindow3, {
+                [sty.imageWindow3global_theme_classic]: hasVariant(
+                  globalVariants,
+                  "theme",
+                  "classic"
+                )
+              })}
             >
               <PlasmicImg__
                 alt={""}
-                className={classNames(sty.img__yFmFd)}
+                className={classNames(sty.img__yFmFd, {
+                  [sty.imgglobal_theme_classic__yFmFDeNktM]: hasVariant(
+                    globalVariants,
+                    "theme",
+                    "classic"
+                  )
+                })}
                 displayHeight={"338px"}
                 displayMaxHeight={"none"}
                 displayMaxWidth={"none"}
@@ -452,7 +531,14 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
             className={classNames(
               projectcss.all,
               projectcss.__wab_text,
-              sty.text__zOvZc
+              sty.text__zOvZc,
+              {
+                [sty.textglobal_theme_classic__zOvZCeNktM]: hasVariant(
+                  globalVariants,
+                  "theme",
+                  "classic"
+                )
+              }
             )}
           >
             {"CAD & 3D Printing"}
@@ -462,12 +548,27 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
             hasGap={true}
             className={classNames(projectcss.all, sty.freeBox__gR1Cg)}
           >
-            <div className={classNames(projectcss.all, sty.freeBox__rFRe6)}>
+            <div
+              className={classNames(projectcss.all, sty.freeBox__rFRe6, {
+                [sty.freeBoxglobal_theme_classic__rFRe6ENktM]: hasVariant(
+                  globalVariants,
+                  "theme",
+                  "classic"
+                )
+              })}
+            >
               <div
                 className={classNames(
                   projectcss.all,
                   projectcss.__wab_text,
-                  sty.text__hxj9E
+                  sty.text__hxj9E,
+                  {
+                    [sty.textglobal_theme_classic__hxj9EeNktM]: hasVariant(
+                      globalVariants,
+                      "theme",
+                      "classic"
+                    )
+                  }
                 )}
               >
                 {"The Boba-song Butterfly Knife Trainer"}
@@ -476,7 +577,14 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                 className={classNames(
                   projectcss.all,
                   projectcss.__wab_text,
-                  sty.text___19TbC
+                  sty.text___19TbC,
+                  {
+                    [sty.textglobal_theme_classic___19TbCeNktM]: hasVariant(
+                      globalVariants,
+                      "theme",
+                      "classic"
+                    )
+                  }
                 )}
               >
                 {'"Create With Nabalis" Contest Top 10 of 100 Submissions'}
@@ -609,12 +717,27 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                 );
               })()}
             </div>
-            <div className={classNames(projectcss.all, sty.freeBox__lu5Mk)}>
+            <div
+              className={classNames(projectcss.all, sty.freeBox__lu5Mk, {
+                [sty.freeBoxglobal_theme_classic__lu5MKeNktM]: hasVariant(
+                  globalVariants,
+                  "theme",
+                  "classic"
+                )
+              })}
+            >
               <div
                 className={classNames(
                   projectcss.all,
                   projectcss.__wab_text,
-                  sty.text__lr6B8
+                  sty.text__lr6B8,
+                  {
+                    [sty.textglobal_theme_classic__lr6B8ENktM]: hasVariant(
+                      globalVariants,
+                      "theme",
+                      "classic"
+                    )
+                  }
                 )}
               >
                 {"Disuko Rhythm Game Console"}
@@ -623,7 +746,14 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                 className={classNames(
                   projectcss.all,
                   projectcss.__wab_text,
-                  sty.text__hoyqU
+                  sty.text__hoyqU,
+                  {
+                    [sty.textglobal_theme_classic__hoyqUeNktM]: hasVariant(
+                      globalVariants,
+                      "theme",
+                      "classic"
+                    )
+                  }
                 )}
               >
                 {
@@ -695,7 +825,11 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                         className={classNames(
                           projectcss.all,
                           projectcss.__wab_text,
-                          sty.text__wWj1O
+                          sty.text__wWj1O,
+                          {
+                            [sty.textglobal_theme_classic__wWj1OeNktM]:
+                              hasVariant(globalVariants, "theme", "classic")
+                          }
                         )}
                       >
                         {
@@ -727,7 +861,11 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                         className={classNames(
                           projectcss.all,
                           projectcss.__wab_text,
-                          sty.text__qNSh7
+                          sty.text__qNSh7,
+                          {
+                            [sty.textglobal_theme_classic__qNSh7ENktM]:
+                              hasVariant(globalVariants, "theme", "classic")
+                          }
                         )}
                       >
                         {
@@ -759,7 +897,11 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                         className={classNames(
                           projectcss.all,
                           projectcss.__wab_text,
-                          sty.text__oP1K
+                          sty.text__oP1K,
+                          {
+                            [sty.textglobal_theme_classic__oP1KENktM]:
+                              hasVariant(globalVariants, "theme", "classic")
+                          }
                         )}
                       >
                         {"The final console!"}
