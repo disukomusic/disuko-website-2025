@@ -307,9 +307,9 @@ function PlasmicPortfolio2DDesign__RenderFunc(props: {
               },
               centerMode: hasVariant(globalVariants, "screen", "mobileOnly")
                 ? false
-                : undefined,
+                : true,
               className: classNames("__wab_instance", sty.sliderCarousel),
-              infinite: false,
+              infinite: true,
               initialSlide: generateStateValueProp($state, [
                 "sliderCarousel",
                 "currentSlide"

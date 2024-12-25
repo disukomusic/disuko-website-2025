@@ -136,12 +136,11 @@
   display: flex;
   position: relative;
   flex-direction: column;
-  width: 100%;
+  width: auto;
   max-width: 100%;
   justify-content: center;
   align-items: center;
   height: 100%;
-  min-width: 0;
   min-height: 0;
   padding: 8px;
 }
@@ -177,12 +176,11 @@
   display: flex;
   position: relative;
   flex-direction: column;
-  width: 100%;
+  width: auto;
   height: auto;
   max-width: 100%;
   justify-content: flex-start;
   align-items: center;
-  min-width: 0;
   padding: 8px;
 }
 .window__s2J04:global(.__wab_instance) {
@@ -217,12 +215,11 @@
   display: flex;
   position: relative;
   flex-direction: column;
-  width: 100%;
+  width: auto;
   height: auto;
   max-width: 100%;
   justify-content: flex-start;
   align-items: center;
-  min-width: 0;
   padding: 8px;
 }
 .window__vl1CL:global(.__wab_instance) {
@@ -260,8 +257,9 @@
   height: auto;
   justify-content: flex-start;
   align-items: center;
-  width: auto;
+  width: 100%;
   max-width: 100%;
+  min-width: 0;
   padding: 8px;
 }
 .window__tx6YE:global(.__wab_instance) {
@@ -297,17 +295,17 @@
   display: flex;
   position: relative;
   flex-direction: column;
-  width: 100%;
+  width: auto;
   height: auto;
   max-width: 100%;
   justify-content: flex-start;
   align-items: center;
-  min-width: 0;
   padding: 8px;
 }
 .window___8SiBa:global(.__wab_instance) {
   max-width: 100%;
   position: relative;
+  width: auto;
 }
 .img__qs1YK {
   position: relative;
@@ -337,12 +335,11 @@
   display: flex;
   position: relative;
   flex-direction: column;
-  width: 100%;
+  width: auto;
   height: auto;
   max-width: 100%;
   justify-content: flex-start;
   align-items: center;
-  min-width: 0;
   padding: 8px;
 }
 .window__csHLt:global(.__wab_instance) {
@@ -375,12 +372,11 @@
   display: flex;
   position: relative;
   flex-direction: column;
-  width: 100%;
+  width: auto;
   height: auto;
   max-width: 100%;
   justify-content: flex-start;
   align-items: center;
-  min-width: 0;
   padding: 8px;
 }
 .window__vevHz:global(.__wab_instance) {
@@ -413,12 +409,11 @@
   display: flex;
   position: relative;
   flex-direction: column;
-  width: 100%;
+  width: auto;
   height: auto;
   max-width: 100%;
   justify-content: flex-start;
   align-items: center;
-  min-width: 0;
   padding: 8px;
 }
 .window__sbbYi:global(.__wab_instance) {
@@ -454,12 +449,11 @@
   display: flex;
   position: relative;
   flex-direction: column;
-  width: 100%;
+  width: auto;
   max-width: 100%;
   justify-content: flex-start;
   align-items: center;
   height: 100%;
-  min-width: 0;
   min-height: 0;
   padding: 8px;
 }
@@ -497,12 +491,11 @@
   display: flex;
   position: relative;
   flex-direction: column;
-  width: 100%;
+  width: auto;
   height: auto;
   max-width: 100%;
   justify-content: flex-start;
   align-items: center;
-  min-width: 0;
   padding: 8px;
 }
 .window__lVwHz:global(.__wab_instance) {
