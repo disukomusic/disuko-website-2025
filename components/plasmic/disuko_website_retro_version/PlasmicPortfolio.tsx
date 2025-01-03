@@ -338,7 +338,7 @@ function PlasmicPortfolio__RenderFunc(props: {
                       sty.windowButton__oX6B
                     )}
                     link={
-                      "https://xgdsk-my.sharepoint.com/:b:/g/personal/disuko_redpandastudios_net/EVfnAtlcQNhOjn5XvQwxDrIBYEU-PhuCxCqTVDGOPvVW0Q?e=btqs4d"
+                      "https://xgdsk-my.sharepoint.com/:f:/g/personal/disuko_redpandastudios_net/ElEocPBhlwxBmi3QTScyB20BlwuRi4f4rWuczU8qxsQvKA?e=sgunvh"
                     }
                   >
                     <div
