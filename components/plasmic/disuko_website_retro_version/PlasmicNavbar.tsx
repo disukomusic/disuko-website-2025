@@ -180,11 +180,11 @@ function PlasmicNavbar__RenderFunc(props: {
             displayMaxWidth={"none"}
             displayMinHeight={"0"}
             displayMinWidth={"0"}
-            displayWidth={"40px"}
+            displayWidth={"64px"}
             src={{
-              src: "/plasmic/disuko_website_retro_version/images/disuko95PandaOnlyPng.png",
-              fullWidth: 400,
-              fullHeight: 438,
+              src: "/plasmic/disuko_website_retro_version/images/logo128X128Png.png",
+              fullWidth: 128,
+              fullHeight: 128,
               aspectRatio: undefined
             }}
           />
