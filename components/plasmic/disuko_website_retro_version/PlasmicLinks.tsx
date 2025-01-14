@@ -63,8 +63,8 @@ import { usePlasmicDataSourceContext } from "@plasmicapp/data-sources-context";
 
 import WindowButton from "../../WindowButton"; // plasmic-import: KZYdo-R8GYAn/component
 import { AntdPopover } from "@plasmicpkgs/antd5/skinny/registerPopover";
+import WindowBlue from "../../WindowBlue"; // plasmic-import: QxkFplM-x8NR/component
 import Window from "../../Window"; // plasmic-import: BWjgdOwFY_OO/component
-import Tilt from "@plasmicpkgs/react-parallax-tilt";
 import { Embed } from "@plasmicpkgs/plasmic-basic-components";
 
 import { useScreenVariants as useScreenVariantsdmuurUfQuA6N } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: DmuurUFQuA6N/globalVariant
@@ -77,18 +77,6 @@ import projectcss from "./plasmic.module.css"; // plasmic-import: x4VgG6kzZCVuaq
 import sty from "./PlasmicLinks.module.css"; // plasmic-import: 1AxjPUmLarmm/css
 
 import NounPixelHeart10989631SvgIcon from "./icons/PlasmicIcon__NounPixelHeart10989631Svg"; // plasmic-import: tvndHRt1AD9R/icon
-import BrandYoutubeSvgIcon from "./icons/PlasmicIcon__BrandYoutubeSvg"; // plasmic-import: lDUI8t8B7I6-/icon
-import HeadphonesSvgIcon from "./icons/PlasmicIcon__HeadphonesSvg"; // plasmic-import: NucfzTbZic8q/icon
-import PigMoneySvgIcon from "./icons/PlasmicIcon__PigMoneySvg"; // plasmic-import: Mw15Gxb9gfwR/icon
-import BrandSpotifySvgIcon from "./icons/PlasmicIcon__BrandSpotifySvg"; // plasmic-import: Ezp_TCh0SsEl/icon
-import BrandAppleSvgIcon from "./icons/PlasmicIcon__BrandAppleSvg"; // plasmic-import: 2kghRMT1oj_X/icon
-import BrandBandcampSvgIcon from "./icons/PlasmicIcon__BrandBandcampSvg"; // plasmic-import: 65hkbHVvIUOy/icon
-import BrandSoundcloudSvgIcon from "./icons/PlasmicIcon__BrandSoundcloudSvg"; // plasmic-import: gX3gVfdcEQTo/icon
-import BrandInstagramSvgIcon from "./icons/PlasmicIcon__BrandInstagramSvg"; // plasmic-import: UNj-Ct7gpMOu/icon
-import BlueskyLogoSvgIcon from "./icons/PlasmicIcon__BlueskyLogoSvg"; // plasmic-import: FXCw0lEuMhcp/icon
-import BrandDiscordSvgIcon from "./icons/PlasmicIcon__BrandDiscordSvg"; // plasmic-import: 732Cdqpk5Xvi/icon
-import LinkSvgIcon from "./icons/PlasmicIcon__LinkSvg"; // plasmic-import: 6dLhR5cJXVSX/icon
-import BrandTwitterSvgIcon from "./icons/PlasmicIcon__BrandTwitterSvg"; // plasmic-import: ESoHyvZOQYtV/icon
 
 createPlasmicElementProxy;
 
@@ -105,22 +93,10 @@ export type PlasmicLinks__OverridesType = {
   root?: Flex__<"div">;
   windowButton?: Flex__<typeof WindowButton>;
   popover?: Flex__<typeof AntdPopover>;
+  svg?: Flex__<"svg">;
   main?: Flex__<"div">;
   img?: Flex__<typeof PlasmicImg__>;
-  freeBox?: Flex__<"div">;
-  window?: Flex__<typeof Window>;
-  spotify?: Flex__<typeof Tilt>;
-  itunes?: Flex__<typeof Tilt>;
-  bandcamp?: Flex__<typeof Tilt>;
-  soundcloud?: Flex__<typeof Tilt>;
-  audius?: Flex__<typeof Tilt>;
-  instagram?: Flex__<typeof Tilt>;
-  youtube?: Flex__<typeof Tilt>;
-  bluesky?: Flex__<typeof Tilt>;
-  discord?: Flex__<typeof Tilt>;
-  disukoFlipsYoutuibe?: Flex__<typeof Tilt>;
-  vero?: Flex__<typeof Tilt>;
-  twitter?: Flex__<typeof Tilt>;
+  columns?: Flex__<"div">;
   embedHtml?: Flex__<typeof Embed>;
 };
 
@@ -289,7 +265,9 @@ function PlasmicLinks__RenderFunc(props: {
               trigger={"hover"}
             >
               <NounPixelHeart10989631SvgIcon
-                className={classNames(projectcss.all, sty.svg__pjeRp)}
+                data-plasmic-name={"svg"}
+                data-plasmic-override={overrides.svg}
+                className={classNames(projectcss.all, sty.svg)}
                 role={"img"}
               />
             </AntdPopover>
@@ -341,876 +319,154 @@ function PlasmicLinks__RenderFunc(props: {
                 "Hi everyone! My name is Disuko. I'm a producer, DJ, and content creator!"
               }
             </div>
-            <Stack__
-              as={"div"}
-              data-plasmic-name={"freeBox"}
-              data-plasmic-override={overrides.freeBox}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.freeBox)}
-            >
-              <PlasmicLink__
-                className={classNames(
-                  projectcss.all,
-                  projectcss.a,
-                  sty.link___8MnUh
-                )}
-                component={Link}
-                href={`/retro`}
-                platform={"nextjs"}
-                tabIndex={10}
-              >
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__tgzdD
-                  )}
-                >
-                  {"GAMEBOY COMISSION STATUS:"}
-                </div>
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__gpnFu
-                  )}
-                >
-                  <React.Fragment>
-                    <span
-                      className={"plasmic_default__all plasmic_default__span"}
-                      style={{ color: "#66FF41" }}
-                    >
-                      {"Open!"}
-                    </span>
-                  </React.Fragment>
-                </div>
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__vTdM
-                  )}
-                >
-                  {"https://disuko.gay/retro"}
-                </div>
-              </PlasmicLink__>
-              <Window
-                data-plasmic-name={"window"}
-                data-plasmic-override={overrides.window}
-                className={classNames("__wab_instance", sty.window)}
-                linkDestination={`/commissions`}
-                windowText={"Art Commission Status;"}
-                windowTitle={"Commission Status"}
-              >
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__qzvfg
-                  )}
-                >
-                  {"Open!"}
-                </div>
-              </Window>
-            </Stack__>
-            <Tilt
-              className={classNames("__wab_instance", sty.tilt__s8KYd)}
-              glareEnable={false}
-              gyroscope={true}
-              tiltMaxAngleX={10}
-              tiltMaxAngleY={10}
-              tiltReverse={true}
-              trackOnWindow={false}
-            >
-              <PlasmicLink__
-                className={classNames(
-                  projectcss.all,
-                  projectcss.a,
-                  sty.link__kx9P4
-                )}
-                component={Link}
-                href={"https://www.youtube.com/watch?v=pegx7KEoYoA"}
-                platform={"nextjs"}
-                target={"_blank"}
-              >
-                <div className={classNames(projectcss.all, sty.columns__lmqsm)}>
-                  <div
-                    className={classNames(projectcss.all, sty.column__qR8Y5)}
-                  >
-                    <BrandYoutubeSvgIcon
-                      className={classNames(projectcss.all, sty.svg__uAhhK)}
-                      role={"img"}
-                    />
-                  </div>
-                  <div
-                    className={classNames(projectcss.all, sty.column__bysdb)}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__gbVOc
-                      )}
-                    >
-                      {"Be kind, rewind AMV"}
-                    </div>
-                  </div>
-                </div>
-              </PlasmicLink__>
-            </Tilt>
-            <Tilt
-              className={classNames("__wab_instance", sty.tilt___2BIVw)}
-              glareEnable={false}
-              gyroscope={true}
-              tiltMaxAngleX={10}
-              tiltMaxAngleY={10}
-              tiltReverse={true}
-              trackOnWindow={false}
-            >
-              <PlasmicLink__
-                className={classNames(
-                  projectcss.all,
-                  projectcss.a,
-                  sty.link__l2Yh
-                )}
-                component={Link}
-                href={
-                  "https://soundcloud.com/disukomusic/cosmic-disorder-from-divinityduality"
-                }
-                platform={"nextjs"}
-                target={"_blank"}
-              >
-                <div className={classNames(projectcss.all, sty.columns__cJlu)}>
-                  <div
-                    className={classNames(projectcss.all, sty.column__exqaM)}
-                  >
-                    <HeadphonesSvgIcon
-                      className={classNames(projectcss.all, sty.svg__luwui)}
-                      role={"img"}
-                    />
-                  </div>
-                  <div
-                    className={classNames(projectcss.all, sty.column__qfAdi)}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__mCQo
-                      )}
-                    >
-                      {
-                        "-COSMIC\u200b-\u200b+\u200b-\u200bDISORDER-\u3010from ~DIVINITY:DUALITY~\u3011 "
-                      }
-                    </div>
-                  </div>
-                </div>
-              </PlasmicLink__>
-            </Tilt>
-            <Tilt
-              className={classNames("__wab_instance", sty.tilt___2QKfL)}
-              glareEnable={false}
-              gyroscope={true}
-              tiltMaxAngleX={10}
-              tiltMaxAngleY={10}
-              tiltReverse={true}
-              trackOnWindow={false}
-            >
-              <PlasmicLink__
-                className={classNames(
-                  projectcss.all,
-                  projectcss.a,
-                  sty.link__hSzz5
-                )}
-                component={Link}
-                href={"https://www.youtube.com/@disuko/membership"}
-                platform={"nextjs"}
-                target={"_blank"}
-              >
-                <div
-                  className={classNames(projectcss.all, sty.columns___5PXOg)}
-                >
-                  <div
-                    className={classNames(projectcss.all, sty.column___8P4Uu)}
-                  >
-                    <PigMoneySvgIcon
-                      className={classNames(projectcss.all, sty.svg__eW38Y)}
-                      role={"img"}
-                    />
-                  </div>
-                  <div
-                    className={classNames(projectcss.all, sty.column__ql8Ak)}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__ombbq
-                      )}
-                    >
-                      {"monthly stickers!"}
-                    </div>
-                  </div>
-                </div>
-              </PlasmicLink__>
-            </Tilt>
-            <Tilt
-              className={classNames("__wab_instance", sty.tilt__ndWcX)}
-              glareEnable={false}
-              gyroscope={true}
-              tiltMaxAngleX={10}
-              tiltMaxAngleY={10}
-              tiltReverse={true}
-              trackOnWindow={false}
-            >
-              <PlasmicLink__
-                className={classNames(
-                  projectcss.all,
-                  projectcss.a,
-                  sty.link__e8SjN
-                )}
-                component={Link}
-                href={"https://disukoretrogames.etsy.com"}
-                platform={"nextjs"}
-                target={"_blank"}
-              >
-                <div className={classNames(projectcss.all, sty.columns__atHWo)}>
-                  <div
-                    className={classNames(projectcss.all, sty.column__x4Lff)}
-                  >
-                    <PigMoneySvgIcon
-                      className={classNames(projectcss.all, sty.svg___0NvRj)}
-                      role={"img"}
-                    />
-                  </div>
-                  <div
-                    className={classNames(projectcss.all, sty.column__tl71Y)}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__hzGk
-                      )}
-                    >
-                      {"etsy store"}
-                    </div>
-                  </div>
-                </div>
-              </PlasmicLink__>
-            </Tilt>
-            <Tilt
-              className={classNames("__wab_instance", sty.tilt__r41J2)}
-              glareEnable={false}
-              gyroscope={true}
-              tiltMaxAngleX={10}
-              tiltMaxAngleY={10}
-              tiltReverse={true}
-              trackOnWindow={false}
-            >
-              <PlasmicLink__
-                className={classNames(
-                  projectcss.all,
-                  projectcss.a,
-                  sty.link__bFaBw
-                )}
-                component={Link}
-                href={"https://www.fiverr.com/share/8mN3dp"}
-                platform={"nextjs"}
-              >
-                <div className={classNames(projectcss.all, sty.columns__uxPyq)}>
-                  <div className={classNames(projectcss.all, sty.column__q5ND)}>
-                    <PigMoneySvgIcon
-                      className={classNames(projectcss.all, sty.svg__piYkx)}
-                      role={"img"}
-                    />
-                  </div>
-                  <div
-                    className={classNames(projectcss.all, sty.column__lg7Ns)}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__qBaa
-                      )}
-                    >
-                      {"commissions open!"}
-                    </div>
-                  </div>
-                </div>
-              </PlasmicLink__>
-            </Tilt>
             <div
-              className={classNames(
-                projectcss.all,
-                projectcss.__wab_text,
-                sty.text__rAcS8
-              )}
+              data-plasmic-name={"columns"}
+              data-plasmic-override={overrides.columns}
+              className={classNames(projectcss.all, sty.columns)}
             >
-              {"streaming platforms"}
-            </div>
-            <Tilt
-              data-plasmic-name={"spotify"}
-              data-plasmic-override={overrides.spotify}
-              className={classNames("__wab_instance", sty.spotify)}
-              glareEnable={false}
-              gyroscope={true}
-              tiltMaxAngleX={10}
-              tiltMaxAngleY={10}
-              tiltReverse={true}
-              trackOnWindow={false}
-            >
-              <PlasmicLink__
-                className={classNames(
-                  projectcss.all,
-                  projectcss.a,
-                  sty.link__j9SXb
-                )}
-                component={Link}
-                href={"https://open.spotify.com/artist/7miowOQruHb1GpKBlV4tjl"}
-                platform={"nextjs"}
+              <Stack__
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.column__lEeu1)}
               >
-                <div className={classNames(projectcss.all, sty.columns__ck6Dl)}>
-                  <div
-                    className={classNames(projectcss.all, sty.column__x9Ld0)}
-                  >
-                    <BrandSpotifySvgIcon
-                      className={classNames(projectcss.all, sty.svg__yWd2)}
-                      role={"img"}
-                    />
-                  </div>
-                  <div className={classNames(projectcss.all, sty.column__qvt9)}>
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__myeM
-                      )}
-                    >
-                      {"spotify"}
-                    </div>
-                  </div>
-                </div>
-              </PlasmicLink__>
-            </Tilt>
-            <Tilt
-              data-plasmic-name={"itunes"}
-              data-plasmic-override={overrides.itunes}
-              className={classNames("__wab_instance", sty.itunes)}
-              glareEnable={false}
-              gyroscope={true}
-              tiltMaxAngleX={10}
-              tiltMaxAngleY={10}
-              tiltReverse={true}
-              trackOnWindow={false}
-            >
-              <PlasmicLink__
-                className={classNames(
-                  projectcss.all,
-                  projectcss.a,
-                  sty.link__yKu0R
-                )}
-                component={Link}
-                href={"https://music.apple.com/us/artist/disuko/1497273303"}
-                platform={"nextjs"}
-              >
-                <div
-                  className={classNames(projectcss.all, sty.columns___0M6NZ)}
+                <WindowBlue
+                  className={classNames("__wab_instance", sty.windowBlue__bEdW)}
+                  linkDestination={
+                    "https://www.etsy.com/shop/sukosstickers/?etsrc=sdt"
+                  }
+                  windowText={"Stickers Restocked!"}
+                  windowTitle={"Etsy Store"}
+                />
+
+                <WindowBlue
+                  className={classNames(
+                    "__wab_instance",
+                    sty.windowBlue__e5Yer
+                  )}
+                  linkDestination={`/commissions`}
+                  windowText={"Art Commission Status"}
+                  windowTitle={"Commission Status"}
                 >
                   <div
-                    className={classNames(projectcss.all, sty.column__c1NYv)}
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__gSsL7
+                    )}
                   >
-                    <BrandAppleSvgIcon
-                      className={classNames(projectcss.all, sty.svg__lrQfO)}
-                      role={"img"}
-                    />
+                    {"Open!"}
                   </div>
-                  <div
-                    className={classNames(projectcss.all, sty.column__tbQvj)}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__xWzG
-                      )}
-                    >
-                      {"itunes / apple music"}
-                    </div>
-                  </div>
-                </div>
-              </PlasmicLink__>
-            </Tilt>
-            <Tilt
-              data-plasmic-name={"bandcamp"}
-              data-plasmic-override={overrides.bandcamp}
-              className={classNames("__wab_instance", sty.bandcamp)}
-              glareEnable={false}
-              gyroscope={true}
-              tiltMaxAngleX={10}
-              tiltMaxAngleY={10}
-              tiltReverse={true}
-              trackOnWindow={false}
-            >
-              <PlasmicLink__
-                className={classNames(
-                  projectcss.all,
-                  projectcss.a,
-                  sty.link__tmWwQ
-                )}
-                component={Link}
-                href={"https://disuko.bandcamp.com"}
-                platform={"nextjs"}
-              >
-                <div className={classNames(projectcss.all, sty.columns__iLDsy)}>
-                  <div
-                    className={classNames(projectcss.all, sty.column__q63EC)}
-                  >
-                    <BrandBandcampSvgIcon
-                      className={classNames(projectcss.all, sty.svg__acXo2)}
-                      role={"img"}
-                    />
-                  </div>
-                  <div
-                    className={classNames(projectcss.all, sty.column__jcupf)}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__cXGzD
-                      )}
-                    >
-                      {"bandcamp"}
-                    </div>
-                  </div>
-                </div>
-              </PlasmicLink__>
-            </Tilt>
-            <Tilt
-              data-plasmic-name={"soundcloud"}
-              data-plasmic-override={overrides.soundcloud}
-              className={classNames("__wab_instance", sty.soundcloud)}
-              glareEnable={false}
-              gyroscope={true}
-              tiltMaxAngleX={10}
-              tiltMaxAngleY={10}
-              tiltReverse={true}
-              trackOnWindow={false}
-            >
-              <PlasmicLink__
-                className={classNames(
-                  projectcss.all,
-                  projectcss.a,
-                  sty.link__oPdhe
-                )}
-                component={Link}
-                href={"https://soundcloud.com/disukomusic"}
-                platform={"nextjs"}
-              >
-                <div className={classNames(projectcss.all, sty.columns__mxqp8)}>
-                  <div
-                    className={classNames(projectcss.all, sty.column__jcqP7)}
-                  >
-                    <BrandSoundcloudSvgIcon
-                      className={classNames(projectcss.all, sty.svg__sz5Tf)}
-                      role={"img"}
-                    />
-                  </div>
-                  <div
-                    className={classNames(projectcss.all, sty.column__crbm2)}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__oq8Hc
-                      )}
-                    >
-                      {"soundcloud"}
-                    </div>
-                  </div>
-                </div>
-              </PlasmicLink__>
-            </Tilt>
-            <Tilt
-              data-plasmic-name={"audius"}
-              data-plasmic-override={overrides.audius}
-              className={classNames("__wab_instance", sty.audius)}
-              glareEnable={false}
-              gyroscope={true}
-              tiltMaxAngleX={10}
-              tiltMaxAngleY={10}
-              tiltReverse={true}
-              trackOnWindow={false}
-            >
-              <PlasmicLink__
-                className={classNames(
-                  projectcss.all,
-                  projectcss.a,
-                  sty.link___64Sp
-                )}
-                component={Link}
-                href={"https://audius.co/disuko"}
-                platform={"nextjs"}
-              >
-                <div className={classNames(projectcss.all, sty.columns__hz44D)}>
-                  <div
-                    className={classNames(projectcss.all, sty.column__mIukv)}
-                  >
-                    <BrandSoundcloudSvgIcon
-                      className={classNames(projectcss.all, sty.svg__kkSkO)}
-                      role={"img"}
-                    />
-                  </div>
-                  <div
-                    className={classNames(projectcss.all, sty.column__rllTo)}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__v1Iwz
-                      )}
-                    >
-                      {"audius"}
-                    </div>
-                  </div>
-                </div>
-              </PlasmicLink__>
-            </Tilt>
-            <div
-              className={classNames(
-                projectcss.all,
-                projectcss.__wab_text,
-                sty.text__bpvVw
-              )}
-            >
-              {"socials"}
-            </div>
-            <Tilt
-              data-plasmic-name={"instagram"}
-              data-plasmic-override={overrides.instagram}
-              className={classNames("__wab_instance", sty.instagram)}
-              glareEnable={false}
-              gyroscope={true}
-              tiltMaxAngleX={10}
-              tiltMaxAngleY={10}
-              tiltReverse={true}
-              trackOnWindow={false}
-            >
-              <PlasmicLink__
-                className={classNames(
-                  projectcss.all,
-                  projectcss.a,
-                  sty.link__lkCd7
-                )}
-                component={Link}
-                href={"https://instagram.com/disukomusic"}
-                platform={"nextjs"}
-              >
-                <div className={classNames(projectcss.all, sty.columns__fUdD8)}>
-                  <div
-                    className={classNames(projectcss.all, sty.column___2Mk9X)}
-                  >
-                    <BrandInstagramSvgIcon
-                      className={classNames(projectcss.all, sty.svg___4MCt)}
-                      role={"img"}
-                    />
-                  </div>
-                  <div className={classNames(projectcss.all, sty.column__iMdX)}>
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text___5Tk9I
-                      )}
-                    >
-                      {"instagram"}
-                    </div>
-                  </div>
-                </div>
-              </PlasmicLink__>
-            </Tilt>
-            <Tilt
-              data-plasmic-name={"youtube"}
-              data-plasmic-override={overrides.youtube}
-              className={classNames("__wab_instance", sty.youtube)}
-              glareEnable={false}
-              gyroscope={true}
-              tiltMaxAngleX={10}
-              tiltMaxAngleY={10}
-              tiltReverse={true}
-              trackOnWindow={false}
-            >
-              <PlasmicLink__
-                className={classNames(
-                  projectcss.all,
-                  projectcss.a,
-                  sty.link__xvXVj
-                )}
-                component={Link}
-                href={"https://youtube.com/disuko"}
-                platform={"nextjs"}
-              >
-                <div className={classNames(projectcss.all, sty.columns__v9Qrr)}>
-                  <div
-                    className={classNames(projectcss.all, sty.column__vu9Lr)}
-                  >
-                    <BrandYoutubeSvgIcon
-                      className={classNames(projectcss.all, sty.svg__wse8F)}
-                      role={"img"}
-                    />
-                  </div>
-                  <div
-                    className={classNames(projectcss.all, sty.column__hCrqq)}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text___0JrJu
-                      )}
-                    >
-                      {"youtube"}
-                    </div>
-                  </div>
-                </div>
-              </PlasmicLink__>
-            </Tilt>
-            <Tilt
-              data-plasmic-name={"bluesky"}
-              data-plasmic-override={overrides.bluesky}
-              className={classNames("__wab_instance", sty.bluesky)}
-              glareEnable={false}
-              gyroscope={true}
-              tiltMaxAngleX={10}
-              tiltMaxAngleY={10}
-              tiltReverse={true}
-              trackOnWindow={false}
-            >
-              <PlasmicLink__
-                className={classNames(
-                  projectcss.all,
-                  projectcss.a,
-                  sty.link__pNOj
-                )}
-                component={Link}
-                href={"https://bsky.app/profile/disuko.gay"}
-                platform={"nextjs"}
-              >
-                <div className={classNames(projectcss.all, sty.columns__bKoSu)}>
-                  <div
-                    className={classNames(projectcss.all, sty.column___3XmNl)}
-                  >
-                    <BlueskyLogoSvgIcon
-                      className={classNames(projectcss.all, sty.svg__qcraa)}
-                      role={"img"}
-                    />
-                  </div>
-                  <div
-                    className={classNames(projectcss.all, sty.column__l4Ngc)}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__jkCZ
-                      )}
-                    >
-                      {"bluesky"}
-                    </div>
-                  </div>
-                </div>
-              </PlasmicLink__>
-            </Tilt>
-            <Tilt
-              data-plasmic-name={"discord"}
-              data-plasmic-override={overrides.discord}
-              className={classNames("__wab_instance", sty.discord)}
-              glareEnable={false}
-              gyroscope={true}
-              tiltMaxAngleX={10}
-              tiltMaxAngleY={10}
-              tiltReverse={true}
-              trackOnWindow={false}
-            >
-              <PlasmicLink__
-                className={classNames(
-                  projectcss.all,
-                  projectcss.a,
-                  sty.link__xeDpR
-                )}
-                component={Link}
-                href={"https://discord.gg/X2cTAwWsVT"}
-                platform={"nextjs"}
-              >
-                <div className={classNames(projectcss.all, sty.columns__eDlS)}>
-                  <div
-                    className={classNames(projectcss.all, sty.column__pzlJz)}
-                  >
-                    <BrandDiscordSvgIcon
-                      className={classNames(projectcss.all, sty.svg___8MCsS)}
-                      role={"img"}
-                    />
-                  </div>
-                  <div
-                    className={classNames(projectcss.all, sty.column__y3Pzw)}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__zVlFc
-                      )}
-                    >
-                      {"discord"}
-                    </div>
-                  </div>
-                </div>
-              </PlasmicLink__>
-            </Tilt>
-            <Tilt
-              data-plasmic-name={"disukoFlipsYoutuibe"}
-              data-plasmic-override={overrides.disukoFlipsYoutuibe}
-              className={classNames("__wab_instance", sty.disukoFlipsYoutuibe)}
-              glareEnable={false}
-              gyroscope={true}
-              tiltMaxAngleX={10}
-              tiltMaxAngleY={10}
-              tiltReverse={true}
-              trackOnWindow={false}
-            >
-              <PlasmicLink__
-                className={classNames(
-                  projectcss.all,
-                  projectcss.a,
-                  sty.link___123E
-                )}
-                component={Link}
-                href={"https://youtube.com/@disukoflips"}
-                platform={"nextjs"}
-              >
-                <div
-                  className={classNames(projectcss.all, sty.columns___5Nqpn)}
+                </WindowBlue>
+                <WindowBlue
+                  className={classNames(
+                    "__wab_instance",
+                    sty.windowBlue__zayv2
+                  )}
+                  linkDestination={`/retro`}
+                  windowText={"Gameboy Commission Status"}
+                  windowTitle={"Commission Status"}
                 >
                   <div
-                    className={classNames(projectcss.all, sty.column__oJOyb)}
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__g4Tle
+                    )}
                   >
-                    <BrandYoutubeSvgIcon
-                      className={classNames(projectcss.all, sty.svg__szn9)}
-                      role={"img"}
-                    />
+                    {"Open!"}
                   </div>
-                  <div
-                    className={classNames(projectcss.all, sty.column__gOz5V)}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__uhd7T
-                      )}
-                    >
-                      {"balisong youtube"}
-                    </div>
-                  </div>
-                </div>
-              </PlasmicLink__>
-            </Tilt>
-            <Tilt
-              data-plasmic-name={"vero"}
-              data-plasmic-override={overrides.vero}
-              className={classNames("__wab_instance", sty.vero)}
-              glareEnable={false}
-              gyroscope={true}
-              tiltMaxAngleX={10}
-              tiltMaxAngleY={10}
-              tiltReverse={true}
-              trackOnWindow={false}
-            >
-              <PlasmicLink__
-                className={classNames(
-                  projectcss.all,
-                  projectcss.a,
-                  sty.link__atNns
-                )}
-                component={Link}
-                href={"https://vero.co/disuko"}
-                platform={"nextjs"}
+                </WindowBlue>
+              </Stack__>
+              <Stack__
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.column__vdXak)}
               >
-                <div className={classNames(projectcss.all, sty.columns__sfVbJ)}>
-                  <div
-                    className={classNames(projectcss.all, sty.column__minTe)}
-                  >
-                    <LinkSvgIcon
-                      className={classNames(projectcss.all, sty.svg__bkZ4Y)}
-                      role={"img"}
-                    />
-                  </div>
-                  <div
-                    className={classNames(projectcss.all, sty.column__sKstm)}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__v64Rp
-                      )}
-                    >
-                      {"vero"}
-                    </div>
-                  </div>
-                </div>
-              </PlasmicLink__>
-            </Tilt>
-            <Tilt
-              data-plasmic-name={"twitter"}
-              data-plasmic-override={overrides.twitter}
-              className={classNames("__wab_instance", sty.twitter)}
-              glareEnable={false}
-              gyroscope={true}
-              tiltMaxAngleX={10}
-              tiltMaxAngleY={10}
-              tiltReverse={true}
-              trackOnWindow={false}
-            >
-              <PlasmicLink__
-                className={classNames(
-                  projectcss.all,
-                  projectcss.a,
-                  sty.link__cz6A8
-                )}
-                component={Link}
-                href={"https://twitter.com/sukocloud"}
-                platform={"nextjs"}
-              >
-                <div className={classNames(projectcss.all, sty.columns__ow9Jq)}>
-                  <div
-                    className={classNames(projectcss.all, sty.column__bEhbs)}
-                  >
-                    <BrandTwitterSvgIcon
-                      className={classNames(projectcss.all, sty.svg__hIvqZ)}
-                      role={"img"}
-                    />
-                  </div>
-                  <div
-                    className={classNames(projectcss.all, sty.column___80Ob2)}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__o6IKi
-                      )}
-                    >
-                      {"twitter"}
-                    </div>
-                  </div>
-                </div>
-              </PlasmicLink__>
-            </Tilt>
+                <Window
+                  className={classNames("__wab_instance", sty.window__uBnKr)}
+                  linkDestination={
+                    "https://open.spotify.com/artist/7miowOQruHb1GpKBlV4tjl"
+                  }
+                  windowText={"Spotify"}
+                  windowTitle={"Spotify"}
+                />
+
+                <Window
+                  className={classNames("__wab_instance", sty.window__r2YN)}
+                  linkDestination={
+                    "https://music.apple.com/us/artist/disuko/1497273303"
+                  }
+                  windowText={"Apple Music"}
+                  windowTitle={"Apple Music"}
+                />
+
+                <Window
+                  className={classNames("__wab_instance", sty.window__kg8ZI)}
+                  linkDestination={"https://disuko.bandcamp.com/"}
+                  windowText={"Bandcamp"}
+                  windowTitle={"Bandcamp"}
+                />
+
+                <Window
+                  className={classNames("__wab_instance", sty.window__klC6Z)}
+                  linkDestination={"https://soundcloud.com/disukomusic"}
+                  windowText={"Soundcloud"}
+                  windowTitle={"Soundcloud"}
+                />
+
+                <Window
+                  className={classNames("__wab_instance", sty.window__y8P7)}
+                  linkDestination={
+                    "https://music.youtube.com/channel/UCXSnf4u6EW7f18uJyDDlpeg"
+                  }
+                  windowText={"YouTube Music"}
+                  windowTitle={"YouTube Music"}
+                />
+
+                <Window
+                  className={classNames("__wab_instance", sty.window__eDtWq)}
+                  linkDestination={"https://bsky.app/profile/disuko.gay"}
+                  windowText={"Bluesky"}
+                  windowTitle={"Bluesky"}
+                />
+
+                <Window
+                  className={classNames("__wab_instance", sty.window__vzDz1)}
+                  linkDestination={"https://instagram.com/disukomusic"}
+                  windowText={"Instagram"}
+                  windowTitle={"Instagram"}
+                />
+
+                <Window
+                  className={classNames("__wab_instance", sty.window__c5IUf)}
+                  linkDestination={"https://youtube.com/disuko"}
+                  windowText={"YouTube"}
+                  windowTitle={"YouTube"}
+                />
+
+                <Window
+                  className={classNames("__wab_instance", sty.window__wH23A)}
+                  linkDestination={"https://youtube.com/@disukoflips"}
+                  windowText={"Balisong YouTube"}
+                  windowTitle={"Balisong Youtube"}
+                />
+
+                <Window
+                  className={classNames("__wab_instance", sty.window__z0T2Z)}
+                  linkDestination={"https://discord.gg/X2cTAwWsVT"}
+                  windowText={"Discord"}
+                  windowTitle={"Discord"}
+                />
+
+                <Window
+                  className={classNames("__wab_instance", sty.window___4Ihlp)}
+                  linkDestination={"https://twitter.com/sukocloud"}
+                  windowText={"Twitter"}
+                  windowTitle={"Twitter"}
+                />
+              </Stack__>
+              <div className={classNames(projectcss.all, sty.column__gz0D5)} />
+            </div>
           </Stack__>
           <Embed
             data-plasmic-name={"embedHtml"}
@@ -1231,59 +487,18 @@ const PlasmicDescendants = {
     "root",
     "windowButton",
     "popover",
+    "svg",
     "main",
     "img",
-    "freeBox",
-    "window",
-    "spotify",
-    "itunes",
-    "bandcamp",
-    "soundcloud",
-    "audius",
-    "instagram",
-    "youtube",
-    "bluesky",
-    "discord",
-    "disukoFlipsYoutuibe",
-    "vero",
-    "twitter",
+    "columns",
     "embedHtml"
   ],
-  windowButton: ["windowButton", "popover"],
-  popover: ["popover"],
-  main: [
-    "main",
-    "img",
-    "freeBox",
-    "window",
-    "spotify",
-    "itunes",
-    "bandcamp",
-    "soundcloud",
-    "audius",
-    "instagram",
-    "youtube",
-    "bluesky",
-    "discord",
-    "disukoFlipsYoutuibe",
-    "vero",
-    "twitter"
-  ],
+  windowButton: ["windowButton", "popover", "svg"],
+  popover: ["popover", "svg"],
+  svg: ["svg"],
+  main: ["main", "img", "columns"],
   img: ["img"],
-  freeBox: ["freeBox", "window"],
-  window: ["window"],
-  spotify: ["spotify"],
-  itunes: ["itunes"],
-  bandcamp: ["bandcamp"],
-  soundcloud: ["soundcloud"],
-  audius: ["audius"],
-  instagram: ["instagram"],
-  youtube: ["youtube"],
-  bluesky: ["bluesky"],
-  discord: ["discord"],
-  disukoFlipsYoutuibe: ["disukoFlipsYoutuibe"],
-  vero: ["vero"],
-  twitter: ["twitter"],
+  columns: ["columns"],
   embedHtml: ["embedHtml"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -1293,22 +508,10 @@ type NodeDefaultElementType = {
   root: "div";
   windowButton: typeof WindowButton;
   popover: typeof AntdPopover;
+  svg: "svg";
   main: "div";
   img: typeof PlasmicImg__;
-  freeBox: "div";
-  window: typeof Window;
-  spotify: typeof Tilt;
-  itunes: typeof Tilt;
-  bandcamp: typeof Tilt;
-  soundcloud: typeof Tilt;
-  audius: typeof Tilt;
-  instagram: typeof Tilt;
-  youtube: typeof Tilt;
-  bluesky: typeof Tilt;
-  discord: typeof Tilt;
-  disukoFlipsYoutuibe: typeof Tilt;
-  vero: typeof Tilt;
-  twitter: typeof Tilt;
+  columns: "div";
   embedHtml: typeof Embed;
 };
 
@@ -1399,22 +602,10 @@ export const PlasmicLinks = Object.assign(
     // Helper components rendering sub-elements
     windowButton: makeNodeComponent("windowButton"),
     popover: makeNodeComponent("popover"),
+    svg: makeNodeComponent("svg"),
     main: makeNodeComponent("main"),
     img: makeNodeComponent("img"),
-    freeBox: makeNodeComponent("freeBox"),
-    window: makeNodeComponent("window"),
-    spotify: makeNodeComponent("spotify"),
-    itunes: makeNodeComponent("itunes"),
-    bandcamp: makeNodeComponent("bandcamp"),
-    soundcloud: makeNodeComponent("soundcloud"),
-    audius: makeNodeComponent("audius"),
-    instagram: makeNodeComponent("instagram"),
-    youtube: makeNodeComponent("youtube"),
-    bluesky: makeNodeComponent("bluesky"),
-    discord: makeNodeComponent("discord"),
-    disukoFlipsYoutuibe: makeNodeComponent("disukoFlipsYoutuibe"),
-    vero: makeNodeComponent("vero"),
-    twitter: makeNodeComponent("twitter"),
+    columns: makeNodeComponent("columns"),
     embedHtml: makeNodeComponent("embedHtml"),
 
     // Metadata about props expected for PlasmicLinks

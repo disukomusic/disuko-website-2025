@@ -297,6 +297,8 @@
   --plasmic-mixin-window-out_box-shadow: var(--mixin-txwZcUgAiD6A_box-shadow);
   --mixin-txwZcUgAiD6A_white-space: pre-wrap;
   --plasmic-mixin-window-out_white-space: var(--mixin-txwZcUgAiD6A_white-space);
+  --mixin-Ft-_3MHRy9dT_white-space: pre-wrap;
+  --plasmic-mixin-links-text_white-space: var(--mixin-Ft-_3MHRy9dT_white-space);
 }
 
 :where(.all) {

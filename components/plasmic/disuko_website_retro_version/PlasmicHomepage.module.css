@@ -102,6 +102,7 @@
     height: auto;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-top: calc(67px + 10px) !important;
     min-width: 0;
     padding: 0px;
   }
