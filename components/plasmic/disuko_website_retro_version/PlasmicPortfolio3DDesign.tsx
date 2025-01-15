@@ -309,7 +309,11 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
             }
           </div>
           <div className={classNames(projectcss.all, sty.freeBox__lmIi2)}>
-            <div className={classNames(projectcss.all, sty.freeBox__eowsj)}>
+            <Stack__
+              as={"div"}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.freeBox__eowsj)}
+            >
               <Window
                 className={classNames("__wab_instance", sty.window__qkSdZ)}
                 windowImage={
@@ -334,8 +338,37 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                 windowText={"Pastel Street"}
                 windowTitle={"Easel Render"}
               />
-            </div>
-            <div className={classNames(projectcss.all, sty.freeBox___1FTxE)}>
+
+              <Window
+                className={classNames("__wab_instance", sty.window__nbokm)}
+                windowImage={
+                  <PlasmicImg__
+                    alt={""}
+                    className={classNames(sty.img__axSxY)}
+                    displayHeight={"auto"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"auto"}
+                    loading={"eager"}
+                    src={{
+                      src: "/plasmic/disuko_website_retro_version/images/smartiesWebp.webp",
+                      fullWidth: 600,
+                      fullHeight: 1067,
+                      aspectRatio: undefined
+                    }}
+                  />
+                }
+                windowText={"Smarties"}
+                windowTitle={"Easel Render"}
+              />
+            </Stack__>
+            <Stack__
+              as={"div"}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.freeBox___1FTxE)}
+            >
               <Window
                 className={classNames("__wab_instance", sty.window__uPusq)}
                 windowImage={
@@ -360,7 +393,32 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                 windowText={"Strawberry Milk"}
                 windowTitle={"Easel Render"}
               />
-            </div>
+
+              <Window
+                className={classNames("__wab_instance", sty.window__zUeqR)}
+                windowImage={
+                  <PlasmicImg__
+                    alt={""}
+                    className={classNames(sty.img__bD97C)}
+                    displayHeight={"auto"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"auto"}
+                    loading={"eager"}
+                    src={{
+                      src: "/plasmic/disuko_website_retro_version/images/ramuneWebp2.webp",
+                      fullWidth: 600,
+                      fullHeight: 1067,
+                      aspectRatio: undefined
+                    }}
+                  />
+                }
+                windowText={"Blueberry Ramune"}
+                windowTitle={"Easel Render"}
+              />
+            </Stack__>
             <div className={classNames(projectcss.all, sty.freeBox__vXtFs)}>
               <Window
                 className={classNames("__wab_instance", sty.window__nwxc)}
