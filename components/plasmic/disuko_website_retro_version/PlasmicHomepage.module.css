@@ -243,51 +243,6 @@
   box-shadow: inset 2px 2px 0px 1px var(--token-K_FDgNby8UmH),
     inset -2px -2px 0px 1px var(--token-24x9Uc_JThUA);
 }
-.windowButton___08Fd:global(.__wab_instance) {
-  max-width: 100%;
-  position: relative;
-}
-.img__tqrc6 {
-  position: relative;
-  object-fit: cover;
-  max-width: 100%;
-  align-self: center;
-  width: 44px;
-  height: 44px;
-}
-.img__tqrc6 > picture > img {
-  object-fit: cover;
-}
-.windowButton__ieUPe:global(.__wab_instance) {
-  max-width: 100%;
-  position: relative;
-}
-.img__f0Rne {
-  position: relative;
-  object-fit: cover;
-  max-width: 100%;
-  height: 44px;
-  width: 44px;
-  align-self: center;
-}
-.img__f0Rne > picture > img {
-  object-fit: cover;
-}
-.windowButton__jJLlc:global(.__wab_instance) {
-  max-width: 100%;
-  position: relative;
-}
-.img___8MaEg {
-  position: relative;
-  object-fit: cover;
-  max-width: 100%;
-  height: 44px;
-  width: 44px;
-  align-self: center;
-}
-.img___8MaEg > picture > img {
-  object-fit: cover;
-}
 .windowButton__n99S:global(.__wab_instance) {
   max-width: 100%;
   position: relative;
@@ -303,19 +258,20 @@
 .img___6XdE > picture > img {
   object-fit: cover;
 }
-.windowButton__xxYqn:global(.__wab_instance) {
+.windowButton___08Fd:global(.__wab_instance) {
   max-width: 100%;
   position: relative;
 }
-.img__edwYc {
+.img__tqrc6 {
   position: relative;
   object-fit: cover;
   max-width: 100%;
-  height: 44px;
-  width: 44px;
   align-self: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
 }
-.img__edwYc > picture > img {
+.img__tqrc6 > picture > img {
   object-fit: cover;
 }
 .email:global(.__wab_instance) {
@@ -340,6 +296,53 @@
   height: 44px;
 }
 .img___6LpHe > picture > img {
+  object-fit: cover;
+}
+.windowButton__xxYqn:global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+}
+.img__edwYc {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  height: 44px;
+  width: 44px;
+  align-self: center;
+}
+.img__edwYc > picture > img {
+  object-fit: cover;
+}
+.windowButton__ieUPe:global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+  display: none;
+}
+.img__f0Rne {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  height: 44px;
+  width: 44px;
+  align-self: center;
+}
+.img__f0Rne > picture > img {
+  object-fit: cover;
+}
+.windowButton__jJLlc:global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+  display: none;
+}
+.img___8MaEg {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  height: 44px;
+  width: 44px;
+  align-self: center;
+}
+.img___8MaEg > picture > img {
   object-fit: cover;
 }
 .discord:global(.__wab_instance) {

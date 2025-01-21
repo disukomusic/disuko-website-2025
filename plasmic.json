@@ -2858,6 +2858,11 @@
           "id": "4NNAIRetvWyo",
           "name": "ramune.webp 2",
           "filePath": "../public/plasmic/disuko_website_retro_version/images/ramuneWebp2.webp"
+        },
+        {
+          "id": "e3V65ISuGq8-",
+          "name": "image 75",
+          "filePath": "../public/plasmic/disuko_website_retro_version/images/image75.png"
         }
       ],
       "indirect": false,
