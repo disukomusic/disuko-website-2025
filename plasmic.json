@@ -109,8 +109,7 @@
           "componentImportPath": "@plasmicpkgs/radix-ui"
         }
       ],
-      "customFunctions": [],
-      "jsBundleThemes": []
+      "customFunctions": []
     },
     {
       "projectId": "8PtdGodUbexNYgkuyBUcWu",
@@ -655,8 +654,7 @@
           "componentImportPath": "@plasmicpkgs/antd5/skinny/registerBreadcrumb"
         }
       ],
-      "customFunctions": [],
-      "jsBundleThemes": []
+      "customFunctions": []
     },
     {
       "projectId": "84wxoth5npGrp6RRXPL88z",
@@ -2863,6 +2861,91 @@
           "id": "e3V65ISuGq8-",
           "name": "image 75",
           "filePath": "../public/plasmic/disuko_website_retro_version/images/image75.png"
+        },
+        {
+          "id": "Oi5QIHBHt8r4",
+          "name": "image 76",
+          "filePath": "../public/plasmic/disuko_website_retro_version/images/image76.png"
+        },
+        {
+          "id": "6cUvtoV5I3Em",
+          "name": "image 77",
+          "filePath": "../public/plasmic/disuko_website_retro_version/images/image77.png"
+        },
+        {
+          "id": "fCblIzUxxM_L",
+          "name": "Screenshot 2025-01-03 202225.png",
+          "filePath": "../public/plasmic/disuko_website_retro_version/images/screenshot20250103202225Png.png"
+        },
+        {
+          "id": "iHcegSux-FRk",
+          "name": "image 78",
+          "filePath": "../public/plasmic/disuko_website_retro_version/images/image78.png"
+        },
+        {
+          "id": "NoKhQBhFgvWs",
+          "name": "image 79",
+          "filePath": "../public/plasmic/disuko_website_retro_version/images/image79.png"
+        },
+        {
+          "id": "rUd_maTb0VXv",
+          "name": "image 80",
+          "filePath": "../public/plasmic/disuko_website_retro_version/images/image80.png"
+        },
+        {
+          "id": "extBBnKa_83L",
+          "name": "image 81",
+          "filePath": "../public/plasmic/disuko_website_retro_version/images/image81.png"
+        },
+        {
+          "id": "JG-hiHWQl2UB",
+          "name": "image 82",
+          "filePath": "../public/plasmic/disuko_website_retro_version/images/image82.png"
+        },
+        {
+          "id": "r-rSke7q65vt",
+          "name": "image 83",
+          "filePath": "../public/plasmic/disuko_website_retro_version/images/image83.png"
+        },
+        {
+          "id": "N8d3qk4ZcDgJ",
+          "name": "image 84",
+          "filePath": "../public/plasmic/disuko_website_retro_version/images/image84.png"
+        },
+        {
+          "id": "i9Gp7w75FevM",
+          "name": "image 85",
+          "filePath": "../public/plasmic/disuko_website_retro_version/images/image85.png"
+        },
+        {
+          "id": "mq8mfNWU__rV",
+          "name": "image 86",
+          "filePath": "../public/plasmic/disuko_website_retro_version/images/image86.png"
+        },
+        {
+          "id": "iuKWVMeO_6_I",
+          "name": "image 87",
+          "filePath": "../public/plasmic/disuko_website_retro_version/images/image87.png"
+        },
+        {
+          "id": "zsC3Q14Ln_Rv",
+          "name": "ezgif.com-optimize.gif",
+          "filePath": "../public/plasmic/disuko_website_retro_version/images/ezgifComOptimizeGif.gif"
+        },
+        {
+          "id": "vY-F0tm_kmvK",
+          "name": "image 88",
+          "filePath": "../public/plasmic/disuko_website_retro_version/images/image88.png"
+        },
+        {
+          "id": "qMb0MRDeESJ8",
+          "name": "image 89",
+          "filePath": "../public/plasmic/disuko_website_retro_version/images/image89.png"
+        },
+        {
+          "id": "5bpxIG3Oq_Wb",
+          "name": "image 90",
+          "filePath": "../public/plasmic/disuko_website_retro_version/images/image90.png"
         }
       ],
       "indirect": false,
@@ -3114,6 +3197,6 @@
   "nextjsConfig": {
     "pagesDir": "../pages"
   },
-  "cliVersion": "0.1.334",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.334/dist/plasmic.schema.json"
+  "cliVersion": "0.1.335",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.335/dist/plasmic.schema.json"
 }

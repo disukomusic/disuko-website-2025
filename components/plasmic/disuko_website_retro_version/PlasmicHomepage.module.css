@@ -438,6 +438,14 @@
 .img__uUrMe > picture > img {
   object-fit: cover;
 }
+.img__obzXm {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+}
+.img__obzXm > picture > img {
+  object-fit: cover;
+}
 .freeBox___1BUuK {
   position: relative;
   width: 100%;

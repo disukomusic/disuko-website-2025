@@ -654,6 +654,21 @@ function PlasmicHomepage__RenderFunc(props: {
                         "https://external-media.spacehey.net/media/sc1oC4-CeP0E0mfoS9CDKwEjolsM7BVgx9YTWjhk1cEg=/https://cyber.dabamos.de/88x31/bob.gif"
                       }
                     />
+
+                    <PlasmicImg__
+                      alt={""}
+                      className={classNames(sty.img__obzXm)}
+                      displayHeight={"auto"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"100%"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"auto"}
+                      loading={"lazy"}
+                      src={
+                        "https://external-media.spacehey.net/media/sc1oC4-CeP0E0mfoS9CDKwEjolsM7BVgx9YTWjhk1cEg=/https://cyber.dabamos.de/88x31/bob.gif"
+                      }
+                    />
                   </div>
                 </div>
                 <Stack__

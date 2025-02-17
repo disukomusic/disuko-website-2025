@@ -246,6 +246,23 @@ function PlasmicPortfolioImm__RenderFunc(props: {
                 >
                   {"New Maqam City - Audio Visual Installation"}
                 </div>
+                <WindowButton
+                  className={classNames(
+                    "__wab_instance",
+                    sty.windowButton__iSnjO
+                  )}
+                  link={`/newmaqamcity`}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__w0H8F
+                    )}
+                  >
+                    {"Documentation"}
+                  </div>
+                </WindowButton>
                 <PlasmicImg__
                   alt={""}
                   className={classNames(sty.img__wGEkT)}
@@ -289,24 +306,6 @@ function PlasmicPortfolioImm__RenderFunc(props: {
                     aspectRatio: undefined
                   }}
                 />
-
-                <WindowButton
-                  className={classNames(
-                    "__wab_instance",
-                    sty.windowButton__iSnjO
-                  )}
-                  link={`/newmaqamcity`}
-                >
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__w0H8F
-                    )}
-                  >
-                    {"Documentation"}
-                  </div>
-                </WindowButton>
               </Stack__>
               <Stack__
                 as={"div"}
@@ -329,6 +328,23 @@ function PlasmicPortfolioImm__RenderFunc(props: {
                 >
                   {"Space Force V2 - Game Installation"}
                 </div>
+                <WindowButton
+                  className={classNames(
+                    "__wab_instance",
+                    sty.windowButton___9C6U5
+                  )}
+                  link={"https://prototyping.hdyar.com/projects/spaceforcev2/"}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__gyuHh
+                    )}
+                  >
+                    {"Documentation"}
+                  </div>
+                </WindowButton>
                 <PlasmicImg__
                   alt={""}
                   className={classNames(sty.img___4Bndd)}
@@ -376,24 +392,90 @@ function PlasmicPortfolioImm__RenderFunc(props: {
                     aspectRatio: undefined
                   }}
                 />
-
+              </Stack__>
+              <Stack__
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__dtrej)}
+              >
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__o7YEf,
+                    {
+                      [sty.textglobal_theme_classic__o7YEfeNktM]: hasVariant(
+                        globalVariants,
+                        "theme",
+                        "classic"
+                      )
+                    }
+                  )}
+                >
+                  {"Joey Work on Groove Machines Simulator - Desktop Game"}
+                </div>
                 <WindowButton
                   className={classNames(
                     "__wab_instance",
-                    sty.windowButton___9C6U5
+                    sty.windowButton__jHsSp
                   )}
-                  link={"https://prototyping.hdyar.com/projects/spaceforcev2/"}
+                  link={
+                    "https://itch.io/jam/red-panda-studios-secret-santa/rate/3221285"
+                  }
                 >
                   <div
                     className={classNames(
                       projectcss.all,
                       projectcss.__wab_text,
-                      sty.text__gyuHh
+                      sty.text___6Mand
                     )}
                   >
-                    {"Documentation"}
+                    {"Itch.io Download"}
                   </div>
                 </WindowButton>
+                <PlasmicImg__
+                  alt={""}
+                  className={classNames(sty.img__tk8Q8)}
+                  displayHeight={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "auto"
+                      : "384px"
+                  }
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"100%"}
+                  loading={"lazy"}
+                  src={{
+                    src: "/plasmic/disuko_website_retro_version/images/screenshot20250103202225Png.png",
+                    fullWidth: 1401,
+                    fullHeight: 1068,
+                    aspectRatio: undefined
+                  }}
+                />
+
+                <PlasmicImg__
+                  alt={""}
+                  className={classNames(sty.img__t6PI1)}
+                  displayHeight={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "auto"
+                      : "384px"
+                  }
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"100%"}
+                  loading={"lazy"}
+                  src={{
+                    src: "/plasmic/disuko_website_retro_version/images/image76.png",
+                    fullWidth: 1919,
+                    fullHeight: 1079,
+                    aspectRatio: undefined
+                  }}
+                />
               </Stack__>
               <Stack__
                 as={"div"}
@@ -416,11 +498,6 @@ function PlasmicPortfolioImm__RenderFunc(props: {
                 >
                   {"Bucaneer Waterplace - VR Experience"}
                 </div>
-                <YouTube
-                  className={classNames("__wab_instance", sty.youTube__tedby)}
-                  videoId={"jOxigogeKLw"}
-                />
-
                 <WindowButton
                   className={classNames(
                     "__wab_instance",
@@ -438,6 +515,10 @@ function PlasmicPortfolioImm__RenderFunc(props: {
                     {"Download/Source Code"}
                   </div>
                 </WindowButton>
+                <YouTube
+                  className={classNames("__wab_instance", sty.youTube__tedby)}
+                  videoId={"jOxigogeKLw"}
+                />
               </Stack__>
               <Stack__
                 as={"div"}

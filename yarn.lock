@@ -776,10 +776,10 @@
     "@plasmicapp/isomorphic-unfetch" "1.0.3"
     "@plasmicapp/query" "0.1.79"
 
-"@plasmicapp/cli@^0.1.334":
-  version "0.1.334"
-  resolved "https://registry.yarnpkg.com/@plasmicapp/cli/-/cli-0.1.334.tgz#0ba6c6fd94feba4fb8d3e4833492c8884f1603ee"
-  integrity sha512-ZPliBIW6Q3s2VuPxSseDzJSReUyFKRBc64PtdbIrKgxuwPE5ewciPw2KpJe8Hdl6g1cmS/aE5EingW0ueHI78g==
+"@plasmicapp/cli@^0.1.335":
+  version "0.1.335"
+  resolved "https://registry.yarnpkg.com/@plasmicapp/cli/-/cli-0.1.335.tgz#b007ad64e5b73604c0b52e70af7f3c1a6df200d6"
+  integrity sha512-U4YYxeQJxEo9CwVLdaMwYtSLuQChcCbc7YrAusiNRbfYy4Pxb2ZfGnQJXaH4s2aNdGUclKdYvgmkKM7iVhXeTA==
 
 "@plasmicapp/data-sources-context@0.1.21":
   version "0.1.21"
@@ -890,10 +890,10 @@
     fast-deep-equal "^3.1.3"
     valtio "^1.6.3"
 
-"@plasmicpkgs/antd5@^0.0.260":
-  version "0.0.260"
-  resolved "https://registry.yarnpkg.com/@plasmicpkgs/antd5/-/antd5-0.0.260.tgz#be9f491c43b225312535659673e6382fafcf57fb"
-  integrity sha512-smbHbgvSccOlGUALbTfpavhqHhdLmFcCYRt2TZp/LaahwtdQKNycDmjaO7sAupBrVfP5OnXlWkzIaSiCpsPNVw==
+"@plasmicpkgs/antd5@^0.0.272":
+  version "0.0.272"
+  resolved "https://registry.yarnpkg.com/@plasmicpkgs/antd5/-/antd5-0.0.272.tgz#0756b580804a0cdb9cbc230590570cebae24c855"
+  integrity sha512-RY4SAAtnRfqzjZIuS22huviGG9NIgrL6mWyz8UM1e/csGDiUOtuUBr2Bg28w8y8+TV1JEcu8Mmd/a2JVPXgzBw==
   dependencies:
     antd "^5.12.7"
     classnames "^2.3.2"
@@ -965,10 +965,10 @@
     "@plasmicapp/host" "1.0.208"
     constate "^3.3.2"
 
-"@plasmicpkgs/radix-ui@^0.0.65":
-  version "0.0.65"
-  resolved "https://registry.yarnpkg.com/@plasmicpkgs/radix-ui/-/radix-ui-0.0.65.tgz#407891794b28b2536591fe90da204ef8f59b9f74"
-  integrity sha512-LEt02HHcudh2pmuKt6kWrLdgc4n3VnGLYzRgIIB6bhBagcgphV1skBjBR1gY9Suqcz4oOm5mujWiIvR1JzmnAg==
+"@plasmicpkgs/radix-ui@^0.0.69":
+  version "0.0.69"
+  resolved "https://registry.yarnpkg.com/@plasmicpkgs/radix-ui/-/radix-ui-0.0.69.tgz#15e0b4740871b17e154cdbec850c2683d6c62930"
+  integrity sha512-oMgTElIRFCRo5bRbvIxccY4P33TjudcW2M1Gf5tXkg8rL5eiCHBKdXZnhptuVoyOAdsR8D9FLbC5t+pLB2mOxA==
   dependencies:
     "@radix-ui/react-context-menu" "^2.1.4"
     "@radix-ui/react-dialog" "^1.0.5"
