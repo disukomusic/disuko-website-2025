@@ -103,6 +103,8 @@ export type PlasmicPortfolio3DDesign__OverridesType = {
   imageWindow9?: Flex__<"div">;
   imageWindow12?: Flex__<"div">;
   imageWindow13?: Flex__<"div">;
+  imageWindow14?: Flex__<"div">;
+  imageWindow15?: Flex__<"div">;
   imageWindow?: Flex__<"div">;
   imageWindow2?: Flex__<"div">;
   imageWindow3?: Flex__<"div">;
@@ -770,6 +772,100 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
           </Stack__>
         </Stack__>
         <div className={classNames(projectcss.all, sty.freeBox__fSznd)}>
+          <div
+            className={classNames(
+              projectcss.all,
+              projectcss.__wab_text,
+              sty.text__vt2Fw,
+              {
+                [sty.textglobal_theme_classic__vt2FweNktM]: hasVariant(
+                  globalVariants,
+                  "theme",
+                  "classic"
+                )
+              }
+            )}
+          >
+            {
+              '"Balisong Oil Designs" - Promotional Material for Carbon Honey and Canto Group Balisong Oil'
+            }
+          </div>
+          <Stack__
+            as={"div"}
+            hasGap={true}
+            className={classNames(projectcss.all, sty.freeBox__wiO8G)}
+          >
+            <div
+              data-plasmic-name={"imageWindow14"}
+              data-plasmic-override={overrides.imageWindow14}
+              className={classNames(projectcss.all, sty.imageWindow14, {
+                [sty.imageWindow14global_theme_classic]: hasVariant(
+                  globalVariants,
+                  "theme",
+                  "classic"
+                )
+              })}
+            >
+              <PlasmicImg__
+                alt={""}
+                className={classNames(sty.img__qKhOi, {
+                  [sty.imgglobal_theme_classic__qKhOieNktM]: hasVariant(
+                    globalVariants,
+                    "theme",
+                    "classic"
+                  )
+                })}
+                displayHeight={"100%"}
+                displayMaxHeight={"none"}
+                displayMaxWidth={"none"}
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={"100%"}
+                loading={"lazy"}
+                src={{
+                  src: "/plasmic/disuko_website_retro_version/images/image91.png",
+                  fullWidth: 512,
+                  fullHeight: 512,
+                  aspectRatio: undefined
+                }}
+              />
+            </div>
+            <div
+              data-plasmic-name={"imageWindow15"}
+              data-plasmic-override={overrides.imageWindow15}
+              className={classNames(projectcss.all, sty.imageWindow15, {
+                [sty.imageWindow15global_theme_classic]: hasVariant(
+                  globalVariants,
+                  "theme",
+                  "classic"
+                )
+              })}
+            >
+              <PlasmicImg__
+                alt={""}
+                className={classNames(sty.img___3LgTd, {
+                  [sty.imgglobal_theme_classic___3LgTdeNktM]: hasVariant(
+                    globalVariants,
+                    "theme",
+                    "classic"
+                  )
+                })}
+                displayHeight={"100%"}
+                displayMaxHeight={"none"}
+                displayMaxWidth={"none"}
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={"100%"}
+                loading={"lazy"}
+                src={{
+                  src: "/plasmic/disuko_website_retro_version/images/image92.png",
+                  fullWidth: 512,
+                  fullHeight: 512,
+                  aspectRatio: undefined
+                }}
+              />
+            </div>
+          </Stack__>
           <div
             className={classNames(
               projectcss.all,
@@ -1487,6 +1583,8 @@ const PlasmicDescendants = {
     "imageWindow9",
     "imageWindow12",
     "imageWindow13",
+    "imageWindow14",
+    "imageWindow15",
     "imageWindow",
     "imageWindow2",
     "imageWindow3",
@@ -1505,6 +1603,8 @@ const PlasmicDescendants = {
   imageWindow9: ["imageWindow9"],
   imageWindow12: ["imageWindow12"],
   imageWindow13: ["imageWindow13"],
+  imageWindow14: ["imageWindow14"],
+  imageWindow15: ["imageWindow15"],
   imageWindow: ["imageWindow"],
   imageWindow2: ["imageWindow2"],
   imageWindow3: ["imageWindow3"],
@@ -1528,6 +1628,8 @@ type NodeDefaultElementType = {
   imageWindow9: "div";
   imageWindow12: "div";
   imageWindow13: "div";
+  imageWindow14: "div";
+  imageWindow15: "div";
   imageWindow: "div";
   imageWindow2: "div";
   imageWindow3: "div";
@@ -1632,6 +1734,8 @@ export const PlasmicPortfolio3DDesign = Object.assign(
     imageWindow9: makeNodeComponent("imageWindow9"),
     imageWindow12: makeNodeComponent("imageWindow12"),
     imageWindow13: makeNodeComponent("imageWindow13"),
+    imageWindow14: makeNodeComponent("imageWindow14"),
+    imageWindow15: makeNodeComponent("imageWindow15"),
     imageWindow: makeNodeComponent("imageWindow"),
     imageWindow2: makeNodeComponent("imageWindow2"),
     imageWindow3: makeNodeComponent("imageWindow3"),

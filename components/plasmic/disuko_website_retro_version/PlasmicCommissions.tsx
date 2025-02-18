@@ -936,33 +936,7 @@ function PlasmicCommissions__RenderFunc(props: {
                     "classic"
                   )
                 })}
-              >
-                <Window
-                  className={classNames("__wab_instance", sty.window__s5L5J)}
-                  showImage={false}
-                  windowImage={
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img__q5QTw)}
-                      displayHeight={"auto"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"auto"}
-                      loading={"lazy"}
-                      src={{
-                        src: "/plasmic/disuko_website_retro_version/images/logo2023512XJpg.jpg",
-                        fullWidth: 512,
-                        fullHeight: 512,
-                        aspectRatio: undefined
-                      }}
-                    />
-                  }
-                  windowText={"3D Office Props for @voidred.dev"}
-                  windowTitle={"Office Props"}
-                />
-              </Stack__>
+              />
             </Stack__>
             <Stack__
               as={"div"}
@@ -1066,29 +1040,60 @@ function PlasmicCommissions__RenderFunc(props: {
                   className={classNames("__wab_instance", sty.window__orzP)}
                   showImage={true}
                   windowImage={
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img__z18Xo, {
-                        [sty.imgglobal_theme_classic__z18XoeNktM]: hasVariant(
-                          globalVariants,
-                          "theme",
-                          "classic"
-                        )
-                      })}
-                      displayHeight={"auto"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"auto"}
-                      loading={"lazy"}
-                      src={{
-                        src: "/plasmic/disuko_website_retro_version/images/image71.png",
-                        fullWidth: 658,
-                        fullHeight: 627,
-                        aspectRatio: undefined
-                      }}
-                    />
+                    <React.Fragment>
+                      <Window
+                        className={classNames(
+                          "__wab_instance",
+                          sty.window__s5L5J
+                        )}
+                        showImage={true}
+                        windowImage={
+                          <PlasmicImg__
+                            alt={""}
+                            className={classNames(sty.img__q5QTw)}
+                            displayHeight={"auto"}
+                            displayMaxHeight={"none"}
+                            displayMaxWidth={"100%"}
+                            displayMinHeight={"0"}
+                            displayMinWidth={"0"}
+                            displayWidth={"auto"}
+                            loading={"lazy"}
+                            src={{
+                              src: "/plasmic/disuko_website_retro_version/images/ezgifComOptimizeGif.gif",
+                              fullWidth: 1920,
+                              fullHeight: 1080,
+                              aspectRatio: undefined
+                            }}
+                          />
+                        }
+                        windowText={"3D Office Props for @voidred.dev"}
+                        windowTitle={"Office Props"}
+                      />
+
+                      <PlasmicImg__
+                        alt={""}
+                        className={classNames(sty.img__z18Xo, {
+                          [sty.imgglobal_theme_classic__z18XoeNktM]: hasVariant(
+                            globalVariants,
+                            "theme",
+                            "classic"
+                          )
+                        })}
+                        displayHeight={"auto"}
+                        displayMaxHeight={"none"}
+                        displayMaxWidth={"100%"}
+                        displayMinHeight={"0"}
+                        displayMinWidth={"0"}
+                        displayWidth={"auto"}
+                        loading={"lazy"}
+                        src={{
+                          src: "/plasmic/disuko_website_retro_version/images/image71.png",
+                          fullWidth: 658,
+                          fullHeight: 627,
+                          aspectRatio: undefined
+                        }}
+                      />
+                    </React.Fragment>
                   }
                   windowText={"Sherbert Puppycat Character"}
                   windowTitle={"3D - Sherbert"}
