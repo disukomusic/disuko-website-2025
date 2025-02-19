@@ -3,41 +3,39 @@
 import * as React from "react";
 import { PageParamsProvider as PageParamsProvider__ } from "@plasmicapp/react-web/lib/host";
 import GlobalContextsProvider from "../components/plasmic/disuko_website_retro_version/PlasmicGlobalContextsProvider";
-import { ThemeContext } from "../components/plasmic/disuko_website_retro_version/PlasmicGlobalVariant__Theme";
-import { PlasmicPortfolio3DDesign2 } from "../components/plasmic/disuko_website_retro_version/PlasmicPortfolio3DDesign2";
+
+import { PlasmicPortfolio3DDesign } from "../components/plasmic/disuko_website_retro_version/PlasmicPortfolio3DDesign";
 import { useRouter } from "next/router";
 
-function Portfolio3DDesign2() {
-  // Use PlasmicPortfolio3DDesign2 to render this component as it was
+function Portfolio3DDesign() {
+  // Use PlasmicPortfolio3DDesign to render this component as it was
   // designed in Plasmic, by activating the appropriate variants,
   // attaching the appropriate event handlers, etc.  You
   // can also install whatever React hooks you need here to manage state or
   // fetch data.
   //
-  // Props you can pass into PlasmicPortfolio3DDesign2 are:
+  // Props you can pass into PlasmicPortfolio3DDesign are:
   // 1. Variants you want to activate,
   // 2. Contents for slots you want to fill,
   // 3. Overrides for any named node in the component to attach behavior and data,
   // 4. Props to set on the root node.
   //
-  // By default, PlasmicPortfolio3DDesign2 is wrapped by your project's global
+  // By default, PlasmicPortfolio3DDesign is wrapped by your project's global
   // variant context providers. These wrappers may be moved to
   // Next.js Custom App component
   // (https://nextjs.org/docs/advanced-features/custom-app).
 
   return (
-    <ThemeContext.Provider value={undefined}>
-      <GlobalContextsProvider>
-        <PageParamsProvider__
-          route={useRouter()?.pathname}
-          params={useRouter()?.query}
-          query={useRouter()?.query}
-        >
-          <PlasmicPortfolio3DDesign2 />
-        </PageParamsProvider__>
-      </GlobalContextsProvider>
-    </ThemeContext.Provider>
+    <GlobalContextsProvider>
+      <PageParamsProvider__
+        route={useRouter()?.pathname}
+        params={useRouter()?.query}
+        query={useRouter()?.query}
+      >
+        <PlasmicPortfolio3DDesign />
+      </PageParamsProvider__>
+    </GlobalContextsProvider>
   );
 }
 
-export default Portfolio3DDesign2;
+export default Portfolio3DDesign;

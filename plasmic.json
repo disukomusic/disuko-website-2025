@@ -1411,7 +1411,7 @@
           "projectId": "x4VgG6kzZCVuaqknYN7tgc",
           "renderModuleFilePath": "plasmic/disuko_website_retro_version/PlasmicPortfolio3DDesign.tsx",
           "importSpec": {
-            "modulePath": "../pages/3d-design.tsx"
+            "modulePath": "../pages/3d-Design.tsx"
           },
           "cssFilePath": "plasmic/disuko_website_retro_version/PlasmicPortfolio3DDesign.module.css",
           "scheme": "blackbox",
@@ -1604,20 +1604,6 @@
           "cssFilePath": "plasmic/disuko_website_retro_version/PlasmicWindowBlue.module.css",
           "scheme": "blackbox",
           "componentType": "component"
-        },
-        {
-          "id": "KO_342KPQy8g",
-          "name": "Portfolio3DDesign2",
-          "type": "managed",
-          "projectId": "x4VgG6kzZCVuaqknYN7tgc",
-          "renderModuleFilePath": "plasmic/disuko_website_retro_version/PlasmicPortfolio3DDesign2.tsx",
-          "importSpec": {
-            "modulePath": "../pages/3d-Design.tsx"
-          },
-          "cssFilePath": "plasmic/disuko_website_retro_version/PlasmicPortfolio3DDesign2.module.css",
-          "scheme": "blackbox",
-          "componentType": "page",
-          "path": "/3d-Design"
         }
       ],
       "icons": [
