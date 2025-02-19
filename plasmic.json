@@ -1411,7 +1411,7 @@
           "projectId": "x4VgG6kzZCVuaqknYN7tgc",
           "renderModuleFilePath": "plasmic/disuko_website_retro_version/PlasmicPortfolio3DDesign.tsx",
           "importSpec": {
-            "modulePath": "../pages/3d-Design.tsx"
+            "modulePath": "../pages/3d-design.tsx"
           },
           "cssFilePath": "plasmic/disuko_website_retro_version/PlasmicPortfolio3DDesign.module.css",
           "scheme": "blackbox",
@@ -2958,6 +2958,41 @@
           "id": "qBU-J-Kecpvm",
           "name": "image 92",
           "filePath": "../public/plasmic/disuko_website_retro_version/images/image92.png"
+        },
+        {
+          "id": "ciuNjTT-iovt",
+          "name": "Character Icon.png",
+          "filePath": "../public/plasmic/disuko_website_retro_version/images/characterIconPng.png"
+        },
+        {
+          "id": "fHJqbTJq9zz_",
+          "name": "image 93",
+          "filePath": "../public/plasmic/disuko_website_retro_version/images/image93.png"
+        },
+        {
+          "id": "wHDAX9w4rdus",
+          "name": "image 94",
+          "filePath": "../public/plasmic/disuko_website_retro_version/images/image94.png"
+        },
+        {
+          "id": "64qyTWb6nDvn",
+          "name": "emon3ko0031.png",
+          "filePath": "../public/plasmic/disuko_website_retro_version/images/emon3Ko0031Png.png"
+        },
+        {
+          "id": "UgND5mQH5KnW",
+          "name": "image 95",
+          "filePath": "../public/plasmic/disuko_website_retro_version/images/image95.png"
+        },
+        {
+          "id": "cS0OMG3J0u3s",
+          "name": "image 96",
+          "filePath": "../public/plasmic/disuko_website_retro_version/images/image96.png"
+        },
+        {
+          "id": "zhs7xGT1-ook",
+          "name": "image 97",
+          "filePath": "../public/plasmic/disuko_website_retro_version/images/image97.png"
         }
       ],
       "indirect": false,
