@@ -199,7 +199,7 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
   return (
     <React.Fragment>
       <Head>
-        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:card" content="summary_large_image" />
         <title key="title">{PlasmicPortfolio3DDesign.pageMetadata.title}</title>
         <meta
           key="og:title"
@@ -210,6 +210,35 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
           key="twitter:title"
           name="twitter:title"
           content={PlasmicPortfolio3DDesign.pageMetadata.title}
+        />
+        <meta
+          key="description"
+          name="description"
+          content={PlasmicPortfolio3DDesign.pageMetadata.description}
+        />
+        <meta
+          key="og:description"
+          property="og:description"
+          content={PlasmicPortfolio3DDesign.pageMetadata.description}
+        />
+        <meta
+          key="twitter:description"
+          name="twitter:description"
+          content={PlasmicPortfolio3DDesign.pageMetadata.description}
+        />
+        <meta
+          key="og:image"
+          property="og:image"
+          content={PlasmicPortfolio3DDesign.pageMetadata.ogImageSrc}
+        />
+        <meta
+          key="twitter:image"
+          name="twitter:image"
+          content={PlasmicPortfolio3DDesign.pageMetadata.ogImageSrc}
+        />
+        <link
+          rel="canonical"
+          href={PlasmicPortfolio3DDesign.pageMetadata.canonical}
         />
       </Head>
 
@@ -2320,9 +2349,10 @@ export const PlasmicPortfolio3DDesign = Object.assign(
     // Page metadata
     pageMetadata: {
       title: "3D Design",
-      description: "",
-      ogImageSrc: "",
-      canonical: ""
+      description: '3D Design portfolio of Angelo "Disuko" Licavoli',
+      ogImageSrc:
+        "https://site-assets.plasmic.app/f33b16e8e3629b301959c659f5c8f11d.jpg",
+      canonical: "https://disuko.gay/3d-design"
     }
   }
 );
