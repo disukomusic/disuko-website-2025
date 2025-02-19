@@ -2354,7 +2354,7 @@ export const PlasmicPortfolio3DDesign2 = Object.assign(
       description: '3D Design portfolio of Angelo "Disuko" Licavoli',
       ogImageSrc:
         "https://site-assets.plasmic.app/f33b16e8e3629b301959c659f5c8f11d.jpg",
-      canonical: "https://disuko.gay/3d-design"
+      canonical: "https://disuko.gay/3d-Design"
     }
   }
 );
