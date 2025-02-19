@@ -417,7 +417,7 @@ function PlasmicPortfolio__RenderFunc(props: {
               <div className={classNames(projectcss.all, sty.column___7MAnf)}>
                 <Window
                   className={classNames("__wab_instance", sty.window__iSq4J)}
-                  linkDestination={`/3d-Design`}
+                  linkDestination={`/3d-design`}
                   windowImage={
                     <PlasmicImg__
                       alt={""}

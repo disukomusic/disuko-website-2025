@@ -1411,7 +1411,7 @@
           "projectId": "x4VgG6kzZCVuaqknYN7tgc",
           "renderModuleFilePath": "plasmic/disuko_website_retro_version/PlasmicPortfolio3DDesign.tsx",
           "importSpec": {
-            "modulePath": "../pages/3d-Design.tsx"
+            "modulePath": "../pages/3d-design.tsx"
           },
           "cssFilePath": "plasmic/disuko_website_retro_version/PlasmicPortfolio3DDesign.module.css",
           "scheme": "blackbox",
