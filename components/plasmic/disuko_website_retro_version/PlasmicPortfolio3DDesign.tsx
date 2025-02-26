@@ -63,6 +63,7 @@ import { usePlasmicDataSourceContext } from "@plasmicapp/data-sources-context";
 
 import Navbar from "../../Navbar"; // plasmic-import: 5THU1wffFibB/component
 import WindowButton from "../../WindowButton"; // plasmic-import: KZYdo-R8GYAn/component
+import { Video } from "@plasmicpkgs/plasmic-basic-components";
 import Window from "../../Window"; // plasmic-import: BWjgdOwFY_OO/component
 import { SliderWrapper } from "@plasmicpkgs/react-slick";
 import { sliderHelpers as SliderWrapper_Helpers } from "@plasmicpkgs/react-slick";
@@ -1384,12 +1385,12 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                       "classic"
                     )
                   })}
-                  displayHeight={"100%"}
+                  displayHeight={"640px"}
                   displayMaxHeight={"none"}
                   displayMaxWidth={"none"}
                   displayMinHeight={"0"}
                   displayMinWidth={"0"}
-                  displayWidth={"100%"}
+                  displayWidth={"640px"}
                   loading={"lazy"}
                   src={{
                     src: "/plasmic/disuko_website_retro_version/images/image91.png",
@@ -1412,28 +1413,16 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                   )
                 })}
               >
-                <PlasmicImg__
-                  alt={""}
-                  className={classNames(sty.img___3LgTd, {
-                    [sty.imgglobal_theme_classic___3LgTdeNktM]: hasVariant(
-                      globalVariants,
-                      "theme",
-                      "classic"
-                    )
-                  })}
-                  displayHeight={"100%"}
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={"none"}
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={"100%"}
-                  loading={"lazy"}
-                  src={{
-                    src: "/plasmic/disuko_website_retro_version/images/image92.png",
-                    fullWidth: 512,
-                    fullHeight: 512,
-                    aspectRatio: undefined
-                  }}
+                <Video
+                  autoPlay={true}
+                  className={classNames("__wab_instance", sty.htmlVideo__cpf9C)}
+                  controls={false}
+                  loop={true}
+                  muted={true}
+                  playsInline={true}
+                  src={
+                    "https://pub-78e4119c6da641b08b3b368a9d334e92.r2.dev/CantoRender0001-0750.mp4"
+                  }
                 />
               </div>
             </div>
@@ -1481,22 +1470,19 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
               <Window
                 className={classNames("__wab_instance", sty.window__qkSdZ)}
                 windowImage={
-                  <PlasmicImg__
-                    alt={""}
-                    className={classNames(sty.img__s3M27)}
-                    displayHeight={"auto"}
-                    displayMaxHeight={"none"}
-                    displayMaxWidth={"100%"}
-                    displayMinHeight={"0"}
-                    displayMinWidth={"0"}
-                    displayWidth={"auto"}
-                    loading={"eager"}
-                    src={{
-                      src: "/plasmic/disuko_website_retro_version/images/animestreetWebp.webp",
-                      fullWidth: 800,
-                      fullHeight: 1422,
-                      aspectRatio: undefined
-                    }}
+                  <Video
+                    autoPlay={true}
+                    className={classNames(
+                      "__wab_instance",
+                      sty.htmlVideo__sW6S
+                    )}
+                    controls={false}
+                    loop={true}
+                    muted={true}
+                    playsInline={true}
+                    src={
+                      "https://pub-78e4119c6da641b08b3b368a9d334e92.r2.dev/animestreet0001-0360.mp4"
+                    }
                   />
                 }
                 windowText={"Pastel Street"}
@@ -1506,22 +1492,19 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
               <Window
                 className={classNames("__wab_instance", sty.window__nbokm)}
                 windowImage={
-                  <PlasmicImg__
-                    alt={""}
-                    className={classNames(sty.img__axSxY)}
-                    displayHeight={"auto"}
-                    displayMaxHeight={"none"}
-                    displayMaxWidth={"100%"}
-                    displayMinHeight={"0"}
-                    displayMinWidth={"0"}
-                    displayWidth={"auto"}
-                    loading={"eager"}
-                    src={{
-                      src: "/plasmic/disuko_website_retro_version/images/smartiesWebp.webp",
-                      fullWidth: 600,
-                      fullHeight: 1067,
-                      aspectRatio: undefined
-                    }}
+                  <Video
+                    autoPlay={true}
+                    className={classNames(
+                      "__wab_instance",
+                      sty.htmlVideo__wwwcL
+                    )}
+                    controls={false}
+                    loop={true}
+                    muted={true}
+                    playsInline={true}
+                    src={
+                      "https://pub-78e4119c6da641b08b3b368a9d334e92.r2.dev/SmartiesRender0001-0999.mp4"
+                    }
                   />
                 }
                 windowText={"Smarties"}
@@ -1534,81 +1517,98 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
               className={classNames(projectcss.all, sty.freeBox___1FTxE)}
             >
               <Window
-                className={classNames("__wab_instance", sty.window__uPusq)}
+                className={classNames("__wab_instance", sty.window__hyfBk)}
                 windowImage={
-                  <PlasmicImg__
-                    alt={""}
-                    className={classNames(sty.img__eqQnm)}
-                    displayHeight={"auto"}
-                    displayMaxHeight={"none"}
-                    displayMaxWidth={"100%"}
-                    displayMinHeight={"0"}
-                    displayMinWidth={"0"}
-                    displayWidth={"auto"}
-                    loading={"eager"}
-                    src={{
-                      src: "/plasmic/disuko_website_retro_version/images/strawberrymilkWebp.webp",
-                      fullWidth: 800,
-                      fullHeight: 1422,
-                      aspectRatio: undefined
-                    }}
+                  <Video
+                    autoPlay={true}
+                    className={classNames(
+                      "__wab_instance",
+                      sty.htmlVideo__tWzsK
+                    )}
+                    controls={false}
+                    loop={true}
+                    muted={true}
+                    playsInline={true}
+                    src={
+                      "https://pub-78e4119c6da641b08b3b368a9d334e92.r2.dev/NautRender0001-0500.mp4"
+                    }
                   />
                 }
-                windowText={"Strawberry Milk"}
+                windowText={"Space Nautilus Balisong"}
                 windowTitle={"Easel Render"}
               />
 
               <Window
                 className={classNames("__wab_instance", sty.window__zUeqR)}
                 windowImage={
-                  <PlasmicImg__
-                    alt={""}
-                    className={classNames(sty.img__bD97C)}
-                    displayHeight={"auto"}
-                    displayMaxHeight={"none"}
-                    displayMaxWidth={"100%"}
-                    displayMinHeight={"0"}
-                    displayMinWidth={"0"}
-                    displayWidth={"auto"}
-                    loading={"eager"}
-                    src={{
-                      src: "/plasmic/disuko_website_retro_version/images/ramuneWebp2.webp",
-                      fullWidth: 600,
-                      fullHeight: 1067,
-                      aspectRatio: undefined
-                    }}
+                  <Video
+                    autoPlay={true}
+                    className={classNames(
+                      "__wab_instance",
+                      sty.htmlVideo___4PtuZ
+                    )}
+                    controls={false}
+                    loop={true}
+                    muted={true}
+                    playsInline={true}
+                    src={
+                      "https://pub-78e4119c6da641b08b3b368a9d334e92.r2.dev/RamuneLightLabelRender0001-0750.mp4"
+                    }
                   />
                 }
                 windowText={"Blueberry Ramune"}
                 windowTitle={"Easel Render"}
               />
             </Stack__>
-            <div className={classNames(projectcss.all, sty.freeBox__vXtFs)}>
+            <Stack__
+              as={"div"}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.freeBox__vXtFs)}
+            >
               <Window
                 className={classNames("__wab_instance", sty.window__nwxc)}
                 windowImage={
-                  <PlasmicImg__
-                    alt={""}
-                    className={classNames(sty.img___7GXkJ)}
-                    displayHeight={"auto"}
-                    displayMaxHeight={"none"}
-                    displayMaxWidth={"100%"}
-                    displayMinHeight={"0"}
-                    displayMinWidth={"0"}
-                    displayWidth={"auto"}
-                    loading={"eager"}
-                    src={{
-                      src: "/plasmic/disuko_website_retro_version/images/cakePopWebp.webp",
-                      fullWidth: 800,
-                      fullHeight: 1422,
-                      aspectRatio: undefined
-                    }}
+                  <Video
+                    autoPlay={true}
+                    className={classNames(
+                      "__wab_instance",
+                      sty.htmlVideo__us9SH
+                    )}
+                    controls={false}
+                    loop={true}
+                    muted={true}
+                    playsInline={true}
+                    src={
+                      "https://pub-78e4119c6da641b08b3b368a9d334e92.r2.dev/CakePop0001-0250.mp4"
+                    }
                   />
                 }
                 windowText={"Kawaii Cake Pop"}
                 windowTitle={"Easel Render"}
               />
-            </div>
+
+              <Window
+                className={classNames("__wab_instance", sty.window__uPusq)}
+                windowImage={
+                  <Video
+                    autoPlay={true}
+                    className={classNames(
+                      "__wab_instance",
+                      sty.htmlVideo__bkaZh
+                    )}
+                    controls={false}
+                    loop={true}
+                    muted={true}
+                    playsInline={true}
+                    src={
+                      "https://pub-78e4119c6da641b08b3b368a9d334e92.r2.dev/MilkRender.mov"
+                    }
+                  />
+                }
+                windowText={"Strawberry Milk"}
+                windowTitle={"Easel Render"}
+              />
+            </Stack__>
           </div>
         </Stack__>
         <Stack__
