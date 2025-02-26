@@ -1099,7 +1099,7 @@ function PlasmicPortfolio2DDesign__RenderFunc(props: {
               <PlasmicImg__
                 alt={""}
                 className={classNames(sty.img__fJlWu)}
-                displayHeight={"auto"}
+                displayHeight={"100%"}
                 displayMaxHeight={"none"}
                 displayMaxWidth={"100%"}
                 displayMinHeight={"0"}

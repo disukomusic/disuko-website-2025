@@ -1376,29 +1376,31 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                   )
                 })}
               >
-                <PlasmicImg__
-                  alt={""}
-                  className={classNames(sty.img__qKhOi, {
-                    [sty.imgglobal_theme_classic__qKhOieNktM]: hasVariant(
-                      globalVariants,
-                      "theme",
-                      "classic"
-                    )
-                  })}
-                  displayHeight={"640px"}
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={"none"}
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={"640px"}
-                  loading={"lazy"}
-                  src={{
-                    src: "/plasmic/disuko_website_retro_version/images/image91.png",
-                    fullWidth: 512,
-                    fullHeight: 512,
-                    aspectRatio: undefined
-                  }}
-                />
+                <div className={classNames(projectcss.all, sty.freeBox__h5UrX)}>
+                  <PlasmicImg__
+                    alt={""}
+                    className={classNames(sty.img__qKhOi, {
+                      [sty.imgglobal_theme_classic__qKhOieNktM]: hasVariant(
+                        globalVariants,
+                        "theme",
+                        "classic"
+                      )
+                    })}
+                    displayHeight={"640px"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"none"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"640px"}
+                    loading={"lazy"}
+                    src={{
+                      src: "/plasmic/disuko_website_retro_version/images/carbonHoneyStickerWithHoneyPng.png",
+                      fullWidth: 4096,
+                      fullHeight: 4096,
+                      aspectRatio: undefined
+                    }}
+                  />
+                </div>
               </div>
             </div>
             <div className={classNames(projectcss.all, sty.column___429)}>
@@ -1421,7 +1423,7 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                   muted={true}
                   playsInline={true}
                   src={
-                    "https://pub-78e4119c6da641b08b3b368a9d334e92.r2.dev/CantoRender0001-0750.mp4"
+                    "https://cdn.redpandastudios.net/CantoRender0001-0750.mp4"
                   }
                 />
               </div>
@@ -1481,7 +1483,7 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                     muted={true}
                     playsInline={true}
                     src={
-                      "https://pub-78e4119c6da641b08b3b368a9d334e92.r2.dev/animestreet0001-0360.mp4"
+                      "https://cdn.redpandastudios.net/animestreet0001-0360.mp4"
                     }
                   />
                 }
@@ -1503,7 +1505,7 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                     muted={true}
                     playsInline={true}
                     src={
-                      "https://pub-78e4119c6da641b08b3b368a9d334e92.r2.dev/SmartiesRender0001-0999.mp4"
+                      "https://cdn.redpandastudios.net/SmartiesRender0001-0999.mp4"
                     }
                   />
                 }
@@ -1530,7 +1532,7 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                     muted={true}
                     playsInline={true}
                     src={
-                      "https://pub-78e4119c6da641b08b3b368a9d334e92.r2.dev/NautRender0001-0500.mp4"
+                      "https://cdn.redpandastudios.net/NautRender0001-0500.mp4"
                     }
                   />
                 }
@@ -1552,7 +1554,7 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                     muted={true}
                     playsInline={true}
                     src={
-                      "https://pub-78e4119c6da641b08b3b368a9d334e92.r2.dev/RamuneLightLabelRender0001-0750.mp4"
+                      "https://cdn.redpandastudios.net/RamuneLightLabelRender0001-0750.mp4"
                     }
                   />
                 }
@@ -1578,9 +1580,7 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                     loop={true}
                     muted={true}
                     playsInline={true}
-                    src={
-                      "https://pub-78e4119c6da641b08b3b368a9d334e92.r2.dev/CakePop0001-0250.mp4"
-                    }
+                    src={"https://cdn.redpandastudios.net/CakePop0001-0250.mp4"}
                   />
                 }
                 windowText={"Kawaii Cake Pop"}
@@ -1600,9 +1600,7 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                     loop={true}
                     muted={true}
                     playsInline={true}
-                    src={
-                      "https://pub-78e4119c6da641b08b3b368a9d334e92.r2.dev/MilkRender.mov"
-                    }
+                    src={"https://cdn.redpandastudios.net/MilkRender.mov"}
                   />
                 }
                 windowText={"Strawberry Milk"}

@@ -2993,6 +2993,11 @@
           "id": "zhs7xGT1-ook",
           "name": "image 97",
           "filePath": "../public/plasmic/disuko_website_retro_version/images/image97.png"
+        },
+        {
+          "id": "TA0BqTPEwVsH",
+          "name": "CarbonHoneyStickerWithHoney.png",
+          "filePath": "../public/plasmic/disuko_website_retro_version/images/carbonHoneyStickerWithHoneyPng.png"
         }
       ],
       "indirect": false,
@@ -3220,7 +3225,8 @@
           "componentImportPath": "@plasmicpkgs/react-aria/skinny/registerDialog"
         }
       ],
-      "customFunctions": []
+      "customFunctions": [],
+      "jsBundleThemes": []
     }
   ],
   "globalVariants": {

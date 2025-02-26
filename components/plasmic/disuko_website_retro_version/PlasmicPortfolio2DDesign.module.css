@@ -1171,14 +1171,16 @@
 }
 .img__fJlWu {
   position: relative;
-  object-fit: contain;
+  object-fit: cover;
   max-width: 100%;
   align-self: flex-start;
   width: 620px;
+  height: 100%;
   flex-shrink: 0;
+  min-height: 0;
 }
 .img__fJlWu > picture > img {
-  object-fit: contain;
+  object-fit: cover;
 }
 .freeBox__zb6Km {
   display: flex;

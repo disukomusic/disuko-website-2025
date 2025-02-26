@@ -437,7 +437,7 @@ function PlasmicPortfolio__RenderFunc(props: {
                       }}
                     />
                   }
-                  windowText={"Blender / Maya, Fusion 360"}
+                  windowText={"Blender / Maya / Fusion 360"}
                   windowTitle={"3D Design"}
                 />
               </div>
@@ -464,7 +464,9 @@ function PlasmicPortfolio__RenderFunc(props: {
                       }}
                     />
                   }
-                  windowText={"Adobe Premiere / After Effects"}
+                  windowText={
+                    "Adobe Premiere / After Effects / Davinci Resolve"
+                  }
                   windowTitle={"Film"}
                 />
               </div>
@@ -491,7 +493,9 @@ function PlasmicPortfolio__RenderFunc(props: {
                       }}
                     />
                   }
-                  windowText={"Unity Engine, Godot Engine, TouchDesigner"}
+                  windowText={
+                    "Unity Engine / Godot Engine / TouchDesigner / Arduino"
+                  }
                   windowTitle={"Immersive Media"}
                 />
               </div>
@@ -519,7 +523,7 @@ function PlasmicPortfolio__RenderFunc(props: {
                     />
                   }
                   windowText={
-                    "FL Studio, Ableton Live, BitWig Studio, Adobe Audition"
+                    "FL Studio / Ableton Live/ BitWig Studio / Adobe Audition"
                   }
                   windowTitle={"Music"}
                 />
