@@ -1,6 +1,6 @@
-// @ts-nocheck
 /* eslint-disable */
 /* tslint:disable */
+// @ts-nocheck
 /* prettier-ignore-start */
 
 /** @jsxRuntime classic */
@@ -84,7 +84,7 @@ export type PlasmicFooter__OverridesType = {
   root?: Flex__<"div">;
   columns?: Flex__<"div">;
   freeBox?: Flex__<"div">;
-  disuko?: Flex__<"a"> & Partial<LinkProps>;
+  rpsLink?: Flex__<"a"> & Partial<LinkProps>;
   dotgay?: Flex__<"a"> & Partial<LinkProps>;
 };
 
@@ -188,11 +188,11 @@ function PlasmicFooter__RenderFunc(props: {
             className={classNames(projectcss.all, sty.freeBox)}
           >
             <PlasmicLink__
-              data-plasmic-name={"disuko"}
-              data-plasmic-override={overrides.disuko}
-              className={classNames(projectcss.all, projectcss.a, sty.disuko)}
+              data-plasmic-name={"rpsLink"}
+              data-plasmic-override={overrides.rpsLink}
+              className={classNames(projectcss.all, projectcss.a, sty.rpsLink)}
               component={Link}
-              href={`/`}
+              href={"https://redpandastudios.net"}
               platform={"nextjs"}
               target={"_blank"}
             >
@@ -202,7 +202,7 @@ function PlasmicFooter__RenderFunc(props: {
                 displayHeight={
                   hasVariant(globalVariants, "screen", "mobileOnly")
                     ? "64px"
-                    : "50%"
+                    : "48px"
                 }
                 displayMaxHeight={"none"}
                 displayMaxWidth={"none"}
@@ -211,13 +211,13 @@ function PlasmicFooter__RenderFunc(props: {
                 displayWidth={
                   hasVariant(globalVariants, "screen", "mobileOnly")
                     ? "64px"
-                    : "50%"
+                    : "auto"
                 }
                 loading={"lazy"}
                 src={{
-                  src: "/plasmic/disuko_website_retro_version/images/logo128X128Png.png",
-                  fullWidth: 128,
-                  fullHeight: 128,
+                  src: "/plasmic/disuko_website_retro_version/images/rpsLogo2024Png.png",
+                  fullWidth: 912,
+                  fullHeight: 404,
                   aspectRatio: undefined
                 }}
               />
@@ -293,10 +293,10 @@ function PlasmicFooter__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "columns", "freeBox", "disuko", "dotgay"],
-  columns: ["columns", "freeBox", "disuko", "dotgay"],
-  freeBox: ["freeBox", "disuko"],
-  disuko: ["disuko"],
+  root: ["root", "columns", "freeBox", "rpsLink", "dotgay"],
+  columns: ["columns", "freeBox", "rpsLink", "dotgay"],
+  freeBox: ["freeBox", "rpsLink"],
+  rpsLink: ["rpsLink"],
   dotgay: ["dotgay"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -306,7 +306,7 @@ type NodeDefaultElementType = {
   root: "div";
   columns: "div";
   freeBox: "div";
-  disuko: "a";
+  rpsLink: "a";
   dotgay: "a";
 };
 
@@ -322,15 +322,15 @@ type NodeComponentProps<T extends NodeNameType> =
     args?: PlasmicFooter__ArgsType;
     overrides?: NodeOverridesType<T>;
   } & Omit<PlasmicFooter__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
-    /* Specify args directly as props*/ Omit<
-      PlasmicFooter__ArgsType,
-      ReservedPropsType
-    > &
-    /* Specify overrides for each element directly as props*/ Omit<
+    // Specify args directly as props
+    Omit<PlasmicFooter__ArgsType, ReservedPropsType> &
+    // Specify overrides for each element directly as props
+    Omit<
       NodeOverridesType<T>,
       ReservedPropsType | VariantPropType | ArgPropType
     > &
-    /* Specify props for the root element*/ Omit<
+    // Specify props for the root element
+    Omit<
       Partial<React.ComponentProps<NodeDefaultElementType[T]>>,
       ReservedPropsType | VariantPropType | ArgPropType | DescendantsType<T>
     >;
@@ -372,7 +372,7 @@ export const PlasmicFooter = Object.assign(
     // Helper components rendering sub-elements
     columns: makeNodeComponent("columns"),
     freeBox: makeNodeComponent("freeBox"),
-    disuko: makeNodeComponent("disuko"),
+    rpsLink: makeNodeComponent("rpsLink"),
     dotgay: makeNodeComponent("dotgay"),
 
     // Metadata about props expected for PlasmicFooter

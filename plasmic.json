@@ -2065,11 +2065,6 @@
           "filePath": "../public/plasmic/disuko_website_retro_version/images/disukoPixelPandaTopHalfPng.png"
         },
         {
-          "id": "ci2ZZng-CMCh",
-          "name": "Logo 128x128.png",
-          "filePath": "../public/plasmic/disuko_website_retro_version/images/logo128X128Png.png"
-        },
-        {
           "id": "hSy9DkG6e4bX",
           "name": "image_2023-03-11_151017196.png",
           "filePath": "../public/plasmic/disuko_website_retro_version/images/image20230311151017196Png.png"
@@ -2998,6 +2993,46 @@
           "id": "TA0BqTPEwVsH",
           "name": "CarbonHoneyStickerWithHoney.png",
           "filePath": "../public/plasmic/disuko_website_retro_version/images/carbonHoneyStickerWithHoneyPng.png"
+        },
+        {
+          "id": "gTBgCzYZQvEB",
+          "name": "Logo 128x128.png 2",
+          "filePath": "../public/plasmic/disuko_website_retro_version/images/logo128X128Png2.png"
+        },
+        {
+          "id": "jLcNwcoO1Rhp",
+          "name": "RPSLogo2024.png",
+          "filePath": "../public/plasmic/disuko_website_retro_version/images/rpsLogo2024Png.png"
+        },
+        {
+          "id": "r8GM1lSP34r-",
+          "name": "image 98",
+          "filePath": "../public/plasmic/disuko_website_retro_version/images/image98.png"
+        },
+        {
+          "id": "dENUeJ1x8y_k",
+          "name": "Cotton Candy.png",
+          "filePath": "../public/plasmic/disuko_website_retro_version/images/cottonCandyPng.png"
+        },
+        {
+          "id": "XCEyY51zTDsu",
+          "name": "Matcha.png",
+          "filePath": "../public/plasmic/disuko_website_retro_version/images/matchaPng.png"
+        },
+        {
+          "id": "D-0T_NpPHJ1A",
+          "name": "Strawberry.png",
+          "filePath": "../public/plasmic/disuko_website_retro_version/images/strawberryPng.png"
+        },
+        {
+          "id": "G2xtg6Jo26gO",
+          "name": "Sunset.png",
+          "filePath": "../public/plasmic/disuko_website_retro_version/images/sunsetPng.png"
+        },
+        {
+          "id": "fXXM0Ta2zeio",
+          "name": "Taro.png",
+          "filePath": "../public/plasmic/disuko_website_retro_version/images/taroPng.png"
         }
       ],
       "indirect": false,
@@ -3225,8 +3260,7 @@
           "componentImportPath": "@plasmicpkgs/react-aria/skinny/registerDialog"
         }
       ],
-      "customFunctions": [],
-      "jsBundleThemes": []
+      "customFunctions": []
     }
   ],
   "globalVariants": {
@@ -3249,6 +3283,6 @@
   "nextjsConfig": {
     "pagesDir": "../pages"
   },
-  "cliVersion": "0.1.335",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.335/dist/plasmic.schema.json"
+  "cliVersion": "0.1.337",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.337/dist/plasmic.schema.json"
 }

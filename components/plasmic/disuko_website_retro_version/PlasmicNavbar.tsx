@@ -1,6 +1,6 @@
-// @ts-nocheck
 /* eslint-disable */
 /* tslint:disable */
+// @ts-nocheck
 /* prettier-ignore-start */
 
 /** @jsxRuntime classic */
@@ -180,9 +180,9 @@ function PlasmicNavbar__RenderFunc(props: {
             displayMaxWidth={"none"}
             displayMinHeight={"0"}
             displayMinWidth={"0"}
-            displayWidth={"64px"}
+            displayWidth={"48px"}
             src={{
-              src: "/plasmic/disuko_website_retro_version/images/logo128X128Png.png",
+              src: "/plasmic/disuko_website_retro_version/images/logo128X128Png2.png",
               fullWidth: 128,
               fullHeight: 128,
               aspectRatio: undefined
@@ -605,15 +605,15 @@ type NodeComponentProps<T extends NodeNameType> =
     args?: PlasmicNavbar__ArgsType;
     overrides?: NodeOverridesType<T>;
   } & Omit<PlasmicNavbar__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
-    /* Specify args directly as props*/ Omit<
-      PlasmicNavbar__ArgsType,
-      ReservedPropsType
-    > &
-    /* Specify overrides for each element directly as props*/ Omit<
+    // Specify args directly as props
+    Omit<PlasmicNavbar__ArgsType, ReservedPropsType> &
+    // Specify overrides for each element directly as props
+    Omit<
       NodeOverridesType<T>,
       ReservedPropsType | VariantPropType | ArgPropType
     > &
-    /* Specify props for the root element*/ Omit<
+    // Specify props for the root element
+    Omit<
       Partial<React.ComponentProps<NodeDefaultElementType[T]>>,
       ReservedPropsType | VariantPropType | ArgPropType | DescendantsType<T>
     >;
