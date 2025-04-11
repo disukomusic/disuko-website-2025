@@ -247,6 +247,22 @@ function PlasmicPortfolioImm__RenderFunc(props: {
                 >
                   {"New Maqam City - Audio Visual Installation"}
                 </div>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__ijBn,
+                    {
+                      [sty.textglobal_theme_classic__ijBneNktM]: hasVariant(
+                        globalVariants,
+                        "theme",
+                        "classic"
+                      )
+                    }
+                  )}
+                >
+                  {"Touchdesigner, BitWig Studio, Projection Mapping, Arduino"}
+                </div>
                 <WindowButton
                   className={classNames(
                     "__wab_instance",
@@ -328,6 +344,22 @@ function PlasmicPortfolioImm__RenderFunc(props: {
                   )}
                 >
                   {"Space Force V2 - Game Installation"}
+                </div>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text___8Jfk6,
+                    {
+                      [sty.textglobal_theme_classic___8Jfk6ENktM]: hasVariant(
+                        globalVariants,
+                        "theme",
+                        "classic"
+                      )
+                    }
+                  )}
+                >
+                  {"Unity Engine, Arduino"}
                 </div>
                 <WindowButton
                   className={classNames(
@@ -415,6 +447,22 @@ function PlasmicPortfolioImm__RenderFunc(props: {
                 >
                   {"Joey Work on Groove Machines Simulator - Desktop Game"}
                 </div>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__o6CfP,
+                    {
+                      [sty.textglobal_theme_classic__o6CfPeNktM]: hasVariant(
+                        globalVariants,
+                        "theme",
+                        "classic"
+                      )
+                    }
+                  )}
+                >
+                  {"Unity Engine"}
+                </div>
                 <WindowButton
                   className={classNames(
                     "__wab_instance",
@@ -497,14 +545,30 @@ function PlasmicPortfolioImm__RenderFunc(props: {
                     }
                   )}
                 >
-                  {"Bucaneer Waterplace - VR Experience"}
+                  {"Disuko's EDM Rave - Audiovisual Event"}
+                </div>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__wz2Bp,
+                    {
+                      [sty.textglobal_theme_classic__wz2BPeNktM]: hasVariant(
+                        globalVariants,
+                        "theme",
+                        "classic"
+                      )
+                    }
+                  )}
+                >
+                  {"Rekordbox DJ, Touchdesigner, EOS ETC Lighting "}
                 </div>
                 <WindowButton
                   className={classNames(
                     "__wab_instance",
                     sty.windowButton__aVig1
                   )}
-                  link={"https://github.com/disukomusic/Bucaneer-Waterplace"}
+                  link={"https://www.youtube.com/watch?v=Vl3FjUiB3xo"}
                 >
                   <div
                     className={classNames(
@@ -513,12 +577,12 @@ function PlasmicPortfolioImm__RenderFunc(props: {
                       sty.text__ba3Hf
                     )}
                   >
-                    {"Download/Source Code"}
+                    {"Event Recording"}
                   </div>
                 </WindowButton>
                 <YouTube
                   className={classNames("__wab_instance", sty.youTube__tedby)}
-                  videoId={"jOxigogeKLw"}
+                  videoId={"Vl3FjUiB3xo"}
                 />
               </Stack__>
               <Stack__

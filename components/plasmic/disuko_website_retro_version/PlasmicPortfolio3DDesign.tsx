@@ -111,6 +111,8 @@ export type PlasmicPortfolio3DDesign__OverridesType = {
   imageWindow8?: Flex__<"div">;
   imageWindow9?: Flex__<"div">;
   imageWindow12?: Flex__<"div">;
+  imageWindow23?: Flex__<"div">;
+  imageWindow34?: Flex__<"div">;
   imageWindow13?: Flex__<"div">;
   realisticProductRenders?: Flex__<"div">;
   imageWindow25?: Flex__<"div">;
@@ -1194,6 +1196,65 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                   }}
                 />
               </div>
+            </div>
+          </Stack__>
+          <div
+            className={classNames(
+              projectcss.all,
+              projectcss.__wab_text,
+              sty.text__pggBm,
+              {
+                [sty.textglobal_theme_classic__pggBMeNktM]: hasVariant(
+                  globalVariants,
+                  "theme",
+                  "classic"
+                )
+              }
+            )}
+          >
+            {'"Robo-Dealer" - Poker Film Short Film Character'}
+          </div>
+          <Stack__
+            as={"div"}
+            hasGap={true}
+            className={classNames(projectcss.all, sty.columns__iUCzZ)}
+          >
+            <div className={classNames(projectcss.all, sty.column__a5YjJ)}>
+              <div
+                data-plasmic-name={"imageWindow23"}
+                data-plasmic-override={overrides.imageWindow23}
+                className={classNames(projectcss.all, sty.imageWindow23, {
+                  [sty.imageWindow23global_theme_classic]: hasVariant(
+                    globalVariants,
+                    "theme",
+                    "classic"
+                  )
+                })}
+              >
+                <Video
+                  autoPlay={true}
+                  className={classNames("__wab_instance", sty.htmlVideo__usWux)}
+                  controls={false}
+                  loop={true}
+                  muted={true}
+                  src={
+                    "https://cdn.redpandastudios.net/characters/robodealer/robodealer.mov"
+                  }
+                />
+              </div>
+            </div>
+            <div className={classNames(projectcss.all, sty.column___7MpB)}>
+              <div
+                data-plasmic-name={"imageWindow34"}
+                data-plasmic-override={overrides.imageWindow34}
+                className={classNames(projectcss.all, sty.imageWindow34, {
+                  [sty.imageWindow34global_theme_classic]: hasVariant(
+                    globalVariants,
+                    "theme",
+                    "classic"
+                  )
+                })}
+              />
             </div>
           </Stack__>
         </Stack__>
@@ -2567,6 +2628,8 @@ const PlasmicDescendants = {
     "imageWindow8",
     "imageWindow9",
     "imageWindow12",
+    "imageWindow23",
+    "imageWindow34",
     "imageWindow13",
     "realisticProductRenders",
     "imageWindow25",
@@ -2606,6 +2669,8 @@ const PlasmicDescendants = {
   imageWindow8: ["imageWindow8"],
   imageWindow9: ["imageWindow9"],
   imageWindow12: ["imageWindow12"],
+  imageWindow23: ["imageWindow23"],
+  imageWindow34: ["imageWindow34"],
   imageWindow13: ["imageWindow13"],
   realisticProductRenders: [
     "realisticProductRenders",
@@ -2666,6 +2731,8 @@ type NodeDefaultElementType = {
   imageWindow8: "div";
   imageWindow9: "div";
   imageWindow12: "div";
+  imageWindow23: "div";
+  imageWindow34: "div";
   imageWindow13: "div";
   realisticProductRenders: "div";
   imageWindow25: "div";
@@ -2791,6 +2858,8 @@ export const PlasmicPortfolio3DDesign = Object.assign(
     imageWindow8: makeNodeComponent("imageWindow8"),
     imageWindow9: makeNodeComponent("imageWindow9"),
     imageWindow12: makeNodeComponent("imageWindow12"),
+    imageWindow23: makeNodeComponent("imageWindow23"),
+    imageWindow34: makeNodeComponent("imageWindow34"),
     imageWindow13: makeNodeComponent("imageWindow13"),
     realisticProductRenders: makeNodeComponent("realisticProductRenders"),
     imageWindow25: makeNodeComponent("imageWindow25"),
