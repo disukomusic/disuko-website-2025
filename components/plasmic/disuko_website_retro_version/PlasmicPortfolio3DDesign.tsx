@@ -113,6 +113,7 @@ export type PlasmicPortfolio3DDesign__OverridesType = {
   imageWindow12?: Flex__<"div">;
   imageWindow23?: Flex__<"div">;
   imageWindow34?: Flex__<"div">;
+  imageWindow35?: Flex__<"div">;
   imageWindow13?: Flex__<"div">;
   realisticProductRenders?: Flex__<"div">;
   imageWindow25?: Flex__<"div">;
@@ -1243,7 +1244,11 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                 />
               </div>
             </div>
-            <div className={classNames(projectcss.all, sty.column___7MpB)}>
+            <Stack__
+              as={"div"}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.column___7MpB)}
+            >
               <div
                 data-plasmic-name={"imageWindow34"}
                 data-plasmic-override={overrides.imageWindow34}
@@ -1254,8 +1259,44 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                     "classic"
                   )
                 })}
-              />
-            </div>
+              >
+                <Video
+                  autoPlay={true}
+                  className={classNames("__wab_instance", sty.htmlVideo__g2Cr0)}
+                  controls={false}
+                  loop={true}
+                  muted={true}
+                  src={
+                    "https://cdn.redpandastudios.net/characters/robodealer/robodeals.mp4"
+                  }
+                />
+              </div>
+              <div
+                data-plasmic-name={"imageWindow35"}
+                data-plasmic-override={overrides.imageWindow35}
+                className={classNames(projectcss.all, sty.imageWindow35, {
+                  [sty.imageWindow35global_theme_classic]: hasVariant(
+                    globalVariants,
+                    "theme",
+                    "classic"
+                  )
+                })}
+              >
+                <Video
+                  autoPlay={true}
+                  className={classNames(
+                    "__wab_instance",
+                    sty.htmlVideo___3AcPj
+                  )}
+                  controls={false}
+                  loop={true}
+                  muted={true}
+                  src={
+                    "https://cdn.redpandastudios.net/characters/robodealer/RoboSpill.mp4"
+                  }
+                />
+              </div>
+            </Stack__>
           </Stack__>
         </Stack__>
         <Stack__
@@ -1810,28 +1851,17 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                   <div
                     className={classNames(projectcss.all, sty.freeBox__h5UrX)}
                   >
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img__qKhOi, {
-                        [sty.imgglobal_theme_classic__qKhOieNktM]: hasVariant(
-                          globalVariants,
-                          "theme",
-                          "classic"
-                        )
-                      })}
-                      displayHeight={"640px"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"none"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"640px"}
-                      loading={"lazy"}
-                      src={{
-                        src: "/plasmic/disuko_website_retro_version/images/carbonHoneyStickerWithHoneyPng.png",
-                        fullWidth: 4096,
-                        fullHeight: 4096,
-                        aspectRatio: undefined
-                      }}
+                    <Video
+                      autoPlay={true}
+                      className={classNames(
+                        "__wab_instance",
+                        sty.htmlVideo___6C3Ib
+                      )}
+                      controls={false}
+                      loop={true}
+                      muted={true}
+                      playsInline={true}
+                      src={"https://cdn.redpandastudios.net/carbonhoney.mp4"}
                     />
                   </div>
                 </div>
@@ -2630,6 +2660,7 @@ const PlasmicDescendants = {
     "imageWindow12",
     "imageWindow23",
     "imageWindow34",
+    "imageWindow35",
     "imageWindow13",
     "realisticProductRenders",
     "imageWindow25",
@@ -2671,6 +2702,7 @@ const PlasmicDescendants = {
   imageWindow12: ["imageWindow12"],
   imageWindow23: ["imageWindow23"],
   imageWindow34: ["imageWindow34"],
+  imageWindow35: ["imageWindow35"],
   imageWindow13: ["imageWindow13"],
   realisticProductRenders: [
     "realisticProductRenders",
@@ -2733,6 +2765,7 @@ type NodeDefaultElementType = {
   imageWindow12: "div";
   imageWindow23: "div";
   imageWindow34: "div";
+  imageWindow35: "div";
   imageWindow13: "div";
   realisticProductRenders: "div";
   imageWindow25: "div";
@@ -2860,6 +2893,7 @@ export const PlasmicPortfolio3DDesign = Object.assign(
     imageWindow12: makeNodeComponent("imageWindow12"),
     imageWindow23: makeNodeComponent("imageWindow23"),
     imageWindow34: makeNodeComponent("imageWindow34"),
+    imageWindow35: makeNodeComponent("imageWindow35"),
     imageWindow13: makeNodeComponent("imageWindow13"),
     realisticProductRenders: makeNodeComponent("realisticProductRenders"),
     imageWindow25: makeNodeComponent("imageWindow25"),
