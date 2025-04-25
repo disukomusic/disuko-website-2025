@@ -137,9 +137,9 @@
 .img__frQg {
   object-fit: cover;
   max-width: 100%;
-  width: 70%;
   justify-self: center;
   height: 260px;
+  width: 70%;
   margin: 20px;
 }
 .img__frQg > picture > img {

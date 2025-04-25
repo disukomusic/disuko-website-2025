@@ -3033,6 +3033,21 @@
           "id": "fXXM0Ta2zeio",
           "name": "Taro.png",
           "filePath": "../public/plasmic/disuko_website_retro_version/images/taroPng.png"
+        },
+        {
+          "id": "Y4IHkvhbQBee",
+          "name": "image 99",
+          "filePath": "../public/plasmic/disuko_website_retro_version/images/image99.png"
+        },
+        {
+          "id": "IdgN8_mCcamf",
+          "name": "image 100",
+          "filePath": "../public/plasmic/disuko_website_retro_version/images/image100.png"
+        },
+        {
+          "id": "ZFAJ5m6rAnwz",
+          "name": "vlcsnap-2025-04-24-01h05m47s151.png",
+          "filePath": "../public/plasmic/disuko_website_retro_version/images/vlcsnap2025042401H05M47S151Png.png"
         }
       ],
       "indirect": false,
@@ -3260,7 +3275,8 @@
           "componentImportPath": "@plasmicpkgs/react-aria/skinny/registerDialog"
         }
       ],
-      "customFunctions": []
+      "customFunctions": [],
+      "jsBundleThemes": []
     }
   ],
   "globalVariants": {

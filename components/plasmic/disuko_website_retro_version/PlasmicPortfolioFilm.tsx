@@ -233,6 +233,15 @@ function PlasmicPortfolioFilm__RenderFunc(props: {
             >
               {"Film + Video Production"}
             </div>
+            <div className={classNames(projectcss.all, sty.freeBox__rg6QH)}>
+              <YouTube
+                className={classNames("__wab_instance", sty.youTube__nmbLm)}
+                color={"red"}
+                fs={true}
+                modestbranding={false}
+                videoId={"Mjet_qw9yPs"}
+              />
+            </div>
             <Stack__
               as={"div"}
               hasGap={true}

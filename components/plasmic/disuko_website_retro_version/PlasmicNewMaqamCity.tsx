@@ -556,9 +556,9 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
                   displayWidth={"70%"}
                   loading={"lazy"}
                   src={{
-                    src: "/plasmic/disuko_website_retro_version/images/newMaqamCityConceptRenderPng.png",
-                    fullWidth: 3840,
-                    fullHeight: 2160,
+                    src: "/plasmic/disuko_website_retro_version/images/image99.png",
+                    fullWidth: 1280,
+                    fullHeight: 720,
                     aspectRatio: undefined
                   }}
                 />

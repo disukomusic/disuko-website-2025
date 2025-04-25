@@ -94,6 +94,11 @@ export type PlasmicPortfolio__OverridesType = {
   main?: Flex__<"div">;
   headshot?: Flex__<typeof PlasmicImg__>;
   columns?: Flex__<"div">;
+  imm?: Flex__<"div">;
+  film?: Flex__<"div">;
+  _3DDesign?: Flex__<"div">;
+  music?: Flex__<"div">;
+  _2DDesign?: Flex__<"div">;
   footer?: Flex__<typeof Footer>;
 };
 
@@ -388,14 +393,18 @@ function PlasmicPortfolio__RenderFunc(props: {
               data-plasmic-override={overrides.columns}
               className={classNames(projectcss.all, sty.columns)}
             >
-              <div className={classNames(projectcss.all, sty.column__smuXl)}>
+              <div
+                data-plasmic-name={"imm"}
+                data-plasmic-override={overrides.imm}
+                className={classNames(projectcss.all, sty.imm)}
+              >
                 <Window
-                  className={classNames("__wab_instance", sty.window__tlLqO)}
-                  linkDestination={`/2d-design`}
+                  className={classNames("__wab_instance", sty.window__p6Lhm)}
+                  linkDestination={`/IMM`}
                   windowImage={
                     <PlasmicImg__
                       alt={""}
-                      className={classNames(sty.img__kMwug)}
+                      className={classNames(sty.img__qwXj9)}
                       displayHeight={"auto"}
                       displayMaxHeight={"none"}
                       displayMaxWidth={"100%"}
@@ -404,18 +413,57 @@ function PlasmicPortfolio__RenderFunc(props: {
                       displayWidth={"auto"}
                       loading={"lazy"}
                       src={{
-                        src: "/plasmic/disuko_website_retro_version/images/_2DDesignCoverJpg.jpg",
-                        fullWidth: 1920,
-                        fullHeight: 1080,
+                        src: "/plasmic/disuko_website_retro_version/images/image99.png",
+                        fullWidth: 1280,
+                        fullHeight: 720,
                         aspectRatio: undefined
                       }}
                     />
                   }
-                  windowText={"Adobe Photoshop / Illustrator"}
-                  windowTitle={"2D Design"}
+                  windowText={
+                    "Unity Engine / Godot Engine / TouchDesigner / Arduino"
+                  }
+                  windowTitle={"Immersive Media"}
                 />
               </div>
-              <div className={classNames(projectcss.all, sty.column___7MAnf)}>
+              <div
+                data-plasmic-name={"film"}
+                data-plasmic-override={overrides.film}
+                className={classNames(projectcss.all, sty.film)}
+              >
+                <Window
+                  className={classNames("__wab_instance", sty.window__oqDxY)}
+                  linkDestination={`/film`}
+                  windowImage={
+                    <PlasmicImg__
+                      alt={""}
+                      className={classNames(sty.img__azDap)}
+                      displayHeight={"auto"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"100%"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"auto"}
+                      loading={"lazy"}
+                      src={{
+                        src: "/plasmic/disuko_website_retro_version/images/vlcsnap2025042401H05M47S151Png.png",
+                        fullWidth: 3840,
+                        fullHeight: 2160,
+                        aspectRatio: undefined
+                      }}
+                    />
+                  }
+                  windowText={
+                    "Adobe Premiere / After Effects / Davinci Resolve"
+                  }
+                  windowTitle={"Film"}
+                />
+              </div>
+              <div
+                data-plasmic-name={"_3DDesign"}
+                data-plasmic-override={overrides._3DDesign}
+                className={classNames(projectcss.all, sty._3DDesign)}
+              >
                 <Window
                   className={classNames("__wab_instance", sty.window__iSq4J)}
                   linkDestination={`/3d-design`}
@@ -442,65 +490,11 @@ function PlasmicPortfolio__RenderFunc(props: {
                   windowTitle={"3D Design"}
                 />
               </div>
-              <div className={classNames(projectcss.all, sty.column__dxCjj)}>
-                <Window
-                  className={classNames("__wab_instance", sty.window__oqDxY)}
-                  linkDestination={`/film`}
-                  windowImage={
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img__azDap)}
-                      displayHeight={"auto"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"auto"}
-                      loading={"lazy"}
-                      src={{
-                        src: "/plasmic/disuko_website_retro_version/images/outsidePng.png",
-                        fullWidth: 1920,
-                        fullHeight: 1080,
-                        aspectRatio: undefined
-                      }}
-                    />
-                  }
-                  windowText={
-                    "Adobe Premiere / After Effects / Davinci Resolve"
-                  }
-                  windowTitle={"Film"}
-                />
-              </div>
-              <div className={classNames(projectcss.all, sty.column___6IxKg)}>
-                <Window
-                  className={classNames("__wab_instance", sty.window__p6Lhm)}
-                  linkDestination={`/IMM`}
-                  windowImage={
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img__qwXj9)}
-                      displayHeight={"auto"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"auto"}
-                      loading={"lazy"}
-                      src={{
-                        src: "/plasmic/disuko_website_retro_version/images/img1113Jpg.jpg",
-                        fullWidth: 2048,
-                        fullHeight: 1365,
-                        aspectRatio: undefined
-                      }}
-                    />
-                  }
-                  windowText={
-                    "Unity Engine / Godot Engine / TouchDesigner / Arduino"
-                  }
-                  windowTitle={"Immersive Media"}
-                />
-              </div>
-              <div className={classNames(projectcss.all, sty.column__s6E3J)}>
+              <div
+                data-plasmic-name={"music"}
+                data-plasmic-override={overrides.music}
+                className={classNames(projectcss.all, sty.music)}
+              >
                 <Window
                   className={classNames("__wab_instance", sty.window__cifFm)}
                   linkDestination={`/music`}
@@ -529,6 +523,37 @@ function PlasmicPortfolio__RenderFunc(props: {
                   windowTitle={"Music"}
                 />
               </div>
+              <div
+                data-plasmic-name={"_2DDesign"}
+                data-plasmic-override={overrides._2DDesign}
+                className={classNames(projectcss.all, sty._2DDesign)}
+              >
+                <Window
+                  className={classNames("__wab_instance", sty.window__tlLqO)}
+                  linkDestination={`/2d-design`}
+                  windowImage={
+                    <PlasmicImg__
+                      alt={""}
+                      className={classNames(sty.img__kMwug)}
+                      displayHeight={"auto"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"100%"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"auto"}
+                      loading={"lazy"}
+                      src={{
+                        src: "/plasmic/disuko_website_retro_version/images/_2DDesignCoverJpg.jpg",
+                        fullWidth: 1920,
+                        fullHeight: 1080,
+                        aspectRatio: undefined
+                      }}
+                    />
+                  }
+                  windowText={"Adobe Photoshop / Illustrator"}
+                  windowTitle={"2D Design"}
+                />
+              </div>
             </div>
           </Stack__>
           <Footer
@@ -543,11 +568,37 @@ function PlasmicPortfolio__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "navbar", "main", "headshot", "columns", "footer"],
+  root: [
+    "root",
+    "navbar",
+    "main",
+    "headshot",
+    "columns",
+    "imm",
+    "film",
+    "_3DDesign",
+    "music",
+    "_2DDesign",
+    "footer"
+  ],
   navbar: ["navbar"],
-  main: ["main", "headshot", "columns"],
+  main: [
+    "main",
+    "headshot",
+    "columns",
+    "imm",
+    "film",
+    "_3DDesign",
+    "music",
+    "_2DDesign"
+  ],
   headshot: ["headshot"],
-  columns: ["columns"],
+  columns: ["columns", "imm", "film", "_3DDesign", "music", "_2DDesign"],
+  imm: ["imm"],
+  film: ["film"],
+  _3DDesign: ["_3DDesign"],
+  music: ["music"],
+  _2DDesign: ["_2DDesign"],
   footer: ["footer"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -559,6 +610,11 @@ type NodeDefaultElementType = {
   main: "div";
   headshot: typeof PlasmicImg__;
   columns: "div";
+  imm: "div";
+  film: "div";
+  _3DDesign: "div";
+  music: "div";
+  _2DDesign: "div";
   footer: typeof Footer;
 };
 
@@ -651,6 +707,11 @@ export const PlasmicPortfolio = Object.assign(
     main: makeNodeComponent("main"),
     headshot: makeNodeComponent("headshot"),
     columns: makeNodeComponent("columns"),
+    imm: makeNodeComponent("imm"),
+    film: makeNodeComponent("film"),
+    _3DDesign: makeNodeComponent("_3DDesign"),
+    music: makeNodeComponent("music"),
+    _2DDesign: makeNodeComponent("_2DDesign"),
     footer: makeNodeComponent("footer"),
 
     // Metadata about props expected for PlasmicPortfolio
