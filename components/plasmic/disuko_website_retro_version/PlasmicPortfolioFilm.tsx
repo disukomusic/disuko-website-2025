@@ -90,7 +90,6 @@ export const PlasmicPortfolioFilm__ArgProps = new Array<ArgPropType>();
 export type PlasmicPortfolioFilm__OverridesType = {
   root?: Flex__<"div">;
   navbar?: Flex__<typeof Navbar>;
-  windowButton?: Flex__<typeof WindowButton>;
 };
 
 export interface DefaultPortfolioFilmProps {}
@@ -234,11 +233,48 @@ function PlasmicPortfolioFilm__RenderFunc(props: {
               {"Film + Video Production"}
             </div>
             <div className={classNames(projectcss.all, sty.freeBox__rg6QH)}>
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text___7UsEa,
+                  {
+                    [sty.textglobal_theme_classic___7UsEaeNktM]: hasVariant(
+                      globalVariants,
+                      "theme",
+                      "classic"
+                    )
+                  }
+                )}
+              >
+                {
+                  "ACES Wired - Director, VFX Supervisor, Camera Operator, Editor, Sound Designer"
+                }
+              </div>
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__ne57U,
+                  {
+                    [sty.textglobal_theme_classic__ne57UeNktM]: hasVariant(
+                      globalVariants,
+                      "theme",
+                      "classic"
+                    )
+                  }
+                )}
+              >
+                {
+                  "In a dystopian neon-lit future, four gambling addicts trapped in a deadly high-stakes poker game must overcome their mistrust and personal conflicts to expose the real cheater and dismantle the rigged system controlling their fate."
+                }
+              </div>
               <YouTube
                 className={classNames("__wab_instance", sty.youTube__nmbLm)}
                 color={"red"}
                 fs={true}
                 modestbranding={false}
+                rel={false}
                 videoId={"Mjet_qw9yPs"}
               />
             </div>
@@ -247,45 +283,191 @@ function PlasmicPortfolioFilm__RenderFunc(props: {
               hasGap={true}
               className={classNames(projectcss.all, sty.freeBox___15XOr)}
             >
-              <YouTube
-                className={classNames("__wab_instance", sty.youTube__jxMd2)}
-                videoId={"5lbSvQbllUs"}
-              />
-
-              <YouTube
-                className={classNames("__wab_instance", sty.youTube__bt9Jc)}
-                videoId={"XI30lZMrOoA"}
-              />
+              <div className={classNames(projectcss.all, sty.freeBox__ldHrG)}>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__cxf9A,
+                    {
+                      [sty.textglobal_theme_classic__cxf9AeNktM]: hasVariant(
+                        globalVariants,
+                        "theme",
+                        "classic"
+                      )
+                    }
+                  )}
+                >
+                  {"ARE YOU ENGAGED? / I AM NOT ENGAGED"}
+                </div>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__xuda,
+                    {
+                      [sty.textglobal_theme_classic__xudAeNktM]: hasVariant(
+                        globalVariants,
+                        "theme",
+                        "classic"
+                      )
+                    }
+                  )}
+                >
+                  {
+                    "ARE YOU ENGAGED? / I AM NOT ENGAGED is an audio visual project displayed on 3 vertically stacked CRT TVs that provides\r commentary on how modern day media such as short form content, political-lobbied news TV, and online echo chambers affect our lives, minds, and socio political opinions. The project has a wide breadth of tone, including satire, surrealism, and serious commentary. \r"
+                  }
+                </div>
+                <YouTube
+                  className={classNames("__wab_instance", sty.youTube__bt9Jc)}
+                  rel={false}
+                  videoId={"XI30lZMrOoA"}
+                />
+              </div>
+              <div className={classNames(projectcss.all, sty.freeBox___4YnIf)}>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__ttibv,
+                    {
+                      [sty.textglobal_theme_classic__ttibveNktM]: hasVariant(
+                        globalVariants,
+                        "theme",
+                        "classic"
+                      )
+                    }
+                  )}
+                >
+                  {"INTRO TO BALISONGS"}
+                </div>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__w7SCs,
+                    {
+                      [sty.textglobal_theme_classic__w7SCSeNktM]: hasVariant(
+                        globalVariants,
+                        "theme",
+                        "classic"
+                      )
+                    }
+                  )}
+                >
+                  {
+                    "A casual documentary / informal YouTube style video exploring the history, community, and basics of flipping and collecting balisongs (butterfly knives). It provides a fun, informative, and useful resource for anyone interested in joining the hobby. "
+                  }
+                </div>
+                <YouTube
+                  className={classNames("__wab_instance", sty.youTube__jxMd2)}
+                  rel={false}
+                  videoId={"5lbSvQbllUs"}
+                />
+              </div>
+            </Stack__>
+            <Stack__
+              as={"div"}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.freeBox___5LGiX)}
+            >
+              <div className={classNames(projectcss.all, sty.freeBox___0VR80)}>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__xl3Sf,
+                    {
+                      [sty.textglobal_theme_classic__xl3SFeNktM]: hasVariant(
+                        globalVariants,
+                        "theme",
+                        "classic"
+                      )
+                    }
+                  )}
+                >
+                  {"HELLO MY NAME IS"}
+                </div>
+                <WindowButton
+                  className={classNames(
+                    "__wab_instance",
+                    sty.windowButton__mydqJ
+                  )}
+                  link={
+                    "https://xgdsk-my.sharepoint.com/:b:/g/personal/disuko_redpandastudios_net/ES51jV_JcGBLjHYQEk41C7IBEtD3Ym3kPsnupJrFQ4fo3w?e=XEmK8g"
+                  }
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__ibkCf
+                    )}
+                  >
+                    {"Press Kit"}
+                  </div>
+                </WindowButton>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__vvkyD,
+                    {
+                      [sty.textglobal_theme_classic__vvkyDeNktM]: hasVariant(
+                        globalVariants,
+                        "theme",
+                        "classic"
+                      )
+                    }
+                  )}
+                >
+                  {
+                    "HELLO MY NAME IS showcases a series of street stickers of a colorful character outrunning an unseen evil, rebelling with resistance and spreading vibrancy through the city on their journey. "
+                  }
+                </div>
+                <YouTube
+                  className={classNames("__wab_instance", sty.youTube__ioUbv)}
+                  rel={false}
+                  videoId={"t7b6Oy_T_L4"}
+                />
+              </div>
+              <div className={classNames(projectcss.all, sty.freeBox__tXOyE)} />
             </Stack__>
             <Stack__
               as={"div"}
               hasGap={true}
               className={classNames(projectcss.all, sty.freeBox___2Jv9Y)}
             >
-              <YouTube
-                className={classNames("__wab_instance", sty.youTube__sLc1T)}
-                videoId={"c9gd_szKhcg"}
-              />
-
-              <YouTube
-                className={classNames("__wab_instance", sty.youTube__iWfLn)}
-                videoId={"yHNOJKyBp_4"}
-              />
+              <div className={classNames(projectcss.all, sty.freeBox__bDQrz)}>
+                <YouTube
+                  className={classNames("__wab_instance", sty.youTube__sLc1T)}
+                  videoId={"c9gd_szKhcg"}
+                />
+              </div>
+              <div className={classNames(projectcss.all, sty.freeBox__aaGZo)}>
+                <YouTube
+                  className={classNames("__wab_instance", sty.youTube__iWfLn)}
+                  videoId={"yHNOJKyBp_4"}
+                />
+              </div>
             </Stack__>
             <Stack__
               as={"div"}
               hasGap={true}
               className={classNames(projectcss.all, sty.freeBox__h9FKw)}
             >
-              <YouTube
-                className={classNames("__wab_instance", sty.youTube___37Wk0)}
-                videoId={"XkEfUyL0aA0"}
-              />
-
-              <YouTube
-                className={classNames("__wab_instance", sty.youTube__ppHEr)}
-                videoId={"IbgGUF6DuZw"}
-              />
+              <div className={classNames(projectcss.all, sty.freeBox__kR3NA)}>
+                <YouTube
+                  className={classNames("__wab_instance", sty.youTube___37Wk0)}
+                  videoId={"XkEfUyL0aA0"}
+                />
+              </div>
+              <div className={classNames(projectcss.all, sty.freeBox__oRjzq)}>
+                <YouTube
+                  className={classNames("__wab_instance", sty.youTube__ppHEr)}
+                  videoId={"IbgGUF6DuZw"}
+                />
+              </div>
             </Stack__>
             <div
               className={classNames(
@@ -335,9 +517,7 @@ function PlasmicPortfolioFilm__RenderFunc(props: {
             </Stack__>
           </div>
           <WindowButton
-            data-plasmic-name={"windowButton"}
-            data-plasmic-override={overrides.windowButton}
-            className={classNames("__wab_instance", sty.windowButton)}
+            className={classNames("__wab_instance", sty.windowButton__sf98Q)}
             link={`/portfolio`}
           >
             <div
@@ -364,9 +544,8 @@ function PlasmicPortfolioFilm__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "navbar", "windowButton"],
-  navbar: ["navbar"],
-  windowButton: ["windowButton"]
+  root: ["root", "navbar"],
+  navbar: ["navbar"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -374,7 +553,6 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   navbar: typeof Navbar;
-  windowButton: typeof WindowButton;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -463,7 +641,6 @@ export const PlasmicPortfolioFilm = Object.assign(
   {
     // Helper components rendering sub-elements
     navbar: makeNodeComponent("navbar"),
-    windowButton: makeNodeComponent("windowButton"),
 
     // Metadata about props expected for PlasmicPortfolioFilm
     internalVariantProps: PlasmicPortfolioFilm__VariantProps,
