@@ -266,7 +266,7 @@ function PlasmicPortfolioFilm__RenderFunc(props: {
                 )}
               >
                 {
-                  "In a dystopian neon-lit future, four gambling addicts trapped in a deadly high-stakes poker game must overcome their mistrust and personal conflicts to expose the real cheater and dismantle the rigged system controlling their fate."
+                  "In a dystopian neon-lit future, four gambling addicts trapped in a high-stakes poker game must overcome their mistrust and personal conflicts to expose the real cheater and dismantle the rigged system controlling their fate."
                 }
               </div>
               <YouTube
