@@ -64,6 +64,7 @@ import { usePlasmicDataSourceContext } from "@plasmicapp/data-sources-context";
 
 import Navbar from "../../Navbar"; // plasmic-import: 5THU1wffFibB/component
 import WindowButton from "../../WindowButton"; // plasmic-import: KZYdo-R8GYAn/component
+import ImageWindow from "../../ImageWindow"; // plasmic-import: cCfEU_zMoOP5/component
 import { Video } from "@plasmicpkgs/plasmic-basic-components";
 import Window from "../../Window"; // plasmic-import: BWjgdOwFY_OO/component
 import { SliderWrapper } from "@plasmicpkgs/react-slick";
@@ -95,7 +96,6 @@ export type PlasmicPortfolio3DDesign__OverridesType = {
   _3DDesign?: Flex__<"div">;
   navbar?: Flex__<typeof Navbar>;
   windowButton?: Flex__<typeof WindowButton>;
-  imageWindow19?: Flex__<"div">;
   imageWindow20?: Flex__<"div">;
   imageWindow21?: Flex__<"div">;
   imageWindow16?: Flex__<"div">;
@@ -382,41 +382,16 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
             hasGap={true}
             className={classNames(projectcss.all, sty.freeBox__uYv16)}
           >
-            <div
-              data-plasmic-name={"imageWindow19"}
-              data-plasmic-override={overrides.imageWindow19}
-              className={classNames(projectcss.all, sty.imageWindow19, {
-                [sty.imageWindow19global_theme_classic]: hasVariant(
+            <ImageWindow
+              className={classNames("__wab_instance", sty.imageWindow__yAKlO, {
+                [sty.imageWindowglobal_theme_classic__yAKlOeNktM]: hasVariant(
                   globalVariants,
                   "theme",
                   "classic"
                 )
               })}
-            >
-              <PlasmicImg__
-                alt={""}
-                className={classNames(sty.img__jVg0T, {
-                  [sty.imgglobal_theme_classic__jVg0TeNktM]: hasVariant(
-                    globalVariants,
-                    "theme",
-                    "classic"
-                  )
-                })}
-                displayHeight={"338px"}
-                displayMaxHeight={"none"}
-                displayMaxWidth={"none"}
-                displayMinHeight={"0"}
-                displayMinWidth={"0"}
-                displayWidth={"100%"}
-                loading={"lazy"}
-                src={{
-                  src: "/plasmic/disuko_website_retro_version/images/characterIconPng.png",
-                  fullWidth: 1024,
-                  fullHeight: 1024,
-                  aspectRatio: undefined
-                }}
-              />
-            </div>
+            />
+
             <div
               data-plasmic-name={"imageWindow20"}
               data-plasmic-override={overrides.imageWindow20}
@@ -2642,7 +2617,6 @@ const PlasmicDescendants = {
     "_3DDesign",
     "navbar",
     "windowButton",
-    "imageWindow19",
     "imageWindow20",
     "imageWindow21",
     "imageWindow16",
@@ -2684,7 +2658,6 @@ const PlasmicDescendants = {
   ],
   navbar: ["navbar"],
   windowButton: ["windowButton"],
-  imageWindow19: ["imageWindow19"],
   imageWindow20: ["imageWindow20"],
   imageWindow21: ["imageWindow21"],
   imageWindow16: ["imageWindow16"],
@@ -2747,7 +2720,6 @@ type NodeDefaultElementType = {
   _3DDesign: "div";
   navbar: typeof Navbar;
   windowButton: typeof WindowButton;
-  imageWindow19: "div";
   imageWindow20: "div";
   imageWindow21: "div";
   imageWindow16: "div";
@@ -2875,7 +2847,6 @@ export const PlasmicPortfolio3DDesign = Object.assign(
     // Helper components rendering sub-elements
     navbar: makeNodeComponent("navbar"),
     windowButton: makeNodeComponent("windowButton"),
-    imageWindow19: makeNodeComponent("imageWindow19"),
     imageWindow20: makeNodeComponent("imageWindow20"),
     imageWindow21: makeNodeComponent("imageWindow21"),
     imageWindow16: makeNodeComponent("imageWindow16"),

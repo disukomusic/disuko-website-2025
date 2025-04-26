@@ -332,7 +332,7 @@ function PlasmicHomepage__RenderFunc(props: {
                                 aspectRatio: undefined
                               }
                             : {
-                                src: "/plasmic/disuko_website_retro_version/images/headshotWebJpg.jpg",
+                                src: "/plasmic/disuko_website_retro_version/images/headShot2025SmallJpg.jpg",
                                 fullWidth: 1748,
                                 fullHeight: 1166,
                                 aspectRatio: undefined

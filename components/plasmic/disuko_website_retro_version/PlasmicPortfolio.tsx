@@ -63,8 +63,9 @@ import * as plasmicAuth from "@plasmicapp/react-web/lib/auth";
 import { usePlasmicDataSourceContext } from "@plasmicapp/data-sources-context";
 
 import Navbar from "../../Navbar"; // plasmic-import: 5THU1wffFibB/component
-import WindowButton from "../../WindowButton"; // plasmic-import: KZYdo-R8GYAn/component
 import Window from "../../Window"; // plasmic-import: BWjgdOwFY_OO/component
+import ImageWindow from "../../ImageWindow"; // plasmic-import: cCfEU_zMoOP5/component
+import WindowButton from "../../WindowButton"; // plasmic-import: KZYdo-R8GYAn/component
 import Footer from "../../Footer"; // plasmic-import: shKoGjSwLEEB/component
 
 import { ThemeValue, useTheme } from "./PlasmicGlobalVariant__Theme"; // plasmic-import: 3K9IqsAFaaID/globalVariant
@@ -92,7 +93,7 @@ export type PlasmicPortfolio__OverridesType = {
   root?: Flex__<"div">;
   navbar?: Flex__<typeof Navbar>;
   main?: Flex__<"div">;
-  headshot?: Flex__<typeof PlasmicImg__>;
+  imageWindow?: Flex__<typeof ImageWindow>;
   columns?: Flex__<"div">;
   imm?: Flex__<"div">;
   film?: Flex__<"div">;
@@ -214,11 +215,6 @@ function PlasmicPortfolio__RenderFunc(props: {
             plasmic_plasmic_rich_components_css.plasmic_tokens,
             sty.root,
             {
-              [projectcss.global_theme_classic]: hasVariant(
-                globalVariants,
-                "theme",
-                "classic"
-              ),
               [sty.rootglobal_theme_classic]: hasVariant(
                 globalVariants,
                 "theme",
@@ -252,87 +248,68 @@ function PlasmicPortfolio__RenderFunc(props: {
               className={classNames(projectcss.all, sty.freeBox__iNumN)}
             >
               <div className={classNames(projectcss.all, sty.freeBox__s1Xm)}>
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__lXnnN,
-                    {
-                      [sty.textglobal_theme_classic__lXnnNeNktM]: hasVariant(
-                        globalVariants,
-                        "theme",
-                        "classic"
-                      )
-                    }
-                  )}
-                >
-                  <React.Fragment>
-                    <span
-                      className={"plasmic_default__all plasmic_default__span"}
-                      style={{ fontWeight: 700 }}
-                    >
-                      {"Angelo Licavoli"}
-                    </span>
-                  </React.Fragment>
-                </div>
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__jdxSm,
-                    {
-                      [sty.textglobal_theme_classic__jdxSmeNktM]: hasVariant(
-                        globalVariants,
-                        "theme",
-                        "classic"
-                      )
-                    }
-                  )}
-                >
-                  {
+                <PlasmicImg__
+                  alt={""}
+                  className={classNames(sty.img__au15O)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"auto"}
+                  loading={"lazy"}
+                  src={{
+                    src: "/plasmic/disuko_website_retro_version/images/wordartPng2.png",
+                    fullWidth: 1797,
+                    fullHeight: 430,
+                    aspectRatio: undefined
+                  }}
+                />
+
+                <Window
+                  className={classNames("__wab_instance", sty.window__a9Ns)}
+                  linkDestination={`/IMM`}
+                  windowImage={null}
+                  windowText={
                     "Hi! I\u2019m Angelo, and I\u2019m an enthusiast for everything having to do with digital technology. I\u2019m currently studying Immersive Media, Music Technology, and Film & Digital Media Production at Chatham University. I also make content online as \u201cDisuko.\u201d my main goal is sharing the truest form of myself with any medium available! At the core of my work is using technology to share my emotions, viewpoints, and interests. "
                   }
-                </div>
+                  windowTitle={"about me"}
+                />
               </div>
               <Stack__
                 as={"div"}
                 hasGap={true}
                 className={classNames(projectcss.all, sty.freeBox__yDuY)}
               >
-                <PlasmicImg__
-                  data-plasmic-name={"headshot"}
-                  data-plasmic-override={overrides.headshot}
-                  alt={""}
-                  className={classNames(sty.headshot, {
-                    [sty.headshotglobal_theme_classic]: hasVariant(
+                <ImageWindow
+                  data-plasmic-name={"imageWindow"}
+                  data-plasmic-override={overrides.imageWindow}
+                  className={classNames("__wab_instance", sty.imageWindow, {
+                    [sty.imageWindowglobal_theme_classic]: hasVariant(
                       globalVariants,
                       "theme",
                       "classic"
                     )
                   })}
-                  displayHeight={
-                    hasVariant(globalVariants, "screen", "mobileOnly")
-                      ? "194px"
-                      : "100%"
-                  }
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={"100%"}
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={
-                    hasVariant(globalVariants, "screen", "mobileOnly")
-                      ? "127.05%"
-                      : "100%"
-                  }
-                  loading={"eager"}
-                  src={{
-                    src: "/plasmic/disuko_website_retro_version/images/headshotWebJpg.jpg",
-                    fullWidth: 1748,
-                    fullHeight: 1166,
-                    aspectRatio: undefined
-                  }}
-                />
-
+                >
+                  <PlasmicImg__
+                    alt={""}
+                    className={classNames(sty.img__y5U8J)}
+                    displayHeight={"auto"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"none"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"100%"}
+                    loading={"lazy"}
+                    src={{
+                      src: "/plasmic/disuko_website_retro_version/images/headShot2025SmallJpg.jpg",
+                      fullWidth: 1748,
+                      fullHeight: 1166,
+                      aspectRatio: undefined
+                    }}
+                  />
+                </ImageWindow>
                 <Stack__
                   as={"div"}
                   hasGap={true}
@@ -572,7 +549,7 @@ const PlasmicDescendants = {
     "root",
     "navbar",
     "main",
-    "headshot",
+    "imageWindow",
     "columns",
     "imm",
     "film",
@@ -584,7 +561,7 @@ const PlasmicDescendants = {
   navbar: ["navbar"],
   main: [
     "main",
-    "headshot",
+    "imageWindow",
     "columns",
     "imm",
     "film",
@@ -592,7 +569,7 @@ const PlasmicDescendants = {
     "music",
     "_2DDesign"
   ],
-  headshot: ["headshot"],
+  imageWindow: ["imageWindow"],
   columns: ["columns", "imm", "film", "_3DDesign", "music", "_2DDesign"],
   imm: ["imm"],
   film: ["film"],
@@ -608,7 +585,7 @@ type NodeDefaultElementType = {
   root: "div";
   navbar: typeof Navbar;
   main: "div";
-  headshot: typeof PlasmicImg__;
+  imageWindow: typeof ImageWindow;
   columns: "div";
   imm: "div";
   film: "div";
@@ -705,7 +682,7 @@ export const PlasmicPortfolio = Object.assign(
     // Helper components rendering sub-elements
     navbar: makeNodeComponent("navbar"),
     main: makeNodeComponent("main"),
-    headshot: makeNodeComponent("headshot"),
+    imageWindow: makeNodeComponent("imageWindow"),
     columns: makeNodeComponent("columns"),
     imm: makeNodeComponent("imm"),
     film: makeNodeComponent("film"),
