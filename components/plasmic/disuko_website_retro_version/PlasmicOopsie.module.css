@@ -26,8 +26,9 @@
   max-width: 100%;
   object-fit: cover;
   position: relative;
+  display: none;
 }
-.freeBox {
+.freeBox__xbzdh {
   display: flex;
   position: relative;
   flex-direction: column;
@@ -44,7 +45,7 @@
   max-width: 100%;
   position: relative;
 }
-.img {
+.img__byfNx {
   position: relative;
   object-fit: contain;
   max-width: 100%;
@@ -56,7 +57,7 @@
   margin-left: 10px;
   height: 141px;
 }
-.img > picture > img {
+.img__byfNx > picture > img {
   object-fit: contain;
 }
 .windowButton:global(.__wab_instance) {
@@ -80,4 +81,75 @@
   width: 25px;
   align-self: auto;
   min-height: 0;
+}
+.section {
+  display: grid;
+  position: relative;
+  align-content: flex-start;
+  justify-items: center;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  grid-column-start: 1 !important;
+  grid-column-end: -1 !important;
+  grid-template-columns:
+    var(--plsmc-viewport-gap) 1fr minmax(0, var(--plsmc-wide-chunk))
+    min(
+      var(--plsmc-standard-width),
+      calc(100% - var(--plsmc-viewport-gap) - var(--plsmc-viewport-gap))
+    )
+    minmax(0, var(--plsmc-wide-chunk)) 1fr var(--plsmc-viewport-gap);
+}
+.section > * {
+  grid-column: 4;
+}
+.freeBox__qsEbu {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0px;
+  justify-self: flex-start;
+  height: auto;
+  grid-column-start: 1 !important;
+  grid-column-end: -1 !important;
+  padding: 8px;
+}
+.img__gllBw {
+  object-fit: cover;
+  position: relative;
+  left: auto;
+  top: auto;
+  right: auto;
+  height: auto;
+  width: 100%;
+  min-width: 0;
+}
+.img__gllBw > picture > img {
+  object-fit: cover;
+}
+.button:global(.__wab_instance) {
+  max-width: 100%;
+  position: absolute;
+  left: auto;
+  top: auto;
+  z-index: 1;
+  align-self: flex-end;
+  bottom: 32px;
+  right: 26px;
+}
+.svg__gs2CP {
+  position: relative;
+  object-fit: cover;
+  width: auto;
+  height: 1em;
+}
+.svg__e3ZhE {
+  position: relative;
+  object-fit: cover;
+  width: auto;
+  height: 1em;
 }

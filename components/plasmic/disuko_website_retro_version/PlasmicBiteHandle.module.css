@@ -26,6 +26,7 @@
 @media (min-width: 0px) and (max-width: 768px) {
   .biteHandle {
     background: url("/plasmic/disuko_website_retro_version/images/biteHandleBackgroundPng.png") top 50% left 50% / cover repeat;
+    padding: 20px;
   }
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -37,23 +38,27 @@
   max-width: 100%;
   object-fit: cover;
   position: relative;
+  display: none;
 }
-.img___7O6Mx {
+.img__j4R6I {
   position: relative;
-  object-fit: cover;
-  max-width: 100%;
+  object-fit: contain;
   left: auto;
   top: auto;
-  align-self: center;
-  height: 306px;
+  width: 100%;
+  height: auto;
+  grid-column-start: 3 !important;
+  grid-column-end: -3 !important;
 }
-.img___7O6Mx > picture > img {
-  object-fit: cover;
+.img__j4R6I > picture > img {
+  object-fit: contain;
 }
 @media (min-width: 0px) and (max-width: 768px) {
-  .img___7O6Mx {
+  .img__j4R6I {
     height: auto;
     width: 100%;
+    left: auto;
+    top: auto;
     min-width: 0;
   }
 }
@@ -81,6 +86,7 @@
   max-width: 100%;
   object-fit: cover;
   position: relative;
+  display: none;
 }
 .youTube:global(.__wab_instance) {
   width: 640px;

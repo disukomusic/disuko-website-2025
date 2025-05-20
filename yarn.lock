@@ -776,10 +776,10 @@
     "@plasmicapp/isomorphic-unfetch" "1.0.3"
     "@plasmicapp/query" "0.1.79"
 
-"@plasmicapp/cli@^0.1.337":
-  version "0.1.337"
-  resolved "https://registry.yarnpkg.com/@plasmicapp/cli/-/cli-0.1.337.tgz#b9563bffe136e930b08d012d3b2f854365b3a7a5"
-  integrity sha512-ZYwbYEUOd4MKjCz+bE72kHN0ETXGg7OmEOFkDqp0xdCyBBJVeYgiii9jQarBFTz6MDswXr4eu/zIW/XXbttgpg==
+"@plasmicapp/cli@^0.1.338":
+  version "0.1.338"
+  resolved "https://registry.yarnpkg.com/@plasmicapp/cli/-/cli-0.1.338.tgz#899005ad0976109e3aa55e3cfd1c26e0cb4ad755"
+  integrity sha512-dxE07MHlPxwj4Y/hLDIkUK1JT2oL0mbXTmIKHzNQoy1j8u60BlgLziW/A+4RgjcHns19eusimZxPBEVT43lo2A==
 
 "@plasmicapp/data-sources-context@0.1.21":
   version "0.1.21"

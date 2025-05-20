@@ -3076,6 +3076,26 @@
           "id": "so3EKNS7v1Ce",
           "name": "image 101",
           "filePath": "../public/plasmic/disuko_website_retro_version/images/image101.png"
+        },
+        {
+          "id": "BPPeiM0dMogy",
+          "name": "Logo.png",
+          "filePath": "../public/plasmic/disuko_website_retro_version/images/logoPng.png"
+        },
+        {
+          "id": "il3DblvI0E1S",
+          "name": "Logo.png 2",
+          "filePath": "../public/plasmic/disuko_website_retro_version/images/logoPng2.png"
+        },
+        {
+          "id": "8ca0tFSdTZxL",
+          "name": "BiteHandleLogo2025.png",
+          "filePath": "../public/plasmic/disuko_website_retro_version/images/biteHandleLogo2025Png.png"
+        },
+        {
+          "id": "qnTRaZeO6niV",
+          "name": "BiteHandlePosterHeadshots2025.png",
+          "filePath": "../public/plasmic/disuko_website_retro_version/images/biteHandlePosterHeadshots2025Png.png"
         }
       ],
       "indirect": false,
@@ -3327,6 +3347,6 @@
   "nextjsConfig": {
     "pagesDir": "../pages"
   },
-  "cliVersion": "0.1.337",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.337/dist/plasmic.schema.json"
+  "cliVersion": "0.1.338",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.338/dist/plasmic.schema.json"
 }

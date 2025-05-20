@@ -66,6 +66,7 @@ import { Reveal } from "@plasmicpkgs/react-awesome-reveal";
 import Window from "../../Window"; // plasmic-import: BWjgdOwFY_OO/component
 import WindowButton from "../../WindowButton"; // plasmic-import: KZYdo-R8GYAn/component
 import { AntdPopover } from "@plasmicpkgs/antd5/skinny/registerPopover";
+import Button from "../../Button"; // plasmic-import: ozuWxtHTAGio/component
 
 import { useScreenVariants as useScreenVariantsdmuurUfQuA6N } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: DmuurUFQuA6N/globalVariant
 
@@ -77,6 +78,8 @@ import projectcss from "./plasmic.module.css"; // plasmic-import: x4VgG6kzZCVuaq
 import sty from "./PlasmicOopsie.module.css"; // plasmic-import: btpvylgp3L5R/css
 
 import NounPixelHeart10989631SvgIcon from "./icons/PlasmicIcon__NounPixelHeart10989631Svg"; // plasmic-import: tvndHRt1AD9R/icon
+import CheckSvgIcon from "./icons/PlasmicIcon__CheckSvg"; // plasmic-import: 3tinjaDzS1_n/icon
+import Icon38Icon from "./icons/PlasmicIcon__Icon38"; // plasmic-import: 0Mc3AIURpuwI/icon
 
 createPlasmicElementProxy;
 
@@ -92,12 +95,12 @@ export const PlasmicOopsie__ArgProps = new Array<ArgPropType>();
 export type PlasmicOopsie__OverridesType = {
   root?: Flex__<"div">;
   reveal?: Flex__<typeof Reveal>;
-  freeBox?: Flex__<"div">;
   window?: Flex__<typeof Window>;
-  img?: Flex__<typeof PlasmicImg__>;
   windowButton?: Flex__<typeof WindowButton>;
   popover?: Flex__<typeof AntdPopover>;
   svg?: Flex__<"svg">;
+  section?: Flex__<"section">;
+  button?: Flex__<typeof Button>;
 };
 
 export interface DefaultOopsieProps {}
@@ -136,6 +139,7 @@ function PlasmicOopsie__RenderFunc(props: {
   };
 
   const __nextRouter = useNextRouter();
+
   const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
@@ -198,21 +202,15 @@ function PlasmicOopsie__RenderFunc(props: {
             effect={"bounce"}
             triggerOnce={true}
           >
-            <div
-              data-plasmic-name={"freeBox"}
-              data-plasmic-override={overrides.freeBox}
-              className={classNames(projectcss.all, sty.freeBox)}
-            >
+            <div className={classNames(projectcss.all, sty.freeBox__xbzdh)}>
               <Window
                 data-plasmic-name={"window"}
                 data-plasmic-override={overrides.window}
                 className={classNames("__wab_instance", sty.window)}
                 windowImage={
                   <PlasmicImg__
-                    data-plasmic-name={"img"}
-                    data-plasmic-override={overrides.img}
                     alt={""}
-                    className={classNames(sty.img)}
+                    className={classNames(sty.img__byfNx)}
                     displayHeight={"141px"}
                     displayMaxHeight={"none"}
                     displayMaxWidth={"100%"}
@@ -278,6 +276,37 @@ function PlasmicOopsie__RenderFunc(props: {
               </WindowButton>
             </div>
           </Reveal>
+          <section
+            data-plasmic-name={"section"}
+            data-plasmic-override={overrides.section}
+            className={classNames(projectcss.all, sty.section)}
+          >
+            <div className={classNames(projectcss.all, sty.freeBox__qsEbu)}>
+              <PlasmicImg__
+                alt={""}
+                className={classNames(sty.img__gllBw)}
+                displayHeight={"auto"}
+                displayMaxHeight={"none"}
+                displayMaxWidth={"none"}
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={"100%"}
+                loading={"lazy"}
+                src={{
+                  src: "/plasmic/disuko_website_retro_version/images/mixerPng.png",
+                  fullWidth: 1597,
+                  fullHeight: 418,
+                  aspectRatio: undefined
+                }}
+              />
+
+              <Button
+                data-plasmic-name={"button"}
+                data-plasmic-override={overrides.button}
+                className={classNames("__wab_instance", sty.button)}
+              />
+            </div>
+          </section>
         </div>
       </div>
     </React.Fragment>
@@ -288,28 +317,20 @@ const PlasmicDescendants = {
   root: [
     "root",
     "reveal",
-    "freeBox",
     "window",
-    "img",
     "windowButton",
     "popover",
-    "svg"
+    "svg",
+    "section",
+    "button"
   ],
-  reveal: [
-    "reveal",
-    "freeBox",
-    "window",
-    "img",
-    "windowButton",
-    "popover",
-    "svg"
-  ],
-  freeBox: ["freeBox", "window", "img", "windowButton", "popover", "svg"],
-  window: ["window", "img"],
-  img: ["img"],
+  reveal: ["reveal", "window", "windowButton", "popover", "svg"],
+  window: ["window"],
   windowButton: ["windowButton", "popover", "svg"],
   popover: ["popover", "svg"],
-  svg: ["svg"]
+  svg: ["svg"],
+  section: ["section", "button"],
+  button: ["button"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -317,12 +338,12 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   reveal: typeof Reveal;
-  freeBox: "div";
   window: typeof Window;
-  img: typeof PlasmicImg__;
   windowButton: typeof WindowButton;
   popover: typeof AntdPopover;
   svg: "svg";
+  section: "section";
+  button: typeof Button;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -411,12 +432,12 @@ export const PlasmicOopsie = Object.assign(
   {
     // Helper components rendering sub-elements
     reveal: makeNodeComponent("reveal"),
-    freeBox: makeNodeComponent("freeBox"),
     window: makeNodeComponent("window"),
-    img: makeNodeComponent("img"),
     windowButton: makeNodeComponent("windowButton"),
     popover: makeNodeComponent("popover"),
     svg: makeNodeComponent("svg"),
+    section: makeNodeComponent("section"),
+    button: makeNodeComponent("button"),
 
     // Metadata about props expected for PlasmicOopsie
     internalVariantProps: PlasmicOopsie__VariantProps,

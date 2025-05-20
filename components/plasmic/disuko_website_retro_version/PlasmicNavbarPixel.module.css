@@ -115,7 +115,7 @@
     position: relative;
     left: auto;
     top: auto;
-    display: none !important;
+    display: none;
   }
 }
 .text__wJbNi {
@@ -164,7 +164,7 @@
 @media (min-width: 0px) and (max-width: 768px) {
   .img__z8Ioq {
     max-width: 5%;
-    display: none !important;
+    display: none;
   }
 }
 .text__aheBe {
@@ -211,7 +211,7 @@
 @media (min-width: 0px) and (max-width: 768px) {
   .img__ypuC {
     max-width: 5%;
-    display: none !important;
+    display: none;
   }
 }
 .text__nk5Da {
@@ -258,7 +258,7 @@
 @media (min-width: 0px) and (max-width: 768px) {
   .img___0Je8G {
     max-width: 5%;
-    display: none !important;
+    display: none;
   }
 }
 .text___9ZyGc {
@@ -305,7 +305,7 @@
 @media (min-width: 0px) and (max-width: 768px) {
   .img__saGkj {
     max-width: 5%;
-    display: none !important;
+    display: none;
   }
 }
 .text__ef5AP {

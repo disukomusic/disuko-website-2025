@@ -130,6 +130,7 @@ function PlasmicBiteHandle__RenderFunc(props: {
   };
 
   const __nextRouter = useNextRouter();
+
   const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
@@ -209,37 +210,39 @@ function PlasmicBiteHandle__RenderFunc(props: {
           <Tilt
             data-plasmic-name={"tilt"}
             data-plasmic-override={overrides.tilt}
+            children={null}
             className={classNames("__wab_instance", sty.tilt)}
             glareEnable={false}
             tiltReverse={true}
             trackOnWindow={false}
-          >
-            <PlasmicImg__
-              alt={""}
-              className={classNames(sty.img___7O6Mx)}
-              displayHeight={
-                hasVariant(globalVariants, "screen", "mobileOnly")
-                  ? "auto"
-                  : "306px"
-              }
-              displayMaxHeight={"none"}
-              displayMaxWidth={"100%"}
-              displayMinHeight={"0"}
-              displayMinWidth={"0"}
-              displayWidth={
-                hasVariant(globalVariants, "screen", "mobileOnly")
-                  ? "100%"
-                  : "auto"
-              }
-              loading={"lazy"}
-              src={{
-                src: "/plasmic/disuko_website_retro_version/images/biteHandleLogoBeegPng.png",
-                fullWidth: 3875,
-                fullHeight: 1613,
-                aspectRatio: undefined
-              }}
-            />
-          </Tilt>
+          />
+
+          <PlasmicImg__
+            alt={""}
+            className={classNames(sty.img__j4R6I)}
+            displayHeight={
+              hasVariant(globalVariants, "screen", "mobileOnly")
+                ? "auto"
+                : "auto"
+            }
+            displayMaxHeight={"none"}
+            displayMaxWidth={"none"}
+            displayMinHeight={"0"}
+            displayMinWidth={"0"}
+            displayWidth={
+              hasVariant(globalVariants, "screen", "mobileOnly")
+                ? "100%"
+                : "100%"
+            }
+            loading={"lazy"}
+            src={{
+              src: "/plasmic/disuko_website_retro_version/images/biteHandlePosterHeadshots2025Png.png",
+              fullWidth: 1200,
+              fullHeight: 1800,
+              aspectRatio: undefined
+            }}
+          />
+
           <section
             data-plasmic-name={"section"}
             data-plasmic-override={overrides.section}
