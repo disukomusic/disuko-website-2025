@@ -1395,6 +1395,8 @@ function PlasmicRetrogames__RenderFunc(props: {
                   src={
                     "https://docs.google.com/forms/d/e/1FAIpQLSelxMKCzh0NNtkdBlX91OL6y-aaky1BMvCVqJziFlfaxjxlSQ/viewform?usp=sf_link"
                   }
+                  srcDoc={"<div><h3>Heading</h3><p>Example text...</p></div>"}
+                  useHtml={false}
                 />
               </div>
               <div className={classNames(projectcss.all, sty.column__v1P4M)}>

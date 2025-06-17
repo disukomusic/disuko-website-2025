@@ -94,6 +94,7 @@ export type PlasmicPortfolioImm__OverridesType = {
   navbar?: Flex__<typeof Navbar>;
   section?: Flex__<"section">;
   window?: Flex__<typeof Window>;
+  columns?: Flex__<"div">;
 };
 
 export interface DefaultPortfolioImmProps {}
@@ -322,48 +323,9 @@ function PlasmicPortfolioImm__RenderFunc(props: {
                     </div>
                   </WindowButton>
                 </Stack__>
-                <PlasmicImg__
-                  alt={""}
-                  className={classNames(sty.img__bKzb)}
-                  displayHeight={
-                    hasVariant(globalVariants, "screen", "mobileOnly")
-                      ? "auto"
-                      : "384px"
-                  }
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={"none"}
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={"100%"}
-                  loading={"lazy"}
-                  src={{
-                    src: "/plasmic/disuko_website_retro_version/images/image99.png",
-                    fullWidth: 1280,
-                    fullHeight: 720,
-                    aspectRatio: undefined
-                  }}
-                />
-
-                <PlasmicImg__
-                  alt={""}
-                  className={classNames(sty.img___2H6Dd)}
-                  displayHeight={
-                    hasVariant(globalVariants, "screen", "mobileOnly")
-                      ? "auto"
-                      : "384px"
-                  }
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={"100%"}
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={"100%"}
-                  loading={"lazy"}
-                  src={{
-                    src: "/plasmic/disuko_website_retro_version/images/image64.png",
-                    fullWidth: 4032,
-                    fullHeight: 3024,
-                    aspectRatio: undefined
-                  }}
+                <YouTube
+                  className={classNames("__wab_instance", sty.youTube___1GN)}
+                  videoId={"5Kd5-pADXDw"}
                 />
 
                 <PlasmicImg__
@@ -372,7 +334,7 @@ function PlasmicPortfolioImm__RenderFunc(props: {
                   displayHeight={
                     hasVariant(globalVariants, "screen", "mobileOnly")
                       ? "auto"
-                      : "384px"
+                      : "512px"
                   }
                   displayMaxHeight={"none"}
                   displayMaxWidth={"100%"}
@@ -381,34 +343,69 @@ function PlasmicPortfolioImm__RenderFunc(props: {
                   displayWidth={"100%"}
                   loading={"lazy"}
                   src={{
-                    src: "/plasmic/disuko_website_retro_version/images/image100.png",
-                    fullWidth: 980,
-                    fullHeight: 551,
+                    src: "/plasmic/disuko_website_retro_version/images/img7897Jpg.jpg",
+                    fullWidth: 2400,
+                    fullHeight: 1600,
                     aspectRatio: undefined
                   }}
                 />
 
-                <PlasmicImg__
-                  alt={""}
-                  className={classNames(sty.img__vjpxu)}
-                  displayHeight={
-                    hasVariant(globalVariants, "screen", "mobileOnly")
-                      ? "auto"
-                      : "384px"
-                  }
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={"none"}
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={"100%"}
-                  loading={"lazy"}
-                  src={{
-                    src: "/plasmic/disuko_website_retro_version/images/image65.png",
-                    fullWidth: 4032,
-                    fullHeight: 3024,
-                    aspectRatio: undefined
-                  }}
-                />
+                <div
+                  data-plasmic-name={"columns"}
+                  data-plasmic-override={overrides.columns}
+                  className={classNames(projectcss.all, sty.columns)}
+                >
+                  <div
+                    className={classNames(projectcss.all, sty.column__nHyq4)}
+                  >
+                    <PlasmicImg__
+                      alt={""}
+                      className={classNames(sty.img__bKzb)}
+                      displayHeight={
+                        hasVariant(globalVariants, "screen", "mobileOnly")
+                          ? "auto"
+                          : "100%"
+                      }
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"none"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"100%"}
+                      loading={"lazy"}
+                      src={{
+                        src: "/plasmic/disuko_website_retro_version/images/image99.png",
+                        fullWidth: 1280,
+                        fullHeight: 720,
+                        aspectRatio: undefined
+                      }}
+                    />
+                  </div>
+                  <div
+                    className={classNames(projectcss.all, sty.column__y7ElT)}
+                  >
+                    <PlasmicImg__
+                      alt={""}
+                      className={classNames(sty.img___2H6Dd)}
+                      displayHeight={
+                        hasVariant(globalVariants, "screen", "mobileOnly")
+                          ? "auto"
+                          : "auto"
+                      }
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"100%"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"100%"}
+                      loading={"lazy"}
+                      src={{
+                        src: "/plasmic/disuko_website_retro_version/images/image64.png",
+                        fullWidth: 4032,
+                        fullHeight: 3024,
+                        aspectRatio: undefined
+                      }}
+                    />
+                  </div>
+                </div>
               </Stack__>
             </div>
             <div className={classNames(projectcss.all, sty.freeBox__mCM)}>
@@ -1064,10 +1061,11 @@ function PlasmicPortfolioImm__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  _3DDesign: ["_3DDesign", "navbar", "section", "window"],
+  _3DDesign: ["_3DDesign", "navbar", "section", "window", "columns"],
   navbar: ["navbar"],
-  section: ["section", "window"],
-  window: ["window"]
+  section: ["section", "window", "columns"],
+  window: ["window"],
+  columns: ["columns"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -1077,6 +1075,7 @@ type NodeDefaultElementType = {
   navbar: typeof Navbar;
   section: "section";
   window: typeof Window;
+  columns: "div";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -1167,6 +1166,7 @@ export const PlasmicPortfolioImm = Object.assign(
     navbar: makeNodeComponent("navbar"),
     section: makeNodeComponent("section"),
     window: makeNodeComponent("window"),
+    columns: makeNodeComponent("columns"),
 
     // Metadata about props expected for PlasmicPortfolioImm
     internalVariantProps: PlasmicPortfolioImm__VariantProps,
