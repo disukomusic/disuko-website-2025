@@ -18,8 +18,7 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .root {
-    background: url("/plasmic/disuko_website_retro_version/images/backgroundJpg.jpg") left 50% bottom 0% / auto auto
-      repeat-y;
+    background: url("/plasmic/disuko_website_retro_version/images/backgroundJpg.jpg") left 50% bottom 0% repeat-y;
   }
 }
 .navbar:global(.__wab_instance):global(.__wab_instance) {

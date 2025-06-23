@@ -109,7 +109,8 @@
           "componentImportPath": "@plasmicpkgs/radix-ui"
         }
       ],
-      "customFunctions": []
+      "customFunctions": [],
+      "jsBundleThemes": []
     },
     {
       "projectId": "8PtdGodUbexNYgkuyBUcWu",
@@ -131,7 +132,8 @@
           "componentImportPath": "@plasmicpkgs/plasmic-embed-css"
         }
       ],
-      "customFunctions": []
+      "customFunctions": [],
+      "jsBundleThemes": []
     },
     {
       "projectId": "gLnoj82AzKVVT7qXiqAbHD",
@@ -197,7 +199,8 @@
           "componentImportPath": "@plasmicpkgs/plasmic-tabs"
         }
       ],
-      "customFunctions": []
+      "customFunctions": [],
+      "jsBundleThemes": []
     },
     {
       "projectId": "jkU633o1Cz7HrJdwdxhVHk",
@@ -251,7 +254,8 @@
           }
         }
       ],
-      "customFunctions": []
+      "customFunctions": [],
+      "jsBundleThemes": []
     },
     {
       "projectId": "ohDidvG9XsCeFumugENU3J",
@@ -651,7 +655,8 @@
           "componentImportPath": "@plasmicpkgs/antd5/skinny/registerBreadcrumb"
         }
       ],
-      "customFunctions": []
+      "customFunctions": [],
+      "jsBundleThemes": []
     },
     {
       "projectId": "84wxoth5npGrp6RRXPL88z",
@@ -679,7 +684,8 @@
           "componentImportPath": "@plasmicpkgs/react-scroll-parallax"
         }
       ],
-      "customFunctions": []
+      "customFunctions": [],
+      "jsBundleThemes": []
     },
     {
       "projectId": "i3z63WaCLuRiSZRBwZC8d1",
@@ -820,7 +826,8 @@
           "componentImportPath": "@plasmicpkgs/commerce"
         }
       ],
-      "customFunctions": []
+      "customFunctions": [],
+      "jsBundleThemes": []
     },
     {
       "projectId": "enk3K4vZ6pmH6kVCoZJXGn",
@@ -842,7 +849,8 @@
           "componentImportPath": "@plasmicpkgs/react-youtube"
         }
       ],
-      "customFunctions": []
+      "customFunctions": [],
+      "jsBundleThemes": []
     },
     {
       "projectId": "caTPwKxj5ZrD9LQ7DMdK4Z",
@@ -900,7 +908,8 @@
           "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
         }
       ],
-      "customFunctions": []
+      "customFunctions": [],
+      "jsBundleThemes": []
     },
     {
       "projectId": "r3ASNrnyvLLLAtDvzUioQ",
@@ -926,7 +935,8 @@
           }
         }
       ],
-      "customFunctions": []
+      "customFunctions": [],
+      "jsBundleThemes": []
     },
     {
       "projectId": "itBdcjth19Wasd6ngAYxWR",
@@ -960,7 +970,8 @@
           "componentImportPath": "@plasmicpkgs/react-twitter-widgets"
         }
       ],
-      "customFunctions": []
+      "customFunctions": [],
+      "jsBundleThemes": []
     },
     {
       "projectId": "58GpZjZCWTaJ8AUhpCwt2K",
@@ -982,7 +993,8 @@
           "componentImportPath": "@plasmicpkgs/react-awesome-reveal"
         }
       ],
-      "customFunctions": []
+      "customFunctions": [],
+      "jsBundleThemes": []
     },
     {
       "projectId": "szjgMQpPpxhmkjnaBvZQJG",
@@ -1004,7 +1016,8 @@
           "componentImportPath": "@plasmicpkgs/react-parallax-tilt"
         }
       ],
-      "customFunctions": []
+      "customFunctions": [],
+      "jsBundleThemes": []
     },
     {
       "projectId": "7nJ7UcFmq9UzB6eXfC5z4a",
@@ -1026,7 +1039,8 @@
           "componentImportPath": "@plasmicpkgs/plasmic-nav"
         }
       ],
-      "customFunctions": []
+      "customFunctions": [],
+      "jsBundleThemes": []
     },
     {
       "projectId": "x4VgG6kzZCVuaqknYN7tgc",
@@ -3087,6 +3101,16 @@
           "id": "ffZyoLiFE30G",
           "name": "IMG_7897.jpg",
           "filePath": "../public/plasmic/disuko_website_retro_version/images/img7897Jpg.jpg"
+        },
+        {
+          "id": "bRJu2R7VBR-y",
+          "name": "VRChat_2024-12-19_23-39-51.405_1920x1080.png",
+          "filePath": "../public/plasmic/disuko_website_retro_version/images/vrChat202412192339514051920X1080Png.png"
+        },
+        {
+          "id": "h3qK32orIkof",
+          "name": "VRChat_2024-12-30_20-20-45.634_1920x1080.png",
+          "filePath": "../public/plasmic/disuko_website_retro_version/images/vrChat202412302020456341920X1080Png.png"
         }
       ],
       "indirect": false,

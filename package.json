@@ -22,7 +22,7 @@
     "@plasmicpkgs/plasmic-rich-components": "^1.0.218",
     "@plasmicpkgs/plasmic-tabs": "^0.0.63",
     "@plasmicpkgs/radix-ui": "^0.0.80",
-    "@plasmicpkgs/react-aria": "^0.0.144",
+    "@plasmicpkgs/react-aria": "^0.0.146",
     "@plasmicpkgs/react-awesome-reveal": "^3.8.224",
     "@plasmicpkgs/react-parallax-tilt": "^0.0.222",
     "@plasmicpkgs/react-scroll-parallax": "^0.0.230",

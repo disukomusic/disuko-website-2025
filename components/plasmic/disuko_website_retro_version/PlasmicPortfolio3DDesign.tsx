@@ -1416,7 +1416,7 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
               )}
             >
               {
-                '"Bobasong V2" - Promotional Material for my Create With Nabalis 2025 Design Balisong Competition Submission'
+                '"Bobasong V2" - Promotional Material for my Create With Nabalis 2025 Design Balisong Competition Submission\nGot second place out of >100 entries!'
               }
             </div>
             <Stack__

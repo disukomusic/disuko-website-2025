@@ -588,6 +588,24 @@ function PlasmicPortfolioImm__RenderFunc(props: {
                 >
                   {"Unity Engine, Arduino"}
                 </div>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__bcHc,
+                    {
+                      [sty.textglobal_theme_classic__bcHceNktM]: hasVariant(
+                        globalVariants,
+                        "theme",
+                        "classic"
+                      )
+                    }
+                  )}
+                >
+                  {
+                    "Players receive instructions from 3 vertically mounted displays to fiddle with a set of wacky controls in a specific order to keep their spaceship flying."
+                  }
+                </div>
                 <WindowButton
                   className={classNames(
                     "__wab_instance",
@@ -656,6 +674,126 @@ function PlasmicPortfolioImm__RenderFunc(props: {
               <Stack__
                 as={"div"}
                 hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__jiIoG)}
+              >
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__eG9Im,
+                    {
+                      [sty.textglobal_theme_classic__eG9ImeNktM]: hasVariant(
+                        globalVariants,
+                        "theme",
+                        "classic"
+                      )
+                    }
+                  )}
+                >
+                  {"HOLOGROUNDS NYE 2024 - Virtual Music Festival"}
+                </div>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__ciRth,
+                    {
+                      [sty.textglobal_theme_classic__ciRtHeNktM]: hasVariant(
+                        globalVariants,
+                        "theme",
+                        "classic"
+                      )
+                    }
+                  )}
+                >
+                  {"Unity, VRChat SDK, Blender"}
+                </div>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__ssGaf,
+                    {
+                      [sty.textglobal_theme_classic__ssGafeNktM]: hasVariant(
+                        globalVariants,
+                        "theme",
+                        "classic"
+                      )
+                    }
+                  )}
+                >
+                  {
+                    "HOLOGROUNDS was a virtual music festival held in the social VR platform VRChat. I worked with my team at Red Panda Studios to create a stage world from scratch, modelling out the environment and creating systems for synced lighting and visuals to our hologram-DJs. "
+                  }
+                </div>
+                <WindowButton
+                  className={classNames(
+                    "__wab_instance",
+                    sty.windowButton__yAwtH
+                  )}
+                  link={"https://youtu.be/q5A_3O8hbhQ?t=16239"}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__jnhE3
+                    )}
+                  >
+                    {"Event Replay"}
+                  </div>
+                </WindowButton>
+                <PlasmicImg__
+                  alt={""}
+                  className={classNames(sty.img__tTdK2)}
+                  displayHeight={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "auto"
+                      : "384px"
+                  }
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"100%"}
+                  loading={"lazy"}
+                  src={{
+                    src: "/plasmic/disuko_website_retro_version/images/vrChat202412192339514051920X1080Png.png",
+                    fullWidth: 1920,
+                    fullHeight: 1080,
+                    aspectRatio: undefined
+                  }}
+                />
+
+                <PlasmicImg__
+                  alt={""}
+                  className={classNames(sty.img___7UnXs)}
+                  displayHeight={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "auto"
+                      : "384px"
+                  }
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "100%"
+                      : "100%"
+                  }
+                  loading={"lazy"}
+                  src={{
+                    src: "/plasmic/disuko_website_retro_version/images/vrChat202412302020456341920X1080Png.png",
+                    fullWidth: 1920,
+                    fullHeight: 1080,
+                    aspectRatio: undefined
+                  }}
+                />
+              </Stack__>
+              <Stack__
+                as={"div"}
+                hasGap={true}
                 className={classNames(projectcss.all, sty.freeBox__dtrej)}
               >
                 <div
@@ -689,6 +827,24 @@ function PlasmicPortfolioImm__RenderFunc(props: {
                   )}
                 >
                   {"Unity Engine"}
+                </div>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text___44IGz,
+                    {
+                      [sty.textglobal_theme_classic___44IGZeNktM]: hasVariant(
+                        globalVariants,
+                        "theme",
+                        "classic"
+                      )
+                    }
+                  )}
+                >
+                  {
+                    "Created for Red Panda Studios Secret Santa 2024, this game lets you embody our lead programmer, Joey Ray, and his race to finish our game Groove Machines."
+                  }
                 </div>
                 <WindowButton
                   className={classNames(
@@ -790,6 +946,24 @@ function PlasmicPortfolioImm__RenderFunc(props: {
                 >
                   {"Rekordbox DJ, Touchdesigner, EOS ETC Lighting "}
                 </div>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__as7Lw,
+                    {
+                      [sty.textglobal_theme_classic__as7LWeNktM]: hasVariant(
+                        globalVariants,
+                        "theme",
+                        "classic"
+                      )
+                    }
+                  )}
+                >
+                  {
+                    "Live DJ event held by two of my friends and I on our college campus. The entire audiovisual setup was concepted, programmed, and performed by the three of us."
+                  }
+                </div>
                 <WindowButton
                   className={classNames(
                     "__wab_instance",
@@ -811,67 +985,86 @@ function PlasmicPortfolioImm__RenderFunc(props: {
                   className={classNames("__wab_instance", sty.youTube__tedby)}
                   videoId={"Vl3FjUiB3xo"}
                 />
-              </Stack__>
-              <Stack__
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.freeBox__ro7Nq)}
-              >
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__nAytI,
-                    {
-                      [sty.textglobal_theme_classic__nAytIeNktM]: hasVariant(
-                        globalVariants,
-                        "theme",
-                        "classic"
-                      )
-                    }
-                  )}
-                >
-                  {"Frutiger Aero Experience - VR Experience"}
-                </div>
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__lByco,
-                    {
-                      [sty.textglobal_theme_classic__lBycOeNktM]: hasVariant(
-                        globalVariants,
-                        "theme",
-                        "classic"
-                      )
-                    }
-                  )}
-                >
-                  {"Unity"}
-                </div>
-                <WindowButton
-                  className={classNames(
-                    "__wab_instance",
-                    sty.windowButton__guchs
-                  )}
-                  link={
-                    "https://github.com/disukomusic/FrutigerAeroPhoneInteraction"
-                  }
+
+                <Stack__
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox__ro7Nq)}
                 >
                   <div
                     className={classNames(
                       projectcss.all,
                       projectcss.__wab_text,
-                      sty.text__tuKys
+                      sty.text__nAytI,
+                      {
+                        [sty.textglobal_theme_classic__nAytIeNktM]: hasVariant(
+                          globalVariants,
+                          "theme",
+                          "classic"
+                        )
+                      }
                     )}
                   >
-                    {"Source Code"}
+                    {"Frutiger Aero Experience - VR Experience"}
                   </div>
-                </WindowButton>
-                <YouTube
-                  className={classNames("__wab_instance", sty.youTube__rtUap)}
-                  videoId={"Ey5fA03QNu8"}
-                />
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__lByco,
+                      {
+                        [sty.textglobal_theme_classic__lBycOeNktM]: hasVariant(
+                          globalVariants,
+                          "theme",
+                          "classic"
+                        )
+                      }
+                    )}
+                  >
+                    {"Unity"}
+                  </div>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__tEfef,
+                      {
+                        [sty.textglobal_theme_classic__tEfefeNktM]: hasVariant(
+                          globalVariants,
+                          "theme",
+                          "classic"
+                        )
+                      }
+                    )}
+                  >
+                    {
+                      "VR Players interact with a futuristic flip phone UI to materialize a variety of objects into the scene."
+                    }
+                  </div>
+                  <WindowButton
+                    className={classNames(
+                      "__wab_instance",
+                      sty.windowButton__guchs
+                    )}
+                    link={
+                      "https://github.com/disukomusic/FrutigerAeroPhoneInteraction"
+                    }
+                  >
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__tuKys
+                      )}
+                    >
+                      {"Source Code"}
+                    </div>
+                  </WindowButton>
+                  <YouTube
+                    className={classNames("__wab_instance", sty.youTube__rtUap)}
+                    videoId={"Ey5fA03QNu8"}
+                  />
+                </Stack__>
               </Stack__>
               <Stack__
                 as={"div"}
