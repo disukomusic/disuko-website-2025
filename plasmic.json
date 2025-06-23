@@ -1617,6 +1617,20 @@
           "cssFilePath": "plasmic/disuko_website_retro_version/PlasmicImageWindow.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "LwGWtkwbglRt",
+          "name": "NewPage",
+          "type": "managed",
+          "projectId": "x4VgG6kzZCVuaqknYN7tgc",
+          "renderModuleFilePath": "plasmic/disuko_website_retro_version/PlasmicNewPage.tsx",
+          "importSpec": {
+            "modulePath": "../pages/musicplayertest.tsx"
+          },
+          "cssFilePath": "plasmic/disuko_website_retro_version/PlasmicNewPage.module.css",
+          "scheme": "blackbox",
+          "componentType": "page",
+          "path": "/musicplayertest"
         }
       ],
       "icons": [
@@ -3338,7 +3352,8 @@
           "componentImportPath": "@plasmicpkgs/react-aria/skinny/registerDialog"
         }
       ],
-      "customFunctions": []
+      "customFunctions": [],
+      "jsBundleThemes": []
     }
   ],
   "globalVariants": {
