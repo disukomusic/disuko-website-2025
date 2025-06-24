@@ -59,6 +59,8 @@ import {
   useGlobalActions
 } from "@plasmicapp/react-web/lib/host";
 
+import { Embed } from "@plasmicpkgs/plasmic-basic-components";
+
 import { useScreenVariants as useScreenVariantsdmuurUfQuA6N } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: DmuurUFQuA6N/globalVariant
 import { ThemeValue, useTheme } from "./PlasmicGlobalVariant__Theme"; // plasmic-import: 3K9IqsAFaaID/globalVariant
 
@@ -86,6 +88,7 @@ export type PlasmicFooter__OverridesType = {
   freeBox?: Flex__<"div">;
   rpsLink?: Flex__<"a"> & Partial<LinkProps>;
   dotgay?: Flex__<"a"> & Partial<LinkProps>;
+  embedHtml?: Flex__<typeof Embed>;
 };
 
 export interface DefaultFooterProps {
@@ -288,17 +291,28 @@ function PlasmicFooter__RenderFunc(props: {
             />
           </PlasmicLink__>
         </div>
+        <div className={classNames(projectcss.all, sty.column__eh7Rf)}>
+          <Embed
+            data-plasmic-name={"embedHtml"}
+            data-plasmic-override={overrides.embedHtml}
+            className={classNames("__wab_instance", sty.embedHtml)}
+            code={
+              "    <strong>last updated:</strong> <div id=\"latest-commit\"></div>\r\n    <script>\r\n        const owner = 'disukomusic';\r\n        const repo = 'disuko-website-2025';\r\n        const branch = 'main';\r\n        const container = document.getElementById('latest-commit');\r\n        async function fetchLatestCommit() {\r\n            const response = await fetch(`https://api.github.com/repos/$%7Bowner%7D/$%7Brepo%7D/commits?sha=${branch}&per_page=1`);\r\n            const data = await response.json();\r\n            if (!data.length) {\r\n                container.innerHTML = '<p>No commits found.</p>';\r\n                return;\r\n            }\r\n            const commit = data[0];\r\n            const date = new Date(commit.commit.author.date);\r\n            const formattedDate = `${date.getMonth() + 1}/${date.getDate()}/${date.getFullYear()}`;\r\n            const message = commit.commit.message.split('\\n')[0];\r\n            container.innerHTML = `\r\n    <strong>${formattedDate}</strong>\r\n    <ul><li>${message}</li></ul>\r\n`;\r\n        }\r\n        fetchLatestCommit().catch(err => {\r\n            container.innerHTML = `<p>Error fetching commit: ${err.message}</p>`;\r\n        });\r\n    </script>"
+            }
+          />
+        </div>
       </Stack__>
     </div>
   ) as React.ReactElement | null;
 }
 
 const PlasmicDescendants = {
-  root: ["root", "columns", "freeBox", "rpsLink", "dotgay"],
-  columns: ["columns", "freeBox", "rpsLink", "dotgay"],
+  root: ["root", "columns", "freeBox", "rpsLink", "dotgay", "embedHtml"],
+  columns: ["columns", "freeBox", "rpsLink", "dotgay", "embedHtml"],
   freeBox: ["freeBox", "rpsLink"],
   rpsLink: ["rpsLink"],
-  dotgay: ["dotgay"]
+  dotgay: ["dotgay"],
+  embedHtml: ["embedHtml"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -309,6 +323,7 @@ type NodeDefaultElementType = {
   freeBox: "div";
   rpsLink: "a";
   dotgay: "a";
+  embedHtml: typeof Embed;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -375,6 +390,7 @@ export const PlasmicFooter = Object.assign(
     freeBox: makeNodeComponent("freeBox"),
     rpsLink: makeNodeComponent("rpsLink"),
     dotgay: makeNodeComponent("dotgay"),
+    embedHtml: makeNodeComponent("embedHtml"),
 
     // Metadata about props expected for PlasmicFooter
     internalVariantProps: PlasmicFooter__VariantProps,
