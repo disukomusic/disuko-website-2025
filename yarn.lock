@@ -851,10 +851,47 @@
   dependencies:
     unfetch "^4.2.0"
 
+"@plasmicapp/loader-core@1.0.137":
+  version "1.0.137"
+  resolved "https://registry.yarnpkg.com/@plasmicapp/loader-core/-/loader-core-1.0.137.tgz#c295f3156ed930137f8d9dee2582e3a6643833ac"
+  integrity sha512-MKTEub1wTnB4QN0v6tF6ni9/nx0LYU1yffKCZQdnmX0KvWxNS6w5ysamSriLXbhSFnHJ5Vy2hZRfgIzJXGWpLA==
+  dependencies:
+    "@plasmicapp/isomorphic-unfetch" "1.0.3"
+    "@plasmicapp/loader-fetcher" "1.0.55"
+
+"@plasmicapp/loader-fetcher@1.0.55":
+  version "1.0.55"
+  resolved "https://registry.yarnpkg.com/@plasmicapp/loader-fetcher/-/loader-fetcher-1.0.55.tgz#4eb4d2838094a862c23f4ef2574a08b1eabb4cfb"
+  integrity sha512-UEBR+JpJAHehkJFEOMNYKjyxDoxr+30yvTYAzM/vSLpnKGj1YnthdDLfaJhxM/SC/DO4gM1LE514IrBAlO4L9A==
+  dependencies:
+    "@plasmicapp/isomorphic-unfetch" "1.0.3"
+
+"@plasmicapp/loader-react@^1.0.392":
+  version "1.0.392"
+  resolved "https://registry.yarnpkg.com/@plasmicapp/loader-react/-/loader-react-1.0.392.tgz#8eaef633a725259cea82b2e4f2a5fdad3108bcf5"
+  integrity sha512-BbYYQRWifvxJ/1HkIrVKix7cY7gLMOq7Iaku2l3Hpdox9OOIjfWCpKrccyToiVByFhoM/+44AbTxLqel+9W5AQ==
+  dependencies:
+    "@plasmicapp/data-sources-context" "0.1.21"
+    "@plasmicapp/host" "1.0.222"
+    "@plasmicapp/loader-core" "1.0.137"
+    "@plasmicapp/loader-fetcher" "1.0.55"
+    "@plasmicapp/loader-splits" "1.0.64"
+    "@plasmicapp/prepass" "1.0.19"
+    "@plasmicapp/query" "0.1.79"
+    pascalcase "^1.0.0"
+    server-only "0.0.1"
+
 "@plasmicapp/loader-splits@1.0.62":
   version "1.0.62"
   resolved "https://registry.yarnpkg.com/@plasmicapp/loader-splits/-/loader-splits-1.0.62.tgz#e357de2290aca81a0e48fbd03d8e28ac220a1ea1"
   integrity sha512-+kSzevnMPc3/eEYDLyQSG6+c4iXd1nVZuMJQ43Wg5uoWIMzZb15CyQBZYWiBbR3Wb3h0bHiy+L3BMG3n7KGR5g==
+  dependencies:
+    json-logic-js "^2.0.2"
+
+"@plasmicapp/loader-splits@1.0.64":
+  version "1.0.64"
+  resolved "https://registry.yarnpkg.com/@plasmicapp/loader-splits/-/loader-splits-1.0.64.tgz#07a68e66927eb97aa6814a794754c0abe7110641"
+  integrity sha512-PrZNSokH7aedwXtFD0tWn/P7yL+h1oDpEqKDm7zD0d0tjq6spL90I61lBU8MJlc5/dngLBrovLPyzO51EmPLqg==
   dependencies:
     json-logic-js "^2.0.2"
 
@@ -5415,6 +5452,11 @@ parse-json@^5.0.0:
     json-parse-even-better-errors "^2.3.0"
     lines-and-columns "^1.1.6"
 
+pascalcase@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/pascalcase/-/pascalcase-1.0.0.tgz#d2fd7d73f2969606d2b56e17f5261be41c43c381"
+  integrity sha512-BSExi0rRnCHReJys6NocaK+cfTXNinAegfWBvr0JD3hiaEG7Nuc7r0CIdOJunXrs8gU/sbHQ9dxVAtiVQisjmg==
+
 path-exists@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/path-exists/-/path-exists-4.0.0.tgz#513bdbe2d3b95d7762e8c1137efa195c6c61b5b3"
@@ -6303,6 +6345,11 @@ semver@^7.6.0, semver@^7.6.3:
   version "7.6.3"
   resolved "https://registry.yarnpkg.com/semver/-/semver-7.6.3.tgz#980f7b5550bc175fb4dc09403085627f9eb33143"
   integrity sha512-oVekP1cKtI+CTDvHWYFUcMtsK/00wmAEfyqKfNdARm8u1wNVhSgaX7A8d4UuIlUI5e84iEwOhs7ZPYRmzU9U6A==
+
+server-only@0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/server-only/-/server-only-0.0.1.tgz#0f366bb6afb618c37c9255a314535dc412cd1c9e"
+  integrity sha512-qepMx2JxAa5jjfzxG79yPPq+8BuFToHd1hm7kI+Z4zAq1ftQiP7HcxMhDDItrbtwVeLg/cY2JnKnrcFkmiswNA==
 
 set-function-length@^1.2.2:
   version "1.2.2"
