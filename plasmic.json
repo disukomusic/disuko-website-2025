@@ -3128,6 +3128,12 @@
           "name": "Fetcher",
           "displayName": "plasmic-data-source-fetcher",
           "componentImportPath": "@plasmicapp/react-web/lib/data-sources"
+        },
+        {
+          "id": "2hoTm-n0yu4d",
+          "name": "Comp2HoTmN0Yu4D",
+          "displayName": "LatestCommit",
+          "componentImportPath": ""
         }
       ],
       "customFunctions": []
