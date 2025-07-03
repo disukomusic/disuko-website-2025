@@ -62,6 +62,8 @@ import {
 import { BaseSection } from "@plasmicpkgs/react-aria/skinny/registerSection";
 import MenuItem from "../../MenuItem"; // plasmic-import: YLVvc7dmfMyU/component
 
+import { ThemeValue, useTheme } from "./PlasmicGlobalVariant__Theme"; // plasmic-import: 3K9IqsAFaaID/globalVariant
+
 import "@plasmicapp/react-web/lib/plasmic.css";
 
 import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
@@ -138,6 +140,10 @@ function PlasmicMenuSection__RenderFunc(props: {
 
   const currentUser = useCurrentUser?.() || {};
 
+  const globalVariants = ensureGlobalVariants({
+    theme: useTheme()
+  });
+
   return (
     <BaseSection
       data-plasmic-name={"root"}
@@ -152,7 +158,19 @@ function PlasmicMenuSection__RenderFunc(props: {
         projectcss.plasmic_tokens,
         plasmic_antd_5_hostless_css.plasmic_tokens,
         plasmic_plasmic_rich_components_css.plasmic_tokens,
-        sty.root
+        sty.root,
+        {
+          [projectcss.global_theme_classic]: hasVariant(
+            globalVariants,
+            "theme",
+            "classic"
+          ),
+          [projectcss.global_theme_classic]: hasVariant(
+            globalVariants,
+            "theme",
+            "classic"
+          )
+        }
       )}
       header={
         <div

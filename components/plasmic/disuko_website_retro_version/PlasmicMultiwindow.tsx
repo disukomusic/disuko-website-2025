@@ -62,6 +62,7 @@ import {
 import { Fetcher } from "@plasmicapp/react-web/lib/data-sources";
 
 import { useScreenVariants as useScreenVariantsdmuurUfQuA6N } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: DmuurUFQuA6N/globalVariant
+import { ThemeValue, useTheme } from "./PlasmicGlobalVariant__Theme"; // plasmic-import: 3K9IqsAFaaID/globalVariant
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
@@ -194,7 +195,8 @@ function PlasmicMultiwindow__RenderFunc(props: {
   });
 
   const globalVariants = ensureGlobalVariants({
-    screen: useScreenVariantsdmuurUfQuA6N()
+    screen: useScreenVariantsdmuurUfQuA6N(),
+    theme: useTheme()
   });
 
   return (
@@ -211,7 +213,19 @@ function PlasmicMultiwindow__RenderFunc(props: {
         projectcss.plasmic_tokens,
         plasmic_antd_5_hostless_css.plasmic_tokens,
         plasmic_plasmic_rich_components_css.plasmic_tokens,
-        sty.root
+        sty.root,
+        {
+          [projectcss.global_theme_classic]: hasVariant(
+            globalVariants,
+            "theme",
+            "classic"
+          ),
+          [projectcss.global_theme_classic]: hasVariant(
+            globalVariants,
+            "theme",
+            "classic"
+          )
+        }
       )}
     >
       <PlasmicLink__

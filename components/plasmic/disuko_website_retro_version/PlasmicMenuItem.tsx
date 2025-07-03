@@ -63,6 +63,8 @@ import { BaseListBoxItem } from "@plasmicpkgs/react-aria/skinny/registerListBoxI
 import { BaseText } from "@plasmicpkgs/react-aria/skinny/registerText";
 import { BaseText as BaseText2 } from "@plasmicpkgs/react-aria/skinny/registerText";
 
+import { ThemeValue, useTheme } from "./PlasmicGlobalVariant__Theme"; // plasmic-import: 3K9IqsAFaaID/globalVariant
+
 import "@plasmicapp/react-web/lib/plasmic.css";
 
 import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
@@ -146,6 +148,10 @@ function PlasmicMenuItem__RenderFunc(props: {
 
   const currentUser = useCurrentUser?.() || {};
 
+  const globalVariants = ensureGlobalVariants({
+    theme: useTheme()
+  });
+
   const [$ccVariants, setDollarCcVariants] = React.useState<
     Record<string, boolean>
   >({
@@ -182,7 +188,19 @@ function PlasmicMenuItem__RenderFunc(props: {
         projectcss.plasmic_tokens,
         plasmic_antd_5_hostless_css.plasmic_tokens,
         plasmic_plasmic_rich_components_css.plasmic_tokens,
-        sty.root
+        sty.root,
+        {
+          [projectcss.global_theme_classic]: hasVariant(
+            globalVariants,
+            "theme",
+            "classic"
+          ),
+          [projectcss.global_theme_classic]: hasVariant(
+            globalVariants,
+            "theme",
+            "classic"
+          )
+        }
       )}
       id={args.value}
       plasmicUpdateVariant={updateVariant}

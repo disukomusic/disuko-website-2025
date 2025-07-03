@@ -184,6 +184,11 @@ function PlasmicWindow__RenderFunc(props: {
             "theme",
             "classic"
           ),
+          [projectcss.global_theme_classic]: hasVariant(
+            globalVariants,
+            "theme",
+            "classic"
+          ),
           [sty.musicglobal_theme_classic]: hasVariant(
             globalVariants,
             "theme",

@@ -183,9 +183,9 @@ function PlasmicNavbar__RenderFunc(props: {
             displayMinWidth={"0"}
             displayWidth={"48px"}
             src={{
-              src: "/plasmic/disuko_website_retro_version/images/logo128X128Png2.png",
-              fullWidth: 128,
-              fullHeight: 128,
+              src: "/plasmic/disuko_website_retro_version/images/disukoLogo2025GradientSmalPng.png",
+              fullWidth: 512,
+              fullHeight: 476,
               aspectRatio: undefined
             }}
           />
@@ -201,6 +201,11 @@ function PlasmicNavbar__RenderFunc(props: {
         plasmic_plasmic_rich_components_css.plasmic_tokens,
         sty.root,
         {
+          [projectcss.global_theme_classic]: hasVariant(
+            globalVariants,
+            "theme",
+            "classic"
+          ),
           [projectcss.global_theme_classic]: hasVariant(
             globalVariants,
             "theme",

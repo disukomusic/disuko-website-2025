@@ -132,7 +132,30 @@
   max-width: 100%;
   font-size: 32px;
   color: var(--token-GXH3dzbZuw1x);
-  min-width: 0;
+  grid-column-start: 3 !important;
+  grid-column-end: -3 !important;
+  padding: 0px;
+  margin: 0px;
+}
+.img__zn1El {
+  object-fit: cover;
+  max-width: 100%;
+  width: 100%;
+  grid-column-start: 3 !important;
+  grid-column-end: -3 !important;
+}
+.img__zn1El > picture > img {
+  object-fit: cover;
+}
+.text__vVmed {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  font-size: 32px;
+  color: var(--token-GXH3dzbZuw1x);
+  grid-column-start: 3 !important;
+  grid-column-end: -3 !important;
   padding: 0px;
   margin: 0px;
 }

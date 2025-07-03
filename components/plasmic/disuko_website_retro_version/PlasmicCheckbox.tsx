@@ -61,6 +61,8 @@ import {
 
 import * as pp from "@plasmicapp/react-web";
 
+import { ThemeValue, useTheme } from "./PlasmicGlobalVariant__Theme"; // plasmic-import: 3K9IqsAFaaID/globalVariant
+
 import "@plasmicapp/react-web/lib/plasmic.css";
 
 import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
@@ -212,6 +214,10 @@ function PlasmicCheckbox__RenderFunc(props: {
     focusVisibleWithin_root: isRootFocusVisibleWithin
   };
 
+  const globalVariants = ensureGlobalVariants({
+    theme: useTheme()
+  });
+
   return (
     <Stack__
       as={"div"}
@@ -230,6 +236,16 @@ function PlasmicCheckbox__RenderFunc(props: {
         plasmic_plasmic_rich_components_css.plasmic_tokens,
         sty.root,
         {
+          [projectcss.global_theme_classic]: hasVariant(
+            globalVariants,
+            "theme",
+            "classic"
+          ),
+          [projectcss.global_theme_classic]: hasVariant(
+            globalVariants,
+            "theme",
+            "classic"
+          ),
           [sty.root___focusVisibleWithin]: triggers.focusVisibleWithin_root,
           [sty.rootisChecked]: hasVariant($state, "isChecked", "isChecked"),
           [sty.rootisDisabled]: hasVariant($state, "isDisabled", "isDisabled"),

@@ -216,6 +216,16 @@ function PlasmicPortfolio__RenderFunc(props: {
             plasmic_plasmic_rich_components_css.plasmic_tokens,
             sty.root,
             {
+              [projectcss.global_theme_classic]: hasVariant(
+                globalVariants,
+                "theme",
+                "classic"
+              ),
+              [projectcss.global_theme_classic]: hasVariant(
+                globalVariants,
+                "theme",
+                "classic"
+              ),
               [sty.rootglobal_theme_classic]: hasVariant(
                 globalVariants,
                 "theme",
@@ -521,7 +531,7 @@ function PlasmicPortfolio__RenderFunc(props: {
                       displayWidth={"auto"}
                       loading={"lazy"}
                       src={{
-                        src: "/plasmic/disuko_website_retro_version/images/_2DDesignCoverJpg.jpg",
+                        src: "/plasmic/disuko_website_retro_version/images/zineCroppedPng.png",
                         fullWidth: 1920,
                         fullHeight: 1080,
                         aspectRatio: undefined

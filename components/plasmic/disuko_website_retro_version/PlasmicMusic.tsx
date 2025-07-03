@@ -230,6 +230,16 @@ function PlasmicMusic__RenderFunc(props: {
             plasmic_plasmic_rich_components_css.plasmic_tokens,
             sty.root,
             {
+              [projectcss.global_theme_classic]: hasVariant(
+                globalVariants,
+                "theme",
+                "classic"
+              ),
+              [projectcss.global_theme_classic]: hasVariant(
+                globalVariants,
+                "theme",
+                "classic"
+              ),
               [sty.rootglobal_theme_classic]: hasVariant(
                 globalVariants,
                 "theme",

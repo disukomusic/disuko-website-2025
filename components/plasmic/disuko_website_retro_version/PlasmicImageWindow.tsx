@@ -157,6 +157,11 @@ function PlasmicImageWindow__RenderFunc(props: {
             "theme",
             "classic"
           ),
+          [projectcss.global_theme_classic]: hasVariant(
+            globalVariants,
+            "theme",
+            "classic"
+          ),
           [sty.imageWindow19global_theme_classic]: hasVariant(
             globalVariants,
             "theme",

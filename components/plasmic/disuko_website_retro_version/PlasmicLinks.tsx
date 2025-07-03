@@ -69,6 +69,7 @@ import Window from "../../Window"; // plasmic-import: BWjgdOwFY_OO/component
 import { Embed } from "@plasmicpkgs/plasmic-basic-components";
 
 import { useScreenVariants as useScreenVariantsdmuurUfQuA6N } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: DmuurUFQuA6N/globalVariant
+import { ThemeValue, useTheme } from "./PlasmicGlobalVariant__Theme"; // plasmic-import: 3K9IqsAFaaID/globalVariant
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
@@ -163,7 +164,8 @@ function PlasmicLinks__RenderFunc(props: {
   });
 
   const globalVariants = ensureGlobalVariants({
-    screen: useScreenVariantsdmuurUfQuA6N()
+    screen: useScreenVariantsdmuurUfQuA6N(),
+    theme: useTheme()
   });
 
   return (
@@ -229,7 +231,19 @@ function PlasmicLinks__RenderFunc(props: {
             projectcss.plasmic_tokens,
             plasmic_antd_5_hostless_css.plasmic_tokens,
             plasmic_plasmic_rich_components_css.plasmic_tokens,
-            sty.root
+            sty.root,
+            {
+              [projectcss.global_theme_classic]: hasVariant(
+                globalVariants,
+                "theme",
+                "classic"
+              ),
+              [projectcss.global_theme_classic]: hasVariant(
+                globalVariants,
+                "theme",
+                "classic"
+              )
+            }
           )}
         >
           <WindowButton
@@ -250,7 +264,19 @@ function PlasmicLinks__RenderFunc(props: {
                 projectcss.plasmic_mixins,
                 projectcss.plasmic_tokens,
                 plasmic_antd_5_hostless_css.plasmic_tokens,
-                plasmic_plasmic_rich_components_css.plasmic_tokens
+                plasmic_plasmic_rich_components_css.plasmic_tokens,
+                {
+                  [projectcss.global_theme_classic]: hasVariant(
+                    globalVariants,
+                    "theme",
+                    "classic"
+                  ),
+                  [projectcss.global_theme_classic]: hasVariant(
+                    globalVariants,
+                    "theme",
+                    "classic"
+                  )
+                }
               )}
               mouseEnterDelay={0}
               mouseLeaveDelay={0}

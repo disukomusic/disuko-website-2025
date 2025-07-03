@@ -3111,6 +3111,21 @@
           "id": "h3qK32orIkof",
           "name": "VRChat_2024-12-30_20-20-45.634_1920x1080.png",
           "filePath": "../public/plasmic/disuko_website_retro_version/images/vrChat202412302020456341920X1080Png.png"
+        },
+        {
+          "id": "H0KX45LuR0Ee",
+          "name": "DisukoLogo2025GradientSmal.png",
+          "filePath": "../public/plasmic/disuko_website_retro_version/images/disukoLogo2025GradientSmalPng.png"
+        },
+        {
+          "id": "AY1F_RFmaVbA",
+          "name": "ZineCropped.png",
+          "filePath": "../public/plasmic/disuko_website_retro_version/images/zineCroppedPng.png"
+        },
+        {
+          "id": "bWCqDRzc6STD",
+          "name": "image 102",
+          "filePath": "../public/plasmic/disuko_website_retro_version/images/image102.png"
         }
       ],
       "indirect": false,
@@ -3362,6 +3377,6 @@
   "nextjsConfig": {
     "pagesDir": "../pages"
   },
-  "cliVersion": "0.1.338",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.338/dist/plasmic.schema.json"
+  "cliVersion": "0.1.340",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.340/dist/plasmic.schema.json"
 }

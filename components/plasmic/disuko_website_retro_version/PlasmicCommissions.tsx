@@ -204,6 +204,11 @@ function PlasmicCommissions__RenderFunc(props: {
               "theme",
               "classic"
             ),
+            [projectcss.global_theme_classic]: hasVariant(
+              globalVariants,
+              "theme",
+              "classic"
+            ),
             [sty.rootglobal_theme_classic]: hasVariant(
               globalVariants,
               "theme",

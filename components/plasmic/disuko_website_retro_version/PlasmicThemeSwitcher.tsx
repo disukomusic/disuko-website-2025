@@ -67,6 +67,8 @@ import Description from "../../Description"; // plasmic-import: -mDgwq8p4URS/com
 import MenuPopover from "../../MenuPopover"; // plasmic-import: TsvWy0xNjSQO/component
 import MenuItem from "../../MenuItem"; // plasmic-import: YLVvc7dmfMyU/component
 
+import { ThemeValue, useTheme } from "./PlasmicGlobalVariant__Theme"; // plasmic-import: 3K9IqsAFaaID/globalVariant
+
 import "@plasmicapp/react-web/lib/plasmic.css";
 
 import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
@@ -219,6 +221,10 @@ function PlasmicThemeSwitcher__RenderFunc(props: {
     $refs
   });
 
+  const globalVariants = ensureGlobalVariants({
+    theme: useTheme()
+  });
+
   const [$ccVariants, setDollarCcVariants] = React.useState<
     Record<string, boolean>
   >({
@@ -254,7 +260,19 @@ function PlasmicThemeSwitcher__RenderFunc(props: {
         plasmic_antd_5_hostless_css.plasmic_tokens,
         plasmic_plasmic_rich_components_css.plasmic_tokens,
         sty.ariaSelect,
-        { [sty.ariaSelecttype_soft]: hasVariant($state, "type", "soft") }
+        {
+          [projectcss.global_theme_classic]: hasVariant(
+            globalVariants,
+            "theme",
+            "classic"
+          ),
+          [projectcss.global_theme_classic]: hasVariant(
+            globalVariants,
+            "theme",
+            "classic"
+          ),
+          [sty.ariaSelecttype_soft]: hasVariant($state, "type", "soft")
+        }
       )}
       defaultSelectedKey={args.initialSelectedValue}
       isDisabled={args.disabled}

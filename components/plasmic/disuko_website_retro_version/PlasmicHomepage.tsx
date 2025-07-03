@@ -250,6 +250,11 @@ function PlasmicHomepage__RenderFunc(props: {
                 "theme",
                 "classic"
               ),
+              [projectcss.global_theme_classic]: hasVariant(
+                globalVariants,
+                "theme",
+                "classic"
+              ),
               [sty.mainPageglobal_theme_classic]: hasVariant(
                 globalVariants,
                 "theme",
@@ -558,6 +563,11 @@ function PlasmicHomepage__RenderFunc(props: {
                         plasmic_antd_5_hostless_css.plasmic_tokens,
                         plasmic_plasmic_rich_components_css.plasmic_tokens,
                         {
+                          [projectcss.global_theme_classic]: hasVariant(
+                            globalVariants,
+                            "theme",
+                            "classic"
+                          ),
                           [projectcss.global_theme_classic]: hasVariant(
                             globalVariants,
                             "theme",

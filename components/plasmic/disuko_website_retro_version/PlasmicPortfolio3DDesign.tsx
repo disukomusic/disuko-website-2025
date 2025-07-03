@@ -286,6 +286,11 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
               "theme",
               "classic"
             ),
+            [projectcss.global_theme_classic]: hasVariant(
+              globalVariants,
+              "theme",
+              "classic"
+            ),
             [sty._3DDesignglobal_theme_classic]: hasVariant(
               globalVariants,
               "theme",

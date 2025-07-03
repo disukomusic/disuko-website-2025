@@ -62,6 +62,8 @@ import {
 import * as pp from "@plasmicapp/react-web";
 import Select__Option from "../../Select__Option"; // plasmic-import: 0P9L-03iwYFK/component
 
+import { ThemeValue, useTheme } from "./PlasmicGlobalVariant__Theme"; // plasmic-import: 3K9IqsAFaaID/globalVariant
+
 import "@plasmicapp/react-web/lib/plasmic.css";
 
 import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
@@ -177,6 +179,10 @@ function PlasmicSelect__OptionGroup__RenderFunc(props: {
     Select: React.useContext(SUPER__PlasmicSelect.Context)
   };
 
+  const globalVariants = ensureGlobalVariants({
+    theme: useTheme()
+  });
+
   return (
     <div
       data-plasmic-name={"root"}
@@ -191,7 +197,19 @@ function PlasmicSelect__OptionGroup__RenderFunc(props: {
         projectcss.plasmic_tokens,
         plasmic_antd_5_hostless_css.plasmic_tokens,
         plasmic_plasmic_rich_components_css.plasmic_tokens,
-        sty.root
+        sty.root,
+        {
+          [projectcss.global_theme_classic]: hasVariant(
+            globalVariants,
+            "theme",
+            "classic"
+          ),
+          [projectcss.global_theme_classic]: hasVariant(
+            globalVariants,
+            "theme",
+            "classic"
+          )
+        }
       )}
     >
       {(hasVariant($state, "isFirst", "isFirst") ? false : true) ? (

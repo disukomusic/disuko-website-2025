@@ -67,6 +67,7 @@ import { Reveal } from "@plasmicpkgs/react-awesome-reveal";
 import YouTube from "@plasmicpkgs/react-youtube";
 
 import { useScreenVariants as useScreenVariantsdmuurUfQuA6N } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: DmuurUFQuA6N/globalVariant
+import { ThemeValue, useTheme } from "./PlasmicGlobalVariant__Theme"; // plasmic-import: 3K9IqsAFaaID/globalVariant
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
@@ -138,7 +139,8 @@ function PlasmicBiteHandle__RenderFunc(props: {
   const currentUser = useCurrentUser?.() || {};
 
   const globalVariants = ensureGlobalVariants({
-    screen: useScreenVariantsdmuurUfQuA6N()
+    screen: useScreenVariantsdmuurUfQuA6N(),
+    theme: useTheme()
   });
 
   return (
@@ -204,7 +206,19 @@ function PlasmicBiteHandle__RenderFunc(props: {
             projectcss.plasmic_tokens,
             plasmic_antd_5_hostless_css.plasmic_tokens,
             plasmic_plasmic_rich_components_css.plasmic_tokens,
-            sty.biteHandle
+            sty.biteHandle,
+            {
+              [projectcss.global_theme_classic]: hasVariant(
+                globalVariants,
+                "theme",
+                "classic"
+              ),
+              [projectcss.global_theme_classic]: hasVariant(
+                globalVariants,
+                "theme",
+                "classic"
+              )
+            }
           )}
         >
           <Tilt

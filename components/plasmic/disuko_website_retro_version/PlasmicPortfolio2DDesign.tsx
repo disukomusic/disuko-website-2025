@@ -214,6 +214,11 @@ function PlasmicPortfolio2DDesign__RenderFunc(props: {
                 "theme",
                 "classic"
               ),
+              [projectcss.global_theme_classic]: hasVariant(
+                globalVariants,
+                "theme",
+                "classic"
+              ),
               [sty._3DDesignglobal_theme_classic]: hasVariant(
                 globalVariants,
                 "theme",
@@ -303,16 +308,42 @@ function PlasmicPortfolio2DDesign__RenderFunc(props: {
                 aspectRatio: undefined
               }}
             />
+          </div>
+          <div
+            className={classNames(
+              projectcss.all,
+              projectcss.__wab_text,
+              sty.text__uh7K
+            )}
+          >
+            {"Personal Branding (2025)"}
+          </div>
+          <PlasmicImg__
+            alt={""}
+            className={classNames(sty.img__zn1El)}
+            displayHeight={"auto"}
+            displayMaxHeight={"none"}
+            displayMaxWidth={"100%"}
+            displayMinHeight={"0"}
+            displayMinWidth={"0"}
+            displayWidth={"100%"}
+            loading={"lazy"}
+            src={{
+              src: "/plasmic/disuko_website_retro_version/images/image102.png",
+              fullWidth: 1920,
+              fullHeight: 1280,
+              aspectRatio: undefined
+            }}
+          />
 
-            <div
-              className={classNames(
-                projectcss.all,
-                projectcss.__wab_text,
-                sty.text__uh7K
-              )}
-            >
-              {"Logos, Stickers, etc."}
-            </div>
+          <div
+            className={classNames(
+              projectcss.all,
+              projectcss.__wab_text,
+              sty.text__vVmed
+            )}
+          >
+            {"Logos, Stickers, etc."}
           </div>
           {(() => {
             const child$Props = {

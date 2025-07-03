@@ -212,6 +212,16 @@ function PlasmicMerch__RenderFunc(props: {
             plasmic_plasmic_rich_components_css.plasmic_tokens,
             sty.mainPage,
             {
+              [projectcss.global_theme_classic]: hasVariant(
+                globalVariants,
+                "theme",
+                "classic"
+              ),
+              [projectcss.global_theme_classic]: hasVariant(
+                globalVariants,
+                "theme",
+                "classic"
+              ),
               [sty.mainPageglobal_theme_classic]: hasVariant(
                 globalVariants,
                 "theme",

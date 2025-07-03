@@ -179,6 +179,11 @@ function PlasmicWindowButton__RenderFunc(props: {
             "theme",
             "classic"
           ),
+          [projectcss.global_theme_classic]: hasVariant(
+            globalVariants,
+            "theme",
+            "classic"
+          ),
           [sty.buttonglobal_theme_classic]: hasVariant(
             globalVariants,
             "theme",

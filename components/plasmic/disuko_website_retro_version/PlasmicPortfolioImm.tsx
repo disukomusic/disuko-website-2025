@@ -184,6 +184,16 @@ function PlasmicPortfolioImm__RenderFunc(props: {
             plasmic_plasmic_rich_components_css.plasmic_tokens,
             sty._3DDesign,
             {
+              [projectcss.global_theme_classic]: hasVariant(
+                globalVariants,
+                "theme",
+                "classic"
+              ),
+              [projectcss.global_theme_classic]: hasVariant(
+                globalVariants,
+                "theme",
+                "classic"
+              ),
               [sty._3DDesignglobal_theme_classic]: hasVariant(
                 globalVariants,
                 "theme",
