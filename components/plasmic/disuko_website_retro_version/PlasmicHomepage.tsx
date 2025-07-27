@@ -805,12 +805,31 @@ function PlasmicHomepage__RenderFunc(props: {
                   "classic"
                 )
               })}
-              linkDestination={`/commissions`}
-              showImage={false}
-              windowText={
-                "Need a logo, 3d model, or song? Check out my new commissions page!"
+              linkDestination={"https://blog.spacehey.com/entry?id=1226363"}
+              showImage={true}
+              windowImage={
+                <PlasmicImg__
+                  alt={""}
+                  className={classNames(sty.img__h9ItJ)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"auto"}
+                  loading={"lazy"}
+                  src={{
+                    src: "/plasmic/disuko_website_retro_version/images/ufoImagePinkJpg.jpg",
+                    fullWidth: 2016,
+                    fullHeight: 1512,
+                    aspectRatio: undefined
+                  }}
+                />
               }
-              windowTitle={"COMMISSIONS OPEN"}
+              windowText={
+                "An alien crash landed its spaceship in my back yard? am i dreaming???"
+              }
+              windowTitle={"NEW BLOG POST"}
             />
           </Stack__>
           <Footer
