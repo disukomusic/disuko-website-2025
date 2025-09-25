@@ -60,13 +60,11 @@ import {
 } from "@plasmicapp/react-web/lib/host";
 
 import { Embed } from "@plasmicpkgs/plasmic-basic-components";
-
-import { ThemeValue, useTheme } from "./PlasmicGlobalVariant__Theme"; // plasmic-import: 3K9IqsAFaaID/globalVariant
+import { _useGlobalVariants } from "./plasmic"; // plasmic-import: x4VgG6kzZCVuaqknYN7tgc/projectModule
+import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: x4VgG6kzZCVuaqknYN7tgc/styleTokensProvider
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
-import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
-import plasmic_plasmic_rich_components_css from "../plasmic_rich_components/plasmic.module.css"; // plasmic-import: jkU633o1Cz7HrJdwdxhVHk/projectcss
 import projectcss from "./plasmic.module.css"; // plasmic-import: x4VgG6kzZCVuaqknYN7tgc/projectcss
 import sty from "./PlasmicSnowflakes.module.css"; // plasmic-import: dS2R33xrvHt2/css
 
@@ -128,11 +126,11 @@ function PlasmicSnowflakes__RenderFunc(props: {
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
 
+  const globalVariants = _useGlobalVariants();
+
   const currentUser = useCurrentUser?.() || {};
 
-  const globalVariants = ensureGlobalVariants({
-    theme: useTheme()
-  });
+  const styleTokensClassNames = _useStyleTokens();
 
   return (
     <Embed
@@ -145,22 +143,8 @@ function PlasmicSnowflakes__RenderFunc(props: {
         projectcss.root_reset,
         projectcss.plasmic_default_styles,
         projectcss.plasmic_mixins,
-        projectcss.plasmic_tokens,
-        plasmic_antd_5_hostless_css.plasmic_tokens,
-        plasmic_plasmic_rich_components_css.plasmic_tokens,
-        sty.snowflakes,
-        {
-          [projectcss.global_theme_classic]: hasVariant(
-            globalVariants,
-            "theme",
-            "classic"
-          ),
-          [projectcss.global_theme_classic]: hasVariant(
-            globalVariants,
-            "theme",
-            "classic"
-          )
-        }
+        styleTokensClassNames,
+        sty.snowflakes
       )}
       code={
         '\r\n\r\n\r\n\r\n<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <style>\r\n        @keyframes snowflakes-fall {\r\n            0% { top: -10% }\r\n            100% { top: 100% }\r\n        }\r\n\r\n        @keyframes snowflakes-shake {\r\n            0%, 100% {\r\n                transform: translateX(0);\r\n            }\r\n            50% {\r\n                transform: translateX(80px);\r\n            }\r\n        }\r\n\r\n        .snowflake {\r\n            position: fixed;\r\n            top: -10%;\r\n            z-index: 9999;\r\n            user-select: none;\r\n            cursor: default;\r\n            animation-name: snowflakes-fall, snowflakes-shake;\r\n            animation-duration: 10s, 3s;\r\n            animation-timing-function: linear, ease-in-out;\r\n            animation-iteration-count: infinite, infinite;\r\n            animation-play-state: running, running;\r\n        }\r\n\r\n        .snowflakes {\r\n            /* Add additional styles for the snowflake container if needed */\r\n        }\r\n    </style>\r\n</head>\r\n<body>\r\n    <div class="snowflakes">\r\n        <div class="snowflake"><img src="https://i5.glitter-graphics.org/pub/638/638145bltz6zqhdo.gif"/></div>\r\n        <div class="snowflake"><img src="https://i.ibb.co/q92vdYH/IMG-5494.gif"/></div>\r\n        <div class="snowflake"><img src="https://i5.glitter-graphics.org/pub/638/638145bltz6zqhdo.gif"/></div>\r\n        <div class="snowflake"><img src="https://i.ibb.co/q92vdYH/IMG-5494.gif"/></div>\r\n        <div class="snowflake"><img src="https://i5.glitter-graphics.org/pub/638/638145bltz6zqhdo.gif"/></div>\r\n        <div class="snowflake"><img src="https://i.ibb.co/q92vdYH/IMG-5494.gif"/></div>\r\n        <div class="snowflake"><img src="https://i5.glitter-graphics.org/pub/638/638145bltz6zqhdo.gif"/></div>\r\n        <div class="snowflake"><img src="https://i.ibb.co/q92vdYH/IMG-5494.gif"/></div>\r\n    </div>\r\n</body>\r\n</html>\r\n'

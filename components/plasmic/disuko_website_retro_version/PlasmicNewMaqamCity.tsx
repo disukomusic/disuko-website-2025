@@ -69,13 +69,11 @@ import { AntdTabItem } from "@plasmicpkgs/antd5/skinny/registerTabs";
 import { AntdSingleCollapse } from "@plasmicpkgs/antd5/skinny/registerCollapse";
 import { singleCollapseHelpers as AntdSingleCollapse_Helpers } from "@plasmicpkgs/antd5/skinny/registerCollapse";
 import Footer from "../../Footer"; // plasmic-import: shKoGjSwLEEB/component
-
-import { ThemeValue, useTheme } from "./PlasmicGlobalVariant__Theme"; // plasmic-import: 3K9IqsAFaaID/globalVariant
+import { _useGlobalVariants } from "./plasmic"; // plasmic-import: x4VgG6kzZCVuaqknYN7tgc/projectModule
+import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: x4VgG6kzZCVuaqknYN7tgc/styleTokensProvider
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
-import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
-import plasmic_plasmic_rich_components_css from "../plasmic_rich_components/plasmic.module.css"; // plasmic-import: jkU633o1Cz7HrJdwdxhVHk/projectcss
 import projectcss from "./plasmic.module.css"; // plasmic-import: x4VgG6kzZCVuaqknYN7tgc/projectcss
 import sty from "./PlasmicNewMaqamCity.module.css"; // plasmic-import: -xYfq_7_R7j8/css
 
@@ -173,6 +171,8 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
   const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
+
+  const globalVariants = _useGlobalVariants();
 
   const currentUser = useCurrentUser?.() || {};
 
@@ -428,9 +428,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
     $refs
   });
 
-  const globalVariants = ensureGlobalVariants({
-    theme: useTheme()
-  });
+  const styleTokensClassNames = _useStyleTokens();
 
   return (
     <React.Fragment>
@@ -481,22 +479,8 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
             projectcss.root_reset,
             projectcss.plasmic_default_styles,
             projectcss.plasmic_mixins,
-            projectcss.plasmic_tokens,
-            plasmic_antd_5_hostless_css.plasmic_tokens,
-            plasmic_plasmic_rich_components_css.plasmic_tokens,
-            sty.root,
-            {
-              [projectcss.global_theme_classic]: hasVariant(
-                globalVariants,
-                "theme",
-                "classic"
-              ),
-              [projectcss.global_theme_classic]: hasVariant(
-                globalVariants,
-                "theme",
-                "classic"
-              )
-            }
+            styleTokensClassNames,
+            sty.root
           )}
         >
           <Navbar
@@ -598,11 +582,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
               >
                 {"1 - CONCEPT"}
               </h1>
-              <Stack__
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.columns__a7RdE)}
-              >
+              <div className={classNames(projectcss.all, sty.columns__a7RdE)}>
                 <div className={classNames(projectcss.all, sty.column__zlRPt)}>
                   <div
                     className={classNames(
@@ -622,7 +602,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
                     videoId={"6F-ori0hmxs"}
                   />
                 </div>
-              </Stack__>
+              </div>
               <AntdTabs
                 data-plasmic-name={"tabs"}
                 data-plasmic-override={overrides.tabs}
@@ -1643,11 +1623,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
               >
                 {"2 - FRAMEWORKS"}
               </h1>
-              <Stack__
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.columns__jwwhs)}
-              >
+              <div className={classNames(projectcss.all, sty.columns__jwwhs)}>
                 <div className={classNames(projectcss.all, sty.column__y9D7S)}>
                   <div
                     className={classNames(
@@ -1667,7 +1643,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
                     videoId={"afVmFh0A62M"}
                   />
                 </div>
-              </Stack__>
+              </div>
               <AntdTabs
                 data-plasmic-name={"tabs2"}
                 data-plasmic-override={overrides.tabs2}
@@ -2636,11 +2612,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
               >
                 {"3 - ITERATION"}
               </h1>
-              <Stack__
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.columns___1Rb2E)}
-              >
+              <div className={classNames(projectcss.all, sty.columns___1Rb2E)}>
                 <div className={classNames(projectcss.all, sty.column__rCgsf)}>
                   <div
                     className={classNames(
@@ -2660,7 +2632,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
                     videoId={"afVmFh0A62M"}
                   />
                 </div>
-              </Stack__>
+              </div>
               <AntdTabs
                 data-plasmic-name={"tabs3"}
                 data-plasmic-override={overrides.tabs3}
@@ -3533,11 +3505,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
               >
                 {"4 - FINAL DEVELOPMENT"}
               </h1>
-              <Stack__
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.columns__noiHi)}
-              >
+              <div className={classNames(projectcss.all, sty.columns__noiHi)}>
                 <div className={classNames(projectcss.all, sty.column__eymcb)}>
                   <div
                     className={classNames(
@@ -3585,7 +3553,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
                     }}
                   />
                 </div>
-              </Stack__>
+              </div>
               <AntdTabs
                 data-plasmic-name={"tabs4"}
                 data-plasmic-override={overrides.tabs4}

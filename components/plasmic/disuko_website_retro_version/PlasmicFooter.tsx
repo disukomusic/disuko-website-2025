@@ -60,14 +60,11 @@ import {
 } from "@plasmicapp/react-web/lib/host";
 
 import { Embed } from "@plasmicpkgs/plasmic-basic-components";
-
-import { useScreenVariants as useScreenVariantsdmuurUfQuA6N } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: DmuurUFQuA6N/globalVariant
-import { ThemeValue, useTheme } from "./PlasmicGlobalVariant__Theme"; // plasmic-import: 3K9IqsAFaaID/globalVariant
+import { _useGlobalVariants } from "./plasmic"; // plasmic-import: x4VgG6kzZCVuaqknYN7tgc/projectModule
+import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: x4VgG6kzZCVuaqknYN7tgc/styleTokensProvider
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
-import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
-import plasmic_plasmic_rich_components_css from "../plasmic_rich_components/plasmic.module.css"; // plasmic-import: jkU633o1Cz7HrJdwdxhVHk/projectcss
 import projectcss from "./plasmic.module.css"; // plasmic-import: x4VgG6kzZCVuaqknYN7tgc/projectcss
 import sty from "./PlasmicFooter.module.css"; // plasmic-import: shKoGjSwLEEB/css
 
@@ -134,12 +131,11 @@ function PlasmicFooter__RenderFunc(props: {
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
 
+  const globalVariants = _useGlobalVariants();
+
   const currentUser = useCurrentUser?.() || {};
 
-  const globalVariants = ensureGlobalVariants({
-    screen: useScreenVariantsdmuurUfQuA6N(),
-    theme: useTheme()
-  });
+  const styleTokensClassNames = _useStyleTokens();
 
   return (
     <div
@@ -152,21 +148,9 @@ function PlasmicFooter__RenderFunc(props: {
         projectcss.root_reset,
         projectcss.plasmic_default_styles,
         projectcss.plasmic_mixins,
-        projectcss.plasmic_tokens,
-        plasmic_antd_5_hostless_css.plasmic_tokens,
-        plasmic_plasmic_rich_components_css.plasmic_tokens,
+        styleTokensClassNames,
         sty.root,
         {
-          [projectcss.global_theme_classic]: hasVariant(
-            globalVariants,
-            "theme",
-            "classic"
-          ),
-          [projectcss.global_theme_classic]: hasVariant(
-            globalVariants,
-            "theme",
-            "classic"
-          ),
           [sty.rootglobal_theme_classic]: hasVariant(
             globalVariants,
             "theme",
@@ -175,11 +159,9 @@ function PlasmicFooter__RenderFunc(props: {
         }
       )}
     >
-      <Stack__
-        as={"div"}
+      <div
         data-plasmic-name={"columns"}
         data-plasmic-override={overrides.columns}
-        hasGap={true}
         className={classNames(projectcss.all, sty.columns, {
           [sty.columnsglobal_theme_classic]: hasVariant(
             globalVariants,
@@ -189,11 +171,9 @@ function PlasmicFooter__RenderFunc(props: {
         })}
       >
         <div className={classNames(projectcss.all, sty.column__fE1Co)}>
-          <Stack__
-            as={"div"}
+          <div
             data-plasmic-name={"freeBox"}
             data-plasmic-override={overrides.freeBox}
-            hasGap={true}
             className={classNames(projectcss.all, sty.freeBox)}
           >
             <PlasmicLink__
@@ -231,7 +211,7 @@ function PlasmicFooter__RenderFunc(props: {
                 }}
               />
             </PlasmicLink__>
-          </Stack__>
+          </div>
         </div>
         <div className={classNames(projectcss.all, sty.column___7Zhwx)}>
           <div
@@ -306,7 +286,7 @@ function PlasmicFooter__RenderFunc(props: {
             }
           />
         </div>
-      </Stack__>
+      </div>
     </div>
   ) as React.ReactElement | null;
 }

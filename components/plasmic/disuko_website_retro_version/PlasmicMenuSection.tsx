@@ -61,13 +61,11 @@ import {
 
 import { BaseSection } from "@plasmicpkgs/react-aria/skinny/registerSection";
 import MenuItem from "../../MenuItem"; // plasmic-import: YLVvc7dmfMyU/component
-
-import { ThemeValue, useTheme } from "./PlasmicGlobalVariant__Theme"; // plasmic-import: 3K9IqsAFaaID/globalVariant
+import { _useGlobalVariants } from "./plasmic"; // plasmic-import: x4VgG6kzZCVuaqknYN7tgc/projectModule
+import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: x4VgG6kzZCVuaqknYN7tgc/styleTokensProvider
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
-import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
-import plasmic_plasmic_rich_components_css from "../plasmic_rich_components/plasmic.module.css"; // plasmic-import: jkU633o1Cz7HrJdwdxhVHk/projectcss
 import projectcss from "./plasmic.module.css"; // plasmic-import: x4VgG6kzZCVuaqknYN7tgc/projectcss
 import sty from "./PlasmicMenuSection.module.css"; // plasmic-import: rT-Io0tdANaB/css
 
@@ -138,11 +136,11 @@ function PlasmicMenuSection__RenderFunc(props: {
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
 
+  const globalVariants = _useGlobalVariants();
+
   const currentUser = useCurrentUser?.() || {};
 
-  const globalVariants = ensureGlobalVariants({
-    theme: useTheme()
-  });
+  const styleTokensClassNames = _useStyleTokens();
 
   return (
     <BaseSection
@@ -155,22 +153,8 @@ function PlasmicMenuSection__RenderFunc(props: {
         projectcss.root_reset,
         projectcss.plasmic_default_styles,
         projectcss.plasmic_mixins,
-        projectcss.plasmic_tokens,
-        plasmic_antd_5_hostless_css.plasmic_tokens,
-        plasmic_plasmic_rich_components_css.plasmic_tokens,
-        sty.root,
-        {
-          [projectcss.global_theme_classic]: hasVariant(
-            globalVariants,
-            "theme",
-            "classic"
-          ),
-          [projectcss.global_theme_classic]: hasVariant(
-            globalVariants,
-            "theme",
-            "classic"
-          )
-        }
+        styleTokensClassNames,
+        sty.root
       )}
       header={
         <div

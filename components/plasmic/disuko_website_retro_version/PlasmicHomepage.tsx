@@ -69,14 +69,11 @@ import WindowButton from "../../WindowButton"; // plasmic-import: KZYdo-R8GYAn/c
 import { AntdPopover } from "@plasmicpkgs/antd5/skinny/registerPopover";
 import { Embed } from "@plasmicpkgs/plasmic-basic-components";
 import Footer from "../../Footer"; // plasmic-import: shKoGjSwLEEB/component
-
-import { ThemeValue, useTheme } from "./PlasmicGlobalVariant__Theme"; // plasmic-import: 3K9IqsAFaaID/globalVariant
-import { useScreenVariants as useScreenVariantsdmuurUfQuA6N } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: DmuurUFQuA6N/globalVariant
+import { _useGlobalVariants } from "./plasmic"; // plasmic-import: x4VgG6kzZCVuaqknYN7tgc/projectModule
+import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: x4VgG6kzZCVuaqknYN7tgc/styleTokensProvider
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
-import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
-import plasmic_plasmic_rich_components_css from "../plasmic_rich_components/plasmic.module.css"; // plasmic-import: jkU633o1Cz7HrJdwdxhVHk/projectcss
 import projectcss from "./plasmic.module.css"; // plasmic-import: x4VgG6kzZCVuaqknYN7tgc/projectcss
 import sty from "./PlasmicHomepage.module.css"; // plasmic-import: _3yXuN7uR8m4/css
 
@@ -153,6 +150,8 @@ function PlasmicHomepage__RenderFunc(props: {
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
 
+  const globalVariants = _useGlobalVariants();
+
   const currentUser = useCurrentUser?.() || {};
 
   const stateSpecs: Parameters<typeof useDollarState>[0] = React.useMemo(
@@ -173,10 +172,7 @@ function PlasmicHomepage__RenderFunc(props: {
     $refs
   });
 
-  const globalVariants = ensureGlobalVariants({
-    theme: useTheme(),
-    screen: useScreenVariantsdmuurUfQuA6N()
-  });
+  const styleTokensClassNames = _useStyleTokens();
 
   return (
     <React.Fragment>
@@ -228,33 +224,19 @@ function PlasmicHomepage__RenderFunc(props: {
       `}</style>
 
       <div className={projectcss.plasmic_page_wrapper}>
-        <Stack__
-          as={"div"}
+        <div
           data-plasmic-name={"mainPage"}
           data-plasmic-override={overrides.mainPage}
           data-plasmic-root={true}
           data-plasmic-for-node={forNode}
-          hasGap={true}
           className={classNames(
             projectcss.all,
             projectcss.root_reset,
             projectcss.plasmic_default_styles,
             projectcss.plasmic_mixins,
-            projectcss.plasmic_tokens,
-            plasmic_antd_5_hostless_css.plasmic_tokens,
-            plasmic_plasmic_rich_components_css.plasmic_tokens,
+            styleTokensClassNames,
             sty.mainPage,
             {
-              [projectcss.global_theme_classic]: hasVariant(
-                globalVariants,
-                "theme",
-                "classic"
-              ),
-              [projectcss.global_theme_classic]: hasVariant(
-                globalVariants,
-                "theme",
-                "classic"
-              ),
               [sty.mainPageglobal_theme_classic]: hasVariant(
                 globalVariants,
                 "theme",
@@ -275,11 +257,9 @@ function PlasmicHomepage__RenderFunc(props: {
             })}
           />
 
-          <Stack__
-            as={"div"}
+          <div
             data-plasmic-name={"main"}
             data-plasmic-override={overrides.main}
-            hasGap={true}
             className={classNames(projectcss.all, sty.main)}
           >
             <div
@@ -351,9 +331,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     }
                     windowTitle={"hi there!"}
                   >
-                    <Stack__
-                      as={"div"}
-                      hasGap={true}
+                    <div
                       className={classNames(
                         projectcss.all,
                         sty.freeBox__e56VT,
@@ -543,7 +521,7 @@ function PlasmicHomepage__RenderFunc(props: {
                           }}
                         />
                       </WindowButton>
-                    </Stack__>
+                    </div>
                   </Window>
                   <div
                     className={classNames(projectcss.all, sty.freeBox__mb3Nk)}
@@ -559,21 +537,7 @@ function PlasmicHomepage__RenderFunc(props: {
                         projectcss.root_reset,
                         projectcss.plasmic_default_styles,
                         projectcss.plasmic_mixins,
-                        projectcss.plasmic_tokens,
-                        plasmic_antd_5_hostless_css.plasmic_tokens,
-                        plasmic_plasmic_rich_components_css.plasmic_tokens,
-                        {
-                          [projectcss.global_theme_classic]: hasVariant(
-                            globalVariants,
-                            "theme",
-                            "classic"
-                          ),
-                          [projectcss.global_theme_classic]: hasVariant(
-                            globalVariants,
-                            "theme",
-                            "classic"
-                          )
-                        }
+                        styleTokensClassNames
                       )}
                       mouseEnterDelay={0}
                       mouseLeaveDelay={0}
@@ -668,14 +632,10 @@ function PlasmicHomepage__RenderFunc(props: {
                     />
                   </div>
                 </div>
-                <Stack__
-                  as={"div"}
-                  hasGap={true}
+                <div
                   className={classNames(projectcss.all, sty.freeBox___1BUuK)}
                 >
-                  <Stack__
-                    as={"div"}
-                    hasGap={true}
+                  <div
                     className={classNames(projectcss.all, sty.freeBox__j1TvY)}
                   >
                     <PlasmicImg__
@@ -707,10 +667,8 @@ function PlasmicHomepage__RenderFunc(props: {
                       }
                       windowTitle={"Music Production"}
                     />
-                  </Stack__>
-                  <Stack__
-                    as={"div"}
-                    hasGap={true}
+                  </div>
+                  <div
                     className={classNames(projectcss.all, sty.freeBox__pdtg)}
                   >
                     <Window
@@ -742,10 +700,8 @@ function PlasmicHomepage__RenderFunc(props: {
                         aspectRatio: undefined
                       }}
                     />
-                  </Stack__>
-                  <Stack__
-                    as={"div"}
-                    hasGap={true}
+                  </div>
+                  <div
                     className={classNames(projectcss.all, sty.freeBox__ePVwd)}
                   >
                     <PlasmicImg__
@@ -777,8 +733,8 @@ function PlasmicHomepage__RenderFunc(props: {
                       }
                       windowTitle={"3D/2D Design"}
                     />
-                  </Stack__>
-                </Stack__>
+                  </div>
+                </div>
               </div>
               <div className={classNames(projectcss.all, sty.column___1HqMm)}>
                 <Embed
@@ -831,7 +787,7 @@ function PlasmicHomepage__RenderFunc(props: {
               }
               windowTitle={"NEW BLOG POST"}
             />
-          </Stack__>
+          </div>
           <Footer
             data-plasmic-name={"footer"}
             data-plasmic-override={overrides.footer}
@@ -843,7 +799,7 @@ function PlasmicHomepage__RenderFunc(props: {
               )
             })}
           />
-        </Stack__>
+        </div>
       </div>
     </React.Fragment>
   ) as React.ReactElement | null;

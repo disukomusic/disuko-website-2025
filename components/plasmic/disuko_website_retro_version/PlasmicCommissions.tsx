@@ -65,14 +65,11 @@ import { usePlasmicDataSourceContext } from "@plasmicapp/data-sources-context";
 import Navbar from "../../Navbar"; // plasmic-import: 5THU1wffFibB/component
 import WindowButton from "../../WindowButton"; // plasmic-import: KZYdo-R8GYAn/component
 import Window from "../../Window"; // plasmic-import: BWjgdOwFY_OO/component
-
-import { ThemeValue, useTheme } from "./PlasmicGlobalVariant__Theme"; // plasmic-import: 3K9IqsAFaaID/globalVariant
-import { useScreenVariants as useScreenVariantsdmuurUfQuA6N } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: DmuurUFQuA6N/globalVariant
+import { _useGlobalVariants } from "./plasmic"; // plasmic-import: x4VgG6kzZCVuaqknYN7tgc/projectModule
+import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: x4VgG6kzZCVuaqknYN7tgc/styleTokensProvider
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
-import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
-import plasmic_plasmic_rich_components_css from "../plasmic_rich_components/plasmic.module.css"; // plasmic-import: jkU633o1Cz7HrJdwdxhVHk/projectcss
 import projectcss from "./plasmic.module.css"; // plasmic-import: x4VgG6kzZCVuaqknYN7tgc/projectcss
 import sty from "./PlasmicCommissions.module.css"; // plasmic-import: jITmhNWlDefq/css
 
@@ -134,12 +131,11 @@ function PlasmicCommissions__RenderFunc(props: {
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
 
+  const globalVariants = _useGlobalVariants();
+
   const currentUser = useCurrentUser?.() || {};
 
-  const globalVariants = ensureGlobalVariants({
-    theme: useTheme(),
-    screen: useScreenVariantsdmuurUfQuA6N()
-  });
+  const styleTokensClassNames = _useStyleTokens();
 
   return (
     <React.Fragment>
@@ -194,21 +190,9 @@ function PlasmicCommissions__RenderFunc(props: {
           projectcss.root_reset,
           projectcss.plasmic_default_styles,
           projectcss.plasmic_mixins,
-          projectcss.plasmic_tokens,
-          plasmic_antd_5_hostless_css.plasmic_tokens,
-          plasmic_plasmic_rich_components_css.plasmic_tokens,
+          styleTokensClassNames,
           sty.root,
           {
-            [projectcss.global_theme_classic]: hasVariant(
-              globalVariants,
-              "theme",
-              "classic"
-            ),
-            [projectcss.global_theme_classic]: hasVariant(
-              globalVariants,
-              "theme",
-              "classic"
-            ),
             [sty.rootglobal_theme_classic]: hasVariant(
               globalVariants,
               "theme",
@@ -285,16 +269,8 @@ function PlasmicCommissions__RenderFunc(props: {
           >
             {"Pricing Estimates + Basic Details"}
           </div>
-          <Stack__
-            as={"div"}
-            hasGap={true}
-            className={classNames(projectcss.all, sty.columns__u2Lre)}
-          >
-            <Stack__
-              as={"div"}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.column__qyp8)}
-            >
+          <div className={classNames(projectcss.all, sty.columns__u2Lre)}>
+            <div className={classNames(projectcss.all, sty.column__qyp8)}>
               <div
                 className={classNames(
                   projectcss.all,
@@ -469,12 +445,8 @@ function PlasmicCommissions__RenderFunc(props: {
                   }
                 </div>
               </Window>
-            </Stack__>
-            <Stack__
-              as={"div"}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.column___2OlL9)}
-            >
+            </div>
+            <div className={classNames(projectcss.all, sty.column___2OlL9)}>
               <div
                 className={classNames(
                   projectcss.all,
@@ -703,10 +675,8 @@ function PlasmicCommissions__RenderFunc(props: {
                   }
                 </div>
               </Window>
-            </Stack__>
-            <Stack__
-              as={"div"}
-              hasGap={true}
+            </div>
+            <div
               className={classNames(projectcss.all, sty.column__aScra, {
                 [sty.columnglobal_theme_classic__aScraeNktM]: hasVariant(
                   globalVariants,
@@ -893,8 +863,8 @@ function PlasmicCommissions__RenderFunc(props: {
                   }
                 </div>
               </Window>
-            </Stack__>
-          </Stack__>
+            </div>
+          </div>
           <div
             className={classNames(
               projectcss.all,
@@ -912,11 +882,7 @@ function PlasmicCommissions__RenderFunc(props: {
             {"Current Commissions Progress"}
           </div>
           <div className={classNames(projectcss.all, sty.columns__arCte)}>
-            <Stack__
-              as={"div"}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.column__nwOqx)}
-            >
+            <div className={classNames(projectcss.all, sty.column__nwOqx)}>
               <div
                 className={classNames(
                   projectcss.all,
@@ -933,9 +899,7 @@ function PlasmicCommissions__RenderFunc(props: {
               >
                 {"Queue"}
               </div>
-              <Stack__
-                as={"div"}
-                hasGap={true}
+              <div
                 className={classNames(projectcss.all, sty.freeBox___6SyU, {
                   [sty.freeBoxglobal_theme_classic___6SyUeNktM]: hasVariant(
                     globalVariants,
@@ -944,12 +908,8 @@ function PlasmicCommissions__RenderFunc(props: {
                   )
                 })}
               />
-            </Stack__>
-            <Stack__
-              as={"div"}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.column__ozfWe)}
-            >
+            </div>
+            <div className={classNames(projectcss.all, sty.column__ozfWe)}>
               <div
                 className={classNames(
                   projectcss.all,
@@ -966,9 +926,7 @@ function PlasmicCommissions__RenderFunc(props: {
               >
                 {"WIP"}
               </div>
-              <Stack__
-                as={"div"}
-                hasGap={true}
+              <div
                 className={classNames(projectcss.all, sty.freeBox___6EVmN, {
                   [sty.freeBoxglobal_theme_classic___6EVmNeNktM]: hasVariant(
                     globalVariants,
@@ -1009,13 +967,9 @@ function PlasmicCommissions__RenderFunc(props: {
                   windowText={"TeaSona Character for @hiveandhearth.cafe"}
                   windowTitle={"3D - TeaSona"}
                 />
-              </Stack__>
-            </Stack__>
-            <Stack__
-              as={"div"}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.column__p1BVq)}
-            >
+              </div>
+            </div>
+            <div className={classNames(projectcss.all, sty.column__p1BVq)}>
               <div
                 className={classNames(
                   projectcss.all,
@@ -1032,9 +986,7 @@ function PlasmicCommissions__RenderFunc(props: {
               >
                 {"Complete"}
               </div>
-              <Stack__
-                as={"div"}
-                hasGap={true}
+              <div
                 className={classNames(projectcss.all, sty.freeBox__oxqpO, {
                   [sty.freeBoxglobal_theme_classic__oxqpOeNktM]: hasVariant(
                     globalVariants,
@@ -1213,8 +1165,8 @@ function PlasmicCommissions__RenderFunc(props: {
                   windowText={"Logo for https://www.instagram.com/millzflips/"}
                   windowTitle={"2D - Millz Flips Logo"}
                 />
-              </Stack__>
-            </Stack__>
+              </div>
+            </div>
           </div>
         </div>
       </div>

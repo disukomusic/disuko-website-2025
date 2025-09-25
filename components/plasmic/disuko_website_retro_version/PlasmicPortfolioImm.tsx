@@ -67,14 +67,11 @@ import WindowButton from "../../WindowButton"; // plasmic-import: KZYdo-R8GYAn/c
 import Window from "../../Window"; // plasmic-import: BWjgdOwFY_OO/component
 import YouTube from "@plasmicpkgs/react-youtube";
 import Tilt from "@plasmicpkgs/react-parallax-tilt";
-
-import { ThemeValue, useTheme } from "./PlasmicGlobalVariant__Theme"; // plasmic-import: 3K9IqsAFaaID/globalVariant
-import { useScreenVariants as useScreenVariantsdmuurUfQuA6N } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: DmuurUFQuA6N/globalVariant
+import { _useGlobalVariants } from "./plasmic"; // plasmic-import: x4VgG6kzZCVuaqknYN7tgc/projectModule
+import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: x4VgG6kzZCVuaqknYN7tgc/styleTokensProvider
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
-import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
-import plasmic_plasmic_rich_components_css from "../plasmic_rich_components/plasmic.module.css"; // plasmic-import: jkU633o1Cz7HrJdwdxhVHk/projectcss
 import projectcss from "./plasmic.module.css"; // plasmic-import: x4VgG6kzZCVuaqknYN7tgc/projectcss
 import sty from "./PlasmicPortfolioImm.module.css"; // plasmic-import: 1EylZ3BxOpMk/css
 
@@ -138,12 +135,11 @@ function PlasmicPortfolioImm__RenderFunc(props: {
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
 
+  const globalVariants = _useGlobalVariants();
+
   const currentUser = useCurrentUser?.() || {};
 
-  const globalVariants = ensureGlobalVariants({
-    theme: useTheme(),
-    screen: useScreenVariantsdmuurUfQuA6N()
-  });
+  const styleTokensClassNames = _useStyleTokens();
 
   return (
     <React.Fragment>
@@ -179,21 +175,9 @@ function PlasmicPortfolioImm__RenderFunc(props: {
             projectcss.root_reset,
             projectcss.plasmic_default_styles,
             projectcss.plasmic_mixins,
-            projectcss.plasmic_tokens,
-            plasmic_antd_5_hostless_css.plasmic_tokens,
-            plasmic_plasmic_rich_components_css.plasmic_tokens,
+            styleTokensClassNames,
             sty._3DDesign,
             {
-              [projectcss.global_theme_classic]: hasVariant(
-                globalVariants,
-                "theme",
-                "classic"
-              ),
-              [projectcss.global_theme_classic]: hasVariant(
-                globalVariants,
-                "theme",
-                "classic"
-              ),
               [sty._3DDesignglobal_theme_classic]: hasVariant(
                 globalVariants,
                 "theme",
@@ -238,11 +222,7 @@ function PlasmicPortfolioImm__RenderFunc(props: {
             />
 
             <div className={classNames(projectcss.all, sty.freeBox__vp3Cp)}>
-              <Stack__
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.freeBox___2Ex8W)}
-              >
+              <div className={classNames(projectcss.all, sty.freeBox___2Ex8W)}>
                 <div
                   className={classNames(
                     projectcss.all,
@@ -290,14 +270,10 @@ function PlasmicPortfolioImm__RenderFunc(props: {
                   )}
                 >
                   {
-                    'New Maqam City invites you to remix, manipulate, and vibe to music from across North Africa and the Middle East. Incorporating everything from Gnawa beats to synthpop, Macrou, and 808 drum patterns, this interactive installation catalyzes a transcendental state inspired by Sufi mysticism and communion through music. \n\nI worked with MIPSTERZ to design the installation for their "ALHAMDU | MUSLIM FUTURISM\u201d exhibition. It was met with great success at the Colorado Springs Fine Arts Center opening, and will be shown at the Tribeca Immersive Festival in New York City June 2025.'
+                    'New Maqam City invites you to remix, manipulate, and vibe to music from across North Africa and the Middle East. Incorporating everything from Gnawa beats to synthpop, Macrou, and 808 drum patterns, this interactive installation catalyzes a transcendental state inspired by Sufi mysticism and communion through music. \n\nI worked with MIPSTERZ to design the installation for their "ALHAMDU | MUSLIM FUTURISM\u201d exhibition. It was met with great success at the Colorado Springs Fine Arts Center opening, and was also shown at the Tribeca Immersive Festival in New York City June 2025.'
                   }
                 </div>
-                <Stack__
-                  as={"div"}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.freeBox__jjZyZ)}
-                >
+                <div className={classNames(projectcss.all, sty.freeBox__jjZyZ)}>
                   <WindowButton
                     className={classNames(
                       "__wab_instance",
@@ -332,7 +308,7 @@ function PlasmicPortfolioImm__RenderFunc(props: {
                       {"Tribeca Festival Page"}
                     </div>
                   </WindowButton>
-                </Stack__>
+                </div>
                 <YouTube
                   className={classNames("__wab_instance", sty.youTube___1GN)}
                   videoId={"5Kd5-pADXDw"}
@@ -416,14 +392,10 @@ function PlasmicPortfolioImm__RenderFunc(props: {
                     />
                   </div>
                 </div>
-              </Stack__>
+              </div>
             </div>
             <div className={classNames(projectcss.all, sty.freeBox__mCM)}>
-              <Stack__
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.freeBox__zmYwX)}
-              >
+              <div className={classNames(projectcss.all, sty.freeBox__zmYwX)}>
                 <div
                   className={classNames(
                     projectcss.all,
@@ -560,12 +532,8 @@ function PlasmicPortfolioImm__RenderFunc(props: {
                     aspectRatio: undefined
                   }}
                 />
-              </Stack__>
-              <Stack__
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.freeBox__gj4Pj)}
-              >
+              </div>
+              <div className={classNames(projectcss.all, sty.freeBox__gj4Pj)}>
                 <div
                   className={classNames(
                     projectcss.all,
@@ -680,12 +648,8 @@ function PlasmicPortfolioImm__RenderFunc(props: {
                     aspectRatio: undefined
                   }}
                 />
-              </Stack__>
-              <Stack__
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.freeBox__jiIoG)}
-              >
+              </div>
+              <div className={classNames(projectcss.all, sty.freeBox__jiIoG)}>
                 <div
                   className={classNames(
                     projectcss.all,
@@ -733,7 +697,7 @@ function PlasmicPortfolioImm__RenderFunc(props: {
                   )}
                 >
                   {
-                    "HOLOGROUNDS was a virtual music festival held in the social VR platform VRChat. I worked with my team at Red Panda Studios to create a stage world from scratch, modelling out the environment and creating systems for synced lighting and visuals to our hologram-DJs. "
+                    "HOLOGROUNDS was a virtual music festival held in the social VR platform VRChat. I worked with my team at Red Panda Studios to create a stage world from scratch, modelling out the environment and creating systems for synced lighting and visuals to our hologram-DJs. The entire event was constructed in just 2 weeks."
                   }
                 </div>
                 <WindowButton
@@ -800,12 +764,8 @@ function PlasmicPortfolioImm__RenderFunc(props: {
                     aspectRatio: undefined
                   }}
                 />
-              </Stack__>
-              <Stack__
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.freeBox__dtrej)}
-              >
+              </div>
+              <div className={classNames(projectcss.all, sty.freeBox__dtrej)}>
                 <div
                   className={classNames(
                     projectcss.all,
@@ -918,12 +878,8 @@ function PlasmicPortfolioImm__RenderFunc(props: {
                     aspectRatio: undefined
                   }}
                 />
-              </Stack__>
-              <Stack__
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.freeBox__avUeE)}
-              >
+              </div>
+              <div className={classNames(projectcss.all, sty.freeBox__avUeE)}>
                 <div
                   className={classNames(
                     projectcss.all,
@@ -996,11 +952,7 @@ function PlasmicPortfolioImm__RenderFunc(props: {
                   videoId={"Vl3FjUiB3xo"}
                 />
 
-                <Stack__
-                  as={"div"}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.freeBox__ro7Nq)}
-                >
+                <div className={classNames(projectcss.all, sty.freeBox__ro7Nq)}>
                   <div
                     className={classNames(
                       projectcss.all,
@@ -1015,7 +967,7 @@ function PlasmicPortfolioImm__RenderFunc(props: {
                       }
                     )}
                   >
-                    {"Frutiger Aero Experience - VR Experience"}
+                    {"Frutiger Aero Experience - VR Prototype"}
                   </div>
                   <div
                     className={classNames(
@@ -1074,13 +1026,9 @@ function PlasmicPortfolioImm__RenderFunc(props: {
                     className={classNames("__wab_instance", sty.youTube__rtUap)}
                     videoId={"Ey5fA03QNu8"}
                   />
-                </Stack__>
-              </Stack__>
-              <Stack__
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.freeBox__lfPiy)}
-              >
+                </div>
+              </div>
+              <div className={classNames(projectcss.all, sty.freeBox__lfPiy)}>
                 <div
                   className={classNames(
                     projectcss.all,
@@ -1140,12 +1088,8 @@ function PlasmicPortfolioImm__RenderFunc(props: {
                     aspectRatio: undefined
                   }}
                 />
-              </Stack__>
-              <Stack__
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.freeBox__fz0Ce)}
-              >
+              </div>
+              <div className={classNames(projectcss.all, sty.freeBox__fz0Ce)}>
                 <div
                   className={classNames(
                     projectcss.all,
@@ -1205,7 +1149,7 @@ function PlasmicPortfolioImm__RenderFunc(props: {
                     aspectRatio: undefined
                   }}
                 />
-              </Stack__>
+              </div>
               <div className={classNames(projectcss.all, sty.freeBox__fwQTu)}>
                 <div
                   className={classNames(

@@ -68,14 +68,11 @@ import Multiwindow from "../../Multiwindow"; // plasmic-import: agRDam8zA0LH/com
 import { SliderWrapper } from "@plasmicpkgs/react-slick";
 import { sliderHelpers as SliderWrapper_Helpers } from "@plasmicpkgs/react-slick";
 import Window from "../../Window"; // plasmic-import: BWjgdOwFY_OO/component
-
-import { ThemeValue, useTheme } from "./PlasmicGlobalVariant__Theme"; // plasmic-import: 3K9IqsAFaaID/globalVariant
-import { useScreenVariants as useScreenVariantsdmuurUfQuA6N } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: DmuurUFQuA6N/globalVariant
+import { _useGlobalVariants } from "./plasmic"; // plasmic-import: x4VgG6kzZCVuaqknYN7tgc/projectModule
+import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: x4VgG6kzZCVuaqknYN7tgc/styleTokensProvider
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
-import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
-import plasmic_plasmic_rich_components_css from "../plasmic_rich_components/plasmic.module.css"; // plasmic-import: jkU633o1Cz7HrJdwdxhVHk/projectcss
 import projectcss from "./plasmic.module.css"; // plasmic-import: x4VgG6kzZCVuaqknYN7tgc/projectcss
 import sty from "./PlasmicPortfolio2DDesign.module.css"; // plasmic-import: vD69cqR4XkX2/css
 
@@ -142,6 +139,8 @@ function PlasmicPortfolio2DDesign__RenderFunc(props: {
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
 
+  const globalVariants = _useGlobalVariants();
+
   const currentUser = useCurrentUser?.() || {};
 
   const stateSpecs: Parameters<typeof useDollarState>[0] = React.useMemo(
@@ -165,10 +164,7 @@ function PlasmicPortfolio2DDesign__RenderFunc(props: {
     $refs
   });
 
-  const globalVariants = ensureGlobalVariants({
-    theme: useTheme(),
-    screen: useScreenVariantsdmuurUfQuA6N()
-  });
+  const styleTokensClassNames = _useStyleTokens();
 
   return (
     <React.Fragment>
@@ -204,21 +200,9 @@ function PlasmicPortfolio2DDesign__RenderFunc(props: {
             projectcss.root_reset,
             projectcss.plasmic_default_styles,
             projectcss.plasmic_mixins,
-            projectcss.plasmic_tokens,
-            plasmic_antd_5_hostless_css.plasmic_tokens,
-            plasmic_plasmic_rich_components_css.plasmic_tokens,
+            styleTokensClassNames,
             sty._3DDesign,
             {
-              [projectcss.global_theme_classic]: hasVariant(
-                globalVariants,
-                "theme",
-                "classic"
-              ),
-              [projectcss.global_theme_classic]: hasVariant(
-                globalVariants,
-                "theme",
-                "classic"
-              ),
               [sty._3DDesignglobal_theme_classic]: hasVariant(
                 globalVariants,
                 "theme",
@@ -1060,16 +1044,8 @@ function PlasmicPortfolio2DDesign__RenderFunc(props: {
           >
             {"Posters"}
           </div>
-          <Stack__
-            as={"div"}
-            hasGap={true}
-            className={classNames(projectcss.all, sty.freeBox__ycdwN)}
-          >
-            <Stack__
-              as={"div"}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.freeBox__hSgcn)}
-            >
+          <div className={classNames(projectcss.all, sty.freeBox__ycdwN)}>
+            <div className={classNames(projectcss.all, sty.freeBox__hSgcn)}>
               <PlasmicImg__
                 alt={""}
                 className={classNames(sty.img__fvEA)}
@@ -1105,12 +1081,8 @@ function PlasmicPortfolio2DDesign__RenderFunc(props: {
                   aspectRatio: undefined
                 }}
               />
-            </Stack__>
-            <Stack__
-              as={"div"}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.freeBox__a7Amq)}
-            >
+            </div>
+            <div className={classNames(projectcss.all, sty.freeBox__a7Amq)}>
               <PlasmicImg__
                 alt={""}
                 className={classNames(sty.img___0ImVd)}
@@ -1146,12 +1118,8 @@ function PlasmicPortfolio2DDesign__RenderFunc(props: {
                   aspectRatio: undefined
                 }}
               />
-            </Stack__>
-            <Stack__
-              as={"div"}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.freeBox__zb6Km)}
-            >
+            </div>
+            <div className={classNames(projectcss.all, sty.freeBox__zb6Km)}>
               <PlasmicImg__
                 alt={""}
                 className={classNames(sty.img___5Kvd)}
@@ -1169,7 +1137,7 @@ function PlasmicPortfolio2DDesign__RenderFunc(props: {
                   aspectRatio: undefined
                 }}
               />
-            </Stack__>
+            </div>
             <div
               className={classNames(
                 projectcss.all,
@@ -1351,13 +1319,9 @@ function PlasmicPortfolio2DDesign__RenderFunc(props: {
             >
               {"Merch Design"}
             </div>
-          </Stack__>
+          </div>
           <div className={classNames(projectcss.all, sty.freeBox__qM0Gm)}>
-            <Stack__
-              as={"div"}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.freeBox__wAsNr)}
-            >
+            <div className={classNames(projectcss.all, sty.freeBox__wAsNr)}>
               <Window
                 className={classNames("__wab_instance", sty.window__uNuOs)}
                 linkDestination={`/merch`}
@@ -1427,12 +1391,8 @@ function PlasmicPortfolio2DDesign__RenderFunc(props: {
                   aspectRatio: undefined
                 }}
               />
-            </Stack__>
-            <Stack__
-              as={"div"}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.freeBox___10XuP)}
-            >
+            </div>
+            <div className={classNames(projectcss.all, sty.freeBox___10XuP)}>
               <PlasmicImg__
                 alt={""}
                 className={classNames(sty.img___0XMzN)}
@@ -1486,7 +1446,7 @@ function PlasmicPortfolio2DDesign__RenderFunc(props: {
                   }}
                 />
               </div>
-            </Stack__>
+            </div>
           </div>
         </div>
       </div>

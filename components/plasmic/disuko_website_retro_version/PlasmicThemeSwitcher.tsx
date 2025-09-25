@@ -66,13 +66,11 @@ import { BaseSelectValue } from "@plasmicpkgs/react-aria/skinny/registerSelect";
 import Description from "../../Description"; // plasmic-import: -mDgwq8p4URS/component
 import MenuPopover from "../../MenuPopover"; // plasmic-import: TsvWy0xNjSQO/component
 import MenuItem from "../../MenuItem"; // plasmic-import: YLVvc7dmfMyU/component
-
-import { ThemeValue, useTheme } from "./PlasmicGlobalVariant__Theme"; // plasmic-import: 3K9IqsAFaaID/globalVariant
+import { _useGlobalVariants } from "./plasmic"; // plasmic-import: x4VgG6kzZCVuaqknYN7tgc/projectModule
+import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: x4VgG6kzZCVuaqknYN7tgc/styleTokensProvider
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
-import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
-import plasmic_plasmic_rich_components_css from "../plasmic_rich_components/plasmic.module.css"; // plasmic-import: jkU633o1Cz7HrJdwdxhVHk/projectcss
 import projectcss from "./plasmic.module.css"; // plasmic-import: x4VgG6kzZCVuaqknYN7tgc/projectcss
 import sty from "./PlasmicThemeSwitcher.module.css"; // plasmic-import: CJ-NgKOqm1n3/css
 
@@ -186,6 +184,8 @@ function PlasmicThemeSwitcher__RenderFunc(props: {
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
 
+  const globalVariants = _useGlobalVariants();
+
   const currentUser = useCurrentUser?.() || {};
 
   const stateSpecs: Parameters<typeof useDollarState>[0] = React.useMemo(
@@ -221,9 +221,7 @@ function PlasmicThemeSwitcher__RenderFunc(props: {
     $refs
   });
 
-  const globalVariants = ensureGlobalVariants({
-    theme: useTheme()
-  });
+  const styleTokensClassNames = _useStyleTokens();
 
   const [$ccVariants, setDollarCcVariants] = React.useState<
     Record<string, boolean>
@@ -256,23 +254,9 @@ function PlasmicThemeSwitcher__RenderFunc(props: {
         projectcss.root_reset,
         projectcss.plasmic_default_styles,
         projectcss.plasmic_mixins,
-        projectcss.plasmic_tokens,
-        plasmic_antd_5_hostless_css.plasmic_tokens,
-        plasmic_plasmic_rich_components_css.plasmic_tokens,
+        styleTokensClassNames,
         sty.ariaSelect,
-        {
-          [projectcss.global_theme_classic]: hasVariant(
-            globalVariants,
-            "theme",
-            "classic"
-          ),
-          [projectcss.global_theme_classic]: hasVariant(
-            globalVariants,
-            "theme",
-            "classic"
-          ),
-          [sty.ariaSelecttype_soft]: hasVariant($state, "type", "soft")
-        }
+        { [sty.ariaSelecttype_soft]: hasVariant($state, "type", "soft") }
       )}
       defaultSelectedKey={args.initialSelectedValue}
       isDisabled={args.disabled}

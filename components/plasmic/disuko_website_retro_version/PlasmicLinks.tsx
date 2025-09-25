@@ -67,14 +67,11 @@ import { AntdPopover } from "@plasmicpkgs/antd5/skinny/registerPopover";
 import WindowBlue from "../../WindowBlue"; // plasmic-import: QxkFplM-x8NR/component
 import Window from "../../Window"; // plasmic-import: BWjgdOwFY_OO/component
 import { Embed } from "@plasmicpkgs/plasmic-basic-components";
-
-import { useScreenVariants as useScreenVariantsdmuurUfQuA6N } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: DmuurUFQuA6N/globalVariant
-import { ThemeValue, useTheme } from "./PlasmicGlobalVariant__Theme"; // plasmic-import: 3K9IqsAFaaID/globalVariant
+import { _useGlobalVariants } from "./plasmic"; // plasmic-import: x4VgG6kzZCVuaqknYN7tgc/projectModule
+import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: x4VgG6kzZCVuaqknYN7tgc/styleTokensProvider
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
-import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
-import plasmic_plasmic_rich_components_css from "../plasmic_rich_components/plasmic.module.css"; // plasmic-import: jkU633o1Cz7HrJdwdxhVHk/projectcss
 import projectcss from "./plasmic.module.css"; // plasmic-import: x4VgG6kzZCVuaqknYN7tgc/projectcss
 import sty from "./PlasmicLinks.module.css"; // plasmic-import: 1AxjPUmLarmm/css
 
@@ -143,6 +140,8 @@ function PlasmicLinks__RenderFunc(props: {
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
 
+  const globalVariants = _useGlobalVariants();
+
   const currentUser = useCurrentUser?.() || {};
 
   const stateSpecs: Parameters<typeof useDollarState>[0] = React.useMemo(
@@ -163,10 +162,7 @@ function PlasmicLinks__RenderFunc(props: {
     $refs
   });
 
-  const globalVariants = ensureGlobalVariants({
-    screen: useScreenVariantsdmuurUfQuA6N(),
-    theme: useTheme()
-  });
+  const styleTokensClassNames = _useStyleTokens();
 
   return (
     <React.Fragment>
@@ -228,22 +224,8 @@ function PlasmicLinks__RenderFunc(props: {
             projectcss.root_reset,
             projectcss.plasmic_default_styles,
             projectcss.plasmic_mixins,
-            projectcss.plasmic_tokens,
-            plasmic_antd_5_hostless_css.plasmic_tokens,
-            plasmic_plasmic_rich_components_css.plasmic_tokens,
-            sty.root,
-            {
-              [projectcss.global_theme_classic]: hasVariant(
-                globalVariants,
-                "theme",
-                "classic"
-              ),
-              [projectcss.global_theme_classic]: hasVariant(
-                globalVariants,
-                "theme",
-                "classic"
-              )
-            }
+            styleTokensClassNames,
+            sty.root
           )}
         >
           <WindowButton
@@ -262,21 +244,7 @@ function PlasmicLinks__RenderFunc(props: {
                 projectcss.root_reset,
                 projectcss.plasmic_default_styles,
                 projectcss.plasmic_mixins,
-                projectcss.plasmic_tokens,
-                plasmic_antd_5_hostless_css.plasmic_tokens,
-                plasmic_plasmic_rich_components_css.plasmic_tokens,
-                {
-                  [projectcss.global_theme_classic]: hasVariant(
-                    globalVariants,
-                    "theme",
-                    "classic"
-                  ),
-                  [projectcss.global_theme_classic]: hasVariant(
-                    globalVariants,
-                    "theme",
-                    "classic"
-                  )
-                }
+                styleTokensClassNames
               )}
               mouseEnterDelay={0}
               mouseLeaveDelay={0}
@@ -300,11 +268,9 @@ function PlasmicLinks__RenderFunc(props: {
               />
             </AntdPopover>
           </WindowButton>
-          <Stack__
-            as={"div"}
+          <div
             data-plasmic-name={"main"}
             data-plasmic-override={overrides.main}
-            hasGap={true}
             className={classNames(projectcss.all, sty.main)}
           >
             <PlasmicImg__
@@ -352,11 +318,7 @@ function PlasmicLinks__RenderFunc(props: {
               data-plasmic-override={overrides.columns}
               className={classNames(projectcss.all, sty.columns)}
             >
-              <Stack__
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.column__lEeu1)}
-              >
+              <div className={classNames(projectcss.all, sty.column__lEeu1)}>
                 <WindowBlue
                   className={classNames("__wab_instance", sty.windowBlue__bEdW)}
                   linkDestination={
@@ -404,12 +366,8 @@ function PlasmicLinks__RenderFunc(props: {
                     {"Open!"}
                   </div>
                 </WindowBlue>
-              </Stack__>
-              <Stack__
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.column__vdXak)}
-              >
+              </div>
+              <div className={classNames(projectcss.all, sty.column__vdXak)}>
                 <Window
                   className={classNames("__wab_instance", sty.window__uBnKr)}
                   linkDestination={
@@ -492,10 +450,10 @@ function PlasmicLinks__RenderFunc(props: {
                   windowText={"Twitter"}
                   windowTitle={"Twitter"}
                 />
-              </Stack__>
+              </div>
               <div className={classNames(projectcss.all, sty.column__gz0D5)} />
             </div>
-          </Stack__>
+          </div>
           <Embed
             data-plasmic-name={"embedHtml"}
             data-plasmic-override={overrides.embedHtml}

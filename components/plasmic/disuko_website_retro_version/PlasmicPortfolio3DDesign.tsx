@@ -69,14 +69,11 @@ import { Video } from "@plasmicpkgs/plasmic-basic-components";
 import Window from "../../Window"; // plasmic-import: BWjgdOwFY_OO/component
 import { SliderWrapper } from "@plasmicpkgs/react-slick";
 import { sliderHelpers as SliderWrapper_Helpers } from "@plasmicpkgs/react-slick";
-
-import { ThemeValue, useTheme } from "./PlasmicGlobalVariant__Theme"; // plasmic-import: 3K9IqsAFaaID/globalVariant
-import { useScreenVariants as useScreenVariantsdmuurUfQuA6N } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: DmuurUFQuA6N/globalVariant
+import { _useGlobalVariants } from "./plasmic"; // plasmic-import: x4VgG6kzZCVuaqknYN7tgc/projectModule
+import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: x4VgG6kzZCVuaqknYN7tgc/styleTokensProvider
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
-import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
-import plasmic_plasmic_rich_components_css from "../plasmic_rich_components/plasmic.module.css"; // plasmic-import: jkU633o1Cz7HrJdwdxhVHk/projectcss
 import projectcss from "./plasmic.module.css"; // plasmic-import: x4VgG6kzZCVuaqknYN7tgc/projectcss
 import sty from "./PlasmicPortfolio3DDesign.module.css"; // plasmic-import: 3GOrKOgLh0ga/css
 
@@ -132,6 +129,7 @@ export type PlasmicPortfolio3DDesign__OverridesType = {
   imageWindow?: Flex__<"div">;
   imageWindow2?: Flex__<"div">;
   imageWindow3?: Flex__<"div">;
+  imageWindow19?: Flex__<"div">;
   cad2?: Flex__<typeof SliderWrapper>;
   cad?: Flex__<typeof SliderWrapper>;
 };
@@ -177,6 +175,8 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
 
+  const globalVariants = _useGlobalVariants();
+
   const currentUser = useCurrentUser?.() || {};
 
   const stateSpecs: Parameters<typeof useDollarState>[0] = React.useMemo(
@@ -209,10 +209,7 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
     $refs
   });
 
-  const globalVariants = ensureGlobalVariants({
-    theme: useTheme(),
-    screen: useScreenVariantsdmuurUfQuA6N()
-  });
+  const styleTokensClassNames = _useStyleTokens();
 
   return (
     <React.Fragment>
@@ -276,21 +273,9 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
           projectcss.root_reset,
           projectcss.plasmic_default_styles,
           projectcss.plasmic_mixins,
-          projectcss.plasmic_tokens,
-          plasmic_antd_5_hostless_css.plasmic_tokens,
-          plasmic_plasmic_rich_components_css.plasmic_tokens,
+          styleTokensClassNames,
           sty._3DDesign,
           {
-            [projectcss.global_theme_classic]: hasVariant(
-              globalVariants,
-              "theme",
-              "classic"
-            ),
-            [projectcss.global_theme_classic]: hasVariant(
-              globalVariants,
-              "theme",
-              "classic"
-            ),
             [sty._3DDesignglobal_theme_classic]: hasVariant(
               globalVariants,
               "theme",
@@ -344,11 +329,7 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
             }}
           />
         </div>
-        <Stack__
-          as={"div"}
-          hasGap={true}
-          className={classNames(projectcss.all, sty.freeBox__t4YO)}
-        >
+        <div className={classNames(projectcss.all, sty.freeBox__t4YO)}>
           <div
             className={classNames(
               projectcss.all,
@@ -383,11 +364,7 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
               '"Disuko Avatar" - Digital Self Portrait and VRChat Community Labs '
             }
           </div>
-          <Stack__
-            as={"div"}
-            hasGap={true}
-            className={classNames(projectcss.all, sty.freeBox__uYv16)}
-          >
+          <div className={classNames(projectcss.all, sty.freeBox__uYv16)}>
             <ImageWindow
               className={classNames("__wab_instance", sty.imageWindow__yAKlO, {
                 [sty.imageWindowglobal_theme_classic__yAKlOeNktM]: hasVariant(
@@ -468,7 +445,7 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                 }}
               />
             </div>
-          </Stack__>
+          </div>
           <div
             className={classNames(
               projectcss.all,
@@ -504,11 +481,7 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
               <React.Fragment>{""}</React.Fragment>
             </React.Fragment>
           </div>
-          <Stack__
-            as={"div"}
-            hasGap={true}
-            className={classNames(projectcss.all, sty.freeBox__wQfv)}
-          >
+          <div className={classNames(projectcss.all, sty.freeBox__wQfv)}>
             <div className={classNames(projectcss.all, sty.freeBox___4SfFa)}>
               <div
                 data-plasmic-name={"imageWindow16"}
@@ -721,7 +694,7 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                 {"Shyn3ko"}
               </div>
             </div>
-          </Stack__>
+          </div>
           <div
             className={classNames(
               projectcss.all,
@@ -757,11 +730,7 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
               <React.Fragment>{""}</React.Fragment>
             </React.Fragment>
           </div>
-          <Stack__
-            as={"div"}
-            hasGap={true}
-            className={classNames(projectcss.all, sty.columns__dav6A)}
-          >
+          <div className={classNames(projectcss.all, sty.columns__dav6A)}>
             <div className={classNames(projectcss.all, sty.column__oii6R)}>
               <div
                 data-plasmic-name={"imageWindow4"}
@@ -873,7 +842,7 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                 />
               </div>
             </div>
-          </Stack__>
+          </div>
           <div
             className={classNames(
               projectcss.all,
@@ -909,11 +878,7 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
               <React.Fragment>{""}</React.Fragment>
             </React.Fragment>
           </div>
-          <Stack__
-            as={"div"}
-            hasGap={true}
-            className={classNames(projectcss.all, sty.columns___5DrSp)}
-          >
+          <div className={classNames(projectcss.all, sty.columns___5DrSp)}>
             <div className={classNames(projectcss.all, sty.column__sAdlN)}>
               <div
                 data-plasmic-name={"imageWindow6"}
@@ -1025,7 +990,7 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                 />
               </div>
             </div>
-          </Stack__>
+          </div>
           <div
             className={classNames(
               projectcss.all,
@@ -1063,11 +1028,7 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
               <React.Fragment>{""}</React.Fragment>
             </React.Fragment>
           </div>
-          <Stack__
-            as={"div"}
-            hasGap={true}
-            className={classNames(projectcss.all, sty.columns___7Tm1J)}
-          >
+          <div className={classNames(projectcss.all, sty.columns___7Tm1J)}>
             <div className={classNames(projectcss.all, sty.column__uzjPo)}>
               <div
                 data-plasmic-name={"imageWindow8"}
@@ -1179,7 +1140,7 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                 />
               </div>
             </div>
-          </Stack__>
+          </div>
           <div
             className={classNames(
               projectcss.all,
@@ -1196,11 +1157,7 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
           >
             {'"Robo-Dealer" - Poker Film Short Film Character'}
           </div>
-          <Stack__
-            as={"div"}
-            hasGap={true}
-            className={classNames(projectcss.all, sty.columns__iUCzZ)}
-          >
+          <div className={classNames(projectcss.all, sty.columns__iUCzZ)}>
             <div className={classNames(projectcss.all, sty.column__a5YjJ)}>
               <div
                 data-plasmic-name={"imageWindow23"}
@@ -1225,11 +1182,7 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                 />
               </div>
             </div>
-            <Stack__
-              as={"div"}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.column___7MpB)}
-            >
+            <div className={classNames(projectcss.all, sty.column___7MpB)}>
               <div
                 data-plasmic-name={"imageWindow34"}
                 data-plasmic-override={overrides.imageWindow34}
@@ -1277,14 +1230,10 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                   }
                 />
               </div>
-            </Stack__>
-          </Stack__>
-        </Stack__>
-        <Stack__
-          as={"div"}
-          hasGap={true}
-          className={classNames(projectcss.all, sty.freeBox__yjyJc)}
-        >
+            </div>
+          </div>
+        </div>
+        <div className={classNames(projectcss.all, sty.freeBox__yjyJc)}>
           <div
             className={classNames(
               projectcss.all,
@@ -1336,11 +1285,7 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
               <React.Fragment>{""}</React.Fragment>
             </React.Fragment>
           </div>
-          <Stack__
-            as={"div"}
-            hasGap={true}
-            className={classNames(projectcss.all, sty.columns__bjVlK)}
-          >
+          <div className={classNames(projectcss.all, sty.columns__bjVlK)}>
             <div className={classNames(projectcss.all, sty.column__wsWJk)}>
               <div
                 data-plasmic-name={"imageWindow13"}
@@ -1378,13 +1323,9 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                 />
               </div>
             </div>
-          </Stack__>
-        </Stack__>
-        <Stack__
-          as={"div"}
-          hasGap={true}
-          className={classNames(projectcss.all, sty.freeBox__fSznd)}
-        >
+          </div>
+        </div>
+        <div className={classNames(projectcss.all, sty.freeBox__fSznd)}>
           <div
             data-plasmic-name={"realisticProductRenders"}
             data-plasmic-override={overrides.realisticProductRenders}
@@ -1424,16 +1365,8 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                 '"Bobasong V2" - Promotional Material for my Create With Nabalis 2025 Design Balisong Competition Submission\nGot second place out of >100 entries!'
               }
             </div>
-            <Stack__
-              as={"div"}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.columns__fEyYv)}
-            >
-              <Stack__
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.column__qW6N9)}
-              >
+            <div className={classNames(projectcss.all, sty.columns__fEyYv)}>
+              <div className={classNames(projectcss.all, sty.column__qW6N9)}>
                 <div
                   data-plasmic-name={"imageWindow25"}
                   data-plasmic-override={overrides.imageWindow25}
@@ -1482,12 +1415,8 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                     src={"https://cdn.redpandastudios.net/bobasong/slide3.mp4"}
                   />
                 </div>
-              </Stack__>
-              <Stack__
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.column__oxtQm)}
-              >
+              </div>
+              <div className={classNames(projectcss.all, sty.column__oxtQm)}>
                 <div
                   data-plasmic-name={"imageWindow24"}
                   data-plasmic-override={overrides.imageWindow24}
@@ -1536,18 +1465,10 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                     src={"https://cdn.redpandastudios.net/bobasong/slide4.mp4"}
                   />
                 </div>
-              </Stack__>
-            </Stack__>
-            <Stack__
-              as={"div"}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.columns__dnvy7)}
-            >
-              <Stack__
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.column__zkyA1)}
-              >
+              </div>
+            </div>
+            <div className={classNames(projectcss.all, sty.columns__dnvy7)}>
+              <div className={classNames(projectcss.all, sty.column__zkyA1)}>
                 <div
                   data-plasmic-name={"imageWindow28"}
                   data-plasmic-override={overrides.imageWindow28}
@@ -1606,12 +1527,8 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                     }}
                   />
                 </div>
-              </Stack__>
-              <Stack__
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.column___46WeS)}
-              >
+              </div>
+              <div className={classNames(projectcss.all, sty.column___46WeS)}>
                 <div
                   data-plasmic-name={"imageWindow30"}
                   data-plasmic-override={overrides.imageWindow30}
@@ -1670,12 +1587,8 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                     }}
                   />
                 </div>
-              </Stack__>
-              <Stack__
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.column__eqAvS)}
-              >
+              </div>
+              <div className={classNames(projectcss.all, sty.column__eqAvS)}>
                 <div
                   data-plasmic-name={"imageWindow31"}
                   data-plasmic-override={overrides.imageWindow31}
@@ -1734,8 +1647,8 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                     }}
                   />
                 </div>
-              </Stack__>
-            </Stack__>
+              </div>
+            </div>
           </div>
           <div
             data-plasmic-name={"stylizedProductRenders"}
@@ -1812,11 +1725,7 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                 <React.Fragment>{" Balisong Oil"}</React.Fragment>
               </React.Fragment>
             </div>
-            <Stack__
-              as={"div"}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.columns__wiO8G)}
-            >
+            <div className={classNames(projectcss.all, sty.columns__wiO8G)}>
               <div className={classNames(projectcss.all, sty.column__wht3I)}>
                 <div
                   data-plasmic-name={"imageWindow14"}
@@ -1875,7 +1784,7 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                   />
                 </div>
               </div>
-            </Stack__>
+            </div>
           </div>
           <div
             className={classNames(
@@ -1912,11 +1821,7 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
             }
           </div>
           <div className={classNames(projectcss.all, sty.freeBox__lmIi2)}>
-            <Stack__
-              as={"div"}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.freeBox__eowsj)}
-            >
+            <div className={classNames(projectcss.all, sty.freeBox__eowsj)}>
               <Window
                 className={classNames("__wab_instance", sty.window__qkSdZ)}
                 windowImage={
@@ -1960,12 +1865,8 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                 windowText={"Smarties"}
                 windowTitle={"Easel Render"}
               />
-            </Stack__>
-            <Stack__
-              as={"div"}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.freeBox___1FTxE)}
-            >
+            </div>
+            <div className={classNames(projectcss.all, sty.freeBox___1FTxE)}>
               <Window
                 className={classNames("__wab_instance", sty.window__hyfBk)}
                 windowImage={
@@ -2009,12 +1910,8 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                 windowText={"Blueberry Ramune"}
                 windowTitle={"Easel Render"}
               />
-            </Stack__>
-            <Stack__
-              as={"div"}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.freeBox__vXtFs)}
-            >
+            </div>
+            <div className={classNames(projectcss.all, sty.freeBox__vXtFs)}>
               <Window
                 className={classNames("__wab_instance", sty.window__nwxc)}
                 windowImage={
@@ -2054,14 +1951,10 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                 windowText={"Strawberry Milk"}
                 windowTitle={"Easel Render"}
               />
-            </Stack__>
+            </div>
           </div>
-        </Stack__>
-        <Stack__
-          as={"div"}
-          hasGap={true}
-          className={classNames(projectcss.all, sty.freeBox__rL1)}
-        >
+        </div>
+        <div className={classNames(projectcss.all, sty.freeBox__rL1)}>
           <div
             className={classNames(
               projectcss.all,
@@ -2078,11 +1971,7 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
           >
             {"Characters"}
           </div>
-          <Stack__
-            as={"div"}
-            hasGap={true}
-            className={classNames(projectcss.all, sty.freeBox__isLqW)}
-          >
+          <div className={classNames(projectcss.all, sty.freeBox__isLqW)}>
             <div
               data-plasmic-name={"imageWindow"}
               data-plasmic-override={overrides.imageWindow}
@@ -2192,8 +2081,8 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                 }}
               />
             </div>
-          </Stack__>
-        </Stack__>
+          </div>
+        </div>
         <div className={classNames(projectcss.all, sty.freeBox__d2Fcp)}>
           <div
             className={classNames(
@@ -2211,16 +2100,38 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
           >
             {"CAD & 3D Printing"}
           </div>
-          <Stack__
-            as={"div"}
-            hasGap={true}
-            className={classNames(projectcss.all, sty.columns__gR1Cg)}
+          <div
+            className={classNames(
+              projectcss.all,
+              projectcss.__wab_text,
+              sty.text___0XH1W,
+              {
+                [sty.textglobal_theme_classic___0XH1WeNktM]: hasVariant(
+                  globalVariants,
+                  "theme",
+                  "classic"
+                )
+              }
+            )}
           >
-            <Stack__
-              as={"div"}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.column__ki8I7)}
-            >
+            {
+              "DIGIDECK - Cyberdeck Computer constructed from e-waste and 3d printed frames/brackets."
+            }
+          </div>
+          <div
+            data-plasmic-name={"imageWindow19"}
+            data-plasmic-override={overrides.imageWindow19}
+            className={classNames(projectcss.all, sty.imageWindow19, {
+              [sty.imageWindow19global_theme_classic]: hasVariant(
+                globalVariants,
+                "theme",
+                "classic"
+              )
+            })}
+          />
+
+          <div className={classNames(projectcss.all, sty.columns__gR1Cg)}>
+            <div className={classNames(projectcss.all, sty.column__ki8I7)}>
               <div
                 className={classNames(projectcss.all, sty.freeBox__rFRe6, {
                   [sty.freeBoxglobal_theme_classic__rFRe6ENktM]: hasVariant(
@@ -2399,12 +2310,8 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                   );
                 })()}
               </div>
-            </Stack__>
-            <Stack__
-              as={"div"}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.column__mO2Vl)}
-            >
+            </div>
+            <div className={classNames(projectcss.all, sty.column__mO2Vl)}>
               <div
                 className={classNames(projectcss.all, sty.freeBox__lu5Mk, {
                   [sty.freeBoxglobal_theme_classic__lu5MKeNktM]: hasVariant(
@@ -2610,8 +2517,8 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                   );
                 })()}
               </div>
-            </Stack__>
-          </Stack__>
+            </div>
+          </div>
         </div>
       </div>
     </React.Fragment>
@@ -2659,6 +2566,7 @@ const PlasmicDescendants = {
     "imageWindow",
     "imageWindow2",
     "imageWindow3",
+    "imageWindow19",
     "cad2",
     "cad"
   ],
@@ -2716,6 +2624,7 @@ const PlasmicDescendants = {
   imageWindow: ["imageWindow"],
   imageWindow2: ["imageWindow2"],
   imageWindow3: ["imageWindow3"],
+  imageWindow19: ["imageWindow19"],
   cad2: ["cad2"],
   cad: ["cad"]
 } as const;
@@ -2762,6 +2671,7 @@ type NodeDefaultElementType = {
   imageWindow: "div";
   imageWindow2: "div";
   imageWindow3: "div";
+  imageWindow19: "div";
   cad2: typeof SliderWrapper;
   cad: typeof SliderWrapper;
 };
@@ -2889,6 +2799,7 @@ export const PlasmicPortfolio3DDesign = Object.assign(
     imageWindow: makeNodeComponent("imageWindow"),
     imageWindow2: makeNodeComponent("imageWindow2"),
     imageWindow3: makeNodeComponent("imageWindow3"),
+    imageWindow19: makeNodeComponent("imageWindow19"),
     cad2: makeNodeComponent("cad2"),
     cad: makeNodeComponent("cad"),
 

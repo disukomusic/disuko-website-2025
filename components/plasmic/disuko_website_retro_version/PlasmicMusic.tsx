@@ -70,14 +70,11 @@ import MusicAlbum from "../../MusicAlbum"; // plasmic-import: xhHvzxTdb1Y8/compo
 import YouTube from "@plasmicpkgs/react-youtube";
 import Footer from "../../Footer"; // plasmic-import: shKoGjSwLEEB/component
 import Snowflakes from "../../Snowflakes"; // plasmic-import: dS2R33xrvHt2/component
-
-import { ThemeValue, useTheme } from "./PlasmicGlobalVariant__Theme"; // plasmic-import: 3K9IqsAFaaID/globalVariant
-import { useScreenVariants as useScreenVariantsdmuurUfQuA6N } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: DmuurUFQuA6N/globalVariant
+import { _useGlobalVariants } from "./plasmic"; // plasmic-import: x4VgG6kzZCVuaqknYN7tgc/projectModule
+import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: x4VgG6kzZCVuaqknYN7tgc/styleTokensProvider
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
-import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
-import plasmic_plasmic_rich_components_css from "../plasmic_rich_components/plasmic.module.css"; // plasmic-import: jkU633o1Cz7HrJdwdxhVHk/projectcss
 import projectcss from "./plasmic.module.css"; // plasmic-import: x4VgG6kzZCVuaqknYN7tgc/projectcss
 import sty from "./PlasmicMusic.module.css"; // plasmic-import: Omf247aRwark/css
 
@@ -158,12 +155,11 @@ function PlasmicMusic__RenderFunc(props: {
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
 
+  const globalVariants = _useGlobalVariants();
+
   const currentUser = useCurrentUser?.() || {};
 
-  const globalVariants = ensureGlobalVariants({
-    theme: useTheme(),
-    screen: useScreenVariantsdmuurUfQuA6N()
-  });
+  const styleTokensClassNames = _useStyleTokens();
 
   return (
     <React.Fragment>
@@ -225,21 +221,9 @@ function PlasmicMusic__RenderFunc(props: {
             projectcss.root_reset,
             projectcss.plasmic_default_styles,
             projectcss.plasmic_mixins,
-            projectcss.plasmic_tokens,
-            plasmic_antd_5_hostless_css.plasmic_tokens,
-            plasmic_plasmic_rich_components_css.plasmic_tokens,
+            styleTokensClassNames,
             sty.root,
             {
-              [projectcss.global_theme_classic]: hasVariant(
-                globalVariants,
-                "theme",
-                "classic"
-              ),
-              [projectcss.global_theme_classic]: hasVariant(
-                globalVariants,
-                "theme",
-                "classic"
-              ),
               [sty.rootglobal_theme_classic]: hasVariant(
                 globalVariants,
                 "theme",
@@ -254,11 +238,9 @@ function PlasmicMusic__RenderFunc(props: {
             className={classNames("__wab_instance", sty.navbar)}
           />
 
-          <Stack__
-            as={"div"}
+          <div
             data-plasmic-name={"main"}
             data-plasmic-override={overrides.main}
-            hasGap={true}
             className={classNames(projectcss.all, sty.main, {
               [sty.mainglobal_theme_classic]: hasVariant(
                 globalVariants,
@@ -746,11 +728,7 @@ function PlasmicMusic__RenderFunc(props: {
               />
             </Reveal>
             <div className={classNames(projectcss.all, sty.freeBox__b6Lww)}>
-              <Stack__
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.freeBox__r5Fn9)}
-              >
+              <div className={classNames(projectcss.all, sty.freeBox__r5Fn9)}>
                 <YouTube
                   className={classNames("__wab_instance", sty.youTube__hJhn5)}
                   videoId={"/T8scVcjPDDY"}
@@ -765,12 +743,8 @@ function PlasmicMusic__RenderFunc(props: {
                   className={classNames("__wab_instance", sty.youTube__vt36J)}
                   videoId={"l6Bh6fn8x5c"}
                 />
-              </Stack__>
-              <Stack__
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.freeBox__wGgf1)}
-              >
+              </div>
+              <div className={classNames(projectcss.all, sty.freeBox__wGgf1)}>
                 <YouTube
                   className={classNames("__wab_instance", sty.youTube__kgcx)}
                   videoId={"dJvF_pr5P0Q"}
@@ -785,9 +759,9 @@ function PlasmicMusic__RenderFunc(props: {
                   className={classNames("__wab_instance", sty.youTube__i2Re9)}
                   videoId={"Qu2Bg9x-lrk"}
                 />
-              </Stack__>
+              </div>
             </div>
-          </Stack__>
+          </div>
           <Footer
             data-plasmic-name={"footer"}
             data-plasmic-override={overrides.footer}

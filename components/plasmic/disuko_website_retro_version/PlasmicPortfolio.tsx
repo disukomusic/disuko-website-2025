@@ -67,14 +67,11 @@ import Window from "../../Window"; // plasmic-import: BWjgdOwFY_OO/component
 import ImageWindow from "../../ImageWindow"; // plasmic-import: cCfEU_zMoOP5/component
 import WindowButton from "../../WindowButton"; // plasmic-import: KZYdo-R8GYAn/component
 import Footer from "../../Footer"; // plasmic-import: shKoGjSwLEEB/component
-
-import { ThemeValue, useTheme } from "./PlasmicGlobalVariant__Theme"; // plasmic-import: 3K9IqsAFaaID/globalVariant
-import { useScreenVariants as useScreenVariantsdmuurUfQuA6N } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: DmuurUFQuA6N/globalVariant
+import { _useGlobalVariants } from "./plasmic"; // plasmic-import: x4VgG6kzZCVuaqknYN7tgc/projectModule
+import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: x4VgG6kzZCVuaqknYN7tgc/styleTokensProvider
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
-import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
-import plasmic_plasmic_rich_components_css from "../plasmic_rich_components/plasmic.module.css"; // plasmic-import: jkU633o1Cz7HrJdwdxhVHk/projectcss
 import projectcss from "./plasmic.module.css"; // plasmic-import: x4VgG6kzZCVuaqknYN7tgc/projectcss
 import sty from "./PlasmicPortfolio.module.css"; // plasmic-import: FM3_GOS4-xG4/css
 
@@ -144,12 +141,11 @@ function PlasmicPortfolio__RenderFunc(props: {
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
 
+  const globalVariants = _useGlobalVariants();
+
   const currentUser = useCurrentUser?.() || {};
 
-  const globalVariants = ensureGlobalVariants({
-    theme: useTheme(),
-    screen: useScreenVariantsdmuurUfQuA6N()
-  });
+  const styleTokensClassNames = _useStyleTokens();
 
   return (
     <React.Fragment>
@@ -211,21 +207,9 @@ function PlasmicPortfolio__RenderFunc(props: {
             projectcss.root_reset,
             projectcss.plasmic_default_styles,
             projectcss.plasmic_mixins,
-            projectcss.plasmic_tokens,
-            plasmic_antd_5_hostless_css.plasmic_tokens,
-            plasmic_plasmic_rich_components_css.plasmic_tokens,
+            styleTokensClassNames,
             sty.root,
             {
-              [projectcss.global_theme_classic]: hasVariant(
-                globalVariants,
-                "theme",
-                "classic"
-              ),
-              [projectcss.global_theme_classic]: hasVariant(
-                globalVariants,
-                "theme",
-                "classic"
-              ),
               [sty.rootglobal_theme_classic]: hasVariant(
                 globalVariants,
                 "theme",
@@ -240,11 +224,9 @@ function PlasmicPortfolio__RenderFunc(props: {
             className={classNames("__wab_instance", sty.navbar)}
           />
 
-          <Stack__
-            as={"div"}
+          <div
             data-plasmic-name={"main"}
             data-plasmic-override={overrides.main}
-            hasGap={true}
             className={classNames(projectcss.all, sty.main, {
               [sty.mainglobal_theme_classic]: hasVariant(
                 globalVariants,
@@ -253,11 +235,7 @@ function PlasmicPortfolio__RenderFunc(props: {
               )
             })}
           >
-            <Stack__
-              as={"div"}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.freeBox__iNumN)}
-            >
+            <div className={classNames(projectcss.all, sty.freeBox__iNumN)}>
               <div className={classNames(projectcss.all, sty.freeBox__s1Xm)}>
                 <PlasmicImg__
                   alt={""}
@@ -287,11 +265,7 @@ function PlasmicPortfolio__RenderFunc(props: {
                   windowTitle={"about me"}
                 />
               </div>
-              <Stack__
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.freeBox__yDuY)}
-              >
+              <div className={classNames(projectcss.all, sty.freeBox__yDuY)}>
                 <ImageWindow
                   data-plasmic-name={"imageWindow"}
                   data-plasmic-override={overrides.imageWindow}
@@ -321,11 +295,7 @@ function PlasmicPortfolio__RenderFunc(props: {
                     }}
                   />
                 </ImageWindow>
-                <Stack__
-                  as={"div"}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.freeBox__a9Bbt)}
-                >
+                <div className={classNames(projectcss.all, sty.freeBox__a9Bbt)}>
                   <WindowButton
                     className={classNames(
                       "__wab_instance",
@@ -373,9 +343,9 @@ function PlasmicPortfolio__RenderFunc(props: {
                       {"Contact"}
                     </div>
                   </WindowButton>
-                </Stack__>
-              </Stack__>
-            </Stack__>
+                </div>
+              </div>
+            </div>
             <div
               data-plasmic-name={"columns"}
               data-plasmic-override={overrides.columns}
@@ -543,7 +513,7 @@ function PlasmicPortfolio__RenderFunc(props: {
                 />
               </div>
             </div>
-          </Stack__>
+          </div>
           <Footer
             data-plasmic-name={"footer"}
             data-plasmic-override={overrides.footer}
