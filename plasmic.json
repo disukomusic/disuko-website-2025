@@ -3147,6 +3147,21 @@
           "id": "Sw-EoR3mFSZv",
           "name": "UFOImagePink.jpg",
           "filePath": "../public/plasmic/disuko_website_retro_version/images/ufoImagePinkJpg.jpg"
+        },
+        {
+          "id": "RAWrPmnvMx1d",
+          "name": "image 103",
+          "filePath": "../public/plasmic/disuko_website_retro_version/images/image103.png"
+        },
+        {
+          "id": "cQv__Nrppa1-",
+          "name": "image 104",
+          "filePath": "../public/plasmic/disuko_website_retro_version/images/image104.png"
+        },
+        {
+          "id": "DlVWK8V2eBjS",
+          "name": "image 105",
+          "filePath": "../public/plasmic/disuko_website_retro_version/images/image105.png"
         }
       ],
       "indirect": false,

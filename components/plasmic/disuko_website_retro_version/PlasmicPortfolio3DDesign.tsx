@@ -130,6 +130,8 @@ export type PlasmicPortfolio3DDesign__OverridesType = {
   imageWindow2?: Flex__<"div">;
   imageWindow3?: Flex__<"div">;
   imageWindow19?: Flex__<"div">;
+  imageWindow36?: Flex__<"div">;
+  imageWindow37?: Flex__<"div">;
   cad2?: Flex__<typeof SliderWrapper>;
   cad?: Flex__<typeof SliderWrapper>;
 };
@@ -2115,21 +2117,125 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
             )}
           >
             {
-              "DIGIDECK - Cyberdeck Computer constructed from e-waste and 3d printed frames/brackets."
+              'DIGIDECK (WIP) - Cyberdeck Computer constructed from e-waste and 3d printed frames/brackets. Created for con showcases representing the game "Digidive LIVE" by Red Panda Studios'
             }
           </div>
+          <div className={classNames(projectcss.all, sty.columns__lResH)}>
+            <div className={classNames(projectcss.all, sty.column__jglq4)}>
+              <div
+                data-plasmic-name={"imageWindow19"}
+                data-plasmic-override={overrides.imageWindow19}
+                className={classNames(projectcss.all, sty.imageWindow19, {
+                  [sty.imageWindow19global_theme_classic]: hasVariant(
+                    globalVariants,
+                    "theme",
+                    "classic"
+                  )
+                })}
+              >
+                <PlasmicImg__
+                  alt={""}
+                  className={classNames(sty.img__ztBjx)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"auto"}
+                  loading={"lazy"}
+                  src={{
+                    src: "/plasmic/disuko_website_retro_version/images/image103.png",
+                    fullWidth: 3024,
+                    fullHeight: 4032,
+                    aspectRatio: undefined
+                  }}
+                />
+              </div>
+            </div>
+            <div className={classNames(projectcss.all, sty.column__frkPr)}>
+              <div
+                data-plasmic-name={"imageWindow36"}
+                data-plasmic-override={overrides.imageWindow36}
+                className={classNames(projectcss.all, sty.imageWindow36, {
+                  [sty.imageWindow36global_theme_classic]: hasVariant(
+                    globalVariants,
+                    "theme",
+                    "classic"
+                  )
+                })}
+              >
+                <PlasmicImg__
+                  alt={""}
+                  className={classNames(sty.img__ofLb0)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"auto"}
+                  loading={"lazy"}
+                  src={{
+                    src: "/plasmic/disuko_website_retro_version/images/image104.png",
+                    fullWidth: 785,
+                    fullHeight: 826,
+                    aspectRatio: undefined
+                  }}
+                />
+              </div>
+            </div>
+          </div>
           <div
-            data-plasmic-name={"imageWindow19"}
-            data-plasmic-override={overrides.imageWindow19}
-            className={classNames(projectcss.all, sty.imageWindow19, {
-              [sty.imageWindow19global_theme_classic]: hasVariant(
-                globalVariants,
-                "theme",
-                "classic"
-              )
-            })}
-          />
-
+            className={classNames(
+              projectcss.all,
+              projectcss.__wab_text,
+              sty.text__izoh,
+              {
+                [sty.textglobal_theme_classic__izohENktM]: hasVariant(
+                  globalVariants,
+                  "theme",
+                  "classic"
+                )
+              }
+            )}
+          >
+            {
+              "Studio Tunes Music Player - Raspberry Pi & Arduino powered music player for the Chatham Immersive Media Studio"
+            }
+          </div>
+          <div className={classNames(projectcss.all, sty.columns__m6Dj)}>
+            <div className={classNames(projectcss.all, sty.column__xmML)}>
+              <div
+                data-plasmic-name={"imageWindow37"}
+                data-plasmic-override={overrides.imageWindow37}
+                className={classNames(projectcss.all, sty.imageWindow37, {
+                  [sty.imageWindow37global_theme_classic]: hasVariant(
+                    globalVariants,
+                    "theme",
+                    "classic"
+                  )
+                })}
+              >
+                <PlasmicImg__
+                  alt={""}
+                  className={classNames(sty.img__gl71T)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"auto"}
+                  loading={"lazy"}
+                  src={{
+                    src: "/plasmic/disuko_website_retro_version/images/image105.png",
+                    fullWidth: 852,
+                    fullHeight: 684,
+                    aspectRatio: undefined
+                  }}
+                />
+              </div>
+            </div>
+            <div className={classNames(projectcss.all, sty.column___9QPh)} />
+          </div>
           <div className={classNames(projectcss.all, sty.columns__gR1Cg)}>
             <div className={classNames(projectcss.all, sty.column__ki8I7)}>
               <div
@@ -2567,6 +2673,8 @@ const PlasmicDescendants = {
     "imageWindow2",
     "imageWindow3",
     "imageWindow19",
+    "imageWindow36",
+    "imageWindow37",
     "cad2",
     "cad"
   ],
@@ -2625,6 +2733,8 @@ const PlasmicDescendants = {
   imageWindow2: ["imageWindow2"],
   imageWindow3: ["imageWindow3"],
   imageWindow19: ["imageWindow19"],
+  imageWindow36: ["imageWindow36"],
+  imageWindow37: ["imageWindow37"],
   cad2: ["cad2"],
   cad: ["cad"]
 } as const;
@@ -2672,6 +2782,8 @@ type NodeDefaultElementType = {
   imageWindow2: "div";
   imageWindow3: "div";
   imageWindow19: "div";
+  imageWindow36: "div";
+  imageWindow37: "div";
   cad2: typeof SliderWrapper;
   cad: typeof SliderWrapper;
 };
@@ -2800,6 +2912,8 @@ export const PlasmicPortfolio3DDesign = Object.assign(
     imageWindow2: makeNodeComponent("imageWindow2"),
     imageWindow3: makeNodeComponent("imageWindow3"),
     imageWindow19: makeNodeComponent("imageWindow19"),
+    imageWindow36: makeNodeComponent("imageWindow36"),
+    imageWindow37: makeNodeComponent("imageWindow37"),
     cad2: makeNodeComponent("cad2"),
     cad: makeNodeComponent("cad"),
 
