@@ -761,7 +761,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   "classic"
                 )
               })}
-              linkDestination={"https://blog.spacehey.com/entry?id=1226363"}
+              linkDestination={"https://youtu.be/o2oE9yPM6wo"}
               showImage={true}
               windowImage={
                 <PlasmicImg__
@@ -775,17 +775,17 @@ function PlasmicHomepage__RenderFunc(props: {
                   displayWidth={"auto"}
                   loading={"lazy"}
                   src={{
-                    src: "/plasmic/disuko_website_retro_version/images/ufoImagePinkJpg.jpg",
-                    fullWidth: 2016,
-                    fullHeight: 1512,
+                    src: "/plasmic/disuko_website_retro_version/images/cloudDreamerAlbumArtTransparentLOgoUseThisOnePng.png",
+                    fullWidth: 3000,
+                    fullHeight: 3000,
                     aspectRatio: undefined
                   }}
                 />
               }
               windowText={
-                "An alien crash landed its spaceship in my back yard? am i dreaming???"
+                "stay tuned for the musical journey of launching into outer space with the power of an alien panda!"
               }
-              windowTitle={"NEW BLOG POST"}
+              windowTitle={"NEW ALBUM SOON!"}
             />
           </div>
           <Footer

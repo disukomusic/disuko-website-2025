@@ -3162,6 +3162,11 @@
           "id": "DlVWK8V2eBjS",
           "name": "image 105",
           "filePath": "../public/plasmic/disuko_website_retro_version/images/image105.png"
+        },
+        {
+          "id": "MaprSr11gYYv",
+          "name": "Cloud Dreamer Album Art Transparent LOgo USE THIS ONE.png",
+          "filePath": "../public/plasmic/disuko_website_retro_version/images/cloudDreamerAlbumArtTransparentLOgoUseThisOnePng.png"
         }
       ],
       "indirect": false,
@@ -3416,6 +3421,6 @@
   "nextjsConfig": {
     "pagesDir": "../pages"
   },
-  "cliVersion": "0.1.343",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.343/dist/plasmic.schema.json"
+  "cliVersion": "0.1.344",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.344/dist/plasmic.schema.json"
 }
