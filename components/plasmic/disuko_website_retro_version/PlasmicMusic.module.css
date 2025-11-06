@@ -33,19 +33,35 @@
   isolation: auto;
   backdrop-filter: none;
   filter: none;
-  transform: translateX(0px) translateY(0px) translateZ(0px);
+  transform: skew(0deg, 0deg);
   z-index: 0;
   max-width: 1583px;
   row-gap: 10px;
+  transform-style: preserve-3d;
   min-width: 0;
   min-height: 0;
   -webkit-backdrop-filter: none;
   padding: 30px;
 }
+.main * {
+  transform-style: preserve-3d;
+}
 @media (min-width: 0px) and (max-width: 768px) {
   .main {
+    transform-style: preserve-3d;
     padding: 10px;
   }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .main * {
+    transform-style: preserve-3d;
+  }
+}
+.mainglobal_theme_classic {
+  transform-style: preserve-3d;
+}
+.mainglobal_theme_classic * {
+  transform-style: preserve-3d;
 }
 .reveal___62Ojm:global(.__wab_instance) {
   object-fit: cover;
@@ -76,7 +92,8 @@
   position: relative;
   object-fit: contain;
   max-width: 100%;
-  box-shadow: -4px -4px 0px 0px var(--token-GXH3dzbZuw1x),
+  box-shadow:
+    -4px -4px 0px 0px var(--token-GXH3dzbZuw1x),
     4px 4px 0px 0px var(--token-FYHois2LGA8g);
   width: 474px;
   margin: 10px;
@@ -239,7 +256,8 @@
   position: relative;
   object-fit: contain;
   max-width: 100%;
-  box-shadow: -4px -4px 0px 0px var(--token-GXH3dzbZuw1x),
+  box-shadow:
+    -4px -4px 0px 0px var(--token-GXH3dzbZuw1x),
     4px 4px 0px 0px var(--token-FYHois2LGA8g);
   width: 474px;
   margin: 10px;

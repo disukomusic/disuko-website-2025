@@ -338,7 +338,9 @@ type NodeComponentProps<T extends NodeNameType> =
     variants?: PlasmicMerch__VariantsArgs;
     args?: PlasmicMerch__ArgsType;
     overrides?: NodeOverridesType<T>;
-  } & Omit<PlasmicMerch__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
+  } &
+    // Specify variants directly as props
+    Omit<PlasmicMerch__VariantsArgs, ReservedPropsType> &
     // Specify args directly as props
     Omit<PlasmicMerch__ArgsType, ReservedPropsType> &
     // Specify overrides for each element directly as props

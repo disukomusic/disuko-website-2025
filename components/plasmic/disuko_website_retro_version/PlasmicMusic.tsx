@@ -912,7 +912,9 @@ type NodeComponentProps<T extends NodeNameType> =
     variants?: PlasmicMusic__VariantsArgs;
     args?: PlasmicMusic__ArgsType;
     overrides?: NodeOverridesType<T>;
-  } & Omit<PlasmicMusic__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
+  } &
+    // Specify variants directly as props
+    Omit<PlasmicMusic__VariantsArgs, ReservedPropsType> &
     // Specify args directly as props
     Omit<PlasmicMusic__ArgsType, ReservedPropsType> &
     // Specify overrides for each element directly as props

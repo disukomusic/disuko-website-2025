@@ -85,7 +85,6 @@ export type PlasmicFooter__OverridesType = {
   freeBox?: Flex__<"div">;
   rpsLink?: Flex__<"a"> & Partial<LinkProps>;
   dotgay?: Flex__<"a"> & Partial<LinkProps>;
-  embedHtml?: Flex__<typeof Embed>;
 };
 
 export interface DefaultFooterProps {
@@ -246,6 +245,12 @@ function PlasmicFooter__RenderFunc(props: {
           >
             {"icons from tabler"}
           </div>
+          <Embed
+            className={classNames("__wab_instance", sty.embedHtml__iTzWq)}
+            code={
+              '<a rel="me" href="https://mastodon.art/@disuko">Mastodon</a>'
+            }
+          />
         </div>
         <div className={classNames(projectcss.all, sty.column__e7FGn)}>
           <PlasmicLink__
@@ -278,9 +283,7 @@ function PlasmicFooter__RenderFunc(props: {
         </div>
         <div className={classNames(projectcss.all, sty.column__eh7Rf)}>
           <Embed
-            data-plasmic-name={"embedHtml"}
-            data-plasmic-override={overrides.embedHtml}
-            className={classNames("__wab_instance", sty.embedHtml)}
+            className={classNames("__wab_instance", sty.embedHtml__pltue)}
             code={
               "<div>\r\n  <strong>last updated:</strong> <span id=\"commit-date\"></span>\r\n</div>\r\n<div id=\"latest-commit\"></div>\r\n\r\n<script>\r\n  const owner = 'disukomusic';\r\n  const repo = 'disuko-website-2025';\r\n  const branch = 'main';\r\n  const dateSpan = document.getElementById('commit-date');\r\n  const container = document.getElementById('latest-commit');\r\n\r\n  async function fetchLatestCommit() {\r\n    try {\r\n      const response = await fetch(`https://api.github.com/repos/${owner}/${repo}/commits?sha=${branch}&per_page=1`);\r\n      const data = await response.json();\r\n\r\n      if (!data.length) {\r\n        container.innerHTML = '<p>No commits found.</p>';\r\n        return;\r\n      }\r\n\r\n      const commit = data[0];\r\n      const date = new Date(commit.commit.author.date);\r\n      const formattedDate = `${date.getMonth() + 1}/${date.getDate()}/${date.getFullYear()}`;\r\n      const url = commit.html_url;\r\n      const title = commit.commit.message.split('\\n')[0];\r\n\r\n      dateSpan.textContent = formattedDate;\r\n      container.innerHTML = `<ul>\r\n          <li><a href=\"${url}\" target=\"_blank\" rel=\"noopener noreferrer\"><strong>${title}</strong></a></li></ul>\r\n      `;\r\n    } catch (err) {\r\n      container.innerHTML = `<p>Error fetching commit: ${err.message}</p>`;\r\n    }\r\n  }\r\n\r\n  window.onload = function() {\r\n    fetchLatestCommit();\r\n  };\r\n</script>\r\n"
             }
@@ -292,12 +295,11 @@ function PlasmicFooter__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "columns", "freeBox", "rpsLink", "dotgay", "embedHtml"],
-  columns: ["columns", "freeBox", "rpsLink", "dotgay", "embedHtml"],
+  root: ["root", "columns", "freeBox", "rpsLink", "dotgay"],
+  columns: ["columns", "freeBox", "rpsLink", "dotgay"],
   freeBox: ["freeBox", "rpsLink"],
   rpsLink: ["rpsLink"],
-  dotgay: ["dotgay"],
-  embedHtml: ["embedHtml"]
+  dotgay: ["dotgay"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -308,7 +310,6 @@ type NodeDefaultElementType = {
   freeBox: "div";
   rpsLink: "a";
   dotgay: "a";
-  embedHtml: typeof Embed;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -322,7 +323,9 @@ type NodeComponentProps<T extends NodeNameType> =
     variants?: PlasmicFooter__VariantsArgs;
     args?: PlasmicFooter__ArgsType;
     overrides?: NodeOverridesType<T>;
-  } & Omit<PlasmicFooter__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
+  } &
+    // Specify variants directly as props
+    Omit<PlasmicFooter__VariantsArgs, ReservedPropsType> &
     // Specify args directly as props
     Omit<PlasmicFooter__ArgsType, ReservedPropsType> &
     // Specify overrides for each element directly as props
@@ -375,7 +378,6 @@ export const PlasmicFooter = Object.assign(
     freeBox: makeNodeComponent("freeBox"),
     rpsLink: makeNodeComponent("rpsLink"),
     dotgay: makeNodeComponent("dotgay"),
-    embedHtml: makeNodeComponent("embedHtml"),
 
     // Metadata about props expected for PlasmicFooter
     internalVariantProps: PlasmicFooter__VariantProps,

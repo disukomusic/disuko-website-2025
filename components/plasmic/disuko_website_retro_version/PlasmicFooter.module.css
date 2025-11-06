@@ -5,7 +5,8 @@
   position: relative;
   background: var(--token-1TXFysFOBXKj);
   backdrop-filter: none;
-  box-shadow: inset -4px -4px 0px 0px var(--token-XJ2XB8GCLLex),
+  box-shadow:
+    inset -4px -4px 0px 0px var(--token-XJ2XB8GCLLex),
     inset 4px 4px 0px 0px var(--token-FYHois2LGA8g);
   justify-content: center;
   width: 100%;
@@ -26,7 +27,8 @@
 }
 .rootglobal_theme_classic {
   background: var(--token-4IQYJ82NsyMZ);
-  box-shadow: inset -4px -4px 0px 0px var(--token-K_FDgNby8UmH),
+  box-shadow:
+    inset -4px -4px 0px 0px var(--token-K_FDgNby8UmH),
     inset 4px 4px 0px 0px var(--token-24x9Uc_JThUA);
 }
 .columns {
@@ -182,6 +184,10 @@
 .textglobal_theme_classic__kdu93ENktM {
   color: var(--token-K_FDgNby8UmH);
 }
+.embedHtml__iTzWq:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
 .column__e7FGn {
   display: flex;
   position: relative;
@@ -234,8 +240,9 @@
   min-width: 0;
   padding: 8px;
 }
-.embedHtml:global(.__wab_instance) {
+.embedHtml__pltue:global(.__wab_instance) {
   max-width: 100%;
   object-fit: cover;
   height: auto;
+  display: none;
 }

@@ -587,7 +587,9 @@ type NodeComponentProps<T extends NodeNameType> =
     variants?: PlasmicPortfolio__VariantsArgs;
     args?: PlasmicPortfolio__ArgsType;
     overrides?: NodeOverridesType<T>;
-  } & Omit<PlasmicPortfolio__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
+  } &
+    // Specify variants directly as props
+    Omit<PlasmicPortfolio__VariantsArgs, ReservedPropsType> &
     // Specify args directly as props
     Omit<PlasmicPortfolio__ArgsType, ReservedPropsType> &
     // Specify overrides for each element directly as props

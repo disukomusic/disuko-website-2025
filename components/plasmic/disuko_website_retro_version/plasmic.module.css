@@ -132,17 +132,13 @@
 @media (min-width: 0px) and (max-width: 768px) {
   .plasmic_tokens {
     --token-1TXFysFOBXKj: #f4c1e3;
-    --plasmic-token-pixel-p-ink: var(--token-1TXFysFOBXKj);
     --token-GXH3dzbZuw1x: #404040;
-    --plasmic-token-retro-text: var(--token-GXH3dzbZuw1x);
   }
 }
 
 .plasmic_tokens.global_theme_classic.global_theme_classic {
   --token-K_FDgNby8UmH: #353535;
-  --plasmic-token-classic-shadow: var(--token-K_FDgNby8UmH);
   --token-u2rbquIz9Y0U: #979797;
-  --plasmic-token-classic-box-shadow-bg: var(--token-u2rbquIz9Y0U);
 }
 
 .plasmic_tokens {
@@ -288,7 +284,8 @@
 
 .plasmic_mixins,
 .plasmic_mixins:where(.global_theme_classic) {
-  --mixin-caqA6EIE0DJz_box-shadow: -4px -4px 0px 0px var(--token-GXH3dzbZuw1x),
+  --mixin-caqA6EIE0DJz_box-shadow:
+    -4px -4px 0px 0px var(--token-GXH3dzbZuw1x),
     4px 4px 0px 0px var(--token-FYHois2LGA8g);
   --plasmic-mixin-window_box-shadow: var(--mixin-caqA6EIE0DJz_box-shadow);
   --mixin-caqA6EIE0DJz_white-space: pre-wrap;

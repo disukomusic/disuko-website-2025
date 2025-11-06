@@ -7,13 +7,27 @@
   justify-content: flex-start;
   align-items: center;
   background: url("/plasmic/disuko_website_retro_version/images/backgroundTilesPng2.png") 0% 0% / 25px 25px;
-  transform: translateX(0px) translateY(0px) translateZ(0px);
+  transform: skew(0deg, 0deg);
   transition-property: all;
   transition-duration: 1s;
+  transform-style: preserve-3d;
   min-width: 0;
   min-height: 0;
   -webkit-transition-property: all;
   -webkit-transition-duration: 1s;
+}
+.root * {
+  transform-style: preserve-3d;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .root {
+    transform-style: preserve-3d;
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .root * {
+    transform-style: preserve-3d;
+  }
 }
 .navbarPixel:global(.__wab_instance):global(.__wab_instance) {
   max-width: 100%;

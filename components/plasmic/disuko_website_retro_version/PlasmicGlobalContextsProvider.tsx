@@ -113,15 +113,15 @@ export default function GlobalContextsProvider(
         antdConfigProviderProps && "themeStyles" in antdConfigProviderProps
           ? antdConfigProviderProps.themeStyles!
           : true
-          ? {
-              fontFamily: "VT323",
-              fontSize: "16px",
-              fontWeight: "400",
-              lineHeight: "1.5",
-              color: "#80709A",
-              letterSpacing: "normal"
-            }
-          : undefined
+            ? {
+                fontFamily: "VT323",
+                fontSize: "16px",
+                fontWeight: "400",
+                lineHeight: "1.5",
+                color: "#80709A",
+                letterSpacing: "normal"
+              }
+            : undefined
       }
       wireframe={
         antdConfigProviderProps && "wireframe" in antdConfigProviderProps

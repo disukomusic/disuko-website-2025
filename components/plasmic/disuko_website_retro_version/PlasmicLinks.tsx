@@ -512,7 +512,9 @@ type NodeComponentProps<T extends NodeNameType> =
     variants?: PlasmicLinks__VariantsArgs;
     args?: PlasmicLinks__ArgsType;
     overrides?: NodeOverridesType<T>;
-  } & Omit<PlasmicLinks__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
+  } &
+    // Specify variants directly as props
+    Omit<PlasmicLinks__VariantsArgs, ReservedPropsType> &
     // Specify args directly as props
     Omit<PlasmicLinks__ArgsType, ReservedPropsType> &
     // Specify overrides for each element directly as props

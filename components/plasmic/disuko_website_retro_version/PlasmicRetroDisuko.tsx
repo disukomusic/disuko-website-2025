@@ -198,7 +198,9 @@ type NodeComponentProps<T extends NodeNameType> =
     variants?: PlasmicRetroDisuko__VariantsArgs;
     args?: PlasmicRetroDisuko__ArgsType;
     overrides?: NodeOverridesType<T>;
-  } & Omit<PlasmicRetroDisuko__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
+  } &
+    // Specify variants directly as props
+    Omit<PlasmicRetroDisuko__VariantsArgs, ReservedPropsType> &
     // Specify args directly as props
     Omit<PlasmicRetroDisuko__ArgsType, ReservedPropsType> &
     // Specify overrides for each element directly as props

@@ -33,6 +33,12 @@
     left: 36px;
     top: 30px;
     width: 347px;
+    transform-style: preserve-3d;
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .finalAlbumSubjectToChange2023 * {
+    transform-style: preserve-3d;
   }
 }
 .embedHtml:global(.__wab_instance) {
