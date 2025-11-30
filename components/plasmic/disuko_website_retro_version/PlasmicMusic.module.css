@@ -37,31 +37,15 @@
   z-index: 0;
   max-width: 1583px;
   row-gap: 10px;
-  transform-style: preserve-3d;
   min-width: 0;
   min-height: 0;
   -webkit-backdrop-filter: none;
   padding: 30px;
 }
-.main * {
-  transform-style: preserve-3d;
-}
 @media (min-width: 0px) and (max-width: 768px) {
   .main {
-    transform-style: preserve-3d;
     padding: 10px;
   }
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .main * {
-    transform-style: preserve-3d;
-  }
-}
-.mainglobal_theme_classic {
-  transform-style: preserve-3d;
-}
-.mainglobal_theme_classic * {
-  transform-style: preserve-3d;
 }
 .reveal___62Ojm:global(.__wab_instance) {
   object-fit: cover;
@@ -169,6 +153,12 @@
 }
 .textglobal_theme_classic___0MC2ENktM {
   color: var(--token-lpL2YkgMM450);
+}
+.cloudddreamer:global(.__wab_instance) {
+  position: relative;
+  width: auto;
+  min-height: 512px;
+  min-width: 512px;
 }
 .freeBox___6KiX9 {
   display: grid;

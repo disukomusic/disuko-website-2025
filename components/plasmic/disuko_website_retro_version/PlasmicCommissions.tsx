@@ -1199,7 +1199,9 @@ type NodeComponentProps<T extends NodeNameType> =
     variants?: PlasmicCommissions__VariantsArgs;
     args?: PlasmicCommissions__ArgsType;
     overrides?: NodeOverridesType<T>;
-  } & Omit<PlasmicCommissions__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
+  } &
+    // Specify variants directly as props
+    Omit<PlasmicCommissions__VariantsArgs, ReservedPropsType> &
     // Specify args directly as props
     Omit<PlasmicCommissions__ArgsType, ReservedPropsType> &
     // Specify overrides for each element directly as props

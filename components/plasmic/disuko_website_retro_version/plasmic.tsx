@@ -9,8 +9,13 @@ import { createUseGlobalVariants } from "@plasmicapp/react-web";
 
 import { useScreenVariants as useScreenVariantsdmuurUfQuA6N } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: DmuurUFQuA6N/globalVariant
 import { ThemeValue, useTheme } from "./PlasmicGlobalVariant__Theme"; // plasmic-import: 3K9IqsAFaaID/globalVariant
+import {
+  UnnamedGlobalGroupOfVariantsValue,
+  useUnnamedGlobalGroupOfVariants
+} from "./PlasmicGlobalVariant__UnnamedGlobalGroupOfVariants"; // plasmic-import: xQjtXhXg9e5g/globalVariant
 
 export const _useGlobalVariants = createUseGlobalVariants({
   screen: useScreenVariantsdmuurUfQuA6N,
-  theme: useTheme
+  theme: useTheme,
+  unnamedGlobalGroupOfVariants: useUnnamedGlobalGroupOfVariants
 });

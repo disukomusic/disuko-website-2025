@@ -152,7 +152,10 @@
 }
 
 .plasmic_default_styles,
-.plasmic_default_styles:where(.global_theme_classic) {
+.plasmic_default_styles:where(.global_theme_classic),
+.plasmic_default_styles:where(
+  .global_unnamedGlobalGroupOfVariants_unnamedVariant
+) {
   --mixin-R1LBc3Wx4ATX_font-family: "VT323";
   --mixin-R1LBc3Wx4ATX_font-size: 16px;
   --mixin-R1LBc3Wx4ATX_font-weight: 400;
@@ -283,7 +286,8 @@
 }
 
 .plasmic_mixins,
-.plasmic_mixins:where(.global_theme_classic) {
+.plasmic_mixins:where(.global_theme_classic),
+.plasmic_mixins:where(.global_unnamedGlobalGroupOfVariants_unnamedVariant) {
   --mixin-caqA6EIE0DJz_box-shadow:
     -4px -4px 0px 0px var(--token-GXH3dzbZuw1x),
     4px 4px 0px 0px var(--token-FYHois2LGA8g);

@@ -972,10 +972,10 @@
   resolved "https://registry.yarnpkg.com/@plasmicpkgs/luxon-parser/-/luxon-parser-3.4.4.tgz#32150fc2c7bbad1e9e0242c897518680c6dc5fed"
   integrity sha512-VN/nwVehURL1TeHt7WlxuYXD7v9f87MG58YLrZeBQOcGDA9ck/gZNz7m1S1MeJ67gpnbpyJ3uFUPt+t1KnMQxw==
 
-"@plasmicpkgs/plasmic-basic-components@^0.0.254":
-  version "0.0.254"
-  resolved "https://registry.yarnpkg.com/@plasmicpkgs/plasmic-basic-components/-/plasmic-basic-components-0.0.254.tgz#99f8e9055d83f4ed7756437b10ea78fd4f5e0d44"
-  integrity sha512-Ourb6Rns3MdRXfixDZD5DWdVNX3dp1PF8bNDy/jv5VWsJIShcUr6cMiBYLfTqUZNmFDeLszs6o7PSajW2fFiRA==
+"@plasmicpkgs/plasmic-basic-components@^0.0.259":
+  version "0.0.259"
+  resolved "https://registry.yarnpkg.com/@plasmicpkgs/plasmic-basic-components/-/plasmic-basic-components-0.0.259.tgz#153db49c88ea6e19ea75eae9380a2f596921a988"
+  integrity sha512-NS/CzyON7bnmrkoRwnczW2NzINGpSVLPSVj9UHk0JdmSPEWZZHDX81fY6g3GQoN8nQT0XB7NbTErMLFfxm2SXQ==
 
 "@plasmicpkgs/plasmic-embed-css@^0.1.211":
   version "0.1.211"

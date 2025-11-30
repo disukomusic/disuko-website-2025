@@ -50,31 +50,15 @@
   left: auto;
   top: auto;
   row-gap: 10px;
-  transform-style: preserve-3d;
   min-width: 0;
   min-height: 0;
   -webkit-backdrop-filter: brightness(90%) blur(8px);
   padding: 30px;
 }
-.main * {
-  transform-style: preserve-3d;
-}
 @media (min-width: 0px) and (max-width: 768px) {
   .main {
-    transform-style: preserve-3d;
     padding: 10px;
   }
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .main * {
-    transform-style: preserve-3d;
-  }
-}
-.mainglobal_theme_classic {
-  transform-style: preserve-3d;
-}
-.mainglobal_theme_classic * {
-  transform-style: preserve-3d;
 }
 .freeBox__iNumN {
   display: flex;

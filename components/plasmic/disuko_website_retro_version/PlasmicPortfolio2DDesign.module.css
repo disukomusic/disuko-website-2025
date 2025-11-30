@@ -84,7 +84,8 @@
   position: relative;
   object-fit: cover;
   max-width: 100%;
-  box-shadow: -4px -4px 0px 0px var(--token-GXH3dzbZuw1x),
+  box-shadow:
+    -4px -4px 0px 0px var(--token-GXH3dzbZuw1x),
     4px 4px 0px 0px var(--token-FYHois2LGA8g);
   margin: 10px;
 }
@@ -94,7 +95,8 @@
 .img__biyt5 {
   object-fit: cover;
   max-width: 100%;
-  box-shadow: -4px -4px 0px 0px var(--token-GXH3dzbZuw1x),
+  box-shadow:
+    -4px -4px 0px 0px var(--token-GXH3dzbZuw1x),
     4px 4px 0px 0px var(--token-FYHois2LGA8g);
   position: relative;
   margin: 10px;
@@ -195,7 +197,8 @@
   position: relative;
   object-fit: contain;
   max-width: 100%;
-  box-shadow: -4px -4px 0px 0px var(--token-GXH3dzbZuw1x),
+  box-shadow:
+    -4px -4px 0px 0px var(--token-GXH3dzbZuw1x),
     4px 4px 0px 0px var(--token-FYHois2LGA8g);
   backdrop-filter: brightness(75%);
   height: 500px;
@@ -230,7 +233,8 @@
   position: relative;
   object-fit: contain;
   max-width: 100%;
-  box-shadow: -4px -4px 0px 0px var(--token-GXH3dzbZuw1x),
+  box-shadow:
+    -4px -4px 0px 0px var(--token-GXH3dzbZuw1x),
     4px 4px 0px 0px var(--token-FYHois2LGA8g);
   backdrop-filter: brightness(75%);
   height: 500px;
@@ -265,7 +269,8 @@
   position: relative;
   object-fit: cover;
   max-width: 100%;
-  box-shadow: -4px -4px 0px 0px var(--token-GXH3dzbZuw1x),
+  box-shadow:
+    -4px -4px 0px 0px var(--token-GXH3dzbZuw1x),
     4px 4px 0px 0px var(--token-FYHois2LGA8g);
   height: 500px;
   backdrop-filter: brightness(75%);
@@ -302,7 +307,8 @@
   position: relative;
   object-fit: scale-down;
   max-width: 100%;
-  box-shadow: -4px -4px 0px 0px var(--token-GXH3dzbZuw1x),
+  box-shadow:
+    -4px -4px 0px 0px var(--token-GXH3dzbZuw1x),
     4px 4px 0px 0px var(--token-FYHois2LGA8g);
   backdrop-filter: brightness(75%);
   width: 500px;
@@ -338,7 +344,8 @@
   position: relative;
   object-fit: contain;
   max-width: 100%;
-  box-shadow: -4px -4px 0px 0px var(--token-GXH3dzbZuw1x),
+  box-shadow:
+    -4px -4px 0px 0px var(--token-GXH3dzbZuw1x),
     4px 4px 0px 0px var(--token-FYHois2LGA8g);
   height: 500px;
   width: 500px;
@@ -373,7 +380,8 @@
   position: relative;
   object-fit: cover;
   max-width: 100%;
-  box-shadow: -4px -4px 0px 0px var(--token-GXH3dzbZuw1x),
+  box-shadow:
+    -4px -4px 0px 0px var(--token-GXH3dzbZuw1x),
     4px 4px 0px 0px var(--token-FYHois2LGA8g);
   width: 500px;
   height: 500px;
@@ -406,7 +414,8 @@
   position: relative;
   object-fit: cover;
   max-width: 100%;
-  box-shadow: -4px -4px 0px 0px var(--token-GXH3dzbZuw1x),
+  box-shadow:
+    -4px -4px 0px 0px var(--token-GXH3dzbZuw1x),
     4px 4px 0px 0px var(--token-FYHois2LGA8g);
   width: 500px;
   height: 500px;
@@ -439,7 +448,8 @@
   position: relative;
   object-fit: cover;
   max-width: 100%;
-  box-shadow: -4px -4px 0px 0px var(--token-GXH3dzbZuw1x),
+  box-shadow:
+    -4px -4px 0px 0px var(--token-GXH3dzbZuw1x),
     4px 4px 0px 0px var(--token-FYHois2LGA8g);
   width: 500px;
   height: 500px;
@@ -478,7 +488,8 @@
   position: relative;
   object-fit: contain;
   max-width: 100%;
-  box-shadow: -4px -4px 0px 0px var(--token-GXH3dzbZuw1x),
+  box-shadow:
+    -4px -4px 0px 0px var(--token-GXH3dzbZuw1x),
     4px 4px 0px 0px var(--token-FYHois2LGA8g);
   height: 500px;
   width: 500px;
@@ -513,7 +524,8 @@
   position: relative;
   object-fit: cover;
   max-width: 100%;
-  box-shadow: -4px -4px 0px 0px var(--token-GXH3dzbZuw1x),
+  box-shadow:
+    -4px -4px 0px 0px var(--token-GXH3dzbZuw1x),
     4px 4px 0px 0px var(--token-FYHois2LGA8g);
   backdrop-filter: brightness(75%);
   width: 500px;
@@ -567,7 +579,8 @@
   position: relative;
   object-fit: contain;
   max-width: 100%;
-  box-shadow: -4px -4px 0px 0px var(--token-GXH3dzbZuw1x),
+  box-shadow:
+    -4px -4px 0px 0px var(--token-GXH3dzbZuw1x),
     4px 4px 0px 0px var(--token-FYHois2LGA8g);
   backdrop-filter: brightness(75%);
   height: 500px;
@@ -605,7 +618,8 @@
   position: relative;
   object-fit: contain;
   max-width: 100%;
-  box-shadow: -4px -4px 0px 0px var(--token-GXH3dzbZuw1x),
+  box-shadow:
+    -4px -4px 0px 0px var(--token-GXH3dzbZuw1x),
     4px 4px 0px 0px var(--token-FYHois2LGA8g);
   backdrop-filter: brightness(75%);
   height: 500px;
@@ -643,7 +657,8 @@
   position: relative;
   object-fit: cover;
   max-width: 100%;
-  box-shadow: -4px -4px 0px 0px var(--token-GXH3dzbZuw1x),
+  box-shadow:
+    -4px -4px 0px 0px var(--token-GXH3dzbZuw1x),
     4px 4px 0px 0px var(--token-FYHois2LGA8g);
   height: 500px;
   backdrop-filter: brightness(75%);
@@ -681,7 +696,8 @@
   position: relative;
   object-fit: scale-down;
   max-width: 100%;
-  box-shadow: -4px -4px 0px 0px var(--token-GXH3dzbZuw1x),
+  box-shadow:
+    -4px -4px 0px 0px var(--token-GXH3dzbZuw1x),
     4px 4px 0px 0px var(--token-FYHois2LGA8g);
   backdrop-filter: brightness(75%);
   width: 500px;
@@ -719,7 +735,8 @@
   position: relative;
   object-fit: contain;
   max-width: 100%;
-  box-shadow: -4px -4px 0px 0px var(--token-GXH3dzbZuw1x),
+  box-shadow:
+    -4px -4px 0px 0px var(--token-GXH3dzbZuw1x),
     4px 4px 0px 0px var(--token-FYHois2LGA8g);
   height: 500px;
   width: 500px;
@@ -757,7 +774,8 @@
   position: relative;
   object-fit: cover;
   max-width: 100%;
-  box-shadow: -4px -4px 0px 0px var(--token-GXH3dzbZuw1x),
+  box-shadow:
+    -4px -4px 0px 0px var(--token-GXH3dzbZuw1x),
     4px 4px 0px 0px var(--token-FYHois2LGA8g);
   width: 500px;
   height: 500px;
@@ -793,7 +811,8 @@
   position: relative;
   object-fit: cover;
   max-width: 100%;
-  box-shadow: -4px -4px 0px 0px var(--token-GXH3dzbZuw1x),
+  box-shadow:
+    -4px -4px 0px 0px var(--token-GXH3dzbZuw1x),
     4px 4px 0px 0px var(--token-FYHois2LGA8g);
   width: 500px;
   height: 500px;
@@ -829,7 +848,8 @@
   position: relative;
   object-fit: cover;
   max-width: 100%;
-  box-shadow: -4px -4px 0px 0px var(--token-GXH3dzbZuw1x),
+  box-shadow:
+    -4px -4px 0px 0px var(--token-GXH3dzbZuw1x),
     4px 4px 0px 0px var(--token-FYHois2LGA8g);
   width: 500px;
   height: 500px;
@@ -871,7 +891,8 @@
   position: relative;
   object-fit: contain;
   max-width: 100%;
-  box-shadow: -4px -4px 0px 0px var(--token-GXH3dzbZuw1x),
+  box-shadow:
+    -4px -4px 0px 0px var(--token-GXH3dzbZuw1x),
     4px 4px 0px 0px var(--token-FYHois2LGA8g);
   height: 500px;
   width: 500px;
@@ -909,7 +930,8 @@
   position: relative;
   object-fit: cover;
   max-width: 100%;
-  box-shadow: -4px -4px 0px 0px var(--token-GXH3dzbZuw1x),
+  box-shadow:
+    -4px -4px 0px 0px var(--token-GXH3dzbZuw1x),
     4px 4px 0px 0px var(--token-FYHois2LGA8g);
   backdrop-filter: brightness(75%);
   width: 500px;
@@ -1091,7 +1113,8 @@
   position: relative;
   object-fit: cover;
   max-width: 100%;
-  box-shadow: -4px -4px 0px 0px var(--token-GXH3dzbZuw1x),
+  box-shadow:
+    -4px -4px 0px 0px var(--token-GXH3dzbZuw1x),
     4px 4px 0px 0px var(--token-FYHois2LGA8g);
   margin: 10px;
 }
@@ -1107,7 +1130,8 @@
 .img__ikFvE {
   position: relative;
   object-fit: cover;
-  box-shadow: -4px -4px 0px 0px var(--token-GXH3dzbZuw1x),
+  box-shadow:
+    -4px -4px 0px 0px var(--token-GXH3dzbZuw1x),
     4px 4px 0px 0px var(--token-FYHois2LGA8g);
   width: 100%;
   min-width: 0;
@@ -1157,7 +1181,8 @@
 .column__lpHd4 {
   object-fit: cover;
   max-width: 100%;
-  box-shadow: -4px -4px 0px 0px var(--token-GXH3dzbZuw1x),
+  box-shadow:
+    -4px -4px 0px 0px var(--token-GXH3dzbZuw1x),
     4px 4px 0px 0px var(--token-FYHois2LGA8g);
   display: flex;
   flex-direction: column;
@@ -1173,7 +1198,8 @@
 }
 .columnglobal_theme_classic__lpHd4ENktM {
   background: var(--token-u2rbquIz9Y0U);
-  box-shadow: -4px -4px 0px 0px var(--token-K_FDgNby8UmH),
+  box-shadow:
+    -4px -4px 0px 0px var(--token-K_FDgNby8UmH),
     4px 4px 0px 0px var(--token-24x9Uc_JThUA);
 }
 .img__hyMjK {
@@ -1186,7 +1212,8 @@
 .column__cMqtO {
   object-fit: cover;
   max-width: 100%;
-  box-shadow: -4px -4px 0px 0px var(--token-GXH3dzbZuw1x),
+  box-shadow:
+    -4px -4px 0px 0px var(--token-GXH3dzbZuw1x),
     4px 4px 0px 0px var(--token-FYHois2LGA8g);
   display: flex;
   flex-direction: column;
@@ -1207,13 +1234,15 @@
   }
 }
 .columnglobal_theme_classic__cMqtOeNktM {
-  box-shadow: -4px -4px 0px 0px var(--token-K_FDgNby8UmH),
+  box-shadow:
+    -4px -4px 0px 0px var(--token-K_FDgNby8UmH),
     4px 4px 0px 0px var(--token-24x9Uc_JThUA);
 }
 .column__mjCkh {
   object-fit: cover;
   max-width: 100%;
-  box-shadow: -4px -4px 0px 0px var(--token-GXH3dzbZuw1x),
+  box-shadow:
+    -4px -4px 0px 0px var(--token-GXH3dzbZuw1x),
     4px 4px 0px 0px var(--token-FYHois2LGA8g);
   display: flex;
   flex-direction: column;
@@ -1229,7 +1258,8 @@
 }
 .columnglobal_theme_classic__mjCkHeNktM {
   background: var(--token-u2rbquIz9Y0U);
-  box-shadow: -4px -4px 0px 0px var(--token-K_FDgNby8UmH),
+  box-shadow:
+    -4px -4px 0px 0px var(--token-K_FDgNby8UmH),
     4px 4px 0px 0px var(--token-24x9Uc_JThUA);
 }
 .img__qEfGz {
@@ -1307,7 +1337,8 @@
   position: relative;
   object-fit: cover;
   max-width: 100%;
-  box-shadow: -4px -4px 0px 0px var(--token-GXH3dzbZuw1x),
+  box-shadow:
+    -4px -4px 0px 0px var(--token-GXH3dzbZuw1x),
     4px 4px 0px 0px var(--token-FYHois2LGA8g);
   margin: 10px;
 }
@@ -1354,7 +1385,8 @@
 .imageWindow {
   object-fit: cover;
   max-width: 100%;
-  box-shadow: 4px 4px 0px 0px var(--token-GXH3dzbZuw1x),
+  box-shadow:
+    4px 4px 0px 0px var(--token-GXH3dzbZuw1x),
     -4px -4px 0px 0px var(--token-FYHois2LGA8g);
   display: flex;
   flex-direction: column;
@@ -1370,13 +1402,15 @@
 }
 .imageWindowglobal_theme_classic {
   background: var(--token-4IQYJ82NsyMZ);
-  box-shadow: 4px 4px 0px 0px var(--token-K_FDgNby8UmH),
+  box-shadow:
+    4px 4px 0px 0px var(--token-K_FDgNby8UmH),
     -4px -4px 0px 0px var(--token-24x9Uc_JThUA);
 }
 .img__yq2Ah {
   object-fit: cover;
   max-width: 100%;
-  box-shadow: -4px -4px 0px 0px var(--token-GXH3dzbZuw1x),
+  box-shadow:
+    -4px -4px 0px 0px var(--token-GXH3dzbZuw1x),
     4px 4px 0px 0px var(--token-FYHois2LGA8g);
   backdrop-filter: brightness(75%);
   width: 100%;
@@ -1387,6 +1421,7 @@
   object-fit: cover;
 }
 .imgglobal_theme_classic__yq2AheNktM {
-  box-shadow: -4px -4px 0px 0px var(--token-K_FDgNby8UmH),
+  box-shadow:
+    -4px -4px 0px 0px var(--token-K_FDgNby8UmH),
     4px 4px 0px 0px var(--token-24x9Uc_JThUA);
 }

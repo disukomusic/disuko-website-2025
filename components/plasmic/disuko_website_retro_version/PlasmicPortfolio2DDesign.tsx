@@ -334,8 +334,8 @@ function PlasmicPortfolio2DDesign__RenderFunc(props: {
               arrowColor: hasVariant(globalVariants, "screen", "mobileOnly")
                 ? "#404040"
                 : true
-                ? "#52224C"
-                : undefined,
+                  ? "#52224C"
+                  : undefined,
               beforeChange: async (...eventArgs: any) => {
                 generateStateOnChangePropForCodeComponents(
                   $state,
@@ -1495,7 +1495,9 @@ type NodeComponentProps<T extends NodeNameType> =
     variants?: PlasmicPortfolio2DDesign__VariantsArgs;
     args?: PlasmicPortfolio2DDesign__ArgsType;
     overrides?: NodeOverridesType<T>;
-  } & Omit<PlasmicPortfolio2DDesign__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
+  } &
+    // Specify variants directly as props
+    Omit<PlasmicPortfolio2DDesign__VariantsArgs, ReservedPropsType> &
     // Specify args directly as props
     Omit<PlasmicPortfolio2DDesign__ArgsType, ReservedPropsType> &
     // Specify overrides for each element directly as props

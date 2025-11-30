@@ -16,7 +16,7 @@
     "@plasmicpkgs/antd5": "^0.0.304",
     "@plasmicpkgs/commerce": "^0.0.224",
     "@plasmicpkgs/commerce-shopify": "^0.0.213",
-    "@plasmicpkgs/plasmic-basic-components": "^0.0.254",
+    "@plasmicpkgs/plasmic-basic-components": "^0.0.259",
     "@plasmicpkgs/plasmic-embed-css": "^0.1.211",
     "@plasmicpkgs/plasmic-nav": "^0.0.196",
     "@plasmicpkgs/plasmic-rich-components": "^1.0.222",

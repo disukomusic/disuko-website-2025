@@ -49,7 +49,8 @@
   position: relative;
   object-fit: contain;
   max-width: 100%;
-  box-shadow: -4px -4px 0px 0px var(--token-GXH3dzbZuw1x),
+  box-shadow:
+    -4px -4px 0px 0px var(--token-GXH3dzbZuw1x),
     4px 4px 0px 0px var(--token-FYHois2LGA8g);
   height: 141px;
   margin: 10px;

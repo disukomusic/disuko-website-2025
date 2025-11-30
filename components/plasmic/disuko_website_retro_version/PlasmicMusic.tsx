@@ -96,6 +96,7 @@ export type PlasmicMusic__OverridesType = {
   spotify?: Flex__<typeof WindowButton>;
   appleMusic?: Flex__<typeof WindowButton>;
   bandcamp?: Flex__<typeof WindowButton>;
+  cloudddreamer?: Flex__<typeof MusicAlbum>;
   pirateThisSong?: Flex__<typeof MusicAlbum>;
   _727PpDeathLaser?: Flex__<typeof MusicAlbum>;
   lilypadTea?: Flex__<typeof MusicAlbum>;
@@ -394,6 +395,24 @@ function PlasmicMusic__RenderFunc(props: {
                 </WindowButton>
               </Window>
             </Reveal>
+            <MusicAlbum
+              data-plasmic-name={"cloudddreamer"}
+              data-plasmic-override={overrides.cloudddreamer}
+              albumArt={undefined}
+              appleMusicLink={
+                "https://music.apple.com/us/album/pirate-this-song-xd-single/1763226239"
+              }
+              bandcampLink={
+                "https://on3ko.bandcamp.com/track/pirate-this-song-xd"
+              }
+              className={classNames("__wab_instance", sty.cloudddreamer)}
+              description={"CLOUDDDREAMER"}
+              spotifyLink={
+                "https://open.spotify.com/album/5Q2PB1ghjrs5xoNA6tiWhs?si=6OblvGb0T76mJNS1cFBE1Q"
+              }
+              youTubeLink={"https://www.youtube.com/watch?v=DhCda2W72MA"}
+            />
+
             <div className={classNames(projectcss.all, sty.freeBox___6KiX9)}>
               <MusicAlbum
                 data-plasmic-name={"pirateThisSong"}
@@ -815,6 +834,7 @@ const PlasmicDescendants = {
     "spotify",
     "appleMusic",
     "bandcamp",
+    "cloudddreamer",
     "pirateThisSong",
     "_727PpDeathLaser",
     "lilypadTea",
@@ -838,6 +858,7 @@ const PlasmicDescendants = {
     "spotify",
     "appleMusic",
     "bandcamp",
+    "cloudddreamer",
     "pirateThisSong",
     "_727PpDeathLaser",
     "lilypadTea",
@@ -856,6 +877,7 @@ const PlasmicDescendants = {
   spotify: ["spotify"],
   appleMusic: ["appleMusic"],
   bandcamp: ["bandcamp"],
+  cloudddreamer: ["cloudddreamer"],
   pirateThisSong: ["pirateThisSong"],
   _727PpDeathLaser: ["_727PpDeathLaser"],
   lilypadTea: ["lilypadTea"],
@@ -883,6 +905,7 @@ type NodeDefaultElementType = {
   spotify: typeof WindowButton;
   appleMusic: typeof WindowButton;
   bandcamp: typeof WindowButton;
+  cloudddreamer: typeof MusicAlbum;
   pirateThisSong: typeof MusicAlbum;
   _727PpDeathLaser: typeof MusicAlbum;
   lilypadTea: typeof MusicAlbum;
@@ -993,6 +1016,7 @@ export const PlasmicMusic = Object.assign(
     spotify: makeNodeComponent("spotify"),
     appleMusic: makeNodeComponent("appleMusic"),
     bandcamp: makeNodeComponent("bandcamp"),
+    cloudddreamer: makeNodeComponent("cloudddreamer"),
     pirateThisSong: makeNodeComponent("pirateThisSong"),
     _727PpDeathLaser: makeNodeComponent("_727PpDeathLaser"),
     lilypadTea: makeNodeComponent("lilypadTea"),

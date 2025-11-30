@@ -37,24 +37,14 @@
   transform: skew(0deg, 0deg);
   height: auto;
   row-gap: 10px;
-  transform-style: preserve-3d;
   -webkit-backdrop-filter: none;
   padding: 0px;
   margin: 0px;
 }
-.main * {
-  transform-style: preserve-3d;
-}
 @media (min-width: 0px) and (max-width: 768px) {
   .main {
     width: 100%;
-    transform-style: preserve-3d;
     padding: 10px;
-  }
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .main * {
-    transform-style: preserve-3d;
   }
 }
 .columns {

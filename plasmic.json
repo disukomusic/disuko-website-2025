@@ -1633,6 +1633,19 @@
           "cssFilePath": "plasmic/disuko_website_retro_version/PlasmicImageWindow.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "o62CkNPQW-vk",
+          "name": "BlurredPicture",
+          "type": "managed",
+          "projectId": "x4VgG6kzZCVuaqknYN7tgc",
+          "renderModuleFilePath": "plasmic/disuko_website_retro_version/PlasmicBlurredPicture.tsx",
+          "importSpec": {
+            "modulePath": "BlurredPicture.tsx"
+          },
+          "cssFilePath": "plasmic/disuko_website_retro_version/PlasmicBlurredPicture.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [
@@ -3167,6 +3180,16 @@
           "id": "MaprSr11gYYv",
           "name": "Cloud Dreamer Album Art Transparent LOgo USE THIS ONE.png",
           "filePath": "../public/plasmic/disuko_website_retro_version/images/cloudDreamerAlbumArtTransparentLOgoUseThisOnePng.png"
+        },
+        {
+          "id": "JU6KBsnic-4p",
+          "name": "image 106",
+          "filePath": "../public/plasmic/disuko_website_retro_version/images/image106.png"
+        },
+        {
+          "id": "6fU3by3WRXHS",
+          "name": "image 107",
+          "filePath": "../public/plasmic/disuko_website_retro_version/images/image107.png"
         }
       ],
       "indirect": false,
@@ -3414,6 +3437,12 @@
         "name": "Theme",
         "projectId": "x4VgG6kzZCVuaqknYN7tgc",
         "contextFilePath": "plasmic/disuko_website_retro_version/PlasmicGlobalVariant__Theme.tsx"
+      },
+      {
+        "id": "xQjtXhXg9e5g",
+        "name": "UnnamedGlobalGroupOfVariants",
+        "projectId": "x4VgG6kzZCVuaqknYN7tgc",
+        "contextFilePath": "plasmic/disuko_website_retro_version/PlasmicGlobalVariant__UnnamedGlobalGroupOfVariants.tsx"
       }
     ]
   },

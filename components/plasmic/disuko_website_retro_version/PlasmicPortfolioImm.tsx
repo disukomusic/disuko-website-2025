@@ -66,6 +66,8 @@ import Navbar from "../../Navbar"; // plasmic-import: 5THU1wffFibB/component
 import WindowButton from "../../WindowButton"; // plasmic-import: KZYdo-R8GYAn/component
 import Window from "../../Window"; // plasmic-import: BWjgdOwFY_OO/component
 import YouTube from "@plasmicpkgs/react-youtube";
+import BlurredPicture from "../../BlurredPicture"; // plasmic-import: o62CkNPQW-vk/component
+import { Video } from "@plasmicpkgs/plasmic-basic-components";
 import Tilt from "@plasmicpkgs/react-parallax-tilt";
 import { _useGlobalVariants } from "./plasmic"; // plasmic-import: x4VgG6kzZCVuaqknYN7tgc/projectModule
 import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: x4VgG6kzZCVuaqknYN7tgc/styleTokensProvider
@@ -92,6 +94,8 @@ export type PlasmicPortfolioImm__OverridesType = {
   section?: Flex__<"section">;
   window?: Flex__<typeof Window>;
   columns?: Flex__<"div">;
+  link?: Flex__<"a"> & Partial<LinkProps>;
+  htmlVideo?: Flex__<typeof Video>;
 };
 
 export interface DefaultPortfolioImmProps {}
@@ -237,7 +241,7 @@ function PlasmicPortfolioImm__RenderFunc(props: {
                     }
                   )}
                 >
-                  {"New Maqam City - Audio Visual Installation"}
+                  {"New Maqam City - Interactive Audio Visual Installation"}
                 </div>
                 <div
                   className={classNames(
@@ -533,14 +537,14 @@ function PlasmicPortfolioImm__RenderFunc(props: {
                   }}
                 />
               </div>
-              <div className={classNames(projectcss.all, sty.freeBox__gj4Pj)}>
+              <div className={classNames(projectcss.all, sty.freeBox__gDqQo)}>
                 <div
                   className={classNames(
                     projectcss.all,
                     projectcss.__wab_text,
-                    sty.text__vTl,
+                    sty.text__neZe,
                     {
-                      [sty.textglobal_theme_classic__vTleNktM]: hasVariant(
+                      [sty.textglobal_theme_classic__neZeeNktM]: hasVariant(
                         globalVariants,
                         "theme",
                         "classic"
@@ -554,9 +558,9 @@ function PlasmicPortfolioImm__RenderFunc(props: {
                   className={classNames(
                     projectcss.all,
                     projectcss.__wab_text,
-                    sty.text___8Jfk6,
+                    sty.text__fsfKo,
                     {
-                      [sty.textglobal_theme_classic___8Jfk6ENktM]: hasVariant(
+                      [sty.textglobal_theme_classic__fsfKOeNktM]: hasVariant(
                         globalVariants,
                         "theme",
                         "classic"
@@ -570,9 +574,9 @@ function PlasmicPortfolioImm__RenderFunc(props: {
                   className={classNames(
                     projectcss.all,
                     projectcss.__wab_text,
-                    sty.text__bcHc,
+                    sty.text__qhs5A,
                     {
-                      [sty.textglobal_theme_classic__bcHceNktM]: hasVariant(
+                      [sty.textglobal_theme_classic__qhs5AeNktM]: hasVariant(
                         globalVariants,
                         "theme",
                         "classic"
@@ -587,7 +591,7 @@ function PlasmicPortfolioImm__RenderFunc(props: {
                 <WindowButton
                   className={classNames(
                     "__wab_instance",
-                    sty.windowButton___9C6U5
+                    sty.windowButton___6LU
                   )}
                   link={"https://prototyping.hdyar.com/projects/spaceforcev2/"}
                 >
@@ -595,7 +599,7 @@ function PlasmicPortfolioImm__RenderFunc(props: {
                     className={classNames(
                       projectcss.all,
                       projectcss.__wab_text,
-                      sty.text__gyuHh
+                      sty.text__txOr8
                     )}
                   >
                     {"Documentation"}
@@ -603,7 +607,7 @@ function PlasmicPortfolioImm__RenderFunc(props: {
                 </WindowButton>
                 <PlasmicImg__
                   alt={""}
-                  className={classNames(sty.img___4Bndd)}
+                  className={classNames(sty.img___4GwEo)}
                   displayHeight={
                     hasVariant(globalVariants, "screen", "mobileOnly")
                       ? "auto"
@@ -625,7 +629,7 @@ function PlasmicPortfolioImm__RenderFunc(props: {
 
                 <PlasmicImg__
                   alt={""}
-                  className={classNames(sty.img___04Khb)}
+                  className={classNames(sty.img__tcRag)}
                   displayHeight={
                     hasVariant(globalVariants, "screen", "mobileOnly")
                       ? "auto"
@@ -879,6 +883,132 @@ function PlasmicPortfolioImm__RenderFunc(props: {
                   }}
                 />
               </div>
+              <div className={classNames(projectcss.all, sty.freeBox__gj4Pj)}>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__vTl,
+                    {
+                      [sty.textglobal_theme_classic__vTleNktM]: hasVariant(
+                        globalVariants,
+                        "theme",
+                        "classic"
+                      )
+                    }
+                  )}
+                >
+                  {"Media Convergence - Audio Visual Installation"}
+                </div>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text___8Jfk6,
+                    {
+                      [sty.textglobal_theme_classic___8Jfk6ENktM]: hasVariant(
+                        globalVariants,
+                        "theme",
+                        "classic"
+                      )
+                    }
+                  )}
+                >
+                  {"TouchDesigner, Bitwig Studio"}
+                </div>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__bcHc,
+                    {
+                      [sty.textglobal_theme_classic__bcHceNktM]: hasVariant(
+                        globalVariants,
+                        "theme",
+                        "classic"
+                      )
+                    }
+                  )}
+                >
+                  <React.Fragment>
+                    <React.Fragment>
+                      {
+                        "Viewers sit across from a TV displaying screenshots depicting social media coverage of the violence in Palestine from the Israeli government. The screenshots change rhythmically to a drum beat that changes based on a real-time death toll of civilians in Gaza.\n\nThis piece was a collaboration with "
+                      }
+                    </React.Fragment>
+                    {
+                      <PlasmicLink__
+                        data-plasmic-name={"link"}
+                        data-plasmic-override={overrides.link}
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.a,
+                          projectcss.__wab_text,
+                          projectcss.plasmic_default__inline,
+                          sty.link
+                        )}
+                        component={Link}
+                        href={
+                          "https://www.chatham.edu/academics/undergraduate/communication/faculty/ryan-dsouza.html"
+                        }
+                        platform={"nextjs"}
+                      >
+                        {"Ryan D'Souza, Ph.D."}
+                      </PlasmicLink__>
+                    }
+                    <React.Fragment>
+                      {" for the Chatham University Faculty Art Showcase."}
+                    </React.Fragment>
+                  </React.Fragment>
+                </div>
+                <BlurredPicture
+                  className={classNames(
+                    "__wab_instance",
+                    sty.blurredPicture__cjrwd
+                  )}
+                />
+
+                <BlurredPicture
+                  className={classNames(
+                    "__wab_instance",
+                    sty.blurredPicture__iIoo
+                  )}
+                >
+                  <Video
+                    data-plasmic-name={"htmlVideo"}
+                    data-plasmic-override={overrides.htmlVideo}
+                    className={classNames("__wab_instance", sty.htmlVideo)}
+                    controls={true}
+                    loop={true}
+                    playsInline={true}
+                    ref={ref => {
+                      $refs["htmlVideo"] = ref;
+                    }}
+                    src={"https://cdn.redpandastudios.net/mediacon.mp4"}
+                  />
+                </BlurredPicture>
+                <PlasmicImg__
+                  alt={""}
+                  className={classNames(sty.img___4Bndd)}
+                  displayHeight={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "auto"
+                      : "384px"
+                  }
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"100%"}
+                  loading={"lazy"}
+                  src={{
+                    src: "/plasmic/disuko_website_retro_version/images/image106.png",
+                    fullWidth: 2048,
+                    fullHeight: 1536,
+                    aspectRatio: undefined
+                  }}
+                />
+              </div>
               <div className={classNames(projectcss.all, sty.freeBox__avUeE)}>
                 <div
                   className={classNames(
@@ -951,82 +1081,81 @@ function PlasmicPortfolioImm__RenderFunc(props: {
                   className={classNames("__wab_instance", sty.youTube__tedby)}
                   videoId={"Vl3FjUiB3xo"}
                 />
-
-                <div className={classNames(projectcss.all, sty.freeBox__ro7Nq)}>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__nAytI,
-                      {
-                        [sty.textglobal_theme_classic__nAytIeNktM]: hasVariant(
-                          globalVariants,
-                          "theme",
-                          "classic"
-                        )
-                      }
-                    )}
-                  >
-                    {"Frutiger Aero Experience - VR Prototype"}
-                  </div>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__lByco,
-                      {
-                        [sty.textglobal_theme_classic__lBycOeNktM]: hasVariant(
-                          globalVariants,
-                          "theme",
-                          "classic"
-                        )
-                      }
-                    )}
-                  >
-                    {"Unity"}
-                  </div>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__tEfef,
-                      {
-                        [sty.textglobal_theme_classic__tEfefeNktM]: hasVariant(
-                          globalVariants,
-                          "theme",
-                          "classic"
-                        )
-                      }
-                    )}
-                  >
+              </div>
+              <div className={classNames(projectcss.all, sty.freeBox__ro7Nq)}>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__nAytI,
                     {
-                      "VR Players interact with a futuristic flip phone UI to materialize a variety of objects into the scene."
+                      [sty.textglobal_theme_classic__nAytIeNktM]: hasVariant(
+                        globalVariants,
+                        "theme",
+                        "classic"
+                      )
                     }
-                  </div>
-                  <WindowButton
-                    className={classNames(
-                      "__wab_instance",
-                      sty.windowButton__guchs
-                    )}
-                    link={
-                      "https://github.com/disukomusic/FrutigerAeroPhoneInteraction"
-                    }
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__tuKys
-                      )}
-                    >
-                      {"Source Code"}
-                    </div>
-                  </WindowButton>
-                  <YouTube
-                    className={classNames("__wab_instance", sty.youTube__rtUap)}
-                    videoId={"Ey5fA03QNu8"}
-                  />
+                  )}
+                >
+                  {"Frutiger Aero Experience - VR Prototype"}
                 </div>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__lByco,
+                    {
+                      [sty.textglobal_theme_classic__lBycOeNktM]: hasVariant(
+                        globalVariants,
+                        "theme",
+                        "classic"
+                      )
+                    }
+                  )}
+                >
+                  {"Unity"}
+                </div>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__tEfef,
+                    {
+                      [sty.textglobal_theme_classic__tEfefeNktM]: hasVariant(
+                        globalVariants,
+                        "theme",
+                        "classic"
+                      )
+                    }
+                  )}
+                >
+                  {
+                    "VR Players interact with a futuristic flip phone UI to materialize a variety of objects into the scene."
+                  }
+                </div>
+                <WindowButton
+                  className={classNames(
+                    "__wab_instance",
+                    sty.windowButton__guchs
+                  )}
+                  link={
+                    "https://github.com/disukomusic/FrutigerAeroPhoneInteraction"
+                  }
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__tuKys
+                    )}
+                  >
+                    {"Source Code"}
+                  </div>
+                </WindowButton>
+                <YouTube
+                  className={classNames("__wab_instance", sty.youTube__rtUap)}
+                  videoId={"Ey5fA03QNu8"}
+                />
               </div>
               <div className={classNames(projectcss.all, sty.freeBox__lfPiy)}>
                 <div
@@ -1208,11 +1337,21 @@ function PlasmicPortfolioImm__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  _3DDesign: ["_3DDesign", "navbar", "section", "window", "columns"],
+  _3DDesign: [
+    "_3DDesign",
+    "navbar",
+    "section",
+    "window",
+    "columns",
+    "link",
+    "htmlVideo"
+  ],
   navbar: ["navbar"],
-  section: ["section", "window", "columns"],
+  section: ["section", "window", "columns", "link", "htmlVideo"],
   window: ["window"],
-  columns: ["columns"]
+  columns: ["columns"],
+  link: ["link"],
+  htmlVideo: ["htmlVideo"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -1223,6 +1362,8 @@ type NodeDefaultElementType = {
   section: "section";
   window: typeof Window;
   columns: "div";
+  link: "a";
+  htmlVideo: typeof Video;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -1236,7 +1377,9 @@ type NodeComponentProps<T extends NodeNameType> =
     variants?: PlasmicPortfolioImm__VariantsArgs;
     args?: PlasmicPortfolioImm__ArgsType;
     overrides?: NodeOverridesType<T>;
-  } & Omit<PlasmicPortfolioImm__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
+  } &
+    // Specify variants directly as props
+    Omit<PlasmicPortfolioImm__VariantsArgs, ReservedPropsType> &
     // Specify args directly as props
     Omit<PlasmicPortfolioImm__ArgsType, ReservedPropsType> &
     // Specify overrides for each element directly as props
@@ -1314,6 +1457,8 @@ export const PlasmicPortfolioImm = Object.assign(
     section: makeNodeComponent("section"),
     window: makeNodeComponent("window"),
     columns: makeNodeComponent("columns"),
+    link: makeNodeComponent("link"),
+    htmlVideo: makeNodeComponent("htmlVideo"),
 
     // Metadata about props expected for PlasmicPortfolioImm
     internalVariantProps: PlasmicPortfolioImm__VariantProps,

@@ -39,24 +39,14 @@
   filter: none;
   transform: skew(0deg, 0deg);
   row-gap: 10px;
-  transform-style: preserve-3d;
   min-width: 0;
   min-height: 0;
   -webkit-backdrop-filter: none;
   padding: 30px;
 }
-.main * {
-  transform-style: preserve-3d;
-}
 @media (min-width: 0px) and (max-width: 768px) {
   .main {
-    transform-style: preserve-3d;
     padding: 10px;
-  }
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .main * {
-    transform-style: preserve-3d;
   }
 }
 .reveal:global(.__wab_instance) {
