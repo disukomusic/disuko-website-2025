@@ -82,7 +82,6 @@ export const PlasmicFooter__ArgProps = new Array<ArgPropType>();
 export type PlasmicFooter__OverridesType = {
   root?: Flex__<"div">;
   columns?: Flex__<"div">;
-  freeBox?: Flex__<"div">;
   rpsLink?: Flex__<"a"> & Partial<LinkProps>;
   dotgay?: Flex__<"a"> & Partial<LinkProps>;
 };
@@ -170,11 +169,7 @@ function PlasmicFooter__RenderFunc(props: {
         })}
       >
         <div className={classNames(projectcss.all, sty.column__fE1Co)}>
-          <div
-            data-plasmic-name={"freeBox"}
-            data-plasmic-override={overrides.freeBox}
-            className={classNames(projectcss.all, sty.freeBox)}
-          >
+          <div className={classNames(projectcss.all, sty.freeBox__pGab3)}>
             <PlasmicLink__
               data-plasmic-name={"rpsLink"}
               data-plasmic-override={overrides.rpsLink}
@@ -214,37 +209,39 @@ function PlasmicFooter__RenderFunc(props: {
           </div>
         </div>
         <div className={classNames(projectcss.all, sty.column___7Zhwx)}>
-          <div
-            className={classNames(
-              projectcss.all,
-              projectcss.__wab_text,
-              sty.text___76Zlv,
-              {
-                [sty.textglobal_theme_classic___76ZlVeNktM]: hasVariant(
-                  globalVariants,
-                  "theme",
-                  "classic"
-                )
-              }
-            )}
-          >
-            {"\u00a9 Red Panda Studios 2024"}
-          </div>
-          <div
-            className={classNames(
-              projectcss.all,
-              projectcss.__wab_text,
-              sty.text__kdu93,
-              {
-                [sty.textglobal_theme_classic__kdu93ENktM]: hasVariant(
-                  globalVariants,
-                  "theme",
-                  "classic"
-                )
-              }
-            )}
-          >
-            {"icons from tabler"}
+          <div className={classNames(projectcss.all, sty.freeBox___2N83S)}>
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text___76Zlv,
+                {
+                  [sty.textglobal_theme_classic___76ZlVeNktM]: hasVariant(
+                    globalVariants,
+                    "theme",
+                    "classic"
+                  )
+                }
+              )}
+            >
+              {"\u00a9 Red Panda Studios 2026"}
+            </div>
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text__kdu93,
+                {
+                  [sty.textglobal_theme_classic__kdu93ENktM]: hasVariant(
+                    globalVariants,
+                    "theme",
+                    "classic"
+                  )
+                }
+              )}
+            >
+              {"icons from tabler"}
+            </div>
           </div>
           <Embed
             className={classNames("__wab_instance", sty.embedHtml__iTzWq)}
@@ -297,9 +294,8 @@ function PlasmicFooter__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "columns", "freeBox", "rpsLink", "dotgay"],
-  columns: ["columns", "freeBox", "rpsLink", "dotgay"],
-  freeBox: ["freeBox", "rpsLink"],
+  root: ["root", "columns", "rpsLink", "dotgay"],
+  columns: ["columns", "rpsLink", "dotgay"],
   rpsLink: ["rpsLink"],
   dotgay: ["dotgay"]
 } as const;
@@ -309,7 +305,6 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   columns: "div";
-  freeBox: "div";
   rpsLink: "a";
   dotgay: "a";
 };
@@ -377,7 +372,6 @@ export const PlasmicFooter = Object.assign(
   {
     // Helper components rendering sub-elements
     columns: makeNodeComponent("columns"),
-    freeBox: makeNodeComponent("freeBox"),
     rpsLink: makeNodeComponent("rpsLink"),
     dotgay: makeNodeComponent("dotgay"),
 

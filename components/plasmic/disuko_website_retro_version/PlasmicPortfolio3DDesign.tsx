@@ -2208,7 +2208,7 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                     projectcss.a,
                     projectcss.__wab_text,
                     projectcss.plasmic_default__inline,
-                    sty.link__b1ZA
+                    sty.link__eFp2B
                   )}
                   component={Link}
                   href={"https://redpandastudios.net"}
