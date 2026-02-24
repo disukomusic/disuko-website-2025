@@ -2177,9 +2177,49 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
               }
             )}
           >
-            {
-              'DIGIDECK (WIP) - Cyberdeck Computer constructed from e-waste and 3d printed frames/brackets. Created for con showcases representing the game "Digidive LIVE" by Red Panda Studios'
-            }
+            <React.Fragment>
+              <React.Fragment>
+                {
+                  'DIGIDECK (WIP) - Cyberdeck Computer constructed from e-waste and 3d printed frames/brackets. Created for con showcases representing the game "'
+                }
+              </React.Fragment>
+              {
+                <PlasmicLink__
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    projectcss.__wab_text,
+                    projectcss.plasmic_default__inline,
+                    sty.link__sNpi2
+                  )}
+                  component={Link}
+                  href={"https://digidive.live"}
+                  legacyBehavior={false}
+                  platform={"nextjs"}
+                >
+                  {"Digidive LIVE"}
+                </PlasmicLink__>
+              }
+              <React.Fragment>{'" by '}</React.Fragment>
+              {
+                <PlasmicLink__
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    projectcss.__wab_text,
+                    projectcss.plasmic_default__inline,
+                    sty.link__b1ZA
+                  )}
+                  component={Link}
+                  href={"https://redpandastudios.net"}
+                  legacyBehavior={false}
+                  platform={"nextjs"}
+                >
+                  {"Red Panda Studios"}
+                </PlasmicLink__>
+              }
+              <React.Fragment>{""}</React.Fragment>
+            </React.Fragment>
           </div>
           <div className={classNames(projectcss.all, sty.columns__lResH)}>
             <div className={classNames(projectcss.all, sty.column__jglq4)}>
