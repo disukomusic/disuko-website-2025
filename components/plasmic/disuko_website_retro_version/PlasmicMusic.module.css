@@ -85,6 +85,22 @@
 .img__wPb6P > picture > img {
   object-fit: contain;
 }
+.bandcamp:global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+  margin: 10px;
+}
+.text__vj4I0 {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  color: var(--token-XJ2XB8GCLLex);
+  min-width: 0;
+}
+.textglobal_theme_classic__vj4I0ENktM {
+  color: var(--token-lpL2YkgMM450);
+}
 .spotify:global(.__wab_instance) {
   max-width: 100%;
   position: relative;
@@ -122,23 +138,7 @@
 .textglobal_theme_classic__ilV75ENktM {
   color: var(--token-lpL2YkgMM450);
 }
-.bandcamp:global(.__wab_instance) {
-  max-width: 100%;
-  position: relative;
-  margin: 10px;
-}
-.text__vj4I0 {
-  position: relative;
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  color: var(--token-XJ2XB8GCLLex);
-  min-width: 0;
-}
-.textglobal_theme_classic__vj4I0ENktM {
-  color: var(--token-lpL2YkgMM450);
-}
-.windowButton___8OpWk:global(.__wab_instance) {
+.youTube:global(.__wab_instance) {
   max-width: 100%;
   position: relative;
   margin: 10px;
@@ -154,9 +154,25 @@
 .textglobal_theme_classic___0MC2ENktM {
   color: var(--token-lpL2YkgMM450);
 }
+.tidal:global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+  margin: 10px;
+}
+.text__hMMwa {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  color: var(--token-XJ2XB8GCLLex);
+  min-width: 0;
+}
+.textglobal_theme_classic__hMMwaeNktM {
+  color: var(--token-lpL2YkgMM450);
+}
 .cloudddreamer:global(.__wab_instance) {
   position: relative;
-  width: auto;
+  width: 512px;
   min-height: 512px;
   min-width: 512px;
 }
@@ -392,7 +408,7 @@
 .snowflakes:global(.__wab_instance):global(.__wab_instance) {
   position: relative;
 }
-.windowButton__fk8Nu:global(.__wab_instance) {
+.windowButton:global(.__wab_instance) {
   max-width: 100%;
   z-index: 1;
   left: 17px;

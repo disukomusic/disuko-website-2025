@@ -148,6 +148,7 @@ function PlasmicRetroDisuko2__RenderFunc(props: {
         sty.root
       )}
       component={Link}
+      legacyBehavior={false}
       platform={"nextjs"}
       target={"_blank"}
     >

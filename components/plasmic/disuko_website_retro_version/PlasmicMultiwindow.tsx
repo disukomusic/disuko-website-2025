@@ -175,13 +175,13 @@ function PlasmicMultiwindow__RenderFunc(props: {
         path: "closeWindow1",
         type: "private",
         variableType: "boolean",
-        initFunc: ({ $props, $state, $queries, $ctx }) => true
+        initFunc: ({ $props, $state, $queries, $q, $ctx }) => true
       },
       {
         path: "closeWindow22",
         type: "private",
         variableType: "boolean",
-        initFunc: ({ $props, $state, $queries, $ctx }) => true
+        initFunc: ({ $props, $state, $queries, $q, $ctx }) => true
       }
     ],
     [$props, $ctx, $refs]
@@ -190,6 +190,7 @@ function PlasmicMultiwindow__RenderFunc(props: {
     $props,
     $ctx,
     $queries: {},
+    $q: {},
     $refs
   });
 
@@ -228,6 +229,7 @@ function PlasmicMultiwindow__RenderFunc(props: {
             throw e;
           }
         })()}
+        legacyBehavior={false}
         platform={"nextjs"}
       >
         <div className={classNames(projectcss.all, sty.freeBox___8SkNa)}>
@@ -272,6 +274,7 @@ function PlasmicMultiwindow__RenderFunc(props: {
                 throw e;
               }
             })()}
+            legacyBehavior={false}
             onClick={async event => {
               const $steps = {};
 
@@ -401,6 +404,7 @@ function PlasmicMultiwindow__RenderFunc(props: {
               throw e;
             }
           })()}
+          legacyBehavior={false}
           onClick={async event => {
             const $steps = {};
 
@@ -430,9 +434,8 @@ function PlasmicMultiwindow__RenderFunc(props: {
               typeof $steps["updateCloseWindow22"] === "object" &&
               typeof $steps["updateCloseWindow22"].then === "function"
             ) {
-              $steps["updateCloseWindow22"] = await $steps[
-                "updateCloseWindow22"
-              ];
+              $steps["updateCloseWindow22"] =
+                await $steps["updateCloseWindow22"];
             }
           }}
           platform={"nextjs"}
@@ -479,6 +482,7 @@ function PlasmicMultiwindow__RenderFunc(props: {
                   throw e;
                 }
               })()}
+              legacyBehavior={false}
               onClick={async event => {
                 const $steps = {};
 
@@ -611,7 +615,9 @@ type NodeComponentProps<T extends NodeNameType> =
     variants?: PlasmicMultiwindow__VariantsArgs;
     args?: PlasmicMultiwindow__ArgsType;
     overrides?: NodeOverridesType<T>;
-  } & Omit<PlasmicMultiwindow__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
+  } &
+    // Specify variants directly as props
+    Omit<PlasmicMultiwindow__VariantsArgs, ReservedPropsType> &
     // Specify args directly as props
     Omit<PlasmicMultiwindow__ArgsType, ReservedPropsType> &
     // Specify overrides for each element directly as props

@@ -179,25 +179,25 @@ function PlasmicMusicAlbum__RenderFunc(props: {
         path: "spotify.open",
         type: "private",
         variableType: "boolean",
-        initFunc: ({ $props, $state, $queries, $ctx }) => undefined
+        initFunc: ({ $props, $state, $queries, $q, $ctx }) => undefined
       },
       {
         path: "appleMusic.open",
         type: "private",
         variableType: "boolean",
-        initFunc: ({ $props, $state, $queries, $ctx }) => undefined
+        initFunc: ({ $props, $state, $queries, $q, $ctx }) => undefined
       },
       {
         path: "bandcamp.open",
         type: "private",
         variableType: "boolean",
-        initFunc: ({ $props, $state, $queries, $ctx }) => undefined
+        initFunc: ({ $props, $state, $queries, $q, $ctx }) => undefined
       },
       {
         path: "youTube.open",
         type: "private",
         variableType: "boolean",
-        initFunc: ({ $props, $state, $queries, $ctx }) => undefined
+        initFunc: ({ $props, $state, $queries, $q, $ctx }) => undefined
       }
     ],
     [$props, $ctx, $refs]
@@ -206,6 +206,7 @@ function PlasmicMusicAlbum__RenderFunc(props: {
     $props,
     $ctx,
     $queries: {},
+    $q: {},
     $refs
   });
 
@@ -292,6 +293,7 @@ function PlasmicMusicAlbum__RenderFunc(props: {
             )}
             component={Link}
             href={args.spotifyLink}
+            legacyBehavior={false}
             platform={"nextjs"}
             target={"_blank"}
           >
@@ -335,6 +337,7 @@ function PlasmicMusicAlbum__RenderFunc(props: {
             )}
             component={Link}
             href={args.appleMusicLink}
+            legacyBehavior={false}
             platform={"nextjs"}
             target={"_blank"}
           >
@@ -378,6 +381,7 @@ function PlasmicMusicAlbum__RenderFunc(props: {
             )}
             component={Link}
             href={args.bandcampLink}
+            legacyBehavior={false}
             platform={"nextjs"}
             target={"_blank"}
           >
@@ -421,6 +425,7 @@ function PlasmicMusicAlbum__RenderFunc(props: {
             )}
             component={Link}
             href={args.youTubeLink}
+            legacyBehavior={false}
             platform={"nextjs"}
             target={"_blank"}
           >
@@ -508,7 +513,9 @@ type NodeComponentProps<T extends NodeNameType> =
     variants?: PlasmicMusicAlbum__VariantsArgs;
     args?: PlasmicMusicAlbum__ArgsType;
     overrides?: NodeOverridesType<T>;
-  } & Omit<PlasmicMusicAlbum__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
+  } &
+    // Specify variants directly as props
+    Omit<PlasmicMusicAlbum__VariantsArgs, ReservedPropsType> &
     // Specify args directly as props
     Omit<PlasmicMusicAlbum__ArgsType, ReservedPropsType> &
     // Specify overrides for each element directly as props

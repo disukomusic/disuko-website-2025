@@ -9,7 +9,8 @@
   transition-duration: 1s;
   position: relative;
   backdrop-filter: blur(4px) brightness(80%);
-  box-shadow: inset 4px 4px 0px 0px var(--token-FYHois2LGA8g),
+  box-shadow:
+    inset 4px 4px 0px 0px var(--token-FYHois2LGA8g),
     inset -4px -4px 0px 0px var(--token-XJ2XB8GCLLex);
   justify-self: flex-start;
   flex-direction: row;
@@ -32,7 +33,8 @@
 }
 .rootglobal_theme_classic:global(.__wab_instance) {
   background: var(--token-4IQYJ82NsyMZ);
-  box-shadow: inset 4px 4px 0px 0px var(--token-24x9Uc_JThUA),
+  box-shadow:
+    inset 4px 4px 0px 0px var(--token-24x9Uc_JThUA),
     inset -4px -4px 0px 0px var(--token-K_FDgNby8UmH);
 }
 .link {
@@ -86,7 +88,8 @@
   height: auto;
   max-width: 100%;
   background: #ca9cb9;
-  box-shadow: inset 2px 2px 0px 1px var(--token-Ut0a0APCE0ad),
+  box-shadow:
+    inset 2px 2px 0px 1px var(--token-Ut0a0APCE0ad),
     inset -2px -2px 0px 1px var(--token-FYHois2LGA8g);
   column-gap: 10px;
   min-width: 0;
@@ -102,7 +105,8 @@
 }
 .freeBoxglobal_theme_classic {
   background: var(--token-u2rbquIz9Y0U);
-  box-shadow: inset 2px 2px 0px 1px var(--token-K_FDgNby8UmH),
+  box-shadow:
+    inset 2px 2px 0px 1px var(--token-K_FDgNby8UmH),
     inset -2px -2px 0px 1px var(--token-24x9Uc_JThUA);
 }
 .home:global(.__wab_instance) {

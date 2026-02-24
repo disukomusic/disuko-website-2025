@@ -1,7 +1,8 @@
 .imageWindow19 {
   object-fit: cover;
   max-width: 100%;
-  box-shadow: 4px 4px 0px 0px var(--token-GXH3dzbZuw1x),
+  box-shadow:
+    4px 4px 0px 0px var(--token-GXH3dzbZuw1x),
     -4px -4px 0px 0px var(--token-FYHois2LGA8g);
   display: inline-flex;
   flex-direction: column;
@@ -17,13 +18,15 @@
 }
 .imageWindow19global_theme_classic {
   background: var(--token-4IQYJ82NsyMZ);
-  box-shadow: 4px 4px 0px 0px var(--token-K_FDgNby8UmH),
+  box-shadow:
+    4px 4px 0px 0px var(--token-K_FDgNby8UmH),
     -4px -4px 0px 0px var(--token-24x9Uc_JThUA);
 }
 .freeBox {
   object-fit: cover;
   max-width: 100%;
-  box-shadow: -4px -4px 0px 0px var(--token-GXH3dzbZuw1x),
+  box-shadow:
+    -4px -4px 0px 0px var(--token-GXH3dzbZuw1x),
     4px 4px 0px 0px var(--token-FYHois2LGA8g);
   display: flex;
   flex-direction: column;
@@ -33,7 +36,8 @@
 .img___0OOw2 {
   object-fit: cover;
   max-width: 100%;
-  box-shadow: -4px -4px 0px 0px var(--token-GXH3dzbZuw1x),
+  box-shadow:
+    -4px -4px 0px 0px var(--token-GXH3dzbZuw1x),
     4px 4px 0px 0px var(--token-FYHois2LGA8g);
   height: 338px;
   align-self: auto;

@@ -75,6 +75,44 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic.module.css"; // plasmic-import: x4VgG6kzZCVuaqknYN7tgc/projectcss
 import sty from "./PlasmicRetrogames.module.css"; // plasmic-import: B9r13xvT8S00/css
 
+const emptyProxy: any = new Proxy(() => "", {
+  get(_, prop) {
+    return prop === Symbol.toPrimitive ? () => "" : emptyProxy;
+  }
+});
+
+function wrapQueriesWithLoadingProxy($q: any): any {
+  return new Proxy($q, {
+    get(target, queryName) {
+      const query = target[queryName];
+      return !query || query.isLoading || !query.data ? emptyProxy : query;
+    }
+  });
+}
+
+export function generateDynamicMetadata($q: any, $ctx: any) {
+  return {
+    title: "disuko - retro games🌸",
+    description: "~modded retro gaming devices from disuko",
+    openGraph: {
+      title: "disuko - retro games🌸",
+      description: "~modded retro gaming devices from disuko",
+      images: [
+        "https://site-assets.plasmic.app/f33b16e8e3629b301959c659f5c8f11d.jpg"
+      ]
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "disuko - retro games🌸",
+      description: "~modded retro gaming devices from disuko",
+      images: [
+        "https://site-assets.plasmic.app/f33b16e8e3629b301959c659f5c8f11d.jpg"
+      ]
+    },
+    alternates: { canonical: "https://disuko.gay/retro" }
+  };
+}
+
 createPlasmicElementProxy;
 
 export type PlasmicRetrogames__VariantMembers = {};
@@ -147,7 +185,7 @@ function PlasmicRetrogames__RenderFunc(props: {
         path: "variable",
         type: "private",
         variableType: "text",
-        initFunc: ({ $props, $state, $queries, $ctx }) => ""
+        initFunc: ({ $props, $state, $queries, $q, $ctx }) => ""
       }
     ],
     [$props, $ctx, $refs]
@@ -156,8 +194,14 @@ function PlasmicRetrogames__RenderFunc(props: {
     $props,
     $ctx,
     $queries: {},
+    $q: {},
     $refs
   });
+
+  const pageMetadata = generateDynamicMetadata(
+    wrapQueriesWithLoadingProxy({}),
+    $ctx
+  );
 
   const styleTokensClassNames = _useStyleTokens();
 
@@ -165,43 +209,39 @@ function PlasmicRetrogames__RenderFunc(props: {
     <React.Fragment>
       <Head>
         <meta name="twitter:card" content="summary_large_image" />
-        <title key="title">{PlasmicRetrogames.pageMetadata.title}</title>
-        <meta
-          key="og:title"
-          property="og:title"
-          content={PlasmicRetrogames.pageMetadata.title}
-        />
+        <title key="title">{pageMetadata.title}</title>
+        <meta key="og:title" property="og:title" content={pageMetadata.title} />
         <meta
           key="twitter:title"
-          name="twitter:title"
-          content={PlasmicRetrogames.pageMetadata.title}
+          property="twitter:title"
+          content={pageMetadata.title}
         />
         <meta
           key="description"
-          name="description"
-          content={PlasmicRetrogames.pageMetadata.description}
+          property="description"
+          content={pageMetadata.description}
         />
         <meta
           key="og:description"
           property="og:description"
-          content={PlasmicRetrogames.pageMetadata.description}
+          content={pageMetadata.description}
         />
         <meta
           key="twitter:description"
-          name="twitter:description"
-          content={PlasmicRetrogames.pageMetadata.description}
+          property="twitter:description"
+          content={pageMetadata.description}
         />
         <meta
           key="og:image"
           property="og:image"
-          content={PlasmicRetrogames.pageMetadata.ogImageSrc}
+          content={pageMetadata.ogImageSrc}
         />
         <meta
           key="twitter:image"
-          name="twitter:image"
-          content={PlasmicRetrogames.pageMetadata.ogImageSrc}
+          property="twitter:image"
+          content={pageMetadata.ogImageSrc}
         />
-        <link rel="canonical" href={PlasmicRetrogames.pageMetadata.canonical} />
+        <link rel="canonical" href={pageMetadata.alternates?.canonical} />
       </Head>
 
       <style>{`
@@ -260,6 +300,7 @@ function PlasmicRetrogames__RenderFunc(props: {
                     href={
                       "https://docs.google.com/forms/d/e/1FAIpQLSelxMKCzh0NNtkdBlX91OL6y-aaky1BMvCVqJziFlfaxjxlSQ/viewform?usp=sf_link"
                     }
+                    legacyBehavior={false}
                     platform={"nextjs"}
                     tabIndex={10}
                   >
@@ -299,6 +340,7 @@ function PlasmicRetrogames__RenderFunc(props: {
                     )}
                     component={Link}
                     href={"https://www.etsy.com/shop/DisukoRetroGames"}
+                    legacyBehavior={false}
                     platform={"nextjs"}
                     tabIndex={10}
                   >
@@ -381,6 +423,7 @@ function PlasmicRetrogames__RenderFunc(props: {
                       href={
                         "https://www.instagram.com/p/CvcrhcYMnjk/?img_index=1"
                       }
+                      legacyBehavior={false}
                       platform={"nextjs"}
                     >
                       <div
@@ -509,6 +552,7 @@ function PlasmicRetrogames__RenderFunc(props: {
                       )}
                       component={Link}
                       href={"https://youtu.be/hdILcfoM6q8"}
+                      legacyBehavior={false}
                       platform={"nextjs"}
                       target={"_blank"}
                     >
@@ -1541,14 +1585,11 @@ export const PlasmicRetrogames = Object.assign(
     internalVariantProps: PlasmicRetrogames__VariantProps,
     internalArgProps: PlasmicRetrogames__ArgProps,
 
-    // Page metadata
-    pageMetadata: {
-      title: "disuko - retro games🌸",
-      description: "~modded retro gaming devices from disuko",
-      ogImageSrc:
-        "https://site-assets.plasmic.app/f33b16e8e3629b301959c659f5c8f11d.jpg",
-      canonical: "https://disuko.gay/retro"
-    }
+    pageMetadata: generateDynamicMetadata(wrapQueriesWithLoadingProxy({}), {
+      pagePath: "/retro",
+      searchParams: {},
+      params: {}
+    })
   }
 );
 

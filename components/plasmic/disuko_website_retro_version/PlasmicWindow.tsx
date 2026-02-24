@@ -195,6 +195,7 @@ function PlasmicWindow__RenderFunc(props: {
           throw e;
         }
       })()}
+      legacyBehavior={false}
       platform={"nextjs"}
     >
       <div
@@ -260,6 +261,7 @@ function PlasmicWindow__RenderFunc(props: {
               throw e;
             }
           })()}
+          legacyBehavior={false}
           onClick={async event => {
             const $steps = {};
 
@@ -415,7 +417,9 @@ type NodeComponentProps<T extends NodeNameType> =
     variants?: PlasmicWindow__VariantsArgs;
     args?: PlasmicWindow__ArgsType;
     overrides?: NodeOverridesType<T>;
-  } & Omit<PlasmicWindow__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
+  } &
+    // Specify variants directly as props
+    Omit<PlasmicWindow__VariantsArgs, ReservedPropsType> &
     // Specify args directly as props
     Omit<PlasmicWindow__ArgsType, ReservedPropsType> &
     // Specify overrides for each element directly as props

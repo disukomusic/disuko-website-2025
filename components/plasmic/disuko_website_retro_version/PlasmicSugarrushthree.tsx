@@ -71,6 +71,35 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic.module.css"; // plasmic-import: x4VgG6kzZCVuaqknYN7tgc/projectcss
 import sty from "./PlasmicSugarrushthree.module.css"; // plasmic-import: PjHXrwv4N7-x/css
 
+const emptyProxy: any = new Proxy(() => "", {
+  get(_, prop) {
+    return prop === Symbol.toPrimitive ? () => "" : emptyProxy;
+  }
+});
+
+function wrapQueriesWithLoadingProxy($q: any): any {
+  return new Proxy($q, {
+    get(target, queryName) {
+      const query = target[queryName];
+      return !query || query.isLoading || !query.data ? emptyProxy : query;
+    }
+  });
+}
+
+export function generateDynamicMetadata($q: any, $ctx: any) {
+  return {
+    title: "?????????",
+
+    openGraph: {
+      title: "?????????"
+    },
+    twitter: {
+      card: "summary",
+      title: "?????????"
+    }
+  };
+}
+
 createPlasmicElementProxy;
 
 export type PlasmicSugarrushthree__VariantMembers = {};
@@ -133,22 +162,23 @@ function PlasmicSugarrushthree__RenderFunc(props: {
 
   const currentUser = useCurrentUser?.() || {};
 
+  const pageMetadata = generateDynamicMetadata(
+    wrapQueriesWithLoadingProxy({}),
+    $ctx
+  );
+
   const styleTokensClassNames = _useStyleTokens();
 
   return (
     <React.Fragment>
       <Head>
         <meta name="twitter:card" content="summary" />
-        <title key="title">{PlasmicSugarrushthree.pageMetadata.title}</title>
-        <meta
-          key="og:title"
-          property="og:title"
-          content={PlasmicSugarrushthree.pageMetadata.title}
-        />
+        <title key="title">{pageMetadata.title}</title>
+        <meta key="og:title" property="og:title" content={pageMetadata.title} />
         <meta
           key="twitter:title"
-          name="twitter:title"
-          content={PlasmicSugarrushthree.pageMetadata.title}
+          property="twitter:title"
+          content={pageMetadata.title}
         />
       </Head>
 
@@ -321,13 +351,11 @@ export const PlasmicSugarrushthree = Object.assign(
     internalVariantProps: PlasmicSugarrushthree__VariantProps,
     internalArgProps: PlasmicSugarrushthree__ArgProps,
 
-    // Page metadata
-    pageMetadata: {
-      title: "?????????",
-      description: "",
-      ogImageSrc: "",
-      canonical: ""
-    }
+    pageMetadata: generateDynamicMetadata(wrapQueriesWithLoadingProxy({}), {
+      pagePath: "/SUGARRUSHTHREE",
+      searchParams: {},
+      params: {}
+    })
   }
 );
 

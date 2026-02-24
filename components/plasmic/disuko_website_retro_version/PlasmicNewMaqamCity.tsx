@@ -77,6 +77,44 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic.module.css"; // plasmic-import: x4VgG6kzZCVuaqknYN7tgc/projectcss
 import sty from "./PlasmicNewMaqamCity.module.css"; // plasmic-import: -xYfq_7_R7j8/css
 
+const emptyProxy: any = new Proxy(() => "", {
+  get(_, prop) {
+    return prop === Symbol.toPrimitive ? () => "" : emptyProxy;
+  }
+});
+
+function wrapQueriesWithLoadingProxy($q: any): any {
+  return new Proxy($q, {
+    get(target, queryName) {
+      const query = target[queryName];
+      return !query || query.isLoading || !query.data ? emptyProxy : query;
+    }
+  });
+}
+
+export function generateDynamicMetadata($q: any, $ctx: any) {
+  return {
+    title: "New Maqam City🌸",
+
+    openGraph: {
+      title: "New Maqam City🌸",
+
+      images: [
+        "https://site-assets.plasmic.app/f33b16e8e3629b301959c659f5c8f11d.jpg"
+      ]
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "New Maqam City🌸",
+
+      images: [
+        "https://site-assets.plasmic.app/f33b16e8e3629b301959c659f5c8f11d.jpg"
+      ]
+    },
+    alternates: { canonical: "https://disuko.gay/newmaqamcity" }
+  };
+}
+
 createPlasmicElementProxy;
 
 export type PlasmicNewMaqamCity__VariantMembers = {};
@@ -182,13 +220,13 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
         path: "tabs.activeKey",
         type: "private",
         variableType: "text",
-        initFunc: ({ $props, $state, $queries, $ctx }) => "1"
+        initFunc: ({ $props, $state, $queries, $q, $ctx }) => "1"
       },
       {
         path: "collapse.open",
         type: "private",
         variableType: "boolean",
-        initFunc: ({ $props, $state, $queries, $ctx }) => false,
+        initFunc: ({ $props, $state, $queries, $q, $ctx }) => false,
 
         onMutate: generateOnMutateForSpec("open", AntdSingleCollapse_Helpers)
       },
@@ -196,7 +234,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
         path: "collapse2.open",
         type: "private",
         variableType: "boolean",
-        initFunc: ({ $props, $state, $queries, $ctx }) => false,
+        initFunc: ({ $props, $state, $queries, $q, $ctx }) => false,
 
         onMutate: generateOnMutateForSpec("open", AntdSingleCollapse_Helpers)
       },
@@ -204,7 +242,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
         path: "collapse3.open",
         type: "private",
         variableType: "boolean",
-        initFunc: ({ $props, $state, $queries, $ctx }) => false,
+        initFunc: ({ $props, $state, $queries, $q, $ctx }) => false,
 
         onMutate: generateOnMutateForSpec("open", AntdSingleCollapse_Helpers)
       },
@@ -212,7 +250,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
         path: "collapse4.open",
         type: "private",
         variableType: "boolean",
-        initFunc: ({ $props, $state, $queries, $ctx }) => false,
+        initFunc: ({ $props, $state, $queries, $q, $ctx }) => false,
 
         onMutate: generateOnMutateForSpec("open", AntdSingleCollapse_Helpers)
       },
@@ -220,7 +258,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
         path: "collapse5.open",
         type: "private",
         variableType: "boolean",
-        initFunc: ({ $props, $state, $queries, $ctx }) => false,
+        initFunc: ({ $props, $state, $queries, $q, $ctx }) => false,
 
         onMutate: generateOnMutateForSpec("open", AntdSingleCollapse_Helpers)
       },
@@ -228,7 +266,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
         path: "collapse6.open",
         type: "private",
         variableType: "boolean",
-        initFunc: ({ $props, $state, $queries, $ctx }) => false,
+        initFunc: ({ $props, $state, $queries, $q, $ctx }) => false,
 
         onMutate: generateOnMutateForSpec("open", AntdSingleCollapse_Helpers)
       },
@@ -236,7 +274,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
         path: "collapse7.open",
         type: "private",
         variableType: "boolean",
-        initFunc: ({ $props, $state, $queries, $ctx }) => false,
+        initFunc: ({ $props, $state, $queries, $q, $ctx }) => false,
 
         onMutate: generateOnMutateForSpec("open", AntdSingleCollapse_Helpers)
       },
@@ -244,13 +282,13 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
         path: "tabs2.activeKey",
         type: "private",
         variableType: "text",
-        initFunc: ({ $props, $state, $queries, $ctx }) => "1"
+        initFunc: ({ $props, $state, $queries, $q, $ctx }) => "1"
       },
       {
         path: "collapse8.open",
         type: "private",
         variableType: "boolean",
-        initFunc: ({ $props, $state, $queries, $ctx }) => false,
+        initFunc: ({ $props, $state, $queries, $q, $ctx }) => false,
 
         onMutate: generateOnMutateForSpec("open", AntdSingleCollapse_Helpers)
       },
@@ -258,7 +296,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
         path: "collapse9.open",
         type: "private",
         variableType: "boolean",
-        initFunc: ({ $props, $state, $queries, $ctx }) => false,
+        initFunc: ({ $props, $state, $queries, $q, $ctx }) => false,
 
         onMutate: generateOnMutateForSpec("open", AntdSingleCollapse_Helpers)
       },
@@ -266,7 +304,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
         path: "collapse10.open",
         type: "private",
         variableType: "boolean",
-        initFunc: ({ $props, $state, $queries, $ctx }) => false,
+        initFunc: ({ $props, $state, $queries, $q, $ctx }) => false,
 
         onMutate: generateOnMutateForSpec("open", AntdSingleCollapse_Helpers)
       },
@@ -274,7 +312,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
         path: "collapse11.open",
         type: "private",
         variableType: "boolean",
-        initFunc: ({ $props, $state, $queries, $ctx }) => true,
+        initFunc: ({ $props, $state, $queries, $q, $ctx }) => true,
 
         onMutate: generateOnMutateForSpec("open", AntdSingleCollapse_Helpers)
       },
@@ -282,7 +320,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
         path: "collapse12.open",
         type: "private",
         variableType: "boolean",
-        initFunc: ({ $props, $state, $queries, $ctx }) => true,
+        initFunc: ({ $props, $state, $queries, $q, $ctx }) => true,
 
         onMutate: generateOnMutateForSpec("open", AntdSingleCollapse_Helpers)
       },
@@ -290,7 +328,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
         path: "collapse16.open",
         type: "private",
         variableType: "boolean",
-        initFunc: ({ $props, $state, $queries, $ctx }) => false,
+        initFunc: ({ $props, $state, $queries, $q, $ctx }) => false,
 
         onMutate: generateOnMutateForSpec("open", AntdSingleCollapse_Helpers)
       },
@@ -298,7 +336,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
         path: "collapse17.open",
         type: "private",
         variableType: "boolean",
-        initFunc: ({ $props, $state, $queries, $ctx }) => false,
+        initFunc: ({ $props, $state, $queries, $q, $ctx }) => false,
 
         onMutate: generateOnMutateForSpec("open", AntdSingleCollapse_Helpers)
       },
@@ -306,7 +344,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
         path: "collapse18.open",
         type: "private",
         variableType: "boolean",
-        initFunc: ({ $props, $state, $queries, $ctx }) => false,
+        initFunc: ({ $props, $state, $queries, $q, $ctx }) => false,
 
         onMutate: generateOnMutateForSpec("open", AntdSingleCollapse_Helpers)
       },
@@ -314,7 +352,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
         path: "collapse19.open",
         type: "private",
         variableType: "boolean",
-        initFunc: ({ $props, $state, $queries, $ctx }) => false,
+        initFunc: ({ $props, $state, $queries, $q, $ctx }) => false,
 
         onMutate: generateOnMutateForSpec("open", AntdSingleCollapse_Helpers)
       },
@@ -322,7 +360,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
         path: "collapse20.open",
         type: "private",
         variableType: "boolean",
-        initFunc: ({ $props, $state, $queries, $ctx }) => false,
+        initFunc: ({ $props, $state, $queries, $q, $ctx }) => false,
 
         onMutate: generateOnMutateForSpec("open", AntdSingleCollapse_Helpers)
       },
@@ -330,13 +368,13 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
         path: "tabs3.activeKey",
         type: "private",
         variableType: "text",
-        initFunc: ({ $props, $state, $queries, $ctx }) => "1"
+        initFunc: ({ $props, $state, $queries, $q, $ctx }) => "1"
       },
       {
         path: "collapse21.open",
         type: "private",
         variableType: "boolean",
-        initFunc: ({ $props, $state, $queries, $ctx }) => false,
+        initFunc: ({ $props, $state, $queries, $q, $ctx }) => false,
 
         onMutate: generateOnMutateForSpec("open", AntdSingleCollapse_Helpers)
       },
@@ -344,7 +382,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
         path: "collapse22.open",
         type: "private",
         variableType: "boolean",
-        initFunc: ({ $props, $state, $queries, $ctx }) => false,
+        initFunc: ({ $props, $state, $queries, $q, $ctx }) => false,
 
         onMutate: generateOnMutateForSpec("open", AntdSingleCollapse_Helpers)
       },
@@ -352,7 +390,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
         path: "collapse23.open",
         type: "private",
         variableType: "boolean",
-        initFunc: ({ $props, $state, $queries, $ctx }) => false,
+        initFunc: ({ $props, $state, $queries, $q, $ctx }) => false,
 
         onMutate: generateOnMutateForSpec("open", AntdSingleCollapse_Helpers)
       },
@@ -360,7 +398,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
         path: "collapse24.open",
         type: "private",
         variableType: "boolean",
-        initFunc: ({ $props, $state, $queries, $ctx }) => false,
+        initFunc: ({ $props, $state, $queries, $q, $ctx }) => false,
 
         onMutate: generateOnMutateForSpec("open", AntdSingleCollapse_Helpers)
       },
@@ -368,7 +406,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
         path: "collapse25.open",
         type: "private",
         variableType: "boolean",
-        initFunc: ({ $props, $state, $queries, $ctx }) => false,
+        initFunc: ({ $props, $state, $queries, $q, $ctx }) => false,
 
         onMutate: generateOnMutateForSpec("open", AntdSingleCollapse_Helpers)
       },
@@ -376,7 +414,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
         path: "collapse26.open",
         type: "private",
         variableType: "boolean",
-        initFunc: ({ $props, $state, $queries, $ctx }) => false,
+        initFunc: ({ $props, $state, $queries, $q, $ctx }) => false,
 
         onMutate: generateOnMutateForSpec("open", AntdSingleCollapse_Helpers)
       },
@@ -384,7 +422,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
         path: "collapse27.open",
         type: "private",
         variableType: "boolean",
-        initFunc: ({ $props, $state, $queries, $ctx }) => false,
+        initFunc: ({ $props, $state, $queries, $q, $ctx }) => false,
 
         onMutate: generateOnMutateForSpec("open", AntdSingleCollapse_Helpers)
       },
@@ -392,7 +430,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
         path: "collapse28.open",
         type: "private",
         variableType: "boolean",
-        initFunc: ({ $props, $state, $queries, $ctx }) => false,
+        initFunc: ({ $props, $state, $queries, $q, $ctx }) => false,
 
         onMutate: generateOnMutateForSpec("open", AntdSingleCollapse_Helpers)
       },
@@ -400,13 +438,13 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
         path: "tabs4.activeKey",
         type: "private",
         variableType: "text",
-        initFunc: ({ $props, $state, $queries, $ctx }) => "1"
+        initFunc: ({ $props, $state, $queries, $q, $ctx }) => "1"
       },
       {
         path: "collapse30.open",
         type: "private",
         variableType: "boolean",
-        initFunc: ({ $props, $state, $queries, $ctx }) => false,
+        initFunc: ({ $props, $state, $queries, $q, $ctx }) => false,
 
         onMutate: generateOnMutateForSpec("open", AntdSingleCollapse_Helpers)
       },
@@ -414,7 +452,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
         path: "collapse31.open",
         type: "private",
         variableType: "boolean",
-        initFunc: ({ $props, $state, $queries, $ctx }) => false,
+        initFunc: ({ $props, $state, $queries, $q, $ctx }) => false,
 
         onMutate: generateOnMutateForSpec("open", AntdSingleCollapse_Helpers)
       }
@@ -425,8 +463,14 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
     $props,
     $ctx,
     $queries: {},
+    $q: {},
     $refs
   });
+
+  const pageMetadata = generateDynamicMetadata(
+    wrapQueriesWithLoadingProxy({}),
+    $ctx
+  );
 
   const styleTokensClassNames = _useStyleTokens();
 
@@ -434,32 +478,25 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
     <React.Fragment>
       <Head>
         <meta name="twitter:card" content="summary_large_image" />
-        <title key="title">{PlasmicNewMaqamCity.pageMetadata.title}</title>
-        <meta
-          key="og:title"
-          property="og:title"
-          content={PlasmicNewMaqamCity.pageMetadata.title}
-        />
+        <title key="title">{pageMetadata.title}</title>
+        <meta key="og:title" property="og:title" content={pageMetadata.title} />
         <meta
           key="twitter:title"
-          name="twitter:title"
-          content={PlasmicNewMaqamCity.pageMetadata.title}
+          property="twitter:title"
+          content={pageMetadata.title}
         />
 
         <meta
           key="og:image"
           property="og:image"
-          content={PlasmicNewMaqamCity.pageMetadata.ogImageSrc}
+          content={pageMetadata.ogImageSrc}
         />
         <meta
           key="twitter:image"
-          name="twitter:image"
-          content={PlasmicNewMaqamCity.pageMetadata.ogImageSrc}
+          property="twitter:image"
+          content={pageMetadata.ogImageSrc}
         />
-        <link
-          rel="canonical"
-          href={PlasmicNewMaqamCity.pageMetadata.canonical}
-        />
+        <link rel="canonical" href={pageMetadata.alternates?.canonical} />
       </Head>
 
       <style>{`
@@ -1042,6 +1079,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
                             "collapse",
                             "open"
                           ]),
+                          rotationAngle: 90,
                           showArrow: true
                         };
                         initializeCodeComponentStates(
@@ -1117,6 +1155,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
                             "collapse2",
                             "open"
                           ]),
+                          rotationAngle: 90,
                           showArrow: true
                         };
                         initializeCodeComponentStates(
@@ -1192,6 +1231,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
                             "collapse3",
                             "open"
                           ]),
+                          rotationAngle: 90,
                           showArrow: true
                         };
                         initializeCodeComponentStates(
@@ -1267,6 +1307,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
                             "collapse4",
                             "open"
                           ]),
+                          rotationAngle: 90,
                           showArrow: true
                         };
                         initializeCodeComponentStates(
@@ -1360,6 +1401,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
                             "collapse5",
                             "open"
                           ]),
+                          rotationAngle: 90,
                           showArrow: true
                         };
                         initializeCodeComponentStates(
@@ -1444,6 +1486,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
                             "collapse6",
                             "open"
                           ]),
+                          rotationAngle: 90,
                           showArrow: true
                         };
                         initializeCodeComponentStates(
@@ -1519,6 +1562,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
                             "collapse7",
                             "open"
                           ]),
+                          rotationAngle: 90,
                           showArrow: true
                         };
                         initializeCodeComponentStates(
@@ -1750,6 +1794,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
                             "collapse8",
                             "open"
                           ]),
+                          rotationAngle: 90,
                           showArrow: true
                         };
                         initializeCodeComponentStates(
@@ -1843,6 +1888,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
                             "collapse9",
                             "open"
                           ]),
+                          rotationAngle: 90,
                           showArrow: true
                         };
                         initializeCodeComponentStates(
@@ -1936,6 +1982,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
                             "collapse10",
                             "open"
                           ]),
+                          rotationAngle: 90,
                           showArrow: true
                         };
                         initializeCodeComponentStates(
@@ -2008,6 +2055,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
                                   "collapse11",
                                   "open"
                                 ]),
+                                rotationAngle: 90,
                                 showArrow: true
                               };
                               initializeCodeComponentStates(
@@ -2083,6 +2131,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
                                   "collapse12",
                                   "open"
                                 ]),
+                                rotationAngle: 90,
                                 showArrow: true
                               };
                               initializeCodeComponentStates(
@@ -2191,6 +2240,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
                             "collapse16",
                             "open"
                           ]),
+                          rotationAngle: 90,
                           showArrow: true
                         };
                         initializeCodeComponentStates(
@@ -2266,6 +2316,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
                             "collapse17",
                             "open"
                           ]),
+                          rotationAngle: 90,
                           showArrow: true
                         };
                         initializeCodeComponentStates(
@@ -2371,6 +2422,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
                             "collapse18",
                             "open"
                           ]),
+                          rotationAngle: 90,
                           showArrow: true
                         };
                         initializeCodeComponentStates(
@@ -2446,6 +2498,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
                             "collapse19",
                             "open"
                           ]),
+                          rotationAngle: 90,
                           showArrow: true
                         };
                         initializeCodeComponentStates(
@@ -2521,6 +2574,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
                             "collapse20",
                             "open"
                           ]),
+                          rotationAngle: 90,
                           showArrow: true
                         };
                         initializeCodeComponentStates(
@@ -2760,6 +2814,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
                             "collapse21",
                             "open"
                           ]),
+                          rotationAngle: 90,
                           showArrow: true
                         };
                         initializeCodeComponentStates(
@@ -2855,6 +2910,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
                             "collapse22",
                             "open"
                           ]),
+                          rotationAngle: 90,
                           showArrow: true
                         };
                         initializeCodeComponentStates(
@@ -2950,6 +3006,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
                             "collapse23",
                             "open"
                           ]),
+                          rotationAngle: 90,
                           showArrow: true
                         };
                         initializeCodeComponentStates(
@@ -3043,6 +3100,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
                             "collapse24",
                             "open"
                           ]),
+                          rotationAngle: 90,
                           showArrow: true
                         };
                         initializeCodeComponentStates(
@@ -3138,6 +3196,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
                             "collapse25",
                             "open"
                           ]),
+                          rotationAngle: 90,
                           showArrow: true
                         };
                         initializeCodeComponentStates(
@@ -3264,6 +3323,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
                             "collapse26",
                             "open"
                           ]),
+                          rotationAngle: 90,
                           showArrow: true
                         };
                         initializeCodeComponentStates(
@@ -3339,6 +3399,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
                             "collapse27",
                             "open"
                           ]),
+                          rotationAngle: 90,
                           showArrow: true
                         };
                         initializeCodeComponentStates(
@@ -3414,6 +3475,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
                             "collapse28",
                             "open"
                           ]),
+                          rotationAngle: 90,
                           showArrow: true
                         };
                         initializeCodeComponentStates(
@@ -3639,6 +3701,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
                             "collapse31",
                             "open"
                           ]),
+                          rotationAngle: 90,
                           showArrow: true
                         };
                         initializeCodeComponentStates(
@@ -3714,6 +3777,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
                             "collapse30",
                             "open"
                           ]),
+                          rotationAngle: 90,
                           showArrow: true
                         };
                         initializeCodeComponentStates(
@@ -4213,14 +4277,11 @@ export const PlasmicNewMaqamCity = Object.assign(
     internalVariantProps: PlasmicNewMaqamCity__VariantProps,
     internalArgProps: PlasmicNewMaqamCity__ArgProps,
 
-    // Page metadata
-    pageMetadata: {
-      title: "New Maqam City🌸",
-      description: "",
-      ogImageSrc:
-        "https://site-assets.plasmic.app/f33b16e8e3629b301959c659f5c8f11d.jpg",
-      canonical: "https://disuko.gay/newmaqamcity"
-    }
+    pageMetadata: generateDynamicMetadata(wrapQueriesWithLoadingProxy({}), {
+      pagePath: "/newmaqamcity",
+      searchParams: {},
+      params: {}
+    })
   }
 );
 

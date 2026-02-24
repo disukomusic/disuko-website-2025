@@ -178,6 +178,7 @@ function PlasmicWindowButton__RenderFunc(props: {
       )}
       component={Link}
       href={args.link}
+      legacyBehavior={false}
       platform={"nextjs"}
       title={(() => {
         try {
@@ -240,7 +241,9 @@ type NodeComponentProps<T extends NodeNameType> =
     variants?: PlasmicWindowButton__VariantsArgs;
     args?: PlasmicWindowButton__ArgsType;
     overrides?: NodeOverridesType<T>;
-  } & Omit<PlasmicWindowButton__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
+  } &
+    // Specify variants directly as props
+    Omit<PlasmicWindowButton__VariantsArgs, ReservedPropsType> &
     // Specify args directly as props
     Omit<PlasmicWindowButton__ArgsType, ReservedPropsType> &
     // Specify overrides for each element directly as props

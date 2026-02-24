@@ -165,6 +165,7 @@ function PlasmicNavbarPixel__RenderFunc(props: {
             className={classNames(projectcss.all, projectcss.a, sty.link)}
             component={Link}
             href={`/`}
+            legacyBehavior={false}
             platform={"nextjs"}
           >
             <PlasmicImg__
@@ -219,6 +220,7 @@ function PlasmicNavbarPixel__RenderFunc(props: {
               className={classNames(projectcss.all, projectcss.a, sty.home)}
               component={Link}
               href={`/`}
+              legacyBehavior={false}
               platform={"nextjs"}
               title={"home"}
             >
@@ -271,6 +273,7 @@ function PlasmicNavbarPixel__RenderFunc(props: {
                 sty.portfolio
               )}
               component={Link}
+              legacyBehavior={false}
               platform={"nextjs"}
               title={"portfolio"}
             >
@@ -326,6 +329,7 @@ function PlasmicNavbarPixel__RenderFunc(props: {
               className={classNames(projectcss.all, projectcss.a, sty.music)}
               component={Link}
               href={`/music`}
+              legacyBehavior={false}
               platform={"nextjs"}
               title={"music"}
             >
@@ -381,6 +385,7 @@ function PlasmicNavbarPixel__RenderFunc(props: {
               className={classNames(projectcss.all, projectcss.a, sty.merch)}
               component={Link}
               href={"https://merch.disuko.gay"}
+              legacyBehavior={false}
               platform={"nextjs"}
               title={"merch"}
             >
@@ -436,6 +441,7 @@ function PlasmicNavbarPixel__RenderFunc(props: {
               className={classNames(projectcss.all, projectcss.a, sty.links)}
               component={Link}
               href={`/links`}
+              legacyBehavior={false}
               platform={"nextjs"}
               title={"links"}
             >
@@ -524,7 +530,9 @@ type NodeComponentProps<T extends NodeNameType> =
     variants?: PlasmicNavbarPixel__VariantsArgs;
     args?: PlasmicNavbarPixel__ArgsType;
     overrides?: NodeOverridesType<T>;
-  } & Omit<PlasmicNavbarPixel__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
+  } &
+    // Specify variants directly as props
+    Omit<PlasmicNavbarPixel__VariantsArgs, ReservedPropsType> &
     // Specify args directly as props
     Omit<PlasmicNavbarPixel__ArgsType, ReservedPropsType> &
     // Specify overrides for each element directly as props

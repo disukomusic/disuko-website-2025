@@ -15,8 +15,10 @@
   width: 266px;
   height: auto;
   background: var(--token-1TXFysFOBXKj);
-  box-shadow: inset 4px 4px 0px 1px var(--token-FYHois2LGA8g),
-    inset -4px -4px 0px 1px var(--token-XJ2XB8GCLLex), 4px 4px 0px 0px #40404080;
+  box-shadow:
+    inset 4px 4px 0px 1px var(--token-FYHois2LGA8g),
+    inset -4px -4px 0px 1px var(--token-XJ2XB8GCLLex),
+    4px 4px 0px 0px #40404080;
   transition-property: all;
   transition-duration: 0.1s;
   transition-timing-function: ease-in-out;
@@ -35,8 +37,10 @@
   border-color: var(--token-51-e1302o9bz);
 }
 .root:hover .window {
-  box-shadow: inset 4px 4px 0px 1px var(--token-FYHois2LGA8g),
-    inset -4px -4px 0px 1px var(--token-XJ2XB8GCLLex), 4px 4px 0px 0px #404040bf;
+  box-shadow:
+    inset 4px 4px 0px 1px var(--token-FYHois2LGA8g),
+    inset -4px -4px 0px 1px var(--token-XJ2XB8GCLLex),
+    4px 4px 0px 0px #404040bf;
 }
 .freeBox___8SkNa {
   display: flex;
@@ -83,8 +87,10 @@
   width: auto;
   height: auto;
   background: var(--token-1TXFysFOBXKj);
-  box-shadow: inset 2px 2px 0px 0px var(--token-FYHois2LGA8g),
-    inset -2px -2px 0px 0px var(--token-XJ2XB8GCLLex), 1px 1px 0px 0px #40404080;
+  box-shadow:
+    inset 2px 2px 0px 0px var(--token-FYHois2LGA8g),
+    inset -2px -2px 0px 0px var(--token-XJ2XB8GCLLex),
+    1px 1px 0px 0px #40404080;
   position: relative;
   align-items: flex-end;
   justify-content: flex-start;
@@ -119,7 +125,8 @@
   position: relative;
   object-fit: cover;
   max-width: 100%;
-  box-shadow: -4px -4px 0px 0px var(--token-GXH3dzbZuw1x),
+  box-shadow:
+    -4px -4px 0px 0px var(--token-GXH3dzbZuw1x),
     4px 4px 0px 0px var(--token-FYHois2LGA8g);
   margin: 10px;
 }
@@ -143,8 +150,10 @@
   width: 253px;
   height: auto;
   background: var(--token-1TXFysFOBXKj);
-  box-shadow: inset 4px 4px 0px 1px var(--token-FYHois2LGA8g),
-    inset -4px -4px 0px 1px var(--token-XJ2XB8GCLLex), 4px 4px 0px 0px #40404080;
+  box-shadow:
+    inset 4px 4px 0px 1px var(--token-FYHois2LGA8g),
+    inset -4px -4px 0px 1px var(--token-XJ2XB8GCLLex),
+    4px 4px 0px 0px #40404080;
   transition-property: all;
   transition-duration: 0.1s;
   transition-timing-function: ease-in-out;
@@ -165,8 +174,10 @@
   border-color: var(--token-51-e1302o9bz);
 }
 .root:hover .window2 {
-  box-shadow: inset 4px 4px 0px 1px var(--token-FYHois2LGA8g),
-    inset -4px -4px 0px 1px var(--token-XJ2XB8GCLLex), 4px 4px 0px 0px #404040bf;
+  box-shadow:
+    inset 4px 4px 0px 1px var(--token-FYHois2LGA8g),
+    inset -4px -4px 0px 1px var(--token-XJ2XB8GCLLex),
+    4px 4px 0px 0px #404040bf;
 }
 .freeBox__crFjB {
   display: flex;
@@ -213,8 +224,10 @@
   width: auto;
   height: auto;
   background: var(--token-1TXFysFOBXKj);
-  box-shadow: inset 2px 2px 0px 0px var(--token-FYHois2LGA8g),
-    inset -2px -2px 0px 0px var(--token-XJ2XB8GCLLex), 1px 1px 0px 0px #40404080;
+  box-shadow:
+    inset 2px 2px 0px 0px var(--token-FYHois2LGA8g),
+    inset -2px -2px 0px 0px var(--token-XJ2XB8GCLLex),
+    1px 1px 0px 0px #40404080;
   position: relative;
   align-items: flex-end;
   justify-content: flex-start;
@@ -261,7 +274,8 @@
   position: relative;
   object-fit: cover;
   max-width: 100%;
-  box-shadow: -4px -4px 0px 0px var(--token-GXH3dzbZuw1x),
+  box-shadow:
+    -4px -4px 0px 0px var(--token-GXH3dzbZuw1x),
     4px 4px 0px 0px var(--token-FYHois2LGA8g);
   margin: 10px;
 }

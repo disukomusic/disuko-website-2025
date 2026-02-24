@@ -5,7 +5,9 @@
   justify-content: center;
   width: auto;
   background: #c1f4ed;
-  box-shadow: inset 4px 4px 0px 1px #e4fffe, inset -4px -4px 0px 1px #33af8e,
+  box-shadow:
+    inset 4px 4px 0px 1px #e4fffe,
+    inset -4px -4px 0px 1px #33af8e,
     4px 4px 0px 0px #40404080;
   position: relative;
   transition-property: all;
@@ -22,17 +24,23 @@
 }
 .musicglobal_theme_classic {
   background: var(--token-4IQYJ82NsyMZ);
-  box-shadow: inset 4px 4px 0px 1px var(--token-24x9Uc_JThUA),
-    inset -4px -4px 0px 1px var(--token-K_FDgNby8UmH), 4px 4px 0px 0px #40404080;
+  box-shadow:
+    inset 4px 4px 0px 1px var(--token-24x9Uc_JThUA),
+    inset -4px -4px 0px 1px var(--token-K_FDgNby8UmH),
+    4px 4px 0px 0px #40404080;
 }
 .music:hover {
-  box-shadow: inset 4px 4px 0px 1px #e4fff8, inset -4px -4px 0px 1px #33af8e,
+  box-shadow:
+    inset 4px 4px 0px 1px #e4fff8,
+    inset -4px -4px 0px 1px #33af8e,
     4px 4px 0px 0px #404040bf;
   margin-bottom: 0px;
 }
 .musicglobal_theme_classic:hover {
-  box-shadow: inset 4px 4px 0px 1px var(--token-24x9Uc_JThUA),
-    inset -4px -4px 0px 1px var(--token-K_FDgNby8UmH), 4px 4px 0px 0px #404040bf;
+  box-shadow:
+    inset 4px 4px 0px 1px var(--token-24x9Uc_JThUA),
+    inset -4px -4px 0px 1px var(--token-K_FDgNby8UmH),
+    4px 4px 0px 0px #404040bf;
 }
 .freeBox__aRtb6 {
   display: flex;
@@ -91,7 +99,9 @@
   width: 26px;
   height: 26px;
   background: #c1f4ef;
-  box-shadow: inset 2px 2px 0px 0px #e4fff3, inset -2px -2px 0px 0px #33af96,
+  box-shadow:
+    inset 2px 2px 0px 0px #e4fff3,
+    inset -2px -2px 0px 0px #33af96,
     1px 1px 0px 0px #40404080;
   position: relative;
   align-items: center;
@@ -105,8 +115,10 @@
 }
 .xButtonglobal_theme_classic {
   background: var(--token-4IQYJ82NsyMZ);
-  box-shadow: inset 2px 2px 0px 0px var(--token-24x9Uc_JThUA),
-    inset -2px -2px 0px 0px var(--token-K_FDgNby8UmH), 1px 1px 0px 0px #40404080;
+  box-shadow:
+    inset 2px 2px 0px 0px var(--token-24x9Uc_JThUA),
+    inset -2px -2px 0px 0px var(--token-K_FDgNby8UmH),
+    1px 1px 0px 0px #40404080;
 }
 .svg {
   position: relative;
@@ -140,7 +152,8 @@
   position: relative;
   object-fit: cover;
   max-width: 100%;
-  box-shadow: -4px -4px 0px 0px var(--token-GXH3dzbZuw1x),
+  box-shadow:
+    -4px -4px 0px 0px var(--token-GXH3dzbZuw1x),
     4px 4px 0px 0px var(--token-FYHois2LGA8g);
   margin: 10px;
 }

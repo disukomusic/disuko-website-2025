@@ -77,6 +77,44 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic.module.css"; // plasmic-import: x4VgG6kzZCVuaqknYN7tgc/projectcss
 import sty from "./PlasmicPortfolio3DDesign.module.css"; // plasmic-import: 3GOrKOgLh0ga/css
 
+const emptyProxy: any = new Proxy(() => "", {
+  get(_, prop) {
+    return prop === Symbol.toPrimitive ? () => "" : emptyProxy;
+  }
+});
+
+function wrapQueriesWithLoadingProxy($q: any): any {
+  return new Proxy($q, {
+    get(target, queryName) {
+      const query = target[queryName];
+      return !query || query.isLoading || !query.data ? emptyProxy : query;
+    }
+  });
+}
+
+export function generateDynamicMetadata($q: any, $ctx: any) {
+  return {
+    title: "3D Design",
+    description: '3D Design portfolio of Angelo "Disuko" Licavoli',
+    openGraph: {
+      title: "3D Design",
+      description: '3D Design portfolio of Angelo "Disuko" Licavoli',
+      images: [
+        "https://site-assets.plasmic.app/f33b16e8e3629b301959c659f5c8f11d.jpg"
+      ]
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "3D Design",
+      description: '3D Design portfolio of Angelo "Disuko" Licavoli',
+      images: [
+        "https://site-assets.plasmic.app/f33b16e8e3629b301959c659f5c8f11d.jpg"
+      ]
+    },
+    alternates: { canonical: "https://disuko.gay/3d-design" }
+  };
+}
+
 createPlasmicElementProxy;
 
 export type PlasmicPortfolio3DDesign__VariantMembers = {};
@@ -187,7 +225,7 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
         path: "cad.currentSlide",
         type: "private",
         variableType: "number",
-        initFunc: ({ $props, $state, $queries, $ctx }) => 0,
+        initFunc: ({ $props, $state, $queries, $q, $ctx }) => 0,
 
         refName: "cad",
         onMutate: generateOnMutateForSpec("currentSlide", SliderWrapper_Helpers)
@@ -196,7 +234,7 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
         path: "cad2.currentSlide",
         type: "private",
         variableType: "number",
-        initFunc: ({ $props, $state, $queries, $ctx }) => 0,
+        initFunc: ({ $props, $state, $queries, $q, $ctx }) => 0,
 
         refName: "cad2",
         onMutate: generateOnMutateForSpec("currentSlide", SliderWrapper_Helpers)
@@ -208,8 +246,14 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
     $props,
     $ctx,
     $queries: {},
+    $q: {},
     $refs
   });
+
+  const pageMetadata = generateDynamicMetadata(
+    wrapQueriesWithLoadingProxy({}),
+    $ctx
+  );
 
   const styleTokensClassNames = _useStyleTokens();
 
@@ -217,46 +261,39 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
     <React.Fragment>
       <Head>
         <meta name="twitter:card" content="summary_large_image" />
-        <title key="title">{PlasmicPortfolio3DDesign.pageMetadata.title}</title>
-        <meta
-          key="og:title"
-          property="og:title"
-          content={PlasmicPortfolio3DDesign.pageMetadata.title}
-        />
+        <title key="title">{pageMetadata.title}</title>
+        <meta key="og:title" property="og:title" content={pageMetadata.title} />
         <meta
           key="twitter:title"
-          name="twitter:title"
-          content={PlasmicPortfolio3DDesign.pageMetadata.title}
+          property="twitter:title"
+          content={pageMetadata.title}
         />
         <meta
           key="description"
-          name="description"
-          content={PlasmicPortfolio3DDesign.pageMetadata.description}
+          property="description"
+          content={pageMetadata.description}
         />
         <meta
           key="og:description"
           property="og:description"
-          content={PlasmicPortfolio3DDesign.pageMetadata.description}
+          content={pageMetadata.description}
         />
         <meta
           key="twitter:description"
-          name="twitter:description"
-          content={PlasmicPortfolio3DDesign.pageMetadata.description}
+          property="twitter:description"
+          content={pageMetadata.description}
         />
         <meta
           key="og:image"
           property="og:image"
-          content={PlasmicPortfolio3DDesign.pageMetadata.ogImageSrc}
+          content={pageMetadata.ogImageSrc}
         />
         <meta
           key="twitter:image"
-          name="twitter:image"
-          content={PlasmicPortfolio3DDesign.pageMetadata.ogImageSrc}
+          property="twitter:image"
+          content={pageMetadata.ogImageSrc}
         />
-        <link
-          rel="canonical"
-          href={PlasmicPortfolio3DDesign.pageMetadata.canonical}
-        />
+        <link rel="canonical" href={pageMetadata.alternates?.canonical} />
       </Head>
 
       <style>{`
@@ -475,6 +512,7 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                   )}
                   component={Link}
                   href={"https://on3ko.lol"}
+                  legacyBehavior={false}
                   platform={"nextjs"}
                 >
                   {"On3ko Webcomic"}
@@ -724,6 +762,7 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                   )}
                   component={Link}
                   href={"https://redpandastudios.net"}
+                  legacyBehavior={false}
                   platform={"nextjs"}
                 >
                   {"PANDAMONIUM: Diko Dating Sim (Red Panda Studios)"}
@@ -872,6 +911,7 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                   )}
                   component={Link}
                   href={"https://redpandastudios.net"}
+                  legacyBehavior={false}
                   platform={"nextjs"}
                 >
                   {"PANDAMONIUM: Diko Dating Sim (Red Panda Studios)"}
@@ -1022,6 +1062,7 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                   )}
                   component={Link}
                   href={"https://redpandastudios.net"}
+                  legacyBehavior={false}
                   platform={"nextjs"}
                 >
                   {"PANDAMONIUM: Diko Dating Sim (Red Panda Studios)"}
@@ -1279,6 +1320,7 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                   )}
                   component={Link}
                   href={"https://redpandastudios.net"}
+                  legacyBehavior={false}
                   platform={"nextjs"}
                 >
                   {"PANDAMONIUM: Diko Dating Sim (Red Panda Studios)"}
@@ -1702,6 +1744,7 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                     )}
                     component={Link}
                     href={"https://carbonhoneyoil.com"}
+                    legacyBehavior={false}
                     platform={"nextjs"}
                   >
                     {" Carbon Honey"}
@@ -1719,6 +1762,7 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                     )}
                     component={Link}
                     href={"https://www.instagram.com/canto.group/"}
+                    legacyBehavior={false}
                     platform={"nextjs"}
                   >
                     {"Canto Group"}
@@ -2923,14 +2967,11 @@ export const PlasmicPortfolio3DDesign = Object.assign(
     internalVariantProps: PlasmicPortfolio3DDesign__VariantProps,
     internalArgProps: PlasmicPortfolio3DDesign__ArgProps,
 
-    // Page metadata
-    pageMetadata: {
-      title: "3D Design",
-      description: '3D Design portfolio of Angelo "Disuko" Licavoli',
-      ogImageSrc:
-        "https://site-assets.plasmic.app/f33b16e8e3629b301959c659f5c8f11d.jpg",
-      canonical: "https://disuko.gay/3d-design"
-    }
+    pageMetadata: generateDynamicMetadata(wrapQueriesWithLoadingProxy({}), {
+      pagePath: "/3d-design",
+      searchParams: {},
+      params: {}
+    })
   }
 );
 

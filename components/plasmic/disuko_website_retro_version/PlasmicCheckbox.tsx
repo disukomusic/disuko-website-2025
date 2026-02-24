@@ -175,13 +175,13 @@ function PlasmicCheckbox__RenderFunc(props: {
         path: "noLabel",
         type: "private",
         variableType: "variant",
-        initFunc: ({ $props, $state, $queries, $ctx }) => $props.noLabel
+        initFunc: ({ $props, $state, $queries, $q, $ctx }) => $props.noLabel
       },
       {
         path: "isDisabled",
         type: "private",
         variableType: "variant",
-        initFunc: ({ $props, $state, $queries, $ctx }) => $props.isDisabled
+        initFunc: ({ $props, $state, $queries, $q, $ctx }) => $props.isDisabled
       },
       {
         path: "isChecked",
@@ -195,7 +195,8 @@ function PlasmicCheckbox__RenderFunc(props: {
         path: "isIndeterminate",
         type: "private",
         variableType: "variant",
-        initFunc: ({ $props, $state, $queries, $ctx }) => $props.isIndeterminate
+        initFunc: ({ $props, $state, $queries, $q, $ctx }) =>
+          $props.isIndeterminate
       }
     ],
     [$props, $ctx, $refs]
@@ -204,6 +205,7 @@ function PlasmicCheckbox__RenderFunc(props: {
     $props,
     $ctx,
     $queries: {},
+    $q: {},
     $refs
   });
 
@@ -270,8 +272,8 @@ function PlasmicCheckbox__RenderFunc(props: {
             hasVariant($state, "isIndeterminate", "isIndeterminate")
               ? SquareMinusSvgIcon
               : hasVariant($state, "isChecked", "isChecked")
-              ? SquareCheckFilledSvgIcon
-              : SquareSvgIcon
+                ? SquareCheckFilledSvgIcon
+                : SquareSvgIcon
           }
           className={classNames(projectcss.all, sty.svg, {
             [sty.svg___focusVisibleWithin]: triggers.focusVisibleWithin_root,
@@ -396,7 +398,9 @@ type NodeComponentProps<T extends NodeNameType> =
     variants?: PlasmicCheckbox__VariantsArgs;
     args?: PlasmicCheckbox__ArgsType;
     overrides?: NodeOverridesType<T>;
-  } & Omit<PlasmicCheckbox__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
+  } &
+    // Specify variants directly as props
+    Omit<PlasmicCheckbox__VariantsArgs, ReservedPropsType> &
     // Specify args directly as props
     Omit<PlasmicCheckbox__ArgsType, ReservedPropsType> &
     // Specify overrides for each element directly as props

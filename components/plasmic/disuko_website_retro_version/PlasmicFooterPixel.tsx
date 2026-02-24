@@ -161,6 +161,7 @@ function PlasmicFooterPixel__RenderFunc(props: {
             className={classNames(projectcss.all, projectcss.a, sty.disuko)}
             component={Link}
             href={`/`}
+            legacyBehavior={false}
             platform={"nextjs"}
             target={"_blank"}
           >
@@ -215,6 +216,7 @@ function PlasmicFooterPixel__RenderFunc(props: {
                     )}
                     component={Link}
                     href={"https://redpandamedia.net"}
+                    legacyBehavior={false}
                     platform={"nextjs"}
                   >
                     <React.Fragment>
@@ -244,6 +246,7 @@ function PlasmicFooterPixel__RenderFunc(props: {
               )}
               component={Link}
               href={"https://www.ohhey.gay/gay-gives"}
+              legacyBehavior={false}
               platform={"nextjs"}
             >
               <PlasmicImg__
@@ -287,6 +290,7 @@ function PlasmicFooterPixel__RenderFunc(props: {
                   )}
                   component={Link}
                   href={"https://github.com/konradkalemba/tabler-icons-react"}
+                  legacyBehavior={false}
                   platform={"nextjs"}
                 >
                   {"tabler"}
@@ -328,7 +332,9 @@ type NodeComponentProps<T extends NodeNameType> =
     variants?: PlasmicFooterPixel__VariantsArgs;
     args?: PlasmicFooterPixel__ArgsType;
     overrides?: NodeOverridesType<T>;
-  } & Omit<PlasmicFooterPixel__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
+  } &
+    // Specify variants directly as props
+    Omit<PlasmicFooterPixel__VariantsArgs, ReservedPropsType> &
     // Specify args directly as props
     Omit<PlasmicFooterPixel__ArgsType, ReservedPropsType> &
     // Specify overrides for each element directly as props

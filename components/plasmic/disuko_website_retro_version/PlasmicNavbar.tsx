@@ -165,6 +165,7 @@ function PlasmicNavbar__RenderFunc(props: {
           className={classNames(projectcss.all, projectcss.a, sty.link)}
           component={Link}
           href={`/`}
+          legacyBehavior={false}
           platform={"nextjs"}
         >
           <PlasmicImg__
@@ -213,8 +214,8 @@ function PlasmicNavbar__RenderFunc(props: {
         hasVariant(globalVariants, "screen", "mobileOnly")
           ? false
           : hasVariant(globalVariants, "screen", "mobileOnly")
-          ? false
-          : false
+            ? false
+            : false
       }
       itemsGap={10}
       menuItems={
@@ -592,7 +593,9 @@ type NodeComponentProps<T extends NodeNameType> =
     variants?: PlasmicNavbar__VariantsArgs;
     args?: PlasmicNavbar__ArgsType;
     overrides?: NodeOverridesType<T>;
-  } & Omit<PlasmicNavbar__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
+  } &
+    // Specify variants directly as props
+    Omit<PlasmicNavbar__VariantsArgs, ReservedPropsType> &
     // Specify args directly as props
     Omit<PlasmicNavbar__ArgsType, ReservedPropsType> &
     // Specify overrides for each element directly as props

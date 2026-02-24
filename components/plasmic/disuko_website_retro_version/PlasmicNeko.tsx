@@ -75,6 +75,35 @@ import sty from "./PlasmicNeko.module.css"; // plasmic-import: ESUbYUmzi1NH/css
 
 import NounPixelHeart10989631SvgIcon from "./icons/PlasmicIcon__NounPixelHeart10989631Svg"; // plasmic-import: tvndHRt1AD9R/icon
 
+const emptyProxy: any = new Proxy(() => "", {
+  get(_, prop) {
+    return prop === Symbol.toPrimitive ? () => "" : emptyProxy;
+  }
+});
+
+function wrapQueriesWithLoadingProxy($q: any): any {
+  return new Proxy($q, {
+    get(target, queryName) {
+      const query = target[queryName];
+      return !query || query.isLoading || !query.data ? emptyProxy : query;
+    }
+  });
+}
+
+export function generateDynamicMetadata($q: any, $ctx: any) {
+  return {
+    title: "neko",
+
+    openGraph: {
+      title: "neko"
+    },
+    twitter: {
+      card: "summary",
+      title: "neko"
+    }
+  };
+}
+
 createPlasmicElementProxy;
 
 export type PlasmicNeko__VariantMembers = {};
@@ -145,7 +174,7 @@ function PlasmicNeko__RenderFunc(props: {
         path: "popover.open",
         type: "private",
         variableType: "boolean",
-        initFunc: ({ $props, $state, $queries, $ctx }) => undefined
+        initFunc: ({ $props, $state, $queries, $q, $ctx }) => undefined
       }
     ],
     [$props, $ctx, $refs]
@@ -154,8 +183,14 @@ function PlasmicNeko__RenderFunc(props: {
     $props,
     $ctx,
     $queries: {},
+    $q: {},
     $refs
   });
+
+  const pageMetadata = generateDynamicMetadata(
+    wrapQueriesWithLoadingProxy({}),
+    $ctx
+  );
 
   const styleTokensClassNames = _useStyleTokens();
 
@@ -163,16 +198,12 @@ function PlasmicNeko__RenderFunc(props: {
     <React.Fragment>
       <Head>
         <meta name="twitter:card" content="summary" />
-        <title key="title">{PlasmicNeko.pageMetadata.title}</title>
-        <meta
-          key="og:title"
-          property="og:title"
-          content={PlasmicNeko.pageMetadata.title}
-        />
+        <title key="title">{pageMetadata.title}</title>
+        <meta key="og:title" property="og:title" content={pageMetadata.title} />
         <meta
           key="twitter:title"
-          name="twitter:title"
-          content={PlasmicNeko.pageMetadata.title}
+          property="twitter:title"
+          content={pageMetadata.title}
         />
       </Head>
 
@@ -366,13 +397,11 @@ export const PlasmicNeko = Object.assign(
     internalVariantProps: PlasmicNeko__VariantProps,
     internalArgProps: PlasmicNeko__ArgProps,
 
-    // Page metadata
-    pageMetadata: {
-      title: "neko",
-      description: "",
-      ogImageSrc: "",
-      canonical: ""
-    }
+    pageMetadata: generateDynamicMetadata(wrapQueriesWithLoadingProxy({}), {
+      pagePath: "/neko",
+      searchParams: {},
+      params: {}
+    })
   }
 );
 

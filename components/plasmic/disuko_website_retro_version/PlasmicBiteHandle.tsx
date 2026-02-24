@@ -73,6 +73,47 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic.module.css"; // plasmic-import: x4VgG6kzZCVuaqknYN7tgc/projectcss
 import sty from "./PlasmicBiteHandle.module.css"; // plasmic-import: -7tromDQ_KOz/css
 
+const emptyProxy: any = new Proxy(() => "", {
+  get(_, prop) {
+    return prop === Symbol.toPrimitive ? () => "" : emptyProxy;
+  }
+});
+
+function wrapQueriesWithLoadingProxy($q: any): any {
+  return new Proxy($q, {
+    get(target, queryName) {
+      const query = target[queryName];
+      return !query || query.isLoading || !query.data ? emptyProxy : query;
+    }
+  });
+}
+
+export function generateDynamicMetadata($q: any, $ctx: any) {
+  return {
+    title: "BITE HANDLE 🔪",
+    description:
+      "Bite Handle is a balisong (butterfly knife) themed music event that features artists from the balisong community! ⚡",
+    openGraph: {
+      title: "BITE HANDLE 🔪",
+      description:
+        "Bite Handle is a balisong (butterfly knife) themed music event that features artists from the balisong community! ⚡",
+      images: [
+        "https://site-assets.plasmic.app/6a3d3f8eef3b8e74a57a99129001545b.jpg"
+      ]
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "BITE HANDLE 🔪",
+      description:
+        "Bite Handle is a balisong (butterfly knife) themed music event that features artists from the balisong community! ⚡",
+      images: [
+        "https://site-assets.plasmic.app/6a3d3f8eef3b8e74a57a99129001545b.jpg"
+      ]
+    },
+    alternates: { canonical: "https://disuko.gay/bitehandlerave" }
+  };
+}
+
 createPlasmicElementProxy;
 
 export type PlasmicBiteHandle__VariantMembers = {};
@@ -137,49 +178,50 @@ function PlasmicBiteHandle__RenderFunc(props: {
 
   const currentUser = useCurrentUser?.() || {};
 
+  const pageMetadata = generateDynamicMetadata(
+    wrapQueriesWithLoadingProxy({}),
+    $ctx
+  );
+
   const styleTokensClassNames = _useStyleTokens();
 
   return (
     <React.Fragment>
       <Head>
         <meta name="twitter:card" content="summary_large_image" />
-        <title key="title">{PlasmicBiteHandle.pageMetadata.title}</title>
-        <meta
-          key="og:title"
-          property="og:title"
-          content={PlasmicBiteHandle.pageMetadata.title}
-        />
+        <title key="title">{pageMetadata.title}</title>
+        <meta key="og:title" property="og:title" content={pageMetadata.title} />
         <meta
           key="twitter:title"
-          name="twitter:title"
-          content={PlasmicBiteHandle.pageMetadata.title}
+          property="twitter:title"
+          content={pageMetadata.title}
         />
         <meta
           key="description"
-          name="description"
-          content={PlasmicBiteHandle.pageMetadata.description}
+          property="description"
+          content={pageMetadata.description}
         />
         <meta
           key="og:description"
           property="og:description"
-          content={PlasmicBiteHandle.pageMetadata.description}
+          content={pageMetadata.description}
         />
         <meta
           key="twitter:description"
-          name="twitter:description"
-          content={PlasmicBiteHandle.pageMetadata.description}
+          property="twitter:description"
+          content={pageMetadata.description}
         />
         <meta
           key="og:image"
           property="og:image"
-          content={PlasmicBiteHandle.pageMetadata.ogImageSrc}
+          content={pageMetadata.ogImageSrc}
         />
         <meta
           key="twitter:image"
-          name="twitter:image"
-          content={PlasmicBiteHandle.pageMetadata.ogImageSrc}
+          property="twitter:image"
+          content={pageMetadata.ogImageSrc}
         />
-        <link rel="canonical" href={PlasmicBiteHandle.pageMetadata.canonical} />
+        <link rel="canonical" href={pageMetadata.alternates?.canonical} />
       </Head>
 
       <style>{`
@@ -282,6 +324,7 @@ function PlasmicBiteHandle__RenderFunc(props: {
                   )}
                   component={Link}
                   href={"https://discord.gg/77KYqFb846\t"}
+                  legacyBehavior={false}
                   platform={"nextjs"}
                   target={"_blank"}
                 >
@@ -313,6 +356,7 @@ function PlasmicBiteHandle__RenderFunc(props: {
                   )}
                   component={Link}
                   href={"https://www.instagram.com/bitehandlerave/"}
+                  legacyBehavior={false}
                   platform={"nextjs"}
                   target={"_blank"}
                 >
@@ -344,6 +388,7 @@ function PlasmicBiteHandle__RenderFunc(props: {
                   )}
                   component={Link}
                   href={"https://www.twitch.tv/bitehandlerave"}
+                  legacyBehavior={false}
                   platform={"nextjs"}
                   target={"_blank"}
                 >
@@ -375,6 +420,7 @@ function PlasmicBiteHandle__RenderFunc(props: {
                   )}
                   component={Link}
                   href={"https://www.youtube.com/@bitehandlerave"}
+                  legacyBehavior={false}
                   platform={"nextjs"}
                   target={"_blank"}
                 >
@@ -519,15 +565,11 @@ export const PlasmicBiteHandle = Object.assign(
     internalVariantProps: PlasmicBiteHandle__VariantProps,
     internalArgProps: PlasmicBiteHandle__ArgProps,
 
-    // Page metadata
-    pageMetadata: {
-      title: "BITE HANDLE 🔪",
-      description:
-        "Bite Handle is a balisong (butterfly knife) themed music event that features artists from the balisong community! ⚡",
-      ogImageSrc:
-        "https://site-assets.plasmic.app/6a3d3f8eef3b8e74a57a99129001545b.jpg",
-      canonical: "https://disuko.gay/bitehandlerave"
-    }
+    pageMetadata: generateDynamicMetadata(wrapQueriesWithLoadingProxy({}), {
+      pagePath: "/bitehandlerave",
+      searchParams: {},
+      params: {}
+    })
   }
 );
 

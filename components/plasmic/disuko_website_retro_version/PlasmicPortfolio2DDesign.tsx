@@ -76,6 +76,35 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic.module.css"; // plasmic-import: x4VgG6kzZCVuaqknYN7tgc/projectcss
 import sty from "./PlasmicPortfolio2DDesign.module.css"; // plasmic-import: vD69cqR4XkX2/css
 
+const emptyProxy: any = new Proxy(() => "", {
+  get(_, prop) {
+    return prop === Symbol.toPrimitive ? () => "" : emptyProxy;
+  }
+});
+
+function wrapQueriesWithLoadingProxy($q: any): any {
+  return new Proxy($q, {
+    get(target, queryName) {
+      const query = target[queryName];
+      return !query || query.isLoading || !query.data ? emptyProxy : query;
+    }
+  });
+}
+
+export function generateDynamicMetadata($q: any, $ctx: any) {
+  return {
+    title: "2D Design",
+
+    openGraph: {
+      title: "2D Design"
+    },
+    twitter: {
+      card: "summary",
+      title: "2D Design"
+    }
+  };
+}
+
 createPlasmicElementProxy;
 
 export type PlasmicPortfolio2DDesign__VariantMembers = {};
@@ -149,7 +178,7 @@ function PlasmicPortfolio2DDesign__RenderFunc(props: {
         path: "sliderCarousel.currentSlide",
         type: "private",
         variableType: "number",
-        initFunc: ({ $props, $state, $queries, $ctx }) => 0,
+        initFunc: ({ $props, $state, $queries, $q, $ctx }) => 0,
 
         refName: "sliderCarousel",
         onMutate: generateOnMutateForSpec("currentSlide", SliderWrapper_Helpers)
@@ -161,8 +190,14 @@ function PlasmicPortfolio2DDesign__RenderFunc(props: {
     $props,
     $ctx,
     $queries: {},
+    $q: {},
     $refs
   });
+
+  const pageMetadata = generateDynamicMetadata(
+    wrapQueriesWithLoadingProxy({}),
+    $ctx
+  );
 
   const styleTokensClassNames = _useStyleTokens();
 
@@ -170,16 +205,12 @@ function PlasmicPortfolio2DDesign__RenderFunc(props: {
     <React.Fragment>
       <Head>
         <meta name="twitter:card" content="summary" />
-        <title key="title">{PlasmicPortfolio2DDesign.pageMetadata.title}</title>
-        <meta
-          key="og:title"
-          property="og:title"
-          content={PlasmicPortfolio2DDesign.pageMetadata.title}
-        />
+        <title key="title">{pageMetadata.title}</title>
+        <meta key="og:title" property="og:title" content={pageMetadata.title} />
         <meta
           key="twitter:title"
-          name="twitter:title"
-          content={PlasmicPortfolio2DDesign.pageMetadata.title}
+          property="twitter:title"
+          content={pageMetadata.title}
         />
       </Head>
 
@@ -1582,13 +1613,11 @@ export const PlasmicPortfolio2DDesign = Object.assign(
     internalVariantProps: PlasmicPortfolio2DDesign__VariantProps,
     internalArgProps: PlasmicPortfolio2DDesign__ArgProps,
 
-    // Page metadata
-    pageMetadata: {
-      title: "2D Design",
-      description: "",
-      ogImageSrc: "",
-      canonical: ""
-    }
+    pageMetadata: generateDynamicMetadata(wrapQueriesWithLoadingProxy({}), {
+      pagePath: "/2d-design",
+      searchParams: {},
+      params: {}
+    })
   }
 );
 

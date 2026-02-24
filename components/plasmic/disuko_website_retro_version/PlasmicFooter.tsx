@@ -181,6 +181,7 @@ function PlasmicFooter__RenderFunc(props: {
               className={classNames(projectcss.all, projectcss.a, sty.rpsLink)}
               component={Link}
               href={"https://redpandastudios.net"}
+              legacyBehavior={false}
               platform={"nextjs"}
               target={"_blank"}
             >
@@ -259,6 +260,7 @@ function PlasmicFooter__RenderFunc(props: {
             className={classNames(projectcss.all, projectcss.a, sty.dotgay)}
             component={Link}
             href={"https://www.ohhey.gay"}
+            legacyBehavior={false}
             platform={"nextjs"}
             target={"_blank"}
           >

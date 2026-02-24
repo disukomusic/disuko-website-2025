@@ -73,6 +73,41 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic.module.css"; // plasmic-import: x4VgG6kzZCVuaqknYN7tgc/projectcss
 import sty from "./PlasmicCommissions.module.css"; // plasmic-import: jITmhNWlDefq/css
 
+const emptyProxy: any = new Proxy(() => "", {
+  get(_, prop) {
+    return prop === Symbol.toPrimitive ? () => "" : emptyProxy;
+  }
+});
+
+function wrapQueriesWithLoadingProxy($q: any): any {
+  return new Proxy($q, {
+    get(target, queryName) {
+      const query = target[queryName];
+      return !query || query.isLoading || !query.data ? emptyProxy : query;
+    }
+  });
+}
+
+export function generateDynamicMetadata($q: any, $ctx: any) {
+  return {
+    title: "🌸disuko - Commissions",
+    description:
+      "Commissions by disuko, featuring design, 3D modelling, and music production. ",
+    openGraph: {
+      title: "🌸disuko - Commissions",
+      description:
+        "Commissions by disuko, featuring design, 3D modelling, and music production. "
+    },
+    twitter: {
+      card: "summary",
+      title: "🌸disuko - Commissions",
+      description:
+        "Commissions by disuko, featuring design, 3D modelling, and music production. "
+    },
+    alternates: { canonical: "https://disuko.gay/commissions" }
+  };
+}
+
 createPlasmicElementProxy;
 
 export type PlasmicCommissions__VariantMembers = {};
@@ -135,43 +170,41 @@ function PlasmicCommissions__RenderFunc(props: {
 
   const currentUser = useCurrentUser?.() || {};
 
+  const pageMetadata = generateDynamicMetadata(
+    wrapQueriesWithLoadingProxy({}),
+    $ctx
+  );
+
   const styleTokensClassNames = _useStyleTokens();
 
   return (
     <React.Fragment>
       <Head>
         <meta name="twitter:card" content="summary" />
-        <title key="title">{PlasmicCommissions.pageMetadata.title}</title>
-        <meta
-          key="og:title"
-          property="og:title"
-          content={PlasmicCommissions.pageMetadata.title}
-        />
+        <title key="title">{pageMetadata.title}</title>
+        <meta key="og:title" property="og:title" content={pageMetadata.title} />
         <meta
           key="twitter:title"
-          name="twitter:title"
-          content={PlasmicCommissions.pageMetadata.title}
+          property="twitter:title"
+          content={pageMetadata.title}
         />
         <meta
           key="description"
-          name="description"
-          content={PlasmicCommissions.pageMetadata.description}
+          property="description"
+          content={pageMetadata.description}
         />
         <meta
           key="og:description"
           property="og:description"
-          content={PlasmicCommissions.pageMetadata.description}
+          content={pageMetadata.description}
         />
         <meta
           key="twitter:description"
-          name="twitter:description"
-          content={PlasmicCommissions.pageMetadata.description}
+          property="twitter:description"
+          content={pageMetadata.description}
         />
 
-        <link
-          rel="canonical"
-          href={PlasmicCommissions.pageMetadata.canonical}
-        />
+        <link rel="canonical" href={pageMetadata.alternates?.canonical} />
       </Head>
 
       <style>{`
@@ -1282,14 +1315,11 @@ export const PlasmicCommissions = Object.assign(
     internalVariantProps: PlasmicCommissions__VariantProps,
     internalArgProps: PlasmicCommissions__ArgProps,
 
-    // Page metadata
-    pageMetadata: {
-      title: "🌸disuko - Commissions",
-      description:
-        "Commissions by disuko, featuring design, 3D modelling, and music production. ",
-      ogImageSrc: "",
-      canonical: "https://disuko.gay/commissions"
-    }
+    pageMetadata: generateDynamicMetadata(wrapQueriesWithLoadingProxy({}), {
+      pagePath: "/commissions",
+      searchParams: {},
+      params: {}
+    })
   }
 );
 

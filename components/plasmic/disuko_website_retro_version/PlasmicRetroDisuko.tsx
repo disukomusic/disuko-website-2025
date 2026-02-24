@@ -149,6 +149,7 @@ function PlasmicRetroDisuko__RenderFunc(props: {
       )}
       component={Link}
       href={`/retro`}
+      legacyBehavior={false}
       platform={"nextjs"}
       target={"_blank"}
     >

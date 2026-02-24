@@ -77,6 +77,35 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic.module.css"; // plasmic-import: x4VgG6kzZCVuaqknYN7tgc/projectcss
 import sty from "./PlasmicPortfolioImm.module.css"; // plasmic-import: 1EylZ3BxOpMk/css
 
+const emptyProxy: any = new Proxy(() => "", {
+  get(_, prop) {
+    return prop === Symbol.toPrimitive ? () => "" : emptyProxy;
+  }
+});
+
+function wrapQueriesWithLoadingProxy($q: any): any {
+  return new Proxy($q, {
+    get(target, queryName) {
+      const query = target[queryName];
+      return !query || query.isLoading || !query.data ? emptyProxy : query;
+    }
+  });
+}
+
+export function generateDynamicMetadata($q: any, $ctx: any) {
+  return {
+    title: "Immersive Media",
+
+    openGraph: {
+      title: "Immersive Media"
+    },
+    twitter: {
+      card: "summary",
+      title: "Immersive Media"
+    }
+  };
+}
+
 createPlasmicElementProxy;
 
 export type PlasmicPortfolioImm__VariantMembers = {};
@@ -143,22 +172,23 @@ function PlasmicPortfolioImm__RenderFunc(props: {
 
   const currentUser = useCurrentUser?.() || {};
 
+  const pageMetadata = generateDynamicMetadata(
+    wrapQueriesWithLoadingProxy({}),
+    $ctx
+  );
+
   const styleTokensClassNames = _useStyleTokens();
 
   return (
     <React.Fragment>
       <Head>
         <meta name="twitter:card" content="summary" />
-        <title key="title">{PlasmicPortfolioImm.pageMetadata.title}</title>
-        <meta
-          key="og:title"
-          property="og:title"
-          content={PlasmicPortfolioImm.pageMetadata.title}
-        />
+        <title key="title">{pageMetadata.title}</title>
+        <meta key="og:title" property="og:title" content={pageMetadata.title} />
         <meta
           key="twitter:title"
-          name="twitter:title"
-          content={PlasmicPortfolioImm.pageMetadata.title}
+          property="twitter:title"
+          content={pageMetadata.title}
         />
       </Head>
 
@@ -951,6 +981,7 @@ function PlasmicPortfolioImm__RenderFunc(props: {
                         href={
                           "https://www.chatham.edu/academics/undergraduate/communication/faculty/ryan-dsouza.html"
                         }
+                        legacyBehavior={false}
                         platform={"nextjs"}
                       >
                         {"Ryan D'Souza, Ph.D."}
@@ -1464,13 +1495,11 @@ export const PlasmicPortfolioImm = Object.assign(
     internalVariantProps: PlasmicPortfolioImm__VariantProps,
     internalArgProps: PlasmicPortfolioImm__ArgProps,
 
-    // Page metadata
-    pageMetadata: {
-      title: "Immersive Media",
-      description: "",
-      ogImageSrc: "",
-      canonical: ""
-    }
+    pageMetadata: generateDynamicMetadata(wrapQueriesWithLoadingProxy({}), {
+      pagePath: "/IMM",
+      searchParams: {},
+      params: {}
+    })
   }
 );
 

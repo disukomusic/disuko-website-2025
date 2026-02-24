@@ -79,6 +79,30 @@ import NounPixelHeart10989631SvgIcon from "./icons/PlasmicIcon__NounPixelHeart10
 import CheckSvgIcon from "./icons/PlasmicIcon__CheckSvg"; // plasmic-import: 3tinjaDzS1_n/icon
 import Icon38Icon from "./icons/PlasmicIcon__Icon38"; // plasmic-import: 0Mc3AIURpuwI/icon
 
+const emptyProxy: any = new Proxy(() => "", {
+  get(_, prop) {
+    return prop === Symbol.toPrimitive ? () => "" : emptyProxy;
+  }
+});
+
+function wrapQueriesWithLoadingProxy($q: any): any {
+  return new Proxy($q, {
+    get(target, queryName) {
+      const query = target[queryName];
+      return !query || query.isLoading || !query.data ? emptyProxy : query;
+    }
+  });
+}
+
+export function generateDynamicMetadata($q: any, $ctx: any) {
+  return {
+    openGraph: {},
+    twitter: {
+      card: "summary"
+    }
+  };
+}
+
 createPlasmicElementProxy;
 
 export type PlasmicOopsie__VariantMembers = {};
@@ -152,7 +176,7 @@ function PlasmicOopsie__RenderFunc(props: {
         path: "popover.open",
         type: "private",
         variableType: "boolean",
-        initFunc: ({ $props, $state, $queries, $ctx }) => undefined
+        initFunc: ({ $props, $state, $queries, $q, $ctx }) => undefined
       }
     ],
     [$props, $ctx, $refs]
@@ -161,8 +185,14 @@ function PlasmicOopsie__RenderFunc(props: {
     $props,
     $ctx,
     $queries: {},
+    $q: {},
     $refs
   });
+
+  const pageMetadata = generateDynamicMetadata(
+    wrapQueriesWithLoadingProxy({}),
+    $ctx
+  );
 
   const styleTokensClassNames = _useStyleTokens();
 
@@ -439,13 +469,11 @@ export const PlasmicOopsie = Object.assign(
     internalVariantProps: PlasmicOopsie__VariantProps,
     internalArgProps: PlasmicOopsie__ArgProps,
 
-    // Page metadata
-    pageMetadata: {
-      title: "",
-      description: "",
-      ogImageSrc: "",
-      canonical: ""
-    }
+    pageMetadata: generateDynamicMetadata(wrapQueriesWithLoadingProxy({}), {
+      pagePath: "/oopsie",
+      searchParams: {},
+      params: {}
+    })
   }
 );
 

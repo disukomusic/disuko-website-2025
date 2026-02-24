@@ -194,13 +194,13 @@ function PlasmicThemeSwitcher__RenderFunc(props: {
         path: "ariaSelect.isOpen",
         type: "private",
         variableType: "boolean",
-        initFunc: ({ $props, $state, $queries, $ctx }) => false
+        initFunc: ({ $props, $state, $queries, $q, $ctx }) => false
       },
       {
         path: "ariaSelect.selectedValue",
         type: "readonly",
         variableType: "text",
-        initFunc: ({ $props, $state, $queries, $ctx }) =>
+        initFunc: ({ $props, $state, $queries, $q, $ctx }) =>
           $props["initialSelectedValue"],
 
         onChangeProp: "onChange"
@@ -209,7 +209,7 @@ function PlasmicThemeSwitcher__RenderFunc(props: {
         path: "type",
         type: "private",
         variableType: "variant",
-        initFunc: ({ $props, $state, $queries, $ctx }) => $props.type
+        initFunc: ({ $props, $state, $queries, $q, $ctx }) => $props.type
       }
     ],
     [$props, $ctx, $refs]
@@ -218,6 +218,7 @@ function PlasmicThemeSwitcher__RenderFunc(props: {
     $props,
     $ctx,
     $queries: {},
+    $q: {},
     $refs
   });
 
@@ -399,7 +400,9 @@ type NodeComponentProps<T extends NodeNameType> =
     variants?: PlasmicThemeSwitcher__VariantsArgs;
     args?: PlasmicThemeSwitcher__ArgsType;
     overrides?: NodeOverridesType<T>;
-  } & Omit<PlasmicThemeSwitcher__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
+  } &
+    // Specify variants directly as props
+    Omit<PlasmicThemeSwitcher__VariantsArgs, ReservedPropsType> &
     // Specify args directly as props
     Omit<PlasmicThemeSwitcher__ArgsType, ReservedPropsType> &
     // Specify overrides for each element directly as props

@@ -147,7 +147,7 @@ function PlasmicBlurredPicture__RenderFunc(props: {
         path: "unblurred",
         type: "private",
         variableType: "variant",
-        initFunc: ({ $props, $state, $queries, $ctx }) => $props.unblurred
+        initFunc: ({ $props, $state, $queries, $q, $ctx }) => $props.unblurred
       }
     ],
     [$props, $ctx, $refs]
@@ -156,6 +156,7 @@ function PlasmicBlurredPicture__RenderFunc(props: {
     $props,
     $ctx,
     $queries: {},
+    $q: {},
     $refs
   });
 
