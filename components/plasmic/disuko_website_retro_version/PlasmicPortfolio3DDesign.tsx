@@ -412,8 +412,25 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                   "classic"
                 )
               })}
-            />
-
+            >
+              <PlasmicImg__
+                alt={""}
+                className={classNames(sty.img__gqbzI)}
+                displayHeight={"338px"}
+                displayMaxHeight={"none"}
+                displayMaxWidth={"none"}
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={"auto"}
+                loading={"lazy"}
+                src={{
+                  src: "/plasmic/disuko_website_retro_version/images/characterIconPng.png",
+                  fullWidth: 1024,
+                  fullHeight: 1024,
+                  aspectRatio: undefined
+                }}
+              />
+            </ImageWindow>
             <div
               data-plasmic-name={"imageWindow20"}
               data-plasmic-override={overrides.imageWindow20}

@@ -796,41 +796,43 @@ function PlasmicHomepage__RenderFunc(props: {
                   }
                 />
               </div>
-            </div>
-            <Window
-              className={classNames("__wab_instance", sty.window__ys5AE, {
-                [sty.windowglobal_theme_classic__ys5AEeNktM]: hasVariant(
-                  globalVariants,
-                  "theme",
-                  "classic"
-                )
-              })}
-              linkDestination={"https://youtube.com/live/dTOIu32S3LQ"}
-              showImage={true}
-              windowImage={
-                <PlasmicImg__
-                  alt={""}
-                  className={classNames(sty.img__h9ItJ)}
-                  displayHeight={"auto"}
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={"100%"}
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={"auto"}
-                  loading={"lazy"}
-                  src={{
-                    src: "/plasmic/disuko_website_retro_version/images/cloudDreamerAlbumArtTransparentLOgoUseThisOnePng.png",
-                    fullWidth: 3000,
-                    fullHeight: 3000,
-                    aspectRatio: undefined
-                  }}
+              <div className={classNames(projectcss.all, sty.column__vDcC6)}>
+                <Window
+                  className={classNames("__wab_instance", sty.window__ys5AE, {
+                    [sty.windowglobal_theme_classic__ys5AEeNktM]: hasVariant(
+                      globalVariants,
+                      "theme",
+                      "classic"
+                    )
+                  })}
+                  linkDestination={"https://youtube.com/live/dTOIu32S3LQ"}
+                  showImage={true}
+                  windowImage={
+                    <PlasmicImg__
+                      alt={""}
+                      className={classNames(sty.img__h9ItJ)}
+                      displayHeight={"auto"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"100%"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"auto"}
+                      loading={"lazy"}
+                      src={{
+                        src: "/plasmic/disuko_website_retro_version/images/cloudDreamerAlbumArtTransparentLOgoUseThisOnePng.png",
+                        fullWidth: 3000,
+                        fullHeight: 3000,
+                        aspectRatio: undefined
+                      }}
+                    />
+                  }
+                  windowText={
+                    "tune in to the musical journey of launching into outer space with the power of an alien panda!"
+                  }
+                  windowTitle={"NEW ALBUM OUT!"}
                 />
-              }
-              windowText={
-                "tune in to the musical journey of launching into outer space with the power of an alien panda!"
-              }
-              windowTitle={"NEW ALBUM OUT!"}
-            />
+              </div>
+            </div>
           </div>
           <Footer
             data-plasmic-name={"footer"}
