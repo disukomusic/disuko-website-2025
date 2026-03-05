@@ -92,7 +92,14 @@ function wrapQueriesWithLoadingProxy($q: any): any {
   });
 }
 
-export function generateDynamicMetadata($q: any, $ctx: any) {
+export type PageCtx = {
+  pageRoute: string;
+  pagePath: string;
+  params: Record<string, string | string[] | undefined>;
+  query: Record<string, string | string[] | undefined>;
+};
+
+export function generateDynamicMetadata($q: any, $ctx: PageCtx) {
   return {
     title: "disuko 🌸",
     description:
@@ -142,7 +149,7 @@ export type PlasmicHomepage__OverridesType = {
   email?: Flex__<typeof WindowButton>;
   discord?: Flex__<typeof WindowButton>;
   popover?: Flex__<typeof AntdPopover>;
-  link?: Flex__<"a"> & Partial<LinkProps>;
+  popover2?: Flex__<typeof AntdPopover>;
   music?: Flex__<typeof Window>;
   video?: Flex__<typeof Window>;
   design?: Flex__<typeof Window>;
@@ -202,6 +209,12 @@ function PlasmicHomepage__RenderFunc(props: {
         type: "private",
         variableType: "boolean",
         initFunc: ({ $props, $state, $queries, $q, $ctx }) => undefined
+      },
+      {
+        path: "popover2.open",
+        type: "private",
+        variableType: "boolean",
+        initFunc: ({ $props, $state, $queries, $q, $ctx }) => undefined
       }
     ],
     [$props, $ctx, $refs]
@@ -216,7 +229,7 @@ function PlasmicHomepage__RenderFunc(props: {
 
   const pageMetadata = generateDynamicMetadata(
     wrapQueriesWithLoadingProxy({}),
-    $ctx
+    $ctx as PageCtx
   );
 
   const styleTokensClassNames = _useStyleTokens();
@@ -266,556 +279,443 @@ function PlasmicHomepage__RenderFunc(props: {
         }
       `}</style>
 
-      <div className={projectcss.plasmic_page_wrapper}>
+      <div
+        data-plasmic-name={"mainPage"}
+        data-plasmic-override={overrides.mainPage}
+        data-plasmic-root={true}
+        data-plasmic-for-node={forNode}
+        className={classNames(
+          projectcss.all,
+          projectcss.root_reset,
+          projectcss.plasmic_default_styles,
+          projectcss.plasmic_mixins,
+          styleTokensClassNames,
+          sty.mainPage,
+          {
+            [sty.mainPageglobal_theme_classic]: hasVariant(
+              globalVariants,
+              "theme",
+              "classic"
+            )
+          }
+        )}
+      >
+        <Navbar
+          data-plasmic-name={"navbar"}
+          data-plasmic-override={overrides.navbar}
+          className={classNames("__wab_instance", sty.navbar, {
+            [sty.navbarglobal_theme_classic]: hasVariant(
+              globalVariants,
+              "theme",
+              "classic"
+            )
+          })}
+        />
+
         <div
-          data-plasmic-name={"mainPage"}
-          data-plasmic-override={overrides.mainPage}
-          data-plasmic-root={true}
-          data-plasmic-for-node={forNode}
-          className={classNames(
-            projectcss.all,
-            projectcss.root_reset,
-            projectcss.plasmic_default_styles,
-            projectcss.plasmic_mixins,
-            styleTokensClassNames,
-            sty.mainPage,
-            {
-              [sty.mainPageglobal_theme_classic]: hasVariant(
-                globalVariants,
-                "theme",
-                "classic"
-              )
-            }
-          )}
+          data-plasmic-name={"main"}
+          data-plasmic-override={overrides.main}
+          className={classNames(projectcss.all, sty.main)}
         >
-          <Navbar
-            data-plasmic-name={"navbar"}
-            data-plasmic-override={overrides.navbar}
-            className={classNames("__wab_instance", sty.navbar, {
-              [sty.navbarglobal_theme_classic]: hasVariant(
-                globalVariants,
-                "theme",
-                "classic"
-              )
-            })}
-          />
-
           <div
-            data-plasmic-name={"main"}
-            data-plasmic-override={overrides.main}
-            className={classNames(projectcss.all, sty.main)}
+            data-plasmic-name={"columns"}
+            data-plasmic-override={overrides.columns}
+            className={classNames(projectcss.all, sty.columns)}
           >
-            <div
-              data-plasmic-name={"columns"}
-              data-plasmic-override={overrides.columns}
-              className={classNames(projectcss.all, sty.columns)}
-            >
-              <div className={classNames(projectcss.all, sty.column__kzUaY)}>
-                <div
-                  className={classNames(projectcss.all, sty.freeBox__kOtxd, {
-                    [sty.freeBoxglobal_theme_classic__kOtxDeNktM]: hasVariant(
-                      globalVariants,
-                      "theme",
-                      "classic"
-                    )
-                  })}
-                >
-                  <RetroDisuko
-                    data-plasmic-name={"retroDisuko"}
-                    data-plasmic-override={overrides.retroDisuko}
-                    className={classNames("__wab_instance", sty.retroDisuko)}
-                  />
+            <div className={classNames(projectcss.all, sty.column__kzUaY)}>
+              <div
+                className={classNames(projectcss.all, sty.freeBox__kOtxd, {
+                  [sty.freeBoxglobal_theme_classic__kOtxDeNktM]: hasVariant(
+                    globalVariants,
+                    "theme",
+                    "classic"
+                  )
+                })}
+              >
+                <RetroDisuko
+                  data-plasmic-name={"retroDisuko"}
+                  data-plasmic-override={overrides.retroDisuko}
+                  className={classNames("__wab_instance", sty.retroDisuko)}
+                />
 
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__o19Ev)}
+                <div className={classNames(projectcss.all, sty.freeBox__o19Ev)}>
+                  <Window
+                    className={classNames("__wab_instance", sty.window__nrQmc, {
+                      [sty.windowglobal_theme_classic__nrQmCeNktM]: hasVariant(
+                        globalVariants,
+                        "theme",
+                        "classic"
+                      )
+                    })}
+                    showImage={true}
+                    windowImage={
+                      <PlasmicImg__
+                        alt={""}
+                        className={classNames(sty.img__egdmN, {
+                          [sty.imgglobal_theme_classic__egdmNeNktM]: hasVariant(
+                            globalVariants,
+                            "theme",
+                            "classic"
+                          )
+                        })}
+                        displayHeight={"auto"}
+                        displayMaxHeight={"none"}
+                        displayMaxWidth={"none"}
+                        displayMinHeight={"0"}
+                        displayMinWidth={"0"}
+                        displayWidth={"100%"}
+                        loading={"lazy"}
+                        src={
+                          hasVariant(globalVariants, "theme", "classic")
+                            ? {
+                                src: "/plasmic/disuko_website_retro_version/images/headshotButBadPng.png",
+                                fullWidth: 768,
+                                fullHeight: 512,
+                                aspectRatio: undefined
+                              }
+                            : {
+                                src: "/plasmic/disuko_website_retro_version/images/headShot2025SmallJpg.jpg",
+                                fullWidth: 1748,
+                                fullHeight: 1166,
+                                aspectRatio: undefined
+                              }
+                        }
+                      />
+                    }
+                    windowText={
+                      "i'm disuko, i'm an enthusiast of all things involving digital art. i love to express myself through music, design, and film. i hope you enjoy my work!"
+                    }
+                    windowTitle={"hi there!"}
                   >
-                    <Window
+                    <div
                       className={classNames(
-                        "__wab_instance",
-                        sty.window__nrQmc,
+                        projectcss.all,
+                        sty.freeBox__e56VT,
                         {
-                          [sty.windowglobal_theme_classic__nrQmCeNktM]:
+                          [sty.freeBoxglobal_theme_classic__e56VTeNktM]:
                             hasVariant(globalVariants, "theme", "classic")
                         }
                       )}
-                      showImage={true}
-                      windowImage={
+                    >
+                      <WindowButton
+                        className={classNames(
+                          "__wab_instance",
+                          sty.windowButton__n99S
+                        )}
+                        hoverText={"bluesky"}
+                        link={"https://bsky.app/profile/disuko.gay"}
+                      >
                         <PlasmicImg__
                           alt={""}
-                          className={classNames(sty.img__egdmN, {
-                            [sty.imgglobal_theme_classic__egdmNeNktM]:
-                              hasVariant(globalVariants, "theme", "classic")
-                          })}
+                          className={classNames(sty.img___6XdE)}
+                          displayHeight={"44px"}
+                          displayMaxHeight={"none"}
+                          displayMaxWidth={"100%"}
+                          displayMinHeight={"0"}
+                          displayMinWidth={"0"}
+                          displayWidth={"44px"}
+                          loading={"lazy"}
+                          src={{
+                            src: "/plasmic/disuko_website_retro_version/images/image69.png",
+                            fullWidth: 512,
+                            fullHeight: 512,
+                            aspectRatio: undefined
+                          }}
+                        />
+                      </WindowButton>
+                      <WindowButton
+                        className={classNames(
+                          "__wab_instance",
+                          sty.windowButton___08Fd
+                        )}
+                        hoverText={"youtube"}
+                        link={"https://youtube.com/disuko"}
+                      >
+                        <PlasmicImg__
+                          alt={""}
+                          className={classNames(sty.img__tqrc6)}
+                          displayHeight={"44px"}
+                          displayMaxHeight={"none"}
+                          displayMaxWidth={"100%"}
+                          displayMinHeight={"0"}
+                          displayMinWidth={"0"}
+                          displayWidth={"44px"}
+                          loading={"lazy"}
+                          src={{
+                            src: "/plasmic/disuko_website_retro_version/images/image75.png",
+                            fullWidth: 225,
+                            fullHeight: 225,
+                            aspectRatio: undefined
+                          }}
+                        />
+                      </WindowButton>
+                      <WindowButton
+                        data-plasmic-name={"email"}
+                        data-plasmic-override={overrides.email}
+                        className={classNames("__wab_instance", sty.email)}
+                        hoverText={"disukomusic@gmail.com"}
+                        link={"mailto:disukomusic@gmail.com"}
+                      >
+                        <PlasmicImg__
+                          alt={""}
+                          className={classNames(sty.img___6LpHe)}
+                          displayHeight={"44px"}
+                          displayMaxHeight={"none"}
+                          displayMaxWidth={"100%"}
+                          displayMinHeight={"0"}
+                          displayMinWidth={"0"}
+                          displayWidth={"44px"}
+                          loading={"lazy"}
+                          src={{
+                            src: "/plasmic/disuko_website_retro_version/images/downloadPng.png",
+                            fullWidth: 225,
+                            fullHeight: 225,
+                            aspectRatio: undefined
+                          }}
+                        />
+                      </WindowButton>
+                      <WindowButton
+                        className={classNames(
+                          "__wab_instance",
+                          sty.windowButton__xxYqn
+                        )}
+                        hoverText={"spacehey"}
+                        link={"https://space.disuko.gay"}
+                      >
+                        <PlasmicImg__
+                          alt={""}
+                          className={classNames(sty.img__edwYc)}
+                          displayHeight={"44px"}
+                          displayMaxHeight={"none"}
+                          displayMaxWidth={"100%"}
+                          displayMinHeight={"0"}
+                          displayMinWidth={"0"}
+                          displayWidth={"44px"}
+                          loading={"lazy"}
+                          src={{
+                            src: "/plasmic/disuko_website_retro_version/images/logoSquarePng.png",
+                            fullWidth: 370,
+                            fullHeight: 370,
+                            aspectRatio: undefined
+                          }}
+                        />
+                      </WindowButton>
+                      <WindowButton
+                        className={classNames(
+                          "__wab_instance",
+                          sty.windowButton__ieUPe
+                        )}
+                        hoverText={"instagram"}
+                        link={"https://instagram.com/disukomusic"}
+                      >
+                        <PlasmicImg__
+                          alt={""}
+                          className={classNames(sty.img__f0Rne)}
+                          displayHeight={"44px"}
+                          displayMaxHeight={"none"}
+                          displayMaxWidth={"100%"}
+                          displayMinHeight={"0"}
+                          displayMinWidth={"0"}
+                          displayWidth={"44px"}
+                          loading={"lazy"}
+                          src={{
+                            src: "/plasmic/disuko_website_retro_version/images/_61Ad0808Dbd51Fdb95966E65Dc6C4C69906C81F21600X900Png.png",
+                            fullWidth: 1080,
+                            fullHeight: 608,
+                            aspectRatio: undefined
+                          }}
+                        />
+                      </WindowButton>
+                      <WindowButton
+                        className={classNames(
+                          "__wab_instance",
+                          sty.windowButton__jJLlc
+                        )}
+                        hoverText={"neocities"}
+                        link={"https://disuko.neocities.org"}
+                      >
+                        <PlasmicImg__
+                          alt={""}
+                          className={classNames(sty.img___8MaEg)}
+                          displayHeight={"44px"}
+                          displayMaxHeight={"none"}
+                          displayMaxWidth={"100%"}
+                          displayMinHeight={"0"}
+                          displayMinWidth={"0"}
+                          displayWidth={"44px"}
+                          loading={"lazy"}
+                          src={{
+                            src: "/plasmic/disuko_website_retro_version/images/disuko95PandaOnlyPng.png",
+                            fullWidth: 400,
+                            fullHeight: 438,
+                            aspectRatio: undefined
+                          }}
+                        />
+                      </WindowButton>
+                      <WindowButton
+                        data-plasmic-name={"discord"}
+                        data-plasmic-override={overrides.discord}
+                        className={classNames("__wab_instance", sty.discord)}
+                        hoverText={"join the disukord"}
+                        link={"https://discord.disuko.gay"}
+                      >
+                        <PlasmicImg__
+                          alt={""}
+                          className={classNames(sty.img__fb44Q)}
+                          displayHeight={"auto"}
+                          displayMaxHeight={"none"}
+                          displayMaxWidth={"100%"}
+                          displayMinHeight={"0"}
+                          displayMinWidth={"0"}
+                          displayWidth={"44px"}
+                          loading={"lazy"}
+                          src={{
+                            src: "/plasmic/disuko_website_retro_version/images/iWasRedesigningSomeOfMyDesktopIconsToBeInAV041Jnk7Lc9Aha11Png.webp",
+                            fullWidth: 500,
+                            fullHeight: 500,
+                            aspectRatio: undefined
+                          }}
+                        />
+                      </WindowButton>
+                    </div>
+                  </Window>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__mb3Nk)}
+                  >
+                    <AntdPopover
+                      data-plasmic-name={"popover"}
+                      data-plasmic-override={overrides.popover}
+                      arrow={true}
+                      className={classNames("__wab_instance", sty.popover)}
+                      content={null}
+                      contentText={"My Media Group / Game studio!"}
+                      defaultStylesClassName={classNames(
+                        projectcss.root_reset,
+                        projectcss.plasmic_default_styles,
+                        projectcss.plasmic_mixins,
+                        styleTokensClassNames
+                      )}
+                      mouseEnterDelay={0}
+                      mouseLeaveDelay={0}
+                      onOpenChange={async (...eventArgs: any) => {
+                        generateStateOnChangeProp($state, [
+                          "popover",
+                          "open"
+                        ]).apply(null, eventArgs);
+                      }}
+                      open={generateStateValueProp($state, ["popover", "open"])}
+                      placement={"bottomLeft"}
+                      popoverScopeClassName={sty["popover__popover"]}
+                      title={null}
+                    >
+                      <PlasmicLink__
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.a,
+                          sty.link__x4HOu
+                        )}
+                        component={Link}
+                        href={"https://redpandastudios.net"}
+                        legacyBehavior={false}
+                        platform={"nextjs"}
+                      >
+                        <PlasmicImg__
+                          alt={""}
+                          className={classNames(sty.img___4KLe)}
                           displayHeight={"auto"}
                           displayMaxHeight={"none"}
                           displayMaxWidth={"none"}
                           displayMinHeight={"0"}
                           displayMinWidth={"0"}
-                          displayWidth={"100%"}
+                          displayWidth={"auto"}
                           loading={"lazy"}
-                          src={
-                            hasVariant(globalVariants, "theme", "classic")
-                              ? {
-                                  src: "/plasmic/disuko_website_retro_version/images/headshotButBadPng.png",
-                                  fullWidth: 768,
-                                  fullHeight: 512,
-                                  aspectRatio: undefined
-                                }
-                              : {
-                                  src: "/plasmic/disuko_website_retro_version/images/headShot2025SmallJpg.jpg",
-                                  fullWidth: 1748,
-                                  fullHeight: 1166,
-                                  aspectRatio: undefined
-                                }
-                          }
+                          src={{
+                            src: "/plasmic/disuko_website_retro_version/images/redPandaStudiosGeocitiesBannerBackgroundGif.gif",
+                            fullWidth: 88,
+                            fullHeight: 186,
+                            aspectRatio: undefined
+                          }}
                         />
-                      }
-                      windowText={
-                        "i'm disuko, i'm an enthusiast of all things involving digital art. i love to express myself through music, design, and film. i hope you enjoy my work!"
-                      }
-                      windowTitle={"hi there!"}
+                      </PlasmicLink__>
+                    </AntdPopover>
+                    <AntdPopover
+                      data-plasmic-name={"popover2"}
+                      data-plasmic-override={overrides.popover2}
+                      arrow={true}
+                      className={classNames("__wab_instance", sty.popover2)}
+                      content={null}
+                      contentText={"My hyperpoppunk project!"}
+                      defaultStylesClassName={classNames(
+                        projectcss.root_reset,
+                        projectcss.plasmic_default_styles,
+                        projectcss.plasmic_mixins,
+                        styleTokensClassNames
+                      )}
+                      mouseEnterDelay={0}
+                      mouseLeaveDelay={0}
+                      onOpenChange={async (...eventArgs: any) => {
+                        generateStateOnChangeProp($state, [
+                          "popover2",
+                          "open"
+                        ]).apply(null, eventArgs);
+                      }}
+                      open={generateStateValueProp($state, [
+                        "popover2",
+                        "open"
+                      ])}
+                      placement={"bottomLeft"}
+                      popoverScopeClassName={sty["popover2__popover"]}
+                      title={null}
                     >
-                      <div
+                      <PlasmicLink__
                         className={classNames(
                           projectcss.all,
-                          sty.freeBox__e56VT,
-                          {
-                            [sty.freeBoxglobal_theme_classic__e56VTeNktM]:
-                              hasVariant(globalVariants, "theme", "classic")
+                          projectcss.a,
+                          sty.link___9Rdps
+                        )}
+                        component={Link}
+                        href={"https://on3ko.lol"}
+                        legacyBehavior={false}
+                        platform={"nextjs"}
+                        target={"_blank"}
+                      >
+                        <PlasmicImg__
+                          alt={""}
+                          className={classNames(sty.img___5Gg2R)}
+                          displayHeight={"auto"}
+                          displayMaxHeight={"none"}
+                          displayMaxWidth={"100%"}
+                          displayMinHeight={"0"}
+                          displayMinWidth={"0"}
+                          displayWidth={"auto"}
+                          loading={"lazy"}
+                          src={
+                            "https://on3ko.lol/Assets/Images/on3kobutton.gif"
                           }
-                        )}
-                      >
-                        <WindowButton
-                          className={classNames(
-                            "__wab_instance",
-                            sty.windowButton__n99S
-                          )}
-                          hoverText={"bluesky"}
-                          link={"https://bsky.app/profile/disuko.gay"}
-                        >
-                          <PlasmicImg__
-                            alt={""}
-                            className={classNames(sty.img___6XdE)}
-                            displayHeight={"44px"}
-                            displayMaxHeight={"none"}
-                            displayMaxWidth={"100%"}
-                            displayMinHeight={"0"}
-                            displayMinWidth={"0"}
-                            displayWidth={"44px"}
-                            loading={"lazy"}
-                            src={{
-                              src: "/plasmic/disuko_website_retro_version/images/image69.png",
-                              fullWidth: 512,
-                              fullHeight: 512,
-                              aspectRatio: undefined
-                            }}
-                          />
-                        </WindowButton>
-                        <WindowButton
-                          className={classNames(
-                            "__wab_instance",
-                            sty.windowButton___08Fd
-                          )}
-                          hoverText={"youtube"}
-                          link={"https://youtube.com/disuko"}
-                        >
-                          <PlasmicImg__
-                            alt={""}
-                            className={classNames(sty.img__tqrc6)}
-                            displayHeight={"44px"}
-                            displayMaxHeight={"none"}
-                            displayMaxWidth={"100%"}
-                            displayMinHeight={"0"}
-                            displayMinWidth={"0"}
-                            displayWidth={"44px"}
-                            loading={"lazy"}
-                            src={{
-                              src: "/plasmic/disuko_website_retro_version/images/image75.png",
-                              fullWidth: 225,
-                              fullHeight: 225,
-                              aspectRatio: undefined
-                            }}
-                          />
-                        </WindowButton>
-                        <WindowButton
-                          data-plasmic-name={"email"}
-                          data-plasmic-override={overrides.email}
-                          className={classNames("__wab_instance", sty.email)}
-                          hoverText={"disukomusic@gmail.com"}
-                          link={"mailto:disukomusic@gmail.com"}
-                        >
-                          <PlasmicImg__
-                            alt={""}
-                            className={classNames(sty.img___6LpHe)}
-                            displayHeight={"44px"}
-                            displayMaxHeight={"none"}
-                            displayMaxWidth={"100%"}
-                            displayMinHeight={"0"}
-                            displayMinWidth={"0"}
-                            displayWidth={"44px"}
-                            loading={"lazy"}
-                            src={{
-                              src: "/plasmic/disuko_website_retro_version/images/downloadPng.png",
-                              fullWidth: 225,
-                              fullHeight: 225,
-                              aspectRatio: undefined
-                            }}
-                          />
-                        </WindowButton>
-                        <WindowButton
-                          className={classNames(
-                            "__wab_instance",
-                            sty.windowButton__xxYqn
-                          )}
-                          hoverText={"spacehey"}
-                          link={"https://space.disuko.gay"}
-                        >
-                          <PlasmicImg__
-                            alt={""}
-                            className={classNames(sty.img__edwYc)}
-                            displayHeight={"44px"}
-                            displayMaxHeight={"none"}
-                            displayMaxWidth={"100%"}
-                            displayMinHeight={"0"}
-                            displayMinWidth={"0"}
-                            displayWidth={"44px"}
-                            loading={"lazy"}
-                            src={{
-                              src: "/plasmic/disuko_website_retro_version/images/logoSquarePng.png",
-                              fullWidth: 370,
-                              fullHeight: 370,
-                              aspectRatio: undefined
-                            }}
-                          />
-                        </WindowButton>
-                        <WindowButton
-                          className={classNames(
-                            "__wab_instance",
-                            sty.windowButton__ieUPe
-                          )}
-                          hoverText={"instagram"}
-                          link={"https://instagram.com/disukomusic"}
-                        >
-                          <PlasmicImg__
-                            alt={""}
-                            className={classNames(sty.img__f0Rne)}
-                            displayHeight={"44px"}
-                            displayMaxHeight={"none"}
-                            displayMaxWidth={"100%"}
-                            displayMinHeight={"0"}
-                            displayMinWidth={"0"}
-                            displayWidth={"44px"}
-                            loading={"lazy"}
-                            src={{
-                              src: "/plasmic/disuko_website_retro_version/images/_61Ad0808Dbd51Fdb95966E65Dc6C4C69906C81F21600X900Png.png",
-                              fullWidth: 1080,
-                              fullHeight: 608,
-                              aspectRatio: undefined
-                            }}
-                          />
-                        </WindowButton>
-                        <WindowButton
-                          className={classNames(
-                            "__wab_instance",
-                            sty.windowButton__jJLlc
-                          )}
-                          hoverText={"neocities"}
-                          link={"https://disuko.neocities.org"}
-                        >
-                          <PlasmicImg__
-                            alt={""}
-                            className={classNames(sty.img___8MaEg)}
-                            displayHeight={"44px"}
-                            displayMaxHeight={"none"}
-                            displayMaxWidth={"100%"}
-                            displayMinHeight={"0"}
-                            displayMinWidth={"0"}
-                            displayWidth={"44px"}
-                            loading={"lazy"}
-                            src={{
-                              src: "/plasmic/disuko_website_retro_version/images/disuko95PandaOnlyPng.png",
-                              fullWidth: 400,
-                              fullHeight: 438,
-                              aspectRatio: undefined
-                            }}
-                          />
-                        </WindowButton>
-                        <WindowButton
-                          data-plasmic-name={"discord"}
-                          data-plasmic-override={overrides.discord}
-                          className={classNames("__wab_instance", sty.discord)}
-                          hoverText={"join the disukord"}
-                          link={"https://discord.disuko.gay"}
-                        >
-                          <PlasmicImg__
-                            alt={""}
-                            className={classNames(sty.img__fb44Q)}
-                            displayHeight={"auto"}
-                            displayMaxHeight={"none"}
-                            displayMaxWidth={"100%"}
-                            displayMinHeight={"0"}
-                            displayMinWidth={"0"}
-                            displayWidth={"44px"}
-                            loading={"lazy"}
-                            src={{
-                              src: "/plasmic/disuko_website_retro_version/images/iWasRedesigningSomeOfMyDesktopIconsToBeInAV041Jnk7Lc9Aha11Png.webp",
-                              fullWidth: 500,
-                              fullHeight: 500,
-                              aspectRatio: undefined
-                            }}
-                          />
-                        </WindowButton>
-                      </div>
-                    </Window>
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox__mb3Nk)}
-                    >
-                      <AntdPopover
-                        data-plasmic-name={"popover"}
-                        data-plasmic-override={overrides.popover}
-                        arrow={true}
-                        className={classNames("__wab_instance", sty.popover)}
-                        content={null}
-                        contentText={"My Media Group / Game studio!"}
-                        defaultStylesClassName={classNames(
-                          projectcss.root_reset,
-                          projectcss.plasmic_default_styles,
-                          projectcss.plasmic_mixins,
-                          styleTokensClassNames
-                        )}
-                        mouseEnterDelay={0}
-                        mouseLeaveDelay={0}
-                        onOpenChange={async (...eventArgs: any) => {
-                          generateStateOnChangeProp($state, [
-                            "popover",
-                            "open"
-                          ]).apply(null, eventArgs);
-                        }}
-                        open={generateStateValueProp($state, [
-                          "popover",
-                          "open"
-                        ])}
-                        placement={"bottomLeft"}
-                        popoverScopeClassName={sty["popover__popover"]}
-                        title={null}
-                      >
-                        <PlasmicLink__
-                          data-plasmic-name={"link"}
-                          data-plasmic-override={overrides.link}
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.a,
-                            sty.link
-                          )}
-                          component={Link}
-                          href={"https://redpandastudios.net"}
-                          legacyBehavior={false}
-                          platform={"nextjs"}
-                        >
-                          <PlasmicImg__
-                            alt={""}
-                            className={classNames(sty.img___4KLe)}
-                            displayHeight={"auto"}
-                            displayMaxHeight={"none"}
-                            displayMaxWidth={"none"}
-                            displayMinHeight={"0"}
-                            displayMinWidth={"0"}
-                            displayWidth={"auto"}
-                            loading={"lazy"}
-                            src={{
-                              src: "/plasmic/disuko_website_retro_version/images/redPandaStudiosGeocitiesBannerBackgroundGif.gif",
-                              fullWidth: 88,
-                              fullHeight: 186,
-                              aspectRatio: undefined
-                            }}
-                          />
-                        </PlasmicLink__>
-                      </AntdPopover>
-                      <PlasmicImg__
-                        alt={""}
-                        className={classNames(sty.img__kovoB)}
-                        displayHeight={"31px"}
-                        displayMaxHeight={"none"}
-                        displayMaxWidth={"100%"}
-                        displayMinHeight={"0"}
-                        displayMinWidth={"0"}
-                        displayWidth={"88px"}
-                        loading={"lazy"}
-                        src={{
-                          src: "/plasmic/disuko_website_retro_version/images/disukoMainGif.gif",
-                          fullWidth: 88,
-                          fullHeight: 186,
-                          aspectRatio: undefined
-                        }}
-                      />
-
-                      <PlasmicImg__
-                        alt={""}
-                        className={classNames(sty.img___5Gg2R)}
-                        displayHeight={"auto"}
-                        displayMaxHeight={"none"}
-                        displayMaxWidth={"100%"}
-                        displayMinHeight={"0"}
-                        displayMinWidth={"0"}
-                        displayWidth={"auto"}
-                        loading={"lazy"}
-                        src={
-                          "https://external-media.spacehey.net/media/sCPhdIMrlCSpgDVV1CPp8McV3Ppygz_q-eAi7Jujqnvc=/https://splattacks.neocities.org/images/graphics/b14.png"
-                        }
-                      />
-
-                      <PlasmicImg__
-                        alt={""}
-                        className={classNames(sty.img__obzXm)}
-                        displayHeight={"auto"}
-                        displayMaxHeight={"none"}
-                        displayMaxWidth={"100%"}
-                        displayMinHeight={"0"}
-                        displayMinWidth={"0"}
-                        displayWidth={"auto"}
-                        loading={"lazy"}
-                        src={
-                          "https://external-media.spacehey.net/media/sc1oC4-CeP0E0mfoS9CDKwEjolsM7BVgx9YTWjhk1cEg=/https://cyber.dabamos.de/88x31/bob.gif"
-                        }
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div
-                  className={classNames(projectcss.all, sty.freeBox___1BUuK)}
-                >
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__j1TvY)}
-                  >
+                        />
+                      </PlasmicLink__>
+                    </AntdPopover>
                     <PlasmicImg__
                       alt={""}
-                      className={classNames(sty.img__ajnzs)}
-                      displayHeight={"100%"}
+                      className={classNames(sty.img__kovoB)}
+                      displayHeight={"31px"}
                       displayMaxHeight={"none"}
-                      displayMaxWidth={"none"}
+                      displayMaxWidth={"100%"}
                       displayMinHeight={"0"}
                       displayMinWidth={"0"}
-                      displayWidth={"auto"}
+                      displayWidth={"88px"}
                       loading={"lazy"}
                       src={{
-                        src: "/plasmic/disuko_website_retro_version/images/image41.gif",
-                        fullWidth: 50,
-                        fullHeight: 200,
+                        src: "/plasmic/disuko_website_retro_version/images/disukoMainGif.gif",
+                        fullWidth: 88,
+                        fullHeight: 186,
                         aspectRatio: undefined
                       }}
                     />
 
-                    <Window
-                      data-plasmic-name={"music"}
-                      data-plasmic-override={overrides.music}
-                      className={classNames("__wab_instance", sty.music)}
-                      linkDestination={`/music`}
-                      showImage={false}
-                      windowText={
-                        "I produce electronic music geared towards rhythm games, involving fast tempos, high energy, and complex rhythms! available on all streaming services."
-                      }
-                      windowTitle={"Music Production"}
-                    />
-                  </div>
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__pdtg)}
-                  >
-                    <Window
-                      data-plasmic-name={"video"}
-                      data-plasmic-override={overrides.video}
-                      className={classNames("__wab_instance", sty.video)}
-                      linkDestination={"https://youtube.com/disuko"}
-                      showImage={false}
-                      windowText={
-                        "i run two youtube channels! my main channel, disuko, focuses on audio gear, 3d software, and other creative technology applications while my second channel disuko flips focuses on collecting and flipping butterfly knives."
-                      }
-                      windowTitle={"Video production"}
-                    />
-
                     <PlasmicImg__
                       alt={""}
-                      className={classNames(sty.img___4JlTj)}
-                      displayHeight={"110px"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"78px"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"100%"}
-                      loading={"lazy"}
-                      src={{
-                        src: "/plasmic/disuko_website_retro_version/images/image42.gif",
-                        fullWidth: 110,
-                        fullHeight: 1840,
-                        aspectRatio: undefined
-                      }}
-                    />
-                  </div>
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__ePVwd)}
-                  >
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img__k7Yj8)}
-                      displayHeight={"110px"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"78px"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"100%"}
-                      loading={"lazy"}
-                      src={{
-                        src: "/plasmic/disuko_website_retro_version/images/image43.gif",
-                        fullWidth: 75,
-                        fullHeight: 900,
-                        aspectRatio: undefined
-                      }}
-                    />
-
-                    <Window
-                      data-plasmic-name={"design"}
-                      data-plasmic-override={overrides.design}
-                      className={classNames("__wab_instance", sty.design)}
-                      linkDestination={`/portfolio`}
-                      showImage={false}
-                      windowText={
-                        "I also create digital art in Blender, using 3D Modeling, procedural rendering, and NPR (non photoreal rendering) techniques."
-                      }
-                      windowTitle={"3D/2D Design"}
-                    />
-                  </div>
-                </div>
-              </div>
-              <div className={classNames(projectcss.all, sty.column___1HqMm)}>
-                <Embed
-                  data-plasmic-name={"embedHtml"}
-                  data-plasmic-override={overrides.embedHtml}
-                  className={classNames("__wab_instance", sty.embedHtml, {
-                    [sty.embedHtmlglobal_theme_classic]: hasVariant(
-                      globalVariants,
-                      "theme",
-                      "classic"
-                    )
-                  })}
-                  code={
-                    '<script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.54/build/spline-viewer.js"></script>\r\n<spline-viewer url="https://prod.spline.design/Kvsro7HSBfwwi2Kk/scene.splinecode"></spline-viewer>'
-                  }
-                />
-              </div>
-              <div className={classNames(projectcss.all, sty.column__vDcC6)}>
-                <Window
-                  className={classNames("__wab_instance", sty.window__ys5AE, {
-                    [sty.windowglobal_theme_classic__ys5AEeNktM]: hasVariant(
-                      globalVariants,
-                      "theme",
-                      "classic"
-                    )
-                  })}
-                  linkDestination={"https://youtube.com/live/dTOIu32S3LQ"}
-                  showImage={true}
-                  windowImage={
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img__h9ItJ)}
+                      className={classNames(sty.img__obzXm)}
                       displayHeight={"auto"}
                       displayMaxHeight={"none"}
                       displayMaxWidth={"100%"}
@@ -823,34 +723,171 @@ function PlasmicHomepage__RenderFunc(props: {
                       displayMinWidth={"0"}
                       displayWidth={"auto"}
                       loading={"lazy"}
-                      src={{
-                        src: "/plasmic/disuko_website_retro_version/images/cloudDreamerAlbumArtTransparentLOgoUseThisOnePng.png",
-                        fullWidth: 3000,
-                        fullHeight: 3000,
-                        aspectRatio: undefined
-                      }}
+                      src={
+                        "https://external-media.spacehey.net/media/sc1oC4-CeP0E0mfoS9CDKwEjolsM7BVgx9YTWjhk1cEg=/https://cyber.dabamos.de/88x31/bob.gif"
+                      }
                     />
-                  }
-                  windowText={
-                    "tune in to the musical journey of launching into outer space with the power of an alien panda!"
-                  }
-                  windowTitle={"NEW ALBUM OUT!"}
-                />
+                  </div>
+                </div>
+              </div>
+              <div className={classNames(projectcss.all, sty.freeBox___1BUuK)}>
+                <div className={classNames(projectcss.all, sty.freeBox__j1TvY)}>
+                  <PlasmicImg__
+                    alt={""}
+                    className={classNames(sty.img__ajnzs)}
+                    displayHeight={"100%"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"none"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"auto"}
+                    loading={"lazy"}
+                    src={{
+                      src: "/plasmic/disuko_website_retro_version/images/image41.gif",
+                      fullWidth: 50,
+                      fullHeight: 200,
+                      aspectRatio: undefined
+                    }}
+                  />
+
+                  <Window
+                    data-plasmic-name={"music"}
+                    data-plasmic-override={overrides.music}
+                    className={classNames("__wab_instance", sty.music)}
+                    linkDestination={`/music`}
+                    showImage={false}
+                    windowText={
+                      "I produce electronic music geared towards rhythm games, involving fast tempos, high energy, and complex rhythms! available on all streaming services."
+                    }
+                    windowTitle={"Music Production"}
+                  />
+                </div>
+                <div className={classNames(projectcss.all, sty.freeBox__pdtg)}>
+                  <Window
+                    data-plasmic-name={"video"}
+                    data-plasmic-override={overrides.video}
+                    className={classNames("__wab_instance", sty.video)}
+                    linkDestination={"https://youtube.com/disuko"}
+                    showImage={false}
+                    windowText={
+                      "i run two youtube channels! my main channel, disuko, focuses on audio gear, 3d software, and other creative technology applications while my second channel disuko flips focuses on collecting and flipping butterfly knives."
+                    }
+                    windowTitle={"Video production"}
+                  />
+
+                  <PlasmicImg__
+                    alt={""}
+                    className={classNames(sty.img___4JlTj)}
+                    displayHeight={"110px"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"78px"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"100%"}
+                    loading={"lazy"}
+                    src={{
+                      src: "/plasmic/disuko_website_retro_version/images/image42.gif",
+                      fullWidth: 110,
+                      fullHeight: 1840,
+                      aspectRatio: undefined
+                    }}
+                  />
+                </div>
+                <div className={classNames(projectcss.all, sty.freeBox__ePVwd)}>
+                  <PlasmicImg__
+                    alt={""}
+                    className={classNames(sty.img__k7Yj8)}
+                    displayHeight={"110px"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"78px"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"100%"}
+                    loading={"lazy"}
+                    src={{
+                      src: "/plasmic/disuko_website_retro_version/images/image43.gif",
+                      fullWidth: 75,
+                      fullHeight: 900,
+                      aspectRatio: undefined
+                    }}
+                  />
+
+                  <Window
+                    data-plasmic-name={"design"}
+                    data-plasmic-override={overrides.design}
+                    className={classNames("__wab_instance", sty.design)}
+                    linkDestination={`/portfolio`}
+                    showImage={false}
+                    windowText={
+                      "I also create digital art in Blender, using 3D Modeling, procedural rendering, and NPR (non photoreal rendering) techniques."
+                    }
+                    windowTitle={"3D/2D Design"}
+                  />
+                </div>
               </div>
             </div>
+            <div className={classNames(projectcss.all, sty.column___1HqMm)}>
+              <Embed
+                data-plasmic-name={"embedHtml"}
+                data-plasmic-override={overrides.embedHtml}
+                className={classNames("__wab_instance", sty.embedHtml, {
+                  [sty.embedHtmlglobal_theme_classic]: hasVariant(
+                    globalVariants,
+                    "theme",
+                    "classic"
+                  )
+                })}
+                code={
+                  '<script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.54/build/spline-viewer.js"></script>\r\n<spline-viewer url="https://prod.spline.design/Kvsro7HSBfwwi2Kk/scene.splinecode"></spline-viewer>'
+                }
+              />
+
+              <Window
+                className={classNames("__wab_instance", sty.window__ys5AE, {
+                  [sty.windowglobal_theme_classic__ys5AEeNktM]: hasVariant(
+                    globalVariants,
+                    "theme",
+                    "classic"
+                  )
+                })}
+                linkDestination={"https://on3ko.lol/"}
+                showImage={true}
+                windowImage={
+                  <PlasmicImg__
+                    alt={""}
+                    className={classNames(sty.img__h9ItJ)}
+                    displayHeight={"auto"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"100%"}
+                    loading={"lazy"}
+                    src={{
+                      src: "/plasmic/disuko_website_retro_version/images/on3KoPosterJpg2.jpg",
+                      fullWidth: 1024,
+                      fullHeight: 1024,
+                      aspectRatio: undefined
+                    }}
+                  />
+                }
+                windowText={"See you @ ON3KO: IRL on April 11th!"}
+                windowTitle={"Live concert soon!"}
+              />
+            </div>
           </div>
-          <Footer
-            data-plasmic-name={"footer"}
-            data-plasmic-override={overrides.footer}
-            className={classNames("__wab_instance", sty.footer, {
-              [sty.footerglobal_theme_classic]: hasVariant(
-                globalVariants,
-                "theme",
-                "classic"
-              )
-            })}
-          />
         </div>
+        <Footer
+          data-plasmic-name={"footer"}
+          data-plasmic-override={overrides.footer}
+          className={classNames("__wab_instance", sty.footer, {
+            [sty.footerglobal_theme_classic]: hasVariant(
+              globalVariants,
+              "theme",
+              "classic"
+            )
+          })}
+        />
       </div>
     </React.Fragment>
   ) as React.ReactElement | null;
@@ -866,7 +903,7 @@ const PlasmicDescendants = {
     "email",
     "discord",
     "popover",
-    "link",
+    "popover2",
     "music",
     "video",
     "design",
@@ -881,7 +918,7 @@ const PlasmicDescendants = {
     "email",
     "discord",
     "popover",
-    "link",
+    "popover2",
     "music",
     "video",
     "design",
@@ -893,7 +930,7 @@ const PlasmicDescendants = {
     "email",
     "discord",
     "popover",
-    "link",
+    "popover2",
     "music",
     "video",
     "design",
@@ -902,8 +939,8 @@ const PlasmicDescendants = {
   retroDisuko: ["retroDisuko"],
   email: ["email"],
   discord: ["discord"],
-  popover: ["popover", "link"],
-  link: ["link"],
+  popover: ["popover"],
+  popover2: ["popover2"],
   music: ["music"],
   video: ["video"],
   design: ["design"],
@@ -922,7 +959,7 @@ type NodeDefaultElementType = {
   email: typeof WindowButton;
   discord: typeof WindowButton;
   popover: typeof AntdPopover;
-  link: "a";
+  popover2: typeof AntdPopover;
   music: typeof Window;
   video: typeof Window;
   design: typeof Window;
@@ -1024,7 +1061,7 @@ export const PlasmicHomepage = Object.assign(
     email: makeNodeComponent("email"),
     discord: makeNodeComponent("discord"),
     popover: makeNodeComponent("popover"),
-    link: makeNodeComponent("link"),
+    popover2: makeNodeComponent("popover2"),
     music: makeNodeComponent("music"),
     video: makeNodeComponent("video"),
     design: makeNodeComponent("design"),
@@ -1036,9 +1073,10 @@ export const PlasmicHomepage = Object.assign(
     internalArgProps: PlasmicHomepage__ArgProps,
 
     pageMetadata: generateDynamicMetadata(wrapQueriesWithLoadingProxy({}), {
+      pageRoute: "/",
       pagePath: "/",
-      searchParams: {},
-      params: {}
+      params: {},
+      query: {}
     })
   }
 );

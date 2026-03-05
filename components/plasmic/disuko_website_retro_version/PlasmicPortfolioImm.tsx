@@ -92,7 +92,14 @@ function wrapQueriesWithLoadingProxy($q: any): any {
   });
 }
 
-export function generateDynamicMetadata($q: any, $ctx: any) {
+export type PageCtx = {
+  pageRoute: string;
+  pagePath: string;
+  params: Record<string, string | string[] | undefined>;
+  query: Record<string, string | string[] | undefined>;
+};
+
+export function generateDynamicMetadata($q: any, $ctx: PageCtx) {
   return {
     title: "Immersive Media",
 
@@ -174,7 +181,7 @@ function PlasmicPortfolioImm__RenderFunc(props: {
 
   const pageMetadata = generateDynamicMetadata(
     wrapQueriesWithLoadingProxy({}),
-    $ctx
+    $ctx as PageCtx
   );
 
   const styleTokensClassNames = _useStyleTokens();
@@ -1496,9 +1503,10 @@ export const PlasmicPortfolioImm = Object.assign(
     internalArgProps: PlasmicPortfolioImm__ArgProps,
 
     pageMetadata: generateDynamicMetadata(wrapQueriesWithLoadingProxy({}), {
+      pageRoute: "/IMM",
       pagePath: "/IMM",
-      searchParams: {},
-      params: {}
+      params: {},
+      query: {}
     })
   }
 );

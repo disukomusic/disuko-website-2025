@@ -5,14 +5,14 @@
   align-items: center;
   justify-content: space-around;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   max-width: 100%;
   background: url("/plasmic/disuko_website_retro_version/images/backgroundJpg.jpg") top 50% left 50% / cover repeat;
   row-gap: 0px;
   backdrop-filter: none;
   filter: none;
+  overflow: auto;
   min-width: 0;
-  min-height: 0;
   -webkit-backdrop-filter: none;
   padding: 0px;
 }
@@ -20,12 +20,12 @@
   background: var(--token-2cxCto4hpENi);
 }
 .navbar:global(.__wab_instance):global(.__wab_instance) {
-  position: fixed;
-  top: 0;
-  left: 0;
+  position: relative;
+  top: auto;
+  left: auto;
   z-index: 1;
   align-self: stretch;
-  right: 0;
+  right: auto;
 }
 .main {
   display: flex;
@@ -38,10 +38,11 @@
   backdrop-filter: none;
   filter: none;
   transform: skew(0deg, 0deg);
-  height: auto;
+  height: 100%;
   row-gap: 10px;
   overflow: hidden;
   min-width: 0;
+  min-height: 0;
   -webkit-backdrop-filter: none;
   padding: 0px 50px;
   margin: 0px;
@@ -60,17 +61,17 @@
   flex-wrap: nowrap;
   width: 100%;
   flex-shrink: 1;
+  column-gap: 150px;
+  overflow: visible;
+  max-width: 1340px;
   min-width: 0;
-  --plsmc-rc-col-gap: 0px;
+  --plsmc-rc-col-gap: 150px;
 }
-.columns > :nth-child(3n + 1) {
-  width: calc((100% - 2 * var(--plsmc-rc-col-gap, 0px)) * 4 / 12);
+.columns > :nth-child(2n + 1) {
+  width: calc((100% - 1 * var(--plsmc-rc-col-gap, 0px)) * 6 / 12);
 }
-.columns > :nth-child(3n + 2) {
-  width: calc((100% - 2 * var(--plsmc-rc-col-gap, 0px)) * 5 / 12);
-}
-.columns > :nth-child(3n + 3) {
-  width: calc((100% - 2 * var(--plsmc-rc-col-gap, 0px)) * 3 / 12);
+.columns > :nth-child(2n + 2) {
+  width: calc((100% - 1 * var(--plsmc-rc-col-gap, 0px)) * 6 / 12);
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .columns {
@@ -80,7 +81,7 @@
     flex-wrap: wrap;
     margin-top: 67px;
     min-width: 0;
-    --plsmc-rc-col-gap: 0px;
+    --plsmc-rc-col-gap: 150px;
     padding: 0px;
   }
 }
@@ -319,7 +320,7 @@
   height: 31px;
   min-width: 88px;
 }
-.link {
+.link__x4HOu {
   position: relative;
   display: flex;
   justify-content: center;
@@ -335,6 +336,24 @@
 .img___4KLe > picture > img {
   object-fit: none;
   object-position: 50% 0%;
+}
+.popover2:global(.__wab_instance) {
+  object-fit: cover;
+  position: relative;
+  margin-bottom: 0px;
+  height: 31px;
+  min-width: 88px;
+}
+.link___9Rdps {
+  position: relative;
+  display: flex;
+}
+.img___5Gg2R {
+  object-fit: cover;
+  max-width: 100%;
+}
+.img___5Gg2R > picture > img {
+  object-fit: cover;
 }
 .img__kovoB {
   position: relative;
@@ -352,14 +371,6 @@
 .img__kovoB > picture > img {
   object-fit: contain;
   object-position: 50% 0%;
-}
-.img___5Gg2R {
-  position: relative;
-  object-fit: cover;
-  max-width: 100%;
-}
-.img___5Gg2R > picture > img {
-  object-fit: cover;
 }
 .img__obzXm {
   position: relative;
@@ -553,7 +564,7 @@
   justify-content: center;
   align-items: center;
   min-width: 0;
-  padding: 0px;
+  padding: 40px 0px 0px;
 }
 .embedHtml:global(.__wab_instance) {
   object-fit: cover;
@@ -562,33 +573,26 @@
   width: 100%;
   height: 99%;
   min-width: 0;
+  display: none;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .embedHtml:global(.__wab_instance) {
     display: none;
   }
 }
-.column__vDcC6 {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  justify-content: flex-end;
-  align-items: center;
-  padding-top: 40px;
-  min-width: 0;
-}
 .window__ys5AE:global(.__wab_instance) {
   max-width: 100%;
   width: 100%;
-  align-self: flex-end;
+  align-self: center;
   left: auto;
   top: auto;
   z-index: 1;
   position: relative;
   height: auto;
+  right: auto;
+  bottom: auto;
+  flex-shrink: 1;
+  flex-grow: 0;
   min-width: 0;
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -608,19 +612,22 @@
   box-shadow:
     -4px -4px 0px 0px var(--token-GXH3dzbZuw1x),
     4px 4px 0px 0px var(--token-FYHois2LGA8g);
+  height: auto;
+  width: 100%;
+  min-width: 0;
   margin: 10px;
 }
 .img__h9ItJ > picture > img {
   object-fit: cover;
 }
 .footer:global(.__wab_instance) {
-  position: fixed;
-  left: 0;
+  position: relative;
+  left: auto;
   top: auto;
   z-index: 1;
   align-self: auto;
-  right: 0;
-  bottom: 0;
+  right: auto;
+  bottom: auto;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .footer:global(.__wab_instance) {

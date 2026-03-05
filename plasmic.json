@@ -3209,6 +3209,16 @@
           "id": "m-fTdrnE38am",
           "name": "image 108",
           "filePath": "../public/plasmic/disuko_website_retro_version/images/image108.png"
+        },
+        {
+          "id": "aJd5KS2VPvUF",
+          "name": "On3koPoster.jpg",
+          "filePath": "../public/plasmic/disuko_website_retro_version/images/on3KoPosterJpg.jpg"
+        },
+        {
+          "id": "OwjAISZBDdNp",
+          "name": "On3koPoster.jpg 2",
+          "filePath": "../public/plasmic/disuko_website_retro_version/images/on3KoPosterJpg2.jpg"
         }
       ],
       "indirect": false,

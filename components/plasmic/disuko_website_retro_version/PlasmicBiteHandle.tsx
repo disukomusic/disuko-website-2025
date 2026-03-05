@@ -88,7 +88,14 @@ function wrapQueriesWithLoadingProxy($q: any): any {
   });
 }
 
-export function generateDynamicMetadata($q: any, $ctx: any) {
+export type PageCtx = {
+  pageRoute: string;
+  pagePath: string;
+  params: Record<string, string | string[] | undefined>;
+  query: Record<string, string | string[] | undefined>;
+};
+
+export function generateDynamicMetadata($q: any, $ctx: PageCtx) {
   return {
     title: "BITE HANDLE 🔪",
     description:
@@ -180,7 +187,7 @@ function PlasmicBiteHandle__RenderFunc(props: {
 
   const pageMetadata = generateDynamicMetadata(
     wrapQueriesWithLoadingProxy({}),
-    $ctx
+    $ctx as PageCtx
   );
 
   const styleTokensClassNames = _useStyleTokens();
@@ -566,9 +573,10 @@ export const PlasmicBiteHandle = Object.assign(
     internalArgProps: PlasmicBiteHandle__ArgProps,
 
     pageMetadata: generateDynamicMetadata(wrapQueriesWithLoadingProxy({}), {
+      pageRoute: "/bitehandlerave",
       pagePath: "/bitehandlerave",
-      searchParams: {},
-      params: {}
+      params: {},
+      query: {}
     })
   }
 );
