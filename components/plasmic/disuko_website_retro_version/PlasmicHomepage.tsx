@@ -864,14 +864,14 @@ function PlasmicHomepage__RenderFunc(props: {
                     displayWidth={"100%"}
                     loading={"lazy"}
                     src={{
-                      src: "/plasmic/disuko_website_retro_version/images/on3KoPosterJpg2.jpg",
+                      src: "/plasmic/disuko_website_retro_version/images/on3KoPosterJpg3.jpg",
                       fullWidth: 1024,
                       fullHeight: 1024,
                       aspectRatio: undefined
                     }}
                   />
                 }
-                windowText={"See you @ ON3KO: IRL on April 11th!"}
+                windowText={"See you @ ON3KO: IRL in April (Date TBA)"}
                 windowTitle={"Live concert soon!"}
               />
             </div>
