@@ -111,7 +111,7 @@ export function generateDynamicMetadata($q: any, $ctx: PageCtx) {
       ]
     },
     twitter: {
-      card: "summary_large_image",
+      card: "summary_large_image" as const,
       title: "disuko 🌸",
       description:
         "~official merch for music producer and content creator disuko ",

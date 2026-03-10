@@ -113,7 +113,7 @@ export function generateDynamicMetadata($q: any, $ctx: PageCtx) {
       ]
     },
     twitter: {
-      card: "summary_large_image",
+      card: "summary_large_image" as const,
       title: "disuko - links 🌸",
       description:
         "~social media platforms and other important links for the disuko youtube channel and streaming services.",

@@ -84,6 +84,9 @@ export type PlasmicFooter__OverridesType = {
   columns?: Flex__<"div">;
   rpsLink?: Flex__<"a"> & Partial<LinkProps>;
   dotgay?: Flex__<"a"> & Partial<LinkProps>;
+  theme?: Flex__<"div">;
+  classic?: Flex__<"a"> & Partial<LinkProps>;
+  classic2?: Flex__<"a"> & Partial<LinkProps>;
 };
 
 export interface DefaultFooterProps {
@@ -287,6 +290,73 @@ function PlasmicFooter__RenderFunc(props: {
               "<div>\r\n  <strong>last updated:</strong> <span id=\"commit-date\"></span>\r\n</div>\r\n<div id=\"latest-commit\"></div>\r\n\r\n<script>\r\n  const owner = 'disukomusic';\r\n  const repo = 'disuko-website-2025';\r\n  const branch = 'main';\r\n  const dateSpan = document.getElementById('commit-date');\r\n  const container = document.getElementById('latest-commit');\r\n\r\n  async function fetchLatestCommit() {\r\n    try {\r\n      const response = await fetch(`https://api.github.com/repos/${owner}/${repo}/commits?sha=${branch}&per_page=1`);\r\n      const data = await response.json();\r\n\r\n      if (!data.length) {\r\n        container.innerHTML = '<p>No commits found.</p>';\r\n        return;\r\n      }\r\n\r\n      const commit = data[0];\r\n      const date = new Date(commit.commit.author.date);\r\n      const formattedDate = `${date.getMonth() + 1}/${date.getDate()}/${date.getFullYear()}`;\r\n      const url = commit.html_url;\r\n      const title = commit.commit.message.split('\\n')[0];\r\n\r\n      dateSpan.textContent = formattedDate;\r\n      container.innerHTML = `<ul>\r\n          <li><a href=\"${url}\" target=\"_blank\" rel=\"noopener noreferrer\"><strong>${title}</strong></a></li></ul>\r\n      `;\r\n    } catch (err) {\r\n      container.innerHTML = `<p>Error fetching commit: ${err.message}</p>`;\r\n    }\r\n  }\r\n\r\n  window.onload = function() {\r\n    fetchLatestCommit();\r\n  };\r\n</script>\r\n"
             }
           />
+
+          <div
+            data-plasmic-name={"theme"}
+            data-plasmic-override={overrides.theme}
+            className={classNames(
+              projectcss.all,
+              projectcss.__wab_text,
+              sty.theme
+            )}
+          >
+            {"Themes"}
+          </div>
+          <div className={classNames(projectcss.all, sty.freeBox__zl4KN)}>
+            <PlasmicLink__
+              data-plasmic-name={"classic"}
+              data-plasmic-override={overrides.classic}
+              className={classNames(
+                projectcss.all,
+                projectcss.a,
+                projectcss.__wab_text,
+                sty.classic
+              )}
+              component={Link}
+              legacyBehavior={false}
+              onClick={async event => {
+                const $steps = {};
+
+                $steps["runCode"] = true
+                  ? (() => {
+                      const actionArgs = {
+                        customFunction: async () => {
+                          return ($state.themes = "classic");
+                        }
+                      };
+                      return (({ customFunction }) => {
+                        return customFunction();
+                      })?.apply(null, [actionArgs]);
+                    })()
+                  : undefined;
+                if (
+                  $steps["runCode"] != null &&
+                  typeof $steps["runCode"] === "object" &&
+                  typeof $steps["runCode"].then === "function"
+                ) {
+                  $steps["runCode"] = await $steps["runCode"];
+                }
+              }}
+              platform={"nextjs"}
+            >
+              {"Default"}
+            </PlasmicLink__>
+            <PlasmicLink__
+              data-plasmic-name={"classic2"}
+              data-plasmic-override={overrides.classic2}
+              className={classNames(
+                projectcss.all,
+                projectcss.a,
+                projectcss.__wab_text,
+                sty.classic2
+              )}
+              component={Link}
+              legacyBehavior={false}
+              platform={"nextjs"}
+            >
+              {"Classic"}
+            </PlasmicLink__>
+          </div>
         </div>
       </div>
     </div>
@@ -294,10 +364,21 @@ function PlasmicFooter__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "columns", "rpsLink", "dotgay"],
-  columns: ["columns", "rpsLink", "dotgay"],
+  root: [
+    "root",
+    "columns",
+    "rpsLink",
+    "dotgay",
+    "theme",
+    "classic",
+    "classic2"
+  ],
+  columns: ["columns", "rpsLink", "dotgay", "theme", "classic", "classic2"],
   rpsLink: ["rpsLink"],
-  dotgay: ["dotgay"]
+  dotgay: ["dotgay"],
+  theme: ["theme"],
+  classic: ["classic"],
+  classic2: ["classic2"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -307,6 +388,9 @@ type NodeDefaultElementType = {
   columns: "div";
   rpsLink: "a";
   dotgay: "a";
+  theme: "div";
+  classic: "a";
+  classic2: "a";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -374,6 +458,9 @@ export const PlasmicFooter = Object.assign(
     columns: makeNodeComponent("columns"),
     rpsLink: makeNodeComponent("rpsLink"),
     dotgay: makeNodeComponent("dotgay"),
+    theme: makeNodeComponent("theme"),
+    classic: makeNodeComponent("classic"),
+    classic2: makeNodeComponent("classic2"),
 
     // Metadata about props expected for PlasmicFooter
     internalVariantProps: PlasmicFooter__VariantProps,

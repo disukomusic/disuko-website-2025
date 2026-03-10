@@ -113,7 +113,7 @@ export function generateDynamicMetadata($q: any, $ctx: PageCtx) {
       ]
     },
     twitter: {
-      card: "summary_large_image",
+      card: "summary_large_image" as const,
       title: "disuko 🌸",
       description:
         "~official website for music producer and content creator disuko ",
@@ -383,7 +383,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       />
                     }
                     windowText={
-                      "i'm disuko, i'm an enthusiast of all things involving digital art. i love to express myself through music, design, and film. i hope you enjoy my work!"
+                      "i'm angelo, i'm an enthusiast of all things involving digital art. i love to express myself online under the alias \"disuko\" through music, design, and film. i hope you enjoy my work!"
                     }
                     windowTitle={"hi there!"}
                   >
@@ -864,7 +864,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     displayWidth={"100%"}
                     loading={"lazy"}
                     src={{
-                      src: "/plasmic/disuko_website_retro_version/images/on3KoPosterJpg3.jpg",
+                      src: "/plasmic/disuko_website_retro_version/images/on3KoPosterJpg4.jpg",
                       fullWidth: 1024,
                       fullHeight: 1024,
                       aspectRatio: undefined

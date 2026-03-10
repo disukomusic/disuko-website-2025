@@ -114,7 +114,7 @@ export function generateDynamicMetadata($q: any, $ctx: PageCtx) {
       ]
     },
     twitter: {
-      card: "summary_large_image",
+      card: "summary_large_image" as const,
       title: "disuko - music 🌸",
       description:
         "~i produce electronic music and also DJ! i like making music with high energy and cute sounds. my genres range from kawaii future bass to hardcore!",

@@ -107,7 +107,7 @@ export function generateDynamicMetadata($q: any, $ctx: PageCtx) {
         "Commissions by disuko, featuring design, 3D modelling, and music production. "
     },
     twitter: {
-      card: "summary",
+      card: "summary" as const,
       title: "🌸disuko - Commissions",
       description:
         "Commissions by disuko, featuring design, 3D modelling, and music production. "

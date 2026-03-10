@@ -111,7 +111,7 @@ export function generateDynamicMetadata($q: any, $ctx: PageCtx) {
       ]
     },
     twitter: {
-      card: "summary_large_image",
+      card: "summary_large_image" as const,
       title: "3D Design",
       description: '3D Design portfolio of Angelo "Disuko" Licavoli',
       images: [
