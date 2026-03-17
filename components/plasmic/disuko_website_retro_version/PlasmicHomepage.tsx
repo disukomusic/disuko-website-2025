@@ -68,6 +68,8 @@ import Window from "../../Window"; // plasmic-import: BWjgdOwFY_OO/component
 import WindowButton from "../../WindowButton"; // plasmic-import: KZYdo-R8GYAn/component
 import { AntdPopover } from "@plasmicpkgs/antd5/skinny/registerPopover";
 import { Embed } from "@plasmicpkgs/plasmic-basic-components";
+import { SliderWrapper } from "@plasmicpkgs/react-slick";
+import { sliderHelpers as SliderWrapper_Helpers } from "@plasmicpkgs/react-slick";
 import Footer from "../../Footer"; // plasmic-import: shKoGjSwLEEB/component
 import { _useGlobalVariants } from "./plasmic"; // plasmic-import: x4VgG6kzZCVuaqknYN7tgc/projectModule
 import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: x4VgG6kzZCVuaqknYN7tgc/styleTokensProvider
@@ -154,6 +156,7 @@ export type PlasmicHomepage__OverridesType = {
   video?: Flex__<typeof Window>;
   design?: Flex__<typeof Window>;
   embedHtml?: Flex__<typeof Embed>;
+  sliderCarousel?: Flex__<typeof SliderWrapper>;
   footer?: Flex__<typeof Footer>;
 };
 
@@ -215,6 +218,15 @@ function PlasmicHomepage__RenderFunc(props: {
         type: "private",
         variableType: "boolean",
         initFunc: ({ $props, $state, $queries, $q, $ctx }) => undefined
+      },
+      {
+        path: "sliderCarousel.currentSlide",
+        type: "private",
+        variableType: "number",
+        initFunc: ({ $props, $state, $queries, $q, $ctx }) => 0,
+
+        refName: "sliderCarousel",
+        onMutate: generateOnMutateForSpec("currentSlide", SliderWrapper_Helpers)
       }
     ],
     [$props, $ctx, $refs]
@@ -850,28 +862,123 @@ function PlasmicHomepage__RenderFunc(props: {
                     "classic"
                   )
                 })}
-                linkDestination={"https://on3ko.lol/"}
+                linkDestination={""}
                 showImage={true}
-                windowImage={
-                  <PlasmicImg__
-                    alt={""}
-                    className={classNames(sty.img__h9ItJ)}
-                    displayHeight={"auto"}
-                    displayMaxHeight={"none"}
-                    displayMaxWidth={"100%"}
-                    displayMinHeight={"0"}
-                    displayMinWidth={"0"}
-                    displayWidth={"100%"}
-                    loading={"lazy"}
-                    src={{
-                      src: "/plasmic/disuko_website_retro_version/images/on3KoPosterJpg4.jpg",
-                      fullWidth: 1024,
-                      fullHeight: 1024,
-                      aspectRatio: undefined
-                    }}
-                  />
-                }
-                windowText={"See you @ ON3KO: IRL in April (Date TBA)"}
+                windowImage={(() => {
+                  const child$Props = {
+                    adaptiveHeight: false,
+                    arrows: true,
+                    autoplay: false,
+                    autoplaySpeed: 0,
+                    beforeChange: async (...eventArgs: any) => {
+                      generateStateOnChangePropForCodeComponents(
+                        $state,
+                        "currentSlide",
+                        ["sliderCarousel", "currentSlide"],
+                        SliderWrapper_Helpers
+                      ).apply(null, eventArgs);
+                    },
+                    centerMode: true,
+                    className: classNames("__wab_instance", sty.sliderCarousel),
+                    cssEase: "ease-in-out",
+                    dots: false,
+                    infinite: false,
+                    initialSlide: generateStateValueProp($state, [
+                      "sliderCarousel",
+                      "currentSlide"
+                    ]),
+                    ref: ref => {
+                      $refs["sliderCarousel"] = ref;
+                    },
+                    sliderScopeClassName: sty["sliderCarousel__slider"],
+                    speed: 52,
+                    useTransform: true,
+                    variableWidth: false,
+                    vertical: false
+                  };
+                  initializeCodeComponentStates(
+                    $state,
+                    [
+                      {
+                        name: "currentSlide",
+                        plasmicStateName: "sliderCarousel.currentSlide"
+                      }
+                    ],
+                    [],
+                    SliderWrapper_Helpers ?? {},
+                    child$Props
+                  );
+
+                  return (
+                    <SliderWrapper
+                      data-plasmic-name={"sliderCarousel"}
+                      data-plasmic-override={overrides.sliderCarousel}
+                      {...child$Props}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__u4Fyy
+                        )}
+                      >
+                        <PlasmicLink__
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.a,
+                            sty.link__i8FZj
+                          )}
+                          component={Link}
+                          href={"https://on3ko.lol/"}
+                          legacyBehavior={false}
+                          platform={"nextjs"}
+                          target={"_blank"}
+                        >
+                          <PlasmicImg__
+                            alt={""}
+                            className={classNames(sty.img__h9ItJ)}
+                            displayHeight={"auto"}
+                            displayMaxHeight={"none"}
+                            displayMaxWidth={"100%"}
+                            displayMinHeight={"0"}
+                            displayMinWidth={"0"}
+                            displayWidth={"auto"}
+                            loading={"lazy"}
+                            src={{
+                              src: "/plasmic/disuko_website_retro_version/images/on3KoPosterJpg4.jpg",
+                              fullWidth: 1024,
+                              fullHeight: 1024,
+                              aspectRatio: undefined
+                            }}
+                          />
+                        </PlasmicLink__>
+                      </div>
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__xCSwG
+                        )}
+                      >
+                        <PlasmicImg__
+                          alt={""}
+                          className={classNames(sty.img__tf3Vu)}
+                          displayHeight={"auto"}
+                          displayMaxHeight={"none"}
+                          displayMaxWidth={"100%"}
+                          displayMinHeight={"0"}
+                          displayMinWidth={"0"}
+                          displayWidth={"auto"}
+                          src={{
+                            src: "/plasmic/disuko_website_retro_version/images/mirrorpicJpg.jpg",
+                            fullWidth: 512,
+                            fullHeight: 683,
+                            aspectRatio: undefined
+                          }}
+                        />
+                      </div>
+                    </SliderWrapper>
+                  );
+                })()}
+                windowText={"See you @ ON3KO: IRL April 18th"}
                 windowTitle={"Live concert soon!"}
               />
             </div>
@@ -908,6 +1015,7 @@ const PlasmicDescendants = {
     "video",
     "design",
     "embedHtml",
+    "sliderCarousel",
     "footer"
   ],
   navbar: ["navbar"],
@@ -922,7 +1030,8 @@ const PlasmicDescendants = {
     "music",
     "video",
     "design",
-    "embedHtml"
+    "embedHtml",
+    "sliderCarousel"
   ],
   columns: [
     "columns",
@@ -934,7 +1043,8 @@ const PlasmicDescendants = {
     "music",
     "video",
     "design",
-    "embedHtml"
+    "embedHtml",
+    "sliderCarousel"
   ],
   retroDisuko: ["retroDisuko"],
   email: ["email"],
@@ -945,6 +1055,7 @@ const PlasmicDescendants = {
   video: ["video"],
   design: ["design"],
   embedHtml: ["embedHtml"],
+  sliderCarousel: ["sliderCarousel"],
   footer: ["footer"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -964,6 +1075,7 @@ type NodeDefaultElementType = {
   video: typeof Window;
   design: typeof Window;
   embedHtml: typeof Embed;
+  sliderCarousel: typeof SliderWrapper;
   footer: typeof Footer;
 };
 
@@ -1066,6 +1178,7 @@ export const PlasmicHomepage = Object.assign(
     video: makeNodeComponent("video"),
     design: makeNodeComponent("design"),
     embedHtml: makeNodeComponent("embedHtml"),
+    sliderCarousel: makeNodeComponent("sliderCarousel"),
     footer: makeNodeComponent("footer"),
 
     // Metadata about props expected for PlasmicHomepage

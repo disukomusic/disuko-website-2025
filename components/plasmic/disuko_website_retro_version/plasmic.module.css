@@ -300,6 +300,12 @@
   --plasmic-mixin-window-out_white-space: var(--mixin-txwZcUgAiD6A_white-space);
   --mixin-Ft-_3MHRy9dT_white-space: pre-wrap;
   --plasmic-mixin-links-text_white-space: var(--mixin-Ft-_3MHRy9dT_white-space);
+  --mixin-wtLga5DPcY7G_box-shadow:
+    -4px -4px 0px 0px var(--token-GXH3dzbZuw1x),
+    4px 4px 0px 0px var(--token-FYHois2LGA8g);
+  --plasmic-mixin-inset_box-shadow: var(--mixin-wtLga5DPcY7G_box-shadow);
+  --mixin-wtLga5DPcY7G_white-space: pre-wrap;
+  --plasmic-mixin-inset_white-space: var(--mixin-wtLga5DPcY7G_white-space);
 }
 
 :where(.all) {
