@@ -3269,6 +3269,41 @@
           "id": "Cv-FZE-OznyK",
           "name": "image 115",
           "filePath": "../public/plasmic/disuko_website_retro_version/images/image115.png"
+        },
+        {
+          "id": "bbOvyJjF5bYe",
+          "name": "IceCream1Fixed.png",
+          "filePath": "../public/plasmic/disuko_website_retro_version/images/iceCream1FixedPng.png"
+        },
+        {
+          "id": "7crK4PjJs7Bj",
+          "name": "IceCream2Fixed.png",
+          "filePath": "../public/plasmic/disuko_website_retro_version/images/iceCream2FixedPng.png"
+        },
+        {
+          "id": "K6Oex4gJzDt6",
+          "name": "ExploreEnvironment.gif",
+          "filePath": "../public/plasmic/disuko_website_retro_version/images/exploreEnvironmentGif.gif"
+        },
+        {
+          "id": "NK7UryHKFwwD",
+          "name": "ExploreEnvironment.gif 2",
+          "filePath": "../public/plasmic/disuko_website_retro_version/images/exploreEnvironmentGif2.gif"
+        },
+        {
+          "id": "25aechjGqa1h",
+          "name": "bathroom.gif",
+          "filePath": "../public/plasmic/disuko_website_retro_version/images/bathroomGif.gif"
+        },
+        {
+          "id": "npsDeiIefxNu",
+          "name": "DikoIceCreamFlavor.gif",
+          "filePath": "../public/plasmic/disuko_website_retro_version/images/dikoIceCreamFlavorGif.gif"
+        },
+        {
+          "id": "kUpp_D4MkSsr",
+          "name": "ShikuCowboy.gif",
+          "filePath": "../public/plasmic/disuko_website_retro_version/images/shikuCowboyGif.gif"
         }
       ],
       "indirect": false,

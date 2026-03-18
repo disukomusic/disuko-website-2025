@@ -160,6 +160,10 @@ export type PlasmicPortfolio3DDesign__OverridesType = {
   imageWindow35?: Flex__<"div">;
   environment?: Flex__<"div">;
   imageWindow13?: Flex__<"div">;
+  imageWindow47?: Flex__<"div">;
+  imageWindow48?: Flex__<"div">;
+  imageWindow49?: Flex__<"div">;
+  imageWindow46?: Flex__<"div">;
   productRenders?: Flex__<"div">;
   realisticProductRenders?: Flex__<"div">;
   imageWindow25?: Flex__<"div">;
@@ -806,7 +810,7 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                     legacyBehavior={false}
                     platform={"nextjs"}
                   >
-                    {"PANDAMONIUM: Diko Dating Sim (Red Panda Studios)"}
+                    {"PANDAMONIUM: Dimensional Dating Sim (Red Panda Studios)"}
                   </PlasmicLink__>
                 }
                 <React.Fragment>{""}</React.Fragment>
@@ -916,9 +920,9 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                     displayWidth={"auto"}
                     loading={"lazy"}
                     src={{
-                      src: "/plasmic/disuko_website_retro_version/images/image87.png",
-                      fullWidth: 1919,
-                      fullHeight: 1044,
+                      src: "/plasmic/disuko_website_retro_version/images/dikoIceCreamFlavorGif.gif",
+                      fullWidth: 854,
+                      fullHeight: 480,
                       aspectRatio: undefined
                     }}
                   />
@@ -955,7 +959,7 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                     legacyBehavior={false}
                     platform={"nextjs"}
                   >
-                    {"PANDAMONIUM: Diko Dating Sim (Red Panda Studios)"}
+                    {"PANDAMONIUM: Dimensional Dating Sim (Red Panda Studios)"}
                   </PlasmicLink__>
                 }
                 <React.Fragment>{""}</React.Fragment>
@@ -1065,9 +1069,9 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                     displayWidth={"auto"}
                     loading={"lazy"}
                     src={{
-                      src: "/plasmic/disuko_website_retro_version/images/image88.png",
-                      fullWidth: 1919,
-                      fullHeight: 1046,
+                      src: "/plasmic/disuko_website_retro_version/images/shikuCowboyGif.gif",
+                      fullWidth: 854,
+                      fullHeight: 480,
                       aspectRatio: undefined
                     }}
                   />
@@ -1106,7 +1110,7 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                     legacyBehavior={false}
                     platform={"nextjs"}
                   >
-                    {"PANDAMONIUM: Diko Dating Sim (Red Panda Studios)"}
+                    {"PANDAMONIUM: Dimensional Dating Sim (Red Panda Studios)"}
                   </PlasmicLink__>
                 }
                 <React.Fragment>{""}</React.Fragment>
@@ -1260,11 +1264,11 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                       "__wab_instance",
                       sty.htmlVideo__usWux
                     )}
-                    controls={false}
+                    controls={true}
                     loop={true}
                     muted={true}
                     src={
-                      "https://cdn.redpandastudios.net/characters/robodealer/robodealer.mov"
+                      "https://cdn.suko.pet/characters/robodealer/robodealer.mov"
                     }
                   />
                 </div>
@@ -1287,7 +1291,7 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                       "__wab_instance",
                       sty.htmlVideo__g2Cr0
                     )}
-                    controls={false}
+                    controls={true}
                     loop={true}
                     muted={true}
                     src={
@@ -1312,7 +1316,7 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                       "__wab_instance",
                       sty.htmlVideo___3AcPj
                     )}
-                    controls={false}
+                    controls={true}
                     loop={true}
                     muted={true}
                     src={
@@ -1360,7 +1364,7 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
             >
               <React.Fragment>
                 <React.Fragment>
-                  {'"Le Chunk E Chonks Office" - '}
+                  {'"Interdimensional Ice Cream Parlor" - '}
                 </React.Fragment>
                 {
                   <PlasmicLink__
@@ -1376,7 +1380,7 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                     legacyBehavior={false}
                     platform={"nextjs"}
                   >
-                    {"PANDAMONIUM: Diko Dating Sim (Red Panda Studios)"}
+                    {"PANDAMONIUM: Dimensional Dating Sim (Red Panda Studios)"}
                   </PlasmicLink__>
                 }
                 <React.Fragment>{""}</React.Fragment>
@@ -1399,6 +1403,234 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                     alt={""}
                     className={classNames(sty.img__ysJDv, {
                       [sty.imgglobal_theme_classic__ysJDveNktM]: hasVariant(
+                        globalVariants,
+                        "theme",
+                        "classic"
+                      )
+                    })}
+                    displayHeight={"auto"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"none"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"100%"}
+                    loading={"lazy"}
+                    src={{
+                      src: "/plasmic/disuko_website_retro_version/images/iceCream1FixedPng.png",
+                      fullWidth: 1920,
+                      fullHeight: 1080,
+                      aspectRatio: undefined
+                    }}
+                  />
+                </div>
+              </div>
+              <div className={classNames(projectcss.all, sty.column__aan7F)}>
+                <div
+                  data-plasmic-name={"imageWindow47"}
+                  data-plasmic-override={overrides.imageWindow47}
+                  className={classNames(projectcss.all, sty.imageWindow47, {
+                    [sty.imageWindow47global_theme_classic]: hasVariant(
+                      globalVariants,
+                      "theme",
+                      "classic"
+                    )
+                  })}
+                >
+                  <PlasmicImg__
+                    alt={""}
+                    className={classNames(sty.img__tpqZt, {
+                      [sty.imgglobal_theme_classic__tpqZteNktM]: hasVariant(
+                        globalVariants,
+                        "theme",
+                        "classic"
+                      )
+                    })}
+                    displayHeight={"auto"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"none"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"100%"}
+                    loading={"lazy"}
+                    src={{
+                      src: "/plasmic/disuko_website_retro_version/images/iceCream2FixedPng.png",
+                      fullWidth: 1920,
+                      fullHeight: 1080,
+                      aspectRatio: undefined
+                    }}
+                  />
+                </div>
+              </div>
+            </div>
+            <div className={classNames(projectcss.all, sty.columns__rZd9E)}>
+              <div className={classNames(projectcss.all, sty.column__vvdgF)}>
+                <div
+                  data-plasmic-name={"imageWindow48"}
+                  data-plasmic-override={overrides.imageWindow48}
+                  className={classNames(projectcss.all, sty.imageWindow48, {
+                    [sty.imageWindow48global_theme_classic]: hasVariant(
+                      globalVariants,
+                      "theme",
+                      "classic"
+                    )
+                  })}
+                >
+                  <PlasmicImg__
+                    alt={""}
+                    className={classNames(sty.img__yMzzd, {
+                      [sty.imgglobal_theme_classic__yMzzDeNktM]: hasVariant(
+                        globalVariants,
+                        "theme",
+                        "classic"
+                      )
+                    })}
+                    displayHeight={"auto"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"none"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"100%"}
+                    loading={"lazy"}
+                    src={{
+                      src: "/plasmic/disuko_website_retro_version/images/exploreEnvironmentGif2.gif",
+                      fullWidth: 854,
+                      fullHeight: 480,
+                      aspectRatio: undefined
+                    }}
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text__jqPsC,
+                {
+                  [sty.textglobal_theme_classic__jqPsCeNktM]: hasVariant(
+                    globalVariants,
+                    "theme",
+                    "classic"
+                  )
+                }
+              )}
+            >
+              <React.Fragment>
+                <React.Fragment>{'"Intro Bathroom" - '}</React.Fragment>
+                {
+                  <PlasmicLink__
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      projectcss.__wab_text,
+                      projectcss.plasmic_default__inline,
+                      sty.link__rGn9T
+                    )}
+                    component={Link}
+                    href={"https://redpandastudios.net"}
+                    legacyBehavior={false}
+                    platform={"nextjs"}
+                  >
+                    {"PANDAMONIUM: Dimensional Dating Sim (Red Panda Studios)"}
+                  </PlasmicLink__>
+                }
+                <React.Fragment>{""}</React.Fragment>
+              </React.Fragment>
+            </div>
+            <div className={classNames(projectcss.all, sty.columns__tHxwP)}>
+              <div className={classNames(projectcss.all, sty.column___886Lp)}>
+                <div
+                  data-plasmic-name={"imageWindow49"}
+                  data-plasmic-override={overrides.imageWindow49}
+                  className={classNames(projectcss.all, sty.imageWindow49, {
+                    [sty.imageWindow49global_theme_classic]: hasVariant(
+                      globalVariants,
+                      "theme",
+                      "classic"
+                    )
+                  })}
+                >
+                  <PlasmicImg__
+                    alt={""}
+                    className={classNames(sty.img___1K4Lg, {
+                      [sty.imgglobal_theme_classic___1K4LgeNktM]: hasVariant(
+                        globalVariants,
+                        "theme",
+                        "classic"
+                      )
+                    })}
+                    displayHeight={"auto"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"none"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"100%"}
+                    loading={"lazy"}
+                    src={{
+                      src: "/plasmic/disuko_website_retro_version/images/bathroomGif.gif",
+                      fullWidth: 854,
+                      fullHeight: 480,
+                      aspectRatio: undefined
+                    }}
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text__agtNk,
+                {
+                  [sty.textglobal_theme_classic__agtNKeNktM]: hasVariant(
+                    globalVariants,
+                    "theme",
+                    "classic"
+                  )
+                }
+              )}
+            >
+              <React.Fragment>
+                <React.Fragment>
+                  {'"Le Chunk E Chonks Office" - '}
+                </React.Fragment>
+                {
+                  <PlasmicLink__
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      projectcss.__wab_text,
+                      projectcss.plasmic_default__inline,
+                      sty.link__kCKoL
+                    )}
+                    component={Link}
+                    href={"https://redpandastudios.net"}
+                    legacyBehavior={false}
+                    platform={"nextjs"}
+                  >
+                    {"PANDAMONIUM: Diko Dating Sim (Red Panda Studios)"}
+                  </PlasmicLink__>
+                }
+                <React.Fragment>{""}</React.Fragment>
+              </React.Fragment>
+            </div>
+            <div className={classNames(projectcss.all, sty.columns__p5HIy)}>
+              <div className={classNames(projectcss.all, sty.column__afCoF)}>
+                <div
+                  data-plasmic-name={"imageWindow46"}
+                  data-plasmic-override={overrides.imageWindow46}
+                  className={classNames(projectcss.all, sty.imageWindow46, {
+                    [sty.imageWindow46global_theme_classic]: hasVariant(
+                      globalVariants,
+                      "theme",
+                      "classic"
+                    )
+                  })}
+                >
+                  <PlasmicImg__
+                    alt={""}
+                    className={classNames(sty.img__ce9O2, {
+                      [sty.imgglobal_theme_classic__ce9O2ENktM]: hasVariant(
                         globalVariants,
                         "theme",
                         "classic"
@@ -3025,6 +3257,10 @@ const PlasmicDescendants = {
     "imageWindow35",
     "environment",
     "imageWindow13",
+    "imageWindow47",
+    "imageWindow48",
+    "imageWindow49",
+    "imageWindow46",
     "productRenders",
     "realisticProductRenders",
     "imageWindow25",
@@ -3098,8 +3334,19 @@ const PlasmicDescendants = {
   imageWindow23: ["imageWindow23"],
   imageWindow34: ["imageWindow34"],
   imageWindow35: ["imageWindow35"],
-  environment: ["environment", "imageWindow13"],
+  environment: [
+    "environment",
+    "imageWindow13",
+    "imageWindow47",
+    "imageWindow48",
+    "imageWindow49",
+    "imageWindow46"
+  ],
   imageWindow13: ["imageWindow13"],
+  imageWindow47: ["imageWindow47"],
+  imageWindow48: ["imageWindow48"],
+  imageWindow49: ["imageWindow49"],
+  imageWindow46: ["imageWindow46"],
   productRenders: [
     "productRenders",
     "realisticProductRenders",
@@ -3206,6 +3453,10 @@ type NodeDefaultElementType = {
   imageWindow35: "div";
   environment: "div";
   imageWindow13: "div";
+  imageWindow47: "div";
+  imageWindow48: "div";
+  imageWindow49: "div";
+  imageWindow46: "div";
   productRenders: "div";
   realisticProductRenders: "div";
   imageWindow25: "div";
@@ -3348,6 +3599,10 @@ export const PlasmicPortfolio3DDesign = Object.assign(
     imageWindow35: makeNodeComponent("imageWindow35"),
     environment: makeNodeComponent("environment"),
     imageWindow13: makeNodeComponent("imageWindow13"),
+    imageWindow47: makeNodeComponent("imageWindow47"),
+    imageWindow48: makeNodeComponent("imageWindow48"),
+    imageWindow49: makeNodeComponent("imageWindow49"),
+    imageWindow46: makeNodeComponent("imageWindow46"),
     productRenders: makeNodeComponent("productRenders"),
     realisticProductRenders: makeNodeComponent("realisticProductRenders"),
     imageWindow25: makeNodeComponent("imageWindow25"),
