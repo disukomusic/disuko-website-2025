@@ -1295,7 +1295,7 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                     loop={true}
                     muted={true}
                     src={
-                      "https://cdn.redpandastudios.net/characters/robodealer/robodeals.mp4"
+                      "https://cdn.suko.pet/characters/robodealer/robodeals.mp4"
                     }
                   />
                 </div>
@@ -1320,7 +1320,7 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                     loop={true}
                     muted={true}
                     src={
-                      "https://cdn.redpandastudios.net/characters/robodealer/RoboSpill.mp4"
+                      "https://cdn.suko.pet/characters/robodealer/RoboSpill.mp4"
                     }
                   />
                 </div>
@@ -1724,9 +1724,7 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                       loop={true}
                       muted={true}
                       playsInline={true}
-                      src={
-                        "https://cdn.redpandastudios.net/bobasong/slide1.mp4"
-                      }
+                      src={"https://cdn.suko.pet/bobasong/slide1.mp4"}
                     />
                   </div>
                   <div
@@ -1750,9 +1748,7 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                       loop={true}
                       muted={true}
                       playsInline={true}
-                      src={
-                        "https://cdn.redpandastudios.net/bobasong/slide3.mp4"
-                      }
+                      src={"https://cdn.suko.pet/bobasong/slide3.mp4"}
                     />
                   </div>
                 </div>
@@ -1778,9 +1774,7 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                       loop={true}
                       muted={true}
                       playsInline={true}
-                      src={
-                        "https://cdn.redpandastudios.net/bobasong/slide2.mp4"
-                      }
+                      src={"https://cdn.suko.pet/bobasong/slide2.mp4"}
                     />
                   </div>
                   <div
@@ -1804,9 +1798,7 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                       loop={true}
                       muted={true}
                       playsInline={true}
-                      src={
-                        "https://cdn.redpandastudios.net/bobasong/slide4.mp4"
-                      }
+                      src={"https://cdn.suko.pet/bobasong/slide4.mp4"}
                     />
                   </div>
                 </div>
@@ -2097,7 +2089,7 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                         loop={true}
                         muted={true}
                         playsInline={true}
-                        src={"https://cdn.redpandastudios.net/carbonhoney.mp4"}
+                        src={"https://cdn.suko.pet/carbonhoney.mp4"}
                       />
                     </div>
                   </div>
@@ -2124,9 +2116,7 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                       loop={true}
                       muted={true}
                       playsInline={true}
-                      src={
-                        "https://cdn.redpandastudios.net/CantoRender0001-0750.mp4"
-                      }
+                      src={"https://cdn.suko.pet/CantoRender0001-0750.mp4"}
                     />
                   </div>
                 </div>
@@ -2181,9 +2171,7 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                       loop={true}
                       muted={true}
                       playsInline={true}
-                      src={
-                        "https://cdn.redpandastudios.net/animestreet0001-0360.mp4"
-                      }
+                      src={"https://cdn.suko.pet/animestreet0001-0360.mp4"}
                     />
                   }
                   windowText={"Pastel Street"}
@@ -2203,9 +2191,7 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                       loop={true}
                       muted={true}
                       playsInline={true}
-                      src={
-                        "https://cdn.redpandastudios.net/SmartiesRender0001-0999.mp4"
-                      }
+                      src={"https://cdn.suko.pet/SmartiesRender0001-0999.mp4"}
                     />
                   }
                   windowText={"Smarties"}
@@ -2226,9 +2212,7 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                       loop={true}
                       muted={true}
                       playsInline={true}
-                      src={
-                        "https://cdn.redpandastudios.net/NautRender0001-0500.mp4"
-                      }
+                      src={"https://cdn.suko.pet/NautRender0001-0500.mp4"}
                     />
                   }
                   windowText={"Space Nautilus Balisong"}
@@ -2249,7 +2233,7 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                       muted={true}
                       playsInline={true}
                       src={
-                        "https://cdn.redpandastudios.net/RamuneLightLabelRender0001-0750.mp4"
+                        "https://cdn.suko.pet/RamuneLightLabelRender0001-0750.mp4"
                       }
                     />
                   }
@@ -2271,9 +2255,7 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                       loop={true}
                       muted={true}
                       playsInline={true}
-                      src={
-                        "https://cdn.redpandastudios.net/CakePop0001-0250.mp4"
-                      }
+                      src={"https://cdn.suko.pet/CakePop0001-0250.mp4"}
                     />
                   }
                   windowText={"Kawaii Cake Pop"}
@@ -2293,7 +2275,7 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                       loop={true}
                       muted={true}
                       playsInline={true}
-                      src={"https://cdn.redpandastudios.net/MilkRender.mov"}
+                      src={"https://cdn.suko.pet/MilkRender.mov"}
                     />
                   }
                   windowText={"Strawberry Milk"}
