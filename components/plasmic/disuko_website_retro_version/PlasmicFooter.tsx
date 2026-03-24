@@ -227,7 +227,27 @@ function PlasmicFooter__RenderFunc(props: {
                 }
               )}
             >
-              {"\u00a9 Red Panda Studios 2026"}
+              <React.Fragment>
+                <React.Fragment>{""}</React.Fragment>
+                {
+                  <PlasmicLink__
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      projectcss.__wab_text,
+                      projectcss.plasmic_default__inline,
+                      sty.link__vQmL
+                    )}
+                    component={Link}
+                    href={"https://redpandastudios.net"}
+                    legacyBehavior={false}
+                    platform={"nextjs"}
+                  >
+                    {"\u00a9 Red Panda Studios 2026"}
+                  </PlasmicLink__>
+                }
+                <React.Fragment>{""}</React.Fragment>
+              </React.Fragment>
             </div>
             <div
               className={classNames(
@@ -243,7 +263,27 @@ function PlasmicFooter__RenderFunc(props: {
                 }
               )}
             >
-              {"icons from tabler"}
+              <React.Fragment>
+                <React.Fragment>{""}</React.Fragment>
+                {
+                  <PlasmicLink__
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      projectcss.__wab_text,
+                      projectcss.plasmic_default__inline,
+                      sty.link__rX07M
+                    )}
+                    component={Link}
+                    href={"https://tabler.io/icons"}
+                    legacyBehavior={false}
+                    platform={"nextjs"}
+                  >
+                    {"icons from tabler"}
+                  </PlasmicLink__>
+                }
+                <React.Fragment>{""}</React.Fragment>
+              </React.Fragment>
             </div>
           </div>
           <Embed

@@ -612,8 +612,7 @@
   max-width: 556px;
   flex-direction: column;
   object-fit: cover;
-  height: 100%;
-  min-height: 0;
+  height: auto;
 }
 .freeBox__u4Fyy {
   display: flex;
