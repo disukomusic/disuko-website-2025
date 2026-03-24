@@ -3304,6 +3304,11 @@
           "id": "kUpp_D4MkSsr",
           "name": "ShikuCowboy.gif",
           "filePath": "../public/plasmic/disuko_website_retro_version/images/shikuCowboyGif.gif"
+        },
+        {
+          "id": "cguxIZsUm5rb",
+          "name": "BiteHandleIcon2025 (Small).png",
+          "filePath": "../public/plasmic/disuko_website_retro_version/images/biteHandleIcon2025SmallPng.png"
         }
       ],
       "indirect": false,

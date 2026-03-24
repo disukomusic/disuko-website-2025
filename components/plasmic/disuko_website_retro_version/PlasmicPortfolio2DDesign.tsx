@@ -620,9 +620,9 @@ function PlasmicPortfolio2DDesign__RenderFunc(props: {
                         }
                         loading={"eager"}
                         src={{
-                          src: "/plasmic/disuko_website_retro_version/images/image14.png",
-                          fullWidth: 2000,
-                          fullHeight: 2000,
+                          src: "/plasmic/disuko_website_retro_version/images/biteHandleIcon2025SmallPng.png",
+                          fullWidth: 480,
+                          fullHeight: 480,
                           aspectRatio: undefined
                         }}
                       />
