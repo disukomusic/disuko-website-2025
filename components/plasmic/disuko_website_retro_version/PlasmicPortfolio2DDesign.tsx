@@ -350,6 +350,7 @@ function PlasmicPortfolio2DDesign__RenderFunc(props: {
             displayMinWidth={"0"}
             displayWidth={"100%"}
             loading={"lazy"}
+            quality={75}
             src={{
               src: "/plasmic/disuko_website_retro_version/images/image102.png",
               fullWidth: 1920,
@@ -1094,6 +1095,7 @@ function PlasmicPortfolio2DDesign__RenderFunc(props: {
                 displayMinWidth={"0"}
                 displayWidth={"620px"}
                 loading={"lazy"}
+                quality={50}
                 src={{
                   src: "/plasmic/disuko_website_retro_version/images/image30.png",
                   fullWidth: 4400,
@@ -1112,6 +1114,7 @@ function PlasmicPortfolio2DDesign__RenderFunc(props: {
                 displayMinWidth={"0"}
                 displayWidth={"620px"}
                 loading={"lazy"}
+                quality={50}
                 src={{
                   src: "/plasmic/disuko_website_retro_version/images/image28.png",
                   fullWidth: 5400,
@@ -1131,6 +1134,7 @@ function PlasmicPortfolio2DDesign__RenderFunc(props: {
                 displayMinWidth={"0"}
                 displayWidth={"620px"}
                 loading={"lazy"}
+                quality={50}
                 src={{
                   src: "/plasmic/disuko_website_retro_version/images/licavoliMyHouseDarkerPng.png",
                   fullWidth: 3300,
@@ -1149,6 +1153,7 @@ function PlasmicPortfolio2DDesign__RenderFunc(props: {
                 displayMinWidth={"0"}
                 displayWidth={"620px"}
                 loading={"lazy"}
+                quality={50}
                 src={{
                   src: "/plasmic/disuko_website_retro_version/images/image39.png",
                   fullWidth: 1024,
@@ -1168,6 +1173,7 @@ function PlasmicPortfolio2DDesign__RenderFunc(props: {
                 displayMinWidth={"0"}
                 displayWidth={"620%"}
                 loading={"lazy"}
+                quality={50}
                 src={{
                   src: "/plasmic/disuko_website_retro_version/images/image59.png",
                   fullWidth: 2478,
@@ -1200,6 +1206,7 @@ function PlasmicPortfolio2DDesign__RenderFunc(props: {
                   displayMinWidth={"0"}
                   displayWidth={"auto"}
                   loading={"lazy"}
+                  quality={50}
                   src={{
                     src: "/plasmic/disuko_website_retro_version/images/redPandaStudiosBrandGuideSeptember2023Png.png",
                     fullWidth: 2550,
@@ -1228,6 +1235,7 @@ function PlasmicPortfolio2DDesign__RenderFunc(props: {
                   displayMinWidth={"0"}
                   displayWidth={"100%"}
                   loading={"lazy"}
+                  quality={50}
                   src={{
                     src: "/plasmic/disuko_website_retro_version/images/honeyTeaaaCardDarkPng.png",
                     fullWidth: 2400,
