@@ -878,11 +878,11 @@ function PlasmicHomepage__RenderFunc(props: {
                         SliderWrapper_Helpers
                       ).apply(null, eventArgs);
                     },
-                    centerMode: true,
+                    centerMode: false,
                     className: classNames("__wab_instance", sty.sliderCarousel),
                     cssEase: "ease-in-out",
                     dots: false,
-                    infinite: false,
+                    infinite: true,
                     initialSlide: generateStateValueProp($state, [
                       "sliderCarousel",
                       "currentSlide"

@@ -197,7 +197,7 @@ function PlasmicFooter__RenderFunc(props: {
                 displayMinWidth={"0"}
                 displayWidth={
                   hasVariant(globalVariants, "screen", "mobileOnly")
-                    ? "64px"
+                    ? "auto"
                     : "auto"
                 }
                 loading={"lazy"}
