@@ -168,6 +168,7 @@ function PlasmicWindowBlue__RenderFunc(props: {
       className={classNames(
         projectcss.all,
         projectcss.a,
+        projectcss.a__x4VgG,
         projectcss.root_reset,
         projectcss.plasmic_default_styles,
         projectcss.plasmic_mixins,
@@ -240,13 +241,19 @@ function PlasmicWindowBlue__RenderFunc(props: {
         <PlasmicLink__
           data-plasmic-name={"xButton"}
           data-plasmic-override={overrides.xButton}
-          className={classNames(projectcss.all, projectcss.a, sty.xButton, {
-            [sty.xButtonglobal_theme_classic]: hasVariant(
-              globalVariants,
-              "theme",
-              "classic"
-            )
-          })}
+          className={classNames(
+            projectcss.all,
+            projectcss.a,
+            projectcss.a__x4VgG,
+            sty.xButton,
+            {
+              [sty.xButtonglobal_theme_classic]: hasVariant(
+                globalVariants,
+                "theme",
+                "classic"
+              )
+            }
+          )}
           component={Link}
           href={(() => {
             try {

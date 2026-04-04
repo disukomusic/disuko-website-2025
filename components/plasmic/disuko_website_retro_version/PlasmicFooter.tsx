@@ -176,7 +176,12 @@ function PlasmicFooter__RenderFunc(props: {
             <PlasmicLink__
               data-plasmic-name={"rpsLink"}
               data-plasmic-override={overrides.rpsLink}
-              className={classNames(projectcss.all, projectcss.a, sty.rpsLink)}
+              className={classNames(
+                projectcss.all,
+                projectcss.a,
+                projectcss.a__x4VgG,
+                sty.rpsLink
+              )}
               component={Link}
               href={"https://redpandastudios.net"}
               legacyBehavior={false}
@@ -234,6 +239,7 @@ function PlasmicFooter__RenderFunc(props: {
                     className={classNames(
                       projectcss.all,
                       projectcss.a,
+                      projectcss.a__x4VgG,
                       projectcss.__wab_text,
                       projectcss.plasmic_default__inline,
                       sty.link__vQmL
@@ -270,6 +276,7 @@ function PlasmicFooter__RenderFunc(props: {
                     className={classNames(
                       projectcss.all,
                       projectcss.a,
+                      projectcss.a__x4VgG,
                       projectcss.__wab_text,
                       projectcss.plasmic_default__inline,
                       sty.link__rX07M
@@ -297,7 +304,12 @@ function PlasmicFooter__RenderFunc(props: {
           <PlasmicLink__
             data-plasmic-name={"dotgay"}
             data-plasmic-override={overrides.dotgay}
-            className={classNames(projectcss.all, projectcss.a, sty.dotgay)}
+            className={classNames(
+              projectcss.all,
+              projectcss.a,
+              projectcss.a__x4VgG,
+              sty.dotgay
+            )}
             component={Link}
             href={"https://www.ohhey.gay"}
             legacyBehavior={false}
@@ -349,6 +361,7 @@ function PlasmicFooter__RenderFunc(props: {
               className={classNames(
                 projectcss.all,
                 projectcss.a,
+                projectcss.a__x4VgG,
                 projectcss.__wab_text,
                 sty.classic
               )}
@@ -387,6 +400,7 @@ function PlasmicFooter__RenderFunc(props: {
               className={classNames(
                 projectcss.all,
                 projectcss.a,
+                projectcss.a__x4VgG,
                 projectcss.__wab_text,
                 sty.classic2
               )}

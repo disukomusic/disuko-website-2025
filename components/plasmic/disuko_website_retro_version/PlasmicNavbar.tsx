@@ -162,7 +162,12 @@ function PlasmicNavbar__RenderFunc(props: {
         <PlasmicLink__
           data-plasmic-name={"link"}
           data-plasmic-override={overrides.link}
-          className={classNames(projectcss.all, projectcss.a, sty.link)}
+          className={classNames(
+            projectcss.all,
+            projectcss.a,
+            projectcss.a__x4VgG,
+            sty.link
+          )}
           component={Link}
           href={`/`}
           legacyBehavior={false}

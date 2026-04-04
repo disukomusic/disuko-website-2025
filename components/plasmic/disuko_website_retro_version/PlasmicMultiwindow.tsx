@@ -214,7 +214,12 @@ function PlasmicMultiwindow__RenderFunc(props: {
       <PlasmicLink__
         data-plasmic-name={"window"}
         data-plasmic-override={overrides.window}
-        className={classNames(projectcss.all, projectcss.a, sty.window)}
+        className={classNames(
+          projectcss.all,
+          projectcss.a,
+          projectcss.a__x4VgG,
+          sty.window
+        )}
         component={Link}
         href={(() => {
           try {
@@ -259,7 +264,12 @@ function PlasmicMultiwindow__RenderFunc(props: {
           <PlasmicLink__
             data-plasmic-name={"xButton3"}
             data-plasmic-override={overrides.xButton3}
-            className={classNames(projectcss.all, projectcss.a, sty.xButton3)}
+            className={classNames(
+              projectcss.all,
+              projectcss.a,
+              projectcss.a__x4VgG,
+              sty.xButton3
+            )}
             component={Link}
             href={(() => {
               try {
@@ -389,7 +399,12 @@ function PlasmicMultiwindow__RenderFunc(props: {
         <PlasmicLink__
           data-plasmic-name={"window2"}
           data-plasmic-override={overrides.window2}
-          className={classNames(projectcss.all, projectcss.a, sty.window2)}
+          className={classNames(
+            projectcss.all,
+            projectcss.a,
+            projectcss.a__x4VgG,
+            sty.window2
+          )}
           component={Link}
           href={(() => {
             try {
@@ -467,7 +482,12 @@ function PlasmicMultiwindow__RenderFunc(props: {
             <PlasmicLink__
               data-plasmic-name={"xButton2"}
               data-plasmic-override={overrides.xButton2}
-              className={classNames(projectcss.all, projectcss.a, sty.xButton2)}
+              className={classNames(
+                projectcss.all,
+                projectcss.a,
+                projectcss.a__x4VgG,
+                sty.xButton2
+              )}
               component={Link}
               href={(() => {
                 try {

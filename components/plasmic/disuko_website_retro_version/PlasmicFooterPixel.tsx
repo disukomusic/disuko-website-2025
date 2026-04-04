@@ -158,7 +158,12 @@ function PlasmicFooterPixel__RenderFunc(props: {
           <PlasmicLink__
             data-plasmic-name={"disuko"}
             data-plasmic-override={overrides.disuko}
-            className={classNames(projectcss.all, projectcss.a, sty.disuko)}
+            className={classNames(
+              projectcss.all,
+              projectcss.a,
+              projectcss.a__x4VgG,
+              sty.disuko
+            )}
             component={Link}
             href={`/`}
             legacyBehavior={false}
@@ -199,7 +204,9 @@ function PlasmicFooterPixel__RenderFunc(props: {
             >
               <React.Fragment>
                 <span
-                  className={"plasmic_default__all plasmic_default__span"}
+                  className={
+                    "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
+                  }
                   style={{ fontWeight: 400 }}
                 >
                   {"website \u00a9 disuko & "}
@@ -210,6 +217,7 @@ function PlasmicFooterPixel__RenderFunc(props: {
                     className={classNames(
                       projectcss.all,
                       projectcss.a,
+                      projectcss.a__x4VgG,
                       projectcss.__wab_text,
                       projectcss.plasmic_default__inline,
                       sty.link__cAAi
@@ -221,7 +229,9 @@ function PlasmicFooterPixel__RenderFunc(props: {
                   >
                     <React.Fragment>
                       <span
-                        className={"plasmic_default__all plasmic_default__span"}
+                        className={
+                          "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
+                        }
                         style={{ fontWeight: 400 }}
                       >
                         {"Red Panda Studios"}
@@ -231,7 +241,9 @@ function PlasmicFooterPixel__RenderFunc(props: {
                 }
                 <React.Fragment>{""}</React.Fragment>
                 <span
-                  className={"plasmic_default__all plasmic_default__span"}
+                  className={
+                    "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
+                  }
                   style={{ fontWeight: 400 }}
                 >
                   {" 2023"}
@@ -242,6 +254,7 @@ function PlasmicFooterPixel__RenderFunc(props: {
               className={classNames(
                 projectcss.all,
                 projectcss.a,
+                projectcss.a__x4VgG,
                 sty.link___13BKz
               )}
               component={Link}
@@ -284,6 +297,7 @@ function PlasmicFooterPixel__RenderFunc(props: {
                   className={classNames(
                     projectcss.all,
                     projectcss.a,
+                    projectcss.a__x4VgG,
                     projectcss.__wab_text,
                     projectcss.plasmic_default__inline,
                     sty.link__dhsma

@@ -551,6 +551,7 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                     className={classNames(
                       projectcss.all,
                       projectcss.a,
+                      projectcss.a__x4VgG,
                       projectcss.__wab_text,
                       projectcss.plasmic_default__inline,
                       sty.link__tVOiA
@@ -801,6 +802,7 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                     className={classNames(
                       projectcss.all,
                       projectcss.a,
+                      projectcss.a__x4VgG,
                       projectcss.__wab_text,
                       projectcss.plasmic_default__inline,
                       sty.link__kr7C6
@@ -950,6 +952,7 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                     className={classNames(
                       projectcss.all,
                       projectcss.a,
+                      projectcss.a__x4VgG,
                       projectcss.__wab_text,
                       projectcss.plasmic_default__inline,
                       sty.link__dG53Z
@@ -1101,6 +1104,7 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                     className={classNames(
                       projectcss.all,
                       projectcss.a,
+                      projectcss.a__x4VgG,
                       projectcss.__wab_text,
                       projectcss.plasmic_default__inline,
                       sty.link__pFqzV
@@ -1371,6 +1375,7 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                     className={classNames(
                       projectcss.all,
                       projectcss.a,
+                      projectcss.a__x4VgG,
                       projectcss.__wab_text,
                       projectcss.plasmic_default__inline,
                       sty.link__bm2Iq
@@ -1522,6 +1527,7 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                     className={classNames(
                       projectcss.all,
                       projectcss.a,
+                      projectcss.a__x4VgG,
                       projectcss.__wab_text,
                       projectcss.plasmic_default__inline,
                       sty.link__rGn9T
@@ -1599,6 +1605,7 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                     className={classNames(
                       projectcss.all,
                       projectcss.a,
+                      projectcss.a__x4VgG,
                       projectcss.__wab_text,
                       projectcss.plasmic_default__inline,
                       sty.link__kCKoL
@@ -2030,6 +2037,7 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                       className={classNames(
                         projectcss.all,
                         projectcss.a,
+                        projectcss.a__x4VgG,
                         projectcss.__wab_text,
                         projectcss.plasmic_default__inline,
                         sty.link__i8Cm4
@@ -2048,6 +2056,7 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                       className={classNames(
                         projectcss.all,
                         projectcss.a,
+                        projectcss.a__x4VgG,
                         projectcss.__wab_text,
                         projectcss.plasmic_default__inline,
                         sty.link__l58Xb
@@ -2321,7 +2330,9 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
             >
               <React.Fragment>
                 <span
-                  className={"plasmic_default__all plasmic_default__span"}
+                  className={
+                    "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
+                  }
                   style={{ fontWeight: 700 }}
                 >
                   {"ON3KO CRT Heads"}
@@ -2332,6 +2343,7 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                     className={classNames(
                       projectcss.all,
                       projectcss.a,
+                      projectcss.a__x4VgG,
                       projectcss.__wab_text,
                       projectcss.plasmic_default__inline,
                       sty.link__zlCwl
@@ -2493,7 +2505,9 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
             >
               <React.Fragment>
                 <span
-                  className={"plasmic_default__all plasmic_default__span"}
+                  className={
+                    "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
+                  }
                   style={{ fontWeight: 700 }}
                 >
                   {"asdfscope "}
@@ -2612,7 +2626,9 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
             >
               <React.Fragment>
                 <span
-                  className={"plasmic_default__all plasmic_default__span"}
+                  className={
+                    "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
+                  }
                   style={{ fontWeight: 700 }}
                 >
                   {"DIGIDECK (WIP)"}
@@ -2627,6 +2643,7 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                     className={classNames(
                       projectcss.all,
                       projectcss.a,
+                      projectcss.a__x4VgG,
                       projectcss.__wab_text,
                       projectcss.plasmic_default__inline,
                       sty.link__kvZNi
@@ -2645,6 +2662,7 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
                     className={classNames(
                       projectcss.all,
                       projectcss.a,
+                      projectcss.a__x4VgG,
                       projectcss.__wab_text,
                       projectcss.plasmic_default__inline,
                       sty.link___1Vd87
@@ -2740,7 +2758,9 @@ function PlasmicPortfolio3DDesign__RenderFunc(props: {
             >
               <React.Fragment>
                 <span
-                  className={"plasmic_default__all plasmic_default__span"}
+                  className={
+                    "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
+                  }
                   style={{ fontWeight: 700 }}
                 >
                   {"Studio Tunes Music Player"}

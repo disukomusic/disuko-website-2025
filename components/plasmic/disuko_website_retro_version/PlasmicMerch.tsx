@@ -310,6 +310,7 @@ function PlasmicMerch__RenderFunc(props: {
               className={classNames(
                 projectcss.all,
                 projectcss.a,
+                projectcss.a__x4VgG,
                 projectcss.__wab_text,
                 sty.link
               )}

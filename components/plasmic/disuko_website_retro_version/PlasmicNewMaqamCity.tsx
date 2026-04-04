@@ -555,6 +555,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
                           className={classNames(
                             projectcss.all,
                             projectcss.h1,
+                            projectcss.h1__x4VgG,
                             projectcss.__wab_text,
                             sty.h1__qSnWs
                           )}
@@ -581,6 +582,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
                           className={classNames(
                             projectcss.all,
                             projectcss.h2,
+                            projectcss.h2__x4VgG,
                             projectcss.__wab_text,
                             sty.h2
                           )}
@@ -620,6 +622,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
                 className={classNames(
                   projectcss.all,
                   projectcss.h1,
+                  projectcss.h1__x4VgG,
                   projectcss.__wab_text,
                   sty.h1__lRf75
                 )}
@@ -690,7 +693,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
                         <React.Fragment>
                           <span
                             className={
-                              "plasmic_default__all plasmic_default__span"
+                              "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
                             }
                             style={{ fontWeight: 700 }}
                           >
@@ -753,7 +756,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
                         <React.Fragment>
                           <span
                             className={
-                              "plasmic_default__all plasmic_default__span"
+                              "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
                             }
                             style={{ fontWeight: 700 }}
                           >
@@ -812,7 +815,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
                         <React.Fragment>
                           <span
                             className={
-                              "plasmic_default__all plasmic_default__span"
+                              "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
                             }
                             style={{ fontWeight: 700 }}
                           >
@@ -841,7 +844,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
                         <React.Fragment>
                           <span
                             className={
-                              "plasmic_default__all plasmic_default__span"
+                              "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
                             }
                             style={{ fontWeight: 700 }}
                           >
@@ -888,7 +891,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
                         <React.Fragment>
                           <span
                             className={
-                              "plasmic_default__all plasmic_default__span"
+                              "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
                             }
                             style={{ fontWeight: 700 }}
                           >
@@ -935,7 +938,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
                         <React.Fragment>
                           <span
                             className={
-                              "plasmic_default__all plasmic_default__span"
+                              "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
                             }
                             style={{ fontWeight: 700 }}
                           >
@@ -964,7 +967,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
                         <React.Fragment>
                           <span
                             className={
-                              "plasmic_default__all plasmic_default__span"
+                              "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
                             }
                             style={{ fontWeight: 700 }}
                           >
@@ -993,7 +996,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
                         <React.Fragment>
                           <span
                             className={
-                              "plasmic_default__all plasmic_default__span"
+                              "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
                             }
                             style={{ fontWeight: 700 }}
                           >
@@ -1041,7 +1044,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
                         <React.Fragment>
                           <span
                             className={
-                              "plasmic_default__all plasmic_default__span"
+                              "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
                             }
                             style={{ fontWeight: 700 }}
                           >
@@ -1065,7 +1068,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
                               <React.Fragment>
                                 <span
                                   className={
-                                    "plasmic_default__all plasmic_default__span"
+                                    "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
                                   }
                                   style={{ fontWeight: 700 }}
                                 >
@@ -1141,7 +1144,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
                               <React.Fragment>
                                 <span
                                   className={
-                                    "plasmic_default__all plasmic_default__span"
+                                    "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
                                   }
                                   style={{ fontWeight: 700 }}
                                 >
@@ -1217,7 +1220,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
                               <React.Fragment>
                                 <span
                                   className={
-                                    "plasmic_default__all plasmic_default__span"
+                                    "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
                                   }
                                   style={{ fontWeight: 700 }}
                                 >
@@ -1293,7 +1296,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
                               <React.Fragment>
                                 <span
                                   className={
-                                    "plasmic_default__all plasmic_default__span"
+                                    "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
                                   }
                                   style={{ fontWeight: 700 }}
                                 >
@@ -1360,7 +1363,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
                         <React.Fragment>
                           <span
                             className={
-                              "plasmic_default__all plasmic_default__span"
+                              "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
                             }
                             style={{ fontWeight: 700 }}
                           >
@@ -1387,7 +1390,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
                               <React.Fragment>
                                 <span
                                   className={
-                                    "plasmic_default__all plasmic_default__span"
+                                    "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
                                   }
                                   style={{ fontWeight: 700 }}
                                 >
@@ -1463,7 +1466,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
                               <React.Fragment>
                                 <span
                                   className={
-                                    "plasmic_default__all plasmic_default__span"
+                                    "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
                                   }
                                   style={{ fontWeight: 700 }}
                                 >
@@ -1472,7 +1475,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
                                 <React.Fragment>{""}</React.Fragment>
                                 <span
                                   className={
-                                    "plasmic_default__all plasmic_default__span"
+                                    "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
                                   }
                                   style={{ fontWeight: 700 }}
                                 >
@@ -1548,7 +1551,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
                               <React.Fragment>
                                 <span
                                   className={
-                                    "plasmic_default__all plasmic_default__span"
+                                    "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
                                   }
                                   style={{ fontWeight: 700 }}
                                 >
@@ -1668,6 +1671,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
                 className={classNames(
                   projectcss.all,
                   projectcss.h1,
+                  projectcss.h1__x4VgG,
                   projectcss.__wab_text,
                   sty.h1__w0Hy
                 )}
@@ -1780,7 +1784,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
                               <React.Fragment>
                                 <span
                                   className={
-                                    "plasmic_default__all plasmic_default__span"
+                                    "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
                                   }
                                   style={{ fontWeight: 700 }}
                                 >
@@ -1874,7 +1878,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
                               <React.Fragment>
                                 <span
                                   className={
-                                    "plasmic_default__all plasmic_default__span"
+                                    "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
                                   }
                                   style={{ fontWeight: 700 }}
                                 >
@@ -1968,7 +1972,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
                               <React.Fragment>
                                 <span
                                   className={
-                                    "plasmic_default__all plasmic_default__span"
+                                    "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
                                   }
                                   style={{ fontWeight: 700 }}
                                 >
@@ -2041,7 +2045,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
                                     <React.Fragment>
                                       <span
                                         className={
-                                          "plasmic_default__all plasmic_default__span"
+                                          "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
                                         }
                                         style={{ fontWeight: 700 }}
                                       >
@@ -2117,7 +2121,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
                                     <React.Fragment>
                                       <span
                                         className={
-                                          "plasmic_default__all plasmic_default__span"
+                                          "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
                                         }
                                         style={{ fontWeight: 700 }}
                                       >
@@ -2226,7 +2230,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
                               <React.Fragment>
                                 <span
                                   className={
-                                    "plasmic_default__all plasmic_default__span"
+                                    "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
                                   }
                                   style={{ fontWeight: 700 }}
                                 >
@@ -2302,7 +2306,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
                               <React.Fragment>
                                 <span
                                   className={
-                                    "plasmic_default__all plasmic_default__span"
+                                    "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
                                   }
                                   style={{ fontWeight: 700 }}
                                 >
@@ -2408,7 +2412,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
                               <React.Fragment>
                                 <span
                                   className={
-                                    "plasmic_default__all plasmic_default__span"
+                                    "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
                                   }
                                   style={{ fontWeight: 700 }}
                                 >
@@ -2484,7 +2488,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
                               <React.Fragment>
                                 <span
                                   className={
-                                    "plasmic_default__all plasmic_default__span"
+                                    "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
                                   }
                                   style={{ fontWeight: 700 }}
                                 >
@@ -2560,7 +2564,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
                               <React.Fragment>
                                 <span
                                   className={
-                                    "plasmic_default__all plasmic_default__span"
+                                    "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
                                   }
                                   style={{ fontWeight: 700 }}
                                 >
@@ -2667,6 +2671,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
                 className={classNames(
                   projectcss.all,
                   projectcss.h1,
+                  projectcss.h1__x4VgG,
                   projectcss.__wab_text,
                   sty.h1__lei7O
                 )}
@@ -2800,7 +2805,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
                               <React.Fragment>
                                 <span
                                   className={
-                                    "plasmic_default__all plasmic_default__span"
+                                    "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
                                   }
                                   style={{ fontWeight: 700 }}
                                 >
@@ -2853,7 +2858,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
                               <React.Fragment>
                                 <span
                                   className={
-                                    "plasmic_default__all plasmic_default__span"
+                                    "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
                                   }
                                   style={{ fontStyle: "italic" }}
                                 >
@@ -2896,7 +2901,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
                               <React.Fragment>
                                 <span
                                   className={
-                                    "plasmic_default__all plasmic_default__span"
+                                    "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
                                   }
                                   style={{ fontWeight: 700 }}
                                 >
@@ -2949,7 +2954,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
                               <React.Fragment>
                                 <span
                                   className={
-                                    "plasmic_default__all plasmic_default__span"
+                                    "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
                                   }
                                   style={{ fontStyle: "italic" }}
                                 >
@@ -2992,7 +2997,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
                               <React.Fragment>
                                 <span
                                   className={
-                                    "plasmic_default__all plasmic_default__span"
+                                    "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
                                   }
                                   style={{ fontWeight: 700 }}
                                 >
@@ -3045,7 +3050,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
                               <React.Fragment>
                                 <span
                                   className={
-                                    "plasmic_default__all plasmic_default__span"
+                                    "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
                                   }
                                   style={{ fontStyle: "italic" }}
                                 >
@@ -3086,7 +3091,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
                               <React.Fragment>
                                 <span
                                   className={
-                                    "plasmic_default__all plasmic_default__span"
+                                    "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
                                   }
                                   style={{ fontWeight: 700 }}
                                 >
@@ -3139,7 +3144,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
                               <React.Fragment>
                                 <span
                                   className={
-                                    "plasmic_default__all plasmic_default__span"
+                                    "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
                                   }
                                   style={{ fontStyle: "italic" }}
                                 >
@@ -3182,7 +3187,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
                               <React.Fragment>
                                 <span
                                   className={
-                                    "plasmic_default__all plasmic_default__span"
+                                    "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
                                   }
                                   style={{ fontWeight: 700 }}
                                 >
@@ -3235,7 +3240,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
                               <React.Fragment>
                                 <span
                                   className={
-                                    "plasmic_default__all plasmic_default__span"
+                                    "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
                                   }
                                   style={{ fontStyle: "italic" }}
                                 >
@@ -3309,7 +3314,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
                               <React.Fragment>
                                 <span
                                   className={
-                                    "plasmic_default__all plasmic_default__span"
+                                    "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
                                   }
                                   style={{ fontWeight: 700 }}
                                 >
@@ -3385,7 +3390,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
                               <React.Fragment>
                                 <span
                                   className={
-                                    "plasmic_default__all plasmic_default__span"
+                                    "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
                                   }
                                   style={{ fontWeight: 700 }}
                                 >
@@ -3461,7 +3466,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
                               <React.Fragment>
                                 <span
                                   className={
-                                    "plasmic_default__all plasmic_default__span"
+                                    "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
                                   }
                                   style={{ fontWeight: 700 }}
                                 >
@@ -3568,6 +3573,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
                 className={classNames(
                   projectcss.all,
                   projectcss.h1,
+                  projectcss.h1__x4VgG,
                   projectcss.__wab_text,
                   sty.h1__ohspc
                 )}
@@ -3590,7 +3596,9 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
                         }
                       </React.Fragment>
                       <span
-                        className={"plasmic_default__all plasmic_default__span"}
+                        className={
+                          "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
+                        }
                         style={{ fontStyle: "italic" }}
                       >
                         {"how "}
@@ -3687,7 +3695,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
                               <React.Fragment>
                                 <span
                                   className={
-                                    "plasmic_default__all plasmic_default__span"
+                                    "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
                                   }
                                   style={{ fontWeight: 700 }}
                                 >
@@ -3763,7 +3771,7 @@ function PlasmicNewMaqamCity__RenderFunc(props: {
                               <React.Fragment>
                                 <span
                                   className={
-                                    "plasmic_default__all plasmic_default__span"
+                                    "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
                                   }
                                   style={{ fontWeight: 700 }}
                                 >

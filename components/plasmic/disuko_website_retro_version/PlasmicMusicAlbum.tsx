@@ -289,6 +289,7 @@ function PlasmicMusicAlbum__RenderFunc(props: {
             className={classNames(
               projectcss.all,
               projectcss.a,
+              projectcss.a__x4VgG,
               sty.link__nSoMy
             )}
             component={Link}
@@ -333,6 +334,7 @@ function PlasmicMusicAlbum__RenderFunc(props: {
             className={classNames(
               projectcss.all,
               projectcss.a,
+              projectcss.a__x4VgG,
               sty.link__r9Psl
             )}
             component={Link}
@@ -377,6 +379,7 @@ function PlasmicMusicAlbum__RenderFunc(props: {
             className={classNames(
               projectcss.all,
               projectcss.a,
+              projectcss.a__x4VgG,
               sty.link__xChzL
             )}
             component={Link}
@@ -421,6 +424,7 @@ function PlasmicMusicAlbum__RenderFunc(props: {
             className={classNames(
               projectcss.all,
               projectcss.a,
+              projectcss.a__x4VgG,
               sty.link__b8LoC
             )}
             component={Link}

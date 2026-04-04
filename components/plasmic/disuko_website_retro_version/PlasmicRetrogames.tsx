@@ -309,6 +309,7 @@ function PlasmicRetrogames__RenderFunc(props: {
                   className={classNames(
                     projectcss.all,
                     projectcss.a,
+                    projectcss.a__x4VgG,
                     sty.link__loaSw
                   )}
                   component={Link}
@@ -325,7 +326,9 @@ function PlasmicRetrogames__RenderFunc(props: {
                   >
                     <React.Fragment>
                       <span
-                        className={"plasmic_default__all plasmic_default__span"}
+                        className={
+                          "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
+                        }
                         style={{ color: "#FFFFFF" }}
                       >
                         {"SNES GBA"}
@@ -368,49 +371,63 @@ function PlasmicRetrogames__RenderFunc(props: {
                   >
                     <React.Fragment>
                       <span
-                        className={"plasmic_default__all plasmic_default__span"}
+                        className={
+                          "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
+                        }
                         style={{ color: "#FFFFFF" }}
                       >
                         {"Upgrades:"}
                       </span>
                       <React.Fragment>{"\n"}</React.Fragment>
                       <span
-                        className={"plasmic_default__all plasmic_default__span"}
+                        className={
+                          "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
+                        }
                         style={{ color: "#FFFFFF" }}
                       >
                         {"-Laminted ITA Screen"}
                       </span>
                       <React.Fragment>{"\n"}</React.Fragment>
                       <span
-                        className={"plasmic_default__all plasmic_default__span"}
+                        className={
+                          "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
+                        }
                         style={{ color: "#FFFFFF" }}
                       >
                         {"-New Shell"}
                       </span>
                       <React.Fragment>{"\n"}</React.Fragment>
                       <span
-                        className={"plasmic_default__all plasmic_default__span"}
+                        className={
+                          "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
+                        }
                         style={{ color: "#FFFFFF" }}
                       >
                         {"-New Buttons"}
                       </span>
                       <React.Fragment>{"\n"}</React.Fragment>
                       <span
-                        className={"plasmic_default__all plasmic_default__span"}
+                        className={
+                          "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
+                        }
                         style={{ color: "#FFFFFF" }}
                       >
                         {"-OEM Membranes"}
                       </span>
                       <React.Fragment>{"\n"}</React.Fragment>
                       <span
-                        className={"plasmic_default__all plasmic_default__span"}
+                        className={
+                          "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
+                        }
                         style={{ color: "#FFFFFF" }}
                       >
                         {"-Custom Labels"}
                       </span>
                       <React.Fragment>{"\n"}</React.Fragment>
                       <span
-                        className={"plasmic_default__all plasmic_default__span"}
+                        className={
+                          "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
+                        }
                         style={{ color: "#FFFFFF" }}
                       >
                         {""}
@@ -422,6 +439,7 @@ function PlasmicRetrogames__RenderFunc(props: {
                   className={classNames(
                     projectcss.all,
                     projectcss.a,
+                    projectcss.a__x4VgG,
                     sty.link__fxhun
                   )}
                   component={Link}
@@ -439,7 +457,9 @@ function PlasmicRetrogames__RenderFunc(props: {
                   >
                     <React.Fragment>
                       <span
-                        className={"plasmic_default__all plasmic_default__span"}
+                        className={
+                          "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
+                        }
                         style={{ color: "#FFFFFF" }}
                       >
                         {"Ty's GBC"}
@@ -473,7 +493,9 @@ function PlasmicRetrogames__RenderFunc(props: {
                   >
                     <React.Fragment>
                       <span
-                        className={"plasmic_default__all plasmic_default__span"}
+                        className={
+                          "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
+                        }
                         style={{ color: "#9F4343" }}
                       >
                         {"$NFS"}
@@ -489,63 +511,81 @@ function PlasmicRetrogames__RenderFunc(props: {
                   >
                     <React.Fragment>
                       <span
-                        className={"plasmic_default__all plasmic_default__span"}
+                        className={
+                          "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
+                        }
                         style={{ color: "#FFFFFF" }}
                       >
                         {"Comissioned by Telestro!"}
                       </span>
                       <React.Fragment>{"\n"}</React.Fragment>
                       <span
-                        className={"plasmic_default__all plasmic_default__span"}
+                        className={
+                          "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
+                        }
                         style={{ color: "#FFFFFF" }}
                       >
                         {"Upgrades:"}
                       </span>
                       <React.Fragment>{"\n"}</React.Fragment>
                       <span
-                        className={"plasmic_default__all plasmic_default__span"}
+                        className={
+                          "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
+                        }
                         style={{ color: "#FFFFFF" }}
                       >
                         {"-Laminated IPS w/ touch control"}
                       </span>
                       <React.Fragment>{"\n"}</React.Fragment>
                       <span
-                        className={"plasmic_default__all plasmic_default__span"}
+                        className={
+                          "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
+                        }
                         style={{ color: "#FFFFFF" }}
                       >
                         {"-New Shell"}
                       </span>
                       <React.Fragment>{"\n"}</React.Fragment>
                       <span
-                        className={"plasmic_default__all plasmic_default__span"}
+                        className={
+                          "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
+                        }
                         style={{ color: "#FFFFFF" }}
                       >
                         {"-New Buttons"}
                       </span>
                       <React.Fragment>{"\n"}</React.Fragment>
                       <span
-                        className={"plasmic_default__all plasmic_default__span"}
+                        className={
+                          "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
+                        }
                         style={{ color: "#FFFFFF" }}
                       >
                         {"-New Speaker"}
                       </span>
                       <React.Fragment>{"\n"}</React.Fragment>
                       <span
-                        className={"plasmic_default__all plasmic_default__span"}
+                        className={
+                          "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
+                        }
                         style={{ color: "#FFFFFF" }}
                       >
                         {"-Custom Labels"}
                       </span>
                       <React.Fragment>{"\n"}</React.Fragment>
                       <span
-                        className={"plasmic_default__all plasmic_default__span"}
+                        className={
+                          "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
+                        }
                         style={{ color: "#FFFFFF" }}
                       >
                         {""}
                       </span>
                       <React.Fragment>{"\n"}</React.Fragment>
                       <span
-                        className={"plasmic_default__all plasmic_default__span"}
+                        className={
+                          "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
+                        }
                         style={{ color: "#FFFFFF" }}
                       >
                         {"-EZFlash Cart"}
@@ -563,7 +603,9 @@ function PlasmicRetrogames__RenderFunc(props: {
                   >
                     <React.Fragment>
                       <span
-                        className={"plasmic_default__all plasmic_default__span"}
+                        className={
+                          "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
+                        }
                         style={{ color: "#FFFFFF" }}
                       >
                         {"Sakura GBC"}
@@ -597,7 +639,9 @@ function PlasmicRetrogames__RenderFunc(props: {
                   >
                     <React.Fragment>
                       <span
-                        className={"plasmic_default__all plasmic_default__span"}
+                        className={
+                          "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
+                        }
                         style={{ color: "#9F4343" }}
                       >
                         {"$NFS"}
@@ -613,35 +657,45 @@ function PlasmicRetrogames__RenderFunc(props: {
                   >
                     <React.Fragment>
                       <span
-                        className={"plasmic_default__all plasmic_default__span"}
+                        className={
+                          "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
+                        }
                         style={{ color: "#FFFFFF" }}
                       >
                         {"Upgrades:"}
                       </span>
                       <React.Fragment>{"\n"}</React.Fragment>
                       <span
-                        className={"plasmic_default__all plasmic_default__span"}
+                        className={
+                          "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
+                        }
                         style={{ color: "#FFFFFF" }}
                       >
                         {"-Laminated IPS w/ touch control"}
                       </span>
                       <React.Fragment>{"\n"}</React.Fragment>
                       <span
-                        className={"plasmic_default__all plasmic_default__span"}
+                        className={
+                          "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
+                        }
                         style={{ color: "#FFFFFF" }}
                       >
                         {"-New Shell"}
                       </span>
                       <React.Fragment>{"\n"}</React.Fragment>
                       <span
-                        className={"plasmic_default__all plasmic_default__span"}
+                        className={
+                          "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
+                        }
                         style={{ color: "#FFFFFF" }}
                       >
                         {"-New Buttons"}
                       </span>
                       <React.Fragment>{"\n"}</React.Fragment>
                       <span
-                        className={"plasmic_default__all plasmic_default__span"}
+                        className={
+                          "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
+                        }
                         style={{ color: "#FFFFFF" }}
                       >
                         {"-Custom Labels"}
@@ -659,7 +713,9 @@ function PlasmicRetrogames__RenderFunc(props: {
                   >
                     <React.Fragment>
                       <span
-                        className={"plasmic_default__all plasmic_default__span"}
+                        className={
+                          "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
+                        }
                         style={{ color: "#FFFFFF" }}
                       >
                         {"Sylveon GBA"}
@@ -693,7 +749,9 @@ function PlasmicRetrogames__RenderFunc(props: {
                   >
                     <React.Fragment>
                       <span
-                        className={"plasmic_default__all plasmic_default__span"}
+                        className={
+                          "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
+                        }
                         style={{ color: "#9F4343" }}
                       >
                         {"$NFS"}
@@ -709,49 +767,63 @@ function PlasmicRetrogames__RenderFunc(props: {
                   >
                     <React.Fragment>
                       <span
-                        className={"plasmic_default__all plasmic_default__span"}
+                        className={
+                          "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
+                        }
                         style={{ color: "#FFFFFF" }}
                       >
                         {"Upgrades:"}
                       </span>
                       <React.Fragment>{"\n"}</React.Fragment>
                       <span
-                        className={"plasmic_default__all plasmic_default__span"}
+                        className={
+                          "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
+                        }
                         style={{ color: "#FFFFFF" }}
                       >
                         {"-Glass Screen Lens"}
                       </span>
                       <React.Fragment>{"\n"}</React.Fragment>
                       <span
-                        className={"plasmic_default__all plasmic_default__span"}
+                        className={
+                          "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
+                        }
                         style={{ color: "#FFFFFF" }}
                       >
                         {"-New Shell"}
                       </span>
                       <React.Fragment>{"\n"}</React.Fragment>
                       <span
-                        className={"plasmic_default__all plasmic_default__span"}
+                        className={
+                          "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
+                        }
                         style={{ color: "#FFFFFF" }}
                       >
                         {"-New Buttons"}
                       </span>
                       <React.Fragment>{"\n"}</React.Fragment>
                       <span
-                        className={"plasmic_default__all plasmic_default__span"}
+                        className={
+                          "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
+                        }
                         style={{ color: "#FFFFFF" }}
                       >
                         {"-New Membranes"}
                       </span>
                       <React.Fragment>{"\n"}</React.Fragment>
                       <span
-                        className={"plasmic_default__all plasmic_default__span"}
+                        className={
+                          "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
+                        }
                         style={{ color: "#FFFFFF" }}
                       >
                         {"-Custom sylveon shell decal"}
                       </span>
                       <React.Fragment>{"\n"}</React.Fragment>
                       <span
-                        className={"plasmic_default__all plasmic_default__span"}
+                        className={
+                          "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
+                        }
                         style={{ color: "#FFFFFF" }}
                       >
                         {"-Custom Labels"}
@@ -769,7 +841,9 @@ function PlasmicRetrogames__RenderFunc(props: {
                   >
                     <React.Fragment>
                       <span
-                        className={"plasmic_default__all plasmic_default__span"}
+                        className={
+                          "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
+                        }
                         style={{ color: "#FFFFFF" }}
                       >
                         {"Disuko DMG"}
@@ -803,7 +877,9 @@ function PlasmicRetrogames__RenderFunc(props: {
                   >
                     <React.Fragment>
                       <span
-                        className={"plasmic_default__all plasmic_default__span"}
+                        className={
+                          "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
+                        }
                         style={{ color: "#9F4343" }}
                       >
                         {"$NFS"}
@@ -819,49 +895,63 @@ function PlasmicRetrogames__RenderFunc(props: {
                   >
                     <React.Fragment>
                       <span
-                        className={"plasmic_default__all plasmic_default__span"}
+                        className={
+                          "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
+                        }
                         style={{ color: "#FFFFFF" }}
                       >
                         {"Upgrades:"}
                       </span>
                       <React.Fragment>{"\n"}</React.Fragment>
                       <span
-                        className={"plasmic_default__all plasmic_default__span"}
+                        className={
+                          "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
+                        }
                         style={{ color: "#FFFFFF" }}
                       >
                         {"-IPS Screen"}
                       </span>
                       <React.Fragment>{"\n"}</React.Fragment>
                       <span
-                        className={"plasmic_default__all plasmic_default__span"}
+                        className={
+                          "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
+                        }
                         style={{ color: "#FFFFFF" }}
                       >
                         {"-Glass Screen Lens"}
                       </span>
                       <React.Fragment>{"\n"}</React.Fragment>
                       <span
-                        className={"plasmic_default__all plasmic_default__span"}
+                        className={
+                          "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
+                        }
                         style={{ color: "#FFFFFF" }}
                       >
                         {"-New Shell"}
                       </span>
                       <React.Fragment>{"\n"}</React.Fragment>
                       <span
-                        className={"plasmic_default__all plasmic_default__span"}
+                        className={
+                          "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
+                        }
                         style={{ color: "#FFFFFF" }}
                       >
                         {"-New Buttons"}
                       </span>
                       <React.Fragment>{"\n"}</React.Fragment>
                       <span
-                        className={"plasmic_default__all plasmic_default__span"}
+                        className={
+                          "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
+                        }
                         style={{ color: "#FFFFFF" }}
                       >
                         {"-OEM Membranes"}
                       </span>
                       <React.Fragment>{"\n"}</React.Fragment>
                       <span
-                        className={"plasmic_default__all plasmic_default__span"}
+                        className={
+                          "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
+                        }
                         style={{ color: "#FFFFFF" }}
                       >
                         {"-Custom Labels"}
@@ -879,7 +969,9 @@ function PlasmicRetrogames__RenderFunc(props: {
                   >
                     <React.Fragment>
                       <span
-                        className={"plasmic_default__all plasmic_default__span"}
+                        className={
+                          "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
+                        }
                         style={{ color: "#FFFFFF" }}
                       >
                         {"Disuko GBP"}
@@ -913,7 +1005,9 @@ function PlasmicRetrogames__RenderFunc(props: {
                   >
                     <React.Fragment>
                       <span
-                        className={"plasmic_default__all plasmic_default__span"}
+                        className={
+                          "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
+                        }
                         style={{ color: "#9F4343" }}
                       >
                         {"$NFS"}
@@ -929,63 +1023,81 @@ function PlasmicRetrogames__RenderFunc(props: {
                   >
                     <React.Fragment>
                       <span
-                        className={"plasmic_default__all plasmic_default__span"}
+                        className={
+                          "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
+                        }
                         style={{ color: "#FFFFFF" }}
                       >
                         {"Upgrades:"}
                       </span>
                       <React.Fragment>{"\n"}</React.Fragment>
                       <span
-                        className={"plasmic_default__all plasmic_default__span"}
+                        className={
+                          "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
+                        }
                         style={{ color: "#FFFFFF" }}
                       >
                         {"-New Screen Lens"}
                       </span>
                       <React.Fragment>{"\n"}</React.Fragment>
                       <span
-                        className={"plasmic_default__all plasmic_default__span"}
+                        className={
+                          "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
+                        }
                         style={{ color: "#FFFFFF" }}
                       >
                         {"-New Shell"}
                       </span>
                       <React.Fragment>{"\n"}</React.Fragment>
                       <span
-                        className={"plasmic_default__all plasmic_default__span"}
+                        className={
+                          "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
+                        }
                         style={{ color: "#FFFFFF" }}
                       >
                         {"-New Buttons"}
                       </span>
                       <React.Fragment>{"\n"}</React.Fragment>
                       <span
-                        className={"plasmic_default__all plasmic_default__span"}
+                        className={
+                          "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
+                        }
                         style={{ color: "#FFFFFF" }}
                       >
                         {"-OEM Membranes"}
                       </span>
                       <React.Fragment>{"\n"}</React.Fragment>
                       <span
-                        className={"plasmic_default__all plasmic_default__span"}
+                        className={
+                          "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
+                        }
                         style={{ color: "#FFFFFF" }}
                       >
                         {""}
                       </span>
                       <React.Fragment>{"\n"}</React.Fragment>
                       <span
-                        className={"plasmic_default__all plasmic_default__span"}
+                        className={
+                          "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
+                        }
                         style={{ color: "#FFFFFF" }}
                       >
                         {"ToDo:"}
                       </span>
                       <React.Fragment>{"\n"}</React.Fragment>
                       <span
-                        className={"plasmic_default__all plasmic_default__span"}
+                        className={
+                          "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
+                        }
                         style={{ color: "#FFFFFF" }}
                       >
                         {"-Upgrade Screen"}
                       </span>
                       <React.Fragment>{"\n"}</React.Fragment>
                       <span
-                        className={"plasmic_default__all plasmic_default__span"}
+                        className={
+                          "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
+                        }
                         style={{ color: "#FFFFFF" }}
                       >
                         {'-Custom "Disuko" label'}
@@ -1003,7 +1115,9 @@ function PlasmicRetrogames__RenderFunc(props: {
                   >
                     <React.Fragment>
                       <span
-                        className={"plasmic_default__all plasmic_default__span"}
+                        className={
+                          "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
+                        }
                         style={{ color: "#FFFFFF" }}
                       >
                         {"Stock GBC"}
@@ -1037,7 +1151,9 @@ function PlasmicRetrogames__RenderFunc(props: {
                   >
                     <React.Fragment>
                       <span
-                        className={"plasmic_default__all plasmic_default__span"}
+                        className={
+                          "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
+                        }
                         style={{ color: "#9F4343" }}
                       >
                         {"$NFS"}
@@ -1053,7 +1169,9 @@ function PlasmicRetrogames__RenderFunc(props: {
                   >
                     <React.Fragment>
                       <span
-                        className={"plasmic_default__all plasmic_default__span"}
+                        className={
+                          "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
+                        }
                         style={{ color: "#FFFFFF" }}
                       >
                         {""}
@@ -1071,7 +1189,9 @@ function PlasmicRetrogames__RenderFunc(props: {
                   >
                     <React.Fragment>
                       <span
-                        className={"plasmic_default__all plasmic_default__span"}
+                        className={
+                          "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
+                        }
                         style={{ color: "#FFFFFF" }}
                       >
                         {"Stock GBP"}
@@ -1105,7 +1225,9 @@ function PlasmicRetrogames__RenderFunc(props: {
                   >
                     <React.Fragment>
                       <span
-                        className={"plasmic_default__all plasmic_default__span"}
+                        className={
+                          "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
+                        }
                         style={{ color: "#9F4343" }}
                       >
                         {"$NFS"}
@@ -1121,7 +1243,9 @@ function PlasmicRetrogames__RenderFunc(props: {
                   >
                     <React.Fragment>
                       <span
-                        className={"plasmic_default__all plasmic_default__span"}
+                        className={
+                          "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
+                        }
                         style={{ color: "#FFFFFF" }}
                       >
                         {""}
@@ -1154,7 +1278,9 @@ function PlasmicRetrogames__RenderFunc(props: {
                 >
                   <React.Fragment>
                     <span
-                      className={"plasmic_default__all plasmic_default__span"}
+                      className={
+                        "plasmic_default__all plasmic_default__span plasmic_default__span__x4VgG"
+                      }
                       style={{ color: "#66FF41" }}
                     >
                       {"Open!"}

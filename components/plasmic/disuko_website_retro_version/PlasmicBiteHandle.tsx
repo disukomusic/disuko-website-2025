@@ -327,6 +327,7 @@ function PlasmicBiteHandle__RenderFunc(props: {
                   className={classNames(
                     projectcss.all,
                     projectcss.a,
+                    projectcss.a__x4VgG,
                     sty.link__wzWo
                   )}
                   component={Link}
@@ -359,6 +360,7 @@ function PlasmicBiteHandle__RenderFunc(props: {
                   className={classNames(
                     projectcss.all,
                     projectcss.a,
+                    projectcss.a__x4VgG,
                     sty.link__yrJh6
                   )}
                   component={Link}
@@ -391,6 +393,7 @@ function PlasmicBiteHandle__RenderFunc(props: {
                   className={classNames(
                     projectcss.all,
                     projectcss.a,
+                    projectcss.a__x4VgG,
                     sty.link__wuLt7
                   )}
                   component={Link}
@@ -423,6 +426,7 @@ function PlasmicBiteHandle__RenderFunc(props: {
                   className={classNames(
                     projectcss.all,
                     projectcss.a,
+                    projectcss.a__x4VgG,
                     sty.link__bukkZ
                   )}
                   component={Link}

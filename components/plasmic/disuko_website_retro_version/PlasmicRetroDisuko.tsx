@@ -141,6 +141,7 @@ function PlasmicRetroDisuko__RenderFunc(props: {
       className={classNames(
         projectcss.all,
         projectcss.a,
+        projectcss.a__x4VgG,
         projectcss.root_reset,
         projectcss.plasmic_default_styles,
         projectcss.plasmic_mixins,

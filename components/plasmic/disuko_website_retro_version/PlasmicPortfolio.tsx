@@ -141,10 +141,10 @@ export type PlasmicPortfolio__OverridesType = {
   imageWindow?: Flex__<typeof ImageWindow>;
   columns?: Flex__<"div">;
   imm?: Flex__<"div">;
-  film?: Flex__<"div">;
   _3DDesign?: Flex__<"div">;
   music?: Flex__<"div">;
   _2DDesign?: Flex__<"div">;
+  film?: Flex__<"div">;
   footer?: Flex__<typeof Footer>;
 };
 
@@ -434,39 +434,6 @@ function PlasmicPortfolio__RenderFunc(props: {
                 />
               </div>
               <div
-                data-plasmic-name={"film"}
-                data-plasmic-override={overrides.film}
-                className={classNames(projectcss.all, sty.film)}
-              >
-                <Window
-                  className={classNames("__wab_instance", sty.window__oqDxY)}
-                  linkDestination={`/film`}
-                  windowImage={
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img__azDap)}
-                      displayHeight={"auto"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"auto"}
-                      loading={"lazy"}
-                      src={{
-                        src: "/plasmic/disuko_website_retro_version/images/vlcsnap2025042401H05M47S151Png.png",
-                        fullWidth: 3840,
-                        fullHeight: 2160,
-                        aspectRatio: undefined
-                      }}
-                    />
-                  }
-                  windowText={
-                    "Adobe Premiere / After Effects / Davinci Resolve"
-                  }
-                  windowTitle={"Film"}
-                />
-              </div>
-              <div
                 data-plasmic-name={"_3DDesign"}
                 data-plasmic-override={overrides._3DDesign}
                 className={classNames(projectcss.all, sty._3DDesign)}
@@ -561,6 +528,39 @@ function PlasmicPortfolio__RenderFunc(props: {
                   windowTitle={"2D Design"}
                 />
               </div>
+              <div
+                data-plasmic-name={"film"}
+                data-plasmic-override={overrides.film}
+                className={classNames(projectcss.all, sty.film)}
+              >
+                <Window
+                  className={classNames("__wab_instance", sty.window__oqDxY)}
+                  linkDestination={`/film`}
+                  windowImage={
+                    <PlasmicImg__
+                      alt={""}
+                      className={classNames(sty.img__azDap)}
+                      displayHeight={"auto"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"100%"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"auto"}
+                      loading={"lazy"}
+                      src={{
+                        src: "/plasmic/disuko_website_retro_version/images/vlcsnap2025042401H05M47S151Png.png",
+                        fullWidth: 3840,
+                        fullHeight: 2160,
+                        aspectRatio: undefined
+                      }}
+                    />
+                  }
+                  windowText={
+                    "Adobe Premiere / After Effects / Davinci Resolve"
+                  }
+                  windowTitle={"Film"}
+                />
+              </div>
             </div>
           </div>
           <Footer
@@ -582,10 +582,10 @@ const PlasmicDescendants = {
     "imageWindow",
     "columns",
     "imm",
-    "film",
     "_3DDesign",
     "music",
     "_2DDesign",
+    "film",
     "footer"
   ],
   navbar: ["navbar"],
@@ -594,18 +594,18 @@ const PlasmicDescendants = {
     "imageWindow",
     "columns",
     "imm",
-    "film",
     "_3DDesign",
     "music",
-    "_2DDesign"
+    "_2DDesign",
+    "film"
   ],
   imageWindow: ["imageWindow"],
-  columns: ["columns", "imm", "film", "_3DDesign", "music", "_2DDesign"],
+  columns: ["columns", "imm", "_3DDesign", "music", "_2DDesign", "film"],
   imm: ["imm"],
-  film: ["film"],
   _3DDesign: ["_3DDesign"],
   music: ["music"],
   _2DDesign: ["_2DDesign"],
+  film: ["film"],
   footer: ["footer"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -618,10 +618,10 @@ type NodeDefaultElementType = {
   imageWindow: typeof ImageWindow;
   columns: "div";
   imm: "div";
-  film: "div";
   _3DDesign: "div";
   music: "div";
   _2DDesign: "div";
+  film: "div";
   footer: typeof Footer;
 };
 
@@ -717,10 +717,10 @@ export const PlasmicPortfolio = Object.assign(
     imageWindow: makeNodeComponent("imageWindow"),
     columns: makeNodeComponent("columns"),
     imm: makeNodeComponent("imm"),
-    film: makeNodeComponent("film"),
     _3DDesign: makeNodeComponent("_3DDesign"),
     music: makeNodeComponent("music"),
     _2DDesign: makeNodeComponent("_2DDesign"),
+    film: makeNodeComponent("film"),
     footer: makeNodeComponent("footer"),
 
     // Metadata about props expected for PlasmicPortfolio

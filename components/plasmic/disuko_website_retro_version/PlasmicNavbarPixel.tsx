@@ -162,7 +162,12 @@ function PlasmicNavbarPixel__RenderFunc(props: {
           <PlasmicLink__
             data-plasmic-name={"link"}
             data-plasmic-override={overrides.link}
-            className={classNames(projectcss.all, projectcss.a, sty.link)}
+            className={classNames(
+              projectcss.all,
+              projectcss.a,
+              projectcss.a__x4VgG,
+              sty.link
+            )}
             component={Link}
             href={`/`}
             legacyBehavior={false}
@@ -217,7 +222,12 @@ function PlasmicNavbarPixel__RenderFunc(props: {
             <PlasmicLink__
               data-plasmic-name={"home"}
               data-plasmic-override={overrides.home}
-              className={classNames(projectcss.all, projectcss.a, sty.home)}
+              className={classNames(
+                projectcss.all,
+                projectcss.a,
+                projectcss.a__x4VgG,
+                sty.home
+              )}
               component={Link}
               href={`/`}
               legacyBehavior={false}
@@ -270,6 +280,7 @@ function PlasmicNavbarPixel__RenderFunc(props: {
               className={classNames(
                 projectcss.all,
                 projectcss.a,
+                projectcss.a__x4VgG,
                 sty.portfolio
               )}
               component={Link}
@@ -326,7 +337,12 @@ function PlasmicNavbarPixel__RenderFunc(props: {
             <PlasmicLink__
               data-plasmic-name={"music"}
               data-plasmic-override={overrides.music}
-              className={classNames(projectcss.all, projectcss.a, sty.music)}
+              className={classNames(
+                projectcss.all,
+                projectcss.a,
+                projectcss.a__x4VgG,
+                sty.music
+              )}
               component={Link}
               href={`/music`}
               legacyBehavior={false}
@@ -382,7 +398,12 @@ function PlasmicNavbarPixel__RenderFunc(props: {
             <PlasmicLink__
               data-plasmic-name={"merch"}
               data-plasmic-override={overrides.merch}
-              className={classNames(projectcss.all, projectcss.a, sty.merch)}
+              className={classNames(
+                projectcss.all,
+                projectcss.a,
+                projectcss.a__x4VgG,
+                sty.merch
+              )}
               component={Link}
               href={"https://merch.disuko.gay"}
               legacyBehavior={false}
@@ -438,7 +459,12 @@ function PlasmicNavbarPixel__RenderFunc(props: {
             <PlasmicLink__
               data-plasmic-name={"links"}
               data-plasmic-override={overrides.links}
-              className={classNames(projectcss.all, projectcss.a, sty.links)}
+              className={classNames(
+                projectcss.all,
+                projectcss.a,
+                projectcss.a__x4VgG,
+                sty.links
+              )}
               component={Link}
               href={`/links`}
               legacyBehavior={false}

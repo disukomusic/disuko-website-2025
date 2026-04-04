@@ -624,6 +624,7 @@ function PlasmicHomepage__RenderFunc(props: {
                         className={classNames(
                           projectcss.all,
                           projectcss.a,
+                          projectcss.a__x4VgG,
                           sty.link__x4HOu
                         )}
                         component={Link}
@@ -683,6 +684,7 @@ function PlasmicHomepage__RenderFunc(props: {
                         className={classNames(
                           projectcss.all,
                           projectcss.a,
+                          projectcss.a__x4VgG,
                           sty.link___9Rdps
                         )}
                         component={Link}
@@ -925,6 +927,7 @@ function PlasmicHomepage__RenderFunc(props: {
                           className={classNames(
                             projectcss.all,
                             projectcss.a,
+                            projectcss.a__x4VgG,
                             sty.link__i8FZj
                           )}
                           component={Link}

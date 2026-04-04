@@ -920,6 +920,96 @@ function PlasmicPortfolioImm__RenderFunc(props: {
                   }}
                 />
               </div>
+              <div className={classNames(projectcss.all, sty.freeBox__z8LDv)}>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text___9DiB,
+                    {
+                      [sty.textglobal_theme_classic___9DiBeNktM]: hasVariant(
+                        globalVariants,
+                        "theme",
+                        "classic"
+                      )
+                    }
+                  )}
+                >
+                  {"sign my guestbook! - Library Installation"}
+                </div>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text___7Kfx,
+                    {
+                      [sty.textglobal_theme_classic___7KfxeNktM]: hasVariant(
+                        globalVariants,
+                        "theme",
+                        "classic"
+                      )
+                    }
+                  )}
+                >
+                  {"Touchdesigner, HTML, Javascript"}
+                </div>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__kJ4BR,
+                    {
+                      [sty.textglobal_theme_classic__kJ4BReNktM]: hasVariant(
+                        globalVariants,
+                        "theme",
+                        "classic"
+                      )
+                    }
+                  )}
+                >
+                  {
+                    "Installed in Jeanie King Mellon library, curious vistors explore a secluded retro-computing desk setup, editing a publicly accessible HTML webpage stationed on a classic computer. Over time, the webpage evoles, populating with messages from the vast community of a public library and giving users a space on the web to truly make their own."
+                  }
+                </div>
+                <WindowButton
+                  className={classNames(
+                    "__wab_instance",
+                    sty.windowButton__eavG
+                  )}
+                  link={"https://studio3publicwebpage.web.app"}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__bxVe
+                    )}
+                  >
+                    {"Sign The Guestbook!"}
+                  </div>
+                </WindowButton>
+                <PlasmicImg__
+                  alt={""}
+                  className={classNames(sty.img__zuLc)}
+                  displayHeight={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "auto"
+                      : "768px"
+                  }
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"100%"}
+                  loading={"lazy"}
+                  src={{
+                    src: "/plasmic/disuko_website_retro_version/images/image116.png",
+                    fullWidth: 3024,
+                    fullHeight: 4032,
+                    aspectRatio: undefined
+                  }}
+                />
+              </div>
               <div className={classNames(projectcss.all, sty.freeBox__gj4Pj)}>
                 <div
                   className={classNames(
@@ -980,6 +1070,7 @@ function PlasmicPortfolioImm__RenderFunc(props: {
                         className={classNames(
                           projectcss.all,
                           projectcss.a,
+                          projectcss.a__x4VgG,
                           projectcss.__wab_text,
                           projectcss.plasmic_default__inline,
                           sty.link
