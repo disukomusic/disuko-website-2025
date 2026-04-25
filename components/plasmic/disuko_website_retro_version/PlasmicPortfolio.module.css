@@ -241,10 +241,13 @@
   box-shadow:
     -4px -4px 0px 0px var(--token-GXH3dzbZuw1x),
     4px 4px 0px 0px var(--token-FYHois2LGA8g);
+  aspect-ratio: 16/9;
+  object-position: 50% center;
   margin: 10px;
 }
 .img__qwXj9 > picture > img {
   object-fit: cover;
+  object-position: 50% center;
 }
 ._3DDesign {
   display: flex;

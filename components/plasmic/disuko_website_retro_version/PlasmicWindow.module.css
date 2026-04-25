@@ -29,14 +29,14 @@
     inset -4px -4px 0px 1px var(--token-K_FDgNby8UmH),
     4px 4px 0px 0px #40404080;
 }
-.music:hover {
+.music:hover:hover {
   box-shadow:
     inset 4px 4px 0px 1px var(--token-FYHois2LGA8g),
     inset -4px -4px 0px 1px var(--token-XJ2XB8GCLLex),
     4px 4px 0px 0px #404040bf;
   margin-bottom: 0px;
 }
-.musicglobal_theme_classic:hover {
+.musicglobal_theme_classic:hover:hover {
   box-shadow:
     inset 4px 4px 0px 1px var(--token-24x9Uc_JThUA),
     inset -4px -4px 0px 1px var(--token-K_FDgNby8UmH),

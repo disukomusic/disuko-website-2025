@@ -336,9 +336,9 @@ function PlasmicLinks__RenderFunc(props: {
               displayWidth={"auto"}
               loading={"lazy"}
               src={{
-                src: "/plasmic/disuko_website_retro_version/images/logo2023Png.png",
-                fullWidth: 2000,
-                fullHeight: 2000,
+                src: "/plasmic/disuko_website_retro_version/images/disukoLogo2025GradientSmalPng2.png",
+                fullWidth: 512,
+                fullHeight: 476,
                 aspectRatio: undefined
               }}
             />
@@ -360,7 +360,7 @@ function PlasmicLinks__RenderFunc(props: {
               )}
             >
               {
-                "Hi everyone! My name is Disuko. I'm a producer, DJ, and content creator!"
+                "Hi everyone! My name is Disuko. I'm a music producer, DJ, and content creator!"
               }
             </div>
             <div

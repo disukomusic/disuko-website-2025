@@ -43,12 +43,13 @@
   overflow: hidden;
   min-width: 0;
   min-height: 0;
-  padding: 0px 50px;
   margin: 0px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .main {
     width: 100%;
+    align-items: center;
+    justify-content: flex-start;
     padding: 10px;
   }
 }
@@ -58,12 +59,12 @@
   align-items: stretch;
   flex-direction: row;
   flex-wrap: nowrap;
-  width: 100%;
+  width: 80%;
   flex-shrink: 1;
   column-gap: 150px;
   overflow: visible;
-  max-width: 1340px;
-  min-width: 0;
+  height: auto;
+  flex-grow: 1;
   --plsmc-rc-col-gap: 150px;
 }
 .columns > :nth-child(2n + 1) {
@@ -78,7 +79,7 @@
     height: auto;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-top: 67px;
+    margin-top: 0px;
     min-width: 0;
     --plsmc-rc-col-gap: 150px;
     padding: 0px;
@@ -96,27 +97,12 @@
   width: 100%;
   height: auto;
   max-width: 100%;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   background: none;
   min-width: 0;
   padding: 0px;
   border: 0px solid var(--token-51-e1302o9bz);
-}
-.freeBox__kOtxd {
-  display: flex;
-  position: sticky;
-  width: 100%;
-  height: auto;
-  overflow: visible;
-  left: 0px;
-  top: 0px;
-  z-index: 1;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  min-width: 0;
-  padding: 0px;
 }
 .retroDisuko:global(.__wab_instance) {
   max-width: 100%;
@@ -134,12 +120,15 @@
   justify-content: flex-start;
   align-items: center;
   row-gap: 20px;
+  max-height: 90vh;
   min-width: 0;
 }
 .window__nrQmc:global(.__wab_instance) {
   max-width: 100%;
   width: 100%;
+  height: 100%;
   min-width: 0;
+  min-height: 0;
 }
 .img__egdmN {
   object-fit: cover;
@@ -243,6 +232,7 @@
 .windowButton__xxYqn:global(.__wab_instance) {
   max-width: 100%;
   position: relative;
+  display: none;
 }
 .img__edwYc {
   position: relative;
@@ -567,9 +557,10 @@
   align-self: center;
   position: relative;
   width: 100%;
-  height: 99%;
+  height: 100%;
+  max-height: 99%;
   min-width: 0;
-  display: none;
+  min-height: 0;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .embedHtml:global(.__wab_instance) {
@@ -590,6 +581,7 @@
   flex-shrink: 1;
   flex-grow: 0;
   min-width: 0;
+  display: none;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .window__ys5AE:global(.__wab_instance) {

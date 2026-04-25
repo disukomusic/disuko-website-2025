@@ -64,10 +64,9 @@
   position: relative;
   object-fit: cover;
   max-width: 100%;
-  box-shadow: 0px 4px 16px 0px #00000024;
+  box-shadow: none;
   height: 103px;
   flex-shrink: 0;
-  border-radius: 100%;
 }
 .img > picture > img {
   object-fit: cover;
@@ -416,6 +415,7 @@
   max-width: 512px;
   width: 100%;
   min-width: 0;
+  display: none;
 }
 .img__pxaRz {
   position: relative;

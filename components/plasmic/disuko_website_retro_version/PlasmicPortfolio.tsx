@@ -351,7 +351,7 @@ function PlasmicPortfolio__RenderFunc(props: {
                       sty.windowButton__oX6B
                     )}
                     link={
-                      "https://xgdsk-my.sharepoint.com/:f:/g/personal/disuko_redpandastudios_net/ElEocPBhlwxBmi3QTScyB20BlwuRi4f4rWuczU8qxsQvKA?e=sgunvh"
+                      "https://drive.google.com/file/d/1VQ2iVdVwT180kjFlNrTfWQPgXJKSzQBZ/view?usp=sharing"
                     }
                   >
                     <div
@@ -376,7 +376,7 @@ function PlasmicPortfolio__RenderFunc(props: {
                       "__wab_instance",
                       sty.windowButton___6RFoD
                     )}
-                    link={"mailto:disukomusic@gmail.com"}
+                    link={"mailto:angelo@disuko.gay"}
                   >
                     <div
                       className={classNames(
@@ -420,9 +420,9 @@ function PlasmicPortfolio__RenderFunc(props: {
                       displayWidth={"auto"}
                       loading={"lazy"}
                       src={{
-                        src: "/plasmic/disuko_website_retro_version/images/image99.png",
-                        fullWidth: 1280,
-                        fullHeight: 720,
+                        src: "/plasmic/disuko_website_retro_version/images/dsc8618Jpg.jpg",
+                        fullWidth: 5568,
+                        fullHeight: 3712,
                         aspectRatio: undefined
                       }}
                     />

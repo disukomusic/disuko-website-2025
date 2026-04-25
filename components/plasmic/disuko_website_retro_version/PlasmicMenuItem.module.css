@@ -8,17 +8,17 @@
   outline-style: none;
   border-radius: var(--token-YWcZl9MW-KTL);
 }
-.root[data-hovered]:global(.__wab_instance) {
+.root[data-hovered][data-hovered]:global(.__wab_instance) {
   background: var(--token-y0mnTowBWjPW);
 }
-.root[data-selected]:global(.__wab_instance) {
+.root[data-selected][data-selected]:global(.__wab_instance) {
   background: var(--token-PIO9iS-YAWqM);
 }
-.root[data-disabled]:global(.__wab_instance) {
+.root[data-disabled][data-disabled]:global(.__wab_instance) {
   cursor: not-allowed;
   opacity: 0.5;
 }
-.root[data-focus-visible]:global(.__wab_instance) {
+.root[data-focus-visible][data-focus-visible]:global(.__wab_instance) {
   outline-style: solid;
   outline-width: var(--token-XNR1P-4vmK-C);
   outline-color: var(--token--l1DjjvmKXX1);

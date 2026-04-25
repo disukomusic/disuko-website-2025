@@ -16,7 +16,7 @@
   -webkit-transition-duration: 0.1s;
   padding: 10px;
 }
-.root:hover {
+.root:hover:hover {
   box-shadow: none;
   align-items: center;
   justify-content: center;

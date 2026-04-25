@@ -129,8 +129,6 @@ export type PlasmicPortfolioImm__OverridesType = {
   navbar?: Flex__<typeof Navbar>;
   section?: Flex__<"section">;
   window?: Flex__<typeof Window>;
-  columns?: Flex__<"div">;
-  link?: Flex__<"a"> & Partial<LinkProps>;
   htmlVideo?: Flex__<typeof Video>;
 };
 
@@ -257,180 +255,383 @@ function PlasmicPortfolioImm__RenderFunc(props: {
               data-plasmic-override={overrides.window}
               className={classNames("__wab_instance", sty.window)}
               windowText={
-                "I am currently Studying Immersive Media at Chatham University. I've made games, VR spaces, audiovisual installations, and more!"
+                "My favorite creative medium is found between the lines of art and technology. I've made a variety of  audiovisual installations, games, VR spaces, and more!"
               }
               windowTitle={"Immersive Media"}
             />
 
             <div className={classNames(projectcss.all, sty.freeBox__vp3Cp)}>
-              <div className={classNames(projectcss.all, sty.freeBox___2Ex8W)}>
+              <div className={classNames(projectcss.all, sty.freeBox___6Mn7U)}>
                 <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__fX6K0,
-                    {
-                      [sty.textglobal_theme_classic__fX6K0ENktM]: hasVariant(
-                        globalVariants,
-                        "theme",
-                        "classic"
-                      )
-                    }
-                  )}
+                  className={classNames(projectcss.all, sty.freeBox___2Ex8W)}
                 >
-                  {"New Maqam City - Interactive Audio Visual Installation"}
-                </div>
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__fMlB3,
-                    {
-                      [sty.textglobal_theme_classic__fMlB3ENktM]: hasVariant(
-                        globalVariants,
-                        "theme",
-                        "classic"
-                      )
-                    }
-                  )}
-                >
-                  {"Touchdesigner, BitWig Studio, Projection Mapping, Arduino"}
-                </div>
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__l5BbS,
-                    {
-                      [sty.textglobal_theme_classic__l5BbSeNktM]: hasVariant(
-                        globalVariants,
-                        "theme",
-                        "classic"
-                      )
-                    }
-                  )}
-                >
-                  {
-                    'New Maqam City invites you to remix, manipulate, and vibe to music from across North Africa and the Middle East. Incorporating everything from Gnawa beats to synthpop, Macrou, and 808 drum patterns, this interactive installation catalyzes a transcendental state inspired by Sufi mysticism and communion through music. \n\nI worked with MIPSTERZ to design the installation for their "ALHAMDU | MUSLIM FUTURISM\u201d exhibition. It was met with great success at the Colorado Springs Fine Arts Center opening, and was also shown at the Tribeca Immersive Festival in New York City June 2025.'
-                  }
-                </div>
-                <div className={classNames(projectcss.all, sty.freeBox__jjZyZ)}>
-                  <WindowButton
-                    className={classNames(
-                      "__wab_instance",
-                      sty.windowButton__zi4Jc
-                    )}
-                    link={`/newmaqamcity`}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__bdmnr
-                      )}
-                    >
-                      {"Documentation"}
-                    </div>
-                  </WindowButton>
-                  <WindowButton
-                    className={classNames(
-                      "__wab_instance",
-                      sty.windowButton__sRCqV
-                    )}
-                    link={"https://tribecafilm.com/films/new-maqam-city-2025"}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__okiwE
-                      )}
-                    >
-                      {"Tribeca Festival Page"}
-                    </div>
-                  </WindowButton>
-                </div>
-                <YouTube
-                  className={classNames("__wab_instance", sty.youTube___1GN)}
-                  videoId={"5Kd5-pADXDw"}
-                />
+                  <PlasmicImg__
+                    alt={""}
+                    className={classNames(sty.img__bh4Hg)}
+                    displayHeight={"auto"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"70%"}
+                    loading={"lazy"}
+                    src={{
+                      src: "/plasmic/disuko_website_retro_version/images/image117.png",
+                      fullWidth: 433,
+                      fullHeight: 174,
+                      aspectRatio: undefined
+                    }}
+                  />
 
-                <PlasmicImg__
-                  alt={""}
-                  className={classNames(sty.img___72Vva)}
-                  displayHeight={
-                    hasVariant(globalVariants, "screen", "mobileOnly")
-                      ? "auto"
-                      : "512px"
-                  }
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={"100%"}
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={"100%"}
-                  loading={"lazy"}
-                  src={{
-                    src: "/plasmic/disuko_website_retro_version/images/img7897Jpg.jpg",
-                    fullWidth: 2400,
-                    fullHeight: 1600,
-                    aspectRatio: undefined
-                  }}
-                />
-
-                <div
-                  data-plasmic-name={"columns"}
-                  data-plasmic-override={overrides.columns}
-                  className={classNames(projectcss.all, sty.columns)}
-                >
                   <div
-                    className={classNames(projectcss.all, sty.column__nHyq4)}
-                  >
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img__bKzb)}
-                      displayHeight={
-                        hasVariant(globalVariants, "screen", "mobileOnly")
-                          ? "auto"
-                          : "100%"
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__fX6K0,
+                      {
+                        [sty.textglobal_theme_classic__fX6K0ENktM]: hasVariant(
+                          globalVariants,
+                          "theme",
+                          "classic"
+                        )
                       }
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"none"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"100%"}
-                      loading={"lazy"}
-                      src={{
-                        src: "/plasmic/disuko_website_retro_version/images/image99.png",
-                        fullWidth: 1280,
-                        fullHeight: 720,
-                        aspectRatio: undefined
-                      }}
-                    />
+                    )}
+                  >
+                    {"ON3KO: IRL - Immersive Electronic Punk Performance"}
                   </div>
                   <div
-                    className={classNames(projectcss.all, sty.column__y7ElT)}
-                  >
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img___2H6Dd)}
-                      displayHeight={
-                        hasVariant(globalVariants, "screen", "mobileOnly")
-                          ? "auto"
-                          : "auto"
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__fMlB3,
+                      {
+                        [sty.textglobal_theme_classic__fMlB3ENktM]: hasVariant(
+                          globalVariants,
+                          "theme",
+                          "classic"
+                        )
                       }
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"100%"}
-                      loading={"lazy"}
-                      src={{
-                        src: "/plasmic/disuko_website_retro_version/images/image64.png",
-                        fullWidth: 4032,
-                        fullHeight: 3024,
-                        aspectRatio: undefined
-                      }}
-                    />
+                    )}
+                  >
+                    {
+                      "Touchdesigner, BitWig Studio, FL Studio, 3D Printing, Fusion360"
+                    }
+                  </div>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__l5BbS,
+                      {
+                        [sty.textglobal_theme_classic__l5BbSeNktM]: hasVariant(
+                          globalVariants,
+                          "theme",
+                          "classic"
+                        )
+                      }
+                    )}
+                  >
+                    {
+                      "ON3KO: IRL is an immersive webpunk show fighting back at today's algorithmic, oppressive digital landscape. Jam out to hyperpop-punk from a band of feline musicians with functional CRT-monitor heads!\r Through innovative wearable tech, repurposed retro technology, and 2000s internet worldbuilding, On3ko invites audiences to reclaim their digital identities and experience the creative freedom of the early internet.\r"
+                    }
+                  </div>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__jjZyZ)}
+                  >
+                    <WindowButton
+                      className={classNames(
+                        "__wab_instance",
+                        sty.windowButton__zi4Jc
+                      )}
+                      link={"https://on3ko.lol"}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__bdmnr
+                        )}
+                      >
+                        {"Website"}
+                      </div>
+                    </WindowButton>
+                  </div>
+                  <YouTube
+                    className={classNames("__wab_instance", sty.youTube___1GN)}
+                    videoId={"5Kd5-pADXDw"}
+                  />
+
+                  <PlasmicImg__
+                    alt={""}
+                    className={classNames(sty.img___72Vva)}
+                    displayHeight={
+                      hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? "auto"
+                        : "512px"
+                    }
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"100%"}
+                    loading={"lazy"}
+                    src={{
+                      src: "/plasmic/disuko_website_retro_version/images/dsc8618Jpg.jpg",
+                      fullWidth: 5568,
+                      fullHeight: 3712,
+                      aspectRatio: undefined
+                    }}
+                  />
+
+                  <div
+                    className={classNames(projectcss.all, sty.columns__h2DuC)}
+                  >
+                    <div
+                      className={classNames(projectcss.all, sty.column__nHyq4)}
+                    >
+                      <PlasmicImg__
+                        alt={""}
+                        className={classNames(sty.img__bKzb)}
+                        displayHeight={
+                          hasVariant(globalVariants, "screen", "mobileOnly")
+                            ? "auto"
+                            : "100%"
+                        }
+                        displayMaxHeight={"none"}
+                        displayMaxWidth={"none"}
+                        displayMinHeight={"0"}
+                        displayMinWidth={"0"}
+                        displayWidth={"100%"}
+                        loading={"lazy"}
+                        src={{
+                          src: "/plasmic/disuko_website_retro_version/images/dsc8654Jpg.jpg",
+                          fullWidth: 5568,
+                          fullHeight: 3712,
+                          aspectRatio: undefined
+                        }}
+                      />
+                    </div>
+                    <div
+                      className={classNames(projectcss.all, sty.column__y7ElT)}
+                    >
+                      <PlasmicImg__
+                        alt={""}
+                        className={classNames(sty.img___2H6Dd)}
+                        displayHeight={
+                          hasVariant(globalVariants, "screen", "mobileOnly")
+                            ? "auto"
+                            : "auto"
+                        }
+                        displayMaxHeight={"none"}
+                        displayMaxWidth={"100%"}
+                        displayMinHeight={"0"}
+                        displayMinWidth={"0"}
+                        displayWidth={"100%"}
+                        loading={"lazy"}
+                        src={{
+                          src: "/plasmic/disuko_website_retro_version/images/dsc8669Jpg.jpg",
+                          fullWidth: 5568,
+                          fullHeight: 3712,
+                          aspectRatio: undefined
+                        }}
+                      />
+                    </div>
+                  </div>
+                  <PlasmicLink__
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      projectcss.a__x4VgG,
+                      projectcss.__wab_text,
+                      sty.link__etUgw,
+                      {
+                        [sty.linkglobal_theme_classic__etUgweNktM]: hasVariant(
+                          globalVariants,
+                          "theme",
+                          "classic"
+                        )
+                      }
+                    )}
+                    component={Link}
+                    href={"https://www.instagram.com/n0o0o0o0o0o0o0o0o0o0o0o"}
+                    legacyBehavior={false}
+                    platform={"nextjs"}
+                    target={"_blank"}
+                  >
+                    {"Photo Cred"}
+                  </PlasmicLink__>
+                </div>
+                <div className={classNames(projectcss.all, sty.freeBox__gy2Ah)}>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__a2HnO,
+                      {
+                        [sty.textglobal_theme_classic__a2HnOeNktM]: hasVariant(
+                          globalVariants,
+                          "theme",
+                          "classic"
+                        )
+                      }
+                    )}
+                  >
+                    {"New Maqam City - Interactive Audio Visual Installation"}
+                  </div>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__yN7Ie,
+                      {
+                        [sty.textglobal_theme_classic__yN7IeeNktM]: hasVariant(
+                          globalVariants,
+                          "theme",
+                          "classic"
+                        )
+                      }
+                    )}
+                  >
+                    {
+                      "Touchdesigner, BitWig Studio, Projection Mapping, Arduino"
+                    }
+                  </div>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__g7V88,
+                      {
+                        [sty.textglobal_theme_classic__g7V88ENktM]: hasVariant(
+                          globalVariants,
+                          "theme",
+                          "classic"
+                        )
+                      }
+                    )}
+                  >
+                    {
+                      'New Maqam City invites you to remix, manipulate, and vibe to music from across North Africa and the Middle East. Incorporating everything from Gnawa beats to synthpop, Macrou, and 808 drum patterns, this interactive installation catalyzes a transcendental state inspired by Sufi mysticism and communion through music. \n\nI worked with MIPSTERZ to design the installation for their "ALHAMDU | MUSLIM FUTURISM\u201d exhibition. It was met with great success at the Colorado Springs Fine Arts Center opening, and was also shown at the Tribeca Immersive Festival in New York City June 2025.'
+                    }
+                  </div>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__nhOAi)}
+                  >
+                    <WindowButton
+                      className={classNames(
+                        "__wab_instance",
+                        sty.windowButton__fddnk
+                      )}
+                      link={`/newmaqamcity`}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__ndy3
+                        )}
+                      >
+                        {"Documentation"}
+                      </div>
+                    </WindowButton>
+                    <WindowButton
+                      className={classNames(
+                        "__wab_instance",
+                        sty.windowButton___3Jc0U
+                      )}
+                      link={"https://tribecafilm.com/films/new-maqam-city-2025"}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__mmpQ0
+                        )}
+                      >
+                        {"Tribeca Festival Page"}
+                      </div>
+                    </WindowButton>
+                  </div>
+                  <YouTube
+                    className={classNames("__wab_instance", sty.youTube__kf0Ck)}
+                    videoId={"5Kd5-pADXDw"}
+                  />
+
+                  <PlasmicImg__
+                    alt={""}
+                    className={classNames(sty.img__ogrR8)}
+                    displayHeight={
+                      hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? "auto"
+                        : "512px"
+                    }
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"100%"}
+                    loading={"lazy"}
+                    src={{
+                      src: "/plasmic/disuko_website_retro_version/images/img7897Jpg.jpg",
+                      fullWidth: 2400,
+                      fullHeight: 1600,
+                      aspectRatio: undefined
+                    }}
+                  />
+
+                  <div
+                    className={classNames(projectcss.all, sty.columns___8Xlb)}
+                  >
+                    <div
+                      className={classNames(projectcss.all, sty.column__fwT71)}
+                    >
+                      <PlasmicImg__
+                        alt={""}
+                        className={classNames(sty.img__a26Ke)}
+                        displayHeight={
+                          hasVariant(globalVariants, "screen", "mobileOnly")
+                            ? "auto"
+                            : "100%"
+                        }
+                        displayMaxHeight={"none"}
+                        displayMaxWidth={"none"}
+                        displayMinHeight={"0"}
+                        displayMinWidth={"0"}
+                        displayWidth={"100%"}
+                        loading={"lazy"}
+                        src={{
+                          src: "/plasmic/disuko_website_retro_version/images/image99.png",
+                          fullWidth: 1280,
+                          fullHeight: 720,
+                          aspectRatio: undefined
+                        }}
+                      />
+                    </div>
+                    <div
+                      className={classNames(projectcss.all, sty.column__dNQfT)}
+                    >
+                      <PlasmicImg__
+                        alt={""}
+                        className={classNames(sty.img__laRa)}
+                        displayHeight={
+                          hasVariant(globalVariants, "screen", "mobileOnly")
+                            ? "auto"
+                            : "auto"
+                        }
+                        displayMaxHeight={"none"}
+                        displayMaxWidth={"100%"}
+                        displayMinHeight={"0"}
+                        displayMinWidth={"0"}
+                        displayWidth={"100%"}
+                        loading={"lazy"}
+                        src={{
+                          src: "/plasmic/disuko_website_retro_version/images/image64.png",
+                          fullWidth: 4032,
+                          fullHeight: 3024,
+                          aspectRatio: undefined
+                        }}
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1065,15 +1266,13 @@ function PlasmicPortfolioImm__RenderFunc(props: {
                     </React.Fragment>
                     {
                       <PlasmicLink__
-                        data-plasmic-name={"link"}
-                        data-plasmic-override={overrides.link}
                         className={classNames(
                           projectcss.all,
                           projectcss.a,
                           projectcss.a__x4VgG,
                           projectcss.__wab_text,
                           projectcss.plasmic_default__inline,
-                          sty.link
+                          sty.link__rjkLg
                         )}
                         component={Link}
                         href={
@@ -1466,20 +1665,10 @@ function PlasmicPortfolioImm__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  _3DDesign: [
-    "_3DDesign",
-    "navbar",
-    "section",
-    "window",
-    "columns",
-    "link",
-    "htmlVideo"
-  ],
+  _3DDesign: ["_3DDesign", "navbar", "section", "window", "htmlVideo"],
   navbar: ["navbar"],
-  section: ["section", "window", "columns", "link", "htmlVideo"],
+  section: ["section", "window", "htmlVideo"],
   window: ["window"],
-  columns: ["columns"],
-  link: ["link"],
   htmlVideo: ["htmlVideo"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -1490,8 +1679,6 @@ type NodeDefaultElementType = {
   navbar: typeof Navbar;
   section: "section";
   window: typeof Window;
-  columns: "div";
-  link: "a";
   htmlVideo: typeof Video;
 };
 
@@ -1585,8 +1772,6 @@ export const PlasmicPortfolioImm = Object.assign(
     navbar: makeNodeComponent("navbar"),
     section: makeNodeComponent("section"),
     window: makeNodeComponent("window"),
-    columns: makeNodeComponent("columns"),
-    link: makeNodeComponent("link"),
     htmlVideo: makeNodeComponent("htmlVideo"),
 
     // Metadata about props expected for PlasmicPortfolioImm
