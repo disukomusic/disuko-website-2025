@@ -343,13 +343,30 @@ function PlasmicPortfolioImm__RenderFunc(props: {
                         "__wab_instance",
                         sty.windowButton__zi4Jc
                       )}
-                      link={"https://on3ko.lol"}
+                      link={"https://www.youtube.com/watch?v=E9T-mZGViHc"}
                     >
                       <div
                         className={classNames(
                           projectcss.all,
                           projectcss.__wab_text,
                           sty.text__bdmnr
+                        )}
+                      >
+                        {"Event Replay"}
+                      </div>
+                    </WindowButton>
+                    <WindowButton
+                      className={classNames(
+                        "__wab_instance",
+                        sty.windowButton___9YLzZ
+                      )}
+                      link={"https://on3ko.lol"}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__tRznr
                         )}
                       >
                         {"Website"}
