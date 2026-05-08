@@ -351,7 +351,7 @@ function PlasmicPortfolio__RenderFunc(props: {
                       sty.windowButton__oX6B
                     )}
                     link={
-                      "https://drive.google.com/file/d/1VQ2iVdVwT180kjFlNrTfWQPgXJKSzQBZ/view?usp=sharing"
+                      "https://drive.google.com/drive/folders/1VesaOi3VAPvbhMWhtLeT0ZD5d66nWwow?usp=drive_link"
                     }
                   >
                     <div
